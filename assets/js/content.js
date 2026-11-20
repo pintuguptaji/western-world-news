@@ -610,43 +610,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 20, 21:38",
-      "text": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+      "time": "Nov 20, 22:42",
+      "text": "Tech stock sell-off drags markets down as Anthropic shares slide",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 21:17",
-      "text": "'License to kill': French parliament adopts police shootings law slammed by activists",
+      "time": "Nov 20, 22:37",
+      "text": "French police officers sentenced for beating of music producer Michel Zecler",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 21:05",
-      "text": "Trump defends Putin relationship, warns AI data centres must stay in US",
+      "time": "Nov 20, 22:23",
+      "text": "French police officers found guilty of racist assault on black music producer",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 20:59",
-      "text": "Two Salvadoran soldiers killed in Haiti while handling explosives",
+      "time": "Nov 20, 22:15",
+      "text": "US lawmakers push for tougher AI chip rules amid China export crackdown",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 20:54",
-      "text": "Trump threatens ban on US firms building AI data centres overseas",
+      "time": "Nov 20, 22:14",
+      "text": "'I tell my son it's just fireworks': Life inside Yemeni city besieged by Houthis",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 20:45",
-      "text": "Sudan’s war leaves disabled children missing out on education",
+      "time": "Nov 20, 22:04",
+      "text": "Paris police officers sentenced to prison over 2020 beating of Black man",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 20:45",
-      "text": "Russian ornithologist jailed over small donations to Navalny's foundation",
+      "time": "Nov 20, 21:57",
+      "text": "Denmark accuses Russia of plotting to assassinate US-Ukrainian rapper",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 20:36",
-      "text": "Repression against Iranian lawyers increases",
+      "time": "Nov 20, 21:53",
+      "text": "Guinea bans Burkina Faso broadcaster, escalating diplomatic tensions",
       "link": "live.html"
     }
   ],
