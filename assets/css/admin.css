@@ -1,23 +1,24 @@
 /* Western World News: admin panel styles (admin.html only). */
 .admin-top { background: var(--navy-dark); color: #fff; padding: 0.9rem 0; }
 .admin-top .wrap { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
-.admin-top .wordmark { font-size: 1.4rem; }
+.admin-top .wordmark { font-size: 1.4rem; color: #fff; }
+.admin-top .wordmark .news { color: #fff; }
 .admin-badge { background: var(--red); color: #fff; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; padding: 0.2rem 0.55rem; border-radius: 3px; text-transform: uppercase; }
 .admin-top .spacer { flex: 1; }
 .admin-top a { color: #fff; font-weight: 600; }
 .admin-top button { background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.4); border-radius: 3px; padding: 0.4rem 0.8rem; cursor: pointer; font-weight: 600; }
 .admin-top button:hover { background: rgba(255,255,255,0.28); }
 .gate-card { max-width: 420px; margin: 3rem auto; border: 1px solid var(--line); border-radius: 6px; padding: 1.6rem; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
-.gate-card h1 { font-family: var(--serif); margin: 0 0 0.4rem; font-size: 1.5rem; }
+.gate-card h1 { font-family: var(--sans); margin: 0 0 0.4rem; font-size: 1.5rem; }
 .gate-card p { color: var(--muted); margin: 0 0 1rem; }
 .gate-card .error { color: var(--red); font-weight: 700; display: none; margin: 0.6rem 0 0; }
 .admin-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 1rem 0 1.6rem; }
 @media (max-width: 860px) { .admin-grid { grid-template-columns: repeat(2, 1fr); } }
 .stat { border: 1px solid var(--line); border-top: 3px solid var(--red); border-radius: 4px; padding: 0.8rem 1rem; background: #fff; }
-.stat b { display: block; font-family: var(--serif); font-size: 1.9rem; line-height: 1.1; }
+.stat b { display: block; font-family: var(--sans); font-size: 1.9rem; line-height: 1.1; }
 .stat span { color: var(--muted); font-size: 0.85rem; }
 .panel { border: 1px solid var(--line); border-radius: 6px; margin: 0 0 1.6rem; overflow: hidden; }
-.panel > h2 { margin: 0; padding: 0.75rem 1rem; background: var(--navy); color: #fff; font-family: var(--serif); font-size: 1.15rem; }
+.panel > h2 { margin: 0; padding: 0.75rem 1rem; background: var(--navy); color: #fff; font-family: var(--sans); font-size: 1.15rem; }
 .panel .body { padding: 1rem; }
 .notice { background: #fff8e6; border: 1px solid #ecd27a; border-left: 4px solid #d9a400; border-radius: 4px; padding: 0.8rem 1rem; margin: 0 0 1.4rem; font-size: 0.94rem; }
 .notice b { display: block; margin-bottom: 0.2rem; }

@@ -8,7 +8,7 @@
 <meta name="robots" content="noindex, nofollow">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/admin.css">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23bb1919'/%3E%3Ctext x='16' y='22' font-family='Georgia' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23bb1919'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 <header class="admin-top"><div class="wrap">
@@ -48,7 +48,7 @@ To make them permanent for everyone, use <b>Export JSON</b> below and send the f
 <ul class="admin-list" id="article-list"></ul>
 <button class="btn" id="add-article" type="button">+ Add article</button>
 <form id="article-form" class="hidden" style="margin-top:1.2rem">
-<h3 id="af-title-text" style="font-family:var(--serif);margin:0 0 0.8rem">Add article</h3>
+<h3 id="af-title-text" style="font-family:var(--sans);margin:0 0 0.8rem">Add article</h3>
 <div class="form-grid">
 <div class="field"><label for="af-title">Headline *</label><input id="af-title" type="text" required></div>
 <div class="field"><label for="af-slug">URL slug * <span class="hint">lower-case letters, numbers, hyphens. Auto-filled from the headline</span></label><input id="af-slug" type="text" required></div>
@@ -62,7 +62,7 @@ To make them permanent for everyone, use <b>Export JSON</b> below and send the f
 <div class="field"><label for="af-source-url">Source link</label><input id="af-source-url" type="url" placeholder="https://..."></div>
 <div class="field full"><div class="check-row">
 <label><input id="af-hero" type="checkbox"> Make this the homepage hero story</label>
-<label><input id="af-mostread" type="checkbox"> Show in Most Read</label>
+<label><input id="af-mostread" type="checkbox"> Show in Most Popular</label>
 </div></div>
 </div>
 <div class="form-actions"><button class="btn" type="submit">Save article</button>
@@ -83,7 +83,7 @@ To make them permanent for everyone, use <b>Export JSON</b> below and send the f
 <section class="panel"><h2>Just In feed</h2><div class="body">
 <ul class="admin-list" id="justin-list"></ul>
 <form id="justin-form">
-<h3 id="ji-form-title" style="font-family:var(--serif);margin:0 0 0.8rem">Add Just In item</h3>
+<h3 id="ji-form-title" style="font-family:var(--sans);margin:0 0 0.8rem">Add Just In item</h3>
 <div class="form-grid">
 <div class="field"><label for="ji-time">Time</label><input id="ji-time" type="text" placeholder="20 Nov, 10:33"></div>
 <div class="field"><label for="ji-link">Link</label><input id="ji-link" type="text" value="live.html"></div>
@@ -96,7 +96,7 @@ To make them permanent for everyone, use <b>Export JSON</b> below and send the f
 <section class="panel"><h2>Live blog</h2><div class="body">
 <ul class="admin-list" id="live-list"></ul>
 <form id="live-form">
-<h3 id="lv-form-title" style="font-family:var(--serif);margin:0 0 0.8rem">Add live update</h3>
+<h3 id="lv-form-title" style="font-family:var(--sans);margin:0 0 0.8rem">Add live update</h3>
 <div class="form-grid">
 <div class="field"><label for="lv-time">Time</label><input id="lv-time" type="text" placeholder="20 Nov, 10:33"></div>
 <div class="field full"><label for="lv-headline">Headline *</label><input id="lv-headline" type="text" required></div>

@@ -93,7 +93,7 @@
     var list = $("#article-list");
     list.innerHTML = data.articles.map(function (a) {
       var heroMark = data.settings.heroSlug === a.slug ? ' <b style="color:var(--red)">(Hero)</b>' : "";
-      var mrMark = (data.mostRead || []).indexOf(a.slug) !== -1 ? ' <b>· Most Read</b>' : "";
+      var mrMark = (data.mostRead || []).indexOf(a.slug) !== -1 ? ' <b>· Most Popular</b>' : "";
       return '<li><div class="t"><b>' + esc(a.headline) + "</b>" + heroMark + mrMark +
         "<small>" + esc(SECTION_LABELS[a.section] || a.section) + " · " + esc(a.date) +
         " · Source: " + esc(a.source) + " · /articles/" + esc(a.slug) + ".html</small></div>" +

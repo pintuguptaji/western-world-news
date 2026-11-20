@@ -83,14 +83,19 @@
       }).join("");
     }
 
-    // Hero (homepage).
+    // Hero (homepage): photo with the red headline box overlapping it.
     var heroEl = $("[data-hero]");
     var hero = bySlug[store.settings.heroSlug] || store.articles[0];
     if (heroEl && hero) {
+      var heroImg = hero.image
+        ? '<figure class="hero-media"><img src="' + esc(hero.image) + '" alt="' + esc(hero.headline) + '" loading="lazy"></figure>'
+        : '<div class="art" role="img" aria-label="Graphic placeholder"><span class="monogram">WWN</span><span class="art-label">' + esc(sectionLabel(hero.section)) + "</span></div>";
+      var isBreaking = store.breaking && store.breaking.link && store.breaking.link.indexOf(hero.slug) !== -1;
+      var kick = isBreaking ? "Breaking" : esc(sectionLabel(hero.section)) + " &middot; Live";
       heroEl.innerHTML =
-        tileFor(hero) +
-        '<p><span class="kicker">' + esc(sectionLabel(hero.section)) + " &middot; Live</span></p>" +
-        '<h1><a href="' + articleUrl(hero.slug) + '">' + esc(hero.headline) + "</a></h1>" +
+        heroImg +
+        '<div class="hero-box"><p><span class="kicker">' + kick + "</span></p>" +
+        '<h1><a href="' + articleUrl(hero.slug) + '">' + esc(hero.headline) + "</a></h1></div>" +
         '<p class="dek">' + esc(hero.dek) + "</p>" +
         '<p class="byline"><time>' + esc(hero.date) + "</time> &middot; Source: " + esc(hero.source) +
         ' &middot; <a href="' + fixLink("live.html") + '">Follow live updates</a></p>';
@@ -113,27 +118,28 @@
       }).join("");
     });
 
-    // Section pages.
+    // Section pages: image-above cards.
     $all("[data-section-list]").forEach(function (list) {
       var sec = list.getAttribute("data-section-list");
       var items = store.articles.filter(function (a) { return (a.sections || [a.section]).indexOf(sec) !== -1; });
       if (!items.length) return;
       list.innerHTML = items.map(function (a) {
-        return "<li>" +
-          '<a class="thumb" href="' + articleUrl(a.slug) + '">' + tileFor(a) + "</a>" +
+        return '<article class="card">' + tileFor(a) +
           '<p><span class="kicker">' + esc(sectionLabel(a.section)) + "</span></p>" +
           '<h3><a href="' + articleUrl(a.slug) + '">' + esc(a.headline) + "</a></h3>" +
           "<p>" + esc(a.dek) + "</p>" +
-          '<p class="byline"><time>' + esc(a.date) + "</time> &middot; Source: " + esc(a.source) + "</p></li>";
+          '<p class="byline"><time>' + esc(a.date) + "</time> &middot; Source: " + esc(a.source) + "</p></article>";
       }).join("");
     });
 
-    // Most Read.
+    // Most Popular: numbered list, up to 10.
     var mr = $("#most-read-list");
     if (mr) {
       var slugs = (store.mostRead || []).filter(function (s) { return bySlug[s]; });
-      if (!slugs.length) slugs = store.articles.slice(0, 5).map(function (a) { return a.slug; });
-      mr.innerHTML = slugs.slice(0, 5).map(function (slug) {
+      store.articles.forEach(function (a) {
+        if (slugs.length < 10 && slugs.indexOf(a.slug) === -1) slugs.push(a.slug);
+      });
+      mr.innerHTML = slugs.slice(0, 10).map(function (slug) {
         var a = bySlug[slug];
         return '<li><div><a href="' + articleUrl(slug) + '">' + esc(a.headline) + "</a>" +
           "<small>" + esc(sectionLabel(a.section)) + " &middot; " + esc(a.date) + "</small></div></li>";

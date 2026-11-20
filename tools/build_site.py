@@ -189,24 +189,22 @@ ANALYSIS = [
      "link": "articles/wall-street-selloff.html"},
 ]
 
-CSS = """/* Western World News: publisher design v2.
-   BBC/CNN-level look: dark navy masthead, red breaking bar with ticker,
-   serif display headlines, photo-led cards, Most Read sidebar, Watch strip.
-   Mobile-first; no webfonts (system serif/sans stacks only). */
+CSS = """/* Western World News: publisher design v3.
+   Al Jazeera-format look: white page, light hairline rules, single centered
+   container, photo-led hero with a red headline box, small-caps section
+   labels, numbered Most Popular list. Sans-serif throughout; no webfonts
+   (system sans stack only). */
 
 :root {
   --red: #bb1919;
-  --red-bright: #e02424;
   --red-dark: #8f1212;
-  --ink: #1a1a1a;
-  --muted: #5f5f5f;
-  --line: #e3e3e3;
-  --light: #f6f6f6;
+  --ink: #111111;
+  --muted: #666666;
+  --line: #eeeeee;
+  --line-strong: #dddddd;
+  --light: #fafafa;
   --navy: #0e2244;
   --navy-dark: #081426;
-  --navy-mid: #16294d;
-  --gold: #c8a96a;
-  --serif: Georgia, "Times New Roman", serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -221,285 +219,270 @@ body {
   font-size: 16px;
 }
 
+h1, h2, h3 { font-family: var(--sans); }
 a { color: var(--ink); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a:hover { color: var(--red); }
 img { max-width: 100%; display: block; }
 figure { margin: 0; }
-figcaption { font-size: 0.8rem; color: var(--muted); padding: 0.4rem 0.1rem 0; line-height: 1.4; }
+figcaption { font-size: 0.78rem; color: var(--muted); padding: 0.35rem 0 0; line-height: 1.4; }
 
 .wrap { max-width: 1180px; margin: 0 auto; padding: 0 1rem; }
 .sr-only { position: absolute; left: -9999px; }
 
-/* ---------- Top utility bar ---------- */
-.topbar { background: var(--navy-dark); color: #cdd6e4; font-size: 0.82rem; }
-.topbar .wrap { display: flex; align-items: center; gap: 1rem; padding-top: 0.35rem; padding-bottom: 0.35rem; flex-wrap: wrap; }
-.topbar .dateline { color: #cdd6e4; }
-.topbar a { color: #fff; font-weight: 600; }
-.topbar a:hover { text-decoration: underline; }
-.topbar .live-dot { width: 0.5rem; height: 0.5rem; }
-.topbar .spacer { flex: 1; }
+/* ---------- Sticky white header ---------- */
+.site-header { position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid var(--line); }
+.header-row { display: flex; align-items: center; gap: 1.5rem; padding-top: 0.7rem; padding-bottom: 0.7rem; }
+.wordmark { font-size: 1.45rem; font-weight: 800; letter-spacing: -0.01em; line-height: 1.1; color: var(--ink); white-space: nowrap; }
+.wordmark .news { color: var(--ink); }
+.wordmark:hover { text-decoration: none; }
+.main-nav { flex: 1; display: flex; justify-content: center; }
+.main-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
+.main-nav a { display: block; color: var(--ink); padding: 0.5rem 0.65rem; font-size: 0.95rem; font-weight: 600; white-space: nowrap; }
+.main-nav a:hover { color: var(--red); text-decoration: none; }
+.main-nav a.active { color: var(--red); box-shadow: inset 0 -2px 0 var(--red); }
+.main-nav a.live-link { color: var(--red); font-weight: 800; }
+.nav-toggle {
+  display: none; background: none; border: 0; color: var(--ink); font-size: 1.5rem;
+  padding: 0.4rem 0.6rem 0.4rem 0; cursor: pointer; line-height: 1; margin-left: auto;
+}
+.header-actions { display: flex; align-items: center; gap: 0.9rem; margin-left: auto; }
+.header-actions .live-link { color: var(--red); font-weight: 800; font-size: 0.95rem; display: flex; align-items: center; gap: 0.35rem; white-space: nowrap; }
+.header-actions .live-link:hover { text-decoration: none; }
+.btn-black { background: #111; color: #fff; border-radius: 999px; padding: 0.5rem 1.1rem; font-size: 0.9rem; font-weight: 700; white-space: nowrap; }
+.btn-black:hover { background: #000; color: #fff; text-decoration: none; }
 .search-box { position: relative; }
 .search-box input {
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.25);
-  color: #fff;
-  border-radius: 3px;
-  padding: 0.32rem 0.6rem;
-  font-size: 0.85rem;
-  width: 210px;
-  outline: none;
+  background: #fff; border: 1px solid var(--line-strong); color: var(--ink);
+  border-radius: 999px; padding: 0.45rem 0.9rem; font-size: 0.9rem; width: 180px; outline: none;
 }
-.search-box input::placeholder { color: #9fb0c8; }
-.search-box input:focus { border-color: #fff; background: rgba(255,255,255,0.18); }
+.search-box input::placeholder { color: #999; }
+.search-box input:focus { border-color: var(--ink); }
 .search-results {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 110%;
-  width: 320px;
-  max-width: 90vw;
-  background: #fff;
-  color: var(--ink);
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  box-shadow: 0 8px 28px rgba(0,0,0,0.25);
-  z-index: 200;
-  overflow: hidden;
+  display: none; position: absolute; right: 0; top: 110%; width: 320px; max-width: 90vw;
+  background: #fff; color: var(--ink); border: 1px solid var(--line); border-radius: 8px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.18); z-index: 200; overflow: hidden;
 }
 .search-results.open { display: block; }
-.search-results a {
-  display: block;
-  padding: 0.6rem 0.8rem;
-  border-bottom: 1px solid var(--line);
-  font-size: 0.92rem;
-  color: var(--ink);
-}
+.search-results a { display: block; padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--line); font-size: 0.92rem; color: var(--ink); }
 .search-results a:last-child { border-bottom: 0; }
 .search-results a:hover { background: var(--light); text-decoration: none; }
 .search-results a small { display: block; color: var(--red); font-weight: 700; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
 .search-results .none { padding: 0.7rem 0.8rem; color: var(--muted); font-size: 0.9rem; }
-
-/* ---------- Breaking bar + ticker ---------- */
-.breaking-bar { background: var(--red); color: #fff; font-size: 0.95rem; overflow: hidden; }
-.breaking-bar .wrap { display: flex; align-items: center; gap: 0.7rem; padding-top: 0.45rem; padding-bottom: 0.45rem; }
-.breaking-label {
-  background: #fff; color: var(--red); font-weight: 800;
-  letter-spacing: 0.08em; font-size: 0.75rem;
-  padding: 0.15rem 0.5rem; border-radius: 2px; white-space: nowrap; flex-shrink: 0;
-}
-.breaking-main { color: #fff; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-shrink: 0; max-width: 46%; }
-.breaking-main:hover { text-decoration: underline; }
-.ticker { overflow: hidden; flex: 1; min-width: 0; border-left: 1px solid rgba(255,255,255,0.4); padding-left: 0.7rem;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); }
-.ticker-track { display: inline-flex; gap: 2.2rem; white-space: nowrap; animation: ticker-scroll 55s linear infinite; }
-.ticker:hover .ticker-track { animation-play-state: paused; }
-.ticker-track a { color: rgba(255,255,255,0.92); font-size: 0.88rem; }
-.ticker-track a:hover { color: #fff; }
-.ticker-track a::before { content: "\\25CF  "; color: #ffd2d2; font-size: 0.6rem; }
-@keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-@media (max-width: 860px) { .breaking-main { display: none; } }
-
-/* ---------- Masthead (dark navy) ---------- */
-.masthead { background: var(--navy); color: #fff; padding: 1.15rem 0 1.05rem; }
-.masthead .wrap { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 0.3rem 1rem; }
-.wordmark { font-family: var(--serif); font-size: 2.1rem; font-weight: 800; letter-spacing: -0.01em; line-height: 1.05; color: #fff; }
-.wordmark .news { color: #ff5a5a; }
-.wordmark:hover { text-decoration: none; }
-.tagline { color: #b9c6da; font-size: 0.9rem; font-style: italic; font-family: var(--serif); }
-.masthead .dateline { color: #b9c6da; font-size: 0.85rem; }
-@media (min-width: 860px) { .wordmark { font-size: 2.6rem; } }
-
-/* ---------- Nav + hamburger ---------- */
-nav.main-nav { background: var(--navy-mid); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.25); }
-nav.main-nav .wrap { display: flex; align-items: center; }
-.nav-toggle {
-  display: none; background: none; border: 0; color: #fff; font-size: 1.5rem;
-  padding: 0.5rem 0.6rem 0.5rem 0; cursor: pointer; line-height: 1;
-}
-nav.main-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
-nav.main-nav a { display: block; color: #fff; padding: 0.68rem 0.8rem; font-size: 0.92rem; font-weight: 600; }
-nav.main-nav a:hover { background: rgba(255,255,255,0.12); text-decoration: none; }
-nav.main-nav a.active { background: var(--red); }
-nav.main-nav a.live-link { color: #ff6b6b; }
-nav.main-nav a.live-link.active { color: #fff; }
-@media (max-width: 860px) {
+.topic-row { border-top: 1px solid var(--line); }
+.topic-row .wrap { display: flex; gap: 1.4rem; padding-top: 0.45rem; padding-bottom: 0.45rem; overflow-x: auto; }
+.topic-row a { color: var(--muted); font-size: 0.85rem; font-weight: 600; white-space: nowrap; }
+.topic-row a:hover { color: var(--red); text-decoration: none; }
+@media (max-width: 960px) {
+  .header-row { flex-wrap: wrap; gap: 0.5rem 1rem; }
   .nav-toggle { display: block; }
-  nav.main-nav ul { display: none; flex-direction: column; width: 100%; padding-bottom: 0.4rem; }
-  nav.main-nav.open ul { display: flex; }
-  nav.main-nav a { padding: 0.6rem 0.2rem; border-top: 1px solid rgba(255,255,255,0.12); }
+  .main-nav { order: 4; flex-basis: 100%; justify-content: flex-start; }
+  .main-nav ul { display: none; flex-direction: column; width: 100%; }
+  .main-nav.open ul { display: flex; }
+  .main-nav a { padding: 0.55rem 0; border-top: 1px solid var(--line); }
+  .main-nav a.active { box-shadow: none; }
+  .search-box input { width: 140px; }
 }
 
 /* ---------- Layout ---------- */
-main { padding: 1.3rem 0 2rem; }
+main { padding: 1.5rem 0 2rem; }
 .section-head {
-  font-family: var(--serif); font-size: 1.55rem; line-height: 1.2;
-  border-bottom: 3px solid var(--ink); padding-bottom: 0.35rem; margin: 0 0 1rem;
+  font-size: 0.95rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ink); border-bottom: 1px solid var(--line); padding-bottom: 0.5rem; margin: 0 0 1.1rem;
 }
-.section-head .tag { color: var(--red); }
 .section-head a { color: var(--ink); }
 .section-head a:hover { color: var(--red); }
-.rule-red { border: 0; border-top: 3px solid var(--red); margin: 0 0 1rem; width: 64px; }
-
-/* ---------- Hero ---------- */
-.hero-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 2.2rem; }
-@media (min-width: 900px) { .hero-grid { grid-template-columns: 2fr 1fr; } }
-.hero figure { margin-bottom: 0.7rem; }
-.hero figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 3px; }
-.hero h1, .hero h2 { font-family: var(--serif); line-height: 1.12; margin: 0.55rem 0; }
-.hero h1 { font-size: 2rem; }
-.hero h1 a:hover { color: var(--red); }
-@media (min-width: 900px) { .hero h1 { font-size: 2.55rem; } }
-.hero p.dek { font-size: 1.1rem; color: #333; margin: 0.4rem 0 0.8rem; line-height: 1.5; }
-.kicker { color: var(--red); font-weight: 800; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; }
+.tag { color: var(--red); }
+.kicker { color: var(--muted); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; }
 .byline { color: var(--muted); font-size: 0.85rem; margin: 0.5rem 0 0; }
 .byline time { font-weight: 600; color: var(--ink); }
 .byline a { color: var(--red); font-weight: 700; }
 
-/* ---------- Just In ---------- */
-.just-in { border: 1px solid var(--line); background: var(--light); align-self: start; }
-.just-in h2 {
-  margin: 0; padding: 0.6rem 0.9rem; background: var(--ink); color: #fff;
-  font-size: 0.95rem; letter-spacing: 0.1em; text-transform: uppercase;
-}
-.just-in ul { list-style: none; margin: 0; padding: 0.4rem 0.9rem 0.9rem; }
-.just-in li { padding: 0.55rem 0; border-bottom: 1px solid var(--line); font-size: 0.95rem; line-height: 1.45; }
-.just-in li:last-child { border-bottom: 0; }
-.just-in time { color: var(--red); font-weight: 700; font-size: 0.82rem; margin-right: 0.4rem; }
+/* ---------- Hero (three-column) ---------- */
+.hero-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-bottom: 1.6rem; }
+@media (min-width: 1000px) { .hero-grid { grid-template-columns: 1.35fr 1fr 280px; } }
+.hero-media { margin: 0; }
+.hero-media img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 8px; }
+.hero .art { aspect-ratio: 16 / 10; border-radius: 8px; }
+.hero-box { background: var(--red); color: #fff; border-radius: 8px; padding: 1.1rem 1.3rem; margin: -3.4rem 1.4rem 0; position: relative; z-index: 2; }
+.hero-box .kicker { color: rgba(255,255,255,0.85); }
+.hero-box h1 { font-size: 1.75rem; line-height: 1.15; margin: 0.35rem 0 0; font-weight: 800; }
+.hero-box h1 a { color: #fff; }
+.hero-box h1 a:hover { color: #fff; text-decoration: underline; }
+@media (min-width: 1000px) { .hero-box h1 { font-size: 2rem; } }
+.hero .dek { color: #444; font-size: 1.02rem; margin: 0.9rem 0.2rem 0.5rem; line-height: 1.5; }
+.hero .byline { margin-left: 0.2rem; margin-right: 0.2rem; }
 
-/* ---------- Most Read ---------- */
-.most-read { border-top: 3px solid var(--ink); margin: 0 0 2rem; }
-.most-read h2 { font-family: var(--serif); font-size: 1.35rem; margin: 0.7rem 0 0.4rem; }
+/* Second story + text card (hero middle column) */
+.hero-second { display: flex; flex-direction: column; gap: 1.4rem; }
+.second-story figure { margin: 0 0 0.6rem; }
+.second-story figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; }
+.second-story .art { aspect-ratio: 16 / 9; border-radius: 8px; }
+.second-story h3 { font-size: 1.25rem; line-height: 1.3; margin: 0.3rem 0 0; font-weight: 800; }
+.second-story h3 a:hover { color: var(--red); }
+.text-card { display: flex; gap: 1rem; align-items: flex-start; border-top: 1px solid var(--line); padding-top: 1.2rem; }
+.text-card h3 { font-size: 1.08rem; line-height: 1.35; margin: 0.3rem 0 0; font-weight: 700; }
+.text-card h3 a:hover { color: var(--red); }
+.text-card-thumb { flex-shrink: 0; width: 110px; }
+.text-card-thumb img { width: 110px; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 6px; }
+.text-card-thumb .art { width: 110px; aspect-ratio: 16 / 10; border-radius: 6px; }
+.text-card-thumb .art .monogram { font-size: 1rem; padding: 0.1rem 0.5rem; }
+.text-card-thumb .art .art-label { display: none; }
+
+/* Right rail: Must Reads / More Headlines */
+.hero-rail { display: flex; flex-direction: column; gap: 1.8rem; }
+.rail-head { font-size: 0.85rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #666; border-left: 4px solid var(--red); padding-left: 0.6rem; margin: 0 0 0.9rem; }
+.rail-list { list-style: none; margin: 0; padding: 0; }
+.rail-list li { padding: 0.75rem 0; border-bottom: 1px solid var(--line); }
+.rail-list li:first-child { padding-top: 0; }
+.rail-list li:last-child { border-bottom: 0; }
+.rail-list a { font-weight: 700; font-size: 0.98rem; line-height: 1.35; }
+.rail-list a:hover { color: var(--red); }
+.rail-list .with-thumb { display: flex; gap: 0.9rem; align-items: flex-start; }
+.rail-list .with-thumb > div { flex: 1; }
+.rail-thumb { flex-shrink: 0; width: 120px; }
+.rail-thumb img { width: 120px; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 6px; }
+.rail-thumb .art { width: 120px; aspect-ratio: 16 / 10; border-radius: 6px; }
+.rail-thumb .art .monogram { font-size: 1rem; padding: 0.1rem 0.5rem; }
+.rail-thumb .art .art-label { display: none; }
+.rail-list small { display: block; color: var(--muted); font-size: 0.78rem; margin-top: 0.2rem; font-weight: 400; }
+
+/* ---------- Live Blog strip ---------- */
+.liveblog-strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 1rem 0 1.2rem; margin: 0 0 2rem; }
+.liveblog-label { color: var(--red); font-size: 0.85rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; margin: 0 0 0.7rem; }
+.liveblog-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 0.55rem 2.5rem; }
+@media (min-width: 900px) { .liveblog-list { grid-template-columns: 1fr 1fr; } }
+.liveblog-list li { font-size: 0.96rem; line-height: 1.45; }
+.liveblog-list time { color: var(--red); font-weight: 700; font-size: 0.82rem; margin-right: 0.5rem; }
+.liveblog-list a:hover { color: var(--red); }
+
+/* ---------- Most Popular ---------- */
+.most-read { margin: 0 0 2rem; }
+.most-read h2 { font-size: 0.95rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); border-left: 4px solid var(--red); padding-left: 0.6rem; margin: 0 0 0.6rem; }
 .most-read ol { list-style: none; margin: 0; padding: 0; counter-reset: mr; }
-.most-read li {
-  counter-increment: mr; display: flex; gap: 0.85rem; align-items: flex-start;
-  padding: 0.7rem 0; border-bottom: 1px solid var(--line);
-}
+.most-read li { counter-increment: mr; display: flex; gap: 0.9rem; align-items: flex-start; padding: 0.75rem 0; border-bottom: 1px solid var(--line); }
 .most-read li:last-child { border-bottom: 0; }
-.most-read li::before {
-  content: counter(mr); font-family: var(--serif); font-weight: 800;
-  font-size: 2rem; line-height: 1; color: var(--red); min-width: 1.6rem;
-}
-.most-read a { font-family: var(--serif); font-size: 1.05rem; line-height: 1.3; font-weight: 700; }
+.most-read li::before { content: counter(mr); font-weight: 800; font-size: 1.5rem; line-height: 1; color: var(--ink); min-width: 1.6rem; }
+.most-read a { font-size: 1rem; line-height: 1.35; font-weight: 700; }
 .most-read a:hover { color: var(--red); }
-.most-read small { display: block; color: var(--muted); font-size: 0.78rem; margin-top: 0.15rem; font-family: var(--sans); font-weight: 400; }
+.most-read small { display: block; color: var(--muted); font-size: 0.78rem; margin-top: 0.15rem; font-weight: 400; }
+.most-read.two-col ol { display: grid; grid-template-columns: 1fr; column-gap: 2.5rem; }
+@media (min-width: 900px) { .most-read.two-col ol { grid-template-columns: 1fr 1fr; } }
 
 /* ---------- Cards & grids ---------- */
-.card-grid { display: grid; grid-template-columns: 1fr; gap: 1.4rem; }
+.card-grid { display: grid; grid-template-columns: 1fr; gap: 1.6rem; }
 @media (min-width: 640px) { .card-grid { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 980px) { .card-grid.four { grid-template-columns: repeat(4, 1fr); } }
 @media (min-width: 980px) { .card-grid.three { grid-template-columns: repeat(3, 1fr); } }
-.card { border-top: 3px solid var(--ink); padding-top: 0; }
-.card figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 2px; }
-.card figure { margin-bottom: 0.55rem; }
-.card h3 { font-family: var(--serif); font-size: 1.25rem; line-height: 1.25; margin: 0.4rem 0 0.35rem; }
+.card { border-top: 0; padding-top: 0; }
+.card figure { margin: 0 0 0.6rem; }
+.card figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; }
+.card h3 { font-size: 1.18rem; line-height: 1.3; margin: 0.35rem 0 0.35rem; font-weight: 800; }
 .card h3 a:hover { color: var(--red); }
-.card p { margin: 0; color: #333; font-size: 0.95rem; }
-.card .art { margin-bottom: 0.6rem; }
-.story-list { list-style: none; margin: 0; padding: 0; }
-.story-list li { padding: 1rem 0; border-bottom: 1px solid var(--line); }
-.story-list li:first-child { padding-top: 0; }
-.story-list h3 { font-family: var(--serif); font-size: 1.3rem; margin: 0.3rem 0 0.3rem; line-height: 1.25; }
-.story-list h3 a:hover { color: var(--red); }
-.story-list p { margin: 0; color: #333; }
-.story-list .thumb { float: left; width: 170px; margin: 0.25rem 1rem 0.5rem 0; }
-.story-list .thumb img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 2px; }
-.story-list li::after { content: ""; display: table; clear: both; }
-@media (max-width: 640px) { .story-list .thumb { float: none; width: 100%; margin: 0 0 0.5rem; } }
+.card p { margin: 0; color: #555; font-size: 0.95rem; line-height: 1.5; }
+.card .art { margin-bottom: 0.6rem; border-radius: 8px; }
 
 /* ---------- Graphic placeholder (stories without a photo) ---------- */
 .art {
   aspect-ratio: 16 / 9;
   background: linear-gradient(135deg, var(--navy) 0%, #274b7a 60%, #3d6aa8 100%);
   color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 0.35rem; text-align: center; padding: 1rem;
+  gap: 0.35rem; text-align: center; padding: 1rem; border-radius: 8px;
 }
-.art .monogram { font-family: var(--serif); font-size: 2.2rem; font-weight: 800; letter-spacing: 0.06em; border: 2px solid rgba(255,255,255,0.85); padding: 0.2rem 0.9rem; }
+.art .monogram { font-size: 2.2rem; font-weight: 800; letter-spacing: 0.06em; border: 2px solid rgba(255,255,255,0.85); padding: 0.2rem 0.9rem; }
 .art .art-label { font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.85; }
 .art.small .monogram { font-size: 1.4rem; }
 
-/* ---------- Watch strip ---------- */
-.watch-strip { background: var(--navy-dark); color: #fff; margin: 2.2rem 0; padding: 1.4rem 0 1.6rem; }
-.watch-strip h2 { font-family: var(--serif); color: #fff; border-bottom: 3px solid var(--red); padding-bottom: 0.4rem; margin: 0 0 1rem; font-size: 1.5rem; }
-.watch-strip h2 .tag { color: #ff5a5a; }
-.watch-grid { display: grid; grid-template-columns: 1fr; gap: 1.2rem; }
+/* ---------- Watch ---------- */
+.watch-strip { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin: 2.2rem 0; padding: 1.4rem 0 1.6rem; }
+.watch-strip h2 { font-size: 0.95rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); margin: 0 0 1rem; }
+.watch-grid { display: grid; grid-template-columns: 1fr; gap: 1.4rem; }
 @media (min-width: 700px) { .watch-grid { grid-template-columns: repeat(3, 1fr); } }
-.watch-card a { color: #fff; display: block; }
+.watch-card a { color: var(--ink); display: block; }
 .watch-card a:hover { text-decoration: none; }
-.watch-card a:hover h3 { text-decoration: underline; }
+.watch-card a:hover h3 { text-decoration: underline; color: var(--red); }
 .watch-thumb { position: relative; }
-.watch-thumb img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 3px; }
+.watch-thumb img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; }
 .watch-thumb .play {
   position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
-  width: 46px; height: 46px; border-radius: 50%; background: rgba(187,25,25,0.92);
-  color: #fff; font-size: 1.05rem; display: flex; align-items: center; justify-content: center; padding-left: 3px;
+  width: 44px; height: 44px; border-radius: 50%; background: #fff;
+  color: var(--red); font-size: 1rem; display: flex; align-items: center; justify-content: center; padding-left: 3px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
 }
 .watch-thumb .dur {
   position: absolute; right: 0.5rem; bottom: 0.5rem; background: rgba(0,0,0,0.8);
   color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.1rem 0.4rem; border-radius: 2px;
 }
-.watch-card h3 { font-family: var(--serif); font-size: 1.1rem; line-height: 1.3; margin: 0.55rem 0 0; color: #fff; }
+.watch-card h3 { font-size: 1.08rem; line-height: 1.3; margin: 0.55rem 0 0; color: var(--ink); font-weight: 800; }
 
 /* ---------- Analysis / Opinion ---------- */
 .analysis { margin: 0 0 2.2rem; }
-.analysis .cols { display: grid; grid-template-columns: 1fr; gap: 1.2rem; }
+.analysis .cols { display: grid; grid-template-columns: 1fr; gap: 1.4rem; }
 @media (min-width: 700px) { .analysis .cols { grid-template-columns: repeat(3, 1fr); } }
-.analysis article { background: var(--light); border-top: 3px solid var(--gold); padding: 1rem 1.1rem; }
-.analysis .kicker { color: #8a6d2b; }
-.analysis h3 { font-family: var(--serif); font-size: 1.18rem; line-height: 1.3; margin: 0.4rem 0 0.4rem; }
+.analysis article { background: #fff; border-top: 0; padding: 0; }
+.analysis figure { margin: 0 0 0.6rem; }
+.analysis figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; }
+.analysis h3 { font-size: 1.15rem; line-height: 1.3; margin: 0.35rem 0 0.35rem; font-weight: 800; }
 .analysis h3 a:hover { color: var(--red); }
-.analysis p { margin: 0; font-size: 0.94rem; color: #333; }
+.analysis p { margin: 0; font-size: 0.94rem; color: #555; line-height: 1.5; }
 
 /* ---------- Live blog ---------- */
 .live-dot { display: inline-block; width: 0.6rem; height: 0.6rem; background: var(--red); border-radius: 50%; margin-right: 0.4rem; animation: pulse 1.6s infinite; }
 @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
-.live-update { border-left: 3px solid var(--red); padding: 0.2rem 0 0.2rem 1rem; margin: 0 0 1.4rem; }
-.live-update time { font-weight: 700; color: var(--red); font-size: 0.9rem; }
-.live-update h3 { font-family: var(--serif); margin: 0.2rem 0 0.3rem; font-size: 1.15rem; }
-.live-update p { margin: 0; }
+.live-update { border-bottom: 1px solid var(--line); padding: 0 0 1rem; margin: 0 0 1rem; }
+.live-update time { font-weight: 700; color: var(--red); font-size: 0.88rem; }
+.live-update h3 { margin: 0.25rem 0 0.3rem; font-size: 1.15rem; font-weight: 800; line-height: 1.3; }
+.live-update h3 a:hover { color: var(--red); }
+.live-update p { margin: 0; color: #333; }
 
 /* ---------- Newsletter ---------- */
-.newsletter { background: var(--navy); color: #fff; padding: 1.5rem; margin: 2rem 0; border-radius: 4px; }
-.newsletter h2 { font-family: var(--serif); margin: 0 0 0.3rem; font-size: 1.4rem; }
-.newsletter p { margin: 0 0 0.9rem; opacity: 0.9; }
+.newsletter { background: #fff; border: 1px solid var(--line-strong); color: var(--ink); padding: 1.6rem; margin: 2rem 0; border-radius: 8px; }
+.newsletter h2 { margin: 0 0 0.3rem; font-size: 1.35rem; font-weight: 800; }
+.newsletter p { margin: 0 0 0.9rem; color: var(--muted); }
 .newsletter form { display: flex; flex-wrap: wrap; gap: 0.6rem; }
-.newsletter input[type="email"] { flex: 1 1 220px; padding: 0.65rem 0.8rem; border: 0; border-radius: 3px; font-size: 1rem; }
-.newsletter button, .btn { background: var(--red); color: #fff; border: 0; padding: 0.65rem 1.2rem; font-size: 1rem; font-weight: 700; border-radius: 3px; cursor: pointer; display: inline-block; }
-.newsletter button:hover, .btn:hover { background: var(--red-dark); text-decoration: none; }
-.newsletter .note { font-size: 0.8rem; opacity: 0.75; margin: 0.6rem 0 0; }
-.newsletter .success { display: none; font-weight: 700; margin-top: 0.6rem; }
+.newsletter input[type="email"] { flex: 1 1 220px; padding: 0.65rem 0.8rem; border: 1px solid var(--line-strong); border-radius: 4px; font-size: 1rem; background: #fff; color: var(--ink); }
+.newsletter button, .btn { background: #111; color: #fff; border: 0; padding: 0.65rem 1.2rem; font-size: 1rem; font-weight: 700; border-radius: 4px; cursor: pointer; display: inline-block; }
+.newsletter button:hover, .btn:hover { background: #000; text-decoration: none; }
+.newsletter .note { font-size: 0.8rem; color: var(--muted); margin: 0.6rem 0 0; }
+.newsletter .success { display: none; font-weight: 700; margin-top: 0.6rem; color: var(--ink); }
 
 /* ---------- Article page ---------- */
 .article-layout { display: grid; grid-template-columns: 1fr; gap: 2rem; }
 @media (min-width: 960px) { .article-layout { grid-template-columns: 1fr 300px; } .article-layout .most-read { margin-top: 0.4rem; } }
-.article-head h1 { font-family: var(--serif); font-size: 2rem; line-height: 1.15; margin: 0.5rem 0; }
-@media (min-width: 860px) { .article-head h1 { font-size: 2.45rem; } }
-.article-head .dek { font-size: 1.15rem; color: #333; line-height: 1.5; }
+.article-head h1 { font-size: 2rem; line-height: 1.2; margin: 0.5rem 0; font-weight: 800; }
+@media (min-width: 860px) { .article-head h1 { font-size: 2.4rem; } }
+.article-head .dek { font-size: 1.12rem; color: #444; line-height: 1.5; }
 .article-hero { margin: 1rem 0 1.4rem; }
-.article-hero img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 3px; }
+.article-hero img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; }
+.article-hero .art { border-radius: 8px; }
 .article-body p { font-size: 1.06rem; line-height: 1.7; margin: 0 0 1.1rem; }
-.article-body p:first-of-type::first-letter { font-family: var(--serif); font-size: 2.6rem; line-height: 1; font-weight: 700; float: left; margin: 0.1rem 0.4rem 0 0; }
 .source-box { border: 1px solid var(--line); border-left: 4px solid var(--red); background: var(--light); padding: 0.8rem 1rem; margin: 1.6rem 0; font-size: 0.95rem; }
 .source-box strong { display: block; margin-bottom: 0.2rem; }
 .source-box a { color: var(--red); font-weight: 700; }
-.related { margin-top: 2rem; border-top: 2px solid var(--ink); padding-top: 0.8rem; }
-.related h2 { font-family: var(--serif); font-size: 1.3rem; margin: 0 0 0.6rem; }
+.related { margin-top: 2rem; border-top: 1px solid var(--line); padding-top: 0.8rem; }
+.related h2 { font-size: 0.95rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 0.6rem; }
+.related-list { list-style: none; margin: 0; padding: 0; }
+.related-list li { padding: 0.7rem 0; border-bottom: 1px solid var(--line); }
+.related-list li:last-child { border-bottom: 0; }
+.related-list a { font-weight: 700; }
+.related-list a:hover { color: var(--red); }
 
 /* ---------- Footer ---------- */
-footer.site-footer { background: var(--navy); color: #d7dbe3; margin-top: 2.5rem; }
+footer.site-footer { background: #fff; color: var(--ink); margin-top: 2.5rem; border-top: 1px solid var(--line); }
 footer.site-footer .wrap { padding-top: 1.8rem; padding-bottom: 1.4rem; }
-footer.site-footer a { color: #fff; }
+footer.site-footer a { color: #333; }
+footer.site-footer a:hover { color: var(--red); }
 footer.site-footer .cols { display: grid; grid-template-columns: 1fr; gap: 1.4rem; }
-@media (min-width: 700px) { footer.site-footer .cols { grid-template-columns: 2fr 1fr 1fr 1.4fr; } }
-footer.site-footer h3 { color: #fff; font-family: var(--serif); margin: 0 0 0.5rem; font-size: 1.1rem; }
-footer.site-footer h3 .news { color: #ff5a5a; }
+@media (min-width: 700px) { footer.site-footer .cols { grid-template-columns: repeat(4, 1fr); } }
+footer.site-footer h3 { color: var(--ink); margin: 0 0 0.5rem; font-size: 0.95rem; font-weight: 800; }
+footer.site-footer h3 .news { color: var(--ink); }
 footer.site-footer ul { list-style: none; margin: 0; padding: 0; }
 footer.site-footer li { margin: 0.32rem 0; font-size: 0.94rem; }
-footer.site-footer p { font-size: 0.94rem; }
+footer.site-footer p { font-size: 0.94rem; color: #555; }
 footer.site-footer .mini-form { display: flex; gap: 0.4rem; margin-top: 0.6rem; }
-footer.site-footer .mini-form input[type="email"] { flex: 1; min-width: 0; padding: 0.5rem 0.6rem; border: 0; border-radius: 3px; font-size: 0.9rem; }
-footer.site-footer .mini-form button { background: var(--red); color: #fff; border: 0; padding: 0.5rem 0.8rem; border-radius: 3px; font-weight: 700; cursor: pointer; }
-footer.site-footer .fineprint { border-top: 1px solid rgba(255,255,255,0.2); margin-top: 1.5rem; padding-top: 0.9rem; font-size: 0.82rem; opacity: 0.8; display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; justify-content: space-between; }
+footer.site-footer .mini-form input[type="email"] { flex: 1; min-width: 0; padding: 0.5rem 0.6rem; border: 1px solid var(--line-strong); border-radius: 4px; font-size: 0.9rem; background: #fff; color: var(--ink); }
+footer.site-footer .mini-form button { background: #111; color: #fff; border: 0; padding: 0.5rem 0.8rem; border-radius: 4px; font-weight: 700; cursor: pointer; }
+footer.site-footer .mini-form button:hover { background: #000; }
+footer.site-footer .fineprint { border-top: 1px solid var(--line); margin-top: 1.5rem; padding-top: 0.9rem; font-size: 0.82rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; justify-content: space-between; }
 
 .skip-link { position: absolute; left: -999px; top: 0; background: var(--red); color: #fff; padding: 0.5rem 1rem; z-index: 300; }
 .skip-link:focus { left: 0; }
@@ -518,32 +501,40 @@ def nav_html(active, prefix=""):
     return '<ul>' + "".join(items) + "</ul>"
 
 
-def ticker_items(prefix=""):
-    return "".join(f'<a href="{prefix}live.html">{hescape(h)}</a>' for _, h, _ in JUST_IN)
-
-
 def header_html(active, prefix=""):
-    ticker = ticker_items(prefix)
-    # ticker content duplicated for a seamless CSS marquee loop
+    topics = "".join(
+        f'<a href="{prefix}{href}">{label}</a>' for label, href in TOPICS
+    )
     return f"""<a class="skip-link" href="#main">Skip to main content</a>
-<div class="topbar"><div class="wrap">
-<span class="dateline" data-today>Friday, 20 November 2026</span>
-<a href="{prefix}live.html"><span class="live-dot"></span>Live</a>
-<span class="spacer"></span>
+<header class="site-header">
+<div class="wrap header-row">
+<a class="wordmark" href="{prefix}index.html" data-site-name>Western World News</a>
+<button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+<nav class="main-nav" id="main-nav" aria-label="Main navigation">{nav_html(active, prefix)}</nav>
+<div class="header-actions">
+<a class="live-link" href="{prefix}live.html"><span class="live-dot"></span>Live</a>
 <div class="search-box">
 <input type="search" id="site-search" placeholder="Search news..." aria-label="Search news" autocomplete="off">
 <div class="search-results" id="search-results" role="listbox" aria-label="Search results"></div>
 </div>
-</div></div>
-<div class="breaking-bar"><div class="wrap"><span class="breaking-label">BREAKING</span><a class="breaking-main" id="breaking-link" href="{prefix}articles/russia-ukraine-missile-attack.html">Russia launches one of the largest missile attacks of the war on Ukraine: 110+ missiles fired overnight</a><div class="ticker" aria-hidden="true"><div class="ticker-track">{ticker}{ticker}</div></div></div></div>
-<header class="masthead"><div class="wrap">
-<div>
-<a class="wordmark" href="{prefix}index.html" data-site-name>Western World <span class="news">News</span></a>
-<div class="tagline" data-tagline>Western and European news, live: politics, war, business and culture.</div>
+<a class="btn-black" href="#newsletter">Newsletter</a>
 </div>
-<span class="dateline" data-today>Friday, 20 November 2026</span>
-</div></header>
-<nav class="main-nav" id="main-nav" aria-label="Main navigation"><div class="wrap"><button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>{nav_html(active, prefix)}</div></nav>"""
+</div>
+<div class="topic-row"><div class="wrap">{topics}</div></div>
+</header>"""
+
+
+# Smaller topic links under the header (real current stories).
+TOPICS = [
+    ("Ukraine war", "live.html"),
+    ("Gaza ceasefire", "articles/gaza-yellow-line-raid.html"),
+    ("EU-UK reset", "articles/eu-uk-reset-deal.html"),
+    ("COP31", "articles/at-cop31-conflict-over-climate-science-slows-action-on.html"),
+    ("Wall Street", "articles/wall-street-selloff.html"),
+    ("Rwanda return hubs", "articles/eu-rwanda-return-hub.html"),
+    ("Nations League", "articles/nations-league-draw.html"),
+    ("Grammys", "articles/raye-grammy-nominations.html"),
+]
 
 
 def footer_html(prefix=""):
@@ -610,7 +601,7 @@ def page(title, description, active, body, canonical, og_type="website", prefix=
 <meta name="twitter:title" content="{title} | Western World News">
 <meta name="twitter:description" content="{description}">
 <link rel="stylesheet" href="{prefix}assets/css/style.css">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23bb1919'/%3E%3Ctext x='16' y='22' font-family='Georgia' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23bb1919'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
 {extra_head}</head>
 <body>
 {header_html(active, prefix)}
@@ -631,20 +622,36 @@ def art_html(section_label, small=False):
             f'<span class="monogram">WWN</span><span class="art-label">{section_label}</span></div>')
 
 
-def img_html(slug, w=800, cls=""):
+def img_html(slug, w=800, cls="", caption=True):
     """Photo figure for a story, or the gradient tile if no photo is set."""
     if slug in IMAGES:
         pid, cap = IMAGES[slug]
         alt = cap.split(". Illustrative")[0]
-        return (f'<figure class="{cls}"><img src="{uimg(pid, w)}" alt="{hescape(alt)}" loading="lazy">'
-                f'<figcaption>{hescape(cap)}</figcaption></figure>')
+        fig = (f'<figure class="{cls}"><img src="{uimg(pid, w)}" alt="{hescape(alt)}" loading="lazy">'
+               f'<figcaption>{hescape(cap)}</figcaption></figure>') if caption else \
+              f'<figure class="{cls}"><img src="{uimg(pid, w)}" alt="{hescape(alt)}" loading="lazy"></figure>'
+        return fig
     if slug in BY_SLUG and BY_SLUG[slug].get("image"):
         cap = BY_SLUG[slug].get("imageCaption") or "Photo: Unsplash"
         alt = cap.split(". Illustrative")[0]
-        return (f'<figure class="{cls}"><img src="{hescape(BY_SLUG[slug]["image"])}" alt="{hescape(alt)}" loading="lazy">'
-                f'<figcaption>{hescape(cap)}</figcaption></figure>')
+        fig = (f'<figure class="{cls}"><img src="{hescape(BY_SLUG[slug]["image"])}" alt="{hescape(alt)}" loading="lazy">'
+               f'<figcaption>{hescape(cap)}</figcaption></figure>') if caption else \
+              f'<figure class="{cls}"><img src="{hescape(BY_SLUG[slug]["image"])}" alt="{hescape(alt)}" loading="lazy"></figure>'
+        return fig
     sec = SECTIONS[BY_SLUG[slug]["section"]] if slug in BY_SLUG else "News"
     return art_html(sec, small=(w <= 800))
+
+
+def thumb_html(slug, w=400):
+    """Small thumbnail image only (no caption), or the gradient tile."""
+    s = BY_SLUG.get(slug)
+    if s and s.get("image"):
+        return f'<img src="{hescape(s["image"])}" alt="" loading="lazy">'
+    if slug in IMAGES:
+        pid, _cap = IMAGES[slug]
+        return f'<img src="{uimg(pid, w)}" alt="" loading="lazy">'
+    sec = SECTIONS[s["section"]] if s else "News"
+    return art_html(sec, small=True)
 
 
 def card_html(s, prefix=""):
@@ -658,20 +665,27 @@ def card_html(s, prefix=""):
 </article>"""
 
 
-def most_read_html(prefix=""):
+def most_read_html(prefix="", two_col=False):
+    slugs = [s for s in MOST_READ if s in BY_SLUG]
+    for s in STORIES:
+        if len(slugs) >= 10:
+            break
+        if s["slug"] not in slugs:
+            slugs.append(s["slug"])
     items = "".join(
         f'<li><div><a href="{prefix}articles/{s["slug"]}.html">{s["headline"]}</a>'
         f'<small>{SECTIONS[s["section"]]} &middot; {s["date"]}</small></div></li>'
-        for s in (BY_SLUG[slug] for slug in MOST_READ if slug in BY_SLUG)
+        for s in (BY_SLUG[slug] for slug in slugs)
     )
-    return f"""<aside class="most-read" aria-label="Most read">
-<h2>Most Read</h2>
+    cls = "most-read two-col" if two_col else "most-read"
+    return f"""<aside class="{cls}" aria-label="Most popular">
+<h2>Most Popular</h2>
 <ol id="most-read-list">{items}</ol>
 </aside>"""
 
 
 def newsletter_html():
-    return """<section class="newsletter" aria-label="Newsletter signup">
+    return """<section class="newsletter" id="newsletter" aria-label="Newsletter signup">
 <h2>The Western Briefing: free, every morning</h2>
 <p>Western and European news, war updates and the day's business headlines, in your inbox before 8am.</p>
 <form class="newsletter-form" action="#" method="post">
@@ -694,20 +708,24 @@ def watch_html():
 <div class="watch-thumb"><img src="{uimg(w['img'], 800)}" alt="{hescape(w['title'])}" loading="lazy"><span class="play">&#9654;</span><span class="dur">{w['dur']}</span></div>
 <h3>{hescape(w['title'])}</h3></a></div>""" for w in WATCH
     )
-    return f"""<section class="watch-strip" aria-label="Watch"><div class="wrap">
-<h2><span class="tag">&#9632;</span> Watch</h2>
+    return f"""<section class="watch-strip" aria-label="Watch">
+<h2>Watch</h2>
 <div class="watch-grid">{cards}</div>
-</div></section>"""
+</section>"""
 
 
 def analysis_html():
+    def slug_of(link):
+        return link.rsplit("/", 1)[-1].replace(".html", "")
     items = "".join(
-        f"""<article><p><span class="kicker">Analysis</span></p>
+        f"""<article>
+{img_html(slug_of(a['link']), w=800)}
+<p><span class="kicker">Analysis</span></p>
 <h3><a href="{a['link']}">{hescape(a['title'])}</a></h3>
 <p>{hescape(a['blurb'])}</p></article>""" for a in ANALYSIS
     )
     return f"""<section class="analysis" aria-label="Analysis">
-<h2 class="section-head"><span class="tag">&#9632;</span> Analysis</h2>
+<h2 class="section-head">Analysis</h2>
 <div class="cols">{items}</div>
 </section>"""
 
@@ -715,7 +733,25 @@ def analysis_html():
 # ---------------- Homepage ----------------
 
 def build_index():
-    hero = BY_SLUG["russia-ukraine-missile-attack"]
+    hero = BY_SLUG.get(HERO_SLUG) or STORIES[0]
+    rest = [s for s in STORIES if s["slug"] != hero["slug"]]
+    second, third = rest[0], rest[1]
+    must_slugs = [s for s in MOST_READ if s in BY_SLUG][:4]
+    used = {hero["slug"], second["slug"], third["slug"]} | set(must_slugs)
+    more = [s for s in STORIES if s["slug"] not in used][:6]
+    is_breaking = BREAKING.get("link", "").endswith(hero["slug"] + ".html")
+    hero_kicker = "Breaking" if is_breaking else f"{SECTIONS[hero['section']]} &middot; Live"
+
+    def rail_item(s, thumb=False):
+        small = f'<small>{SECTIONS[s["section"]]} &middot; {s["date"]}</small>'
+        link = f'articles/{s["slug"]}.html'
+        if thumb:
+            return (f'<li class="with-thumb"><div><a href="{link}">{s["headline"]}</a>{small}</div>'
+                    f'<a class="rail-thumb" href="{link}">{thumb_html(s["slug"])}</a></li>')
+        return f'<li><a href="{link}">{s["headline"]}</a>{small}</li>'
+
+    must_items = "".join(rail_item(BY_SLUG[s], thumb=(i == 0)) for i, s in enumerate(must_slugs))
+    more_items = "".join(rail_item(s) for s in more)
     just_in = "".join(
         f'<li><time>{t}</time><a href="live.html">{h}</a></li>' for t, h, _ in JUST_IN
     )
@@ -726,42 +762,66 @@ def build_index():
 
     def block(title, stories, grid_cls="four", slug=""):
         cards = "".join(card_html(s) for s in stories)
-        return f'<h2 class="section-head"><span class="tag">&#9632;</span> {title}</h2><div class="card-grid {grid_cls}" data-section-block data-section="{slug}">{cards}</div>'
+        return f'<h2 class="section-head">{title}</h2><div class="card-grid {grid_cls}" data-section-block data-section="{slug}">{cards}</div>'
 
     body = f"""
 <div class="hero-grid">
 <article class="hero" data-hero>
-{img_html(hero['slug'], w=1600)}
-<p><span class="kicker">War &amp; Conflict &middot; Live</span></p>
+{img_html(hero['slug'], w=1600, cls="hero-media", caption=False)}
+<div class="hero-box">
+<p><span class="kicker">{hero_kicker}</span></p>
 <h1><a href="articles/{hero['slug']}.html">{hero['headline']}</a></h1>
+</div>
 <p class="dek">{hero['dek']}</p>
 <p class="byline"><time>{hero['date']}</time> &middot; Source: {hero['source']} &middot; <a href="live.html">Follow live updates</a></p>
 </article>
+<div class="hero-second">
+<article class="second-story">
+{img_html(second['slug'], w=800)}
+<p><span class="kicker">{SECTIONS[second['section']]}</span></p>
+<h3><a href="articles/{second['slug']}.html">{second['headline']}</a></h3>
+</article>
+<article class="text-card">
 <div>
-<aside class="just-in" aria-label="Just in">
-<h2>Just In</h2>
-<ul id="just-in-list">{just_in}</ul>
+<p><span class="kicker">{SECTIONS[third['section']]}</span></p>
+<h3><a href="articles/{third['slug']}.html">{third['headline']}</a></h3>
+</div>
+<a class="text-card-thumb" href="articles/{third['slug']}.html">{thumb_html(third['slug'])}</a>
+</article>
+</div>
+<div class="hero-rail">
+<aside class="rail-block" aria-label="Must reads">
+<h2 class="rail-head">Must Reads</h2>
+<ul class="rail-list">{must_items}</ul>
 </aside>
-{most_read_html()}
+<aside class="rail-block" aria-label="More headlines">
+<h2 class="rail-head">More Headlines</h2>
+<ul class="rail-list">{more_items}</ul>
+</aside>
 </div>
 </div>
+
+<section class="liveblog-strip" aria-label="Live blog">
+<h2 class="liveblog-label">Live Blog</h2>
+<ul id="just-in-list" class="liveblog-list">{just_in}</ul>
+</section>
 
 {block("Europe", europe, slug="europe")}
 <div style="height:2rem"></div>
 {block("World", world, slug="world")}
 <div style="height:2rem"></div>
-"""
-    # Watch strip sits full-width: close the .wrap div, insert the strip
-    # (it carries its own .wrap), then reopen .wrap — all inside one <main>.
-    body += "</div>\n" + watch_html() + "\n<div class=\"wrap\">\n"
-    body += f"""
+
+{watch_html()}
+
 {block("US &amp; Politics", us_pol, slug="us,politics")}
 <div style="height:2rem"></div>
 
+{most_read_html(two_col=True)}
+
 <section aria-label="Live blog">
-<h2 class="section-head"><span class="tag">&#9632;</span> Live: Ukraine war</h2>
+<h2 class="section-head"><span class="live-dot"></span>Live: Ukraine war</h2>
 <div class="live-update">
-<time>20 Nov, 10:33</time>
+<time>Nov 20, 10:33</time>
 <h3><a href="live.html">Embassies damaged in Kyiv barrage</a></h3>
 <p>A daytime Russian barrage blew out windows at the Austrian and Dutch missions in Kyiv and damaged a cathedral, prompting Brussels to summon Moscow's envoy. <a href="live.html">Follow the live blog</a></p>
 </div>
@@ -778,9 +838,6 @@ def build_index():
         "Western World News: breaking news from Western Europe and the world: politics, war, business and culture, free to read.",
         "index.html", body, BASE + "/",
     )
-    # page() wraps body in <main><div class="wrap">…</div></main>; the
-    # watch-strip break above closes/reopens only the .wrap div, so the
-    # final document keeps a single <main> element.
     return html
 
 
@@ -790,20 +847,12 @@ def build_section(section, filename):
     stories = stories_for(section)
     label = SECTIONS[section]
     if stories:
-        items = "".join(
-            f"""<li>
-<a class="thumb" href="articles/{s['slug']}.html">{img_html(s['slug'], w=400)}</a>
-<p><span class="kicker">{SECTIONS[s['section']]}</span></p>
-<h3><a href="articles/{s['slug']}.html">{s['headline']}</a></h3>
-<p>{s['dek']}</p>
-<p class="byline"><time>{s['date']}</time> &middot; Source: {s['source']}</p>
-</li>""" for s in stories
-        )
-        listing = f'<ul class="story-list" data-section-list="{section}">{items}</ul>'
+        cards = "".join(card_html(s) for s in stories)
+        listing = f'<div class="card-grid three" data-section-list="{section}">{cards}</div>'
     else:
         listing = "<p>No stories in this section yet. New coverage is added daily.</p>"
     body = f"""
-<h1 class="section-head"><span class="tag">&#9632;</span> {label}</h1>
+<h1 class="section-head">{label}</h1>
 {listing}
 {most_read_html()}
 {newsletter_html()}
@@ -877,7 +926,7 @@ def build_article(s):
 </div>
 <section class="related">
 <h2>Related stories</h2>
-<ul class="story-list">{rel}</ul>
+<ul class="related-list">{rel}</ul>
 </section>
 </article>
 {newsletter_html()}
@@ -896,7 +945,7 @@ def build_article(s):
 # ---------------- Info pages ----------------
 
 def build_info(slug, title, description, heading, paragraphs):
-    body = f'<h1 class="section-head"><span class="tag">&#9632;</span> {heading}</h1>\n' + "\n".join(f"<p>{p}</p>" for p in paragraphs)
+    body = f'<h1 class="section-head">{heading}</h1>\n' + "\n".join(f"<p>{p}</p>" for p in paragraphs)
     return page(title, description, "index.html", body, BASE + "/" + slug + ".html")
 
 
@@ -1085,14 +1134,19 @@ MAIN_JS = """// Western World News: front-end behavior (v2).
       }).join("");
     }
 
-    // Hero (homepage).
+    // Hero (homepage): photo with the red headline box overlapping it.
     var heroEl = $("[data-hero]");
     var hero = bySlug[store.settings.heroSlug] || store.articles[0];
     if (heroEl && hero) {
+      var heroImg = hero.image
+        ? '<figure class="hero-media"><img src="' + esc(hero.image) + '" alt="' + esc(hero.headline) + '" loading="lazy"></figure>'
+        : '<div class="art" role="img" aria-label="Graphic placeholder"><span class="monogram">WWN</span><span class="art-label">' + esc(sectionLabel(hero.section)) + "</span></div>";
+      var isBreaking = store.breaking && store.breaking.link && store.breaking.link.indexOf(hero.slug) !== -1;
+      var kick = isBreaking ? "Breaking" : esc(sectionLabel(hero.section)) + " &middot; Live";
       heroEl.innerHTML =
-        tileFor(hero) +
-        '<p><span class="kicker">' + esc(sectionLabel(hero.section)) + " &middot; Live</span></p>" +
-        '<h1><a href="' + articleUrl(hero.slug) + '">' + esc(hero.headline) + "</a></h1>" +
+        heroImg +
+        '<div class="hero-box"><p><span class="kicker">' + kick + "</span></p>" +
+        '<h1><a href="' + articleUrl(hero.slug) + '">' + esc(hero.headline) + "</a></h1></div>" +
         '<p class="dek">' + esc(hero.dek) + "</p>" +
         '<p class="byline"><time>' + esc(hero.date) + "</time> &middot; Source: " + esc(hero.source) +
         ' &middot; <a href="' + fixLink("live.html") + '">Follow live updates</a></p>';
@@ -1115,27 +1169,28 @@ MAIN_JS = """// Western World News: front-end behavior (v2).
       }).join("");
     });
 
-    // Section pages.
+    // Section pages: image-above cards.
     $all("[data-section-list]").forEach(function (list) {
       var sec = list.getAttribute("data-section-list");
       var items = store.articles.filter(function (a) { return (a.sections || [a.section]).indexOf(sec) !== -1; });
       if (!items.length) return;
       list.innerHTML = items.map(function (a) {
-        return "<li>" +
-          '<a class="thumb" href="' + articleUrl(a.slug) + '">' + tileFor(a) + "</a>" +
+        return '<article class="card">' + tileFor(a) +
           '<p><span class="kicker">' + esc(sectionLabel(a.section)) + "</span></p>" +
           '<h3><a href="' + articleUrl(a.slug) + '">' + esc(a.headline) + "</a></h3>" +
           "<p>" + esc(a.dek) + "</p>" +
-          '<p class="byline"><time>' + esc(a.date) + "</time> &middot; Source: " + esc(a.source) + "</p></li>";
+          '<p class="byline"><time>' + esc(a.date) + "</time> &middot; Source: " + esc(a.source) + "</p></article>";
       }).join("");
     });
 
-    // Most Read.
+    // Most Popular: numbered list, up to 10.
     var mr = $("#most-read-list");
     if (mr) {
       var slugs = (store.mostRead || []).filter(function (s) { return bySlug[s]; });
-      if (!slugs.length) slugs = store.articles.slice(0, 5).map(function (a) { return a.slug; });
-      mr.innerHTML = slugs.slice(0, 5).map(function (slug) {
+      store.articles.forEach(function (a) {
+        if (slugs.length < 10 && slugs.indexOf(a.slug) === -1) slugs.push(a.slug);
+      });
+      mr.innerHTML = slugs.slice(0, 10).map(function (slug) {
         var a = bySlug[slug];
         return '<li><div><a href="' + articleUrl(slug) + '">' + esc(a.headline) + "</a>" +
           "<small>" + esc(sectionLabel(a.section)) + " &middot; " + esc(a.date) + "</small></div></li>";
@@ -1236,23 +1291,24 @@ ADMIN_PASSCODE = "admin123"
 ADMIN_CSS = """/* Western World News: admin panel styles (admin.html only). */
 .admin-top { background: var(--navy-dark); color: #fff; padding: 0.9rem 0; }
 .admin-top .wrap { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
-.admin-top .wordmark { font-size: 1.4rem; }
+.admin-top .wordmark { font-size: 1.4rem; color: #fff; }
+.admin-top .wordmark .news { color: #fff; }
 .admin-badge { background: var(--red); color: #fff; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; padding: 0.2rem 0.55rem; border-radius: 3px; text-transform: uppercase; }
 .admin-top .spacer { flex: 1; }
 .admin-top a { color: #fff; font-weight: 600; }
 .admin-top button { background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.4); border-radius: 3px; padding: 0.4rem 0.8rem; cursor: pointer; font-weight: 600; }
 .admin-top button:hover { background: rgba(255,255,255,0.28); }
 .gate-card { max-width: 420px; margin: 3rem auto; border: 1px solid var(--line); border-radius: 6px; padding: 1.6rem; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
-.gate-card h1 { font-family: var(--serif); margin: 0 0 0.4rem; font-size: 1.5rem; }
+.gate-card h1 { font-family: var(--sans); margin: 0 0 0.4rem; font-size: 1.5rem; }
 .gate-card p { color: var(--muted); margin: 0 0 1rem; }
 .gate-card .error { color: var(--red); font-weight: 700; display: none; margin: 0.6rem 0 0; }
 .admin-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 1rem 0 1.6rem; }
 @media (max-width: 860px) { .admin-grid { grid-template-columns: repeat(2, 1fr); } }
 .stat { border: 1px solid var(--line); border-top: 3px solid var(--red); border-radius: 4px; padding: 0.8rem 1rem; background: #fff; }
-.stat b { display: block; font-family: var(--serif); font-size: 1.9rem; line-height: 1.1; }
+.stat b { display: block; font-family: var(--sans); font-size: 1.9rem; line-height: 1.1; }
 .stat span { color: var(--muted); font-size: 0.85rem; }
 .panel { border: 1px solid var(--line); border-radius: 6px; margin: 0 0 1.6rem; overflow: hidden; }
-.panel > h2 { margin: 0; padding: 0.75rem 1rem; background: var(--navy); color: #fff; font-family: var(--serif); font-size: 1.15rem; }
+.panel > h2 { margin: 0; padding: 0.75rem 1rem; background: var(--navy); color: #fff; font-family: var(--sans); font-size: 1.15rem; }
 .panel .body { padding: 1rem; }
 .notice { background: #fff8e6; border: 1px solid #ecd27a; border-left: 4px solid #d9a400; border-radius: 4px; padding: 0.8rem 1rem; margin: 0 0 1.4rem; font-size: 0.94rem; }
 .notice b { display: block; margin-bottom: 0.2rem; }
@@ -1385,7 +1441,7 @@ ADMIN_JS = """// Western World News: admin panel (admin.html).
     var list = $("#article-list");
     list.innerHTML = data.articles.map(function (a) {
       var heroMark = data.settings.heroSlug === a.slug ? ' <b style="color:var(--red)">(Hero)</b>' : "";
-      var mrMark = (data.mostRead || []).indexOf(a.slug) !== -1 ? ' <b>· Most Read</b>' : "";
+      var mrMark = (data.mostRead || []).indexOf(a.slug) !== -1 ? ' <b>· Most Popular</b>' : "";
       return '<li><div class="t"><b>' + esc(a.headline) + "</b>" + heroMark + mrMark +
         "<small>" + esc(SECTION_LABELS[a.section] || a.section) + " · " + esc(a.date) +
         " · Source: " + esc(a.source) + " · /articles/" + esc(a.slug) + ".html</small></div>" +
@@ -1670,7 +1726,7 @@ def build_admin():
 <meta name="robots" content="noindex, nofollow">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/admin.css">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23bb1919'/%3E%3Ctext x='16' y='22' font-family='Georgia' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23bb1919'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 <header class="admin-top"><div class="wrap">
@@ -1710,7 +1766,7 @@ To make them permanent for everyone, use <b>Export JSON</b> below and send the f
 <ul class="admin-list" id="article-list"></ul>
 <button class="btn" id="add-article" type="button">+ Add article</button>
 <form id="article-form" class="hidden" style="margin-top:1.2rem">
-<h3 id="af-title-text" style="font-family:var(--serif);margin:0 0 0.8rem">Add article</h3>
+<h3 id="af-title-text" style="font-family:var(--sans);margin:0 0 0.8rem">Add article</h3>
 <div class="form-grid">
 <div class="field"><label for="af-title">Headline *</label><input id="af-title" type="text" required></div>
 <div class="field"><label for="af-slug">URL slug * <span class="hint">lower-case letters, numbers, hyphens. Auto-filled from the headline</span></label><input id="af-slug" type="text" required></div>
@@ -1724,7 +1780,7 @@ To make them permanent for everyone, use <b>Export JSON</b> below and send the f
 <div class="field"><label for="af-source-url">Source link</label><input id="af-source-url" type="url" placeholder="https://..."></div>
 <div class="field full"><div class="check-row">
 <label><input id="af-hero" type="checkbox"> Make this the homepage hero story</label>
-<label><input id="af-mostread" type="checkbox"> Show in Most Read</label>
+<label><input id="af-mostread" type="checkbox"> Show in Most Popular</label>
 </div></div>
 </div>
 <div class="form-actions"><button class="btn" type="submit">Save article</button>
@@ -1745,7 +1801,7 @@ To make them permanent for everyone, use <b>Export JSON</b> below and send the f
 <section class="panel"><h2>Just In feed</h2><div class="body">
 <ul class="admin-list" id="justin-list"></ul>
 <form id="justin-form">
-<h3 id="ji-form-title" style="font-family:var(--serif);margin:0 0 0.8rem">Add Just In item</h3>
+<h3 id="ji-form-title" style="font-family:var(--sans);margin:0 0 0.8rem">Add Just In item</h3>
 <div class="form-grid">
 <div class="field"><label for="ji-time">Time</label><input id="ji-time" type="text" placeholder="20 Nov, 10:33"></div>
 <div class="field"><label for="ji-link">Link</label><input id="ji-link" type="text" value="live.html"></div>
@@ -1758,7 +1814,7 @@ To make them permanent for everyone, use <b>Export JSON</b> below and send the f
 <section class="panel"><h2>Live blog</h2><div class="body">
 <ul class="admin-list" id="live-list"></ul>
 <form id="live-form">
-<h3 id="lv-form-title" style="font-family:var(--serif);margin:0 0 0.8rem">Add live update</h3>
+<h3 id="lv-form-title" style="font-family:var(--sans);margin:0 0 0.8rem">Add live update</h3>
 <div class="form-grid">
 <div class="field"><label for="lv-time">Time</label><input id="lv-time" type="text" placeholder="20 Nov, 10:33"></div>
 <div class="field full"><label for="lv-headline">Headline *</label><input id="lv-headline" type="text" required></div>
