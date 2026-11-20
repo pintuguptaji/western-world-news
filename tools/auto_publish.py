@@ -120,7 +120,13 @@ def log(msg):
 
 
 def clean_text(raw):
-    """Strip HTML tags/entities, collapse whitespace."""
+    """Strip HTML tags/entities, collapse whitespace.
+
+    Human-from-USA rules (Pintu, 2026-11-20): no em/en dashes or other
+    AI-tell symbols anywhere on the site; US spelling; US date format.
+    Applied to every feed-derived headline and summary, so auto-published
+    stories stay clean. Same rules live in tools/build_site.py.
+    """
     if not raw:
         return ""
     # Keep sentence boundaries where block elements end, so a description
@@ -131,7 +137,59 @@ def clean_text(raw):
     text = html.unescape(text)
     text = re.sub(r"\s*\.\s*\.", ".", text)
     text = re.sub(r"\s+", " ", text).strip()
-    return text
+    # AI-tell symbols: em/en dash, ellipsis char, star, arrow, bullet.
+    text = text.replace(" — ", ", ").replace("—", ", ")
+    text = text.replace(" – ", ", ").replace("–", "-")
+    text = text.replace("…", "...").replace("★", "")
+    text = text.replace(" → ", " to ").replace("→", " to ")
+    text = text.replace(" • ", ", ").replace("•", "")
+    # British -> US spelling.
+    text = _UK_US_RE.sub(_us_word, text)
+    # Day-first dates -> US Month Day, Year.
+    text = re.sub(r"(\d{1,2})-(\d{1,2}) " + _MONTH_RE + r"\b",
+                  lambda m: f"{m.group(3)} {m.group(1)}-{m.group(2)}", text)
+    text = re.sub(r"(\d{1,2}) and (\d{1,2}) " + _MONTH_RE + r"\b",
+                  lambda m: f"{m.group(3)} {m.group(1)} and {m.group(2)}", text)
+    text = re.sub(r"(\d{1,2}) " + _MONTH_RE + r" (\d{4})\b",
+                  lambda m: f"{m.group(2)} {m.group(1)}, {m.group(3)}", text)
+    text = re.sub(r"(\d{1,2}) " + _MONTH_RE + r"\b",
+                  lambda m: f"{m.group(2)} {m.group(1)}", text)
+    text = re.sub(r",\s*,", ",", text)
+    text = re.sub(r",\s*\.", ".", text)
+    text = re.sub(r"\s{2,}", " ", text)
+    return text.strip()
+
+
+_MONTHS = ("January", "February", "March", "April", "May", "June", "July",
+           "August", "September", "October", "November", "December",
+           "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
+           "Sept", "Oct", "Nov", "Dec")
+_MONTH_RE = "(" + "|".join(_MONTHS) + ")"
+_UK_US = {
+    "defence": "defense", "defences": "defenses", "centre": "center",
+    "organise": "organize", "organised": "organized", "organiser": "organizer",
+    "organisers": "organizers", "organising": "organizing",
+    "behaviour": "behavior", "favour": "favor", "favourite": "favorite",
+    "labour": "labor", "programme": "program", "travelled": "traveled",
+    "travelling": "traveling", "cancelled": "canceled", "whilst": "while",
+    "amongst": "among", "realise": "realize", "recognise": "recognize",
+    "licence": "license", "grey": "gray", "rumour": "rumor",
+    "rumours": "rumors", "enquiry": "inquiry", "enquiries": "inquiries",
+    "cheque": "check", "focussed": "focused", "labelled": "labeled",
+    "modelling": "modeling", "practise": "practice",
+}
+_UK_US_RE = re.compile(r"\b(" + "|".join(sorted(_UK_US, key=len, reverse=True)) + r")\b",
+                        re.IGNORECASE)
+
+
+def _us_word(m):
+    w = m.group(1)
+    rep = _UK_US[w.lower()]
+    if w.isupper():
+        return rep.upper()
+    if w[0].isupper():
+        return rep[0].upper() + rep[1:]
+    return rep
 
 
 _EMOJI_RE = re.compile(
@@ -394,7 +452,7 @@ def resolve_image(item):
 
 
 def fmt_date(d):
-    return f"{d.day} {d.strftime('%B %Y')}"
+    return f"{d.strftime('%B')} {d.day}, {d.year}"
 
 
 def load_data():

@@ -1,4 +1,4 @@
-/* Western World News — admin panel styles (admin.html only). */
+/* Western World News: admin panel styles (admin.html only). */
 .admin-top { background: var(--navy-dark); color: #fff; padding: 0.9rem 0; }
 .admin-top .wrap { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
 .admin-top .wordmark { font-size: 1.4rem; }

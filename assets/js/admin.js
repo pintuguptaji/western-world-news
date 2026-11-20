@@ -1,4 +1,4 @@
-// Western World News — admin panel (admin.html).
+// Western World News: admin panel (admin.html).
 // Passcode gate only: this is a static site, so the passcode is a basic
 // gate, NOT real server security. Anyone with the site files can read the
 // content. Do not rely on it to protect secrets.
@@ -43,7 +43,7 @@
   function save(msg) {
     data = store.save(data);
     renderAll();
-    toast(msg || "Saved — live across the site in this browser.");
+    toast(msg || "Saved. Live across the site in this browser.");
   }
 
   // ---------- Gate ----------
@@ -87,12 +87,12 @@
     $("#stat-live").textContent = data.liveUpdates.length;
     $("#saved-note").textContent = store.hasSaved()
       ? "You have unpublished changes saved in this browser. Export JSON below to make them permanent."
-      : "No unpublished changes — showing the site's default content.";
+      : "No unpublished changes. Showing the site's default content.";
   }
   function renderArticles() {
     var list = $("#article-list");
     list.innerHTML = data.articles.map(function (a) {
-      var heroMark = data.settings.heroSlug === a.slug ? ' <b style="color:var(--red)">★ Hero</b>' : "";
+      var heroMark = data.settings.heroSlug === a.slug ? ' <b style="color:var(--red)">(Hero)</b>' : "";
       var mrMark = (data.mostRead || []).indexOf(a.slug) !== -1 ? ' <b>· Most Read</b>' : "";
       return '<li><div class="t"><b>' + esc(a.headline) + "</b>" + heroMark + mrMark +
         "<small>" + esc(SECTION_LABELS[a.section] || a.section) + " · " + esc(a.date) +
@@ -120,7 +120,7 @@
   function renderJustIn() {
     var list = $("#justin-list");
     list.innerHTML = data.justIn.map(function (it, i) {
-      return '<li><div class="t"><b>' + esc(it.time) + "</b> — " + esc(it.text) +
+      return '<li><div class="t"><b>' + esc(it.time) + "</b>: " + esc(it.text) +
         "<small>Link: " + esc(it.link || "live.html") + "</small></div>" +
         '<button class="btn small" data-ji-edit="' + i + '">Edit</button>' +
         '<button class="btn danger" data-ji-del="' + i + '">Delete</button></li>';
@@ -146,7 +146,7 @@
   function renderLive() {
     var list = $("#live-list");
     list.innerHTML = data.liveUpdates.map(function (u, i) {
-      return '<li><div class="t"><b>' + esc(u.time) + " — " + esc(u.headline) + "</b>" +
+      return '<li><div class="t"><b>' + esc(u.time) + ": " + esc(u.headline) + "</b>" +
         "<small>" + esc(u.text) + "</small></div>" +
         '<button class="btn small" data-lv-edit="' + i + '">Edit</button>' +
         '<button class="btn danger" data-lv-del="' + i + '">Delete</button></li>';
@@ -270,7 +270,7 @@
     }
     $("#article-form").classList.add("hidden");
     editingSlug = null;
-    save("Article saved — it is live on the site in this browser now.");
+    save("Article saved. It is live on the site in this browser now.");
   });
 
   // ---------- Just In form ----------
@@ -328,7 +328,7 @@
     document.body.appendChild(a);
     a.click();
     a.remove();
-    toast("Exported wwn-content.json — keep it to make changes permanent.");
+    toast("Exported wwn-content.json. Keep it to make changes permanent.");
   });
   $("#import-file").addEventListener("change", function (e) {
     var file = e.target.files[0];
@@ -341,7 +341,7 @@
         if (!confirm("Replace all current content with the imported file?")) return;
         data = store.save(imported);
         renderAll();
-        toast("Imported — content replaced.");
+        toast("Imported. Content replaced.");
       } catch (err) { alert("That file is not a valid Western World News content export."); }
       e.target.value = "";
     };

@@ -43,10 +43,87 @@ SECTIONS = {
 # WATCH / ANALYSIS / IMAGES below stay here: they are curated design blocks.
 import json as _json
 
+
+# --- Human-from-USA text rules (Pintu, 2026-11-20) ---
+# No em/en dashes or other AI-tell symbols anywhere on the site; US spelling
+# and US date format (November 20, 2026). Applied to loaded article data so
+# even imported content comes out clean. Same rules live in
+# tools/auto_publish.py (clean_text) for feed-derived stories.
+import re as _re
+
+_MONTHS = ("January", "February", "March", "April", "May", "June", "July",
+           "August", "September", "October", "November", "December",
+           "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
+           "Sept", "Oct", "Nov", "Dec")
+_MONTH_RE = "(" + "|".join(_MONTHS) + ")"
+_UK_US = {
+    "defence": "defense", "defences": "defenses", "centre": "center",
+    "organise": "organize", "organised": "organized", "organiser": "organizer",
+    "organisers": "organizers", "organising": "organizing",
+    "behaviour": "behavior", "favour": "favor", "favourite": "favorite",
+    "labour": "labor", "programme": "program", "travelled": "traveled",
+    "travelling": "traveling", "cancelled": "canceled", "whilst": "while",
+    "amongst": "among", "realise": "realize", "recognise": "recognize",
+    "licence": "license", "grey": "gray", "rumour": "rumor",
+    "rumours": "rumors", "enquiry": "inquiry", "enquiries": "inquiries",
+    "cheque": "check", "focussed": "focused", "labelled": "labeled",
+    "modelling": "modeling", "practise": "practice",
+}
+_UK_US_RE = _re.compile(r"\b(" + "|".join(sorted(_UK_US, key=len, reverse=True)) + r")\b",
+                        _re.IGNORECASE)
+
+
+def _us_word(m):
+    w = m.group(1)
+    rep = _UK_US[w.lower()]
+    if w.isupper():
+        return rep.upper()
+    if w[0].isupper():
+        return rep[0].upper() + rep[1:]
+    return rep
+
+
+def clean_text(text):
+    if not text:
+        return text
+    text = text.replace(" \u2014 ", ", ")
+    text = text.replace("\u2014", ", ")
+    text = text.replace(" \u2013 ", ", ")
+    text = text.replace("\u2013", "-")
+    text = text.replace("\u2026", "...")
+    text = text.replace("\u2605", "")
+    text = text.replace(" \u2192 ", " to ")
+    text = text.replace("\u2192", " to ")
+    text = text.replace(" \u2022 ", ", ")
+    text = text.replace("\u2022", "")
+    text = _UK_US_RE.sub(_us_word, text)
+    text = _re.sub(r"(\d{1,2})-(\d{1,2}) " + _MONTH_RE + r"\b",
+                   lambda m: f"{m.group(3)} {m.group(1)}-{m.group(2)}", text)
+    text = _re.sub(r"(\d{1,2}) and (\d{1,2}) " + _MONTH_RE + r"\b",
+                   lambda m: f"{m.group(3)} {m.group(1)} and {m.group(2)}", text)
+    text = _re.sub(r"(\d{1,2}) " + _MONTH_RE + r" (\d{4})\b",
+                   lambda m: f"{m.group(2)} {m.group(1)}, {m.group(3)}", text)
+    text = _re.sub(r"(\d{1,2}) " + _MONTH_RE + r"\b",
+                   lambda m: f"{m.group(2)} {m.group(1)}", text)
+    text = _re.sub(r",\s*,", ",", text)
+    text = _re.sub(r",\s*\.", ".", text)
+    text = _re.sub(r"\s{2,}", " ", text)
+    return text.strip()
+
+
+def _clean_obj(obj):
+    if isinstance(obj, str):
+        return clean_text(obj)
+    if isinstance(obj, list):
+        return [_clean_obj(x) for x in obj]
+    if isinstance(obj, dict):
+        return {k: _clean_obj(v) for k, v in obj.items()}
+    return obj
+
 def _load_data():
     path = os.path.join(OUT, "data", "articles.json")
     with open(path, encoding="utf-8") as f:
-        return _json.load(f)
+        return _clean_obj(_json.load(f))
 
 _DATA = _load_data()
 STORIES = _DATA["articles"]
@@ -92,7 +169,7 @@ IMAGES = {
 # "Watch" strip — video-style cards. NOTE: no real video exists yet; cards
 # link to the live blog / full articles. See README.md.
 WATCH = [
-    {"title": "The night Kyiv was hit \u2014 the story so far", "dur": "01:32",
+    {"title": "The night Kyiv was hit: the story so far", "dur": "01:32",
      "img": "1504711434969-e33886168f5c", "link": "live.html"},
     {"title": "Europe\u2019s reset with Britain, explained", "dur": "02:14",
      "img": "1473341304170-971dccb5ac1e", "link": "articles/eu-uk-reset-deal.html"},
@@ -102,17 +179,17 @@ WATCH = [
 
 ANALYSIS = [
     {"title": "After Shenzhen, Europe\u2019s answer is: not Yalta",
-     "blurb": "An hour of handshakes, a declaration on the UN and oil \u2014 and a war that carried on through the night. The summit mattered, but Europe\u2019s reply in Berlin mattered more.",
+     "blurb": "An hour of handshakes, a declaration on the UN and oil, and a war that carried on through the night. The summit mattered, but Europe\u2019s reply in Berlin mattered more.",
      "link": "articles/shenzhen-aftermath-europe-pushback.html"},
     {"title": "The EU-UK reset: what the deal actually changes",
-     "blurb": "Food checks gone, carbon markets linked, 100,000 young people on the move \u2014 and the hardest question, university fees, kicked six months down the road.",
+     "blurb": "Food checks gone, carbon markets linked, 100,000 young people on the move, and the hardest question, university fees, kicked six months down the road.",
      "link": "articles/eu-uk-reset-deal.html"},
     {"title": "The market\u2019s AI question has turned into a rout",
      "blurb": "Six straight falls, the Dow below 50,000 and the Nikkei down 5 percent. The boom that carried stocks to records is now the thing investors fear most.",
      "link": "articles/wall-street-selloff.html"},
 ]
 
-CSS = """/* Western World News — publisher design v2.
+CSS = """/* Western World News: publisher design v2.
    BBC/CNN-level look: dark navy masthead, red breaking bar with ticker,
    serif display headlines, photo-led cards, Most Read sidebar, Watch strip.
    Mobile-first; no webfonts (system serif/sans stacks only). */
@@ -458,11 +535,11 @@ def header_html(active, prefix=""):
 <div class="search-results" id="search-results" role="listbox" aria-label="Search results"></div>
 </div>
 </div></div>
-<div class="breaking-bar"><div class="wrap"><span class="breaking-label">BREAKING</span><a class="breaking-main" id="breaking-link" href="{prefix}articles/russia-ukraine-missile-attack.html">Russia launches one of the largest missile attacks of the war on Ukraine — 110+ missiles fired overnight</a><div class="ticker" aria-hidden="true"><div class="ticker-track">{ticker}{ticker}</div></div></div></div>
+<div class="breaking-bar"><div class="wrap"><span class="breaking-label">BREAKING</span><a class="breaking-main" id="breaking-link" href="{prefix}articles/russia-ukraine-missile-attack.html">Russia launches one of the largest missile attacks of the war on Ukraine: 110+ missiles fired overnight</a><div class="ticker" aria-hidden="true"><div class="ticker-track">{ticker}{ticker}</div></div></div></div>
 <header class="masthead"><div class="wrap">
 <div>
 <a class="wordmark" href="{prefix}index.html" data-site-name>Western World <span class="news">News</span></a>
-<div class="tagline" data-tagline>Western and European news, live — politics, war, business and culture.</div>
+<div class="tagline" data-tagline>Western and European news, live: politics, war, business and culture.</div>
 </div>
 <span class="dateline" data-today>Friday, 20 November 2026</span>
 </div></header>
@@ -474,7 +551,7 @@ def footer_html(prefix=""):
 <div class="cols">
 <div>
 <h3 data-site-name>Western World <span class="news">News</span></h3>
-<p data-tagline>Independent news from the West and the world — politics, war, business and culture, reported fast and in our own words. Free to read.</p>
+<p data-tagline>Independent news from the West and the world: politics, war, business and culture, reported fast and in our own words. Free to read.</p>
 </div>
 <div>
 <h3>Sections</h3>
@@ -502,16 +579,16 @@ def footer_html(prefix=""):
 </div>
 <div>
 <h3>The Western Briefing</h3>
-<p>Our free morning newsletter — the day's Western and European news in your inbox before 8am.</p>
+<p>Our free morning newsletter: the day's Western and European news in your inbox before 8am.</p>
 <form class="mini-form newsletter-form" action="#" method="post">
 <label for="ft-email" class="sr-only">Email address</label>
 <input id="ft-email" type="email" name="email" placeholder="Your email" required>
 <button type="submit">Sign up</button>
 </form>
-<p class="success" style="display:none">Thank you — you are on the list.</p>
+<p class="success" style="display:none">Thank you. You are on the list.</p>
 </div>
 </div>
-<p class="fineprint"><span>&copy; 2026 Western World News (westernworldnews.com). All stories are original summaries written by our editors; original reporting is credited and linked. Content refreshed on the evening of 20 November 2026 \u2014 see README.md.</span><span>Photos: Unsplash (illustrative).</span></p>
+<p class="fineprint"><span>&copy; 2026 Western World News (westernworldnews.com). All stories are original summaries written by our editors; original reporting is credited and linked. Content refreshed on the evening of November 20, 2026. See README.md.</span><span>Photos: Unsplash (illustrative).</span></p>
 </div></footer>"""
 
 
@@ -595,15 +672,15 @@ def most_read_html(prefix=""):
 
 def newsletter_html():
     return """<section class="newsletter" aria-label="Newsletter signup">
-<h2>The Western Briefing — free, every morning</h2>
+<h2>The Western Briefing: free, every morning</h2>
 <p>Western and European news, war updates and the day's business headlines, in your inbox before 8am.</p>
 <form class="newsletter-form" action="#" method="post">
 <label for="nl-email" class="sr-only" style="position:absolute;left:-9999px">Email address</label>
 <input id="nl-email" type="email" name="email" placeholder="Your email address" required>
 <button type="submit">Sign up free</button>
 </form>
-<p class="success">Thank you — you are on the list. Your first briefing arrives tomorrow morning.</p>
-<p class="note">No spam, no paywall. Unsubscribe any time. (Demo form — connect a mailing service before launch; see README.md.)</p>
+<p class="success">Thank you. You are on the list. Your first briefing arrives tomorrow morning.</p>
+<p class="note">No spam, no paywall. Unsubscribe any time. (Demo form: connect a mailing service before launch; see README.md.)</p>
 </section>"""
 
 
@@ -658,7 +735,7 @@ def build_index():
 <p><span class="kicker">War &amp; Conflict &middot; Live</span></p>
 <h1><a href="articles/{hero['slug']}.html">{hero['headline']}</a></h1>
 <p class="dek">{hero['dek']}</p>
-<p class="byline"><time>{hero['date']}</time> &middot; Source: {hero['source']} &middot; <a href="live.html">Follow live updates &rarr;</a></p>
+<p class="byline"><time>{hero['date']}</time> &middot; Source: {hero['source']} &middot; <a href="live.html">Follow live updates</a></p>
 </article>
 <div>
 <aside class="just-in" aria-label="Just in">
@@ -686,7 +763,7 @@ def build_index():
 <div class="live-update">
 <time>20 Nov, 10:33</time>
 <h3><a href="live.html">Embassies damaged in Kyiv barrage</a></h3>
-<p>A daytime Russian barrage blew out windows at the Austrian and Dutch missions in Kyiv and damaged a cathedral, prompting Brussels to summon Moscow's envoy. <a href="live.html">Follow the live blog &rarr;</a></p>
+<p>A daytime Russian barrage blew out windows at the Austrian and Dutch missions in Kyiv and damaged a cathedral, prompting Brussels to summon Moscow's envoy. <a href="live.html">Follow the live blog</a></p>
 </div>
 </section>
 
@@ -697,8 +774,8 @@ def build_index():
 {block("Business &amp; Finance", biz, slug="business-finance")}
 """
     html = page(
-        "Western World News — Western and European news, live",
-        "Western World News: breaking news from Western Europe and the world — politics, war, business and culture, free to read.",
+        "Western World News | Western and European news, live",
+        "Western World News: breaking news from Western Europe and the world: politics, war, business and culture, free to read.",
         "index.html", body, BASE + "/",
     )
     # page() wraps body in <main><div class="wrap">…</div></main>; the
@@ -733,7 +810,7 @@ def build_section(section, filename):
 """
     return page(
         f"{label} news",
-        f"Latest {label.lower()} news from Western World News — Western and European coverage, free to read.",
+        f"Latest {label.lower()} news from Western World News: Western and European coverage, free to read.",
         filename, body, BASE + "/" + filename,
     )
 
@@ -750,14 +827,14 @@ def build_live():
     )
     body = f"""
 <h1 class="section-head"><span class="live-dot"></span>Live: Ukraine war</h1>
-<p>Rolling updates on Russia's war in Ukraine — the overnight missile strikes, the Shenzhen summit and Europe's response. Times are in CET. Last updated 20 November 2026.</p>
+<p>Rolling updates on Russia's war in Ukraine: the overnight missile strikes, the Shenzhen summit and Europe's response. Times are in CET. Last updated November 20, 2026.</p>
 <div id="live-updates">{updates}</div>
-<p><a class="btn" href="articles/russia-ukraine-missile-attack.html">Read the full story &rarr;</a></p>
+<p><a class="btn" href="articles/russia-ukraine-missile-attack.html">Read the full story</a></p>
 {newsletter_html()}
 """
     return page(
-        "Live: Ukraine war — rolling updates",
-        "Live updates on Russia's war in Ukraine: missile strikes, the Trump–Xi–Putin summit and Europe's response.",
+        "Live: Ukraine war (rolling updates)",
+        "Live updates on Russia's war in Ukraine: missile strikes, the Trump-Xi-Putin summit and Europe's response.",
         "live.html", body, BASE + "/live.html",
     )
 
@@ -771,12 +848,12 @@ def build_article(s):
         # report (feed description), not original WWN summaries — say so.
         source_note = (f"This is a short summary of a {s['source']} report. "
                        f"Read the full story at {s['source']}: "
-                       f"<a href=\"{s['source_url']}\" target=\"_blank\" rel=\"noopener\">{s['source']} — original article</a>.")
+                       f"<a href=\"{s['source_url']}\" target=\"_blank\" rel=\"noopener\">Original article: {s['source']}</a>.")
     else:
         source_note = (f"This story is an original summary by Western World News, based on reporting by {s['source']} ({s['date']}). "
-                       f"Read the original report: <a href=\"{s['source_url']}\" target=\"_blank\" rel=\"noopener\">{s['source']} — original article</a>.")
+                       f"Read the original report: <a href=\"{s['source_url']}\" target=\"_blank\" rel=\"noopener\">Original article: {s['source']}</a>.")
     rel = "".join(
-        f'<li><a href="{r}.html">{BY_SLUG[r]["headline"]}</a> <span class="byline">— {BY_SLUG[r]["date"]}</span></li>'
+        f'<li><a href="{r}.html">{BY_SLUG[r]["headline"]}</a> <span class="byline">{BY_SLUG[r]["date"]}</span></li>'
         for r in s["related"]
     )
     sec = SECTIONS[s["section"]]
@@ -847,7 +924,7 @@ def default_content():
         "version": 1,
         "settings": {
             "siteName": "Western World News",
-            "tagline": "Western and European news, live — politics, war, business and culture.",
+            "tagline": "Western and European news, live: politics, war, business and culture.",
             "heroSlug": HERO_SLUG,
         },
         "breaking": BREAKING,
@@ -858,7 +935,7 @@ def default_content():
     }
 
 
-CONTENT_JS = """/* Western World News — central content store.
+CONTENT_JS = """/* Western World News: central content store.
    WWN_DEFAULT_CONTENT is the seed content baked into the static site.
    The admin panel (admin.html) saves edits to localStorage under
    WWNStore.KEY; pages load the merged result, so admin changes apply
@@ -897,7 +974,7 @@ window.WWNStore = (function () {
         if (a && a.slug && order.indexOf(a.slug) === -1) order.push(a.slug);
       });
       // Honour deletions: a saved article list that omits a default slug
-      // means the owner deleted it — but only when the saved list was
+      // means the owner deleted it, but only when the saved list was
       // written by the admin (it always carries version + savedAt).
       if (saved.savedAt) {
         var kept = saved.articles.map(function (a) { return a.slug; });
@@ -923,7 +1000,7 @@ window.WWNStore = (function () {
 })();
 """
 
-MAIN_JS = """// Western World News — front-end behaviour (v2).
+MAIN_JS = """// Western World News: front-end behavior (v2).
 // Renders dynamic regions from the content store (assets/js/content.js),
 // so admin edits in localStorage apply across the whole site.
 // Static HTML in each page is the SEO fallback when JS is unavailable.
@@ -1018,7 +1095,7 @@ MAIN_JS = """// Western World News — front-end behaviour (v2).
         '<h1><a href="' + articleUrl(hero.slug) + '">' + esc(hero.headline) + "</a></h1>" +
         '<p class="dek">' + esc(hero.dek) + "</p>" +
         '<p class="byline"><time>' + esc(hero.date) + "</time> &middot; Source: " + esc(hero.source) +
-        ' &middot; <a href="' + fixLink("live.html") + '">Follow live updates &rarr;</a></p>';
+        ' &middot; <a href="' + fixLink("live.html") + '">Follow live updates</a></p>';
     }
 
     // Homepage section blocks.
@@ -1092,7 +1169,7 @@ MAIN_JS = """// Western World News — front-end behaviour (v2).
           src.innerHTML = "<strong>Source</strong>This story is an original summary by " +
             esc(store.settings.siteName) + ", based on reporting by " + esc(a.source) + " (" + esc(a.date) +
             '). Read the original report: <a href="' + esc(a.source_url) +
-            '" target="_blank" rel="noopener">' + esc(a.source) + " — original article</a>.";
+            '" target="_blank" rel="noopener">' + "Original article: " + esc(a.source) + "</a>.";
         }
       }
     }
@@ -1106,7 +1183,7 @@ MAIN_JS = """// Western World News — front-end behaviour (v2).
       });
     }
 
-    // Search — filters articles, shows a dropdown of matches.
+    // Search: filters articles, shows a dropdown of matches.
     var input = $("#site-search"), box = $("#search-results");
     if (input && box) {
       input.addEventListener("input", function () {
@@ -1156,7 +1233,7 @@ MAIN_JS = """// Western World News — front-end behaviour (v2).
 
 ADMIN_PASSCODE = "admin123"
 
-ADMIN_CSS = """/* Western World News — admin panel styles (admin.html only). */
+ADMIN_CSS = """/* Western World News: admin panel styles (admin.html only). */
 .admin-top { background: var(--navy-dark); color: #fff; padding: 0.9rem 0; }
 .admin-top .wrap { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
 .admin-top .wordmark { font-size: 1.4rem; }
@@ -1213,7 +1290,7 @@ ADMIN_CSS = """/* Western World News — admin panel styles (admin.html only). *
 .hidden { display: none !important; }
 """
 
-ADMIN_JS = """// Western World News — admin panel (admin.html).
+ADMIN_JS = """// Western World News: admin panel (admin.html).
 // Passcode gate only: this is a static site, so the passcode is a basic
 // gate, NOT real server security. Anyone with the site files can read the
 // content. Do not rely on it to protect secrets.
@@ -1258,7 +1335,7 @@ ADMIN_JS = """// Western World News — admin panel (admin.html).
   function save(msg) {
     data = store.save(data);
     renderAll();
-    toast(msg || "Saved — live across the site in this browser.");
+    toast(msg || "Saved. Live across the site in this browser.");
   }
 
   // ---------- Gate ----------
@@ -1302,12 +1379,12 @@ ADMIN_JS = """// Western World News — admin panel (admin.html).
     $("#stat-live").textContent = data.liveUpdates.length;
     $("#saved-note").textContent = store.hasSaved()
       ? "You have unpublished changes saved in this browser. Export JSON below to make them permanent."
-      : "No unpublished changes — showing the site's default content.";
+      : "No unpublished changes. Showing the site's default content.";
   }
   function renderArticles() {
     var list = $("#article-list");
     list.innerHTML = data.articles.map(function (a) {
-      var heroMark = data.settings.heroSlug === a.slug ? ' <b style="color:var(--red)">★ Hero</b>' : "";
+      var heroMark = data.settings.heroSlug === a.slug ? ' <b style="color:var(--red)">(Hero)</b>' : "";
       var mrMark = (data.mostRead || []).indexOf(a.slug) !== -1 ? ' <b>· Most Read</b>' : "";
       return '<li><div class="t"><b>' + esc(a.headline) + "</b>" + heroMark + mrMark +
         "<small>" + esc(SECTION_LABELS[a.section] || a.section) + " · " + esc(a.date) +
@@ -1335,7 +1412,7 @@ ADMIN_JS = """// Western World News — admin panel (admin.html).
   function renderJustIn() {
     var list = $("#justin-list");
     list.innerHTML = data.justIn.map(function (it, i) {
-      return '<li><div class="t"><b>' + esc(it.time) + "</b> — " + esc(it.text) +
+      return '<li><div class="t"><b>' + esc(it.time) + "</b>: " + esc(it.text) +
         "<small>Link: " + esc(it.link || "live.html") + "</small></div>" +
         '<button class="btn small" data-ji-edit="' + i + '">Edit</button>' +
         '<button class="btn danger" data-ji-del="' + i + '">Delete</button></li>';
@@ -1361,7 +1438,7 @@ ADMIN_JS = """// Western World News — admin panel (admin.html).
   function renderLive() {
     var list = $("#live-list");
     list.innerHTML = data.liveUpdates.map(function (u, i) {
-      return '<li><div class="t"><b>' + esc(u.time) + " — " + esc(u.headline) + "</b>" +
+      return '<li><div class="t"><b>' + esc(u.time) + ": " + esc(u.headline) + "</b>" +
         "<small>" + esc(u.text) + "</small></div>" +
         '<button class="btn small" data-lv-edit="' + i + '">Edit</button>' +
         '<button class="btn danger" data-lv-del="' + i + '">Delete</button></li>';
@@ -1485,7 +1562,7 @@ ADMIN_JS = """// Western World News — admin panel (admin.html).
     }
     $("#article-form").classList.add("hidden");
     editingSlug = null;
-    save("Article saved — it is live on the site in this browser now.");
+    save("Article saved. It is live on the site in this browser now.");
   });
 
   // ---------- Just In form ----------
@@ -1543,7 +1620,7 @@ ADMIN_JS = """// Western World News — admin panel (admin.html).
     document.body.appendChild(a);
     a.click();
     a.remove();
-    toast("Exported wwn-content.json — keep it to make changes permanent.");
+    toast("Exported wwn-content.json. Keep it to make changes permanent.");
   });
   $("#import-file").addEventListener("change", function (e) {
     var file = e.target.files[0];
@@ -1556,7 +1633,7 @@ ADMIN_JS = """// Western World News — admin panel (admin.html).
         if (!confirm("Replace all current content with the imported file?")) return;
         data = store.save(imported);
         renderAll();
-        toast("Imported — content replaced.");
+        toast("Imported. Content replaced.");
       } catch (err) { alert("That file is not a valid Western World News content export."); }
       e.target.value = "";
     };
@@ -1588,7 +1665,7 @@ def build_admin():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Admin — Western World News</title>
+<title>Admin | Western World News</title>
 <meta name="description" content="Admin panel for Western World News.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="stylesheet" href="assets/css/style.css">
@@ -1600,19 +1677,19 @@ def build_admin():
 <a class="wordmark" href="index.html">Western World <span class="news">News</span></a>
 <span class="admin-badge">Admin</span>
 <span class="spacer"></span>
-<a href="index.html">View site &rarr;</a>
+<a href="index.html">View site</a>
 <button id="logout" type="button">Log out</button>
 </div></header>
 <main id="main"><div class="wrap">
 
 <div class="gate-card" id="gate">
 <h1>Admin login</h1>
-<p>Enter the admin passcode to manage the site. (Default passcode: <b>admin123</b> — change it in assets/js/admin.js. Note: this is a basic gate on a static site, not real server security.)</p>
+<p>Enter the admin passcode to manage the site. (Default passcode: <b>admin123</b>. Change it in assets/js/admin.js. Note: this is a basic gate on a static site, not real server security.)</p>
 <form id="gate-form">
 <div class="field"><label for="passcode">Passcode</label>
 <input id="passcode" type="password" autocomplete="current-password" required></div>
 <div class="form-actions"><button class="btn" type="submit">Log in</button></div>
-<p class="error" id="gate-error">Wrong passcode — try again.</p>
+<p class="error" id="gate-error">Wrong passcode. Try again.</p>
 </form>
 </div>
 
@@ -1620,7 +1697,7 @@ def build_admin():
 <h1 class="section-head"><span class="tag">&#9632;</span> Dashboard</h1>
 <div class="notice"><b>How saving works</b>
 Changes you save here apply across the whole site <b>immediately in this browser</b> (they are stored in this browser's localStorage).
-To make them permanent for everyone, use <b>Export JSON</b> below and send the file to musu — or save it in the site folder as <b>content-export.json</b> and rebuild the site. Until then, other browsers still see the default content.</div>
+To make them permanent for everyone, use <b>Export JSON</b> below and send the file to musu, or save it in the site folder as <b>content-export.json</b> and rebuild the site. Until then, other browsers still see the default content.</div>
 <div class="admin-grid">
 <div class="stat"><b id="stat-articles">0</b><span>Articles</span></div>
 <div class="stat"><b id="stat-sections">0</b><span>Sections in use</span></div>
@@ -1636,11 +1713,11 @@ To make them permanent for everyone, use <b>Export JSON</b> below and send the f
 <h3 id="af-title-text" style="font-family:var(--serif);margin:0 0 0.8rem">Add article</h3>
 <div class="form-grid">
 <div class="field"><label for="af-title">Headline *</label><input id="af-title" type="text" required></div>
-<div class="field"><label for="af-slug">URL slug * <span class="hint">lower-case letters, numbers, hyphens — auto-filled from the headline</span></label><input id="af-slug" type="text" required></div>
+<div class="field"><label for="af-slug">URL slug * <span class="hint">lower-case letters, numbers, hyphens. Auto-filled from the headline</span></label><input id="af-slug" type="text" required></div>
 <div class="field"><label for="af-section">Section</label><select id="af-section">{options}</select></div>
 <div class="field"><label for="af-date">Date</label><input id="af-date" type="text" placeholder="20 November 2026"></div>
 <div class="field full"><label for="af-dek">Summary (shows on the homepage and section pages)</label><textarea id="af-dek" style="min-height:70px"></textarea></div>
-<div class="field full"><label for="af-body">Article text <span class="hint">one paragraph per block — leave a blank line between paragraphs</span></label><textarea id="af-body"></textarea></div>
+<div class="field full"><label for="af-body">Article text <span class="hint">one paragraph per block. Leave a blank line between paragraphs</span></label><textarea id="af-body"></textarea></div>
 <div class="field"><label for="af-image">Photo URL <span class="hint">leave empty for the navy placeholder tile</span></label><input id="af-image" type="url" placeholder="https://images.unsplash.com/photo-..."></div>
 <div class="field"><label for="af-caption">Photo caption / credit</label><input id="af-caption" type="text" placeholder="Photo: Unsplash"></div>
 <div class="field"><label for="af-source">Source name</label><input id="af-source" type="text" placeholder="Reuters"></div>
@@ -1702,8 +1779,8 @@ To make them permanent for everyone, use <b>Export JSON</b> below and send the f
 </form>
 </div></section>
 
-<section class="panel"><h2>Data — export, import, reset</h2><div class="body">
-<p>Export downloads the site's full content as <b>wwn-content.json</b>. To make admin changes permanent for all visitors, send that file to musu, or save it in the site folder as <b>content-export.json</b> and re-run the build script (<b>tools/build_site.py</b>) — the static pages are then regenerated with your content, including a real page for every new article.</p>
+<section class="panel"><h2>Data: export, import, reset</h2><div class="body">
+<p>Export downloads the site's full content as <b>wwn-content.json</b>. To make admin changes permanent for all visitors, send that file to musu, or save it in the site folder as <b>content-export.json</b> and re-run the build script (<b>tools/build_site.py</b>). The static pages are then regenerated with your content, including a real page for every new article.</p>
 <div class="form-actions">
 <button class="btn" id="export-btn" type="button">Export JSON</button>
 <label class="btn ghost" for="import-file" style="cursor:pointer">Import JSON</label>
@@ -1715,7 +1792,7 @@ To make them permanent for everyone, use <b>Export JSON</b> below and send the f
 </div>
 </div></main>
 <footer class="site-footer"><div class="wrap">
-<p class="fineprint"><span>&copy; 2026 Western World News (westernworldnews.com). Admin panel — passcode gate only, not real server security.</span><span><a href="index.html">Back to site &rarr;</a></span></p>
+<p class="fineprint"><span>&copy; 2026 Western World News (westernworldnews.com). Admin panel: passcode gate only, not real server security.</span><span><a href="index.html">Back to site</a></span></p>
 </div></footer>
 <div class="toast" id="toast" role="status"></div>
 <script src="assets/js/content.js"></script>
@@ -1948,21 +2025,21 @@ def main():
 
     files.append(write("about.html", build_info(
         "about", "About Western World News",
-        "About Western World News — independent news from the West and the world.",
+        "About Western World News: independent news from the West and the world.",
         "About us",
         ["Western World News is an independent news site covering worldwide news with a main focus on Western and European politics, war and breaking news, plus a small Business &amp; Finance section.",
-         "We write our stories in our own words, based on reporting from trusted sources — and we always credit and link the original reporting. We do not copy articles word for word, and we do not publish rumours or unconfirmed claims as fact.",
+         "We write our stories in our own words, based on reporting from trusted sources, and we always credit and link the original reporting. We do not copy articles word for word, and we do not publish rumors or unconfirmed claims as fact.",
          "The site is free to read. There is no paywall at launch.",
          "Contact us via the contact page."])))
     files.append(write("contact.html", build_info(
         "contact", "Contact Western World News",
-        "Contact Western World News — news tips, corrections and advertising enquiries.",
+        "Contact Western World News: news tips, corrections and advertising inquiries.",
         "Contact",
-        ["News tips, corrections and general enquiries: tips@westernworldnews.com (mailbox to be set up — see README.md).",
+        ["News tips, corrections and general inquiries: tips@westernworldnews.com (mailbox to be set up. See README.md).",
          "For corrections, please include the story headline and the fact to be corrected. We correct errors promptly and transparently.",
-         "Advertising enquiries: ads@westernworldnews.com (mailbox to be set up — see README.md)."])))
+         "Advertising inquiries: ads@westernworldnews.com (mailbox to be set up. See README.md)."])))
     files.append(write("privacy.html", build_info(
-        "privacy", "Privacy policy — Western World News",
+        "privacy", "Privacy policy | Western World News",
         "Privacy policy for Western World News.",
         "Privacy policy",
         ["Western World News respects your privacy. This page will be completed before launch with the site's full privacy policy.",

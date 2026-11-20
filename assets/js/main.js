@@ -1,4 +1,4 @@
-// Western World News — front-end behaviour (v2).
+// Western World News: front-end behavior (v2).
 // Renders dynamic regions from the content store (assets/js/content.js),
 // so admin edits in localStorage apply across the whole site.
 // Static HTML in each page is the SEO fallback when JS is unavailable.
@@ -93,7 +93,7 @@
         '<h1><a href="' + articleUrl(hero.slug) + '">' + esc(hero.headline) + "</a></h1>" +
         '<p class="dek">' + esc(hero.dek) + "</p>" +
         '<p class="byline"><time>' + esc(hero.date) + "</time> &middot; Source: " + esc(hero.source) +
-        ' &middot; <a href="' + fixLink("live.html") + '">Follow live updates &rarr;</a></p>';
+        ' &middot; <a href="' + fixLink("live.html") + '">Follow live updates</a></p>';
     }
 
     // Homepage section blocks.
@@ -167,7 +167,7 @@
           src.innerHTML = "<strong>Source</strong>This story is an original summary by " +
             esc(store.settings.siteName) + ", based on reporting by " + esc(a.source) + " (" + esc(a.date) +
             '). Read the original report: <a href="' + esc(a.source_url) +
-            '" target="_blank" rel="noopener">' + esc(a.source) + " — original article</a>.";
+            '" target="_blank" rel="noopener">' + "Original article: " + esc(a.source) + "</a>.";
         }
       }
     }
@@ -181,7 +181,7 @@
       });
     }
 
-    // Search — filters articles, shows a dropdown of matches.
+    // Search: filters articles, shows a dropdown of matches.
     var input = $("#site-search"), box = $("#search-results");
     if (input && box) {
       input.addEventListener("input", function () {
