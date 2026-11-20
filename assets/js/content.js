@@ -9,13 +9,103 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "florida-mechanic-found-guilty-of-murdering-british-woman"
+    "heroSlug": "gerard-depardieu-and-french-author-investigated-over-sexual"
   },
   "breaking": {
-    "text": "Florida mechanic found guilty of murdering British woman who attorney says came to US to die",
-    "link": "articles/florida-mechanic-found-guilty-of-murdering-british-woman.html"
+    "text": "Gérard Depardieu and French author investigated over sexual allegations",
+    "link": "articles/gerard-depardieu-and-french-author-investigated-over-sexual.html"
   },
   "articles": [
+    {
+      "slug": "gerard-depardieu-and-french-author-investigated-over-sexual",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Gérard Depardieu and French author investigated over sexual allegations",
+      "dek": "A judicial investigation was launched after a complaint was filed last year over \"allegations of a sexual nature\".",
+      "date": "November 20, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/c9ly43pj10mvo",
+      "body": [
+        "A judicial investigation was launched after a complaint was filed last year over \"allegations of a sexual nature\"."
+      ],
+      "related": [
+        "jp-morgan-boss-says-he-will-set-example-in-offsetting-uk",
+        "germany-intensifies-engagement-with-south-caucasus-as",
+        "white-house-removes-cyber-security-chief-after-series-of"
+      ],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/e9a6/live/0355fa40-e51b-11f1-99a1-253766e7ad8b.jpg",
+      "imageCaption": "Photo: BBC"
+    },
+    {
+      "slug": "jp-morgan-boss-says-he-will-set-example-in-offsetting-uk",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "JP Morgan boss says he will set ‘example’ in offsetting UK tax hike on banks",
+      "dek": "Jamie Dimon said he would seek to claw back added costs of ‘unfair penalties’ as bank surcharge rises in January.",
+      "date": "November 20, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/business/2026/nov/20/jp-morgan-jamie-dimon-uk-tax-hike-bank-surcharge",
+      "body": [
+        "Jamie Dimon said he would seek to claw back added costs of ‘unfair penalties’ as bank surcharge rises in January. Jamie Dimon, the chief executive of JP Morgan, has said he will find ways to offset the chancellor’s tax rise for banks, calling the increase unfair."
+      ],
+      "related": [
+        "gerard-depardieu-and-french-author-investigated-over-sexual",
+        "germany-intensifies-engagement-with-south-caucasus-as",
+        "white-house-removes-cyber-security-chief-after-series-of"
+      ],
+      "image": "https://i.guim.co.uk/img/media/a2ea0114fa7d8b930b2b6fb3b7c565d76348f5f3/0_0_3028_2423/master/3028.jpg?width=700&quality=85&auto=format&fit=max&s=8421110c29fd7638017f4a61e37546ad",
+      "imageCaption": "Photo: The Guardian"
+    },
+    {
+      "slug": "germany-intensifies-engagement-with-south-caucasus-as",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Germany intensifies engagement with South Caucasus as 'region of opportunities'",
+      "dek": "Germany's foreign minister visited Azerbaijan and Armenia to develop projects of “strategic importance to Europe both economically and politically,\" in the context of Russia's aggression against Ukraine and the economic situation in Europe.",
+      "date": "November 20, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/20/germany-intensifies-engagement-with-south-caucasus-as-region-of-opportunities",
+      "body": [
+        "Germany's foreign minister visited Azerbaijan and Armenia to develop projects of “strategic importance to Europe both economically and politically,\" in the context of Russia's aggression against Ukraine and the economic situation in Europe."
+      ],
+      "related": [
+        "gerard-depardieu-and-french-author-investigated-over-sexual",
+        "jp-morgan-boss-says-he-will-set-example-in-offsetting-uk",
+        "white-house-removes-cyber-security-chief-after-series-of"
+      ],
+      "image": "https://images.euronews.com/articles/stories/09/99/71/65/696x392_cmsv2_caab5567-8512-5736-88f6-091e60bbb275-9997165.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
+    {
+      "slug": "white-house-removes-cyber-security-chief-after-series-of",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "White House removes cyber-security chief after series of tech outages",
+      "dek": "He has been fired after losing the confidence of new White House chief of staff Stephen Miller, according to reports.",
+      "date": "November 20, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwz0k3nn5p5mo",
+      "body": [
+        "He has been fired after losing the confidence of new White House chief of staff Stephen Miller, according to reports."
+      ],
+      "related": [
+        "gerard-depardieu-and-french-author-investigated-over-sexual",
+        "jp-morgan-boss-says-he-will-set-example-in-offsetting-uk",
+        "germany-intensifies-engagement-with-south-caucasus-as"
+      ],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/76fa/live/ea62ee60-e4bd-11f1-87df-79d8910e0f29.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "florida-mechanic-found-guilty-of-murdering-british-woman",
       "sections": [
@@ -520,43 +610,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 20, 18:36",
-      "text": "Florida mechanic found guilty of murdering British woman who attorney says came to US to die",
+      "time": "Nov 20, 19:45",
+      "text": "Gérard Depardieu and French author investigated over sexual allegations",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 18:34",
-      "text": "Spain frees wealthy US-sought activist on bail as Irish police raid Dublin home",
+      "time": "Nov 20, 19:40",
+      "text": "Indian man sentenced to 19 years in US Sikh separatist assassination plot",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 18:24",
-      "text": "Indian man sentenced to 19 years in prison for conspiring to kill Sikh separatist in New York",
+      "time": "Nov 20, 19:38",
+      "text": "JP Morgan boss says he will set ‘example’ in offsetting UK tax hike on banks",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 18:22",
-      "text": "Misty-eyed Burnham gambles on closer ties with EU as he throws down gauntlet to Tories and Reform",
+      "time": "Nov 20, 19:38",
+      "text": "Anthropic shares fall after blockbuster opening as wider tech sell-off continues",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 18:20",
-      "text": "Two men killed after glider crashes into Loch Leven in Scotland",
+      "time": "Nov 20, 19:27",
+      "text": "Indian man sentenced to 19-plus years in plot to assassinate US-based Sikh separatist leader",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 18:16",
-      "text": "Denmark to expel Russian diplomat over alleged Moscow link to attempted killing of rapper",
+      "time": "Nov 20, 20:24",
+      "text": "Germany intensifies engagement with South Caucasus as 'region of opportunities'",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 18:11",
-      "text": "No one else in Reform is suitable to lead the party, Nigel Farage says",
+      "time": "Nov 20, 19:15",
+      "text": "Belgrade mayor charged with assaulting opposition politician in Serbia",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 18:06",
-      "text": "UK operation wards off risk of cyber-attack on supermarket fridges and freezers",
+      "time": "Nov 20, 19:03",
+      "text": "White House removes cyber-security chief after series of tech outages",
       "link": "live.html"
     }
   ],
