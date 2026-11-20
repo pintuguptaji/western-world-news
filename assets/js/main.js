@@ -203,6 +203,18 @@
       });
     }
 
+    // Search toggle: tap the magnifier to open the search box.
+    var sToggle = $("#search-toggle"), sBox = $(".search-box");
+    if (sToggle && sBox) {
+      sToggle.addEventListener("click", function () {
+        var open = sBox.classList.toggle("open");
+        if (open) { var si = $("#site-search"); if (si) si.focus(); }
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") sBox.classList.remove("open");
+      });
+    }
+
     // Search: filters articles, shows a dropdown of matches.
     var input = $("#site-search"), box = $("#search-results");
     if (input && box) {
