@@ -610,6 +610,36 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 20, 21:38",
+      "text": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 20, 21:17",
+      "text": "'License to kill': French parliament adopts police shootings law slammed by activists",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 20, 21:05",
+      "text": "Trump defends Putin relationship, warns AI data centres must stay in US",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 20, 20:59",
+      "text": "Two Salvadoran soldiers killed in Haiti while handling explosives",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 20, 20:54",
+      "text": "Trump threatens ban on US firms building AI data centres overseas",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 20, 20:45",
+      "text": "Sudan’s war leaves disabled children missing out on education",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 20, 20:45",
       "text": "Russian ornithologist jailed over small donations to Navalny's foundation",
       "link": "live.html"
@@ -617,36 +647,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 20, 20:36",
       "text": "Repression against Iranian lawyers increases",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 20, 20:35",
-      "text": "Trump threatens ban on US firms building AI data centres overseas",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 20, 20:34",
-      "text": "At COP31, conflict over climate science slows action on global warming",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 20, 20:30",
-      "text": "Russia complains of ‘new Iron Curtain’ as Estonia shuts its borders",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 20, 20:14",
-      "text": "Israeli drone attacks kill seven Palestinians in central Gaza",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 20, 20:03",
-      "text": "Nepali cricket fans in Qatar want to see their team competing with the best",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 20, 20:03",
-      "text": "Has the 'Parthenon puzzle' been solved? The long quest to reassemble lost eastern pediment",
       "link": "live.html"
     }
   ],
