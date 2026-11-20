@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Build script for Western World News (static site).
-Generates all HTML pages, sitemap.xml and robots.txt from the STORIES
-data below. Run: python3 /tmp/build_site.py
+Generates all HTML pages, sitemap.xml and robots.txt from
+data/articles.json (see _load_data below). Run: python3 /tmp/build_site.py
 Content refreshed 20 Nov 2026: original summaries of real stories, 19-20 Nov 2026,
 each credited to its source with a link. See README.md in the site root.
 """
+import datetime
 import os
 
-OUT = os.path.expanduser("~/workspace/western-world-news")
+OUT = os.environ.get("WWN_OUT", os.path.expanduser("~/workspace/western-world-news"))
 BASE = "https://westernworldnews.com"
 
 NAV = [
@@ -36,227 +37,30 @@ SECTIONS = {
 }
 
 # slug, section(s), headline, deck, date, source name, source url, body paragraphs, related slugs
-STORIES = [
-    {
-        "slug": "russia-ukraine-missile-attack",
-        "sections": ["war-conflict", "world"],
-        "section": "war-conflict",
-        "headline": "Russia launches one of the largest missile attacks of the war on Ukraine",
-        "dek": "At least nine people were killed and 28 injured as Russia fired more than 110 missiles and around 400 drones at Ukraine overnight — hours after Trump said a \u2018tired\u2019 Putin was ready for a deal.",
-        "date": "20 November 2026",
-        "source": "CNN",
-        "source_url": "https://www.cnn.com/2026/11/20/europe/russia-ukraine-putin-trump-intl-hnk",
-        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Kyiv_skyline_%2815688086793%29.jpg/1280px-Kyiv_skyline_%2815688086793%29.jpg",
-        "imageCaption": "The Kyiv skyline across the Dnipro river at dawn. Photo: Wikimedia Commons (CC BY-SA 2.0)",
-        "body": [
-            "Russia launched one of the largest aerial attacks of the war on Ukraine overnight into Friday, killing at least nine people and injuring 28, Ukrainian officials said, hours after President Vladimir Putin met US President Donald Trump and Chinese leader Xi Jinping for trilateral talks in Shenzhen.",
-            "Ukraine said Russia fired at least 110 missiles and around 400 drones — including 120 jet-powered drones — in an assault that lasted more than ten hours. Twenty-seven of the missiles were ballistic, and Ukrainian air defences intercepted only three of them, amid a critical shortage of Patriot interceptor missiles.",
-            "Three bridges across the Dnipro river in Kyiv \u2014 the Podilskyi, Darnytskyi and Southern bridges \u2014 were damaged, disrupting transport between the two sides of the capital. A hospital in Kharkiv was hit, injuring four people, and strikes were reported on homes, businesses and energy sites in nine regions.",
-            "Ukraine\u2019s nuclear power plants were forced to reduce operations, and power cuts were reported in Kyiv and ten regions, officials said. President Volodymyr Zelensky said \u201cabsolutely all the targets were ordinary civilian infrastructure\u201d, and described the tactics as \u201cparticularly vicious\u201d: missiles arrived in waves, with pauses of 20 to 30 minutes between them to make firefighting and repairs harder.",
-            "Poland said fighter jets were scrambled and Patriot air defence systems activated early on Friday after objects flew into and fell inside Polish territory during the attack.",
-            "Russia\u2019s defence ministry said it had carried out a \u201cmassive strike\u201d on military and energy facilities, port infrastructure in the Odesa region and transport infrastructure in Kyiv. The strikes were revenge, Putin had said, for Ukraine\u2019s attacks this week on the bridge linking Russia with occupied Crimea.",
-            "The attack came hours after Trump told European leaders that Putin was \u201ctired\u201d and ready for a deal, following the Shenzhen summit.",
-        ],
-        "related": ["eu-uk-reset-deal", "shenzhen-aftermath-europe-pushback", "gaza-yellow-line-raid"],
-    },
-    {
-        "slug": "eu-uk-reset-deal",
-        "sections": ["europe", "politics", "business-finance"],
-        "section": "europe",
-        "headline": "EU and UK seal reset deal to end a \u2018decade of drift\u2019 after Brexit",
-        "dek": "Trade checks scrapped, carbon markets linked and 100,000 young people to get the chance to live and work on either side of the Channel \u2014 but university fees are still unresolved.",
-        "date": "20 November 2026",
-        "source": "Al Jazeera",
-        "source_url": "https://www.aljazeera.com/news/2026/11/20/eu-and-uk-seal-reset-deal",
-        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/European_Parliament_-_Hemicycle.jpg/1280px-European_Parliament_-_Hemicycle.jpg",
-        "imageCaption": "The European Parliament hemicycle in Brussels. Photo: Wikimedia Commons (CC BY-SA 3.0)",
-        "body": [
-            "The United Kingdom and the European Union have struck a deal to reset relations a decade after the Brexit vote, agreeing measures on trade, carbon emissions and youth mobility at a summit in Brussels on Friday.",
-            "The three agreements will scrap checks on food, plant and animal products traded between Britain and the EU \u2014 aiming to take effect by 1 March 2028 \u2014 link the two sides\u2019 emissions trading systems, and let up to 100,000 young adults from each side live and work in the other\u2019s countries for up to three years.",
-            "Prime Minister Andy Burnham, meeting European Commission President Ursula von der Leyen and European Council President Ant\u00f3nio Costa at only the second EU-UK summit since Brexit, said the deal would \u201crebuild the bridges that were broken all those years ago\u201d and called it \u201ca good day for Britain, and a good day for Europe\u201d.",
-            "Downing Street said the package could add 0.5 percent to Britain\u2019s economy \u2014 about \u00a317 billion \u2014 with the food and farm deal alone worth an estimated \u00a35.1 billion. Linking the emissions trading systems will exempt British and EU goods, such as steel, from each other\u2019s border carbon levies.",
-            "One big issue remains unresolved: university tuition fees. Brussels wants EU students at British universities to pay the same domestic rates as British students, rather than the much higher international fees charged now. The two sides gave themselves six months to reach an agreement.",
-            "Burnham said a bill covering the agreements will go before Parliament next week. Von der Leyen called the deal a \u201cwin-win\u201d and said there was a strong foundation to deepen security ties \u2014 a theme sharpened by the overnight Russian missile strikes on Ukraine and the violation of Polish airspace.",
-        ],
-        "related": ["shenzhen-aftermath-europe-pushback", "wall-street-selloff", "democrats-document-preservation"],
-    },
-    {
-        "slug": "shenzhen-aftermath-europe-pushback",
-        "sections": ["world", "politics"],
-        "section": "world",
-        "headline": "After Shenzhen, Europe pushes back \u2014 and Moscow rules out NATO-style guarantees for Ukraine",
-        "dek": "Russia rejected the idea of Article 5-style security guarantees a day after the US team claimed Moscow was \u2018comfortable\u2019 with them, as Kyiv\u2019s allies in Berlin pledged \u20ac70 billion for next year.",
-        "date": "20 November 2026",
-        "source": "The Times",
-        "source_url": "https://www.thetimes.com/world/asia/article/trump-putin-ukraine-russia-coalition-of-willing-btlls0fhr",
-        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Skyline_of_Shenzhen_from_Hong_Kong.jpg/1280px-Skyline_of_Shenzhen_from_Hong_Kong.jpg",
-        "imageCaption": "The Shenzhen skyline, seen from across the border in Hong Kong. Photo: Wikimedia Commons (CC BY-SA 4.0)",
-        "body": [
-            "Russia has ruled out giving Ukraine NATO-style security guarantees as part of any peace deal, a day after the United States said Moscow was comfortable with the idea.",
-            "Jared Kushner, President Trump\u2019s son-in-law and a member of the US negotiating team, said on Thursday that the Russians had been got \u201ccomfortable with that concept, where any security guarantee for Ukraine would be based on Article 5\u201d \u2014 NATO\u2019s collective defence clause.",
-            "On Friday, Deputy Foreign Minister Sergei Ryabkov pushed back. \u201cEven the notion of a formula for Ukraine\u2019s quasi-membership of NATO, and the search for some sort of, in inverted commas, \u2018creative solution\u2019 in this area, is an option that is unacceptable to us,\u201d he said.",
-            "European leaders, meeting in Berlin as the \u201ccoalition of the willing\u201d, dismissed the Shenzhen summit of Trump, Xi Jinping and Vladimir Putin as a \u201cphoto op\u201d that stood no chance of bringing peace. The 40 countries at the meeting committed to honouring NATO\u2019s pledge of \u20ac70 billion in military aid to Ukraine this year, and to keeping it at at least that level in 2027.",
-            "German Chancellor Friedrich Merz said: \u201cWe will continue to support Kyiv for as long as is necessary. A Yalta format will not bring about peace\u201d \u2014 a reference to the 1945 conference where the postwar order was decided, which Russian media had compared the Shenzhen meeting to.",
-            "Trump, calling the Berlin meeting from Air Force One, told the European leaders they were spending too much money on the war and should spend it on their own countries, according to an official present. He also told them Putin was \u201ctired\u201d and ready for a deal \u2014 hours before Russia launched one of the largest missile attacks of the war on Ukraine.",
-        ],
-        "related": ["russia-ukraine-missile-attack", "eu-uk-reset-deal", "icj-myanmar-genocide-ruling"],
-    },
-    {
-        "slug": "gaza-yellow-line-raid",
-        "sections": ["war-conflict", "world"],
-        "section": "war-conflict",
-        "headline": "Israel ends first major Gaza ground raid across the ceasefire line since the truce",
-        "dek": "Tanks crossed the Yellow Line to demolish a Hamas tunnel in central Gaza, displacing thousands \u2014 the biggest Israeli ground operation since the October 2025 ceasefire began.",
-        "date": "19 November 2026",
-        "source": "Reuters",
-        "source_url": "https://www.reuters.com/world/middle-east/israel-says-it-concludes-gaza-tank-raid-2026-11-19/",
-        "body": [
-            "Israel\u2019s military said on Thursday it had concluded a tank raid to dismantle a suspected Hamas tunnel in the central Gaza Strip \u2014 its highest-profile ground incursion across the ceasefire line since the truce halted major fighting more than a year ago.",
-            "The operation began on Wednesday, when troops and intelligence personnel crossed the so-called Yellow Line \u2014 the boundary of Israel\u2019s deployment under the US-brokered ceasefire \u2014 in the central Gaza Strip, near the Nuseirat and Bureij refugee camps.",
-            "The military said the tunnel crossed into the Israeli side of the line and was connected to Hamas \u201cactivity hubs\u201d in central Gaza, and that it demolished a section Hamas was trying to restore. It described the tunnel as an \u201cimmediate and direct threat\u201d to its forces.",
-            "Tanks and armoured bulldozers advanced 200 to 400 metres past the line, and the main north-south Salah al-Din road was closed before reopening on Thursday. Palestinian families fled the area, which the UN\u2019s humanitarian office said was home to more than 18,000 people, including 4,000 in displaced-persons camps.",
-            "Israel, which says Hamas has been regrouping and rearming, has stepped up attacks against the group in recent weeks. The raid came a day after the Board of Peace, the body overseeing the ceasefire, warned the UN Security Council that the year-old truce risks collapse if its terms are not fully implemented.",
-            "The ceasefire formally began on 10 October 2025, but attacks have continued, and the Palestinian health ministry says more than 1,600 people have been killed in Israeli strikes since then.",
-        ],
-        "related": ["russia-ukraine-missile-attack", "icj-myanmar-genocide-ruling"],
-    },
-    {
-        "slug": "democrats-document-preservation",
-        "sections": ["us", "politics"],
-        "section": "us",
-        "headline": "Democrats warn Trump administration over alleged destruction of records before they take Congress",
-        "dek": "Preservation letters went to the Justice Department, FBI and Homeland Security on Friday, as the incoming majority says it fears evidence for future investigations is being deleted.",
-        "date": "20 November 2026",
-        "source": "CNN",
-        "source_url": "https://www.cnn.com/2026/11/20/politics/democrats-trump-administration-documents-destruction",
-        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Capitol_at_Dusk_2.jpg/1280px-Capitol_at_Dusk_2.jpg",
-        "imageCaption": "The United States Capitol in Washington at dusk. Photo: Wikimedia Commons (CC BY-SA 3.0)",
-        "body": [
-            "Democrats have put the Trump administration on notice over alleged destruction of government documents, sending preservation letters across the federal government on Friday \u2014 weeks before the party takes control of Congress.",
-            "The letters, led by Representative Jamie Raskin, who is in line to chair the House Judiciary Committee, went to the Department of Justice, the Federal Bureau of Investigation, the Department of Homeland Security, Immigration and Customs Enforcement and the Bureau of Prisons.",
-            "Raskin said there was \u201csignificant evidence that Trump Administration officials have engaged in the widespread destruction, mutilation, and concealment of government records, seemingly with the express purpose of circumventing federal record preservation laws.\u201d",
-            "Democratic investigators are particularly concerned about the use of the encrypted messaging app Signal by federal employees. In one case cited in the letters, a Signal conversation between the FBI\u2019s general counsel and an associate of Donald Trump Jr. appeared to have been set to auto-delete after a week.",
-            "The White House said Democrats were making claims about document destruction without evidence, but also indicated it saw no obligation to comply with the demands before the new Congress takes over on 3 January. Democrats are preparing far-reaching investigations into the administration and fear destroyed records could hinder their oversight.",
-            "One former White House lawyer described the letters as Congress \u201cdrawing a line in the sand\u201d, so that anyone who destroys records could later face prosecution for obstruction of Congress. Whistleblowers have also warned that key paperwork about the president\u2019s construction projects in Washington may be at risk.",
-        ],
-        "related": ["shenzhen-aftermath-europe-pushback", "wall-street-selloff"],
-    },
-    {
-        "slug": "wall-street-selloff",
-        "sections": ["business-finance"],
-        "section": "business-finance",
-        "headline": "Wall Street tumbles as Dow drops 1,100 points in AI-led sell-off",
-        "dek": "The S&P 500 fell for a sixth straight session \u2014 its longest losing streak in two and a half years \u2014 even as Anthropic\u2019s record IPO soared on its debut.",
-        "date": "20 November 2026",
-        "source": "Associated Press",
-        "source_url": "https://www.manilatimes.net/2026/11/20/business/foreign-business/wall-street-tumbles-to-its-longest-losing-streak-since-2024-as-the-dow-drops-1100-points/2474698",
-        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Wall_Street_-_New_York_Stock_Exchange.jpg/1280px-Wall_Street_-_New_York_Stock_Exchange.jpg",
-        "imageCaption": "The New York Stock Exchange on Wall Street. Photo: Wikimedia Commons (CC BY-SA 3.0)",
-        "body": [
-            "The US stock market tumbled again on Thursday as beaten-down stocks tied to artificial intelligence kept falling, on worries that the sector\u2019s breathtaking boom may be over.",
-            "The Dow Jones Industrial Average dropped 1,101 points, or 2.2 percent, to 49,097.06 \u2014 its first close below 50,000 since June, and a loss of 2,500 points over the last three sessions. The S&P 500 fell 2 percent to 7,175.83, its sixth straight loss and its longest losing streak in two and a half years. The Nasdaq composite sank 2.3 percent.",
-            "The losses were widespread: more than 90 percent of the stocks in the S&P 500 fell, and all 11 of its sectors declined. The index is now 8.2 percent below its all-time high of last month.",
-            "The sell-off came on the same day that Anthropic, the AI company behind the Claude chatbot, made its stock market debut. Shares were priced at $83, opened at about $111, and closed about 17 percent above the offer price at $97.17 \u2014 the largest initial public offering ever \u2014 but the success did nothing to stem the selling.",
-            "In Europe, the FTSE 100 fell 0.9 percent to 10,452.68 and Germany\u2019s DAX lost 1.1 percent on Thursday. The selling spread to Asia on Friday, with Japan\u2019s Nikkei down more than 5 percent. The VIX, Wall Street\u2019s fear gauge, closed at 28.44, up nearly 16 percent.",
-        ],
-        "related": ["eu-uk-reset-deal", "democrats-document-preservation"],
-    },
-    {
-        "slug": "nations-league-draw",
-        "sections": ["sport"],
-        "section": "sport",
-        "headline": "Nations League draw: Spain face France, England take on Norway in quarter-finals",
-        "dek": "World champions Spain meet France in a World Cup semi-final rematch, while England\u2019s reward for topping their group is a two-legged tie with Norway in March.",
-        "date": "20 November 2026",
-        "source": "Al Jazeera",
-        "source_url": "https://www.aljazeera.com/amp/sports/2026/11/20/nations-league-knockouts-spain-france-england-norway-quarterfinals",
-        "body": [
-            "World champions Spain will face France and England will play Norway in the quarter-finals of the UEFA Nations League, after the draw was made in Nyon, Switzerland, on Friday.",
-            "The ties will be played over two legs in late March \u2014 first legs on 25\u201327 March, second legs on 28\u201330 March \u2014 with the semi-finals on 9 and 10 June and the final on 13 June at a venue yet to be decided.",
-            "Spain, runners-up in their group, face France in a rematch of this year\u2019s World Cup semi-final, which Spain won 2\u20130 on their way to the title. France topped their group, and Spain will be at home first.",
-            "England topped their group on goal difference after beating Spain 3\u20132 away in their final game, and their reward is a two-legged tie with Norway, with the first leg on Norwegian soil. England beat Norway 2\u20131 after extra time in the World Cup quarter-finals in July.",
-            "The other ties pair defending Nations League champions Portugal against the Netherlands, and Belgium against Germany. The winners of the Netherlands\u2013Portugal tie will meet Spain or France in the semi-finals, while England or Norway will face Belgium or Germany.",
-            "England captain Harry Kane is the competition\u2019s leading scorer with eight goals. The quarter-finals will be played at the same time as qualifying begins for Euro 2028.",
-        ],
-        "related": ["raye-grammy-nominations"],
-    },
-    {
-        "slug": "icj-myanmar-genocide-ruling",
-        "sections": ["world"],
-        "section": "world",
-        "headline": "World court rules Myanmar committed genocide against the Rohingya",
-        "dek": "In a historic first, the International Court of Justice held a state responsible for genocide, ordering Myanmar to pay reparations to the Rohingya.",
-        "date": "19 November 2026",
-        "source": "Al Jazeera",
-        "source_url": "https://www.aljazeera.com/amp/news/2026/11/19/what-the-icj-ruling-means-for-the-rohingya",
-        "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Friedenspalast_Den_Haag.jpg/1280px-Friedenspalast_Den_Haag.jpg",
-        "imageCaption": "The Peace Palace in The Hague, home of the International Court of Justice. Photo: Wikimedia Commons (CC BY-SA 3.0)",
-        "body": [
-            "The International Court of Justice has ruled that Myanmar committed genocide against the Rohingya minority, in the first judgment of its kind in the court\u2019s 80-year history.",
-            "Delivering the ruling in The Hague on Thursday, the court\u2019s president, Judge Yuji Iwasawa of Japan, read out the decision over nearly three hours. Nine of the 15 judges found that Myanmar\u2019s security forces committed genocide during the 2016\u20132017 \u201cclearance operations\u201d in Rakhine state.",
-            "The court found that the military killed thousands of Rohingya, committed widespread sexual violence and \u201cextreme violence against children\u201d, and murdered infants \u2014 acts it said showed an intent to destroy a substantial part of the Rohingya population. About 10,000 Rohingya were killed in the operations, according to evidence cited by the court.",
-            "Myanmar was also found to have violated its duty to prevent and punish genocide. The court ordered it to stop any ongoing violations, investigate and prosecute those responsible, and make reparations \u2014 including allowing the safe, voluntary return of Rohingya refugees, returning or replacing damaged property, and compensating victims. Myanmar must report back to the court within two years with a plan.",
-            "The case was brought in 2019 by The Gambia, a country thousands of miles from Myanmar, in a first of its kind. The ruling is final and cannot be appealed, though the court has no power to enforce it.",
-            "A spokesperson for Myanmar\u2019s military-backed government dismissed the ruling on Friday as \u201cunfair\u201d, noting that not all 15 judges agreed. Human Rights Watch called it \u201clong-awaited recognition of the suffering the Rohingya have endured\u201d.",
-        ],
-        "related": ["gaza-yellow-line-raid", "russia-ukraine-missile-attack"],
-    },
-    {
-        "slug": "raye-grammy-nominations",
-        "sections": ["culture"],
-        "section": "culture",
-        "headline": "RAYE leads Grammy nominations with 11, tying Beyonc\u00e9\u2019s record",
-        "dek": "The British singer tops the field for the 69th Grammy Awards, with her album \u2018This Music May Contain Hope\u2019 and single \u2018Where Is My Husband!\u2019 both up for the top prizes.",
-        "date": "20 November 2026",
-        "source": "Associated Press",
-        "source_url": "https://cnalifestyle.channelnewsasia.com/entertainment/grammy-nominations-2027-raye-rosalia-olivia-rodrigo-591851",
-        "body": [
-            "British singer RAYE leads the nominations for the 69th Grammy Awards with 11 nods, tying Beyonc\u00e9\u2019s record for the most nominations by a female artist in a single year.",
-            "The nominations, announced by the Recording Academy on Monday, put RAYE up for album of the year for \u2018This Music May Contain Hope\u2019, and record and song of the year for her hit single \u2018Where Is My Husband!\u2019 \u2014 her first nominations in all three of the Grammys\u2019 biggest categories.",
-            "She is also nominated for songwriter of the year, best pop solo performance and best pop vocal album, among others. The 11 nominations take her career total to 15.",
-            "Behind her are Spanish star Rosal\u00eda with nine nominations, while Olivia Rodrigo, Phoebe Bridgers, Miranda Lambert and Ella Langley have seven each. Olivia Dean has six.",
-            "Beyonc\u00e9, meanwhile, reached her 100th career Grammy nomination \u2014 for \u2018Morning Dew (Donk)\u2019 in the best R&B solo performance category \u2014 making her the most-nominated artist in the awards\u2019 history.",
-            "The 69th Grammy Awards will be held on 7 February 2027 at the Crypto.com Arena in Los Angeles, with winners chosen by the Recording Academy\u2019s nearly 16,000 voting members.",
-        ],
-        "related": ["nations-league-draw"],
-    },
-]
+# --- Content data (data/articles.json) ---
+# All article text lives in data/articles.json so the automatic publisher
+# (tools/auto_publish.py) can update it without touching this script.
+# WATCH / ANALYSIS / IMAGES below stay here: they are curated design blocks.
+import json as _json
+
+def _load_data():
+    path = os.path.join(OUT, "data", "articles.json")
+    with open(path, encoding="utf-8") as f:
+        return _json.load(f)
+
+_DATA = _load_data()
+STORIES = _DATA["articles"]
+JUST_IN = [(it["time"], it["text"], None) for it in _DATA.get("justIn", [])]
+LIVE_UPDATES = [(u["time"], u["headline"], u["text"]) for u in _DATA.get("liveUpdates", [])]
+MOST_READ = list(_DATA.get("mostRead", []))
+HERO_SLUG = _DATA.get("heroSlug", STORIES[0]["slug"] if STORIES else "")
+BREAKING = _DATA.get("breaking", {"text": "", "link": ""})
 
 # Timestamped "Just In" items — all verified from search results, 18-20 Nov 2026.
-JUST_IN = [
-    ("20 Nov, 11:20", "EU and UK seal reset deal on trade, carbon and youth mobility", None),
-    ("20 Nov", "Russia rules out NATO-style security guarantees for Ukraine", None),
-    ("20 Nov", "Nations League draw: Spain face France, England take on Norway", None),
-    ("20 Nov, 10:33", "Russian barrage damages embassies and a cathedral in Kyiv", None),
-    ("20 Nov, 09:15", "Netherlands summons Russian ambassador after Kyiv strike damages its embassy", None),
-    ("20 Nov, 08:40", "Six dead in Georgia as gas blast collapses part of a residential block", None),
-    ("19 Nov", "World Court rules Myanmar committed genocide against the Rohingya", None),
-    ("19 Nov", "Senate rejects bid to stop Trump ordering more strikes on Iran, 51\u201348", None),
-]
+# JUST_IN loaded from data/articles.json (see loader above).
 
 # Live-blog updates for live.html — verified facts only, 18-20 Nov 2026.
-LIVE_UPDATES = [
-    ("20 Nov, afternoon", "Moscow rules out NATO-style guarantees for Ukraine",
-     "Russia\u2019s deputy foreign minister, Sergei Ryabkov, said any \u201cquasi-membership of NATO\u201d for Ukraine was unacceptable \u2014 pushing back on claims from the US negotiating team that Moscow was comfortable with Article 5-style security guarantees."),
-    ("20 Nov, morning", "Coalition allies pledge \u20ac70bn for Ukraine in 2027",
-     "The 40 countries in the \u201ccoalition of the willing\u201d meeting in Berlin committed to honouring NATO\u2019s pledge of \u20ac70 billion in military aid to Ukraine this year, and to keeping it at at least that level in 2027, despite pressure from Washington."),
-    ("20 Nov, 10:33", "Embassies damaged in Kyiv barrage",
-     "A daytime Russian barrage blew out windows at the Austrian and Dutch missions in Kyiv and damaged a cathedral, prompting Brussels to summon Moscow's envoy."),
-    ("20 Nov, 09:15", "Netherlands summons Russian ambassador",
-     "The Dutch government summoned Russia's ambassador after its embassy in Kyiv suffered minor damage when a projectile landed near the building. No one was hurt."),
-    ("20 Nov, 08:00", "Poland scrambles jets as airspace is violated",
-     "Poland said fighter jets were scrambled and Patriot air defence systems activated early on Friday after objects flew into and fell inside Polish territory during the overnight attack."),
-    ("20 Nov, 06:30", "More than 110 missiles fired at Ukraine overnight",
-     "Ukraine said Russia fired at least 110 missiles and around 400 drones overnight \u2014 an unusually large number even amid frequent aerial assaults. At least nine people were killed and 28 injured, and three of Kyiv's bridges were damaged."),
-    ("19 Nov, 22:10", "Trump tells European leaders Putin is \u201ctired\u201d and ready for a deal",
-     "After the Shenzhen talks, President Trump spoke with the \u201ccoalition of the willing\u201d in Berlin. According to a senior European official, his main message was that \u201cPutin is tired, wants to end this, ready for a deal.\u201d"),
-    ("19 Nov, 18:40", "E3 leaders call for winter energy ceasefire",
-     "The leaders of the UK, Germany and France and Ukraine called on Russia to agree to a ceasefire on attacks on energy infrastructure for the duration of winter."),
-    ("19 Nov, 17:00", "Trilateral talks end without breakthrough",
-     "Trump, Xi and Putin met in Shenzhen for just over an hour. A joint declaration covered UN reform, nuclear weapons and oil production, but produced no breakthrough on Ukraine and no official declaration was released."),
-    ("18 Nov, 20:15", "EU proposes \u20ac45 billion loan for Ukraine in 2027",
-     "The European Commission proposed a new \u20ac45 billion loan to Ukraine for 2027, to be repaid through future war reparations by Russia. Up to \u20ac25 billion would go to military aid and \u20ac20 billion to budget support."),
-]
+# LIVE_UPDATES loaded from data/articles.json (see loader above).
 
 BY_SLUG = {s["slug"]: s for s in STORIES}
 
@@ -283,13 +87,7 @@ IMAGES = {
     "raye-grammy-nominations": ("1493225457124-a3eb161ffa5f", "A singer performs on stage. Illustrative photo. Photo: Unsplash"),
 }
 
-MOST_READ = [
-    "russia-ukraine-missile-attack",
-    "eu-uk-reset-deal",
-    "shenzhen-aftermath-europe-pushback",
-    "icj-myanmar-genocide-ruling",
-    "wall-street-selloff",
-]
+# MOST_READ loaded from data/articles.json (see loader above).
 
 # "Watch" strip — video-style cards. NOTE: no real video exists yet; cards
 # link to the live blog / full articles. See README.md.
@@ -968,6 +766,15 @@ def build_live():
 
 def build_article(s):
     body_paras = "".join(f"<p>{p}</p>" for p in s["body"])
+    if s.get("auto"):
+        # Auto-published articles are short summaries of the source's own
+        # report (feed description), not original WWN summaries — say so.
+        source_note = (f"This is a short summary of a {s['source']} report. "
+                       f"Read the full story at {s['source']}: "
+                       f"<a href=\"{s['source_url']}\" target=\"_blank\" rel=\"noopener\">{s['source']} — original article</a>.")
+    else:
+        source_note = (f"This story is an original summary by Western World News, based on reporting by {s['source']} ({s['date']}). "
+                       f"Read the original report: <a href=\"{s['source_url']}\" target=\"_blank\" rel=\"noopener\">{s['source']} — original article</a>.")
     rel = "".join(
         f'<li><a href="{r}.html">{BY_SLUG[r]["headline"]}</a> <span class="byline">— {BY_SLUG[r]["date"]}</span></li>'
         for r in s["related"]
@@ -989,7 +796,7 @@ def build_article(s):
 </div>
 <div class="source-box">
 <strong>Source</strong>
-This story is an original summary by Western World News, based on reporting by {s['source']} ({s['date']}). Read the original report: <a href="{s['source_url']}" target="_blank" rel="noopener">{s['source']} — original article</a>.
+{source_note}
 </div>
 <section class="related">
 <h2>Related stories</h2>
@@ -1041,12 +848,9 @@ def default_content():
         "settings": {
             "siteName": "Western World News",
             "tagline": "Western and European news, live — politics, war, business and culture.",
-            "heroSlug": "russia-ukraine-missile-attack",
+            "heroSlug": HERO_SLUG,
         },
-        "breaking": {
-            "text": "Russia launches one of the largest missile attacks of the war on Ukraine — 110+ missiles fired overnight",
-            "link": "articles/russia-ukraine-missile-attack.html",
-        },
+        "breaking": BREAKING,
         "articles": articles,
         "justIn": [{"time": t, "text": h, "link": "live.html"} for t, h, _ in JUST_IN],
         "liveUpdates": [{"time": t, "headline": h, "text": p} for t, h, p in LIVE_UPDATES],
@@ -1965,7 +1769,12 @@ western-world-news/
 │       ├── main.js             Dateline, search, hamburger, renders
 │       │                       dynamic regions from the content store
 │       └── admin.js            Admin panel logic (passcode "admin123")
+├── data/articles.json          All article text (source of truth for the
+│                               build; updated by tools/auto_publish.py)
 ├── tools/build_site.py         Generator — re-run to rebuild every page
+├── tools/auto_publish.py       Hourly auto-publisher (RSS feeds → new
+│                               stories; see "Automatic publishing" below)
+├── .github/workflows/          auto-publish.yml — GitHub Actions schedule
 ├── content-export.json         (optional) admin export; if present, the
 │                               build script uses it as the content source
 ├── sitemap.xml / robots.txt    (robots.txt blocks /admin.html)
@@ -2042,7 +1851,25 @@ exists; until then they are clearly a design element, not a video player.
 Run `python3 tools/build_site.py` (or `python3 /tmp/build_site_v2.py`).
 To change the shared header, footer, navigation or design, edit the
 script and re-run it — or edit the HTML/CSS files directly; they are
-plain and self-contained.
+plain and self-contained. All article text lives in `data/articles.json`
+(the script reads it at build time); `WWN_OUT` env var overrides the
+output folder (used by the automatic publisher's tests).
+
+## Automatic publishing (GitHub Actions, no approval needed)
+
+`.github/workflows/auto-publish.yml` runs every hour inside GitHub:
+`tools/auto_publish.py` fetches trusted RSS feeds (BBC, Al Jazeera,
+The Guardian, Euronews, France 24, DW), adds up to 4 verified new
+stories (max 12/day) to `data/articles.json`, refreshes the Just In
+feed, rebuilds the site and pushes — using only the automatic
+`GITHUB_TOKEN`. Auto stories are short summaries of the source's own
+report with a "Read the full story" link, and the photo is the feed's
+own image for that story (verified to load) or no photo at all.
+Test locally first: `python3 tools/auto_publish.py --dry-run`.
+
+One-time setup (repo owner): Settings → Actions → General → Workflow
+permissions → **Read and write permissions** → Save. Without that, the
+push step fails with a 403.
 """
 
 
@@ -2151,8 +1978,9 @@ def main():
             "war-conflict.html", "business-finance.html", "sport.html",
             "culture.html", "live.html", "about.html", "contact.html", "privacy.html"]
     urls += ["articles/" + s["slug"] + ".html" for s in STORIES]
+    today = datetime.date.today().isoformat()
     entries = "".join(
-        f"  <url><loc>{BASE}/{u}</loc><lastmod>2026-11-20</lastmod></url>\n" for u in urls
+        f"  <url><loc>{BASE}/{u}</loc><lastmod>{today}</lastmod></url>\n" for u in urls
     )
     files.append(write("sitemap.xml",
         '<?xml version="1.0" encoding="UTF-8"?>\n'

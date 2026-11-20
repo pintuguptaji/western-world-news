@@ -40,7 +40,12 @@ western-world-news/
 │       ├── main.js             Dateline, search, hamburger, renders
 │       │                       dynamic regions from the content store
 │       └── admin.js            Admin panel logic (passcode "admin123")
+├── data/articles.json          All article text (source of truth for the
+│                               build; updated by tools/auto_publish.py)
 ├── tools/build_site.py         Generator — re-run to rebuild every page
+├── tools/auto_publish.py       Hourly auto-publisher (RSS feeds → new
+│                               stories; see "Automatic publishing" below)
+├── .github/workflows/          auto-publish.yml — GitHub Actions schedule
 ├── content-export.json         (optional) admin export; if present, the
 │                               build script uses it as the content source
 ├── sitemap.xml / robots.txt    (robots.txt blocks /admin.html)
@@ -117,4 +122,22 @@ exists; until then they are clearly a design element, not a video player.
 Run `python3 tools/build_site.py` (or `python3 /tmp/build_site_v2.py`).
 To change the shared header, footer, navigation or design, edit the
 script and re-run it — or edit the HTML/CSS files directly; they are
-plain and self-contained.
+plain and self-contained. All article text lives in `data/articles.json`
+(the script reads it at build time); `WWN_OUT` env var overrides the
+output folder (used by the automatic publisher's tests).
+
+## Automatic publishing (GitHub Actions, no approval needed)
+
+`.github/workflows/auto-publish.yml` runs every hour inside GitHub:
+`tools/auto_publish.py` fetches trusted RSS feeds (BBC, Al Jazeera,
+The Guardian, Euronews, France 24, DW), adds up to 4 verified new
+stories (max 12/day) to `data/articles.json`, refreshes the Just In
+feed, rebuilds the site and pushes — using only the automatic
+`GITHUB_TOKEN`. Auto stories are short summaries of the source's own
+report with a "Read the full story" link, and the photo is the feed's
+own image for that story (verified to load) or no photo at all.
+Test locally first: `python3 tools/auto_publish.py --dry-run`.
+
+One-time setup (repo owner): Settings → Actions → General → Workflow
+permissions → **Read and write permissions** → Save. Without that, the
+push step fails with a 403.
