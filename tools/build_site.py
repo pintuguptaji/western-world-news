@@ -120,6 +120,103 @@ def _clean_obj(obj):
         return {k: _clean_obj(v) for k, v in obj.items()}
     return obj
 
+
+# --- AdSense readiness helpers: plain labels, dates, alt text, schema ---
+# Plain (unescaped) section labels for JSON-LD and other non-HTML contexts.
+SECTION_LABELS_PLAIN = {k: v.replace("&amp;", "&") for k, v in SECTIONS.items()}
+
+_DATE_FORMATS = ("%B %d, %Y", "%b %d, %Y", "%d %B %Y", "%d %b %Y", "%B %d", "%b %d")
+
+
+def _parse_date(date_str):
+    """Parse an article date string to a datetime.date, or None."""
+    if not date_str:
+        return None
+    text = str(date_str).strip()
+    for fmt in _DATE_FORMATS:
+        try:
+            d = datetime.datetime.strptime(text, fmt)
+            year = d.year if "%Y" in fmt else datetime.date.today().year
+            return datetime.date(year, d.month, d.day)
+        except ValueError:
+            continue
+    return None
+
+
+def _iso_date(date_str):
+    d = _parse_date(date_str)
+    return d.isoformat() if d else datetime.date.today().isoformat()
+
+
+def _alt_for(slug, cap):
+    """Alt text for a story image: the descriptive part of its caption, or
+    the article headline when there is no useful caption. Never empty, so
+    no <img> on the site is ever rendered without alt text."""
+    base = (cap or "").split(". Illustrative")[0]
+    if ". Photo:" in base:
+        base = base.split(". Photo:")[0]
+    base = base.strip()
+    if base and base != "Photo: Unsplash":
+        return base
+    if slug in BY_SLUG:
+        return BY_SLUG[slug]["headline"]
+    return "Western World News"
+
+
+def _org_jsonld():
+    data = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Western World News",
+        "url": BASE,
+    }
+    return ('<script type="application/ld+json">\n'
+            + json.dumps(data, ensure_ascii=False, indent=2) + "\n</script>")
+
+
+def _newsarticle_jsonld(s):
+    data = {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": s["headline"],
+        "datePublished": _iso_date(s["date"]),
+        "dateModified": _iso_date(s["date"]),
+        "author": {"@type": "Organization", "name": "Western World News", "url": BASE},
+        "publisher": {"@type": "Organization", "name": "Western World News", "url": BASE},
+        "mainEntityOfPage": BASE + "/articles/" + s["slug"] + ".html",
+    }
+    img = s.get("image")
+    if not img and s["slug"] in IMAGES:
+        img = uimg(IMAGES[s["slug"]][0], 1200)
+    if img:
+        data["image"] = img
+    return ('<script type="application/ld+json">\n'
+            + json.dumps(data, ensure_ascii=False, indent=2) + "\n</script>")
+
+
+def _breadcrumb_jsonld(items):
+    elements = []
+    for i, (name, url) in enumerate(items, start=1):
+        item = {"@type": "ListItem", "position": i, "name": name}
+        if url:
+            item["item"] = url
+        elements.append(item)
+    data = {"@context": "https://schema.org", "@type": "BreadcrumbList",
+            "itemListElement": elements}
+    return ('<script type="application/ld+json">\n'
+            + json.dumps(data, ensure_ascii=False, indent=2) + "\n</script>")
+
+
+def _breadcrumbs_html(items):
+    parts = []
+    for label, href in items:
+        if href:
+            parts.append(f'<a href="{href}">{label}</a>')
+        else:
+            parts.append(f"<span>{label}</span>")
+    return '<nav class="breadcrumbs" aria-label="Breadcrumb">' + " / ".join(parts) + "</nav>"
+
+
 def _load_data():
     path = os.path.join(OUT, "data", "articles.json")
     with open(path, encoding="utf-8") as f:
@@ -296,6 +393,12 @@ main { padding: 1.5rem 0 2rem; }
 .byline { color: var(--muted); font-size: 0.85rem; margin: 0.5rem 0 0; }
 .byline time { font-weight: 600; color: var(--ink); }
 .byline a { color: var(--red); font-weight: 700; }
+
+/* ---------- Breadcrumbs ---------- */
+.breadcrumbs { font-size: 0.85rem; color: var(--muted); margin: 0 0 1rem; }
+.breadcrumbs a { color: var(--muted); }
+.breadcrumbs a:hover { color: var(--red); }
+.breadcrumbs span { color: var(--ink); font-weight: 600; }
 
 /* ---------- Hero (three-column) ---------- */
 .hero-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-bottom: 1.6rem; }
@@ -564,6 +667,11 @@ def footer_html(prefix=""):
 <li><a href="{prefix}about.html">About us</a></li>
 <li><a href="{prefix}contact.html">Contact</a></li>
 <li><a href="{prefix}privacy.html">Privacy policy</a></li>
+<li><a href="{prefix}terms.html">Terms of Service</a></li>
+<li><a href="{prefix}disclaimer.html">Disclaimer</a></li>
+<li><a href="{prefix}editorial-policy.html">Editorial Policy</a></li>
+<li><a href="{prefix}corrections.html">Corrections Policy</a></li>
+<li><a href="{prefix}authors.html">Our Editorial Team</a></li>
 <li><a href="{prefix}sitemap.xml">Sitemap</a></li>
 <li><a href="{prefix}admin.html">Admin</a></li>
 </ul>
@@ -579,7 +687,7 @@ def footer_html(prefix=""):
 <p class="success" style="display:none">Thank you. You are on the list.</p>
 </div>
 </div>
-<p class="fineprint"><span>&copy; 2026 Western World News (westernworldnews.com). All stories are original summaries written by our editors; original reporting is credited and linked. Content refreshed on the evening of November 20, 2026. See README.md.</span><span>Photos: Unsplash (illustrative).</span></p>
+<p class="fineprint"><span>&copy; 2026 Western World News (westernworldnews.com). All stories are original summaries written by our editors; original reporting is credited and linked. Content updated hourly.</span><span>Photos are credited to their sources.</span></p>
 </div></footer>"""
 
 
@@ -602,7 +710,9 @@ def page(title, description, active, body, canonical, og_type="website", prefix=
 <meta name="twitter:description" content="{description}">
 <link rel="stylesheet" href="{prefix}assets/css/style.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23bb1919'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
-{extra_head}</head>
+{extra_head}
+{_org_jsonld()}
+</head>
 <body>
 {header_html(active, prefix)}
 <main id="main"><div class="wrap">
@@ -626,14 +736,14 @@ def img_html(slug, w=800, cls="", caption=True):
     """Photo figure for a story, or the gradient tile if no photo is set."""
     if slug in IMAGES:
         pid, cap = IMAGES[slug]
-        alt = cap.split(". Illustrative")[0]
+        alt = _alt_for(slug, cap)
         fig = (f'<figure class="{cls}"><img src="{uimg(pid, w)}" alt="{hescape(alt)}" loading="lazy">'
                f'<figcaption>{hescape(cap)}</figcaption></figure>') if caption else \
               f'<figure class="{cls}"><img src="{uimg(pid, w)}" alt="{hescape(alt)}" loading="lazy"></figure>'
         return fig
     if slug in BY_SLUG and BY_SLUG[slug].get("image"):
         cap = BY_SLUG[slug].get("imageCaption") or "Photo: Unsplash"
-        alt = cap.split(". Illustrative")[0]
+        alt = _alt_for(slug, cap)
         fig = (f'<figure class="{cls}"><img src="{hescape(BY_SLUG[slug]["image"])}" alt="{hescape(alt)}" loading="lazy">'
                f'<figcaption>{hescape(cap)}</figcaption></figure>') if caption else \
               f'<figure class="{cls}"><img src="{hescape(BY_SLUG[slug]["image"])}" alt="{hescape(alt)}" loading="lazy"></figure>'
@@ -643,13 +753,15 @@ def img_html(slug, w=800, cls="", caption=True):
 
 
 def thumb_html(slug, w=400):
-    """Small thumbnail image only (no caption), or the gradient tile."""
+    """Small thumbnail image only (no caption), or the gradient tile.
+    Alt text always falls back to the article headline, never empty."""
     s = BY_SLUG.get(slug)
+    alt = hescape(s["headline"]) if s else "Western World News"
     if s and s.get("image"):
-        return f'<img src="{hescape(s["image"])}" alt="" loading="lazy">'
+        return f'<img src="{hescape(s["image"])}" alt="{alt}" loading="lazy">'
     if slug in IMAGES:
         pid, _cap = IMAGES[slug]
-        return f'<img src="{uimg(pid, w)}" alt="" loading="lazy">'
+        return f'<img src="{uimg(pid, w)}" alt="{alt}" loading="lazy">'
     sec = SECTIONS[s["section"]] if s else "News"
     return art_html(sec, small=True)
 
@@ -852,6 +964,7 @@ def build_section(section, filename):
     else:
         listing = "<p>No stories in this section yet. New coverage is added daily.</p>"
     body = f"""
+{_breadcrumbs_html([("Home", "index.html"), (label, None)])}
 <h1 class="section-head">{label}</h1>
 {listing}
 {most_read_html()}
@@ -861,6 +974,8 @@ def build_section(section, filename):
         f"{label} news",
         f"Latest {label.lower()} news from Western World News: Western and European coverage, free to read.",
         filename, body, BASE + "/" + filename,
+        extra_head=_breadcrumb_jsonld([("Home", BASE + "/"),
+                                       (SECTION_LABELS_PLAIN[section], BASE + "/" + filename)]),
     )
 
 
@@ -906,7 +1021,11 @@ def build_article(s):
         for r in s["related"]
     )
     sec = SECTIONS[s["section"]]
+    crumbs = _breadcrumbs_html([("Home", "../index.html"),
+                                (sec, "../" + s["section"] + ".html"),
+                                (hescape(s["headline"]), None)])
     body = f"""
+{crumbs}
 <div class="article-layout">
 <div>
 <article data-article-slug="{s['slug']}">
@@ -914,7 +1033,7 @@ def build_article(s):
 <p><span class="kicker">{sec}</span></p>
 <h1>{s['headline']}</h1>
 <p class="dek">{s['dek']}</p>
-<p class="byline">Western World News &middot; <time>{s['date']}</time></p>
+<p class="byline">By <a href="../authors.html">Western World News Editorial Team</a> &middot; <time>{s['date']}</time></p>
 </header>
 <div class="article-hero">{img_html(s['slug'], w=1600)}</div>
 <div class="article-body">
@@ -936,9 +1055,15 @@ def build_article(s):
 </div>
 </div>
 """
+    schema = (_newsarticle_jsonld(s) + "\n" + _breadcrumb_jsonld([
+        ("Home", BASE + "/"),
+        (SECTION_LABELS_PLAIN[s["section"]], BASE + "/" + s["section"] + ".html"),
+        (s["headline"], BASE + "/articles/" + s["slug"] + ".html"),
+    ]))
     return page(
         s["headline"], s["dek"], s["section"] + ".html" if s["section"] != "live" else "index.html",
         body, BASE + f"/articles/{s['slug']}.html", og_type="article", prefix="../",
+        extra_head=schema,
     )
 
 
@@ -1974,7 +2099,7 @@ exists; until then they are clearly a design element, not a video player.
   Mailchimp, ConvertKit) before launch.
 - **Contact email addresses** (tips@ / ads@westernworldnews.com) are
   placeholders — set up the mailboxes first.
-- **Privacy policy** is a stub — complete it before adding analytics or ads.
+- **Privacy policy** is complete, including the Google AdSense and third-party cookies disclosure.
 - **Domain**: westernworldnews.com \u2014 live since 20 Nov 2026 (GitHub Pages, DNS via Hostinger).
 - **Ads**: none included yet. Add ad slots only after traffic exists.
 - **GitHub**: the site is pushed to github.com/pintuguptaji/western-world-news (branch main); push updates with the GitHub connector.
@@ -2096,28 +2221,132 @@ def main():
          "Advertising inquiries: ads@westernworldnews.com (mailbox to be set up. See README.md)."])))
     files.append(write("privacy.html", build_info(
         "privacy", "Privacy policy | Western World News",
-        "Privacy policy for Western World News.",
+        "Privacy policy for Western World News: what we collect, cookies, and how advertising works.",
         "Privacy policy",
-        ["Western World News respects your privacy. This page will be completed before launch with the site's full privacy policy.",
-         "Newsletter: if you sign up for our briefing, we use your email address only to send the briefing. You can unsubscribe at any time. We do not sell personal data.",
-         "Analytics and advertising: this static site currently uses no tracking. If analytics or advertising are added, this policy will be updated before they go live."])))
+        ["Western World News is a free news website. This privacy policy explains what information we collect when you visit westernworldnews.com, how we use it, and the choices you have. If you do not agree with this policy, please do not use the site.",
+         "Information you send us. We do not ask you to create an account, and we do not collect your name, address, or payment details. If you email us or sign up for our newsletter, we receive the email address and the message you send. We use that information only to reply to you or to send the newsletter you asked for. We do not sell your email address or any other personal information, and we do not share it except where the law requires it.",
+         "Cookies and advertising. This site shows advertising served by Google AdSense and other third party vendors. Third party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to this site and other sites on the internet. You can opt out of personalized advertising by visiting <a href='https://adssettings.google.com/'>Google Ads Settings</a>, or by visiting <a href='https://www.aboutads.info/choices/'>www.aboutads.info/choices</a>. Western World News uses Google AdSense to show advertising. We are in the process of applying for AdSense approval, and this section describes how advertising on this site works when ads are live.",
+         "Analytics. This site currently uses no analytics or tracking tools of its own. If we add analytics later, we will update this policy before the change goes live.",
+         "Links to other websites. Our stories link to the original reporting on other websites, such as the BBC, Reuters, and Al Jazeera. Those sites have their own privacy policies, and we are not responsible for how they handle your information.",
+         "Children's privacy. This site is a general news site and is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has sent us personal information, please contact us and we will delete it.",
+         "Changes to this policy. We may update this policy from time to time. The current version is always the one published on this page.",
+         "Contact. If you have questions about this policy, contact us through the <a href='contact.html'>contact page</a>."])))
+    files.append(write("terms.html", build_info(
+        "terms", "Terms of Service | Western World News",
+        "Terms of Service for Western World News: the rules for using this free news website.",
+        "Terms of Service",
+        ["These terms explain the rules for using westernworldnews.com. By using the site, you agree to these terms. If you do not agree, please do not use the site.",
+         "Free to read. Western World News is free to read. There is no paywall, and you do not need an account to read our stories.",
+         "Our content. Our stories are short summaries written in our own words, based on reporting by the sources we credit and link to. The summaries are ours, and the original reporting belongs to its publishers. You are welcome to share links to our stories. Please do not copy our text and republish it as your own.",
+         "Accuracy. News changes fast. We work hard to keep our summaries accurate and up to date, and we correct mistakes when we find them. But we cannot promise that every fact on the site is complete or current at all times, and you should check important facts against the original reporting. See our <a href='corrections.html'>corrections policy</a> for how corrections work.",
+         "Not advice. Nothing on this site is financial, legal, medical, or professional advice. Do not rely on a news summary to make financial, legal, or medical decisions.",
+         "Advertising. The site shows advertising, which is separate from our editorial content. Advertising does not affect what we report or how we report it. See our <a href='privacy.html'>privacy policy</a> for how advertising cookies work.",
+         "Changes and availability. We may change, pause, or remove any part of the site at any time, and we may update these terms. The current terms are always the ones published on this page.",
+         "Liability. The site is provided as it is, without warranties of any kind. We are not liable for any loss or damage that comes from using the site or relying on its content.",
+         "Contact. If you have questions about these terms, contact us through the <a href='contact.html'>contact page</a>."])))
+    files.append(write("disclaimer.html", build_info(
+        "disclaimer", "Disclaimer | Western World News",
+        "Disclaimer for Western World News: what our news summaries are, and what they are not.",
+        "Disclaimer",
+        ["Western World News publishes short news summaries based on reporting by trusted news organizations, including the BBC, Reuters, the Associated Press, Al Jazeera, Euronews, DW, France 24, The Guardian, CNN, and others. Each story credits and links to its original source.",
+         "Our summaries are not the original reporting. They are our own brief account of what the source reported. If a detail matters to you, please read the original article we link to.",
+         "News changes fast. Facts can change within hours of a story being published. We update our stories and correct mistakes when we learn of them, but we cannot promise that every page is current at the moment you read it.",
+         "Not advice. Nothing on this site is financial, legal, medical, or other professional advice, and nothing here should be treated as a recommendation to buy, sell, or do anything else.",
+         "Images. Photos on this site come from freely licensed sources such as Wikimedia Commons and Unsplash, or from the news feed that published the story. Each photo is credited. Photos labelled as illustrations do not show the event described in the story.",
+         "Links. Our stories link to other websites. We are not responsible for the content or privacy practices of those sites."])))
+    files.append(write("editorial-policy.html", build_info(
+        "editorial-policy", "Editorial Policy | Western World News",
+        "Editorial Policy for Western World News: how we choose, check, and write our news.",
+        "Editorial Policy",
+        ["Western World News is an independent news site. We cover worldwide news with a main focus on Western and European politics, war and conflict, and breaking news, plus a small Business and Finance section.",
+         "Trusted sources. We base our stories on reporting by trusted news organizations, including the BBC, Reuters, the Associated Press, Al Jazeera, Euronews, DW, France 24, The Guardian, CNN, and others. We do not base stories on rumors, anonymous social media posts, or unconfirmed claims.",
+         "Our own words. We write every story in our own words. We do not copy articles from other publications. Every story credits its source by name and links to the original report so readers can check the facts themselves.",
+         "What we do not publish. We do not publish rumors or unconfirmed breaking claims as fact. We do not publish graphic war detail. If a story cannot be verified, we wait or we leave it out.",
+         "Corrections. When we get something wrong, we correct it promptly and openly. Significant corrections are noted on the story itself. See our <a href='corrections.html'>corrections policy</a> for the details.",
+         "Advertising and sponsorship. Advertising is separate from editorial content. We do not present sponsored content as news, and advertisers do not decide what we cover or how we cover it.",
+         "Photos and video. Photos and videos on this site must match the story they go with. We use freely licensed photos, credited to their source, and we label illustrations clearly as illustrations. We never present stock or generated imagery as real event footage."])))
+    files.append(write("corrections.html", build_info(
+        "corrections", "Corrections Policy | Western World News",
+        "Corrections Policy for Western World News: how we fix mistakes, and how to report one.",
+        "Corrections Policy",
+        ["Western World News aims to get every fact right. When we make a mistake, we fix it.",
+         "How we correct. We correct errors as soon as we find them. Small typos and formatting fixes are corrected quietly. If a fact in a story was wrong, we correct the story and add a short note on the page saying what was changed.",
+         "How to report an error. If you spot a mistake, please tell us through the <a href='contact.html'>contact page</a>. Include the headline of the story and the fact that needs correcting. We read every report.",
+         "What we do not do. We do not remove stories because someone dislikes the news. We correct facts, and we leave the record of a correction on the page so readers can see what changed.",
+         "Sources. Most of our facts come from the reporting we credit and link to. If the original source corrects its own report, we update our summary to match."])))
+    files.append(write("authors.html", build_info(
+        "authors", "Our Editorial Team | Western World News",
+        "Our Editorial Team: the people behind Western World News, and how our stories are made.",
+        "Our Editorial Team",
+        ["Stories on Western World News are written by the Western World News Editorial Team, a small team that selects, rewrites, and checks the news every day. We publish under a team byline because the work is done together, from choosing a story to checking it before it goes live.",
+         "How we work. The team monitors trusted news sources around the clock, including the BBC, Reuters, the Associated Press, Al Jazeera, Euronews, DW, France 24, The Guardian, CNN, and others. We pick the stories that matter most to readers in the West and in Europe, and to readers who want to follow world news.",
+         "Every story is rewritten in our own words, credited to its original source, and linked to the original report. Before a story is published, the team checks the facts against the source and makes sure the summary is fair and accurate.",
+         "We also keep the site up to date. When news moves on, we add new stories and update the live blog. When we make a mistake, we correct it openly. See our <a href='editorial-policy.html'>editorial policy</a> and our <a href='corrections.html'>corrections policy</a> for the details.",
+         "Contact. You can reach the editorial team through the <a href='contact.html'>contact page</a>, for news tips, corrections, or questions about our coverage."])))
 
     # robots.txt — keep the admin panel out of search engines.
     files.append(write("robots.txt",
-        "User-agent: *\nAllow: /\nDisallow: /admin.html\n\nSitemap: " + BASE + "/sitemap.xml\n"))
+        "User-agent: *\nAllow: /\nDisallow: /admin.html\n\n"
+        "Sitemap: " + BASE + "/sitemap.xml\n"
+        "Sitemap: " + BASE + "/news-sitemap.xml\n"))
 
-    # sitemap.xml (admin deliberately excluded)
-    urls = ["", "world.html", "europe.html", "us.html", "politics.html",
-            "war-conflict.html", "business-finance.html", "sport.html",
-            "culture.html", "live.html", "about.html", "contact.html", "privacy.html"]
-    urls += ["articles/" + s["slug"] + ".html" for s in STORIES]
-    today = datetime.date.today().isoformat()
+    # Sitemaps (admin deliberately excluded from all of them).
+    page_urls = ["", "world.html", "europe.html", "us.html", "politics.html",
+                 "war-conflict.html", "business-finance.html", "sport.html",
+                 "culture.html", "live.html", "about.html", "contact.html",
+                 "privacy.html", "terms.html", "disclaimer.html",
+                 "editorial-policy.html", "corrections.html", "authors.html"]
+    article_urls = ["articles/" + s["slug"] + ".html" for s in STORIES]
+    urls = page_urls + article_urls
+    today_date = datetime.date.today()
+    today = today_date.isoformat()
     entries = "".join(
         f"  <url><loc>{BASE}/{u}</loc><lastmod>{today}</lastmod></url>\n" for u in urls
     )
     files.append(write("sitemap.xml",
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + entries + "</urlset>\n"))
+
+    # post-sitemap.xml: articles only.
+    post_entries = "".join(
+        f"  <url><loc>{BASE}/{u}</loc><lastmod>{today}</lastmod></url>\n" for u in article_urls
+    )
+    files.append(write("post-sitemap.xml",
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + post_entries + "</urlset>\n"))
+
+    # page-sitemap.xml: non-article pages only.
+    page_entries = "".join(
+        f"  <url><loc>{BASE}/{u}</loc><lastmod>{today}</lastmod></url>\n" for u in page_urls
+    )
+    files.append(write("page-sitemap.xml",
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + page_entries + "</urlset>\n"))
+
+    # news-sitemap.xml: Google News format, articles from the last 2 days only.
+    news_items = []
+    for s in STORIES:
+        d = _parse_date(s["date"])
+        if d and 0 <= (today_date - d).days <= 2:
+            news_items.append(s)
+    news_entries = "".join(
+        "  <url>\n"
+        f"    <loc>{BASE}/articles/{s['slug']}.html</loc>\n"
+        "    <news:news>\n"
+        "      <news:publication>\n"
+        "        <news:name>Western World News</news:name>\n"
+        "        <news:language>en</news:language>\n"
+        "      </news:publication>\n"
+        f"      <news:publication_date>{_iso_date(s['date'])}</news:publication_date>\n"
+        f"      <news:title>{hescape(s['headline'])}</news:title>\n"
+        "    </news:news>\n"
+        "  </url>\n" for s in news_items
+    )
+    files.append(write("news-sitemap.xml",
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
+        '        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n'
+        + news_entries + "</urlset>\n"))
 
     files.append(write("README.md", README_MD))
 

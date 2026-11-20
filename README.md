@@ -112,7 +112,7 @@ exists; until then they are clearly a design element, not a video player.
   Mailchimp, ConvertKit) before launch.
 - **Contact email addresses** (tips@ / ads@westernworldnews.com) are
   placeholders — set up the mailboxes first.
-- **Privacy policy** is a stub — complete it before adding analytics or ads.
+- **Privacy policy** is complete, including the Google AdSense and third-party cookies disclosure.
 - **Domain**: westernworldnews.com — live since 20 Nov 2026 (GitHub Pages, DNS via Hostinger).
 - **Ads**: none included yet. Add ad slots only after traffic exists.
 - **GitHub**: the site is pushed to github.com/pintuguptaji/western-world-news (branch main); push updates with the GitHub connector.

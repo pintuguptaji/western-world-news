@@ -106,6 +106,12 @@ main { padding: 1.5rem 0 2rem; }
 .byline time { font-weight: 600; color: var(--ink); }
 .byline a { color: var(--red); font-weight: 700; }
 
+/* ---------- Breadcrumbs ---------- */
+.breadcrumbs { font-size: 0.85rem; color: var(--muted); margin: 0 0 1rem; }
+.breadcrumbs a { color: var(--muted); }
+.breadcrumbs a:hover { color: var(--red); }
+.breadcrumbs span { color: var(--ink); font-weight: 600; }
+
 /* ---------- Hero (three-column) ---------- */
 .hero-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-bottom: 1.6rem; }
 @media (min-width: 1000px) { .hero-grid { grid-template-columns: 1.35fr 1fr 280px; } }

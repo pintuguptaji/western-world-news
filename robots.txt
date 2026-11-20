@@ -3,3 +3,4 @@ Allow: /
 Disallow: /admin.html
 
 Sitemap: https://westernworldnews.com/sitemap.xml
+Sitemap: https://westernworldnews.com/news-sitemap.xml
