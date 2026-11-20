@@ -610,6 +610,36 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 20, 23:28",
+      "text": "A new Nepal, an old neighbour - Balendra Shah's India test",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 20, 23:20",
+      "text": "Dead pets were meant to be cremated - then their bodies appeared on a livestream",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 20, 23:20",
+      "text": "Man accused of sparking deadly Los Angeles wildfire found guilty",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 20, 23:09",
+      "text": "NSW passes Mount Pleasant coalmine law as Greens claim change an attempt to head off One Nation",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 20, 23:08",
+      "text": "In a year of AI solving maths problems, Anthropic may have just solved the biggest",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 20, 23:06",
+      "text": "Fossil fuel talks deadlock pushes COP31 climate summit into overtime",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 20, 22:42",
       "text": "Tech stock sell-off drags markets down as Anthropic shares slide",
       "link": "live.html"
@@ -617,36 +647,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 20, 22:37",
       "text": "French police officers sentenced for beating of music producer Michel Zecler",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 20, 22:23",
-      "text": "French police officers found guilty of racist assault on black music producer",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 20, 22:15",
-      "text": "US lawmakers push for tougher AI chip rules amid China export crackdown",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 20, 22:14",
-      "text": "'I tell my son it's just fireworks': Life inside Yemeni city besieged by Houthis",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 20, 22:04",
-      "text": "Paris police officers sentenced to prison over 2020 beating of Black man",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 20, 21:57",
-      "text": "Denmark accuses Russia of plotting to assassinate US-Ukrainian rapper",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 20, 21:53",
-      "text": "Guinea bans Burkina Faso broadcaster, escalating diplomatic tensions",
       "link": "live.html"
     }
   ],
