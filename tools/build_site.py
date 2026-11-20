@@ -586,6 +586,15 @@ footer.site-footer .mini-form input[type="email"] { flex: 1; min-width: 0; paddi
 footer.site-footer .mini-form button { background: #111; color: #fff; border: 0; padding: 0.5rem 0.8rem; border-radius: 4px; font-weight: 700; cursor: pointer; }
 footer.site-footer .mini-form button:hover { background: #000; }
 footer.site-footer .fineprint { border-top: 1px solid var(--line); margin-top: 1.5rem; padding-top: 0.9rem; font-size: 0.82rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; justify-content: space-between; }
+.cookie-banner { position: fixed; left: 0; right: 0; bottom: 0; z-index: 200; background: #fff; border-top: 1px solid var(--line-strong); box-shadow: 0 -4px 16px rgba(0,0,0,0.08); padding: 0.9rem 1rem; display: none; }
+.cookie-banner.show { display: block; }
+.cookie-banner .wrap { display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; align-items: center; justify-content: space-between; }
+.cookie-banner p { margin: 0; font-size: 0.92rem; color: #333; flex: 1; min-width: 200px; }
+.cookie-banner .actions { display: flex; gap: 0.5rem; }
+.cookie-banner button { border: 0; border-radius: 4px; padding: 0.55rem 1rem; font-weight: 700; font-size: 0.92rem; cursor: pointer; }
+.cookie-banner .accept { background: #111; color: #fff; }
+.cookie-banner .accept:hover { background: #000; }
+.cookie-banner .decline { background: #fff; color: #111; border: 1px solid var(--line-strong); }
 
 .skip-link { position: absolute; left: -999px; top: 0; background: var(--red); color: #fff; padding: 0.5rem 1rem; z-index: 300; }
 .skip-link:focus { left: 0; }
@@ -719,6 +728,15 @@ def page(title, description, active, body, canonical, og_type="website", prefix=
 {body}
 </div></main>
 {footer_html(prefix)}
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent">
+<div class="wrap">
+<p>We use cookies to improve your experience and to show ads. You can accept or decline. Read our <a href="{prefix}privacy.html">Privacy Policy</a>.</p>
+<div class="actions">
+<button class="decline" id="cookie-decline" type="button">Decline</button>
+<button class="accept" id="cookie-accept" type="button">Accept</button>
+</div>
+</div>
+</div>
 <script src="{prefix}assets/js/content.js"></script>
 <script src="{prefix}assets/js/main.js"></script>
 </body>
@@ -1217,6 +1235,22 @@ MAIN_JS = """// Western World News: front-end behavior (v2).
   store.articles.forEach(function (a) { bySlug[a.slug] = a; });
 
   document.addEventListener("DOMContentLoaded", function () {
+    // Cookie consent banner.
+    var cb = $("#cookie-banner");
+    if (cb) {
+      var choice = null;
+      try { choice = localStorage.getItem("wwn-cookie-choice"); } catch (e) {}
+      if (!choice) { cb.classList.add("show"); }
+      var saveChoice = function (v) {
+        try { localStorage.setItem("wwn-cookie-choice", v); } catch (e) {}
+        cb.classList.remove("show");
+      };
+      var acc = $("#cookie-accept");
+      if (acc) acc.addEventListener("click", function () { saveChoice("accepted"); });
+      var dec = $("#cookie-decline");
+      if (dec) dec.addEventListener("click", function () { saveChoice("declined"); });
+    }
+
     // Dateline.
     $all("[data-today]").forEach(function (el) {
       el.textContent = new Date().toLocaleDateString("en-GB", {

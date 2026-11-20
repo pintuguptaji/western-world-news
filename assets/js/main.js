@@ -41,6 +41,22 @@
   store.articles.forEach(function (a) { bySlug[a.slug] = a; });
 
   document.addEventListener("DOMContentLoaded", function () {
+    // Cookie consent banner.
+    var cb = $("#cookie-banner");
+    if (cb) {
+      var choice = null;
+      try { choice = localStorage.getItem("wwn-cookie-choice"); } catch (e) {}
+      if (!choice) { cb.classList.add("show"); }
+      var saveChoice = function (v) {
+        try { localStorage.setItem("wwn-cookie-choice", v); } catch (e) {}
+        cb.classList.remove("show");
+      };
+      var acc = $("#cookie-accept");
+      if (acc) acc.addEventListener("click", function () { saveChoice("accepted"); });
+      var dec = $("#cookie-decline");
+      if (dec) dec.addEventListener("click", function () { saveChoice("declined"); });
+    }
+
     // Dateline.
     $all("[data-today]").forEach(function (el) {
       el.textContent = new Date().toLocaleDateString("en-GB", {
