@@ -24,268 +24,256 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "section": "war-conflict",
       "headline": "Russia launches one of the largest missile attacks of the war on Ukraine",
-      "dek": "More than 110 missiles were fired overnight, Ukrainian officials say, hours after Trump, Putin and Xi met in China — and as Poland scrambled jets after its airspace was violated.",
+      "dek": "At least nine people were killed and 28 injured as Russia fired more than 110 missiles and around 400 drones at Ukraine overnight — hours after Trump said a ‘tired’ Putin was ready for a deal.",
       "date": "20 November 2026",
       "source": "CNN",
       "source_url": "https://www.cnn.com/2026/11/20/europe/russia-ukraine-putin-trump-intl-hnk",
       "body": [
-        "Russia launched a large overnight missile and drone attack on Ukraine into Friday, Ukrainian officials said, killing at least eight people and injuring at least 28, in what Kyiv described as one of the largest aerial assaults of the war.",
-        "Ukraine said Russia fired at least 110 missiles overnight — an unusually large number even by the standards of a war now in its fifth year. The attack lasted more than ten hours, according to Ukrainian authorities.",
-        "Russia's defence ministry said it had carried out a “massive strike” with high-precision weapons launched from land, sea and air, as well as drones, targeting military and energy facilities, port infrastructure in the Odesa region and transport infrastructure in Kyiv. President Volodymyr Zelensky said “absolutely all the targets were ordinary civilian infrastructure”.",
-        "Three bridges in Kyiv were damaged, according to mayor Vitaly Klitschko, cutting transport links between the two sides of the capital.",
+        "Russia launched one of the largest aerial attacks of the war on Ukraine overnight into Friday, killing at least nine people and injuring 28, Ukrainian officials said, hours after President Vladimir Putin met US President Donald Trump and Chinese leader Xi Jinping for trilateral talks in Shenzhen.",
+        "Ukraine said Russia fired at least 110 missiles and around 400 drones — including 120 jet-powered drones — in an assault that lasted more than ten hours. Twenty-seven of the missiles were ballistic, and Ukrainian air defences intercepted only three of them, amid a critical shortage of Patriot interceptor missiles.",
+        "Three bridges across the Dnipro river in Kyiv — the Podilskyi, Darnytskyi and Southern bridges — were damaged, disrupting transport between the two sides of the capital. A hospital in Kharkiv was hit, injuring four people, and strikes were reported on homes, businesses and energy sites in nine regions.",
+        "Ukraine’s nuclear power plants were forced to reduce operations, and power cuts were reported in Kyiv and ten regions, officials said. President Volodymyr Zelensky said “absolutely all the targets were ordinary civilian infrastructure”, and described the tactics as “particularly vicious”: missiles arrived in waves, with pauses of 20 to 30 minutes between them to make firefighting and repairs harder.",
         "Poland said fighter jets were scrambled and Patriot air defence systems activated early on Friday after objects flew into and fell inside Polish territory during the attack.",
-        "The strikes came hours after President Vladimir Putin met US President Donald Trump and Chinese leader Xi Jinping for trilateral talks in Shenzhen. Trump later spoke with European leaders and, according to a senior European official, described Putin as “tired” and ready for a deal. The talks produced no breakthrough, and no official declaration was released.",
-        "Putin had vowed revenge for Ukraine's recent attacks on the bridge linking Russia with occupied Crimea."
+        "Russia’s defence ministry said it had carried out a “massive strike” on military and energy facilities, port infrastructure in the Odesa region and transport infrastructure in Kyiv. The strikes were revenge, Putin had said, for Ukraine’s attacks this week on the bridge linking Russia with occupied Crimea.",
+        "The attack came hours after Trump told European leaders that Putin was “tired” and ready for a deal, following the Shenzhen summit."
       ],
       "related": [
-        "gaza-ceasefire-collapse-warning",
-        "trump-xi-putin-shenzhen-summit",
-        "eu-ukraine-loan-45-billion"
+        "eu-uk-reset-deal",
+        "shenzhen-aftermath-europe-pushback",
+        "gaza-yellow-line-raid"
       ],
-      "image": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1200&q=80",
-      "imageCaption": "A city skyline at night. Illustrative photo. Photo: Unsplash"
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Kyiv_skyline_%2815688086793%29.jpg/1280px-Kyiv_skyline_%2815688086793%29.jpg",
+      "imageCaption": "The Kyiv skyline across the Dnipro river at dawn. Photo: Wikimedia Commons (CC BY-SA 2.0)"
     },
     {
-      "slug": "trump-xi-putin-shenzhen-summit",
-      "sections": [
-        "world",
-        "politics"
-      ],
-      "section": "world",
-      "headline": "Trump, Xi and Putin hold historic trilateral talks — but no breakthrough on Ukraine",
-      "dek": "The leaders of the three biggest nuclear powers met in Shenzhen for the first time, agreeing a joint declaration on the UN, nuclear weapons and oil — while the war in Ukraine went on.",
-      "date": "19 November 2026",
-      "source": "The Times",
-      "source_url": "https://www.thetimes.com/world/asia/article/trump-xi-putin-summit-shenzhen-latest-news-ddskr7pcx",
-      "body": [
-        "The leaders of the United States, China and Russia met in Shenzhen on Thursday for the first trilateral talks between the three nuclear powers.",
-        "A joint declaration covered reform of the United Nations, nuclear weapons, oil production and international law, but the meeting produced no breakthrough on the war in Ukraine.",
-        "The talks lasted just over an hour. President Donald Trump embraced President Vladimir Putin and called him “my friend” before the meeting, and left for the airport immediately afterwards.",
-        "Trump later spoke with European leaders in the “coalition of the willing”, who were meeting in Berlin with US envoys Steve Witkoff and Jared Kushner. According to an official present, he told them they were spending too much money on the war and should be spending it on their own countries.",
-        "The leaders of the E3 — the UK, Germany and France — and Ukraine called on Russia to agree to a ceasefire on attacks on energy infrastructure for the duration of winter.",
-        "Trump also told NBC News that he would meet North Korean leader Kim Jong-un at “some point”."
-      ],
-      "related": [
-        "russia-ukraine-missile-attack",
-        "democrats-win-congress-midterms",
-        "denmark-greenland-security-deal"
-      ],
-      "image": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?auto=format&fit=crop&w=1200&q=80",
-      "imageCaption": "A modern city skyline at dusk. Illustrative photo. Photo: Unsplash"
-    },
-    {
-      "slug": "gaza-ceasefire-collapse-warning",
-      "sections": [
-        "war-conflict",
-        "world"
-      ],
-      "section": "war-conflict",
-      "headline": "Gaza ceasefire at risk of collapse, Board of Peace warns UN Security Council",
-      "dek": "The body overseeing the US-brokered truce says the gap between what was agreed and what is happening on the ground is now the main threat to the deal.",
-      "date": "18 November 2026",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/amp/news/2026/11/18/board-of-peace-warns-gaza-ceasefire-faces-imminent-collapse-without-action",
-      "body": [
-        "The Board of Peace, the body overseeing the US-brokered ceasefire in Gaza, has warned the UN Security Council that the year-old truce risks collapse if its terms are not fully implemented.",
-        "In its first annual assessment, a copy of which was obtained by the Associated Press, the board said “the distance between what has been agreed and what is happening on the ground” was the principal risk to the process, and that “a ceasefire that delivers nothing visible cannot be sustained indefinitely.”",
-        "The ceasefire formally began on 10 October 2025, but attacks have continued. The Palestinian health ministry says more than 1,600 people have been killed in Israeli strikes since then.",
-        "At the centre of the stall is the technocratic civil administration created to run Gaza on an interim basis. The board says Israel has still not allowed it to take up its job in the territory, delaying the international stabilisation force, an Israeli troop withdrawal, the disarmament of Hamas and reconstruction.",
-        "Israel says reconstruction can begin only after Hamas disarms. Hamas has refused to give up its weapons while Israeli forces remain in Gaza.",
-        "The board also noted that Israeli forces had begun a ground operation west of the Yellow Line in central Gaza. The military later said the operation was complete and reopened Salah al-Din Street."
-      ],
-      "related": [
-        "russia-ukraine-missile-attack",
-        "trump-xi-putin-shenzhen-summit"
-      ],
-      "image": "https://images.unsplash.com/photo-1547234935-80c7145ec969?auto=format&fit=crop&w=1200&q=80",
-      "imageCaption": "Desert landscape in the Middle East. Illustrative photo. Photo: Unsplash"
-    },
-    {
-      "slug": "eu-ukraine-loan-45-billion",
+      "slug": "eu-uk-reset-deal",
       "sections": [
         "europe",
         "politics",
         "business-finance"
       ],
       "section": "europe",
-      "headline": "EU proposes €45 billion loan to keep Ukraine funded in 2027",
-      "dek": "The loan would cover around two-thirds of Kyiv's expected funding gap next year — and would be repaid, the Commission says, through future war reparations by Russia.",
-      "date": "18 November 2026",
-      "source": "Reuters",
-      "source_url": "https://www.reuters.com/world/eu-proposes-new-45-billion-loan-ukraine-2027-be-repaid-by-russia-2026-11-18/",
+      "headline": "EU and UK seal reset deal to end a ‘decade of drift’ after Brexit",
+      "dek": "Trade checks scrapped, carbon markets linked and 100,000 young people to get the chance to live and work on either side of the Channel — but university fees are still unresolved.",
+      "date": "20 November 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/11/20/eu-and-uk-seal-reset-deal",
       "body": [
-        "The European Commission has proposed a new €45 billion (about $49 billion) loan to Ukraine for 2027, to be repaid through future war reparations by Russia.",
-        "The loan would cover around two-thirds of Ukraine's expected €70 billion funding gap next year, with the rest to come from other international partners.",
-        "Up to €25 billion would go to military assistance and up to €20 billion to general budget support, keeping hospitals, schools and other public services running.",
-        "Disbursements would be tied to Kyiv continuing reforms, particularly on the rule of law, anti-corruption efforts and public finance management.",
-        "The plan needs approval from EU governments and the European Parliament. The budget amendment underpinning it would need unanimous support from member states.",
-        "Commission President Ursula von der Leyen said she was confident all 27 members would back the plan. EU leaders were due to discuss it at a Brussels summit."
+        "The United Kingdom and the European Union have struck a deal to reset relations a decade after the Brexit vote, agreeing measures on trade, carbon emissions and youth mobility at a summit in Brussels on Friday.",
+        "The three agreements will scrap checks on food, plant and animal products traded between Britain and the EU — aiming to take effect by 1 March 2028 — link the two sides’ emissions trading systems, and let up to 100,000 young adults from each side live and work in the other’s countries for up to three years.",
+        "Prime Minister Andy Burnham, meeting European Commission President Ursula von der Leyen and European Council President António Costa at only the second EU-UK summit since Brexit, said the deal would “rebuild the bridges that were broken all those years ago” and called it “a good day for Britain, and a good day for Europe”.",
+        "Downing Street said the package could add 0.5 percent to Britain’s economy — about £17 billion — with the food and farm deal alone worth an estimated £5.1 billion. Linking the emissions trading systems will exempt British and EU goods, such as steel, from each other’s border carbon levies.",
+        "One big issue remains unresolved: university tuition fees. Brussels wants EU students at British universities to pay the same domestic rates as British students, rather than the much higher international fees charged now. The two sides gave themselves six months to reach an agreement.",
+        "Burnham said a bill covering the agreements will go before Parliament next week. Von der Leyen called the deal a “win-win” and said there was a strong foundation to deepen security ties — a theme sharpened by the overnight Russian missile strikes on Ukraine and the violation of Polish airspace."
+      ],
+      "related": [
+        "shenzhen-aftermath-europe-pushback",
+        "wall-street-selloff",
+        "democrats-document-preservation"
+      ],
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/European_Parliament_-_Hemicycle.jpg/1280px-European_Parliament_-_Hemicycle.jpg",
+      "imageCaption": "The European Parliament hemicycle in Brussels. Photo: Wikimedia Commons (CC BY-SA 3.0)"
+    },
+    {
+      "slug": "shenzhen-aftermath-europe-pushback",
+      "sections": [
+        "world",
+        "politics"
+      ],
+      "section": "world",
+      "headline": "After Shenzhen, Europe pushes back — and Moscow rules out NATO-style guarantees for Ukraine",
+      "dek": "Russia rejected the idea of Article 5-style security guarantees a day after the US team claimed Moscow was ‘comfortable’ with them, as Kyiv’s allies in Berlin pledged €70 billion for next year.",
+      "date": "20 November 2026",
+      "source": "The Times",
+      "source_url": "https://www.thetimes.com/world/asia/article/trump-putin-ukraine-russia-coalition-of-willing-btlls0fhr",
+      "body": [
+        "Russia has ruled out giving Ukraine NATO-style security guarantees as part of any peace deal, a day after the United States said Moscow was comfortable with the idea.",
+        "Jared Kushner, President Trump’s son-in-law and a member of the US negotiating team, said on Thursday that the Russians had been got “comfortable with that concept, where any security guarantee for Ukraine would be based on Article 5” — NATO’s collective defence clause.",
+        "On Friday, Deputy Foreign Minister Sergei Ryabkov pushed back. “Even the notion of a formula for Ukraine’s quasi-membership of NATO, and the search for some sort of, in inverted commas, ‘creative solution’ in this area, is an option that is unacceptable to us,” he said.",
+        "European leaders, meeting in Berlin as the “coalition of the willing”, dismissed the Shenzhen summit of Trump, Xi Jinping and Vladimir Putin as a “photo op” that stood no chance of bringing peace. The 40 countries at the meeting committed to honouring NATO’s pledge of €70 billion in military aid to Ukraine this year, and to keeping it at at least that level in 2027.",
+        "German Chancellor Friedrich Merz said: “We will continue to support Kyiv for as long as is necessary. A Yalta format will not bring about peace” — a reference to the 1945 conference where the postwar order was decided, which Russian media had compared the Shenzhen meeting to.",
+        "Trump, calling the Berlin meeting from Air Force One, told the European leaders they were spending too much money on the war and should spend it on their own countries, according to an official present. He also told them Putin was “tired” and ready for a deal — hours before Russia launched one of the largest missile attacks of the war on Ukraine."
       ],
       "related": [
         "russia-ukraine-missile-attack",
-        "bank-of-england-raises-rates",
-        "uk-inflation-3-6-percent"
+        "eu-uk-reset-deal",
+        "icj-myanmar-genocide-ruling"
       ],
-      "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1200&q=80",
-      "imageCaption": "A street in a European old town. Illustrative photo. Photo: Unsplash"
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Skyline_of_Shenzhen_from_Hong_Kong.jpg/1280px-Skyline_of_Shenzhen_from_Hong_Kong.jpg",
+      "imageCaption": "The Shenzhen skyline, seen from across the border in Hong Kong. Photo: Wikimedia Commons (CC BY-SA 4.0)"
     },
     {
-      "slug": "denmark-greenland-security-deal",
+      "slug": "gaza-yellow-line-raid",
       "sections": [
-        "europe",
+        "war-conflict",
         "world"
       ],
-      "section": "europe",
-      "headline": "Denmark approves US–Greenland security deal, easing Arctic tensions",
-      "dek": "All 109 lawmakers present voted in favour of the agreement, which lets the US build two bases in Greenland while keeping the island under Danish sovereignty.",
+      "section": "war-conflict",
+      "headline": "Israel ends first major Gaza ground raid across the ceasefire line since the truce",
+      "dek": "Tanks crossed the Yellow Line to demolish a Hamas tunnel in central Gaza, displacing thousands — the biggest Israeli ground operation since the October 2025 ceasefire began.",
       "date": "19 November 2026",
-      "source": "Al Jazeera",
-      "source_url": "https://www.aljazeera.com/news/2026/11/19/denmark-parliament-approves-security-deal-with-greenland-and-us",
+      "source": "Reuters",
+      "source_url": "https://www.reuters.com/world/middle-east/israel-says-it-concludes-gaza-tank-raid-2026-11-19/",
       "body": [
-        "Denmark's parliament has unanimously approved a security agreement with the United States covering Greenland, easing months of tension over President Donald Trump's desire to annex the Arctic island.",
-        "All 109 lawmakers present in the 179-seat Folketing voted in favour, with no votes against and no abstentions. Greenland's parliament approved the deal earlier in November by 16 votes to none, with seven abstentions.",
-        "The agreement, signed in New York on 22 September, supplements a 1951 accord on the US military presence in Greenland. It allows the US to build two military bases in Greenland and blocks countries outside the EU and NATO from strategic sectors, to stop China or Russia gaining influence there.",
-        "The deal is an executive agreement and does not need a vote in the US Senate. It enters into force once Denmark's foreign ministry formally notifies the US that procedures are complete.",
-        "The agreement reaffirms the sovereignty of the Kingdom of Denmark and the right of Greenland's people to self-determination."
+        "Israel’s military said on Thursday it had concluded a tank raid to dismantle a suspected Hamas tunnel in the central Gaza Strip — its highest-profile ground incursion across the ceasefire line since the truce halted major fighting more than a year ago.",
+        "The operation began on Wednesday, when troops and intelligence personnel crossed the so-called Yellow Line — the boundary of Israel’s deployment under the US-brokered ceasefire — in the central Gaza Strip, near the Nuseirat and Bureij refugee camps.",
+        "The military said the tunnel crossed into the Israeli side of the line and was connected to Hamas “activity hubs” in central Gaza, and that it demolished a section Hamas was trying to restore. It described the tunnel as an “immediate and direct threat” to its forces.",
+        "Tanks and armoured bulldozers advanced 200 to 400 metres past the line, and the main north-south Salah al-Din road was closed before reopening on Thursday. Palestinian families fled the area, which the UN’s humanitarian office said was home to more than 18,000 people, including 4,000 in displaced-persons camps.",
+        "Israel, which says Hamas has been regrouping and rearming, has stepped up attacks against the group in recent weeks. The raid came a day after the Board of Peace, the body overseeing the ceasefire, warned the UN Security Council that the year-old truce risks collapse if its terms are not fully implemented.",
+        "The ceasefire formally began on 10 October 2025, but attacks have continued, and the Palestinian health ministry says more than 1,600 people have been killed in Israeli strikes since then."
       ],
       "related": [
-        "trump-xi-putin-shenzhen-summit",
-        "eu-ukraine-loan-45-billion"
+        "russia-ukraine-missile-attack",
+        "icj-myanmar-genocide-ruling"
       ],
-      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
-      "imageCaption": "Snow-covered mountains under a night sky. Illustrative photo. Photo: Unsplash"
+      "image": "",
+      "imageCaption": ""
     },
     {
-      "slug": "democrats-win-congress-midterms",
+      "slug": "democrats-document-preservation",
       "sections": [
         "us",
         "politics"
       ],
       "section": "us",
-      "headline": "Democrats seal 56–44 Senate majority as final midterm race is called",
-      "dek": "Mary Peltola's win in Alaska completes a sweeping Democratic victory in the US midterms — control of both chambers of Congress, and a divided government for Trump's final two years.",
-      "date": "19 November 2026",
-      "source": "Nikkei Asia",
-      "source_url": "https://asia.nikkei.com/politics/u.s.-midterm-elections/us-midterms-democrats-seal-56-44-senate-majority-with-alaska-win",
+      "headline": "Democrats warn Trump administration over alleged destruction of records before they take Congress",
+      "dek": "Preservation letters went to the Justice Department, FBI and Homeland Security on Friday, as the incoming majority says it fears evidence for future investigations is being deleted.",
+      "date": "20 November 2026",
+      "source": "CNN",
+      "source_url": "https://www.cnn.com/2026/11/20/politics/democrats-trump-administration-documents-destruction",
       "body": [
-        "Democrats have completed a sweeping victory in the US midterm elections, winning control of both the House of Representatives and the Senate.",
-        "Democrat Mary Peltola defeated two-term Republican Senator Dan Sullivan in Alaska, according to the Associated Press, completing the final unresolved Senate race and giving Democrats a 56–44 majority.",
-        "Democrats flipped nine Republican-held Senate seats, with wins in traditionally conservative states including Texas, Kansas, Mississippi and South Carolina.",
-        "In Texas, James Talarico defeated Ken Paxton — the first Democrat to win statewide office there in 32 years. In Kansas, Adam Hamilton beat Roger Marshall; Democrats last won a Senate seat there in 1932.",
-        "Democrats also won the House, passing the 218 seats needed for a majority. All 435 House seats and 35 of the Senate's 100 seats were contested in the 3 November elections.",
-        "Democrats have nominated Hakeem Jeffries to be the next House speaker, putting him on course to become the first Black lawmaker to hold the gavel when the new Congress convenes on 3 January.",
-        "Voter discontent over inflation, tariffs, AI data centres and the war in Iran drove the result, according to Nikkei Asia's reporting."
+        "Democrats have put the Trump administration on notice over alleged destruction of government documents, sending preservation letters across the federal government on Friday — weeks before the party takes control of Congress.",
+        "The letters, led by Representative Jamie Raskin, who is in line to chair the House Judiciary Committee, went to the Department of Justice, the Federal Bureau of Investigation, the Department of Homeland Security, Immigration and Customs Enforcement and the Bureau of Prisons.",
+        "Raskin said there was “significant evidence that Trump Administration officials have engaged in the widespread destruction, mutilation, and concealment of government records, seemingly with the express purpose of circumventing federal record preservation laws.”",
+        "Democratic investigators are particularly concerned about the use of the encrypted messaging app Signal by federal employees. In one case cited in the letters, a Signal conversation between the FBI’s general counsel and an associate of Donald Trump Jr. appeared to have been set to auto-delete after a week.",
+        "The White House said Democrats were making claims about document destruction without evidence, but also indicated it saw no obligation to comply with the demands before the new Congress takes over on 3 January. Democrats are preparing far-reaching investigations into the administration and fear destroyed records could hinder their oversight.",
+        "One former White House lawyer described the letters as Congress “drawing a line in the sand”, so that anyone who destroys records could later face prosecution for obstruction of Congress. Whistleblowers have also warned that key paperwork about the president’s construction projects in Washington may be at risk."
       ],
       "related": [
-        "trump-xi-putin-shenzhen-summit",
-        "uk-inflation-3-6-percent"
+        "shenzhen-aftermath-europe-pushback",
+        "wall-street-selloff"
       ],
-      "image": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1200&q=80",
-      "imageCaption": "A parliament chamber in session. Illustrative photo. Photo: Unsplash"
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Capitol_at_Dusk_2.jpg/1280px-Capitol_at_Dusk_2.jpg",
+      "imageCaption": "The United States Capitol in Washington at dusk. Photo: Wikimedia Commons (CC BY-SA 3.0)"
     },
     {
-      "slug": "bank-of-england-raises-rates",
+      "slug": "wall-street-selloff",
       "sections": [
-        "business-finance",
-        "europe"
+        "business-finance"
       ],
       "section": "business-finance",
-      "headline": "Bank of England raises rates to 4% — first increase since 2023",
-      "dek": "The Bank acted as energy prices pushed by the Middle East conflict drive inflation higher, and warned it could reach around 5% by mid-2027.",
-      "date": "5 November 2026",
-      "source": "Reuters",
-      "source_url": "https://www.reuters.com/world/uk/britains-long-wait-2-inflation-tests-public-faith-bank-england-2026-11-18/",
+      "headline": "Wall Street tumbles as Dow drops 1,100 points in AI-led sell-off",
+      "dek": "The S&P 500 fell for a sixth straight session — its longest losing streak in two and a half years — even as Anthropic’s record IPO soared on its debut.",
+      "date": "20 November 2026",
+      "source": "Associated Press",
+      "source_url": "https://www.manilatimes.net/2026/11/20/business/foreign-business/wall-street-tumbles-to-its-longest-losing-streak-since-2024-as-the-dow-drops-1100-points/2474698",
       "body": [
-        "The Bank of England has raised interest rates to 4%, its first increase in more than three years, as energy prices push inflation higher.",
-        "The Monetary Policy Committee voted 8–1 to raise Bank Rate by a quarter of a percentage point from 3.75%. Catherine Mann dissented, preferring a larger rise to 4.25%.",
-        "The Bank said the Middle East conflict had driven energy prices sharply higher since July, with oil up 38% and UK gas up 81%, and warned inflation could reach around 5% by mid-2027 — far above its 2% target.",
-        "Governor Andrew Bailey said the rise should not be seen as the start of an inevitable long sequence of increases, but warned more could follow if the conflict drags on.",
-        "The next decision is due on 17 December. Markets had priced in a near-certain rise, and mortgage rates had already climbed since September."
+        "The US stock market tumbled again on Thursday as beaten-down stocks tied to artificial intelligence kept falling, on worries that the sector’s breathtaking boom may be over.",
+        "The Dow Jones Industrial Average dropped 1,101 points, or 2.2 percent, to 49,097.06 — its first close below 50,000 since June, and a loss of 2,500 points over the last three sessions. The S&P 500 fell 2 percent to 7,175.83, its sixth straight loss and its longest losing streak in two and a half years. The Nasdaq composite sank 2.3 percent.",
+        "The losses were widespread: more than 90 percent of the stocks in the S&P 500 fell, and all 11 of its sectors declined. The index is now 8.2 percent below its all-time high of last month.",
+        "The sell-off came on the same day that Anthropic, the AI company behind the Claude chatbot, made its stock market debut. Shares were priced at $83, opened at about $111, and closed about 17 percent above the offer price at $97.17 — the largest initial public offering ever — but the success did nothing to stem the selling.",
+        "In Europe, the FTSE 100 fell 0.9 percent to 10,452.68 and Germany’s DAX lost 1.1 percent on Thursday. The selling spread to Asia on Friday, with Japan’s Nikkei down more than 5 percent. The VIX, Wall Street’s fear gauge, closed at 28.44, up nearly 16 percent."
       ],
       "related": [
-        "uk-inflation-3-6-percent",
-        "eu-ukraine-loan-45-billion"
+        "eu-uk-reset-deal",
+        "democrats-document-preservation"
       ],
-      "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=80",
-      "imageCaption": "Westminster, London. Illustrative photo. Photo: Unsplash"
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Wall_Street_-_New_York_Stock_Exchange.jpg/1280px-Wall_Street_-_New_York_Stock_Exchange.jpg",
+      "imageCaption": "The New York Stock Exchange on Wall Street. Photo: Wikimedia Commons (CC BY-SA 3.0)"
     },
     {
-      "slug": "uk-inflation-3-6-percent",
-      "sections": [
-        "business-finance",
-        "europe"
-      ],
-      "section": "business-finance",
-      "headline": "UK inflation hits 12-month high of 3.6% as fuel costs climb",
-      "dek": "Consumer prices rose for a fourth month in a row in October, driven by motor fuel and tobacco duty — complicating the Bank of England's fight against inflation.",
-      "date": "18 November 2026",
-      "source": "Reuters",
-      "source_url": "https://www.reuters.com/world/uk/uk-inflation-one-year-high-weighs-ftse-100-2026-11-18/",
-      "body": [
-        "UK inflation rose to a 12-month high of 3.6% in October, up from 3.5% in September, official figures showed on Wednesday.",
-        "The Office for National Statistics said it was the fourth consecutive monthly increase, driven by motor fuel and tobacco duty changes.",
-        "Petrol and diesel prices pushed the annual rate higher, while tobacco prices rose 5.2% in the month and were 12.4% higher than a year earlier.",
-        "Core inflation, which strips out volatile energy, food, alcohol and tobacco prices, was unchanged at 2.8%.",
-        "The Bank of England expects inflation to approach 5% in the second quarter of 2027. The reading was slightly below the Bank's 3.7% forecast, prompting investors to trim bets on a December rate rise."
-      ],
-      "related": [
-        "bank-of-england-raises-rates",
-        "eu-ukraine-loan-45-billion"
-      ],
-      "image": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=1200&q=80",
-      "imageCaption": "A food market. Illustrative photo. Photo: Unsplash"
-    },
-    {
-      "slug": "japan-beats-brazil-3-2",
+      "slug": "nations-league-draw",
       "sections": [
         "sport"
       ],
       "section": "sport",
-      "headline": "Japan stun Brazil 3–2 in Moriyasu's farewell friendly",
-      "dek": "A stoppage-time winner from Tatsuhito Sakamoto sealed victory in Singapore — a final win for the coach who has led Japan for eight years.",
-      "date": "16 November 2026",
-      "source": "Chosun Biz",
-      "source_url": "https://biz.chosun.com/en/en-sports/2026/11/16/7LRBK2NGSZCKXP3JUZJ5AUA74Q/",
+      "headline": "Nations League draw: Spain face France, England take on Norway in quarter-finals",
+      "dek": "World champions Spain meet France in a World Cup semi-final rematch, while England’s reward for topping their group is a two-legged tie with Norway in March.",
+      "date": "20 November 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/amp/sports/2026/11/20/nations-league-knockouts-spain-france-england-norway-quarterfinals",
       "body": [
-        "Japan beat Brazil 3–2 in a November international friendly in Singapore, in coach Hajime Moriyasu's final match in charge after eight years.",
-        "Takefusa Kubo opened the scoring in the 15th minute and Keito Nakamura doubled the lead four minutes later. Brazil's Vinícius Júnior scored twice to level the match, but Tatsuhito Sakamoto struck the winner in the first minute of second-half stoppage time.",
-        "Japan, ranked 17th in the world, converted three of their eight shots, with Kubo, Nakamura and Sakamoto each scoring with their only shot on goal.",
-        "The win avenged Japan's 2–1 defeat by Brazil in the round of 32 at the 2026 World Cup last summer.",
-        "Moriyasu, who has led Japan since 2018, will step down after the November international window. Japan face Paraguay next as they build towards the next World Cup."
+        "World champions Spain will face France and England will play Norway in the quarter-finals of the UEFA Nations League, after the draw was made in Nyon, Switzerland, on Friday.",
+        "The ties will be played over two legs in late March — first legs on 25–27 March, second legs on 28–30 March — with the semi-finals on 9 and 10 June and the final on 13 June at a venue yet to be decided.",
+        "Spain, runners-up in their group, face France in a rematch of this year’s World Cup semi-final, which Spain won 2–0 on their way to the title. France topped their group, and Spain will be at home first.",
+        "England topped their group on goal difference after beating Spain 3–2 away in their final game, and their reward is a two-legged tie with Norway, with the first leg on Norwegian soil. England beat Norway 2–1 after extra time in the World Cup quarter-finals in July.",
+        "The other ties pair defending Nations League champions Portugal against the Netherlands, and Belgium against Germany. The winners of the Netherlands–Portugal tie will meet Spain or France in the semi-finals, while England or Norway will face Belgium or Germany.",
+        "England captain Harry Kane is the competition’s leading scorer with eight goals. The quarter-finals will be played at the same time as qualifying begins for Euro 2028."
       ],
       "related": [
-        "van-gogh-record-190-million"
+        "raye-grammy-nominations"
       ],
       "image": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=80",
-      "imageCaption": "A football stadium under lights. Illustrative photo. Photo: Unsplash"
+      "imageCaption": "A football stadium under lights during a match. Illustrative photo. Photo: Unsplash"
     },
     {
-      "slug": "van-gogh-record-190-million",
+      "slug": "icj-myanmar-genocide-ruling",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "World court rules Myanmar committed genocide against the Rohingya",
+      "dek": "In a historic first, the International Court of Justice held a state responsible for genocide, ordering Myanmar to pay reparations to the Rohingya.",
+      "date": "19 November 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/amp/news/2026/11/19/what-the-icj-ruling-means-for-the-rohingya",
+      "body": [
+        "The International Court of Justice has ruled that Myanmar committed genocide against the Rohingya minority, in the first judgment of its kind in the court’s 80-year history.",
+        "Delivering the ruling in The Hague on Thursday, the court’s president, Judge Yuji Iwasawa of Japan, read out the decision over nearly three hours. Nine of the 15 judges found that Myanmar’s security forces committed genocide during the 2016–2017 “clearance operations” in Rakhine state.",
+        "The court found that the military killed thousands of Rohingya, committed widespread sexual violence and “extreme violence against children”, and murdered infants — acts it said showed an intent to destroy a substantial part of the Rohingya population. About 10,000 Rohingya were killed in the operations, according to evidence cited by the court.",
+        "Myanmar was also found to have violated its duty to prevent and punish genocide. The court ordered it to stop any ongoing violations, investigate and prosecute those responsible, and make reparations — including allowing the safe, voluntary return of Rohingya refugees, returning or replacing damaged property, and compensating victims. Myanmar must report back to the court within two years with a plan.",
+        "The case was brought in 2019 by The Gambia, a country thousands of miles from Myanmar, in a first of its kind. The ruling is final and cannot be appealed, though the court has no power to enforce it.",
+        "A spokesperson for Myanmar’s military-backed government dismissed the ruling on Friday as “unfair”, noting that not all 15 judges agreed. Human Rights Watch called it “long-awaited recognition of the suffering the Rohingya have endured”."
+      ],
+      "related": [
+        "gaza-yellow-line-raid",
+        "russia-ukraine-missile-attack"
+      ],
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Friedenspalast_Den_Haag.jpg/1280px-Friedenspalast_Den_Haag.jpg",
+      "imageCaption": "The Peace Palace in The Hague, home of the International Court of Justice. Photo: Wikimedia Commons (CC BY-SA 3.0)"
+    },
+    {
+      "slug": "raye-grammy-nominations",
       "sections": [
         "culture"
       ],
       "section": "culture",
-      "headline": "Van Gogh sells for record $190.4 million at Sotheby's",
-      "dek": "“Châtaigniers en fleurs”, unseen in public for more than 50 years, became the fourth most expensive painting ever sold at auction — a day after a dispute over its Nazi-era sale was settled.",
-      "date": "19 November 2026",
-      "source": "Reuters",
-      "source_url": "https://www.reuters.com/lifestyle/van-goghs-chataigniers-en-fleurs-sells-auction-record-1904-million-2026-11-19/",
+      "headline": "RAYE leads Grammy nominations with 11, tying Beyoncé’s record",
+      "dek": "The British singer tops the field for the 69th Grammy Awards, with her album ‘This Music May Contain Hope’ and single ‘Where Is My Husband!’ both up for the top prizes.",
+      "date": "20 November 2026",
+      "source": "Associated Press",
+      "source_url": "https://cnalifestyle.channelnewsasia.com/entertainment/grammy-nominations-2027-raye-rosalia-olivia-rodrigo-591851",
       "body": [
-        "Vincent van Gogh's 1890 painting “Châtaigniers en fleurs” (Blossoming Chestnut Trees) has sold for $190.4 million at Sotheby's in New York, an auction record for the artist.",
-        "The hammer price was $165 million, with fees taking the total to $190.4 million. The buyer was veteran art dealer Bill Acquavella, head of Acquavella Galleries.",
-        "The previous Van Gogh record was $117.2 million, paid in 2022 for “Orchard with Cypresses” from the collection of Microsoft co-founder Paul Allen.",
-        "The sale makes it the fourth most expensive painting ever sold at auction, and the second most valuable work ever sold at Sotheby's, behind a Klimt portrait that fetched $236.4 million in November 2025.",
-        "The painting, which had not been seen in public for more than 50 years, was the top lot in the sale of 12 works from the Blaquier-Arrieta Collection. All 12 sold for a combined $412 million.",
-        "The sale went ahead a day after Sotheby's announced an agreement with the heirs of German Jewish publisher Samuel Fischer, who said the painting had been sold under duress in 1936 during Nazi persecution."
+        "British singer RAYE leads the nominations for the 69th Grammy Awards with 11 nods, tying Beyoncé’s record for the most nominations by a female artist in a single year.",
+        "The nominations, announced by the Recording Academy on Monday, put RAYE up for album of the year for ‘This Music May Contain Hope’, and record and song of the year for her hit single ‘Where Is My Husband!’ — her first nominations in all three of the Grammys’ biggest categories.",
+        "She is also nominated for songwriter of the year, best pop solo performance and best pop vocal album, among others. The 11 nominations take her career total to 15.",
+        "Behind her are Spanish star Rosalía with nine nominations, while Olivia Rodrigo, Phoebe Bridgers, Miranda Lambert and Ella Langley have seven each. Olivia Dean has six.",
+        "Beyoncé, meanwhile, reached her 100th career Grammy nomination — for ‘Morning Dew (Donk)’ in the best R&B solo performance category — making her the most-nominated artist in the awards’ history.",
+        "The 69th Grammy Awards will be held on 7 February 2027 at the Crypto.com Arena in Los Angeles, with winners chosen by the Recording Academy’s nearly 16,000 voting members."
       ],
       "related": [
-        "japan-beats-brazil-3-2"
+        "nations-league-draw"
       ],
-      "image": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&q=80",
-      "imageCaption": "An abstract painting. Illustrative photo. Photo: Unsplash"
+      "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80",
+      "imageCaption": "A singer performs on stage. Illustrative photo. Photo: Unsplash"
     }
   ],
   "justIn": [
+    {
+      "time": "20 Nov, 11:20",
+      "text": "EU and UK seal reset deal on trade, carbon and youth mobility",
+      "link": "live.html"
+    },
+    {
+      "time": "20 Nov",
+      "text": "Russia rules out NATO-style security guarantees for Ukraine",
+      "link": "live.html"
+    },
+    {
+      "time": "20 Nov",
+      "text": "Nations League draw: Spain face France, England take on Norway",
+      "link": "live.html"
+    },
     {
       "time": "20 Nov, 10:33",
       "text": "Russian barrage damages embassies and a cathedral in Kyiv",
@@ -302,32 +290,27 @@ window.WWN_DEFAULT_CONTENT = {
       "link": "live.html"
     },
     {
-      "time": "19 Nov, 19:05",
-      "text": "France rejects Russian claim it is directly involved in the Ukraine war",
+      "time": "19 Nov",
+      "text": "World Court rules Myanmar committed genocide against the Rohingya",
       "link": "live.html"
     },
     {
-      "time": "19 Nov, 17:20",
-      "text": "Trump says he will meet North Korea's Kim Jong-un at “some point”",
-      "link": "live.html"
-    },
-    {
-      "time": "19 Nov, 15:10",
-      "text": "NATO launches multinational STARLIFT space initiative for military launches",
-      "link": "live.html"
-    },
-    {
-      "time": "19 Nov, 13:45",
-      "text": "EU Commission confirms AI-generated cyber campaign; no staff-wide breach found",
-      "link": "live.html"
-    },
-    {
-      "time": "18 Nov, 21:30",
-      "text": "UN court to decide on Thursday if Myanmar's expulsion of Rohingya was genocide",
+      "time": "19 Nov",
+      "text": "Senate rejects bid to stop Trump ordering more strikes on Iran, 51–48",
       "link": "live.html"
     }
   ],
   "liveUpdates": [
+    {
+      "time": "20 Nov, afternoon",
+      "headline": "Moscow rules out NATO-style guarantees for Ukraine",
+      "text": "Russia’s deputy foreign minister, Sergei Ryabkov, said any “quasi-membership of NATO” for Ukraine was unacceptable — pushing back on claims from the US negotiating team that Moscow was comfortable with Article 5-style security guarantees."
+    },
+    {
+      "time": "20 Nov, morning",
+      "headline": "Coalition allies pledge €70bn for Ukraine in 2027",
+      "text": "The 40 countries in the “coalition of the willing” meeting in Berlin committed to honouring NATO’s pledge of €70 billion in military aid to Ukraine this year, and to keeping it at at least that level in 2027, despite pressure from Washington."
+    },
     {
       "time": "20 Nov, 10:33",
       "headline": "Embassies damaged in Kyiv barrage",
@@ -346,7 +329,7 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "20 Nov, 06:30",
       "headline": "More than 110 missiles fired at Ukraine overnight",
-      "text": "Ukraine said Russia fired at least 110 missiles overnight — an unusually large number even amid frequent aerial assaults. At least eight people were killed and 28 injured, and three of Kyiv's bridges were damaged."
+      "text": "Ukraine said Russia fired at least 110 missiles and around 400 drones overnight — an unusually large number even amid frequent aerial assaults. At least nine people were killed and 28 injured, and three of Kyiv's bridges were damaged."
     },
     {
       "time": "19 Nov, 22:10",
@@ -371,10 +354,10 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "mostRead": [
     "russia-ukraine-missile-attack",
-    "trump-xi-putin-shenzhen-summit",
-    "gaza-ceasefire-collapse-warning",
-    "eu-ukraine-loan-45-billion",
-    "democrats-win-congress-midterms"
+    "eu-uk-reset-deal",
+    "shenzhen-aftermath-europe-pushback",
+    "icj-myanmar-genocide-ruling",
+    "wall-street-selloff"
   ]
 };
 

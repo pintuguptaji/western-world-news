@@ -15,11 +15,7 @@ Pages, Netlify, Cloudflare Pages, Hostinger) and it works.
   **Analysis** block and a full multi-column footer.
 - Serif display headlines (Georgia) + clean sans body — the broadsheet look.
 - Hamburger navigation on mobile; responsive throughout.
-- Photos are **real, openly-licensed Unsplash images** used as generic
-  thematic illustrations (city skylines, parliaments, markets, stadiums).
-  They are **not** photos of the actual events — every caption says
-  "Illustrative photo. Photo: Unsplash". Stories without a photo get the
-  navy WWN gradient tile instead of a fake event photo.
+- Photos are **real photos that match each story** — freely licensed Wikimedia Commons pictures of the actual place or institution (Kyiv, the European Parliament, Shenzhen, the US Capitol, Wall Street, the Peace Palace), and openly licensed Unsplash images used as clearly labelled illustrations where no real photo of the subject exists. Every caption says honestly what the photo shows. Stories without a suitable photo get the navy WWN gradient tile instead of a misleading image.
 
 ## Folder structure
 
@@ -87,17 +83,12 @@ Open **admin.html** and enter the passcode:
 
 ## Seed content — read this first
 
-The 10 articles in `articles/` are **seed content published 20 November
-2026**, written to launch the site with real, verified stories from
-16–20 November 2026 (Ukraine missile strikes, the Trump–Xi–Putin Shenzhen
-summit, the Gaza ceasefire warning, the EU's €45bn Ukraine loan, the
-Denmark–Greenland deal, the US midterms, the Bank of England rate rise, UK
-inflation, Japan beating Brazil, and the record Van Gogh sale).
+The articles in `articles/` are the current front page, refreshed on the evening of 20 November 2026 with verified stories from 19–20 November 2026 (the Kyiv missile strikes, the EU–UK reset deal, the Shenzhen summit fallout, the Gaza Yellow Line raid, the US Congress records fight, the Wall Street sell-off, the Nations League draw, the ICJ’s Myanmar genocide ruling, and RAYE’s Grammy nominations).
 
 - Every story is an **original summary written in our own words** — nothing
   is copied from another publication.
 - Every story **credits its source by name and links to the original
-  article** (CNN, The Times, Al Jazeera, Reuters, Nikkei Asia, Chosun Biz).
+  article** (CNN, The Times, Al Jazeera, Reuters, Associated Press).
 - **Replace this seed content with fresh daily posts.** News goes stale in
   hours: the homepage hero, the Just In feed and the live blog must be
   updated every day. Do not leave the 20 November 2026 stories on the
@@ -117,11 +108,9 @@ exists; until then they are clearly a design element, not a video player.
 - **Contact email addresses** (tips@ / ads@westernworldnews.com) are
   placeholders — set up the mailboxes first.
 - **Privacy policy** is a stub — complete it before adding analytics or ads.
-- **Domain**: westernworldnews.com (confirmed available on Hostinger,
-  20 Nov 2026; Pintu is buying 1 year at $9.99).
+- **Domain**: westernworldnews.com — live since 20 Nov 2026 (GitHub Pages, DNS via Hostinger).
 - **Ads**: none included yet. Add ad slots only after traffic exists.
-- **GitHub**: Pintu is connecting the repo; the site is pushed there and
-  the domain pointed at hosting once live.
+- **GitHub**: the site is pushed to github.com/pintuguptaji/western-world-news (branch main); push updates with the GitHub connector.
 
 ## Rebuilding
 
