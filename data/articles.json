@@ -1,6 +1,83 @@
 {
   "articles": [
     {
+      "slug": "youth-protests-sweep-europe",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Youth-led protests sweep Europe over wages, schools and military spending",
+      "dek": "Tens of thousands of young people marched in more than 25 countries on Friday, calling for more money for schools and public services and less for the military.",
+      "date": "20 November 2026",
+      "source": "Reuters",
+      "source_url": "https://www.reuters.com/world/student-protests-held-across-europe-with-demands-school-funding-climate-2026-11-20/",
+      "body": [
+        "Tens of thousands of young people took to the streets across Europe on Friday in a coordinated day of action spanning more than 25 countries, from Britain and Germany to Spain, Italy and Croatia.",
+        "Organisers called it an international youth strike, with demands ranging from more funding for schools and universities to higher wages, more spending on public services and action on the climate crisis. Many protesters also opposed rising military budgets and conscription, carrying banners reading “Money for schools, not war” and waving Palestinian flags.",
+        "The marches were largely peaceful and, outside France, more muted than the demonstrations that have shaken Paris in recent weeks. In Italy the protests were the widest, targeting Prime Minister Giorgia Meloni’s economic policies and drawing tens of thousands of marchers, according to Italy’s largest trade union, the CGIL. Its leader, Maurizio Landini, said the demand for change was growing across Europe and among ordinary people.",
+        "In Berlin, around 4,000 people gathered in Alexanderplatz, while thousands more marched in Cologne, where the German campaign group “Gen Z regelt” said it was organising protests in 73 cities and towns. In London, hundreds gathered in Parliament Square, and students from more than 350 schools, colleges and universities across Britain were expected to walk out. Organisers said the demonstrations would continue through the weekend."
+      ],
+      "related": [
+        "anthropic-shares-fall-after-ipo",
+        "eu-rwanda-return-hub"
+      ],
+      "image": "https://images.euronews.com/articles/stories/10/00/21/02/696x392_cmsv2_6d8a3374-39d3-5f0c-a86f-23b5059b8d65-10002102.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
+    {
+      "slug": "anthropic-shares-fall-after-ipo",
+      "sections": [
+        "business-finance",
+        "world"
+      ],
+      "section": "business-finance",
+      "headline": "Anthropic shares fall after blockbuster opening as wider tech sell-off continues",
+      "dek": "The AI firm’s shares dropped more than 12% on Friday, a day after a record $81bn debut that ended 17% higher.",
+      "date": "20 November 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.com/news/articles/c6808ym10vzgo",
+      "body": [
+        "Shares in Anthropic fell more than 12% on Friday to about $85 by lunchtime, giving back much of the gain from a blockbuster stock market debut the day before.",
+        "The maker of the Claude chatbot began trading on Thursday at $111.50, peaked at $115 and closed up 17% at $97.17, after raising a record $81bn. The Nasdaq debut was seen as a crucial test for the industry and was largely judged a success — but the second day of trading was swept up in a broader tech sell-off.",
+        "By lunchtime on Friday, the S&P 500 was down more than 2% and the Dow Jones down 0.7%, with both touching correction territory — defined as 10% or more below a recent high. The Nasdaq Composite had fallen more than 3.4%. Nvidia and SpaceX were both down more than 6%, Tesla fell more than 3% and Meta was down 3.4%, while Apple, Amazon and Microsoft recorded smaller falls and Alphabet rose 1.2%.",
+        "The losses spread beyond the United States. In Europe, Germany’s Dax was down 2% and the FTSE 100 down 0.5%, while in Asia South Korea’s Kospi and Japan’s Nikkei 225 closed down about 5%. Taiwan’s market dropped about 6% on Friday, taking its weekly fall to more than 17% — its biggest weekly fall since 1990 — with memory-chip makers including SK Hynix, Kioxia, Tokyo Electron and Samsung among the hardest hit.",
+        "Ed Moya, a strategist at market intelligence firm AlphaSense, said the debut had not changed the picture for AI stocks: demand remains very strong, but investors are asking how much spending is coming and whether it will deliver enough profit. Wall Street, he said, is starting to shift away from rewarding growth at any price. Analysts said volatility was to be expected in the first days of trading."
+      ],
+      "related": [
+        "youth-protests-sweep-europe",
+        "eu-rwanda-return-hub"
+      ],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/03d5/live/7b6fe9b0-e4ed-11f1-8781-bf15c9202663.jpg",
+      "imageCaption": "Photo: BBC"
+    },
+    {
+      "slug": "eu-rwanda-return-hub",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Five EU countries plan Rwanda ‘return hub’ for rejected asylum seekers",
+      "dek": "Austria, Denmark, Germany, Greece and the Netherlands want to send people with no right to stay in Europe to a centre in Rwanda, drawing criticism from rights groups.",
+      "date": "20 November 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/amp/news/2026/11/17/why-are-five-eu-countries-reviving-plans-to-deport-migrants-to-rwanda",
+      "body": [
+        "Five European Union countries have announced a plan to send rejected asylum seekers to a “return hub” in Rwanda, in a move that would mark a sharp hardening of European migration policy.",
+        "Austria, Denmark, Germany, Greece and the Netherlands unveiled the scheme in Vienna on Monday, alongside Rwanda’s interior minister, Vincent Biruta. The centre would take people who have been ordered to leave Europe but cannot be returned to their home countries, offering them a residence permit in Rwanda and support to settle there, return home voluntarily or move to another country where they have a legal right to stay.",
+        "The five governments say the hub would be an open, temporary facility holding around 100 people at a time — about 20 from each country — with access to training, jobs, education and healthcare. Unlike Britain’s abandoned Rwanda plan, it would apply only to people who have exhausted all legal avenues to remain in the EU, rather than to asylum seekers whose claims are still being processed.",
+        "No formal agreement has been signed yet. Negotiations with Kigali are expected to conclude in early 2027, with the first transfers possible later that year. The European Commission has welcomed the initiative, and the UN refugee agency, UNHCR, said it was in discussions with the five countries about making the process compliant with international human rights law.",
+        "Rights groups condemned the plan. A joint statement by 47 aid, trade union and rights organisations urged the five countries to abandon it, warning it could expose vulnerable people to abuse. Supporters, including Danish Prime Minister Mette Frederiksen, say the aim is deterrence as much as numbers: a visible signal that people with no right to stay will be removed. The scheme follows the EU’s new Return Regulation, adopted in mid-October to speed up deportations."
+      ],
+      "related": [
+        "youth-protests-sweep-europe",
+        "anthropic-shares-fall-after-ipo"
+      ],
+      "image": "https://images.euronews.com/articles/stories/09/98/96/17/696x392_cmsv2_a67117be-28d2-5fab-ab3a-b72d73f4b481-9989617.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
+    {
       "slug": "russia-ukraine-missile-attack",
       "sections": [
         "war-conflict",
@@ -238,39 +315,40 @@
   ],
   "justIn": [
     {
-      "time": "20 Nov, 11:20",
-      "text": "EU and UK seal reset deal on trade, carbon and youth mobility"
+      "time": "20 Nov, 18:37",
+      "text": "Thousands protest across Europe demanding better wages and services"
     },
     {
-      "time": "20 Nov",
-      "text": "Russia rules out NATO-style security guarantees for Ukraine"
+      "time": "20 Nov, 17:36",
+      "text": "Anthropic shares fall after blockbuster opening as wider tech sell-off continues"
     },
     {
-      "time": "20 Nov",
-      "text": "Nations League draw: Spain face France, England take on Norway"
+      "time": "20 Nov, 18:35",
+      "text": "What do we know about Rwanda return hubs and how effective will they be?"
     },
     {
-      "time": "20 Nov, 10:33",
-      "text": "Russian barrage damages embassies and a cathedral in Kyiv"
+      "time": "20 Nov, 17:09",
+      "text": "Better educated than ever – yet Germany's Gen Z is being shut out of its own future"
     },
     {
-      "time": "20 Nov, 09:15",
-      "text": "Netherlands summons Russian ambassador after Kyiv strike damages its embassy"
+      "time": "20 Nov, 17:08",
+      "text": "UK operation wards off risk of cyber-attack on supermarket fridges and freezers"
     },
     {
-      "time": "20 Nov, 08:40",
-      "text": "Six dead in Georgia as gas blast collapses part of a residential block"
+      "time": "20 Nov, 17:05",
+      "text": "Top US Democrat warns Trump admin against destroying records"
     },
     {
-      "time": "19 Nov",
-      "text": "World Court rules Myanmar committed genocide against the Rohingya"
-    },
-    {
-      "time": "19 Nov",
-      "text": "Senate rejects bid to stop Trump ordering more strikes on Iran, 51–48"
+      "time": "20 Nov, 17:05",
+      "text": "UK far-right activist ‘Danny Tommo’ jailed for slashing migrant boat"
     }
   ],
   "liveUpdates": [
+    {
+      "time": "20 Nov, evening",
+      "headline": "Youth-led protests sweep Europe",
+      "text": "Tens of thousands of young people marched in more than 25 countries on Friday, calling for more spending on schools and public services and less on the military — with the largest marches in Italy and Germany. Organisers say the demonstrations will continue through the weekend."
+    },
     {
       "time": "20 Nov, afternoon",
       "headline": "Moscow rules out NATO-style guarantees for Ukraine",
@@ -315,11 +393,6 @@
       "time": "19 Nov, 17:00",
       "headline": "Trilateral talks end without breakthrough",
       "text": "Trump, Xi and Putin met in Shenzhen for just over an hour. A joint declaration covered UN reform, nuclear weapons and oil production, but produced no breakthrough on Ukraine and no official declaration was released."
-    },
-    {
-      "time": "18 Nov, 20:15",
-      "headline": "EU proposes €45 billion loan for Ukraine in 2027",
-      "text": "The European Commission proposed a new €45 billion loan to Ukraine for 2027, to be repaid through future war reparations by Russia. Up to €25 billion would go to military aid and €20 billion to budget support."
     }
   ],
   "mostRead": [
