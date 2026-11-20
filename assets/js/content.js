@@ -9,13 +9,105 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live — politics, war, business and culture.",
-    "heroSlug": "russia-ukraine-missile-attack"
+    "heroSlug": "at-cop31-conflict-over-climate-science-slows-action-on"
   },
   "breaking": {
-    "text": "Russia launches one of the largest missile attacks of the war on Ukraine — 110+ missiles fired overnight",
-    "link": "articles/russia-ukraine-missile-attack.html"
+    "text": "At COP31, conflict over climate science slows action on global warming",
+    "link": "articles/at-cop31-conflict-over-climate-science-slows-action-on.html"
   },
   "articles": [
+    {
+      "slug": "at-cop31-conflict-over-climate-science-slows-action-on",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "At COP31, conflict over climate science slows action on global warming",
+      "dek": "Attacks on climate science and disinformation risk delaying key measures at COP31 in Antalya. As the UN climate talks draw to a close, how will that affect efforts to come to an agreement?",
+      "date": "20 November 2026",
+      "source": "DW",
+      "source_url": "https://www.dw.com/en/at-cop31-conflict-over-climate-science-slows-action-on-global-warming/a-80004894",
+      "body": [
+        "Attacks on climate science and disinformation risk delaying key measures at COP31 in Antalya. As the UN climate talks draw to a close, how will that affect efforts to come to an agreement?"
+      ],
+      "related": [
+        "thousands-protest-across-europe-demanding-better-wages-and",
+        "what-do-we-know-about-rwanda-return-hubs-and-how-effective",
+        "better-educated-than-ever-yet-germany-s-gen-z-is-being-shut"
+      ],
+      "image": "",
+      "imageCaption": ""
+    },
+    {
+      "slug": "thousands-protest-across-europe-demanding-better-wages-and",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Thousands protest across Europe demanding better wages and services",
+      "dek": "Demonstrations began Friday in over 25 European countries and are expected to continue through the weekend as part of a coordinated international protest movement.",
+      "date": "20 November 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/20/thousands-protest-across-europe-demanding-better-wages-and-services",
+      "body": [
+        "Demonstrations began Friday in over 25 European countries and are expected to continue through the weekend as part of a coordinated international protest movement."
+      ],
+      "related": [
+        "at-cop31-conflict-over-climate-science-slows-action-on",
+        "what-do-we-know-about-rwanda-return-hubs-and-how-effective",
+        "better-educated-than-ever-yet-germany-s-gen-z-is-being-shut"
+      ],
+      "image": "https://images.euronews.com/articles/stories/10/00/21/02/696x392_cmsv2_6d8a3374-39d3-5f0c-a86f-23b5059b8d65-10002102.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
+    {
+      "slug": "what-do-we-know-about-rwanda-return-hubs-and-how-effective",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "What do we know about Rwanda return hubs and how effective will they be?",
+      "dek": "Five EU countries have announced a controversial plan to set up a centre in Rwanda for migrants with no legal right to stay in Europe.",
+      "date": "20 November 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/20/what-do-we-know-about-rwanda-return-hubs-and-how-effective-will-they-be",
+      "body": [
+        "Five EU countries have announced a controversial plan to set up a centre in Rwanda for migrants with no legal right to stay in Europe. While supporters say it will help governments to deter illegal immigration, critics are concerned about potential human rights violations and a lack of oversight."
+      ],
+      "related": [
+        "at-cop31-conflict-over-climate-science-slows-action-on",
+        "thousands-protest-across-europe-demanding-better-wages-and",
+        "better-educated-than-ever-yet-germany-s-gen-z-is-being-shut"
+      ],
+      "image": "https://images.euronews.com/articles/stories/09/98/96/17/696x392_cmsv2_a67117be-28d2-5fab-ab3a-b72d73f4b481-9989617.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
+    {
+      "slug": "better-educated-than-ever-yet-germany-s-gen-z-is-being-shut",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Better educated than ever – yet Germany's Gen Z is being shut out of its own future",
+      "dek": "Never before have young people faced so many challenges. Young Germans are asking: Will I be better off later in life than my parents are now?",
+      "date": "20 November 2026",
+      "source": "DW",
+      "source_url": "https://www.dw.com/en/better-educated-than-ever-yet-germany-s-gen-z-is-being-shut-out-of-its-own-future/a-80005823",
+      "body": [
+        "Never before have young people faced so many challenges. Young Germans are asking: Will I be better off later in life than my parents are now?"
+      ],
+      "related": [
+        "at-cop31-conflict-over-climate-science-slows-action-on",
+        "thousands-protest-across-europe-demanding-better-wages-and",
+        "what-do-we-know-about-rwanda-return-hubs-and-how-effective"
+      ],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "youth-protests-sweep-europe",
       "sections": [
@@ -337,6 +429,16 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "20 Nov, 17:46",
+      "text": "At COP31, conflict over climate science slows action on global warming",
+      "link": "live.html"
+    },
+    {
+      "time": "20 Nov, 17:42",
+      "text": "Two men killed after glider crashes into Loch Leven in Scotland",
+      "link": "live.html"
+    },
+    {
       "time": "20 Nov, 18:37",
       "text": "Thousands protest across Europe demanding better wages and services",
       "link": "live.html"
@@ -364,11 +466,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "20 Nov, 17:05",
       "text": "Top US Democrat warns Trump admin against destroying records",
-      "link": "live.html"
-    },
-    {
-      "time": "20 Nov, 17:05",
-      "text": "UK far-right activist ‘Danny Tommo’ jailed for slashing migrant boat",
       "link": "live.html"
     }
   ],
