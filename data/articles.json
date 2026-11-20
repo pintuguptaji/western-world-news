@@ -1,6 +1,101 @@
 {
   "articles": [
     {
+      "slug": "florida-mechanic-found-guilty-of-murdering-british-woman",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "Florida mechanic found guilty of murdering British woman who attorney says came to US to die",
+      "dek": "Dwain Hall was convicted of stabbing Sonia Exelby, a music teacher who prosecutors say suffered from mental illness.",
+      "date": "November 20, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/us-news/2026/nov/20/florida-man-guilty-murder-british-woman",
+      "body": [
+        "Dwain Hall was convicted of stabbing Sonia Exelby, a music teacher who prosecutors say suffered from mental illness. A Florida mechanic has been found guilty of stabbing to death a British music teacher, who he convinced to travel to the United States."
+      ],
+      "related": [
+        "spain-frees-wealthy-us-sought-activist-on-bail-as-irish",
+        "indian-man-sentenced-to-19-years-in-prison-for-conspiring",
+        "misty-eyed-burnham-gambles-on-closer-ties-with-eu-as-he"
+      ],
+      "image": "https://i.guim.co.uk/img/media/68822b4af6e85f21c7ca85d279e5ad43ec97d7f0/0_739_4252_3402/master/4252.jpg?width=700&quality=85&auto=format&fit=max&s=716055784c9ffee0a14af22dffc5c8e8",
+      "imageCaption": "Photo: The Guardian",
+      "auto": true
+    },
+    {
+      "slug": "spain-frees-wealthy-us-sought-activist-on-bail-as-irish",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "Spain frees wealthy US-sought activist on bail as Irish police raid Dublin home",
+      "dek": "Pro-Palestinian donor James ‘Fergie’ Chambers released as court considers extradition request.",
+      "date": "November 20, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/nov/20/james-fergie-chambers-bail-spain",
+      "body": [
+        "Pro-Palestinian donor James ‘Fergie’ Chambers released as court considers extradition request. In a blur of events surrounding the Trump administration’s effort to extradite James “Fergie” Chambers, Spain released the wealthy US activist and donor on bail even as Irish police raided a Dublin house owned by Chambers and his partner, Stella Schnabel, acting on a request from US authorities."
+      ],
+      "related": [
+        "florida-mechanic-found-guilty-of-murdering-british-woman",
+        "indian-man-sentenced-to-19-years-in-prison-for-conspiring",
+        "misty-eyed-burnham-gambles-on-closer-ties-with-eu-as-he"
+      ],
+      "image": "https://i.guim.co.uk/img/media/74547b1071ce9ebdb86931120adc604b11828149/468_0_4680_3744/master/4680.jpg?width=700&quality=85&auto=format&fit=max&s=d6d0d9a2a231f653614a28393a00aa5e",
+      "imageCaption": "Photo: The Guardian",
+      "auto": true
+    },
+    {
+      "slug": "indian-man-sentenced-to-19-years-in-prison-for-conspiring",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Indian man sentenced to 19 years in prison for conspiring to kill Sikh separatist in New York",
+      "dek": "Nikhil Gupta admitted to plotting with Indian government official to hire hitman to murder dual US-Canadian citizen.",
+      "date": "November 20, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/us-news/2026/nov/20/indian-man-sentenced-prison-murder-plot-sikh-separatist",
+      "body": [
+        "Nikhil Gupta admitted to plotting with Indian government official to hire hitman to murder dual US-Canadian citizen. An Indian ⁠man was sentenced to more ⁠than 19 ​years in US prison on Friday after admitting to orchestrating a failed Indian government-backed plot to kill a Sikh separatist in New York ⁠City , in connection with what US and Canadian authorities have called a broader effort to target Indian dissidents."
+      ],
+      "related": [
+        "florida-mechanic-found-guilty-of-murdering-british-woman",
+        "spain-frees-wealthy-us-sought-activist-on-bail-as-irish",
+        "misty-eyed-burnham-gambles-on-closer-ties-with-eu-as-he"
+      ],
+      "image": "https://i.guim.co.uk/img/media/9685e16f610038a3820904f81eb1dba749b72664/117_0_2813_2250/master/2813.jpg?width=700&quality=85&auto=format&fit=max&s=ea38836f1db278dae5d70c1e78bdd81f",
+      "imageCaption": "Photo: The Guardian",
+      "auto": true
+    },
+    {
+      "slug": "misty-eyed-burnham-gambles-on-closer-ties-with-eu-as-he",
+      "sections": [
+        "business-finance",
+        "world"
+      ],
+      "section": "business-finance",
+      "headline": "Misty-eyed Burnham gambles on closer ties with EU as he throws down gauntlet to Tories and Reform",
+      "dek": "PM challenges rivals to rebuff plan he says could add 0.5% annual growth to economy and offer young people hope.",
+      "date": "November 20, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/politics/2026/nov/20/andy-burnham-uk-eu-brussels-summit",
+      "body": [
+        "PM challenges rivals to rebuff plan he says could add 0.5% annual growth to economy and offer young people hope. Several sentences in to a slightly convoluted answer about where UK-EU relations might go next, Andy Burnham abruptly changed tack."
+      ],
+      "related": [
+        "florida-mechanic-found-guilty-of-murdering-british-woman",
+        "spain-frees-wealthy-us-sought-activist-on-bail-as-irish",
+        "indian-man-sentenced-to-19-years-in-prison-for-conspiring"
+      ],
+      "image": "https://i.guim.co.uk/img/media/298e2e76a81f2b29227315e2f639e4892114e948/507_0_4299_3440/master/4299.jpg?width=700&quality=85&auto=format&fit=max&s=4aafdbe80398ac5cbfe550a1af2f5d7a",
+      "imageCaption": "Photo: The Guardian",
+      "auto": true
+    },
+    {
       "slug": "at-cop31-conflict-over-climate-science-slows-action-on",
       "sections": [
         "war-conflict",
@@ -411,36 +506,36 @@
   ],
   "justIn": [
     {
-      "time": "Nov 20, 17:46",
-      "text": "At COP31, conflict over climate science slows action on global warming"
+      "time": "20 Nov, 18:36",
+      "text": "Florida mechanic found guilty of murdering British woman who attorney says came to US to die"
     },
     {
-      "time": "Nov 20, 17:42",
+      "time": "20 Nov, 18:34",
+      "text": "Spain frees wealthy US-sought activist on bail as Irish police raid Dublin home"
+    },
+    {
+      "time": "20 Nov, 18:24",
+      "text": "Indian man sentenced to 19 years in prison for conspiring to kill Sikh separatist in New York"
+    },
+    {
+      "time": "20 Nov, 18:22",
+      "text": "Misty-eyed Burnham gambles on closer ties with EU as he throws down gauntlet to Tories and Reform"
+    },
+    {
+      "time": "20 Nov, 18:20",
       "text": "Two men killed after glider crashes into Loch Leven in Scotland"
     },
     {
-      "time": "Nov 20, 18:37",
-      "text": "Thousands protest across Europe demanding better wages and services"
+      "time": "20 Nov, 18:16",
+      "text": "Denmark to expel Russian diplomat over alleged Moscow link to attempted killing of rapper"
     },
     {
-      "time": "Nov 20, 17:36",
-      "text": "Anthropic shares fall after blockbuster opening as wider tech sell-off continues"
+      "time": "20 Nov, 18:11",
+      "text": "No one else in Reform is suitable to lead the party, Nigel Farage says"
     },
     {
-      "time": "Nov 20, 18:35",
-      "text": "What do we know about Rwanda return hubs and how effective will they be?"
-    },
-    {
-      "time": "Nov 20, 17:09",
-      "text": "Better educated than ever, yet Germany's Gen Z is being shut out of its own future"
-    },
-    {
-      "time": "Nov 20, 17:08",
+      "time": "20 Nov, 18:06",
       "text": "UK operation wards off risk of cyber-attack on supermarket fridges and freezers"
-    },
-    {
-      "time": "Nov 20, 17:05",
-      "text": "Top US Democrat warns Trump admin against destroying records"
     }
   ],
   "liveUpdates": [
@@ -502,9 +597,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "at-cop31-conflict-over-climate-science-slows-action-on",
+  "heroSlug": "florida-mechanic-found-guilty-of-murdering-british-woman",
   "breaking": {
-    "text": "At COP31, conflict over climate science slows action on global warming",
-    "link": "articles/at-cop31-conflict-over-climate-science-slows-action-on.html"
+    "text": "Florida mechanic found guilty of murdering British woman who attorney says came to US to die",
+    "link": "articles/florida-mechanic-found-guilty-of-murdering-british-woman.html"
   }
 }
