@@ -1,0 +1,63 @@
+# Automatic news publisher for Western World News.
+#
+# Every hour this workflow fetches trusted RSS feeds (BBC, Al Jazeera,
+# The Guardian, Euronews, France 24, DW), adds verified new stories to
+# data/articles.json, refreshes the Just In feed, rebuilds the static site
+# with tools/build_site.py, and commits + pushes the result — all inside
+# GitHub, using only the automatic GITHUB_TOKEN. No human approval is
+# needed per run.
+#
+# Rules the publisher follows (see tools/auto_publish.py):
+# - Everything comes from the feeds; nothing is invented.
+# - A story's photo is the feed's own image for that story, verified to
+#   load. No image -> the site's navy gradient tile, never a random photo.
+# - Max 4 new articles per run, max 12 per calendar day.
+# - A second run with no new feed items changes nothing.
+#
+# One-time setup (repo owner): Settings -> Actions -> General ->
+# Workflow permissions -> "Read and write permissions" -> Save.
+# Without that, the push step fails with a 403.
+name: Auto-publish news
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-publish
+  cancel-in-progress: false
+
+jobs:
+  auto-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Fetch news and rebuild the site
+        run: python3 tools/auto_publish.py 2>&1 | tee /tmp/auto-publish.log
+
+      - name: Commit and push if the site changed
+        run: |
+          NEW=$(grep -oE 'PUBLISHED_COUNT=[0-9]+' /tmp/auto-publish.log | tail -1 | cut -d= -f2)
+          NEW=${NEW:-0}
+          git config user.name "Western World News Bot"
+          git config user.email "bot@westernworldnews.com"
+          git add data/ assets/js/content.js index.html world.html europe.html us.html politics.html war-conflict.html business-finance.html sport.html culture.html live.html articles sitemap.xml
+          if git diff --cached --quiet; then
+            echo "No changes to publish."
+          else
+            git commit -m "Auto-publish: ${NEW} new stories, $(date -u +'%Y-%m-%d')"
+            git push
+          fi
