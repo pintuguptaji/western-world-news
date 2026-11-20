@@ -11,6 +11,11 @@ import os
 OUT = os.environ.get("WWN_OUT", os.path.expanduser("~/workspace/western-world-news"))
 BASE = "https://westernworldnews.com"
 
+# Google Search Console ownership verification. Paste the code Google gives
+# (Search Console > Add property > HTML tag) here, rebuild and push.
+# Leave empty until Google gives you a code.
+GOOGLE_SITE_VERIFICATION = "NygudsKNLm9w7kCNUvEYzlOYcf3eSNafgLbIvtD17Gc"
+
 NAV = [
     ("index.html", "Home"),
     ("world.html", "World"),
@@ -708,11 +713,14 @@ def footer_html(prefix=""):
 
 
 def page(title, description, active, body, canonical, og_type="website", prefix="", extra_head=""):
+    verify_tag = (f'<meta name="google-site-verification" content="{GOOGLE_SITE_VERIFICATION}">'
+                  if GOOGLE_SITE_VERIFICATION else "")
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{verify_tag}
 <title>{title} | Western World News</title>
 <meta name="description" content="{description}">
 <link rel="canonical" href="{canonical}">
