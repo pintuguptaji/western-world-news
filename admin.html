@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin — Western World News</title>
+<meta name="description" content="Admin panel for Western World News.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23bb1919'/%3E%3Ctext x='16' y='22' font-family='Georgia' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="admin-top"><div class="wrap">
+<a class="wordmark" href="index.html">Western World <span class="news">News</span></a>
+<span class="admin-badge">Admin</span>
+<span class="spacer"></span>
+<a href="index.html">View site &rarr;</a>
+<button id="logout" type="button">Log out</button>
+</div></header>
+<main id="main"><div class="wrap">
+
+<div class="gate-card" id="gate">
+<h1>Admin login</h1>
+<p>Enter the admin passcode to manage the site. (Default passcode: <b>admin123</b> — change it in assets/js/admin.js. Note: this is a basic gate on a static site, not real server security.)</p>
+<form id="gate-form">
+<div class="field"><label for="passcode">Passcode</label>
+<input id="passcode" type="password" autocomplete="current-password" required></div>
+<div class="form-actions"><button class="btn" type="submit">Log in</button></div>
+<p class="error" id="gate-error">Wrong passcode — try again.</p>
+</form>
+</div>
+
+<div id="dashboard" class="hidden">
+<h1 class="section-head"><span class="tag">&#9632;</span> Dashboard</h1>
+<div class="notice"><b>How saving works</b>
+Changes you save here apply across the whole site <b>immediately in this browser</b> (they are stored in this browser's localStorage).
+To make them permanent for everyone, use <b>Export JSON</b> below and send the file to musu — or save it in the site folder as <b>content-export.json</b> and rebuild the site. Until then, other browsers still see the default content.</div>
+<div class="admin-grid">
+<div class="stat"><b id="stat-articles">0</b><span>Articles</span></div>
+<div class="stat"><b id="stat-sections">0</b><span>Sections in use</span></div>
+<div class="stat"><b id="stat-justin">0</b><span>Just In items</span></div>
+<div class="stat"><b id="stat-live">0</b><span>Live updates</span></div>
+</div>
+<p id="saved-note" style="color:var(--muted)"></p>
+
+<section class="panel"><h2>Articles</h2><div class="body">
+<ul class="admin-list" id="article-list"></ul>
+<button class="btn" id="add-article" type="button">+ Add article</button>
+<form id="article-form" class="hidden" style="margin-top:1.2rem">
+<h3 id="af-title-text" style="font-family:var(--serif);margin:0 0 0.8rem">Add article</h3>
+<div class="form-grid">
+<div class="field"><label for="af-title">Headline *</label><input id="af-title" type="text" required></div>
+<div class="field"><label for="af-slug">URL slug * <span class="hint">lower-case letters, numbers, hyphens — auto-filled from the headline</span></label><input id="af-slug" type="text" required></div>
+<div class="field"><label for="af-section">Section</label><select id="af-section"><option value="world">World</option><option value="europe">Europe</option><option value="us">US</option><option value="politics">Politics</option><option value="war-conflict">War &amp; Conflict</option><option value="business-finance">Business &amp; Finance</option><option value="sport">Sport</option><option value="culture">Culture</option></select></div>
+<div class="field"><label for="af-date">Date</label><input id="af-date" type="text" placeholder="20 November 2026"></div>
+<div class="field full"><label for="af-dek">Summary (shows on the homepage and section pages)</label><textarea id="af-dek" style="min-height:70px"></textarea></div>
+<div class="field full"><label for="af-body">Article text <span class="hint">one paragraph per block — leave a blank line between paragraphs</span></label><textarea id="af-body"></textarea></div>
+<div class="field"><label for="af-image">Photo URL <span class="hint">leave empty for the navy placeholder tile</span></label><input id="af-image" type="url" placeholder="https://images.unsplash.com/photo-..."></div>
+<div class="field"><label for="af-caption">Photo caption / credit</label><input id="af-caption" type="text" placeholder="Photo: Unsplash"></div>
+<div class="field"><label for="af-source">Source name</label><input id="af-source" type="text" placeholder="Reuters"></div>
+<div class="field"><label for="af-source-url">Source link</label><input id="af-source-url" type="url" placeholder="https://..."></div>
+<div class="field full"><div class="check-row">
+<label><input id="af-hero" type="checkbox"> Make this the homepage hero story</label>
+<label><input id="af-mostread" type="checkbox"> Show in Most Read</label>
+</div></div>
+</div>
+<div class="form-actions"><button class="btn" type="submit">Save article</button>
+<button class="btn ghost" id="af-cancel" type="button">Cancel</button></div>
+</form>
+</div></section>
+
+<section class="panel"><h2>Breaking news banner</h2><div class="body">
+<form id="breaking-form">
+<div class="form-grid">
+<div class="field full"><label for="br-text">Banner text</label><input id="br-text" type="text"></div>
+<div class="field full"><label for="br-link">Link <span class="hint">e.g. articles/my-story.html or a full https:// link</span></label><input id="br-link" type="text"></div>
+</div>
+<div class="form-actions"><button class="btn" type="submit">Save banner</button></div>
+</form>
+</div></section>
+
+<section class="panel"><h2>Just In feed</h2><div class="body">
+<ul class="admin-list" id="justin-list"></ul>
+<form id="justin-form">
+<h3 id="ji-form-title" style="font-family:var(--serif);margin:0 0 0.8rem">Add Just In item</h3>
+<div class="form-grid">
+<div class="field"><label for="ji-time">Time</label><input id="ji-time" type="text" placeholder="20 Nov, 10:33"></div>
+<div class="field"><label for="ji-link">Link</label><input id="ji-link" type="text" value="live.html"></div>
+<div class="field full"><label for="ji-text">Text *</label><input id="ji-text" type="text" required></div>
+</div>
+<div class="form-actions"><button class="btn" type="submit">Save Just In item</button></div>
+</form>
+</div></section>
+
+<section class="panel"><h2>Live blog</h2><div class="body">
+<ul class="admin-list" id="live-list"></ul>
+<form id="live-form">
+<h3 id="lv-form-title" style="font-family:var(--serif);margin:0 0 0.8rem">Add live update</h3>
+<div class="form-grid">
+<div class="field"><label for="lv-time">Time</label><input id="lv-time" type="text" placeholder="20 Nov, 10:33"></div>
+<div class="field full"><label for="lv-headline">Headline *</label><input id="lv-headline" type="text" required></div>
+<div class="field full"><label for="lv-text">Update text *</label><textarea id="lv-text" style="min-height:80px" required></textarea></div>
+</div>
+<div class="form-actions"><button class="btn" type="submit">Save live update</button></div>
+</form>
+</div></section>
+
+<section class="panel"><h2>Site settings</h2><div class="body">
+<form id="settings-form">
+<div class="form-grid">
+<div class="field"><label for="set-name">Site name</label><input id="set-name" type="text"></div>
+<div class="field"><label for="set-tagline">Tagline</label><input id="set-tagline" type="text"></div>
+<div class="field full"><label for="set-hero">Homepage hero story</label><select id="set-hero"></select></div>
+</div>
+<div class="form-actions"><button class="btn" type="submit">Save settings</button></div>
+</form>
+</div></section>
+
+<section class="panel"><h2>Data — export, import, reset</h2><div class="body">
+<p>Export downloads the site's full content as <b>wwn-content.json</b>. To make admin changes permanent for all visitors, send that file to musu, or save it in the site folder as <b>content-export.json</b> and re-run the build script (<b>tools/build_site.py</b>) — the static pages are then regenerated with your content, including a real page for every new article.</p>
+<div class="form-actions">
+<button class="btn" id="export-btn" type="button">Export JSON</button>
+<label class="btn ghost" for="import-file" style="cursor:pointer">Import JSON</label>
+<input id="import-file" type="file" accept="application/json,.json" class="hidden">
+<button class="btn danger" id="reset-btn" type="button">Reset to defaults</button>
+</div>
+</div></section>
+
+</div>
+</div></main>
+<footer class="site-footer"><div class="wrap">
+<p class="fineprint"><span>&copy; 2026 Western World News (westernworldnews.com). Admin panel — passcode gate only, not real server security.</span><span><a href="index.html">Back to site &rarr;</a></span></p>
+</div></footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="assets/js/content.js"></script>
+<script src="assets/js/admin.js"></script>
+</body>
+</html>
