@@ -294,6 +294,7 @@ CSS = """/* Western World News: publisher design v3.
 :root {
   --red: #bb1919;
   --red-dark: #8f1212;
+  --red-light: #ff6b6b;
   --ink: #111111;
   --muted: #666666;
   --line: #eeeeee;
@@ -325,30 +326,32 @@ figcaption { font-size: 0.78rem; color: var(--muted); padding: 0.35rem 0 0; line
 .wrap { max-width: 1180px; margin: 0 auto; padding: 0 1rem; }
 .sr-only { position: absolute; left: -9999px; }
 
-/* ---------- Sticky white header: one compact row ---------- */
-.site-header { position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid var(--line); }
-.header-row { display: flex; align-items: center; gap: 1.2rem; padding-top: 0.55rem; padding-bottom: 0.55rem; flex-wrap: nowrap; }
-.wordmark { font-size: 1.18rem; font-weight: 800; letter-spacing: -0.01em; line-height: 1.1; color: var(--ink); white-space: nowrap; flex-shrink: 0; }
-.wordmark .news { color: var(--red); }
-.wordmark:hover { text-decoration: none; }
+/* ---------- Sticky dark navy header: one compact row ---------- */
+.site-header { position: sticky; top: 0; z-index: 100; background: var(--navy); border-bottom: 1px solid var(--navy-dark); }
+.header-row { display: flex; align-items: center; gap: 1.2rem; padding-top: 0.75rem; padding-bottom: 0.75rem; padding-left: 1.5rem; padding-right: 1.5rem; flex-wrap: nowrap; max-width: 1320px; margin: 0 auto; }
+.wordmark { font-size: 1.45rem; font-weight: 800; letter-spacing: -0.01em; line-height: 1.1; color: #fff; white-space: nowrap; flex-shrink: 0; }
+.wordmark .news { color: var(--red-light); }
+.wordmark:hover { text-decoration: none; color: #fff; }
 .main-nav { flex: 1; display: flex; justify-content: center; min-width: 0; }
 .main-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; }
-.main-nav a { display: block; color: var(--ink); padding: 0.45rem 0.55rem; font-size: 0.88rem; font-weight: 600; white-space: nowrap; }
-.main-nav a:hover { color: var(--red); text-decoration: none; }
-.main-nav a.active { color: var(--red); box-shadow: inset 0 -2px 0 var(--red); }
+.main-nav a { display: block; color: #fff; padding: 0.45rem 0.55rem; font-size: 0.95rem; font-weight: 600; white-space: nowrap; }
+.main-nav a:hover { color: var(--red-light); text-decoration: none; }
+.main-nav a.active { color: #fff; box-shadow: inset 0 -2px 0 var(--red-light); }
 .nav-toggle {
-  display: none; background: none; border: 0; color: var(--ink); font-size: 1.5rem;
+  display: none; background: none; border: 0; color: #fff; font-size: 1.5rem;
   padding: 0.4rem 0.6rem 0.4rem 0; cursor: pointer; line-height: 1; margin-left: auto;
 }
 .header-actions { display: flex; align-items: center; gap: 0.8rem; margin-left: auto; flex-shrink: 0; }
-.header-actions .live-link { color: var(--red); font-weight: 800; font-size: 0.95rem; display: flex; align-items: center; gap: 0.35rem; white-space: nowrap; }
+.header-actions .live-link { color: var(--red-light); font-weight: 800; font-size: 1rem; display: flex; align-items: center; gap: 0.35rem; white-space: nowrap; }
 .header-actions .live-link:hover { text-decoration: none; }
-.btn-black { background: #111; color: #fff; border-radius: 999px; padding: 0.5rem 1.1rem; font-size: 0.9rem; font-weight: 700; white-space: nowrap; }
+.header-actions .btn-black { background: var(--red); }
+.header-actions .btn-black:hover { background: var(--red-dark); }
+.btn-black { background: #111; color: #fff; border-radius: 999px; padding: 0.55rem 1.15rem; font-size: 0.95rem; font-weight: 700; white-space: nowrap; }
 .btn-black:hover { background: #000; color: #fff; text-decoration: none; }
 .search-box { position: relative; display: flex; align-items: center; }
-.search-toggle { background: none; border: 0; padding: 0.4rem; cursor: pointer; color: var(--ink); line-height: 0; }
-.search-toggle:hover { color: var(--red); }
-.search-toggle svg { width: 20px; height: 20px; display: block; }
+.search-toggle { background: none; border: 0; padding: 0.4rem; cursor: pointer; color: #fff; line-height: 0; }
+.search-toggle:hover { color: var(--red-light); }
+.search-toggle svg { width: 22px; height: 22px; display: block; }
 .search-box input {
   background: #fff; border: 1px solid transparent; color: var(--ink);
   border-radius: 999px; padding: 0.45rem 0; font-size: 0.9rem; width: 0; opacity: 0; outline: none;
@@ -368,11 +371,11 @@ figcaption { font-size: 0.78rem; color: var(--muted); padding: 0.35rem 0 0; line
 .search-results a:hover { background: var(--light); text-decoration: none; }
 .search-results a small { display: block; color: var(--red); font-weight: 700; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
 .search-results .none { padding: 0.7rem 0.8rem; color: var(--muted); font-size: 0.9rem; }
-.topic-row { border-top: 1px solid var(--line); }
-.topic-row .wrap { display: flex; gap: 1.4rem; padding-top: 0.45rem; padding-bottom: 0.45rem; overflow-x: auto; }
+.topic-row { border-top: 1px solid var(--line); background: #fff; }
+.topic-row .wrap { display: flex; gap: 1.4rem; padding-top: 0.55rem; padding-bottom: 0.55rem; overflow-x: auto; max-width: 1320px; }
 .topic-row a { color: var(--muted); font-size: 0.85rem; font-weight: 600; white-space: nowrap; }
 .topic-row a:hover { color: var(--red); text-decoration: none; }
-@media (max-width: 1150px) {
+@media (max-width: 1280px) {
   .header-row { flex-wrap: wrap; gap: 0.5rem 1rem; }
   .nav-toggle { display: block; }
   .main-nav { order: 4; flex-basis: 100%; justify-content: flex-start; }
