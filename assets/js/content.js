@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "frances-sixth-consecutive-saturday-of-protests-draw-lower"
+    "heroSlug": "iran-attacks-us-bases-in-bahrain-as-its-tankers-get-ready"
   },
   "breaking": {
-    "text": "France’s sixth consecutive Saturday of protests draw lower turnout",
-    "link": "articles/frances-sixth-consecutive-saturday-of-protests-draw-lower.html"
+    "text": "Iran attacks US bases in Bahrain as its tankers get ready to break the US blockade",
+    "link": "articles/iran-attacks-us-bases-in-bahrain-as-its-tankers-get-ready.html"
   },
   "articles": [
+    {
+      "slug": "iran-attacks-us-bases-in-bahrain-as-its-tankers-get-ready",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Iran attacks US bases in Bahrain as its tankers get ready to break the US blockade",
+      "dek": "The “no war, no peace” US-Iran confrontation appears to be moving towards a possible breaking point as Iran increases its military actions in the Gulf and the Strait of Hormuz, while its critical attempt to break the US military naval.",
+      "date": "November 21, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/21/iran-attacks-us-bases-in-bahrain-as-its-tankers-get-ready-to-break-the-us-blockade",
+      "body": [
+        "The “no war, no peace” US-Iran confrontation appears to be moving towards a possible breaking point as Iran increases its military actions in the Gulf and the Strait of Hormuz, while its critical attempt to break the US military naval blockade in the Persian Gulf appears to be imminent."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/29/79/696x392_cmsv2_6cfb00d1-cc46-548f-8f54-bd7a83007f6c-10002979.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "frances-sixth-consecutive-saturday-of-protests-draw-lower",
       "sections": [
@@ -972,6 +991,31 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 21, 22:32",
+      "text": "Iran attacks US bases in Bahrain as its tankers get ready to break the US blockade",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 21:05",
+      "text": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 20:56",
+      "text": "Iran says held talks with Qatari mediators, urges US to accept conditions",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 20:49",
+      "text": "Eisenkot invites Netanyahu’s party for ‘marathon’ Israeli coalition talks",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 20:47",
+      "text": "Thousands protest across Europe over living costs and housing",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 21, 20:20",
       "text": "France’s sixth consecutive Saturday of protests draw lower turnout",
       "link": "live.html"
@@ -984,31 +1028,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 21, 20:15",
       "text": "Why is the US Army detonating lead-rich explosives in Iowa?",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 20:08",
-      "text": "'Worst Ever' COP Summit?",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 19:56",
-      "text": "Russia attacks Zelensky's hometown, Ukraine reaffirms wish to join NATO",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 19:55",
-      "text": "Russia launches ballistic missile attack on Zelensky's hometown in central Ukraine",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 19:53",
-      "text": "Noni Madueke salvages draw for Arsenal at Newcastle United as Raya injured",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 19:51",
-      "text": "Village votes to 'leave UK' over migrant plan",
       "link": "live.html"
     }
   ],
