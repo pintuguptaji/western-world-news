@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "iran-attacks-us-bases-in-bahrain-as-its-tankers-get-ready"
+    "heroSlug": "fight-over-fossil-fuels-leaves-cop31-climate-talks-in"
   },
   "breaking": {
-    "text": "Iran attacks US bases in Bahrain as its tankers get ready to break the US blockade",
-    "link": "articles/iran-attacks-us-bases-in-bahrain-as-its-tankers-get-ready.html"
+    "text": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+    "link": "articles/fight-over-fossil-fuels-leaves-cop31-climate-talks-in.html"
   },
   "articles": [
+    {
+      "slug": "fight-over-fossil-fuels-leaves-cop31-climate-talks-in",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+      "dek": "Countries from nearly 200 countries are in a deadlock to try and get a new global climate agreement.",
+      "date": "November 21, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o",
+      "body": [
+        "Countries from nearly 200 countries are in a deadlock to try and get a new global climate agreement."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/5253/live/c9ca5500-e579-11f1-a5f6-b3028adf2d6d.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "iran-attacks-us-bases-in-bahrain-as-its-tankers-get-ready",
       "sections": [
@@ -991,8 +1009,33 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 21, 22:19",
+      "text": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 22:01",
+      "text": "Lock of former US President George Washington's hair sells for $4,000",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 22:55",
+      "text": "Salvage operation under way after cargo ship runs aground off French coast",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 21:39",
+      "text": "Spitting Image co-creator Peter Fluck dies aged 85",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 21, 22:32",
       "text": "Iran attacks US bases in Bahrain as its tankers get ready to break the US blockade",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 21:31",
+      "text": "Bahrain says Iranian attack causes fire at industrial facility",
       "link": "live.html"
     },
     {
@@ -1001,33 +1044,8 @@ window.WWN_DEFAULT_CONTENT = {
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 20:56",
-      "text": "Iran says held talks with Qatari mediators, urges US to accept conditions",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 20:49",
-      "text": "Eisenkot invites Netanyahu’s party for ‘marathon’ Israeli coalition talks",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 20:47",
-      "text": "Thousands protest across Europe over living costs and housing",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 20:20",
-      "text": "France’s sixth consecutive Saturday of protests draw lower turnout",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 20:15",
-      "text": "Two groups verify mathematician’s claim that Claude helped prove mathematics problem",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 20:15",
-      "text": "Why is the US Army detonating lead-rich explosives in Iowa?",
+      "time": "Nov 21, 21:02",
+      "text": "Brazil’s Jair Bolsonaro in intensive care with bowel obstruction",
       "link": "live.html"
     }
   ],
