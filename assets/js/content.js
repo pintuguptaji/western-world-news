@@ -9,13 +9,104 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "anc-fights-to-keep-control-of-south-africa-s-key-cities"
+    "heroSlug": "trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang"
   },
   "breaking": {
-    "text": "ANC fights to keep control of South Africa's key cities after election setback",
-    "link": "articles/anc-fights-to-keep-control-of-south-africa-s-key-cities.html"
+    "text": "Trump calls for Nvidia to reinstate ‘brilliant’ Jensen Huang",
+    "link": "articles/trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang.html"
   },
   "articles": [
+    {
+      "slug": "trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "Trump calls for Nvidia to reinstate ‘brilliant’ Jensen Huang",
+      "dek": "US president calls tech giant to give former CEO 'a second chance' and urges him to 'make a big apology'.",
+      "date": "November 21, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/11/21/trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
+      "body": [
+        "US president calls tech giant to give former CEO 'a second chance' and urges him to 'make a big apology'."
+      ],
+      "related": [
+        "denmark-expels-russian-diplomat-over-alleged-plot-to-kill",
+        "they-were-fined-811m-for-conning-detained-migrants-but-the",
+        "republican-senator-blocks-trump-cyber-nominee-over-january"
+      ],
+      "image": "",
+      "imageCaption": ""
+    },
+    {
+      "slug": "denmark-expels-russian-diplomat-over-alleged-plot-to-kill",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Denmark expels Russian diplomat over alleged plot to kill Ukrainian rapper",
+      "dek": "Copenhagen accuses Moscow of planning assassination with banned local gang; Russia says no evidence for allegation.",
+      "date": "November 21, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/11/21/denmark-expels-russian-diplomat-over-alleged-plot-to-kill-ukrainian-rapper",
+      "body": [
+        "Copenhagen accuses Moscow of planning assassination with banned local gang; Russia says no evidence for allegation."
+      ],
+      "related": [
+        "trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
+        "they-were-fined-811m-for-conning-detained-migrants-but-the",
+        "republican-senator-blocks-trump-cyber-nominee-over-january"
+      ],
+      "image": "",
+      "imageCaption": ""
+    },
+    {
+      "slug": "they-were-fined-811m-for-conning-detained-migrants-but-the",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "They were fined $811m for conning detained migrants, but the scams didn't stop",
+      "dek": "How convicted fraudsters made millions from detained immigrants, evaded efforts to shut down their bail business and left migrants behind bars.",
+      "date": "November 21, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqgm0zlkgrm2o",
+      "body": [
+        "How convicted fraudsters made millions from detained immigrants, evaded efforts to shut down their bail business and left migrants behind bars."
+      ],
+      "related": [
+        "trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
+        "denmark-expels-russian-diplomat-over-alleged-plot-to-kill",
+        "republican-senator-blocks-trump-cyber-nominee-over-january"
+      ],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/b187/live/6d4c58d0-e42c-11f1-a630-a951c13e48b7.jpg",
+      "imageCaption": "Photo: BBC"
+    },
+    {
+      "slug": "republican-senator-blocks-trump-cyber-nominee-over-january",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "Republican senator blocks Trump cyber nominee over January 6 denial",
+      "dek": "Thom Tillis move comes after Michael LoSapio, nominated for Cisa role, told hearing ‘I don’t believe it was an attack’ .",
+      "date": "November 20, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/us-news/2026/nov/20/tillis-republican-senator-trump-cyber-nominee",
+      "body": [
+        "Thom Tillis move comes after Michael LoSapio, nominated for Cisa role, told hearing ‘I don’t believe it was an attack’ . Senator Thom Tillis, the outgoing North Carolina Republican who is due to be replaced by a Democrat, has reportedly blocked a confirmation vote on Donald Trump’s nominee to lead a key US cybersecurity agency, Michael LoSapio, after he denied during a hearing that the Capitol was attacked on January 6 2021."
+      ],
+      "related": [
+        "trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
+        "denmark-expels-russian-diplomat-over-alleged-plot-to-kill",
+        "they-were-fined-811m-for-conning-detained-migrants-but-the"
+      ],
+      "image": "https://i.guim.co.uk/img/media/cac7b215020ab17f2e1926d910d082e9f9ca8ad3/444_0_4416_3535/master/4416.jpg?width=700&quality=85&auto=format&fit=max&s=4a04958e10540d591086e2d7824c311d",
+      "imageCaption": "Photo: The Guardian"
+    },
     {
       "slug": "anc-fights-to-keep-control-of-south-africa-s-key-cities",
       "sections": [
@@ -699,43 +790,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 21, 02:09",
+      "text": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 01:49",
+      "text": "Trump calls for Nvidia to reinstate ‘brilliant’ Jensen Huang",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 01:43",
+      "text": "Man accused of sparking deadly Los Angeles wildfire found guilty",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 01:36",
+      "text": "Can Africa’s new credit rating agency change how the continent is assessed?",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 01:12",
+      "text": "Denmark expels Russian diplomat over alleged plot to kill Ukrainian rapper",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 01:02",
+      "text": "They were fined $811m for conning detained migrants, but the scams didn't stop",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 00:55",
+      "text": "Can Mauricio Pochettino save Man United from Premier League relegation?",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 21, 00:34",
       "text": "ANC fights to keep control of South Africa's key cities after election setback",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 00:26",
-      "text": "Victorian Greens seek urgent injunction over how-to-vote cards mimicking party’s branding but preferencing it",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 00:03",
-      "text": "‘A source of inspiration’: California celebrates the late civil rights icon Dolores Huerta",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 00:03",
-      "text": "US judge approves Bayer's $7.25 billion cancer settlement",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 00:01",
-      "text": "Mamdani announces plan to close New York's Rikers Island jail by 2032",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 00:00",
-      "text": "Iran war live: Saudi-led coalition downs Houthi missiles",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 20, 23:48",
-      "text": "Republican senator blocks Trump cyber nominee over January 6 denial",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 20, 23:36",
-      "text": "Overturned boat carrying mourners to funeral kills at least four in Nigeria",
       "link": "live.html"
     }
   ],
