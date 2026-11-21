@@ -880,43 +880,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 21, 14:44",
-      "text": "Russia strikes Zelenskyy's hometown, killing 2",
+      "time": "Nov 21, 15:21",
+      "text": "EU and Indonesia sign trade deal",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 14:38",
-      "text": "‘Hell dorm’: Florida prisoners testify about 119F heat indexes and walls that sweat",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 15:35",
-      "text": "Jair Bolsonaro hospitalised with abdominal pain while under house arrest",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 14:35",
+      "time": "Nov 21, 15:19",
       "text": "British man recalls ‘despair’ over son’s death after fall from Cyprus window",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 14:30",
-      "text": "Newcastle United vs Arsenal LIVE: Premier League",
+      "time": "Nov 21, 16:12",
+      "text": "Former Costa Concordia cruise ship captain released from prison on probation after nine years",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 15:20",
-      "text": "Mexico captures FBI’s most-wanted cartel boss ‘El Chapo Isidro’, triggering violence",
+      "time": "Nov 21, 15:01",
+      "text": "Tankers hit in Strait of Hormuz as Iran tightens grip on shipping",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 14:15",
-      "text": "Could Iran reverse its stated policy of a civil-only nuclear program?",
+      "time": "Nov 21, 14:58",
+      "text": "New EU budget proposal aims at tax gobal tech giants",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 14:09",
-      "text": "USDA, FBI breached by hackers amid spate of tech outages, reports",
+      "time": "Nov 21, 15:57",
+      "text": "Raccoon roast as a sustainable alternative to Germany's Christmas goose?",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 14:54",
+      "text": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 14:52",
+      "text": "Federal judge denies request to release man shot by immigration agents in New York",
       "link": "live.html"
     }
   ],
