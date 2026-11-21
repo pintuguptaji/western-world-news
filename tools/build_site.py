@@ -16,6 +16,11 @@ BASE = "https://westernworldnews.com"
 # Leave empty until Google gives you a code.
 GOOGLE_SITE_VERIFICATION = "NygudsKNLm9w7kCNUvEYzlOYcf3eSNafgLbIvtD17Gc"
 
+# Google Analytics 4 measurement ID. Paste the ID (Analytics > Admin >
+# Data Streams > Web stream, looks like G-XXXXXXXXXX) here, rebuild and
+# push. Leave empty until Google gives you an ID.
+GOOGLE_ANALYTICS_ID = "G-1FTJR8MHNF"
+
 NAV = [
     ("index.html", "Home"),
     ("world.html", "World"),
@@ -715,12 +720,23 @@ def footer_html(prefix=""):
 def page(title, description, active, body, canonical, og_type="website", prefix="", extra_head=""):
     verify_tag = (f'<meta name="google-site-verification" content="{GOOGLE_SITE_VERIFICATION}">'
                   if GOOGLE_SITE_VERIFICATION else "")
+    ga_tag = ""
+    if GOOGLE_ANALYTICS_ID:
+        ga_tag = ('<script async src="https://www.googletagmanager.com/gtag/js?id='
+                  + GOOGLE_ANALYTICS_ID + '"></script>\n<script>\n'
+                  '  window.dataLayer = window.dataLayer || [];\n'
+                  '  function gtag(){dataLayer.push(arguments);}\n'
+                  "  gtag('consent', 'default', {'analytics_storage': 'denied'});\n"
+                  "  gtag('js', new Date());\n"
+                  "  try { if (localStorage.getItem('wwn-cookie-choice') === 'accepted') { gtag('consent', 'update', {'analytics_storage': 'granted'}); } } catch (e) {}\n"
+                  "  gtag('config', '" + GOOGLE_ANALYTICS_ID + "');\n</script>")
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {verify_tag}
+{ga_tag}
 <title>{title} | Western World News</title>
 <meta name="description" content="{description}">
 <link rel="canonical" href="{canonical}">
@@ -1258,6 +1274,9 @@ MAIN_JS = """// Western World News: front-end behavior (v2).
       if (!choice) { cb.classList.add("show"); }
       var saveChoice = function (v) {
         try { localStorage.setItem("wwn-cookie-choice", v); } catch (e) {}
+        if (v === "accepted" && typeof gtag === "function") {
+          try { gtag("consent", "update", {"analytics_storage": "granted"}); } catch (e) {}
+        }
         cb.classList.remove("show");
       };
       var acc = $("#cookie-accept");
@@ -2287,7 +2306,7 @@ def main():
         ["Western World News is a free news website. This privacy policy explains what information we collect when you visit westernworldnews.com, how we use it, and the choices you have. If you do not agree with this policy, please do not use the site.",
          "Information you send us. We do not ask you to create an account, and we do not collect your name, address, or payment details. If you email us or sign up for our newsletter, we receive the email address and the message you send. We use that information only to reply to you or to send the newsletter you asked for. We do not sell your email address or any other personal information, and we do not share it except where the law requires it.",
          "Cookies and advertising. This site shows advertising served by Google AdSense and other third party vendors. Third party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to this site and other sites on the internet. You can opt out of personalized advertising by visiting <a href='https://adssettings.google.com/'>Google Ads Settings</a>, or by visiting <a href='https://www.aboutads.info/choices/'>www.aboutads.info/choices</a>. Western World News uses Google AdSense to show advertising. We are in the process of applying for AdSense approval, and this section describes how advertising on this site works when ads are live.",
-         "Analytics. This site currently uses no analytics or tracking tools of its own. If we add analytics later, we will update this policy before the change goes live.",
+         "Analytics. This site uses Google Analytics to understand how visitors use it, such as which stories are read most and where visitors come from. Google Analytics uses cookies and collects anonymous usage data. It does not collect your name, address, or payment details. Analytics only runs if you accept cookies on the banner at the bottom of the page. If you decline, no analytics data is stored.",
          "Links to other websites. Our stories link to the original reporting on other websites, such as the BBC, Reuters, and Al Jazeera. Those sites have their own privacy policies, and we are not responsible for how they handle your information.",
          "Children's privacy. This site is a general news site and is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has sent us personal information, please contact us and we will delete it.",
          "Changes to this policy. We may update this policy from time to time. The current version is always the one published on this page.",

@@ -49,6 +49,9 @@
       if (!choice) { cb.classList.add("show"); }
       var saveChoice = function (v) {
         try { localStorage.setItem("wwn-cookie-choice", v); } catch (e) {}
+        if (v === "accepted" && typeof gtag === "function") {
+          try { gtag("consent", "update", {"analytics_storage": "granted"}); } catch (e) {}
+        }
         cb.classList.remove("show");
       };
       var acc = $("#cookie-accept");

@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://westernworldnews.com/articles/cop31-deep-divisions-persist-over-energy-finance-and-science.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Western World News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21</news:publication_date>
+      <news:title>COP31: Deep divisions persist over energy, finance and science</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://westernworldnews.com/articles/indias-opposition-stages-protests-against-meta-over-account.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Western World News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21</news:publication_date>
+      <news:title>India’s opposition stages protests against Meta over account removals</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://westernworldnews.com/articles/brazil-ex-president-jair-bolsonaro-taken-to-hospital-over.html</loc>
     <news:news>
       <news:publication>
