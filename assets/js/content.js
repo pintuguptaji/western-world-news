@@ -880,13 +880,28 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 21, 04:34",
-      "text": "Man convicted of starting Palisades fire in Los Angeles",
+      "time": "Nov 21, 05:15",
+      "text": "Zelensky says Putin is a 'killer' after Trump calls Russian leader a friend",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 04:32",
-      "text": "'He's a killer': Zelensky reacts to Trump calling Putin a friend",
+      "time": "Nov 21, 05:00",
+      "text": "‘So what if there’s a hole? It hasn’t collapsed’: Kyiv residents unbothered by Russian attacks on city’s bridg",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 05:00",
+      "text": "Tourists are throwing fewer coins into Rome’s Trevi fountain, is €2 entry fee to blame?",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 04:44",
+      "text": "Teenager allegedly organized arsons and kidnapping on Signal during Melbourne hospitality wars",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 04:34",
+      "text": "Man convicted of starting Palisades fire in Los Angeles",
       "link": "live.html"
     },
     {
@@ -901,22 +916,7 @@ window.WWN_DEFAULT_CONTENT = {
     },
     {
       "time": "Nov 21, 03:16",
-      "text": "Brazil ex-president Jair Bolsonaro taken to hospital over abdominal pain",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 03:01",
-      "text": "Three French police officers sentenced over racist assault on Black man",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 02:47",
-      "text": "UK anti-migrant activist jailed for slashing Channel dinghy",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 02:09",
-      "text": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
+      "text": "Brazil ex-President Jair Bolsonaro taken to hospital over abdominal pain",
       "link": "live.html"
     }
   ],
