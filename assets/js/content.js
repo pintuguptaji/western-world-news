@@ -880,43 +880,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 21, 09:40",
-      "text": "Deal with EU not dependent on tuition fees agreement, Miliband says",
+      "time": "Nov 21, 10:32",
+      "text": "'Unacceptable': EU chief condemns alleged Russian plot to kill US-Ukrainian citizen",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 09:18",
-      "text": "'Killer robots' talks at UN end with no legally binding ban",
+      "time": "Nov 21, 10:29",
+      "text": "Anthropic researcher uses AI to solve math's greatest riddle",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 09:12",
-      "text": "French police officers guilty of Michel Zecler assault: What happens now?",
+      "time": "Nov 21, 10:26",
+      "text": "Denmark accuses Russia of plotting to assassinate US-Ukrainian rapper",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 09:01",
-      "text": "Harry Kane to miss ‘a few months’ after injury as Bayern Munich draw",
+      "time": "Nov 21, 11:18",
+      "text": "Anthropic worker claims to have solved famed 167-year-old maths problem with help of AI",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 09:56",
-      "text": "Fossil fuel row sees COP31 talks spill into overtime",
+      "time": "Nov 21, 10:16",
+      "text": "Was Vladimir Putin 'snubbed' by Xi Jinping? Viral handshake video is AI fake",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 08:48",
-      "text": "Illicit alcohol kills 11, poisons 180 in northeast India’s Manipur state",
+      "time": "Nov 21, 11:00",
+      "text": "Off the Record: Europe shrugs as Trump's Yalta knockoff flops",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 08:33",
-      "text": "Gianni Infantino’s FIFA re-election backed by South America’s CONMEBOL",
+      "time": "Nov 21, 09:58",
+      "text": "Verstappen escapes Vegas F1 discipline, takes pole as Antonelli penalised",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 08:29",
-      "text": "Live: France braces for fresh protests as social unrest enters sixth week",
+      "time": "Nov 21, 09:52",
+      "text": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
       "link": "live.html"
     }
   ],
