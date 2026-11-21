@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "fight-over-fossil-fuels-leaves-cop31-climate-talks-in"
+    "heroSlug": "lock-of-former-us-president-george-washington-s-hair-sells"
   },
   "breaking": {
-    "text": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-    "link": "articles/fight-over-fossil-fuels-leaves-cop31-climate-talks-in.html"
+    "text": "Lock of former US President George Washington's hair sells for $4,000",
+    "link": "articles/lock-of-former-us-president-george-washington-s-hair-sells.html"
   },
   "articles": [
+    {
+      "slug": "lock-of-former-us-president-george-washington-s-hair-sells",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "Lock of former US President George Washington's hair sells for $4,000",
+      "dek": "The hair was given as a sign of friendship shortly before Washington's death in 1799, according to a descendent of its former owner.",
+      "date": "November 21, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwe9k23dpz0do",
+      "body": [
+        "The hair was given as a sign of friendship shortly before Washington's death in 1799, according to a descendent of its former owner."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/5138/live/c4d4d0c0-e5ec-11f1-ad4d-5dd9d517a6dd.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "fight-over-fossil-fuels-leaves-cop31-climate-talks-in",
       "sections": [
@@ -1009,6 +1028,16 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 21, 23:31",
+      "text": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 22:41",
+      "text": "Man found dead on Flinders Island linked to shooting of police officer, Tasmanian authorities say",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 21, 22:19",
       "text": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
       "link": "live.html"
@@ -1036,16 +1065,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 21, 21:31",
       "text": "Bahrain says Iranian attack causes fire at industrial facility",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 21:05",
-      "text": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 21:02",
-      "text": "Brazil’s Jair Bolsonaro in intensive care with bowel obstruction",
       "link": "live.html"
     }
   ],
