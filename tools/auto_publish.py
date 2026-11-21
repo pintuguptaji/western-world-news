@@ -47,6 +47,7 @@ MAX_PER_DAY = 20
 
 # (source name, feed URL, default section)
 FEEDS = [
+    ("BBC", "https://feeds.bbci.co.uk/news/rss.xml", "world"),
     ("BBC", "https://feeds.bbci.co.uk/news/world/rss.xml", "world"),
     ("BBC", "https://feeds.bbci.co.uk/news/world/europe/rss.xml", "europe"),
     ("Al Jazeera", "https://www.aljazeera.com/xml/rss/all.xml", "world"),
