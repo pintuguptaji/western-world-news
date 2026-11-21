@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "cop31-deep-divisions-persist-over-energy-finance-and-science"
+    "heroSlug": "mexican-special-forces-arrest-drug-kingpin-chapo-isidro"
   },
   "breaking": {
-    "text": "COP31: Deep divisions persist over energy, finance and science",
-    "link": "articles/cop31-deep-divisions-persist-over-energy-finance-and-science.html"
+    "text": "Mexican special forces arrest drug kingpin 'Chapo Isidro'",
+    "link": "articles/mexican-special-forces-arrest-drug-kingpin-chapo-isidro.html"
   },
   "articles": [
+    {
+      "slug": "mexican-special-forces-arrest-drug-kingpin-chapo-isidro",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Mexican special forces arrest drug kingpin 'Chapo Isidro'",
+      "dek": "The alleged leader of the Beltran Leyva gang and one of the FBI's most wanted fugitives, known as 'Chapo Isidro,' was captured by the Mexican military following a raid and a shootout in the coastal Sinaloa state.",
+      "date": "November 21, 2026",
+      "source": "DW",
+      "source_url": "https://www.dw.com/en/mexican-special-forces-arrest-drug-kingpin-chapo-isidro/a-80010745",
+      "body": [
+        "The alleged leader of the Beltran Leyva gang and one of the FBI's most wanted fugitives, known as 'Chapo Isidro,' was captured by the Mexican military following a raid and a shootout in the coastal Sinaloa state."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "cop31-deep-divisions-persist-over-energy-finance-and-science",
       "sections": [
@@ -916,43 +935,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 21, 17:28",
-      "text": "Liverpool vs Manchester United: Premier League, teams, prediction, lineups",
+      "time": "Nov 21, 18:30",
+      "text": "Mexican special forces arrest drug kingpin 'Chapo Isidro'",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 17:26",
-      "text": "COP31: Deep divisions persist over energy, finance and science",
+      "time": "Nov 21, 19:23",
+      "text": "Paolo Bulgari, Italian jewellery tycoon, dies aged 89",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 17:24",
-      "text": "Vance stops short of endorsing Trump’s claim that Iran was close to nuclear weapon",
+      "time": "Nov 21, 18:22",
+      "text": "Russia-bound ship attacked in Gulf of Finland",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 17:23",
-      "text": "FBI criminal database hacked",
+      "time": "Nov 21, 18:20",
+      "text": "Suffolk village votes to ‘leave the UK’ over plans to house asylum seekers nearby",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 17:21",
-      "text": "Man convicted of starting palisades fire",
+      "time": "Nov 21, 18:19",
+      "text": "FBI national crime database suffers suspected breach: Reports",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 17:21",
-      "text": "Chelsea beaten 4-1 by Leeds United in shock home Premier League defeat",
+      "time": "Nov 21, 18:08",
+      "text": "Trump orders contractors to check with White House over any congressional inquiries",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 17:20",
-      "text": "Russian strike kills two, wounds 60, in Zelenskyy’s hometown",
+      "time": "Nov 21, 19:05",
+      "text": "New documentary: Princess Kate speaks candidly about how cancer changed her body and mind",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 17:08",
-      "text": "Russian helicopter suspected of violating Finnish airspace",
+      "time": "Nov 21, 18:02",
+      "text": "Drone attack sets Russian cargo ship ablaze in Gulf of Finland",
       "link": "live.html"
     }
   ],
