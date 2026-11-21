@@ -2178,8 +2178,8 @@ output folder (used by the automatic publisher's tests).
 
 `.github/workflows/auto-publish.yml` runs every hour inside GitHub:
 `tools/auto_publish.py` fetches trusted RSS feeds (BBC, Al Jazeera,
-The Guardian, Euronews, France 24, DW), adds up to 4 verified new
-stories (max 12/day) to `data/articles.json`, refreshes the Just In
+The Guardian, Euronews, France 24, DW), adds 1 verified new story per
+hourly run (max 20/day) to `data/articles.json`, refreshes the Just In
 feed, rebuilds the site and pushes — using only the automatic
 `GITHUB_TOKEN`. Auto stories are short summaries of the source's own
 report with a "Read the full story" link, and the photo is the feed's

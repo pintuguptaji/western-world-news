@@ -15,7 +15,9 @@ Rules (Pintu's):
   stock photo. Never present stock/generated imagery as event footage.
 - Skip items with no usable description rather than fabricating a summary.
 - Idempotent: a second run with no new feed items changes nothing.
-- Max 4 new articles per run, max 12 per calendar day (UTC).
+- Max 1 new article per run, max 20 per calendar day (UTC): one story per
+  hourly run, so the 20 stories spread through the day instead of all
+  landing in the morning.
 """
 import argparse
 import datetime as dt
@@ -40,8 +42,8 @@ USER_AGENT = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
               "(KHTML, like Gecko) Chrome/120.0 Safari/537.36")
 FEED_TIMEOUT = 20
 IMAGE_TIMEOUT = 10
-MAX_NEW_PER_RUN = 4
-MAX_PER_DAY = 12
+MAX_NEW_PER_RUN = 1
+MAX_PER_DAY = 20
 
 # (source name, feed URL, default section)
 FEEDS = [
