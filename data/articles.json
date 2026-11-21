@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "slug": "frances-sixth-consecutive-saturday-of-protests-draw-lower",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "France’s sixth consecutive Saturday of protests draw lower turnout",
+      "dek": "Turnout ⁠was down ​at largely peaceful demonstrations across France on the sixth consecutive Saturday of protests ​over the cost of living, with the interior ministry putting the figure at 82,500 across the country.",
+      "date": "November 21, 2026",
+      "source": "France 24",
+      "source_url": "https://www.france24.com/en/france/20261121-france-s-sixth-consecutive-saturday-of-protests-draw-lower-turnout",
+      "body": [
+        "Turnout ⁠was down ​at largely peaceful demonstrations across France on the sixth consecutive Saturday of protests ​over the cost of living, with the interior ministry putting the figure at 82,500 across the country. Organizers said 150,000 people participated in the nationwide protests, down from their 200,000 figure last week."
+      ],
+      "related": [],
+      "image": "https://s.france24.com/media/display/c7c4cc2e-e5e5-11f1-a66f-6b451f569414/w:1024/p:16x9/000-D88T7BJ.jpg",
+      "imageCaption": "Photo: France 24",
+      "auto": true
+    },
+    {
       "slug": "thousands-take-to-streets-in-portugal-france-and-spain-over",
       "sections": [
         "europe",
@@ -960,36 +979,36 @@
   ],
   "justIn": [
     {
-      "time": "21 Nov, 20:43",
-      "text": "Thousands take to streets in Portugal, France and Spain over rising living costs"
+      "time": "21 Nov, 20:20",
+      "text": "France’s sixth consecutive Saturday of protests draw lower turnout"
     },
     {
-      "time": "21 Nov, 19:33",
-      "text": "Fight over fossil fuels leaves COP31 climate talks in deadlock"
+      "time": "21 Nov, 20:15",
+      "text": "Two groups verify mathematician’s claim that Claude helped prove mathematics problem"
     },
     {
-      "time": "21 Nov, 19:33",
-      "text": "UK should only rejoin EU if it innovates on technology, Blair warns"
+      "time": "21 Nov, 20:15",
+      "text": "Why is the US Army detonating lead-rich explosives in Iowa?"
     },
     {
-      "time": "21 Nov, 19:20",
-      "text": "Russia-bound ship attacked in Gulf of Finland"
+      "time": "21 Nov, 20:08",
+      "text": "'Worst Ever' COP Summit?"
     },
     {
-      "time": "21 Nov, 19:00",
-      "text": "‘Six, seven, maybe more preventable deaths’: Queensland’s LNP faces reckoning over broken health system"
+      "time": "21 Nov, 19:56",
+      "text": "Russia attacks Zelensky's hometown, Ukraine reaffirms wish to join NATO"
     },
     {
-      "time": "21 Nov, 19:00",
-      "text": "Australian neo-Nazis among far-right groups raising hundreds of thousands via global crowdfunding platform"
+      "time": "21 Nov, 19:55",
+      "text": "Russia launches ballistic missile attack on Zelensky's hometown in central Ukraine"
     },
     {
-      "time": "21 Nov, 18:50",
-      "text": "Louisiana man charged with killing woman on hiking trail and murdering co-worker with crossbow"
+      "time": "21 Nov, 19:53",
+      "text": "Noni Madueke salvages draw for Arsenal at Newcastle United as Raya injured"
     },
     {
-      "time": "21 Nov, 18:39",
-      "text": "Getting rid of antibiotic resistance: Challenges and possible solutions"
+      "time": "21 Nov, 19:51",
+      "text": "Village votes to 'leave UK' over migrant plan"
     }
   ],
   "liveUpdates": [
@@ -1051,9 +1070,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "thousands-take-to-streets-in-portugal-france-and-spain-over",
+  "heroSlug": "frances-sixth-consecutive-saturday-of-protests-draw-lower",
   "breaking": {
-    "text": "Thousands take to streets in Portugal, France and Spain over rising living costs",
-    "link": "articles/thousands-take-to-streets-in-portugal-france-and-spain-over.html"
+    "text": "France’s sixth consecutive Saturday of protests draw lower turnout",
+    "link": "articles/frances-sixth-consecutive-saturday-of-protests-draw-lower.html"
   }
 }
