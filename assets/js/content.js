@@ -880,43 +880,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 21, 10:32",
-      "text": "'Unacceptable': EU chief condemns alleged Russian plot to kill US-Ukrainian citizen",
+      "time": "Nov 21, 12:27",
+      "text": "Hagia Sophia's hidden tunnels uncovered as 420 metres of underground network cleaned",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 10:29",
-      "text": "Anthropic researcher uses AI to solve math's greatest riddle",
+      "time": "Nov 21, 11:23",
+      "text": "Rejoining EU ‘on the table’ as UK strikes deals on trade and young people",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 10:26",
-      "text": "Denmark accuses Russia of plotting to assassinate US-Ukrainian rapper",
+      "time": "Nov 21, 12:15",
+      "text": "French President Macron warns of 'new level' of Russian aggression",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 11:18",
-      "text": "Anthropic worker claims to have solved famed 167-year-old maths problem with help of AI",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 10:16",
-      "text": "Was Vladimir Putin 'snubbed' by Xi Jinping? Viral handshake video is AI fake",
+      "time": "Nov 21, 11:02",
+      "text": "Russian missiles hit Poland: What happened, and could NATO respond?",
       "link": "live.html"
     },
     {
       "time": "Nov 21, 11:00",
-      "text": "Off the Record: Europe shrugs as Trump's Yalta knockoff flops",
+      "text": "New Orleans Catholic clergy abuse survivors begin receiving payments from $305m bankruptcy settlement",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 09:58",
-      "text": "Verstappen escapes Vegas F1 discipline, takes pole as Antonelli penalised",
+      "time": "Nov 21, 11:00",
+      "text": "Did Democrats fail Florida? Angie Nixon on ‘missed opportunity’ in midterms",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 09:52",
-      "text": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+      "time": "Nov 21, 10:55",
+      "text": "'Accept cookies'? Russia collects data from swaths of unknowing Swedes",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 10:54",
+      "text": "Usman Khawaja and David Warner taken off air over Australia’s Sandpapergate",
       "link": "live.html"
     }
   ],
