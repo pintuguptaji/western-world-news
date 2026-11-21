@@ -880,6 +880,26 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 21, 04:34",
+      "text": "Man convicted of starting Palisades fire in Los Angeles",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 04:32",
+      "text": "'He's a killer': Zelensky reacts to Trump calling Putin a friend",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 04:32",
+      "text": "Saudi-led coalition intercepts three Houthi missiles headed for Riyadh",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 04:00",
+      "text": "Rohingya who escaped Myanmar’s genocide tell their stories",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 21, 03:16",
       "text": "Brazil ex-president Jair Bolsonaro taken to hospital over abdominal pain",
       "link": "live.html"
@@ -897,26 +917,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 21, 02:09",
       "text": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 01:49",
-      "text": "Trump calls for Nvidia to reinstate ‘brilliant’ Jensen Huang",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 01:43",
-      "text": "Man accused of sparking deadly Los Angeles wildfire found guilty",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 01:36",
-      "text": "Can Africa’s new credit rating agency change how the continent is assessed?",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 01:12",
-      "text": "Denmark expels Russian diplomat over alleged plot to kill Ukrainian rapper",
       "link": "live.html"
     }
   ],
