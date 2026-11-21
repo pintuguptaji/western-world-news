@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "indias-opposition-stages-protests-against-meta-over-account"
+    "heroSlug": "cop31-deep-divisions-persist-over-energy-finance-and-science"
   },
   "breaking": {
-    "text": "India’s opposition stages protests against Meta over account removals",
-    "link": "articles/indias-opposition-stages-protests-against-meta-over-account.html"
+    "text": "COP31: Deep divisions persist over energy, finance and science",
+    "link": "articles/cop31-deep-divisions-persist-over-energy-finance-and-science.html"
   },
   "articles": [
+    {
+      "slug": "cop31-deep-divisions-persist-over-energy-finance-and-science",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "COP31: Deep divisions persist over energy, finance and science",
+      "dek": "COP31 climate talks in Turkey have gone into overtime, with deep divisions over fossil fuels, climate finance and global warming targets delaying an agreement.",
+      "date": "November 21, 2026",
+      "source": "France 24",
+      "source_url": "https://www.france24.com/en/cop31-deep-divisions-persist-over-energy-finance-and-science",
+      "body": [
+        "COP31 climate talks in Turkey have gone into overtime, with deep divisions over fossil fuels, climate finance and global warming targets delaying an agreement. A revised draft dropped all mention of fossil fuels, prompting strong criticism from the EU and a dozen countries demanding a clear commitment to phase them out."
+      ],
+      "related": [],
+      "image": "https://s.france24.com/media/display/2e281d9c-e5d0-11f1-9a79-6b451f569414/w:1024/p:16x9/EN-20261121-171141-171326-CS.jpg",
+      "imageCaption": "Photo: France 24"
+    },
     {
       "slug": "indias-opposition-stages-protests-against-meta-over-account",
       "sections": [
@@ -898,43 +916,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 21, 16:35",
-      "text": "FBI reportedly investigating apparent hack of its criminal database",
+      "time": "Nov 21, 17:28",
+      "text": "Liverpool vs Manchester United: Premier League, teams, prediction, lineups",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 16:14",
-      "text": "India’s opposition stages protests against Meta over account removals",
+      "time": "Nov 21, 17:26",
+      "text": "COP31: Deep divisions persist over energy, finance and science",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 16:03",
-      "text": "Who is El Chapo Isidro, the alleged cartel boss arrested in Mexico?",
+      "time": "Nov 21, 17:24",
+      "text": "Vance stops short of endorsing Trump’s claim that Iran was close to nuclear weapon",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 15:52",
-      "text": "Countries race to secure Cop31 deal",
+      "time": "Nov 21, 17:23",
+      "text": "FBI criminal database hacked",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 15:50",
-      "text": "New day of protests across France",
+      "time": "Nov 21, 17:21",
+      "text": "Man convicted of starting palisades fire",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 15:49",
-      "text": "US midterms 2026: What happens before the new Congress takes office?",
+      "time": "Nov 21, 17:21",
+      "text": "Chelsea beaten 4-1 by Leeds United in shock home Premier League defeat",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 16:43",
-      "text": "Estonia-Russia border closure sends residents rushing to cross before deadline",
+      "time": "Nov 21, 17:20",
+      "text": "Russian strike kills two, wounds 60, in Zelenskyy’s hometown",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 15:21",
-      "text": "EU and Indonesia sign trade deal",
+      "time": "Nov 21, 17:08",
+      "text": "Russian helicopter suspected of violating Finnish airspace",
       "link": "live.html"
     }
   ],
