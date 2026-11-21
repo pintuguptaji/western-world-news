@@ -880,43 +880,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 21, 13:17",
-      "text": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+      "time": "Nov 21, 14:44",
+      "text": "Russia strikes Zelenskyy's hometown, killing 2",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 13:08",
-      "text": "Chaudhary helps Australia beat England in T20 shake-off of scandal-hit run",
+      "time": "Nov 21, 14:38",
+      "text": "‘Hell dorm’: Florida prisoners testify about 119F heat indexes and walls that sweat",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 13:00",
-      "text": "US pursuit of ‘Trump-class’ warships has blown cost of new fleet by billions, report warns",
+      "time": "Nov 21, 15:35",
+      "text": "Jair Bolsonaro hospitalised with abdominal pain while under house arrest",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 12:52",
-      "text": "Cargo ship runs aground off French coast",
+      "time": "Nov 21, 14:35",
+      "text": "British man recalls ‘despair’ over son’s death after fall from Cyprus window",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 12:50",
-      "text": "Russia tests NATO’s eastern defenses",
+      "time": "Nov 21, 14:30",
+      "text": "Newcastle United vs Arsenal LIVE: Premier League",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 12:49",
-      "text": "Riemann hypothesis: Has the world’s most famous maths problem been cracked?",
+      "time": "Nov 21, 15:20",
+      "text": "Mexico captures FBI’s most-wanted cartel boss ‘El Chapo Isidro’, triggering violence",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 12:49",
-      "text": "Denmark to expel Russian diplomat over alleged Moscow link to attempted killing of rapper",
+      "time": "Nov 21, 14:15",
+      "text": "Could Iran reverse its stated policy of a civil-only nuclear program?",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 12:48",
-      "text": "Thousands protest overs prices, education, military spending in France and Europe",
+      "time": "Nov 21, 14:09",
+      "text": "USDA, FBI breached by hackers amid spate of tech outages, reports",
       "link": "live.html"
     }
   ],
