@@ -880,43 +880,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 21, 12:27",
-      "text": "Hagia Sophia's hidden tunnels uncovered as 420 metres of underground network cleaned",
+      "time": "Nov 21, 12:35",
+      "text": "Drone attack sets Russian cargo ship ablaze in Gulf of Finland",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 11:23",
-      "text": "Rejoining EU ‘on the table’ as UK strikes deals on trade and young people",
+      "time": "Nov 21, 12:31",
+      "text": "Germany's religious freedom report: Authoritarian regimes, holy wars, and spies abroad",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 12:15",
-      "text": "French President Macron warns of 'new level' of Russian aggression",
+      "time": "Nov 21, 12:30",
+      "text": "Sudan’s elderly face hardship and heartbreak in a life of displacement",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 11:02",
-      "text": "Russian missiles hit Poland: What happened, and could NATO respond?",
+      "time": "Nov 21, 12:29",
+      "text": "At least four Palestinians killed in Israeli attacks on Gaza",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 11:00",
-      "text": "New Orleans Catholic clergy abuse survivors begin receiving payments from $305m bankruptcy settlement",
+      "time": "Nov 21, 13:29",
+      "text": "EU budget: Costa pitches more cuts, Big Tech tax to break deadlock",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 11:00",
-      "text": "Did Democrats fail Florida? Angie Nixon on ‘missed opportunity’ in midterms",
+      "time": "Nov 21, 12:22",
+      "text": "Reform UK considers pact with Restore Britain to overcome stalling performance in polls",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 10:55",
-      "text": "'Accept cookies'? Russia collects data from swaths of unknowing Swedes",
+      "time": "Nov 21, 12:22",
+      "text": "Ethiopia: Tackling period poverty and stigma",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 10:54",
-      "text": "Usman Khawaja and David Warner taken off air over Australia’s Sandpapergate",
+      "time": "Nov 21, 12:20",
+      "text": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
       "link": "live.html"
     }
   ],
