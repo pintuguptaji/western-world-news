@@ -9,13 +9,102 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "gerard-depardieu-and-french-author-investigated-over-sexual"
+    "heroSlug": "anc-fights-to-keep-control-of-south-africa-s-key-cities"
   },
   "breaking": {
-    "text": "Gérard Depardieu and French author investigated over sexual allegations",
-    "link": "articles/gerard-depardieu-and-french-author-investigated-over-sexual.html"
+    "text": "ANC fights to keep control of South Africa's key cities after election setback",
+    "link": "articles/anc-fights-to-keep-control-of-south-africa-s-key-cities.html"
   },
   "articles": [
+    {
+      "slug": "anc-fights-to-keep-control-of-south-africa-s-key-cities",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "ANC fights to keep control of South Africa's key cities after election setback",
+      "dek": "The ANC appears reluctant to replicate its national power-sharing deal with the pro-business DA at the local level.",
+      "date": "November 21, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqpv94d10rwpo",
+      "body": [
+        "The ANC appears reluctant to replicate its national power-sharing deal with the pro-business DA at the local level."
+      ],
+      "related": [
+        "victorian-greens-seek-urgent-injunction-over-how-to-vote",
+        "mamdani-announces-plan-to-close-new-york-s-rikers-island",
+        "iran-war-live-saudi-led-coalition-downs-houthi-missiles"
+      ],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/aad1/live/7d1c0de0-e4ff-11f1-a8e4-b1e12a49db15.jpg",
+      "imageCaption": "Photo: BBC"
+    },
+    {
+      "slug": "victorian-greens-seek-urgent-injunction-over-how-to-vote",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Victorian Greens seek urgent injunction over how-to-vote cards mimicking party’s branding but preferencing it last",
+      "dek": "Exclusive: Independent candidate Tosh-Jake Finnigan’s cards instruct people to vote in a way that would benefit Liberal party. Get our daily political email , free app or daily news podcast.",
+      "date": "November 21, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/australia-news/2026/nov/21/victorian-greens-seek-urgent-injunction-over-how-to-vote-cards-mimicking-branding-but-preferencing-it-last-ntwnfb",
+      "body": [
+        "Exclusive: Independent candidate Tosh-Jake Finnigan’s cards instruct people to vote in a way that would benefit Liberal party. Get our daily political email , free app or daily news podcast."
+      ],
+      "related": [
+        "anc-fights-to-keep-control-of-south-africa-s-key-cities",
+        "mamdani-announces-plan-to-close-new-york-s-rikers-island",
+        "iran-war-live-saudi-led-coalition-downs-houthi-missiles"
+      ],
+      "image": "https://i.guim.co.uk/img/media/96ab340872e588ad309196b07390be6b1c05c064/0_0_935_748/master/935.jpg?width=700&quality=85&auto=format&fit=max&s=50806757fc5fd112480c6a731407982f",
+      "imageCaption": "Photo: The Guardian"
+    },
+    {
+      "slug": "mamdani-announces-plan-to-close-new-york-s-rikers-island",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Mamdani announces plan to close New York's Rikers Island jail by 2032",
+      "dek": "Plans to shutter the troubled facility date back to 2019, when the city council first voted to close it but delays arose over where to place inmates.",
+      "date": "November 21, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmjeqv89egylo",
+      "body": [
+        "Plans to shutter the troubled facility date back to 2019, when the city council first voted to close it but delays arose over where to place inmates."
+      ],
+      "related": [
+        "anc-fights-to-keep-control-of-south-africa-s-key-cities",
+        "victorian-greens-seek-urgent-injunction-over-how-to-vote",
+        "iran-war-live-saudi-led-coalition-downs-houthi-missiles"
+      ],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/4622/live/d8e189d0-e52b-11f1-964d-a1d5fe40573e.jpg",
+      "imageCaption": "Photo: BBC"
+    },
+    {
+      "slug": "iran-war-live-saudi-led-coalition-downs-houthi-missiles",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Iran war live: Saudi-led coalition downs Houthi missiles",
+      "dek": "Saudi Arabia issues a flurry of emergency alerts for Riyadh, as the Saudi coalition says it intercepted three missiles.",
+      "date": "November 21, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-saudi-led-coalition-repels-houthi-missiles",
+      "body": [
+        "Saudi Arabia issues a flurry of emergency alerts for Riyadh, as the Saudi coalition says it intercepted three missiles."
+      ],
+      "related": [
+        "anc-fights-to-keep-control-of-south-africa-s-key-cities",
+        "victorian-greens-seek-urgent-injunction-over-how-to-vote",
+        "mamdani-announces-plan-to-close-new-york-s-rikers-island"
+      ],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "gerard-depardieu-and-french-author-investigated-over-sexual",
       "sections": [
@@ -610,43 +699,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 20, 23:28",
-      "text": "A new Nepal, an old neighbour - Balendra Shah's India test",
+      "time": "Nov 21, 00:34",
+      "text": "ANC fights to keep control of South Africa's key cities after election setback",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 23:20",
-      "text": "Dead pets were meant to be cremated - then their bodies appeared on a livestream",
+      "time": "Nov 21, 00:26",
+      "text": "Victorian Greens seek urgent injunction over how-to-vote cards mimicking party’s branding but preferencing it",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 23:20",
-      "text": "Man accused of sparking deadly Los Angeles wildfire found guilty",
+      "time": "Nov 21, 00:03",
+      "text": "‘A source of inspiration’: California celebrates the late civil rights icon Dolores Huerta",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 23:09",
-      "text": "NSW passes Mount Pleasant coalmine law as Greens claim change an attempt to head off One Nation",
+      "time": "Nov 21, 00:03",
+      "text": "US judge approves Bayer's $7.25 billion cancer settlement",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 23:08",
-      "text": "In a year of AI solving maths problems, Anthropic may have just solved the biggest",
+      "time": "Nov 21, 00:01",
+      "text": "Mamdani announces plan to close New York's Rikers Island jail by 2032",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 23:06",
-      "text": "Fossil fuel talks deadlock pushes COP31 climate summit into overtime",
+      "time": "Nov 21, 00:00",
+      "text": "Iran war live: Saudi-led coalition downs Houthi missiles",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 22:42",
-      "text": "Tech stock sell-off drags markets down as Anthropic shares slide",
+      "time": "Nov 20, 23:48",
+      "text": "Republican senator blocks Trump cyber nominee over January 6 denial",
       "link": "live.html"
     },
     {
-      "time": "Nov 20, 22:37",
-      "text": "French police officers sentenced for beating of music producer Michel Zecler",
+      "time": "Nov 20, 23:36",
+      "text": "Overturned boat carrying mourners to funeral kills at least four in Nigeria",
       "link": "live.html"
     }
   ],
