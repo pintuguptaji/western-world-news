@@ -880,43 +880,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 21, 12:35",
-      "text": "Drone attack sets Russian cargo ship ablaze in Gulf of Finland",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 12:31",
-      "text": "Germany's religious freedom report: Authoritarian regimes, holy wars, and spies abroad",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 12:30",
-      "text": "Sudan’s elderly face hardship and heartbreak in a life of displacement",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 12:29",
-      "text": "At least four Palestinians killed in Israeli attacks on Gaza",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 13:29",
-      "text": "EU budget: Costa pitches more cuts, Big Tech tax to break deadlock",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 12:22",
-      "text": "Reform UK considers pact with Restore Britain to overcome stalling performance in polls",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 12:22",
-      "text": "Ethiopia: Tackling period poverty and stigma",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 12:20",
+      "time": "Nov 21, 13:17",
       "text": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 13:08",
+      "text": "Chaudhary helps Australia beat England in T20 shake-off of scandal-hit run",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 13:00",
+      "text": "US pursuit of ‘Trump-class’ warships has blown cost of new fleet by billions, report warns",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 12:52",
+      "text": "Cargo ship runs aground off French coast",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 12:50",
+      "text": "Russia tests NATO’s eastern defenses",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 12:49",
+      "text": "Riemann hypothesis: Has the world’s most famous maths problem been cracked?",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 12:49",
+      "text": "Denmark to expel Russian diplomat over alleged Moscow link to attempted killing of rapper",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 12:48",
+      "text": "Thousands protest overs prices, education, military spending in France and Europe",
       "link": "live.html"
     }
   ],
