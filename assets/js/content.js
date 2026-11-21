@@ -880,43 +880,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 21, 09:40",
+      "text": "Deal with EU not dependent on tuition fees agreement, Miliband says",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 09:18",
+      "text": "'Killer robots' talks at UN end with no legally binding ban",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 09:12",
+      "text": "French police officers guilty of Michel Zecler assault: What happens now?",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 09:01",
+      "text": "Harry Kane to miss ‘a few months’ after injury as Bayern Munich draw",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 09:56",
+      "text": "Fossil fuel row sees COP31 talks spill into overtime",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 08:48",
+      "text": "Illicit alcohol kills 11, poisons 180 in northeast India’s Manipur state",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 21, 08:33",
       "text": "Gianni Infantino’s FIFA re-election backed by South America’s CONMEBOL",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 08:10",
-      "text": "Zelensky says Putin is a 'killer' after Trump calls Russian leader a friend",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 09:01",
-      "text": "Second judge blocks construction of Trump's massive 'triumphal arch'",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 08:00",
-      "text": "Letby trial doctor barred from treating patients was expert witness in another case",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 07:31",
-      "text": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 08:30",
-      "text": "Chronic loneliness linked to higher dementia risks in new study",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 07:25",
-      "text": "At least four killed, 35 injured in fire at power station in Iraq’s Basra",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 07:10",
-      "text": "Man convicted of arson over deadly 2025 Palisades fire in Los Angeles",
+      "time": "Nov 21, 08:29",
+      "text": "Live: France braces for fresh protests as social unrest enters sixth week",
       "link": "live.html"
     }
   ],
