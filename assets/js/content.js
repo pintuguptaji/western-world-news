@@ -9,13 +9,103 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang"
+    "heroSlug": "brazil-ex-president-jair-bolsonaro-taken-to-hospital-over"
   },
   "breaking": {
-    "text": "Trump calls for Nvidia to reinstate ‘brilliant’ Jensen Huang",
-    "link": "articles/trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang.html"
+    "text": "Brazil ex-president Jair Bolsonaro taken to hospital over abdominal pain",
+    "link": "articles/brazil-ex-president-jair-bolsonaro-taken-to-hospital-over.html"
   },
   "articles": [
+    {
+      "slug": "brazil-ex-president-jair-bolsonaro-taken-to-hospital-over",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Brazil ex-president Jair Bolsonaro taken to hospital over abdominal pain",
+      "dek": "Jair Bolsonaro has been hospitalized in Brasilia with intestinal obstruction. The former far-right Brazilian leader is receiving pain medications, his son Carlos said.",
+      "date": "November 21, 2026",
+      "source": "DW",
+      "source_url": "https://www.dw.com/en/brazil-ex-president-jair-bolsonaro-taken-to-hospital-over-abdominal-pain/a-80007648",
+      "body": [
+        "Jair Bolsonaro has been hospitalized in Brasilia with intestinal obstruction. The former far-right Brazilian leader is receiving pain medications, his son Carlos said."
+      ],
+      "related": [
+        "three-french-police-officers-sentenced-over-racist-assault",
+        "uk-anti-migrant-activist-jailed-for-slashing-channel-dinghy",
+        "a-new-nepal-an-old-neighbour-balendra-shah-s-india-test"
+      ],
+      "image": "",
+      "imageCaption": ""
+    },
+    {
+      "slug": "three-french-police-officers-sentenced-over-racist-assault",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Three French police officers sentenced over racist assault on Black man",
+      "dek": "Paris criminal court finds racism was an aggravating factor in the 2020 assault of Black music producer Michel Zecler.",
+      "date": "November 21, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/11/21/three-french-police-officers-sentenced-over-racist-assault-on-black-man",
+      "body": [
+        "Paris criminal court finds racism was an aggravating factor in the 2020 assault of Black music producer Michel Zecler."
+      ],
+      "related": [
+        "brazil-ex-president-jair-bolsonaro-taken-to-hospital-over",
+        "uk-anti-migrant-activist-jailed-for-slashing-channel-dinghy",
+        "a-new-nepal-an-old-neighbour-balendra-shah-s-india-test"
+      ],
+      "image": "",
+      "imageCaption": ""
+    },
+    {
+      "slug": "uk-anti-migrant-activist-jailed-for-slashing-channel-dinghy",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "UK anti-migrant activist jailed for slashing Channel dinghy",
+      "dek": "Daniel Thomas, known as \"Danny Tommo,\" slashed a dinghy with a knife while a French rescue worker was on board. The incident was livestreamed to a large social media audience amid growing tensions over migrant crossings.",
+      "date": "November 21, 2026",
+      "source": "DW",
+      "source_url": "https://www.dw.com/en/uk-anti-migrant-activist-jailed-for-slashing-channel-dinghy/a-80007576",
+      "body": [
+        "Daniel Thomas, known as \"Danny Tommo,\" slashed a dinghy with a knife while a French rescue worker was on board. The incident was livestreamed to a large social media audience amid growing tensions over migrant crossings."
+      ],
+      "related": [
+        "brazil-ex-president-jair-bolsonaro-taken-to-hospital-over",
+        "three-french-police-officers-sentenced-over-racist-assault",
+        "a-new-nepal-an-old-neighbour-balendra-shah-s-india-test"
+      ],
+      "image": "",
+      "imageCaption": ""
+    },
+    {
+      "slug": "a-new-nepal-an-old-neighbour-balendra-shah-s-india-test",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "A new Nepal, an old neighbour - Balendra Shah's India test",
+      "dek": "Trade, connectivity and regional cooperation will be on top of the agenda when Nepal's PM meets his India counterpart.",
+      "date": "November 20, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6jre8xd83qgo",
+      "body": [
+        "Trade, connectivity and regional cooperation will be on top of the agenda when Nepal's PM meets his India counterpart."
+      ],
+      "related": [
+        "brazil-ex-president-jair-bolsonaro-taken-to-hospital-over",
+        "three-french-police-officers-sentenced-over-racist-assault",
+        "uk-anti-migrant-activist-jailed-for-slashing-channel-dinghy"
+      ],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/6ce4/live/0cd0ed60-e3e9-11f1-a16c-7de3762c094b.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
       "sections": [
@@ -790,6 +880,21 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 21, 03:16",
+      "text": "Brazil ex-president Jair Bolsonaro taken to hospital over abdominal pain",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 03:01",
+      "text": "Three French police officers sentenced over racist assault on Black man",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 02:47",
+      "text": "UK anti-migrant activist jailed for slashing Channel dinghy",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 21, 02:09",
       "text": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
       "link": "live.html"
@@ -812,21 +917,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 21, 01:12",
       "text": "Denmark expels Russian diplomat over alleged plot to kill Ukrainian rapper",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 01:02",
-      "text": "They were fined $811m for conning detained migrants, but the scams didn't stop",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 00:55",
-      "text": "Can Mauricio Pochettino save Man United from Premier League relegation?",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 00:34",
-      "text": "ANC fights to keep control of South Africa's key cities after election setback",
       "link": "live.html"
     }
   ],
