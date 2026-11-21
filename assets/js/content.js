@@ -880,43 +880,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 21, 05:15",
-      "text": "Zelensky says Putin is a 'killer' after Trump calls Russian leader a friend",
+      "time": "Nov 21, 06:58",
+      "text": "Three El Salvador soldiers die in explosives accident in Haiti",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 05:00",
-      "text": "‘So what if there’s a hole? It hasn’t collapsed’: Kyiv residents unbothered by Russian attacks on city’s bridg",
+      "time": "Nov 21, 06:32",
+      "text": "Sudan’s war will end, but will it be too late?",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 05:00",
-      "text": "Tourists are throwing fewer coins into Rome’s Trevi fountain, is €2 entry fee to blame?",
+      "time": "Nov 21, 06:21",
+      "text": "Netanyahu is playing with the fire that killed Rabin",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 04:44",
-      "text": "Teenager allegedly organized arsons and kidnapping on Signal during Melbourne hospitality wars",
+      "time": "Nov 21, 07:02",
+      "text": "Europe braces for cold winter as polar vortex flips. Can heat pumps help lower energy bills?",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 04:34",
-      "text": "Man convicted of starting Palisades fire in Los Angeles",
+      "time": "Nov 21, 07:00",
+      "text": "Seeking snow and ski this winter? Try these lesser-known destinations in Asia",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 04:32",
-      "text": "Saudi-led coalition intercepts three Houthi missiles headed for Riyadh",
+      "time": "Nov 21, 07:00",
+      "text": "Soil degradation could cost the EU up to €509 billion over its next budget, campaigners warn",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 04:00",
-      "text": "Rohingya who escaped Myanmar’s genocide tell their stories",
+      "time": "Nov 21, 07:00",
+      "text": "Five EU countries plan to send migrants to Rwanda. Is it legal?",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 03:16",
-      "text": "Brazil ex-President Jair Bolsonaro taken to hospital over abdominal pain",
+      "time": "Nov 21, 06:00",
+      "text": "Deal with EU not dependent on tuition fees agreement, Miliband says",
       "link": "live.html"
     }
   ],
