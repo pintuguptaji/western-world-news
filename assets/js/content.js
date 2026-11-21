@@ -880,43 +880,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 21, 06:58",
-      "text": "Three El Salvador soldiers die in explosives accident in Haiti",
+      "time": "Nov 21, 08:33",
+      "text": "Gianni Infantino’s FIFA re-election backed by South America’s CONMEBOL",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 06:32",
-      "text": "Sudan’s war will end, but will it be too late?",
+      "time": "Nov 21, 08:10",
+      "text": "Zelensky says Putin is a 'killer' after Trump calls Russian leader a friend",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 06:21",
-      "text": "Netanyahu is playing with the fire that killed Rabin",
+      "time": "Nov 21, 09:01",
+      "text": "Second judge blocks construction of Trump's massive 'triumphal arch'",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 07:02",
-      "text": "Europe braces for cold winter as polar vortex flips. Can heat pumps help lower energy bills?",
+      "time": "Nov 21, 08:00",
+      "text": "Letby trial doctor barred from treating patients was expert witness in another case",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 07:00",
-      "text": "Seeking snow and ski this winter? Try these lesser-known destinations in Asia",
+      "time": "Nov 21, 07:31",
+      "text": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 07:00",
-      "text": "Soil degradation could cost the EU up to €509 billion over its next budget, campaigners warn",
+      "time": "Nov 21, 08:30",
+      "text": "Chronic loneliness linked to higher dementia risks in new study",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 07:00",
-      "text": "Five EU countries plan to send migrants to Rwanda. Is it legal?",
+      "time": "Nov 21, 07:25",
+      "text": "At least four killed, 35 injured in fire at power station in Iraq’s Basra",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 06:00",
-      "text": "Deal with EU not dependent on tuition fees agreement, Miliband says",
+      "time": "Nov 21, 07:10",
+      "text": "Man convicted of arson over deadly 2025 Palisades fire in Los Angeles",
       "link": "live.html"
     }
   ],
