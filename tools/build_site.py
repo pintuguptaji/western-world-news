@@ -447,8 +447,14 @@ main { padding: 1.5rem 0 2rem; }
 .text-card-thumb .art .monogram { font-size: 1rem; padding: 0.1rem 0.5rem; }
 .text-card-thumb .art .art-label { display: none; }
 
-/* Right rail: Must Reads / More Headlines */
+/* Right rail: Must Reads only. More Headlines lives in its own full-width
+   strip under the hero, so the rail stays about as tall as the lead story
+   and the hero grid does not leave a big empty area under the shorter
+   columns. */
 .hero-rail { display: flex; flex-direction: column; gap: 1.8rem; }
+.more-headlines-strip { margin: 0 0 1.6rem; }
+.more-headlines-strip .rail-list { display: grid; grid-template-columns: 1fr; column-gap: 2.5rem; }
+@media (min-width: 900px) { .more-headlines-strip .rail-list { grid-template-columns: 1fr 1fr; } }
 .rail-head { font-size: 0.85rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #666; border-left: 4px solid var(--red); padding-left: 0.6rem; margin: 0 0 0.9rem; }
 .rail-list { list-style: none; margin: 0; padding: 0; }
 .rail-list li { padding: 0.75rem 0; border-bottom: 1px solid var(--line); }
@@ -955,12 +961,13 @@ def build_index():
 <h2 class="rail-head">Must Reads</h2>
 <ul class="rail-list">{must_items}</ul>
 </aside>
-<aside class="rail-block" aria-label="More headlines">
+</div>
+</div>
+
+<section class="more-headlines-strip" aria-label="More headlines">
 <h2 class="rail-head">More Headlines</h2>
 <ul class="rail-list">{more_items}</ul>
-</aside>
-</div>
-</div>
+</section>
 
 <section class="liveblog-strip" aria-label="Live blog">
 <h2 class="liveblog-label">Live Blog</h2>
