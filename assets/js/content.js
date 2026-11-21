@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "mexican-special-forces-arrest-drug-kingpin-chapo-isidro"
+    "heroSlug": "thousands-take-to-streets-in-portugal-france-and-spain-over"
   },
   "breaking": {
-    "text": "Mexican special forces arrest drug kingpin 'Chapo Isidro'",
-    "link": "articles/mexican-special-forces-arrest-drug-kingpin-chapo-isidro.html"
+    "text": "Thousands take to streets in Portugal, France and Spain over rising living costs",
+    "link": "articles/thousands-take-to-streets-in-portugal-france-and-spain-over.html"
   },
   "articles": [
+    {
+      "slug": "thousands-take-to-streets-in-portugal-france-and-spain-over",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Thousands take to streets in Portugal, France and Spain over rising living costs",
+      "dek": "Thousands of people demonstrated in Portugal and France on Saturday, calling for higher wages, affordable housing and action to tackle the rising cost of living.",
+      "date": "November 21, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/21/thousands-take-to-streets-in-portugal-france-and-spain-over-rising-living-costs",
+      "body": [
+        "Thousands of people demonstrated in Portugal and France on Saturday, calling for higher wages, affordable housing and action to tackle the rising cost of living. In Lisbon, workers marched despite heavy rain, while trade unions, Yellow Vest activists and youth groups gathered in Paris."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/28/26/696x392_cmsv2_43a6dd87-426a-5c91-9b45-97d5c2b7da11-10002826.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "mexican-special-forces-arrest-drug-kingpin-chapo-isidro",
       "sections": [
@@ -935,43 +954,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 21, 18:30",
-      "text": "Mexican special forces arrest drug kingpin 'Chapo Isidro'",
+      "time": "Nov 21, 20:43",
+      "text": "Thousands take to streets in Portugal, France and Spain over rising living costs",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 19:23",
-      "text": "Paolo Bulgari, Italian jewellery tycoon, dies aged 89",
+      "time": "Nov 21, 19:33",
+      "text": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 18:22",
+      "time": "Nov 21, 19:33",
+      "text": "UK should only rejoin EU if it innovates on technology, Blair warns",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 19:20",
       "text": "Russia-bound ship attacked in Gulf of Finland",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 18:20",
-      "text": "Suffolk village votes to ‘leave the UK’ over plans to house asylum seekers nearby",
+      "time": "Nov 21, 19:00",
+      "text": "‘Six, seven, maybe more preventable deaths’: Queensland’s LNP faces reckoning over broken health system",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 18:19",
-      "text": "FBI national crime database suffers suspected breach: Reports",
+      "time": "Nov 21, 19:00",
+      "text": "Australian neo-Nazis among far-right groups raising hundreds of thousands via global crowdfunding platform",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 18:08",
-      "text": "Trump orders contractors to check with White House over any congressional inquiries",
+      "time": "Nov 21, 18:50",
+      "text": "Louisiana man charged with killing woman on hiking trail and murdering co-worker with crossbow",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 19:05",
-      "text": "New documentary: Princess Kate speaks candidly about how cancer changed her body and mind",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 18:02",
-      "text": "Drone attack sets Russian cargo ship ablaze in Gulf of Finland",
+      "time": "Nov 21, 18:39",
+      "text": "Getting rid of antibiotic resistance: Challenges and possible solutions",
       "link": "live.html"
     }
   ],
