@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "brazil-ex-president-jair-bolsonaro-taken-to-hospital-over"
+    "heroSlug": "indias-opposition-stages-protests-against-meta-over-account"
   },
   "breaking": {
-    "text": "Brazil ex-president Jair Bolsonaro taken to hospital over abdominal pain",
-    "link": "articles/brazil-ex-president-jair-bolsonaro-taken-to-hospital-over.html"
+    "text": "India’s opposition stages protests against Meta over account removals",
+    "link": "articles/indias-opposition-stages-protests-against-meta-over-account.html"
   },
   "articles": [
+    {
+      "slug": "indias-opposition-stages-protests-against-meta-over-account",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "India’s opposition stages protests against Meta over account removals",
+      "dek": "Indian Youth Congress issues a seven-day 'ultimatum' to the US technology giant, urging it to lift all restrictions.",
+      "date": "November 21, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/11/21/indias-opposition-stages-protests-against-meta-over-account-removals",
+      "body": [
+        "Indian Youth Congress issues a seven-day 'ultimatum' to the US technology giant, urging it to lift all restrictions."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "brazil-ex-president-jair-bolsonaro-taken-to-hospital-over",
       "sections": [
@@ -880,43 +898,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 21, 16:35",
+      "text": "FBI reportedly investigating apparent hack of its criminal database",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 16:14",
+      "text": "India’s opposition stages protests against Meta over account removals",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 16:03",
+      "text": "Who is El Chapo Isidro, the alleged cartel boss arrested in Mexico?",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 15:52",
+      "text": "Countries race to secure Cop31 deal",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 15:50",
+      "text": "New day of protests across France",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 15:49",
+      "text": "US midterms 2026: What happens before the new Congress takes office?",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 21, 16:43",
+      "text": "Estonia-Russia border closure sends residents rushing to cross before deadline",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 21, 15:21",
       "text": "EU and Indonesia sign trade deal",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 15:19",
-      "text": "British man recalls ‘despair’ over son’s death after fall from Cyprus window",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 16:12",
-      "text": "Former Costa Concordia cruise ship captain released from prison on probation after nine years",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 15:01",
-      "text": "Tankers hit in Strait of Hormuz as Iran tightens grip on shipping",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 14:58",
-      "text": "New EU budget proposal aims at tax gobal tech giants",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 15:57",
-      "text": "Raccoon roast as a sustainable alternative to Germany's Christmas goose?",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 14:54",
-      "text": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 21, 14:52",
-      "text": "Federal judge denies request to release man shot by immigration agents in New York",
       "link": "live.html"
     }
   ],
