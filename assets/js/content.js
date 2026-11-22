@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "fossil-fuel-dispute-threatens-to-derail-cop31-climate-deal"
+    "heroSlug": "displaced-darfur-families-face-volatile-winter-as-sudan-aid"
   },
   "breaking": {
-    "text": "Fossil fuel dispute threatens to derail COP31 climate deal",
-    "link": "articles/fossil-fuel-dispute-threatens-to-derail-cop31-climate-deal.html"
+    "text": "Displaced Darfur families face volatile winter as Sudan aid cuts bite",
+    "link": "articles/displaced-darfur-families-face-volatile-winter-as-sudan-aid.html"
   },
   "articles": [
+    {
+      "slug": "displaced-darfur-families-face-volatile-winter-as-sudan-aid",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Displaced Darfur families face volatile winter as Sudan aid cuts bite",
+      "dek": "Sudan's displacement crisis could worsen with winter approaching.",
+      "date": "November 22, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/features/2026/11/22/displaced-from-darfur-sudan-families-face-volatile-winter-as-aid-cuts-loom",
+      "body": [
+        "Sudan's displacement crisis could worsen with winter approaching."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "fossil-fuel-dispute-threatens-to-derail-cop31-climate-deal",
       "sections": [
@@ -1102,43 +1121,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 22, 05:38",
+      "text": "Kenya’s internet metering bill raises privacy and affordability concerns",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 05:26",
+      "text": "New draft deal aims to avert collapse of talks at climate summit",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 05:21",
+      "text": "Displaced Darfur families face volatile winter as Sudan aid cuts bite",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 05:21",
+      "text": "Police say man whose body lay undiscovered in Sydney bushland for 12 days was killed in suspected hit-and-run",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 05:04",
+      "text": "South Korea education minister resigns after AI cheating scandal engulfs university exams",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 05:00",
+      "text": "The real people finding their work copied and stolen by AI characters",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 04:51",
+      "text": "Fossil fuel impasse pushes COP31 climate talks into second day of overtime",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 22, 04:39",
       "text": "BBC apologises for 'any offence caused' by Strictly noise disruption",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 03:58",
-      "text": "Fossil fuel dispute threatens to derail COP31 climate deal",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 03:34",
-      "text": "Eleven killed in burst of violence during Mexican cartel leader’s capture",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 02:45",
-      "text": "Overturned boat carrying mourners to funeral kills at least 24 in Nigeria",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 02:44",
-      "text": "Man found dead on Flinders Island believed to have been shot by officer, police say",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 02:14",
-      "text": "Displaced Palestinians protest as Israeli air strikes continue in Gaza",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 02:08",
-      "text": "Victorian Greens win injunction over how-to-vote cards mimicking party’s branding but preferencing it last",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 01:25",
-      "text": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
       "link": "live.html"
     }
   ],
