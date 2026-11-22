@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "slug": "hakeem-jeffries-willing-to-cross-political-aisle-to-work-on",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "Hakeem Jeffries willing to cross political aisle to work on Democrats’ agenda",
+      "dek": "Incoming House speaker says party focused on affordability and fixing ‘broken’ healthcare and immigration systems.",
+      "date": "November 22, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/us-news/2026/nov/22/hakeem-jeffries-democrats-agenda",
+      "body": [
+        "Incoming House speaker says party focused on affordability and fixing ‘broken’ healthcare and immigration systems. The incoming US House speaker, Hakeem Jeffries , has said he and his fellow Democrats are focused on affordability, expanding healthcare and fixing the “broken” immigration system in the country, and willing to cross the political aisle to do so."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/4e6eb28d17340c345907199ceb683c4277945b37/471_0_3333_2667/master/3333.jpg?width=700&quality=85&auto=format&fit=max&s=c2b5e9dd5d30693241d365d10927c7cd",
+      "imageCaption": "Photo: The Guardian",
+      "auto": true
+    },
+    {
       "slug": "russia-bound-ship-towed-away-after-it-was-attacked-in-gulf",
       "sections": [
         "war-conflict",
@@ -1625,36 +1645,36 @@
   ],
   "justIn": [
     {
+      "time": "22 Nov, 18:25",
+      "text": "Hakeem Jeffries willing to cross political aisle to work on Democrats’ agenda"
+    },
+    {
+      "time": "22 Nov, 18:17",
+      "text": "COP31 climate talks fail to reach major deal amid deep divisions"
+    },
+    {
+      "time": "22 Nov, 19:07",
+      "text": "Tanker incident “involving military forces” reported in Strait of Hormuz"
+    },
+    {
+      "time": "22 Nov, 18:00",
+      "text": "Virginia reports first measles-linked death of 2026 in child younger than 5"
+    },
+    {
+      "time": "22 Nov, 17:55",
+      "text": "Two groups verify mathematician’s claim that Claude helped prove mathematics problem"
+    },
+    {
+      "time": "22 Nov, 17:47",
+      "text": "Le Pen denies receiving leaked information from French interior ministry official"
+    },
+    {
       "time": "22 Nov, 17:18",
       "text": "Russia-bound ship towed away after it was attacked in Gulf of Finland"
     },
     {
       "time": "22 Nov, 17:16",
       "text": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say"
-    },
-    {
-      "time": "22 Nov, 17:12",
-      "text": "Russian vessel hit by suspected sea drone at Libya’s Benghazi naval base"
-    },
-    {
-      "time": "22 Nov, 18:11",
-      "text": "Israel forecast to grow 4.5% amid war: What can Europe learn from its tech boom?"
-    },
-    {
-      "time": "22 Nov, 18:11",
-      "text": "Suspected drone strike hits Russian ship at Libya’s Benghazi port, raising regional security concerns"
-    },
-    {
-      "time": "22 Nov, 16:55",
-      "text": "Ligue 1: PSG extend winning run at Nice (3-2) but lose Désiré Doué to injury"
-    },
-    {
-      "time": "22 Nov, 16:55",
-      "text": "Blast on Russian ship in Benghazi a suspected drone attack, say Libyan authorities"
-    },
-    {
-      "time": "22 Nov, 16:51",
-      "text": "Russell Brand's wife says she'll honour prison rules after message row"
     }
   ],
   "liveUpdates": [
@@ -1716,9 +1736,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "russia-bound-ship-towed-away-after-it-was-attacked-in-gulf",
+  "heroSlug": "hakeem-jeffries-willing-to-cross-political-aisle-to-work-on",
   "breaking": {
-    "text": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
-    "link": "articles/russia-bound-ship-towed-away-after-it-was-attacked-in-gulf.html"
+    "text": "Hakeem Jeffries willing to cross political aisle to work on Democrats’ agenda",
+    "link": "articles/hakeem-jeffries-willing-to-cross-political-aisle-to-work-on.html"
   }
 }
