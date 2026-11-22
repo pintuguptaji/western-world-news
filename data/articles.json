@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "slug": "turkey-thousands-protest-closure-of-critical-media-outlets",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Turkey: Thousands protest closure of critical media outlets",
+      "dek": "Protesters gathered in Istanbul to show their support for press freedom in Turkey. The protest was called just days after the police raided Sozcu TV and arrested several senior staff members.",
+      "date": "November 22, 2026",
+      "source": "DW",
+      "source_url": "https://www.dw.com/en/turkey-thousands-protest-closure-of-critical-media-outlets/a-80015347",
+      "body": [
+        "Protesters gathered in Istanbul to show their support for press freedom in Turkey. The protest was called just days after the police raided Sozcu TV and arrested several senior staff members."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": "",
+      "auto": true
+    },
+    {
       "slug": "democrats-win-largest-house-majority-since-1992-after",
       "sections": [
         "us",
@@ -1685,36 +1705,36 @@
   ],
   "justIn": [
     {
+      "time": "22 Nov, 21:33",
+      "text": "Netanyahu’s Likud, Eisenkot’s Yashar end coalition talks without deal"
+    },
+    {
+      "time": "22 Nov, 21:31",
+      "text": "Turkey: Thousands protest closure of critical media outlets"
+    },
+    {
+      "time": "22 Nov, 22:29",
+      "text": "Midterms: US Democrats secure biggest House majority in decades"
+    },
+    {
+      "time": "22 Nov, 21:29",
+      "text": "Israel’s Eisenkot slams ‘Jewish terrorism’ after attacks by settlers in West Bank"
+    },
+    {
+      "time": "22 Nov, 21:26",
+      "text": "Heartbreak in US capital as Washington Spirit lose women’s football final"
+    },
+    {
+      "time": "22 Nov, 21:22",
+      "text": "Miley Cyrus marries Maxx Morando in California ceremony"
+    },
+    {
+      "time": "22 Nov, 20:55",
+      "text": "US intelligence chief says he trusts Trump’s description of Putin as ‘my friend’"
+    },
+    {
       "time": "22 Nov, 21:38",
       "text": "Finland confirms Russia is towing drone-hit cargo ship after Baltic Sea attack"
-    },
-    {
-      "time": "22 Nov, 20:28",
-      "text": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say"
-    },
-    {
-      "time": "22 Nov, 20:26",
-      "text": "Democrats win largest House majority since 1992 after flipping North Carolina seat"
-    },
-    {
-      "time": "22 Nov, 20:23",
-      "text": "Jensen Huang’s reported affair was ‘most expensive sex since Helen of Troy’, US senator says"
-    },
-    {
-      "time": "22 Nov, 20:16",
-      "text": "Democrat Hubbard wins North Carolina recount, clinching historic House majority"
-    },
-    {
-      "time": "22 Nov, 21:07",
-      "text": "Germany tests Kamikaze drones and AI targeting technology in Lithuania"
-    },
-    {
-      "time": "22 Nov, 20:04",
-      "text": "Liverpool 4-0 Manchester United: Five key takeaways for Pochettino"
-    },
-    {
-      "time": "22 Nov, 19:41",
-      "text": "Russian warship hit by suspected Ukrainian drone at Benghazi naval base, Libyan officials say"
     }
   ],
   "liveUpdates": [
@@ -1776,9 +1796,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "democrats-win-largest-house-majority-since-1992-after",
+  "heroSlug": "turkey-thousands-protest-closure-of-critical-media-outlets",
   "breaking": {
-    "text": "Democrats win largest House majority since 1992 after flipping North Carolina seat",
-    "link": "articles/democrats-win-largest-house-majority-since-1992-after.html"
+    "text": "Turkey: Thousands protest closure of critical media outlets",
+    "link": "articles/turkey-thousands-protest-closure-of-critical-media-outlets.html"
   }
 }

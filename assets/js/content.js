@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "democrats-win-largest-house-majority-since-1992-after"
+    "heroSlug": "turkey-thousands-protest-closure-of-critical-media-outlets"
   },
   "breaking": {
-    "text": "Democrats win largest House majority since 1992 after flipping North Carolina seat",
-    "link": "articles/democrats-win-largest-house-majority-since-1992-after.html"
+    "text": "Turkey: Thousands protest closure of critical media outlets",
+    "link": "articles/turkey-thousands-protest-closure-of-critical-media-outlets.html"
   },
   "articles": [
+    {
+      "slug": "turkey-thousands-protest-closure-of-critical-media-outlets",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Turkey: Thousands protest closure of critical media outlets",
+      "dek": "Protesters gathered in Istanbul to show their support for press freedom in Turkey. The protest was called just days after the police raided Sozcu TV and arrested several senior staff members.",
+      "date": "November 22, 2026",
+      "source": "DW",
+      "source_url": "https://www.dw.com/en/turkey-thousands-protest-closure-of-critical-media-outlets/a-80015347",
+      "body": [
+        "Protesters gathered in Istanbul to show their support for press freedom in Turkey. The protest was called just days after the police raided Sozcu TV and arrested several senior staff members."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "democrats-win-largest-house-majority-since-1992-after",
       "sections": [
@@ -1656,43 +1675,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 22, 21:33",
+      "text": "Netanyahu’s Likud, Eisenkot’s Yashar end coalition talks without deal",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 21:31",
+      "text": "Turkey: Thousands protest closure of critical media outlets",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 22:29",
+      "text": "Midterms: US Democrats secure biggest House majority in decades",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 21:29",
+      "text": "Israel’s Eisenkot slams ‘Jewish terrorism’ after attacks by settlers in West Bank",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 21:26",
+      "text": "Heartbreak in US capital as Washington Spirit lose women’s football final",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 21:22",
+      "text": "Miley Cyrus marries Maxx Morando in California ceremony",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 20:55",
+      "text": "US intelligence chief says he trusts Trump’s description of Putin as ‘my friend’",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 22, 21:38",
       "text": "Finland confirms Russia is towing drone-hit cargo ship after Baltic Sea attack",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 20:28",
-      "text": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 20:26",
-      "text": "Democrats win largest House majority since 1992 after flipping North Carolina seat",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 20:23",
-      "text": "Jensen Huang’s reported affair was ‘most expensive sex since Helen of Troy’, US senator says",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 20:16",
-      "text": "Democrat Hubbard wins North Carolina recount, clinching historic House majority",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 21:07",
-      "text": "Germany tests Kamikaze drones and AI targeting technology in Lithuania",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 20:04",
-      "text": "Liverpool 4-0 Manchester United: Five key takeaways for Pochettino",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 19:41",
-      "text": "Russian warship hit by suspected Ukrainian drone at Benghazi naval base, Libyan officials say",
       "link": "live.html"
     }
   ],
