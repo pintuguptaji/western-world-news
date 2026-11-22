@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "slug": "no-time-for-a-culture-war-victorias-electricity-supply-is",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "‘No time for a culture war’: Victoria’s electricity supply is at risk. Can it avoid power shortages and bill shocks?",
+      "dek": "State faces electricity supply gap when Yallourn coal-fired power station closes in 2028 as experts warn neither Labor nor the Coalition has adequate plans.",
+      "date": "November 22, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/australia-news/2026/nov/22/victoria-election-2026-what-are-parties-promising-energy-policy",
+      "body": [
+        "State faces electricity supply gap when Yallourn coal-fired power station closes in 2028 as experts warn neither Labor nor the Coalition has adequate plans. Sign up for climate and environment editor Adam Morton’s free Clear Air newsletter here."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/2ba7cd3a290bb4876a32e7f44df6d629f62996df/0_0_6112_4892/master/6112.jpg?width=700&quality=85&auto=format&fit=max&s=d260f781e881407ce67b031f3a1e57b6",
+      "imageCaption": "Photo: The Guardian",
+      "auto": true
+    },
+    {
       "slug": "nigerian-youth-have-shown-their-power-in-the-past-why-aren",
       "sections": [
         "world"
@@ -1057,8 +1077,20 @@
   ],
   "justIn": [
     {
+      "time": "22 Nov, 01:25",
+      "text": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out"
+    },
+    {
+      "time": "22 Nov, 01:00",
+      "text": "‘No time for a culture war’: Victoria’s electricity supply is at risk. Can it avoid power shortages and bill s"
+    },
+    {
       "time": "22 Nov, 00:43",
       "text": "Kate's 'road to recovery' and 'Brave princess'"
+    },
+    {
+      "time": "22 Nov, 00:26",
+      "text": "Fred Nile, former NSW politician and figurehead of the rightwing Christian Democratic party, dies aged 92"
     },
     {
       "time": "22 Nov, 00:10",
@@ -1075,18 +1107,6 @@
     {
       "time": "22 Nov, 00:07",
       "text": "Parents urged to spot online stalking warning signs as cases rise"
-    },
-    {
-      "time": "22 Nov, 00:06",
-      "text": "From pit-stops to go-to destinations: The transformation of service stations"
-    },
-    {
-      "time": "22 Nov, 00:04",
-      "text": "Employers are being asked to give interview feedback - here's what applicants want"
-    },
-    {
-      "time": "22 Nov, 00:01",
-      "text": "Why Nicola Coughlan's new drama might leave viewers uncomfortable"
     }
   ],
   "liveUpdates": [
@@ -1148,9 +1168,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "nigerian-youth-have-shown-their-power-in-the-past-why-aren",
+  "heroSlug": "no-time-for-a-culture-war-victorias-electricity-supply-is",
   "breaking": {
-    "text": "Nigerian youth have shown their power in the past - why aren't they shaping this election?",
-    "link": "articles/nigerian-youth-have-shown-their-power-in-the-past-why-aren.html"
+    "text": "‘No time for a culture war’: Victoria’s electricity supply is at risk. Can it avoid power shortages and bill s",
+    "link": "articles/no-time-for-a-culture-war-victorias-electricity-supply-is.html"
   }
 }

@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "nigerian-youth-have-shown-their-power-in-the-past-why-aren"
+    "heroSlug": "no-time-for-a-culture-war-victorias-electricity-supply-is"
   },
   "breaking": {
-    "text": "Nigerian youth have shown their power in the past - why aren't they shaping this election?",
-    "link": "articles/nigerian-youth-have-shown-their-power-in-the-past-why-aren.html"
+    "text": "‘No time for a culture war’: Victoria’s electricity supply is at risk. Can it avoid power shortages and bill s",
+    "link": "articles/no-time-for-a-culture-war-victorias-electricity-supply-is.html"
   },
   "articles": [
+    {
+      "slug": "no-time-for-a-culture-war-victorias-electricity-supply-is",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "‘No time for a culture war’: Victoria’s electricity supply is at risk. Can it avoid power shortages and bill shocks?",
+      "dek": "State faces electricity supply gap when Yallourn coal-fired power station closes in 2028 as experts warn neither Labor nor the Coalition has adequate plans.",
+      "date": "November 22, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/australia-news/2026/nov/22/victoria-election-2026-what-are-parties-promising-energy-policy",
+      "body": [
+        "State faces electricity supply gap when Yallourn coal-fired power station closes in 2028 as experts warn neither Labor nor the Coalition has adequate plans. Sign up for climate and environment editor Adam Morton’s free Clear Air newsletter here."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/2ba7cd3a290bb4876a32e7f44df6d629f62996df/0_0_6112_4892/master/6112.jpg?width=700&quality=85&auto=format&fit=max&s=d260f781e881407ce67b031f3a1e57b6",
+      "imageCaption": "Photo: The Guardian"
+    },
     {
       "slug": "nigerian-youth-have-shown-their-power-in-the-past-why-aren",
       "sections": [
@@ -1046,8 +1065,23 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 22, 01:25",
+      "text": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 01:00",
+      "text": "‘No time for a culture war’: Victoria’s electricity supply is at risk. Can it avoid power shortages and bill s",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 22, 00:43",
       "text": "Kate's 'road to recovery' and 'Brave princess'",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 00:26",
+      "text": "Fred Nile, former NSW politician and figurehead of the rightwing Christian Democratic party, dies aged 92",
       "link": "live.html"
     },
     {
@@ -1068,21 +1102,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 22, 00:07",
       "text": "Parents urged to spot online stalking warning signs as cases rise",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 00:06",
-      "text": "From pit-stops to go-to destinations: The transformation of service stations",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 00:04",
-      "text": "Employers are being asked to give interview feedback - here's what applicants want",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 00:01",
-      "text": "Why Nicola Coughlan's new drama might leave viewers uncomfortable",
       "link": "live.html"
     }
   ],
