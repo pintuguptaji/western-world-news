@@ -2,6 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://westernworldnews.com/articles/trump-vows-to-work-with-democrats-to-cap-credit-card-interest.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Western World News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22</news:publication_date>
+      <news:title>Trump vows to work with Democrats to cap credit card interest at 10%</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://westernworldnews.com/articles/at-least-24-dead-as-boat-carrying-funeral-mourners-capsizes-in-nigeria.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Western World News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22</news:publication_date>
+      <news:title>At least 24 dead as boat carrying funeral mourners capsizes in Nigeria</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://westernworldnews.com/articles/pentagon-moves-to-restrict-defense-ties-with-canada-in-classified-memo.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Western World News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22</news:publication_date>
+      <news:title>Pentagon moves to restrict defense ties with Canada in classified memo</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://westernworldnews.com/articles/former-italian-police-chief-found-dead.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Western World News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22</news:publication_date>
+      <news:title>Former Italian police chief found dead</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://westernworldnews.com/articles/europe-sees-new-protests-over-rising-costs-inequality-and.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Western World News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22</news:publication_date>
+      <news:title>Europe sees new protests over rising costs, inequality and public services</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://westernworldnews.com/articles/fbi-investigates-apparent-hack-of-national-crime-database.html</loc>
     <news:news>
       <news:publication>

@@ -9,13 +9,88 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "former-italian-police-chief-found-dead"
+    "heroSlug": "trump-vows-to-work-with-democrats-to-cap-credit-card-interest"
   },
   "breaking": {
-    "text": "Former Italian police chief found dead",
-    "link": "articles/former-italian-police-chief-found-dead.html"
+    "text": "Trump vows to work with Democrats to cap credit card interest at 10%",
+    "link": "articles/trump-vows-to-work-with-democrats-to-cap-credit-card-interest.html"
   },
   "articles": [
+    {
+      "slug": "trump-vows-to-work-with-democrats-to-cap-credit-card-interest",
+      "sections": [
+        "business-finance"
+      ],
+      "section": "business-finance",
+      "headline": "Trump vows to work with Democrats to cap credit card interest at 10%",
+      "dek": "Trump said he would work with the incoming Democratic Congress to cap credit card interest rates at 10%, reviving a campaign promise that banks fought and Republicans ignored.",
+      "date": "November 22, 2026",
+      "source": "Associated Press",
+      "source_url": "https://economictimes.indiatimes.com/news/international/world-news/trump-vows-to-work-with-democrats-to-cap-credit-card-interest-rates-at-10/articleshow/136065785.cms",
+      "body": [
+        "President Donald Trump said on Saturday that he would work with the incoming Democratic Congress to cap credit card interest rates at 10%, reviving a promise from his 2024 campaign. Speaking on Fox News Channel's \"Saturday in America\", Trump said: \"I would do it. These credit card companies have made a lot.\"",
+        "The standard proposal is a cap of 10%. The median credit card interest rate is roughly 22.2%, according to an August survey by the New York Federal Reserve. Researchers who studied Trump's campaign pledge estimated that Americans would save roughly $100 billion a year in interest if rates were capped at 10%. About 195 million people in the United States had credit cards in 2024 and were assessed $160 billion in interest charges, according to the Consumer Financial Protection Bureau.",
+        "Trump first proposed the cap in January, as part of the White House's affordability push. Banks and credit card companies immediately and aggressively opposed the idea, saying any cap would force them to cancel cards for poor and less creditworthy customers or substantially cut back on the rewards they offer. The proposal also did not sit well with Republicans, and the GOP-controlled Congress made little effort to fulfill the promise.",
+        "That could change now that Democrats will control both the House and Senate. Senator Elizabeth Warren, who is expected to chair the Senate Banking Committee, has said repeatedly that she wants to cap rates. After the Fox News interview she said: \"Let's cap credit card interest rates and save Americans money.\" Representative Maxine Waters also backs the idea, and Senator Josh Hawley of Missouri has proposed several caps of his own. But this is still only a proposal, not a law. Congress would have to pass it, and the banking industry is expected to fight it."
+      ],
+      "related": [
+        "trump-orders-contractors-to-notify-white-house-before-congress",
+        "trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
+        "republican-senator-blocks-trump-cyber-nominee-over-january"
+      ],
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Credit-cards.jpg/1280px-Credit-cards.jpg",
+      "imageCaption": "Credit cards. Photo: Wikimedia Commons (CC BY-SA 2.5)"
+    },
+    {
+      "slug": "at-least-24-dead-as-boat-carrying-funeral-mourners-capsizes-in-nigeria",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "At least 24 dead as boat carrying funeral mourners capsizes in Nigeria",
+      "dek": "NEMA said 24 bodies have been recovered and 24 survivors rescued after the boat overturned on Friday, with the search still going on.",
+      "date": "November 22, 2026",
+      "source": "Reuters",
+      "source_url": "https://www.reuters.com/world/africa/death-toll-nigeria-boat-accident-rises-24-2026-11-22/",
+      "body": [
+        "At least 24 people died when a crowded boat carrying mourners to a funeral capsized in southern Nigeria on Friday, the National Emergency Management Agency (NEMA) said. The boat was traveling from Ayama to Ukubie in Bayelsa State for a burial ceremony when it overturned after a mechanical failure, according to police.",
+        "NEMA said 24 bodies had been recovered by Saturday and 24 survivors had been rescued, with search and rescue operations still going on. Nineteen of the rescued were treated at a local clinic and five were taken to hospital in the state capital, Al Jazeera reported. Two children were among the four bodies first recovered from the water on Friday.",
+        "The death toll is not yet final while the search continues. Police did not say how many people were on board, although some residents told Reuters there were at least 300. Police said the boat driver fled the scene and the vessel's manager was taken into custody. The accident happened at the river junction between the Oweikorogha and Otuan communities, in the state's Southern Ijaw district.",
+        "Bayelsa State Governor Douye Diri visited the scene on Saturday and ordered an investigation, saying the accident should not have happened if every department of government at federal, state and local level had done its job properly. Boat accidents are common on Nigeria's inland waterways, where overcrowding is widespread and safety rules are often ignored. In August, at least 51 people died when a boat sank in Sokoto State, and in January at least 26 drowned when a boat ferrying people from Jigawa to Yobe State capsized."
+      ],
+      "related": [
+        "nigerian-youth-have-shown-their-power-in-the-past-why-aren",
+        "cop31-final-draft-drops-fossil-fuels-admits-1-5c-overshoot",
+        "gadi-eisenkot-invites-netanyahu-s-likud-party-for-marathon"
+      ],
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Wooden_boat_River_Niger.jpg/1280px-Wooden_boat_River_Niger.jpg",
+      "imageCaption": "A wooden boat on the River Niger in Nigeria. This is not the boat in the accident. Photo: Wikimedia Commons (CC BY-SA 4.0)"
+    },
+    {
+      "slug": "pentagon-moves-to-restrict-defense-ties-with-canada-in-classified-memo",
+      "sections": [
+        "us"
+      ],
+      "section": "us",
+      "headline": "Pentagon moves to restrict defense ties with Canada in classified memo",
+      "dek": "Defense Secretary Pete Hegseth issued the classified memo last week, the Washington Post reported, but its precise scope is unclear and Canada says it has seen no change yet.",
+      "date": "November 22, 2026",
+      "source": "Dawn",
+      "source_url": "https://www.dawn.com/news/2046246/pentagon-moves-to-restrict-defense-ties-with-canada",
+      "body": [
+        "US Defense Secretary Pete Hegseth has imposed new restrictions on military cooperation with Canada in a classified memo circulated last week, the Washington Post reported on Friday, citing officials familiar with the decision. The Pentagon said on Saturday it was refocusing the relationship around American defense priorities.",
+        "The precise scope of the restrictions is unclear, and the Post said it had not seen the memo. Pentagon spokesman Sean Parnell said the Department of War was taking steps to ensure its engagements with Canada advance tangible US defense objectives and support a reinvigorated defense relationship, while prioritizing cooperation that strengthens the defense of the Americas and supports Canada's ability to meet NATO obligations.",
+        "Parnell said the guidance does not affect defense intelligence cooperation, the binational NORAD command, or cooperation through NATO. NORAD is the joint US-Canadian command responsible for monitoring and defending North American airspace.",
+        "Canadian Defense Minister David McGuinty said he has not seen the memo and has seen no change in how the two countries' militaries work together. He said the armed forces continue to work closely, including on ships in the Caribbean stopping drug trafficking, integrated missile systems, and fighter jets scrambled across North America. The reported restrictions come amid strained relations under President Donald Trump, who has repeatedly suggested Canada should become the 51st US state, imposed tariffs on Canadian goods, and criticized Ottawa's defense spending, while Prime Minister Mark Carney has firmly rejected any suggestion of annexation."
+      ],
+      "related": [
+        "fbi-investigates-apparent-hack-of-national-crime-database",
+        "trump-orders-contractors-to-notify-white-house-before-congress",
+        "gadi-eisenkot-invites-netanyahu-s-likud-party-for-marathon"
+      ],
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/The_Pentagon_US_Department_of_Defense_building.jpg/1280px-The_Pentagon_US_Department_of_Defense_building.jpg",
+      "imageCaption": "The Pentagon, headquarters of the US Department of Defense, in Arlington, Virginia. Photo: Wikimedia Commons (Public domain)"
+    },
     {
       "slug": "former-italian-police-chief-found-dead",
       "sections": [
@@ -1392,43 +1467,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 22, 10:25",
+      "time": "Nov 22",
+      "text": "Trump vows to work with Democrats to cap credit card interest at 10%",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22",
+      "text": "At least 24 dead as boat carrying funeral mourners capsizes in Nigeria",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22",
+      "text": "Pentagon moves to restrict defense ties with Canada in classified memo",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22",
       "text": "Former Italian police chief found dead",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 10:07",
-      "text": "Princess of Wales opens up about cancer",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 10:05",
-      "text": "South Korea: AI cheating sparks exam security chaos",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 11:05",
-      "text": "Euronews' Attila Kert tapped to lead Hungary's public broadcaster",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 10:54",
-      "text": "Tracking site says Iranian tanker reportedly sailing through Strait of Hormuz does not exist",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 09:49",
-      "text": "‘Intimidating’ vigilantes posing as far-right security on the rise, UK experts say",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 09:45",
-      "text": "Iraqi bodybuilding champion Sajad Jawad dies days after winning the Asian crown",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 09:41",
+      "time": "Nov 22",
       "text": "Europe sees new protests over rising costs, inequality and public services",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22",
+      "text": "FBI investigates apparent hack of its national crime database",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22",
+      "text": "Russian cargo ship still on fire off Finland after drone strike",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22",
+      "text": "COP31 final draft drops fossil fuels and admits 1.5C overshoot",
       "link": "live.html"
     }
   ],
