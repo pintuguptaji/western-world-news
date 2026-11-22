@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "europe-sees-new-protests-over-rising-costs-inequality-and"
+    "heroSlug": "former-italian-police-chief-found-dead"
   },
   "breaking": {
-    "text": "Europe sees new protests over rising costs, inequality and public services",
-    "link": "articles/europe-sees-new-protests-over-rising-costs-inequality-and.html"
+    "text": "Former Italian police chief found dead",
+    "link": "articles/former-italian-police-chief-found-dead.html"
   },
   "articles": [
+    {
+      "slug": "former-italian-police-chief-found-dead",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Former Italian police chief found dead",
+      "dek": "Italian Prime Minister Giorgia Meloni has expressed shock following the death of a former national police chief, whose body was found on Saturday.",
+      "date": "November 22, 2026",
+      "source": "France 24",
+      "source_url": "https://www.france24.com/en/former-italian-police-chief-found-dead",
+      "body": [
+        "Italian Prime Minister Giorgia Meloni has expressed shock following the death of a former national police chief, whose body was found on Saturday. He had been under investigation over an alleged cover-up in an inquiry into a bombing linked to organized crime in Sicily."
+      ],
+      "related": [],
+      "image": "https://s.france24.com/media/display/a9d7f9c0-e658-11f1-9bb1-ebb478925cf0/w:1024/p:16x9/EN-20261122-101007-101157-CS.jpg",
+      "imageCaption": "Photo: France 24"
+    },
     {
       "slug": "europe-sees-new-protests-over-rising-costs-inequality-and",
       "sections": [
@@ -1374,43 +1392,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 22, 10:25",
+      "text": "Former Italian police chief found dead",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 10:07",
+      "text": "Princess of Wales opens up about cancer",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 10:05",
+      "text": "South Korea: AI cheating sparks exam security chaos",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 11:05",
+      "text": "Euronews' Attila Kert tapped to lead Hungary's public broadcaster",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 10:54",
+      "text": "Tracking site says Iranian tanker reportedly sailing through Strait of Hormuz does not exist",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 09:49",
+      "text": "‘Intimidating’ vigilantes posing as far-right security on the rise, UK experts say",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 09:45",
+      "text": "Iraqi bodybuilding champion Sajad Jawad dies days after winning the Asian crown",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 22, 09:41",
       "text": "Europe sees new protests over rising costs, inequality and public services",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 09:40",
-      "text": "English village votes to \"leave UK\"",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 09:20",
-      "text": "South Korea education minister resigns over exam cheating scandal",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 09:56",
-      "text": "Reported FBI hack 'not good' but could have benefits, Trump says",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 08:46",
-      "text": "Miley Cyrus marries Maxx Morando in California ceremony",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 08:45",
-      "text": "China, ASEAN countries struggle over South China Sea code of conduct",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 08:39",
-      "text": "Inspired by Bernie Sanders: A German agency is using US-Style campaigning to boost the left in 2029",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 08:11",
-      "text": "Gukesh vs Sindarov: The youngest World Chess Championship in history",
       "link": "live.html"
     }
   ],
