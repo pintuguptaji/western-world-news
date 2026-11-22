@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "14-people-missing-after-russian-drone-strike-on-kyiv-region"
+    "heroSlug": "just-wrong-british-right-distances-itself-from-trump-after"
   },
   "breaking": {
-    "text": "14 people missing after Russian drone strike on Kyiv region",
-    "link": "articles/14-people-missing-after-russian-drone-strike-on-kyiv-region.html"
+    "text": "‘Just wrong’: British right distances itself from Trump after Putin ‘friend’ post",
+    "link": "articles/just-wrong-british-right-distances-itself-from-trump-after.html"
   },
   "articles": [
+    {
+      "slug": "just-wrong-british-right-distances-itself-from-trump-after",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "‘Just wrong’: British right distances itself from Trump after Putin ‘friend’ post",
+      "dek": "Reform deputy leader calls Russian leader ‘a murderous dictator’ after US president appears to endorse him. UK politics live, latest updates.",
+      "date": "November 22, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/politics/2026/nov/22/british-right-reform-tory-party-distances-itself-from-trump-putin-friend-post",
+      "body": [
+        "Reform deputy leader calls Russian leader ‘a murderous dictator’ after US president appears to endorse him. UK politics live, latest updates."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/9d90a7d8b6f21d4c00d9de61f70de2d1a4a80ebf/82_0_4618_3696/master/4618.jpg?width=700&quality=85&auto=format&fit=max&s=dd6a0fbf75ca97d950fd01c74338726d",
+      "imageCaption": "Photo: The Guardian"
+    },
     {
       "slug": "14-people-missing-after-russian-drone-strike-on-kyiv-region",
       "sections": [
@@ -1486,43 +1505,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 22, 11:30",
-      "text": "Bayern Munich bosses under fire over Jamal Musiala comments",
+      "time": "Nov 22, 12:36",
+      "text": "‘Just wrong’: British right distances itself from Trump after Putin ‘friend’ post",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 11:25",
-      "text": "Russia-bound ship still on fire after attack in Gulf of Finland",
+      "time": "Nov 22, 12:31",
+      "text": "US Congress helped end the Vietnam War. Can it stop the Iran war?",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 12:20",
-      "text": "14 people missing after Russian drone strike on Kyiv region",
+      "time": "Nov 22, 13:22",
+      "text": "Emergency workers recover at least six body bags after Indonesian factory fire",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 11:07",
-      "text": "Messi throws ball in opponent’s face, avoids red card as Inter Miami lose",
+      "time": "Nov 22, 12:22",
+      "text": "Bruno Fernandes says contract talks on hold as Man United battle poor start",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 11:00",
-      "text": "UK-EU food deal hailed by British firms: ‘We’re pretty aligned anyway’",
+      "time": "Nov 22, 12:22",
+      "text": "COP31 ends without deal as EU rejects text for omitting mention of fossil fuels",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 12:00",
-      "text": "Mongolia faces snap presidential vote as outgoing leader calls for constitutional reform",
+      "time": "Nov 22, 12:19",
+      "text": "Israeli settlers attack several Palestinian villages in occupied West Bank",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 10:44",
-      "text": "Theresa May 'aghast' at Burnham's EU plans and says 'Brexit is done'",
+      "time": "Nov 22, 12:12",
+      "text": "South Korea education minister resigns after AI cheating scandal engulfs university exams",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 10:39",
-      "text": "Russian cargo ship still on fire off Finland after drone attack",
+      "time": "Nov 22, 12:11",
+      "text": "Indonesia factory hit by deadly blaze: Three killed and 36 missing",
       "link": "live.html"
     }
   ],
