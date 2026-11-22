@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "displaced-darfur-families-face-volatile-winter-as-sudan-aid"
+    "heroSlug": "gadi-eisenkot-invites-netanyahu-s-likud-party-for-marathon"
   },
   "breaking": {
-    "text": "Displaced Darfur families face volatile winter as Sudan aid cuts bite",
-    "link": "articles/displaced-darfur-families-face-volatile-winter-as-sudan-aid.html"
+    "text": "Gadi Eisenkot invites Netanyahu's Likud party for 'marathon' coalition talks",
+    "link": "articles/gadi-eisenkot-invites-netanyahu-s-likud-party-for-marathon.html"
   },
   "articles": [
+    {
+      "slug": "gadi-eisenkot-invites-netanyahu-s-likud-party-for-marathon",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Gadi Eisenkot invites Netanyahu's Likud party for 'marathon' coalition talks",
+      "dek": "Gadi Eisenkot has until early December to form a new government after both his and Netanyahu's blocs fell short of a majority in Israel's October legislative elections.",
+      "date": "November 22, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/22/gadi-eisenkot-invites-netanyahus-likud-party-for-marathon-coalition-talks",
+      "body": [
+        "Gadi Eisenkot has until early December to form a new government after both his and Netanyahu's blocs fell short of a majority in Israel's October legislative elections."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/31/41/696x392_cmsv2_d548eeab-03c0-5d09-9e23-1d4460d8e068-10003141.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "displaced-darfur-families-face-volatile-winter-as-sudan-aid",
       "sections": [
@@ -1121,43 +1140,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 22, 05:38",
-      "text": "Kenya’s internet metering bill raises privacy and affordability concerns",
+      "time": "Nov 22, 07:58",
+      "text": "Gadi Eisenkot invites Netanyahu's Likud party for 'marathon' coalition talks",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 05:26",
+      "time": "Nov 22, 06:54",
       "text": "New draft deal aims to avert collapse of talks at climate summit",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 05:21",
-      "text": "Displaced Darfur families face volatile winter as Sudan aid cuts bite",
+      "time": "Nov 22, 06:32",
+      "text": "What Sandpapergate reveals about Australian cricket",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 05:21",
-      "text": "Police say man whose body lay undiscovered in Sydney bushland for 12 days was killed in suspected hit-and-run",
+      "time": "Nov 22, 06:15",
+      "text": "Live: Finland says war 'spilling over' after Baltic Sea drone strike on Russian cargo ship",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 05:04",
-      "text": "South Korea education minister resigns after AI cheating scandal engulfs university exams",
+      "time": "Nov 22, 06:14",
+      "text": "Dozens missing as deadly fire hits Indonesian candy factory",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 05:00",
-      "text": "The real people finding their work copied and stolen by AI characters",
+      "time": "Nov 22, 06:05",
+      "text": "Dozens missing after fire at Indonesian factory",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 04:51",
-      "text": "Fossil fuel impasse pushes COP31 climate talks into second day of overtime",
+      "time": "Nov 22, 07:02",
+      "text": "Madeira's ocean survey finds evidence protection works, and some worrying signs",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 04:39",
-      "text": "BBC apologises for 'any offence caused' by Strictly noise disruption",
+      "time": "Nov 22, 06:01",
+      "text": "Theresa May 'aghast' at Burnham's EU plans and says 'Brexit is done'",
       "link": "live.html"
     }
   ],

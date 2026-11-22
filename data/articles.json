@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "slug": "gadi-eisenkot-invites-netanyahu-s-likud-party-for-marathon",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Gadi Eisenkot invites Netanyahu's Likud party for 'marathon' coalition talks",
+      "dek": "Gadi Eisenkot has until early December to form a new government after both his and Netanyahu's blocs fell short of a majority in Israel's October legislative elections.",
+      "date": "November 22, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/22/gadi-eisenkot-invites-netanyahus-likud-party-for-marathon-coalition-talks",
+      "body": [
+        "Gadi Eisenkot has until early December to form a new government after both his and Netanyahu's blocs fell short of a majority in Israel's October legislative elections."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/31/41/696x392_cmsv2_d548eeab-03c0-5d09-9e23-1d4460d8e068-10003141.jpg",
+      "imageCaption": "Photo: Euronews",
+      "auto": true
+    },
+    {
       "slug": "displaced-darfur-families-face-volatile-winter-as-sudan-aid",
       "sections": [
         "war-conflict",
@@ -1136,36 +1156,36 @@
   ],
   "justIn": [
     {
-      "time": "22 Nov, 05:38",
-      "text": "Kenya’s internet metering bill raises privacy and affordability concerns"
+      "time": "22 Nov, 07:58",
+      "text": "Gadi Eisenkot invites Netanyahu's Likud party for 'marathon' coalition talks"
     },
     {
-      "time": "22 Nov, 05:26",
+      "time": "22 Nov, 06:54",
       "text": "New draft deal aims to avert collapse of talks at climate summit"
     },
     {
-      "time": "22 Nov, 05:21",
-      "text": "Displaced Darfur families face volatile winter as Sudan aid cuts bite"
+      "time": "22 Nov, 06:32",
+      "text": "What Sandpapergate reveals about Australian cricket"
     },
     {
-      "time": "22 Nov, 05:21",
-      "text": "Police say man whose body lay undiscovered in Sydney bushland for 12 days was killed in suspected hit-and-run"
+      "time": "22 Nov, 06:15",
+      "text": "Live: Finland says war 'spilling over' after Baltic Sea drone strike on Russian cargo ship"
     },
     {
-      "time": "22 Nov, 05:04",
-      "text": "South Korea education minister resigns after AI cheating scandal engulfs university exams"
+      "time": "22 Nov, 06:14",
+      "text": "Dozens missing as deadly fire hits Indonesian candy factory"
     },
     {
-      "time": "22 Nov, 05:00",
-      "text": "The real people finding their work copied and stolen by AI characters"
+      "time": "22 Nov, 06:05",
+      "text": "Dozens missing after fire at Indonesian factory"
     },
     {
-      "time": "22 Nov, 04:51",
-      "text": "Fossil fuel impasse pushes COP31 climate talks into second day of overtime"
+      "time": "22 Nov, 07:02",
+      "text": "Madeira's ocean survey finds evidence protection works, and some worrying signs"
     },
     {
-      "time": "22 Nov, 04:39",
-      "text": "BBC apologises for 'any offence caused' by Strictly noise disruption"
+      "time": "22 Nov, 06:01",
+      "text": "Theresa May 'aghast' at Burnham's EU plans and says 'Brexit is done'"
     }
   ],
   "liveUpdates": [
@@ -1227,9 +1247,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "displaced-darfur-families-face-volatile-winter-as-sudan-aid",
+  "heroSlug": "gadi-eisenkot-invites-netanyahu-s-likud-party-for-marathon",
   "breaking": {
-    "text": "Displaced Darfur families face volatile winter as Sudan aid cuts bite",
-    "link": "articles/displaced-darfur-families-face-volatile-winter-as-sudan-aid.html"
+    "text": "Gadi Eisenkot invites Netanyahu's Likud party for 'marathon' coalition talks",
+    "link": "articles/gadi-eisenkot-invites-netanyahu-s-likud-party-for-marathon.html"
   }
 }
