@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "theresa-mays-blast-from-the-past-calls-tories-back-to-their"
+    "heroSlug": "russia-bound-ship-towed-away-after-it-was-attacked-in-gulf"
   },
   "breaking": {
-    "text": "Theresa May’s blast from the past calls Tories back to their unhappy place | Peter Walker",
-    "link": "articles/theresa-mays-blast-from-the-past-calls-tories-back-to-their.html"
+    "text": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
+    "link": "articles/russia-bound-ship-towed-away-after-it-was-attacked-in-gulf.html"
   },
   "articles": [
+    {
+      "slug": "russia-bound-ship-towed-away-after-it-was-attacked-in-gulf",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
+      "dek": "Finnish defense forces say that Ukraine was likely behind the drone strike on Saturday. Kyiv has yet to comment.",
+      "date": "November 22, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko",
+      "body": [
+        "Finnish defense forces say that Ukraine was likely behind the drone strike on Saturday. Kyiv has yet to comment."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/d6f9/live/a55b16b0-e66d-11f1-9e24-791c5321ff0f.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "theresa-mays-blast-from-the-past-calls-tories-back-to-their",
       "sections": [
@@ -1580,43 +1599,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 22, 16:14",
-      "text": "Cop31 climate talks break down as key deal rejected",
+      "time": "Nov 22, 17:18",
+      "text": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 16:12",
-      "text": "Theresa May’s blast from the past calls Tories back to their unhappy place | Peter Walker",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 16:05",
+      "time": "Nov 22, 17:16",
       "text": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 16:34",
-      "text": "Autopsy report reveals: Baltic Sea whale 'Timmy' starved to death",
+      "time": "Nov 22, 17:12",
+      "text": "Russian vessel hit by suspected sea drone at Libya’s Benghazi naval base",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 16:27",
-      "text": "BepiColombo space probe enters Mercury's orbit after eight-year journey",
+      "time": "Nov 22, 18:11",
+      "text": "Israel forecast to grow 4.5% amid war: What can Europe learn from its tech boom?",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 15:22",
-      "text": "Netanyahu rival condemns ‘Jewish terrorism’ after settler attacks on Palestinian villages",
+      "time": "Nov 22, 18:11",
+      "text": "Suspected drone strike hits Russian ship at Libya’s Benghazi port, raising regional security concerns",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 15:09",
-      "text": "Israel's Eisenkot condemns 'Jewish terrorism' in West Bank",
+      "time": "Nov 22, 16:55",
+      "text": "Ligue 1: PSG extend winning run at Nice (3-2) but lose Désiré Doué to injury",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 15:03",
-      "text": "Drone attacks kill four near Sudan’s capital, damage UN building",
+      "time": "Nov 22, 16:55",
+      "text": "Blast on Russian ship in Benghazi a suspected drone attack, say Libyan authorities",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 16:51",
+      "text": "Russell Brand's wife says she'll honour prison rules after message row",
       "link": "live.html"
     }
   ],
