@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "gadi-eisenkot-invites-netanyahu-s-likud-party-for-marathon"
+    "heroSlug": "china-asean-countries-struggle-over-south-china-sea-code-of"
   },
   "breaking": {
-    "text": "Gadi Eisenkot invites Netanyahu's Likud party for 'marathon' coalition talks",
-    "link": "articles/gadi-eisenkot-invites-netanyahu-s-likud-party-for-marathon.html"
+    "text": "China, ASEAN countries struggle over South China Sea code of conduct",
+    "link": "articles/china-asean-countries-struggle-over-south-china-sea-code-of.html"
   },
   "articles": [
+    {
+      "slug": "china-asean-countries-struggle-over-south-china-sea-code-of",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "China, ASEAN countries struggle over South China Sea code of conduct",
+      "dek": "The Philippines wanted a South China Sea code of conduct in place by 2026. But persistent disagreements between China and ASEAN countries are slowing progress toward a deal.",
+      "date": "November 22, 2026",
+      "source": "DW",
+      "source_url": "https://www.dw.com/en/china-asean-countries-struggle-over-south-china-sea-code-of-conduct/a-80009799",
+      "body": [
+        "The Philippines wanted a South China Sea code of conduct in place by 2026. But persistent disagreements between China and ASEAN countries are slowing progress toward a deal."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "gadi-eisenkot-invites-netanyahu-s-likud-party-for-marathon",
       "sections": [
@@ -1140,43 +1159,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 22, 07:58",
-      "text": "Gadi Eisenkot invites Netanyahu's Likud party for 'marathon' coalition talks",
+      "time": "Nov 22, 08:45",
+      "text": "China, ASEAN countries struggle over South China Sea code of conduct",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 06:54",
-      "text": "New draft deal aims to avert collapse of talks at climate summit",
+      "time": "Nov 22, 08:39",
+      "text": "Inspired by Bernie Sanders: A German agency is using US-Style campaigning to boost the left in 2029",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 06:32",
-      "text": "What Sandpapergate reveals about Australian cricket",
+      "time": "Nov 22, 08:11",
+      "text": "Gukesh vs Sindarov: The youngest World Chess Championship in history",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 06:15",
-      "text": "Live: Finland says war 'spilling over' after Baltic Sea drone strike on Russian cargo ship",
+      "time": "Nov 22, 09:00",
+      "text": "Hot freezers, lost GPS and fake bombs: Europe's month of cyberattacks",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 06:14",
-      "text": "Dozens missing as deadly fire hits Indonesian candy factory",
+      "time": "Nov 22, 08:00",
+      "text": "Highly lucrative: Bank of England directors illegally profited from post-abolition enslavement in Cuba",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 06:05",
-      "text": "Dozens missing after fire at Indonesian factory",
+      "time": "Nov 22, 08:50",
+      "text": "New COP31 draft deal tabled as countries scramble to salvage climate talks",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 07:02",
-      "text": "Madeira's ocean survey finds evidence protection works, and some worrying signs",
+      "time": "Nov 22, 07:48",
+      "text": "Max Verstappen wins F1 Las Vegas Grand Prix for third time in four years",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 06:01",
-      "text": "Theresa May 'aghast' at Burnham's EU plans and says 'Brexit is done'",
+      "time": "Nov 22, 07:46",
+      "text": "Indonesia factory fire kills three, 36 missing",
       "link": "live.html"
     }
   ],
