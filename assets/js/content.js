@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "netanyahu-rival-condemns-settler-arson-attacks-on"
+    "heroSlug": "theresa-mays-blast-from-the-past-calls-tories-back-to-their"
   },
   "breaking": {
-    "text": "Netanyahu rival condemns settler arson attacks on Palestinian villages in West Bank",
-    "link": "articles/netanyahu-rival-condemns-settler-arson-attacks-on.html"
+    "text": "Theresa May’s blast from the past calls Tories back to their unhappy place | Peter Walker",
+    "link": "articles/theresa-mays-blast-from-the-past-calls-tories-back-to-their.html"
   },
   "articles": [
+    {
+      "slug": "theresa-mays-blast-from-the-past-calls-tories-back-to-their",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Theresa May’s blast from the past calls Tories back to their unhappy place | Peter Walker",
+      "dek": "Conservatives may instinctively want to push back against closer EU ties, but they have to train their focus elsewhere .",
+      "date": "November 22, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/politics/2026/nov/22/theresa-may-blast-from-the-past-tories-brexit",
+      "body": [
+        "Conservatives may instinctively want to push back against closer EU ties, but they have to train their focus elsewhere . Anyone who accidentally switched to BBC One at about 9.45am on Sunday to be greeted by Theresa May awkwardly espousing the virtues of Brexit could have been forgiven for thinking they had woken up in around 2018, and not being especially pleased at the idea."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/323290cab4a059e743deb4e7ae0928f6d847b2af/681_32_4857_3885/master/4857.jpg?width=700&quality=85&auto=format&fit=max&s=4b11d44d7ade66f2f41b91bb001c5ba9",
+      "imageCaption": "Photo: The Guardian"
+    },
     {
       "slug": "netanyahu-rival-condemns-settler-arson-attacks-on",
       "sections": [
@@ -1562,6 +1580,21 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 22, 16:14",
+      "text": "Cop31 climate talks break down as key deal rejected",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 16:12",
+      "text": "Theresa May’s blast from the past calls Tories back to their unhappy place | Peter Walker",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 16:05",
+      "text": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 22, 16:34",
       "text": "Autopsy report reveals: Baltic Sea whale 'Timmy' starved to death",
       "link": "live.html"
@@ -1573,7 +1606,7 @@ window.WWN_DEFAULT_CONTENT = {
     },
     {
       "time": "Nov 22, 15:22",
-      "text": "Netanyahu rival condemns settler arson attacks on Palestinian villages in West Bank",
+      "text": "Netanyahu rival condemns ‘Jewish terrorism’ after settler attacks on Palestinian villages",
       "link": "live.html"
     },
     {
@@ -1584,21 +1617,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 22, 15:03",
       "text": "Drone attacks kill four near Sudan’s capital, damage UN building",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 14:48",
-      "text": "Zelenskyy urges US to release Patriot missiles as Russia kills 3 in Ukraine",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 14:35",
-      "text": "Why Bangladesh descended into violence ahead of Hasina’s planned return",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 14:33",
-      "text": "How El Chapo Isidro, alleged Mexican cartel leader, was captured",
       "link": "live.html"
     }
   ],
