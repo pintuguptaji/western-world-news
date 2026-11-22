@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "fbi-investigates-apparent-hack-of-national-crime-database"
+    "heroSlug": "europe-sees-new-protests-over-rising-costs-inequality-and"
   },
   "breaking": {
-    "text": "FBI investigates apparent hack of its national crime database",
-    "link": "articles/fbi-investigates-apparent-hack-of-national-crime-database.html"
+    "text": "Europe sees new protests over rising costs, inequality and public services",
+    "link": "articles/europe-sees-new-protests-over-rising-costs-inequality-and.html"
   },
   "articles": [
+    {
+      "slug": "europe-sees-new-protests-over-rising-costs-inequality-and",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Europe sees new protests over rising costs, inequality and public services",
+      "dek": "Sunday marks the third consecutive day of protests across Europe, following large demonstrations on Friday and smaller rallies on Saturday, from Portugal to France.",
+      "date": "November 22, 2026",
+      "source": "France 24",
+      "source_url": "https://www.france24.com/en/europe-sees-new-protests-over-rising-costs-inequality-and-public-services",
+      "body": [
+        "Sunday marks the third consecutive day of protests across Europe, following large demonstrations on Friday and smaller rallies on Saturday, from Portugal to France. The protests have largely focused on the rising cost of living and access to affordable housing."
+      ],
+      "related": [],
+      "image": "https://s.france24.com/media/display/53de5938-e658-11f1-9f3b-6b451f569414/w:1024/p:16x9/EN-20261122-100542-100715-CS.jpg",
+      "imageCaption": "Photo: France 24"
+    },
     {
       "slug": "fbi-investigates-apparent-hack-of-national-crime-database",
       "sections": [
@@ -1356,43 +1374,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 22",
-      "text": "FBI investigates apparent hack of its national crime database",
+      "time": "Nov 22, 09:41",
+      "text": "Europe sees new protests over rising costs, inequality and public services",
       "link": "live.html"
     },
     {
-      "time": "Nov 22",
-      "text": "Russian cargo ship still on fire off Finland after drone strike",
+      "time": "Nov 22, 09:40",
+      "text": "English village votes to \"leave UK\"",
       "link": "live.html"
     },
     {
-      "time": "Nov 22",
-      "text": "COP31 final draft drops fossil fuels and admits 1.5C overshoot",
+      "time": "Nov 22, 09:20",
+      "text": "South Korea education minister resigns over exam cheating scandal",
       "link": "live.html"
     },
     {
-      "time": "Nov 22",
-      "text": "Trump orders federal contractors to notify White House before giving Congress information",
+      "time": "Nov 22, 09:56",
+      "text": "Reported FBI hack 'not good' but could have benefits, Trump says",
       "link": "live.html"
     },
     {
-      "time": "Nov 22",
-      "text": "Theresa May 'aghast' at Burnham's EU plans and says 'Brexit is done'",
+      "time": "Nov 22, 08:46",
+      "text": "Miley Cyrus marries Maxx Morando in California ceremony",
       "link": "live.html"
     },
     {
-      "time": "Nov 22",
-      "text": "Washington governor condemns ICE arrests of travelers at Seattle airport",
+      "time": "Nov 22, 08:45",
+      "text": "China, ASEAN countries struggle over South China Sea code of conduct",
       "link": "live.html"
     },
     {
-      "time": "Nov 22",
-      "text": "Eleven killed as Mexican forces capture cartel boss 'El Chapo Isidro'",
+      "time": "Nov 22, 08:39",
+      "text": "Inspired by Bernie Sanders: A German agency is using US-Style campaigning to boost the left in 2029",
       "link": "live.html"
     },
     {
-      "time": "Nov 22",
-      "text": "Verstappen wins extraordinary Las Vegas Grand Prix as Ferraris collide",
+      "time": "Nov 22, 08:11",
+      "text": "Gukesh vs Sindarov: The youngest World Chess Championship in history",
       "link": "live.html"
     }
   ],
