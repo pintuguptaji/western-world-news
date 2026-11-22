@@ -9,13 +9,87 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "trump-orders-contractors-to-notify-white-house-before-congress"
+    "heroSlug": "fbi-investigates-apparent-hack-of-national-crime-database"
   },
   "breaking": {
-    "text": "Trump orders federal contractors to notify White House before giving Congress information",
-    "link": "articles/trump-orders-contractors-to-notify-white-house-before-congress.html"
+    "text": "FBI investigates apparent hack of its national crime database",
+    "link": "articles/fbi-investigates-apparent-hack-of-national-crime-database.html"
   },
   "articles": [
+    {
+      "slug": "fbi-investigates-apparent-hack-of-national-crime-database",
+      "sections": [
+        "us"
+      ],
+      "section": "us",
+      "headline": "FBI investigates apparent hack of its national crime database",
+      "dek": "The FBI is investigating an apparent hack of the National Crime Information Center, a database used by police across the country. The scope of the incident is not yet clear.",
+      "date": "November 22, 2026",
+      "source": "Associated Press",
+      "source_url": "https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/",
+      "body": [
+        "The FBI is investigating an apparent hack of a national law enforcement database it maintains, the National Crime Information Center, known as the NCIC. The apparent hack was first reported by CNN and confirmed to the Associated Press on Saturday by a person familiar with the matter who spoke on condition of anonymity.",
+        "The NCIC is a computerized database of criminal justice information available to local, state and federal law enforcement agencies. It holds records on fugitives, missing persons, criminal history, stolen property and other topics.",
+        "The FBI declined to comment on Saturday, and the scope of the problem was not immediately clear. No culprit has been named, and nothing has been said publicly about what data, if any, was taken. President Donald Trump, asked about the subject in a Fox News interview on Saturday, said: \"We just heard about it, and I will say that it's not good.\"",
+        "The incident comes after a series of digital outages in government and the private sector that Trump administration officials have said were caused by routine work to upgrade computer systems and fix vulnerabilities, rather than a cyberattack. There was no immediate indication the FBI incident was related to those outages. The bureau has been targeted before: in September, the hacking group ShinyHunters said it had obtained a large trove of data on FBI employees and applicants and had compromised the bureau's jobs portal, and in March the FBI said it was investigating suspicious activity on an internal system holding sensitive information about surveillance operations and investigations."
+      ],
+      "related": [
+        "trump-orders-contractors-to-notify-white-house-before-congress",
+        "republican-senator-blocks-trump-cyber-nominee-over-january",
+        "white-house-removes-cyber-security-chief-after-series-of"
+      ],
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/FBI_Headquarters_-_J._Edgar_Hoover_Building_%2853840035941%29.jpg/1280px-FBI_Headquarters_-_J._Edgar_Hoover_Building_%2853840035941%29.jpg",
+      "imageCaption": "The J. Edgar Hoover Building, the headquarters of the FBI in Washington, D.C. Photo: Wikimedia Commons (CC BY 2.0)"
+    },
+    {
+      "slug": "russian-cargo-ship-still-on-fire-off-finland-after-drone-strike",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Russian cargo ship still on fire off Finland after drone strike",
+      "dek": "The Sparta II was struck by drones in the Gulf of Finland on Saturday and drifted into Finnish waters. Its 16 crew members were evacuated and the fire was still burning on Sunday.",
+      "date": "November 22, 2026",
+      "source": "Reuters",
+      "source_url": "https://www.reuters.com/world/europe/russian-cargo-ship-still-fire-off-finland-after-attack-2026-11-22/",
+      "body": [
+        "A fire on board a Russian cargo ship struck by drones in the Baltic Sea continued to burn through the night, Finland's coast guard said on Sunday, as vessels sprayed the ship with water cannons in an effort to douse the flames and cool containers stacked on its deck.",
+        "The ship, the Sparta II, was damaged in international waters west of Russia's Gogland island in the Gulf of Finland on Saturday. Finland's Defense Forces said the vessel later drifted into Finnish waters, where it remains at anchor. All 16 crew members were evacuated onto a nearby Russian ship.",
+        "Finland's military has said the strike was likely carried out by Ukraine, but that has not been confirmed, and it is unclear why the ship was targeted. Ukraine has sent waves of military drones toward Russia's northwest coastal Leningrad region this year, including some that strayed into the airspace of nearby Baltic countries, raising fears that the war was spilling onto NATO territory.",
+        "The Sparta II is a 121-meter Russian-flagged cargo vessel owned by the Russian shipping company Oboronlogistika, which provides logistics services for the Russian Defense Ministry, according to the company's website. The vessel, which left St. Petersburg on Friday bound for the Russian exclave of Kaliningrad, is subject to US sanctions, according to the US Treasury Department. The risk of further attacks in the Gulf of Finland cannot be ruled out, the commander of the Estonian Navy, Ivo Vark, told public broadcaster ERR on Sunday."
+      ],
+      "related": [
+        "denmark-expels-russian-diplomat-over-alleged-plot-to-kill",
+        "russia-ukraine-missile-attack"
+      ],
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Patrol_vessel_Turva_from_air.jpg/1280px-Patrol_vessel_Turva_from_air.jpg",
+      "imageCaption": "Finnish Coast Guard patrol vessel Turva. Finland's coast guard is fighting the fire on the Russian cargo ship Sparta II in the Gulf of Finland. Photo: Wikimedia Commons (CC BY 2.0)"
+    },
+    {
+      "slug": "cop31-final-draft-drops-fossil-fuels-admits-1-5c-overshoot",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "COP31 final draft drops fossil fuels and admits 1.5C overshoot",
+      "dek": "A new draft deal released on Sunday would acknowledge for the first time that global warming is on course to pass 1.5C, while leaving out any mention of fossil fuels. It has not been adopted yet.",
+      "date": "November 22, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/amp/news/2026/11/22/fossil-fuel-impasse-pushes-cop31-climate-talks-into-second-day-of-overtime",
+      "body": [
+        "UN climate talks in Turkiye are closing in on a final deal after the COP31 president released a new draft on Sunday, two days after the conference in Antalya was due to end. The presidency hopes the text can win consensus on advancing the fight against global warming.",
+        "If approved, the draft would acknowledge for the first time that global warming is on course to exceed the 1.5 degrees Celsius threshold countries had sought to preserve, while calling for faster carbon removal to eventually reverse the overshoot. The draft omits any mention of the fossil fuels scientists say are driving climate change, the issue at the center of frictions at the talks. Instead, it refers to a previous COP at which governments agreed to move away from oil, gas and coal.",
+        "COP31 President Murat Kurum, also Turkiye's environment minister, told a plenary session early on Sunday that he believed all the parties could agree on the text. He said the conference would reconvene later on Sunday morning, with a session at 07:00 GMT to begin approving the deal. It was unclear whether negotiators had received the wording overnight, leaving only a few hours for objections and changes.",
+        "Environmental group 350.org said it was disappointed by the omission of fossil fuels and the draft's support for carbon removal technologies. \"Carbon capture is one of the biggest scams of the overshoot era and our leaders are on the verge of falling for it,\" said Sara Shaw, the group's campaigns and networks director. Observers said Saudi Arabia and other big oil producers pushed hard to keep fossil fuels out of the text and carbon removal in. The draft is not yet adopted: it needs near-unanimous consensus at the closing session. An earlier draft drew strong condemnation for failing to mention fossil fuels."
+      ],
+      "related": [
+        "fossil-fuel-dispute-threatens-to-derail-cop31-climate-deal",
+        "fight-over-fossil-fuels-leaves-cop31-climate-talks-in",
+        "cop31-deep-divisions-persist-over-energy-finance-and-science"
+      ],
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/General_view_of_the_COP31_Presidency%E2%80%99s_Energy_Ministerial_Meeting.jpg/1280px-General_view_of_the_COP31_Presidency%E2%80%99s_Energy_Ministerial_Meeting.jpg",
+      "imageCaption": "A general view of the COP31 Presidency's Energy Ministerial Meeting in Antalya, Turkey. Photo: Wikimedia Commons (CC BY 4.0)"
+    },
     {
       "slug": "trump-orders-contractors-to-notify-white-house-before-congress",
       "sections": [
@@ -1283,6 +1357,21 @@ window.WWN_DEFAULT_CONTENT = {
   "justIn": [
     {
       "time": "Nov 22",
+      "text": "FBI investigates apparent hack of its national crime database",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22",
+      "text": "Russian cargo ship still on fire off Finland after drone strike",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22",
+      "text": "COP31 final draft drops fossil fuels and admits 1.5C overshoot",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22",
       "text": "Trump orders federal contractors to notify White House before giving Congress information",
       "link": "live.html"
     },
@@ -1304,21 +1393,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 22",
       "text": "Verstappen wins extraordinary Las Vegas Grand Prix as Ferraris collide",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22",
-      "text": "China, ASEAN countries struggle over South China Sea code of conduct",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22",
-      "text": "Gadi Eisenkot invites Netanyahu's Likud party for 'marathon' coalition talks",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22",
-      "text": "Displaced Darfur families face volatile winter as Sudan aid cuts bite",
       "link": "live.html"
     }
   ],

@@ -2,6 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://westernworldnews.com/articles/fbi-investigates-apparent-hack-of-national-crime-database.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Western World News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22</news:publication_date>
+      <news:title>FBI investigates apparent hack of its national crime database</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://westernworldnews.com/articles/russian-cargo-ship-still-on-fire-off-finland-after-drone-strike.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Western World News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22</news:publication_date>
+      <news:title>Russian cargo ship still on fire off Finland after drone strike</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://westernworldnews.com/articles/cop31-final-draft-drops-fossil-fuels-admits-1-5c-overshoot.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Western World News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22</news:publication_date>
+      <news:title>COP31 final draft drops fossil fuels and admits 1.5C overshoot</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://westernworldnews.com/articles/trump-orders-contractors-to-notify-white-house-before-congress.html</loc>
     <news:news>
       <news:publication>
