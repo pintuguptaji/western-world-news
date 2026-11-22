@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "briton-swims-length-of-strait-of-hormuz-to-highlight"
+    "heroSlug": "cop31-climate-talks-fail-after-eu-and-others-reject-final"
   },
   "breaking": {
-    "text": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
-    "link": "articles/briton-swims-length-of-strait-of-hormuz-to-highlight.html"
+    "text": "COP31 climate talks fail after EU and others reject final deal proposal",
+    "link": "articles/cop31-climate-talks-fail-after-eu-and-others-reject-final.html"
   },
   "articles": [
+    {
+      "slug": "cop31-climate-talks-fail-after-eu-and-others-reject-final",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "COP31 climate talks fail after EU and others reject final deal proposal",
+      "dek": "A new COP31 draft agreement had been published early on Sunday amid a row over fossil fuels, which have been a flashpoint at the talks.",
+      "date": "November 22, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/22/cop31-climate-talks-fail-after-eu-and-others-reject-final-deal-proposal",
+      "body": [
+        "A new COP31 draft agreement had been published early on Sunday amid a row over fossil fuels, which have been a flashpoint at the talks."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/34/69/696x392_cmsv2_46cbae24-c8ca-5789-947b-7639c5bcdb04-10003469.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "briton-swims-length-of-strait-of-hormuz-to-highlight",
       "sections": [
@@ -1524,43 +1543,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 22, 13:46",
-      "text": "NFL’s Jaylen Harrell hospitalised and investigated for assault in car crash",
+      "time": "Nov 22, 14:33",
+      "text": "How El Chapo Isidro, alleged Mexican cartel leader, was captured",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 13:36",
-      "text": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
+      "time": "Nov 22, 15:23",
+      "text": "COP31 climate talks fail after EU and others reject final deal proposal",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 13:18",
-      "text": "COP31 climate talks end without consensus on how to fund vulnerable countries or move the world away from coal",
+      "time": "Nov 22, 14:22",
+      "text": "The week in pictures: Xi hosts Trump and Putin, COP31 and new French protests",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 13:16",
-      "text": "Saudi Arabia intercepts drone, missile as Houthis report attack on Sanaa",
+      "time": "Nov 22, 14:20",
+      "text": "Iran unveils dual-missile launcher, new ‘missile city’: What to know",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 13:15",
-      "text": "Children in besieged Gaza struggle to find life-saving insulin for diabetes",
+      "time": "Nov 22, 14:19",
+      "text": "RAF's next fighter jet could be last crewed combat plane, air chief says",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 12:54",
-      "text": "Cop31 climate talks break down as key deal rejected",
+      "time": "Nov 22, 14:18",
+      "text": "\"It can take years\": Why the AI Riemann proof is far from settled",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 12:36",
-      "text": "‘Just wrong’: British right distances itself from Trump after Putin ‘friend’ post",
+      "time": "Nov 22, 14:05",
+      "text": "Three killed and dozens missing after fire at Indonesian factory",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 12:31",
-      "text": "US Congress helped end the Vietnam War. Can it stop the Iran war?",
+      "time": "Nov 22, 14:00",
+      "text": "Experts say ‘trusted messengers’ critical as Amish grapple with measles outbreak",
       "link": "live.html"
     }
   ],
