@@ -1675,6 +1675,31 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 22, 22:19",
+      "text": "Democrats win largest House majority since 1992 with North Carolina seat",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 22:01",
+      "text": "Abdul El-Sayed doubles down on ‘TrumpCare’ health plan, urging president to ‘get it done’",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 22:00",
+      "text": "Theresa May’s blast from the past calls Tories back to their unhappy place | Peter Walker",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 21:46",
+      "text": "Cop31 left Chris Bowen stuck between petrostates and climate reality. But the f-word failure is not his alone",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 21:33",
+      "text": "Russian warship sinks in Benghazi after suspected Ukrainian drone attack",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 22, 21:33",
       "text": "Netanyahu’s Likud, Eisenkot’s Yashar end coalition talks without deal",
       "link": "live.html"
@@ -1687,31 +1712,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 22, 22:29",
       "text": "Midterms: US Democrats secure biggest House majority in decades",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 21:29",
-      "text": "Israel’s Eisenkot slams ‘Jewish terrorism’ after attacks by settlers in West Bank",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 21:26",
-      "text": "Heartbreak in US capital as Washington Spirit lose women’s football final",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 21:22",
-      "text": "Miley Cyrus marries Maxx Morando in California ceremony",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 20:55",
-      "text": "US intelligence chief says he trusts Trump’s description of Putin as ‘my friend’",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 21:38",
-      "text": "Finland confirms Russia is towing drone-hit cargo ship after Baltic Sea attack",
       "link": "live.html"
     }
   ],
