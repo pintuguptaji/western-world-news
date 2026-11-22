@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "russian-warship-hit-by-suspected-ukrainian-drone-at"
+    "heroSlug": "democrats-win-largest-house-majority-since-1992-after"
   },
   "breaking": {
-    "text": "Russian warship hit by suspected Ukrainian drone at Benghazi naval base, Libyan officials say",
-    "link": "articles/russian-warship-hit-by-suspected-ukrainian-drone-at.html"
+    "text": "Democrats win largest House majority since 1992 after flipping North Carolina seat",
+    "link": "articles/democrats-win-largest-house-majority-since-1992-after.html"
   },
   "articles": [
+    {
+      "slug": "democrats-win-largest-house-majority-since-1992-after",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "Democrats win largest House majority since 1992 after flipping North Carolina seat",
+      "dek": "Democrats have now won at least 258 seats in the midterms compared to Republicans, who hold at least 173 seats.",
+      "date": "November 22, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6vg29g7dlyno",
+      "body": [
+        "Democrats have now won at least 258 seats in the midterms compared to Republicans, who hold at least 173 seats."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/2aab/live/8ca719f0-e6b0-11f1-b45e-bf1e220bd648.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "russian-warship-hit-by-suspected-ukrainian-drone-at",
       "sections": [
@@ -1637,43 +1656,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 22, 19:41",
-      "text": "Russian warship hit by suspected Ukrainian drone at Benghazi naval base, Libyan officials say",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 19:37",
-      "text": "Burnham, 'Brejoin' & the Ghosts of Brexit",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 20:35",
-      "text": "Marc Márquez wins eighth MotoGP title in Portugal, surpassing Rossi's record",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 20:35",
-      "text": "French interior ministry rocked by probe into prefect's leaks to National Rally",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 19:34",
-      "text": "Jensen Huang’s reported affair was ‘most expensive sex since Helen of Troy’, US senator says",
+      "time": "Nov 22, 21:38",
+      "text": "Finland confirms Russia is towing drone-hit cargo ship after Baltic Sea attack",
       "link": "live.html"
     },
     {
       "time": "Nov 22, 20:28",
-      "text": "Polls put Spain's PP ahead of PSOE a week before November 29 election",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 19:26",
       "text": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 19:25",
-      "text": "Sudan: Drones hit UN building, residential area in Khartoum",
+      "time": "Nov 22, 20:26",
+      "text": "Democrats win largest House majority since 1992 after flipping North Carolina seat",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 20:23",
+      "text": "Jensen Huang’s reported affair was ‘most expensive sex since Helen of Troy’, US senator says",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 20:16",
+      "text": "Democrat Hubbard wins North Carolina recount, clinching historic House majority",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 21:07",
+      "text": "Germany tests Kamikaze drones and AI targeting technology in Lithuania",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 20:04",
+      "text": "Liverpool 4-0 Manchester United: Five key takeaways for Pochettino",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 19:41",
+      "text": "Russian warship hit by suspected Ukrainian drone at Benghazi naval base, Libyan officials say",
       "link": "live.html"
     }
   ],
