@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "just-wrong-british-right-distances-itself-from-trump-after"
+    "heroSlug": "briton-swims-length-of-strait-of-hormuz-to-highlight"
   },
   "breaking": {
-    "text": "‘Just wrong’: British right distances itself from Trump after Putin ‘friend’ post",
-    "link": "articles/just-wrong-british-right-distances-itself-from-trump-after.html"
+    "text": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
+    "link": "articles/briton-swims-length-of-strait-of-hormuz-to-highlight.html"
   },
   "articles": [
+    {
+      "slug": "briton-swims-length-of-strait-of-hormuz-to-highlight",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
+      "dek": "UN patron Lewis Pugh saw ships ablaze and fighter jets overhead during three-day swim as Iran conflict continues.",
+      "date": "November 22, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/nov/22/briton-lewis-pugh-swims-strait-of-hormuz-environment-war",
+      "body": [
+        "UN patron Lewis Pugh saw ships ablaze and fighter jets overhead during three-day swim as Iran conflict continues. A British endurance swimmer has completed a three-day swim through the strait of Hormuz to highlight the environmental cost of the Iran war."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/e6a395e17ba14aa21ecea678066783a153abb5d1/316_0_5000_4000/master/5000.jpg?width=700&quality=85&auto=format&fit=max&s=372b847909a417a76014f4c56e279b57",
+      "imageCaption": "Photo: The Guardian"
+    },
     {
       "slug": "just-wrong-british-right-distances-itself-from-trump-after",
       "sections": [
@@ -1505,6 +1524,36 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 22, 13:46",
+      "text": "NFL’s Jaylen Harrell hospitalised and investigated for assault in car crash",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 13:36",
+      "text": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 13:18",
+      "text": "COP31 climate talks end without consensus on how to fund vulnerable countries or move the world away from coal",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 13:16",
+      "text": "Saudi Arabia intercepts drone, missile as Houthis report attack on Sanaa",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 13:15",
+      "text": "Children in besieged Gaza struggle to find life-saving insulin for diabetes",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 12:54",
+      "text": "Cop31 climate talks break down as key deal rejected",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 22, 12:36",
       "text": "‘Just wrong’: British right distances itself from Trump after Putin ‘friend’ post",
       "link": "live.html"
@@ -1512,36 +1561,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 22, 12:31",
       "text": "US Congress helped end the Vietnam War. Can it stop the Iran war?",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 13:22",
-      "text": "Emergency workers recover at least six body bags after Indonesian factory fire",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 12:22",
-      "text": "Bruno Fernandes says contract talks on hold as Man United battle poor start",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 12:22",
-      "text": "COP31 ends without deal as EU rejects text for omitting mention of fossil fuels",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 12:19",
-      "text": "Israeli settlers attack several Palestinian villages in occupied West Bank",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 12:12",
-      "text": "South Korea education minister resigns after AI cheating scandal engulfs university exams",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 12:11",
-      "text": "Indonesia factory hit by deadly blaze: Three killed and 36 missing",
       "link": "live.html"
     }
   ],
