@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "slug": "netanyahu-rival-condemns-settler-arson-attacks-on",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Netanyahu rival condemns settler arson attacks on Palestinian villages in West Bank",
+      "dek": "Dozens of militant Israeli settlers raided communities on Saturday night, setting fire to vehicles and several homes .",
+      "date": "November 22, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/nov/22/netanyahu-rival-condemns-settler-arson-attacks-palestinian-villages-west-bank",
+      "body": [
+        "Dozens of militant Israeli settlers raided communities on Saturday night, setting fire to vehicles and several homes . Arson attacks by militant Israeli settlers on Palestinian villages in the occupied West Bank have caused a political row in Israel, drawing condemnation from Gadi Eisenkot, the opposition leader, who described them as “Jewish terrorism”."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/efe4dd70505bfcec6b5ab71dc65a3481bf1215d9/1004_0_6827_5464/master/6827.jpg?width=700&quality=85&auto=format&fit=max&s=02cd87d09d705f7a50460fa0fe12f59e",
+      "imageCaption": "Photo: The Guardian",
+      "auto": true
+    },
+    {
       "slug": "cop31-climate-talks-fail-after-eu-and-others-reject-final",
       "sections": [
         "europe",
@@ -1566,36 +1586,36 @@
   ],
   "justIn": [
     {
+      "time": "22 Nov, 16:34",
+      "text": "Autopsy report reveals: Baltic Sea whale 'Timmy' starved to death"
+    },
+    {
+      "time": "22 Nov, 16:27",
+      "text": "BepiColombo space probe enters Mercury's orbit after eight-year journey"
+    },
+    {
+      "time": "22 Nov, 15:22",
+      "text": "Netanyahu rival condemns settler arson attacks on Palestinian villages in West Bank"
+    },
+    {
+      "time": "22 Nov, 15:09",
+      "text": "Israel's Eisenkot condemns 'Jewish terrorism' in West Bank"
+    },
+    {
+      "time": "22 Nov, 15:03",
+      "text": "Drone attacks kill four near Sudan’s capital, damage UN building"
+    },
+    {
+      "time": "22 Nov, 14:48",
+      "text": "Zelenskyy urges US to release Patriot missiles as Russia kills 3 in Ukraine"
+    },
+    {
+      "time": "22 Nov, 14:35",
+      "text": "Why Bangladesh descended into violence ahead of Hasina’s planned return"
+    },
+    {
       "time": "22 Nov, 14:33",
       "text": "How El Chapo Isidro, alleged Mexican cartel leader, was captured"
-    },
-    {
-      "time": "22 Nov, 15:23",
-      "text": "COP31 climate talks fail after EU and others reject final deal proposal"
-    },
-    {
-      "time": "22 Nov, 14:22",
-      "text": "The week in pictures: Xi hosts Trump and Putin, COP31 and new French protests"
-    },
-    {
-      "time": "22 Nov, 14:20",
-      "text": "Iran unveils dual-missile launcher, new ‘missile city’: What to know"
-    },
-    {
-      "time": "22 Nov, 14:19",
-      "text": "RAF's next fighter jet could be last crewed combat plane, air chief says"
-    },
-    {
-      "time": "22 Nov, 14:18",
-      "text": "\"It can take years\": Why the AI Riemann proof is far from settled"
-    },
-    {
-      "time": "22 Nov, 14:05",
-      "text": "Three killed and dozens missing after fire at Indonesian factory"
-    },
-    {
-      "time": "22 Nov, 14:00",
-      "text": "Experts say ‘trusted messengers’ critical as Amish grapple with measles outbreak"
     }
   ],
   "liveUpdates": [
@@ -1657,9 +1677,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "cop31-climate-talks-fail-after-eu-and-others-reject-final",
+  "heroSlug": "netanyahu-rival-condemns-settler-arson-attacks-on",
   "breaking": {
-    "text": "COP31 climate talks fail after EU and others reject final deal proposal",
-    "link": "articles/cop31-climate-talks-fail-after-eu-and-others-reject-final.html"
+    "text": "Netanyahu rival condemns settler arson attacks on Palestinian villages in West Bank",
+    "link": "articles/netanyahu-rival-condemns-settler-arson-attacks-on.html"
   }
 }
