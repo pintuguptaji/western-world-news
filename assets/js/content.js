@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "lock-of-former-us-president-george-washington-s-hair-sells"
+    "heroSlug": "nigerian-youth-have-shown-their-power-in-the-past-why-aren"
   },
   "breaking": {
-    "text": "Lock of former US President George Washington's hair sells for $4,000",
-    "link": "articles/lock-of-former-us-president-george-washington-s-hair-sells.html"
+    "text": "Nigerian youth have shown their power in the past - why aren't they shaping this election?",
+    "link": "articles/nigerian-youth-have-shown-their-power-in-the-past-why-aren.html"
   },
   "articles": [
+    {
+      "slug": "nigerian-youth-have-shown-their-power-in-the-past-why-aren",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Nigerian youth have shown their power in the past - why aren't they shaping this election?",
+      "dek": "Fewer young people have registered to vote in next year's election than in 2023 - are young people losing faith in democracy?",
+      "date": "November 22, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck4g174n020eo",
+      "body": [
+        "Fewer young people have registered to vote in next year's election than in 2023 - are young people losing faith in democracy?"
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/abb2/live/99a82d30-e4e7-11f1-99a1-253766e7ad8b.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "lock-of-former-us-president-george-washington-s-hair-sells",
       "sections": [
@@ -1028,43 +1046,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 21, 23:31",
-      "text": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
+      "time": "Nov 22, 00:43",
+      "text": "Kate's 'road to recovery' and 'Brave princess'",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 22:41",
-      "text": "Man found dead on Flinders Island linked to shooting of police officer, Tasmanian authorities say",
+      "time": "Nov 22, 00:10",
+      "text": "FBI reportedly investigating apparent hack of its criminal database",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 22:19",
-      "text": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+      "time": "Nov 22, 00:10",
+      "text": "Nigerian youth have shown their power in the past - why aren't they shaping this election?",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 22:01",
-      "text": "Lock of former US President George Washington's hair sells for $4,000",
+      "time": "Nov 22, 00:09",
+      "text": "How a teen gamer and his mother helped rescue a missing girl",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 22:55",
-      "text": "Salvage operation under way after cargo ship runs aground off French coast",
+      "time": "Nov 22, 00:07",
+      "text": "Parents urged to spot online stalking warning signs as cases rise",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 21:39",
-      "text": "Spitting Image co-creator Peter Fluck dies aged 85",
+      "time": "Nov 22, 00:06",
+      "text": "From pit-stops to go-to destinations: The transformation of service stations",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 22:32",
-      "text": "Iran attacks US bases in Bahrain as its tankers get ready to break the US blockade",
+      "time": "Nov 22, 00:04",
+      "text": "Employers are being asked to give interview feedback - here's what applicants want",
       "link": "live.html"
     },
     {
-      "time": "Nov 21, 21:31",
-      "text": "Bahrain says Iranian attack causes fire at industrial facility",
+      "time": "Nov 22, 00:01",
+      "text": "Why Nicola Coughlan's new drama might leave viewers uncomfortable",
       "link": "live.html"
     }
   ],
