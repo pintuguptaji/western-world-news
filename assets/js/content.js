@@ -9,13 +9,136 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "china-asean-countries-struggle-over-south-china-sea-code-of"
+    "heroSlug": "trump-orders-contractors-to-notify-white-house-before-congress"
   },
   "breaking": {
-    "text": "China, ASEAN countries struggle over South China Sea code of conduct",
-    "link": "articles/china-asean-countries-struggle-over-south-china-sea-code-of.html"
+    "text": "Trump orders federal contractors to notify White House before giving Congress information",
+    "link": "articles/trump-orders-contractors-to-notify-white-house-before-congress.html"
   },
   "articles": [
+    {
+      "slug": "trump-orders-contractors-to-notify-white-house-before-congress",
+      "sections": [
+        "politics"
+      ],
+      "section": "politics",
+      "headline": "Trump orders federal contractors to notify White House before giving Congress information",
+      "dek": "The executive order requires companies with federal contracts to tell the White House about congressional requests and to withhold material the administration deems protected by executive privilege.",
+      "date": "November 22, 2026",
+      "source": "Reuters",
+      "source_url": "https://srnnews.com/trump-order-says-contractors-must-notify-white-house-of-congressional-probes/",
+      "body": [
+        "President Donald Trump signed an executive order on Friday that requires companies with federal contracts to alert the White House before they share information with Congress, and to withhold material the administration considers protected by executive privilege.",
+        "The order, titled 'Protecting the Executive's Privileges and Enhancing Efficiencies in Federal Contracting' and numbered Executive Order 14438, applies to federal contractors and their subcontractors. Under its 'notify first' rule, a contractor that receives a congressional request about its work for the executive branch must tell the White House and its contracting agency before it responds.",
+        "The order also says agencies must coordinate with the White House and contractors on responses to such requests, including the use of any relevant privileges, and that contractors must follow White House instructions to withhold communications protected by executive privilege. Companies that do not comply could face contract termination, cancellation, debarment or suspension, and the Office of Management and Budget is to issue guidance on how the order works in practice.",
+        "The order follows a directive from White House Counsel Will Scharf requiring agencies to get White House approval before their employees agree to testify before Congress. It comes as Democrats prepare to take control of Congress in January, and critics have described it as an attempt to limit congressional oversight, while the White House says it protects sensitive executive branch communications from being taken out of context."
+      ],
+      "related": [
+        "democrats-document-preservation",
+        "trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
+        "republican-senator-blocks-trump-cyber-nominee-over-january"
+      ],
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Donald_Trump_boards_on_the_South_Lawn_of_the_White_House_on_October_6%2C_2026_-_14.jpg/1280px-Donald_Trump_boards_on_the_South_Lawn_of_the_White_House_on_October_6%2C_2026_-_14.jpg",
+      "imageCaption": "President Donald Trump waves to guests on the South Lawn of the White House in October 2026. Photo: Wikimedia Commons (Public domain)"
+    },
+    {
+      "slug": "theresa-may-aghast-at-burnham-eu-plans-brexit-is-done",
+      "sections": [
+        "europe"
+      ],
+      "section": "europe",
+      "headline": "Theresa May 'aghast' at Burnham's EU plans and says 'Brexit is done'",
+      "dek": "The former prime minister told the BBC that reopening talks with the EU would mean years of fresh negotiations, and urged Andy Burnham to accept the referendum result and move on.",
+      "date": "November 22, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cvj6l8y3x1x4o",
+      "body": [
+        "Former prime minister Theresa May has said she is 'aghast' at Prime Minister Andy Burnham's plans for closer ties with the European Union, telling him that 'Brexit is done' and he should accept the result of the referendum and move on.",
+        "Speaking to the BBC's Laura Kuenssberg, Baroness May said reopening negotiations with the EU would take an enormous effort across the whole of government. 'What I saw was that the extent of those negotiations, the hours that have to be put in, it's across the whole of government,' she said. 'It's not just prime ministerial time, cabinet ministers' time, officials' time, to-ing and fro-ing on those negotiations.'",
+        "May, who was prime minister from 2016 to 2019 and spent three years negotiating Britain's exit deal, said Burnham was effectively telling voters they got the 2016 referendum wrong and should vote again. 'I almost think this is what Andy Burnham is saying to the British people, sort of patting them on the head,' she said. 'He wants to pat them on their head and say, you know what, remember that vote? Well, you got it wrong, didn't you? So have another go and come out with the right answer.'",
+        "Burnham said at a Brussels summit this week that he wanted to 'brainstorm' options for the future relationship between Britain and the EU, after agreeing a deal with the bloc. May said he should instead focus on the economic and security challenges facing the country today, rather than reopening the question of EU membership."
+      ],
+      "related": [
+        "misty-eyed-burnham-gambles-on-closer-ties-with-eu-as-he",
+        "eu-uk-reset-deal",
+        "thousands-protest-across-europe-demanding-better-wages-and"
+      ],
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Official_portrait_of_Baroness_May_of_Maidenhead_crop_2.jpg/1280px-Official_portrait_of_Baroness_May_of_Maidenhead_crop_2.jpg",
+      "imageCaption": "Former prime minister Theresa May, now Baroness May of Maidenhead. Photo: Wikimedia Commons (CC BY 3.0)"
+    },
+    {
+      "slug": "washington-governor-condemns-ice-arrests-at-seattle-airport",
+      "sections": [
+        "us"
+      ],
+      "section": "us",
+      "headline": "Washington governor condemns ICE arrests of travelers at Seattle airport",
+      "dek": "Two people were arrested on a jet bridge at Seattle-Tacoma airport as they boarded a flight to Los Angeles, and Governor Bob Ferguson called the operation out of control.",
+      "date": "November 22, 2026",
+      "source": "Reuters",
+      "source_url": "https://www.reuters.com/legal/litigation/washington-governor-union-denounce-ice-arrests-travelers-seattle-airport-2026-11-22/",
+      "body": [
+        "The governor of Washington state has denounced federal immigration authorities after officers arrested two people on a jet bridge at Seattle-Tacoma International Airport as they boarded a flight to Los Angeles.",
+        "The incident happened at around 8 a.m. local time on Saturday. Immigration and Customs Enforcement officers were carrying out an operation to arrest Ricardo Larrondo Mendoza, who the agency said had overstayed his visa. Officers also arrested a second person, Sofia Hernandez Mejia, who the agency said threw hot coffee at them. It said she had also overstayed her visa and would be charged with assaulting a federal officer.",
+        "'ICE is completely and totally out of control and today we are confronted with yet more evidence of this,' Governor Bob Ferguson, a Democrat, said at a news conference on Saturday. He described video of the incident circulating on social media as 'horrific' and 'chilling', and said he had told Alaska Airlines representatives that 'they need to call on ICE to get out of our airports.' He said he would make the same request of every other airline that flies out of the airport.",
+        "Alaska Airlines said it was 'concerned' by the federal action and had not been given advance notice of the enforcement operation. April Sims, president of the Washington State Labor Council, called the arrest a 'smash-and-grab' action that brought fear and chaos to one of the country's busiest airports during one of the busiest travel weeks of the year, days after widespread flight disruptions. Reuters said it could not identify lawyers for Mendoza or Mejia."
+      ],
+      "related": [
+        "florida-mechanic-found-guilty-of-murdering-british-woman",
+        "democrats-document-preservation",
+        "white-house-removes-cyber-security-chief-after-series-of"
+      ],
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Sea-Tac_Airport_International_Terminal_%28South_Satellite%29_aerial_view%2C_2016.jpg/1280px-Sea-Tac_Airport_International_Terminal_%28South_Satellite%29_aerial_view%2C_2016.jpg",
+      "imageCaption": "Seattle-Tacoma International Airport, where the arrests took place on Saturday. Photo: Wikimedia Commons (CC BY-SA 4.0)"
+    },
+    {
+      "slug": "eleven-killed-as-mexican-forces-capture-cartel-boss-el-chapo-isidro",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Eleven killed as Mexican forces capture cartel boss 'El Chapo Isidro'",
+      "dek": "Seven alleged cartel gunmen and four soldiers died in the overnight operation in Sinaloa, and Fausto Isidro Meza Flores was flown to Mexico City after his arrest.",
+      "date": "November 22, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/11/22/eleven-killed-in-burst-of-violence-during-mexican-cartel-leaders-capture",
+      "body": [
+        "At least 11 people were killed in a burst of violence in Mexico's Sinaloa state after the military captured cartel boss Fausto Isidro Meza Flores, known as 'El Chapo Isidro,' one of the FBI's 10 most wanted fugitives.",
+        "Mexico's Defense Ministry said on Saturday that seven alleged cartel gunmen and four Mexican soldiers were killed in the overnight operation. The firefight broke out at about 7 p.m. on Friday in the city of Guasave, and military helicopters flew over the city as gunmen set up roadblocks and set trucks and businesses on fire.",
+        "Meza Flores was captured with his second-in-command and the group's alleged financial operator, and eight people were detained in total. He was flown to Mexico City on Saturday. He rose through the ranks to lead the Beltran Leyva cartel and later became the boss of his own group, the Meza-Flores transnational criminal organization. The United States had offered a $5 million reward for information leading to his arrest, and he was wanted for trafficking drugs to the United States and illegally carrying firearms.",
+        "Mexico's government said in a report on Saturday that intelligence from the Trump administration helped authorities capture him, though it gave few details about how the two countries coordinated. Experts warned that removing cartel leaders can set off another wave of violence in a region already caught in a power struggle between rival factions fighting for control of the northern state."
+      ],
+      "related": [
+        "mexican-special-forces-arrest-drug-kingpin-chapo-isidro",
+        "iran-attacks-us-bases-in-bahrain-as-its-tankers-get-ready",
+        "anc-fights-to-keep-control-of-south-africa-s-key-cities"
+      ],
+      "image": "",
+      "imageCaption": ""
+    },
+    {
+      "slug": "verstappen-wins-las-vegas-grand-prix-as-ferraris-collide",
+      "sections": [
+        "sport"
+      ],
+      "section": "sport",
+      "headline": "Verstappen wins extraordinary Las Vegas Grand Prix as Ferraris collide",
+      "dek": "Max Verstappen won in Las Vegas for the third time in four years after a 50-lap race full of lead changes, while Ferrari teammates Lewis Hamilton and Charles Leclerc collided.",
+      "date": "November 22, 2026",
+      "source": "Reuters",
+      "source_url": "https://www.reuters.com/sports/formula1/verstappen-wins-las-vegas-third-time-four-years-2026-11-22/",
+      "body": [
+        "Max Verstappen won an extraordinary Las Vegas Grand Prix on Saturday, holding off a charging pack over 50 laps under the floodlights to win on the Strip for the third time in four years.",
+        "The lead changed hands again and again in a race shaped by a powerful slipstream that made it almost impossible for any driver to break away. Verstappen, who started on pole for Red Bull, beat McLaren's Lando Norris by 0.639 seconds, with Norris's teammate Oscar Piastri third. Kimi Antonelli finished fourth for Mercedes, and Pierre Gasly was fifth.",
+        "George Russell's challenge fell apart three laps from the end when he hit the barriers and finished ninth. The race was stopped for a time after Sergio Perez and Rafael Camara collided, bringing out the safety car while barriers were repaired.",
+        "Ferrari had a torrid evening. Lewis Hamilton and Charles Leclerc collided with each other, and both collected 10-second penalties for separate incidents. Leclerc spun Hamilton out at Turn 7 on lap 38 and was penalized for the collision, leaving Hamilton seventh and Leclerc 10th. Verstappen's fourth win in six races moved him 37 points clear of Hamilton in the championship, while Mercedes had already secured both titles and Antonelli became the youngest ever Formula One world champion earlier this month at the age of 20."
+      ],
+      "related": [
+        "nations-league-draw"
+      ],
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/2025_Japan_GP_-_Red_Bull_-_Max_Verstappen_-_Race.jpg/1280px-2025_Japan_GP_-_Red_Bull_-_Max_Verstappen_-_Race.jpg",
+      "imageCaption": "Max Verstappen racing for Red Bull at the 2025 Japanese Grand Prix. Photo: Wikimedia Commons (CC BY-SA 4.0)"
+    },
     {
       "slug": "china-asean-countries-struggle-over-south-china-sea-code-of",
       "sections": [
@@ -1159,43 +1282,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 22, 08:45",
+      "time": "Nov 22",
+      "text": "Trump orders federal contractors to notify White House before giving Congress information",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22",
+      "text": "Theresa May 'aghast' at Burnham's EU plans and says 'Brexit is done'",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22",
+      "text": "Washington governor condemns ICE arrests of travelers at Seattle airport",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22",
+      "text": "Eleven killed as Mexican forces capture cartel boss 'El Chapo Isidro'",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22",
+      "text": "Verstappen wins extraordinary Las Vegas Grand Prix as Ferraris collide",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22",
       "text": "China, ASEAN countries struggle over South China Sea code of conduct",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 08:39",
-      "text": "Inspired by Bernie Sanders: A German agency is using US-Style campaigning to boost the left in 2029",
+      "time": "Nov 22",
+      "text": "Gadi Eisenkot invites Netanyahu's Likud party for 'marathon' coalition talks",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 08:11",
-      "text": "Gukesh vs Sindarov: The youngest World Chess Championship in history",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 09:00",
-      "text": "Hot freezers, lost GPS and fake bombs: Europe's month of cyberattacks",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 08:00",
-      "text": "Highly lucrative: Bank of England directors illegally profited from post-abolition enslavement in Cuba",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 08:50",
-      "text": "New COP31 draft deal tabled as countries scramble to salvage climate talks",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 07:48",
-      "text": "Max Verstappen wins F1 Las Vegas Grand Prix for third time in four years",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 07:46",
-      "text": "Indonesia factory fire kills three, 36 missing",
+      "time": "Nov 22",
+      "text": "Displaced Darfur families face volatile winter as Sudan aid cuts bite",
       "link": "live.html"
     }
   ],
