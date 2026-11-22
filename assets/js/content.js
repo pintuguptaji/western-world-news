@@ -1675,6 +1675,26 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 22, 23:22",
+      "text": "Trump criticises Schumer amid push for new Democrat leadership in US Senate",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 22:49",
+      "text": "Burnham to tell MPs 'landmark' EU deal could make next decade 'much better'",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 22:37",
+      "text": "Trump to host private dinner for largest owners of his meme coin",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 22:25",
+      "text": "Boy, 7, pulled from rubble hours after Russian strike in Ukraine, rescuers say",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 22, 22:19",
       "text": "Democrats win largest House majority since 1992 with North Carolina seat",
       "link": "live.html"
@@ -1692,26 +1712,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 22, 21:46",
       "text": "Cop31 left Chris Bowen stuck between petrostates and climate reality. But the f-word failure is not his alone",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 21:33",
-      "text": "Russian warship sinks in Benghazi after suspected Ukrainian drone attack",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 21:33",
-      "text": "Netanyahu’s Likud, Eisenkot’s Yashar end coalition talks without deal",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 21:31",
-      "text": "Turkey: Thousands protest closure of critical media outlets",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 22:29",
-      "text": "Midterms: US Democrats secure biggest House majority in decades",
       "link": "live.html"
     }
   ],
