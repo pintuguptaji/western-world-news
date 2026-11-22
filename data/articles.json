@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "slug": "fossil-fuel-dispute-threatens-to-derail-cop31-climate-deal",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Fossil fuel dispute threatens to derail COP31 climate deal",
+      "dek": "The UN summit in Turkey enters second day of overtime as countries struggle to reach an agreement.",
+      "date": "November 22, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq7827z2841zo",
+      "body": [
+        "The UN summit in Turkey enters second day of overtime as countries struggle to reach an agreement."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/9b71/live/e0c68530-e61e-11f1-94c8-1db910b5b42e.jpg",
+      "imageCaption": "Photo: BBC",
+      "auto": true
+    },
+    {
       "slug": "displaced-palestinians-protest-as-israeli-air-strikes",
       "sections": [
         "war-conflict",
@@ -1097,6 +1116,18 @@
   ],
   "justIn": [
     {
+      "time": "22 Nov, 04:39",
+      "text": "BBC apologises for 'any offence caused' by Strictly noise disruption"
+    },
+    {
+      "time": "22 Nov, 03:58",
+      "text": "Fossil fuel dispute threatens to derail COP31 climate deal"
+    },
+    {
+      "time": "22 Nov, 03:34",
+      "text": "Eleven killed in burst of violence during Mexican cartel leader’s capture"
+    },
+    {
       "time": "22 Nov, 02:45",
       "text": "Overturned boat carrying mourners to funeral kills at least 24 in Nigeria"
     },
@@ -1115,18 +1146,6 @@
     {
       "time": "22 Nov, 01:25",
       "text": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out"
-    },
-    {
-      "time": "22 Nov, 01:00",
-      "text": "‘No time for a culture war’: Victoria’s electricity supply is at risk. Can it avoid power shortages and bill s"
-    },
-    {
-      "time": "22 Nov, 00:43",
-      "text": "Kate's 'road to recovery' and 'Brave princess'"
-    },
-    {
-      "time": "22 Nov, 00:26",
-      "text": "Fred Nile, former NSW politician and figurehead of the rightwing Christian Democratic party, dies aged 92"
     }
   ],
   "liveUpdates": [
@@ -1188,9 +1207,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "displaced-palestinians-protest-as-israeli-air-strikes",
+  "heroSlug": "fossil-fuel-dispute-threatens-to-derail-cop31-climate-deal",
   "breaking": {
-    "text": "Displaced Palestinians protest as Israeli air strikes continue in Gaza",
-    "link": "articles/displaced-palestinians-protest-as-israeli-air-strikes.html"
+    "text": "Fossil fuel dispute threatens to derail COP31 climate deal",
+    "link": "articles/fossil-fuel-dispute-threatens-to-derail-cop31-climate-deal.html"
   }
 }

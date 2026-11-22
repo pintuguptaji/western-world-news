@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "displaced-palestinians-protest-as-israeli-air-strikes"
+    "heroSlug": "fossil-fuel-dispute-threatens-to-derail-cop31-climate-deal"
   },
   "breaking": {
-    "text": "Displaced Palestinians protest as Israeli air strikes continue in Gaza",
-    "link": "articles/displaced-palestinians-protest-as-israeli-air-strikes.html"
+    "text": "Fossil fuel dispute threatens to derail COP31 climate deal",
+    "link": "articles/fossil-fuel-dispute-threatens-to-derail-cop31-climate-deal.html"
   },
   "articles": [
+    {
+      "slug": "fossil-fuel-dispute-threatens-to-derail-cop31-climate-deal",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Fossil fuel dispute threatens to derail COP31 climate deal",
+      "dek": "The UN summit in Turkey enters second day of overtime as countries struggle to reach an agreement.",
+      "date": "November 22, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq7827z2841zo",
+      "body": [
+        "The UN summit in Turkey enters second day of overtime as countries struggle to reach an agreement."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/9b71/live/e0c68530-e61e-11f1-94c8-1db910b5b42e.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "displaced-palestinians-protest-as-israeli-air-strikes",
       "sections": [
@@ -1084,6 +1102,21 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 22, 04:39",
+      "text": "BBC apologises for 'any offence caused' by Strictly noise disruption",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 03:58",
+      "text": "Fossil fuel dispute threatens to derail COP31 climate deal",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 03:34",
+      "text": "Eleven killed in burst of violence during Mexican cartel leader’s capture",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 22, 02:45",
       "text": "Overturned boat carrying mourners to funeral kills at least 24 in Nigeria",
       "link": "live.html"
@@ -1106,21 +1139,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 22, 01:25",
       "text": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 01:00",
-      "text": "‘No time for a culture war’: Victoria’s electricity supply is at risk. Can it avoid power shortages and bill s",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 00:43",
-      "text": "Kate's 'road to recovery' and 'Brave princess'",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 00:26",
-      "text": "Fred Nile, former NSW politician and figurehead of the rightwing Christian Democratic party, dies aged 92",
       "link": "live.html"
     }
   ],
