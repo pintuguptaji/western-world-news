@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "no-time-for-a-culture-war-victorias-electricity-supply-is"
+    "heroSlug": "displaced-palestinians-protest-as-israeli-air-strikes"
   },
   "breaking": {
-    "text": "‘No time for a culture war’: Victoria’s electricity supply is at risk. Can it avoid power shortages and bill s",
-    "link": "articles/no-time-for-a-culture-war-victorias-electricity-supply-is.html"
+    "text": "Displaced Palestinians protest as Israeli air strikes continue in Gaza",
+    "link": "articles/displaced-palestinians-protest-as-israeli-air-strikes.html"
   },
   "articles": [
+    {
+      "slug": "displaced-palestinians-protest-as-israeli-air-strikes",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Displaced Palestinians protest as Israeli air strikes continue in Gaza",
+      "dek": "Israeli forces continue to destroy residential buildings as part of a 'gradual displacement' policy, a Gaza mayor says.",
+      "date": "November 22, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/11/22/displaced-palestinians-protest-as-israeli-air-strikes-continue-in-gaza",
+      "body": [
+        "Israeli forces continue to destroy residential buildings as part of a 'gradual displacement' policy, a Gaza mayor says."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "no-time-for-a-culture-war-victorias-electricity-supply-is",
       "sections": [
@@ -1065,6 +1084,26 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 22, 02:45",
+      "text": "Overturned boat carrying mourners to funeral kills at least 24 in Nigeria",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 02:44",
+      "text": "Man found dead on Flinders Island believed to have been shot by officer, police say",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 02:14",
+      "text": "Displaced Palestinians protest as Israeli air strikes continue in Gaza",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 02:08",
+      "text": "Victorian Greens win injunction over how-to-vote cards mimicking party’s branding but preferencing it last",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 22, 01:25",
       "text": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
       "link": "live.html"
@@ -1082,26 +1121,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 22, 00:26",
       "text": "Fred Nile, former NSW politician and figurehead of the rightwing Christian Democratic party, dies aged 92",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 00:10",
-      "text": "FBI reportedly investigating apparent hack of its criminal database",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 00:10",
-      "text": "Nigerian youth have shown their power in the past - why aren't they shaping this election?",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 00:09",
-      "text": "How a teen gamer and his mother helped rescue a missing girl",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 00:07",
-      "text": "Parents urged to spot online stalking warning signs as cases rise",
       "link": "live.html"
     }
   ],
