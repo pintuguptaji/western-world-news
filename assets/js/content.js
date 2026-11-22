@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "hakeem-jeffries-willing-to-cross-political-aisle-to-work-on"
+    "heroSlug": "russian-warship-hit-by-suspected-ukrainian-drone-at"
   },
   "breaking": {
-    "text": "Hakeem Jeffries willing to cross political aisle to work on Democrats’ agenda",
-    "link": "articles/hakeem-jeffries-willing-to-cross-political-aisle-to-work-on.html"
+    "text": "Russian warship hit by suspected Ukrainian drone at Benghazi naval base, Libyan officials say",
+    "link": "articles/russian-warship-hit-by-suspected-ukrainian-drone-at.html"
   },
   "articles": [
+    {
+      "slug": "russian-warship-hit-by-suspected-ukrainian-drone-at",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Russian warship hit by suspected Ukrainian drone at Benghazi naval base, Libyan officials say",
+      "dek": "A Russian navy corvette docked at the Benghazi naval base ​in eastern Libya was hit on Sunday by a suspected Ukrainian sea drone, according to local officials.",
+      "date": "November 22, 2026",
+      "source": "France 24",
+      "source_url": "https://www.france24.com/en/africa/20261122-russian-warship-hit-by-suspected-ukrainian-drone-at-libya-s-benghazi-naval-base",
+      "body": [
+        "A Russian navy corvette docked at the Benghazi naval base ​in eastern Libya was hit on Sunday by a suspected Ukrainian sea drone, according to local officials. The strike severely damaged the warship and ignited a fire at the facility in what appeared to be the latest attack in Libya linked to the Russia-Ukraine war."
+      ],
+      "related": [],
+      "image": "https://s.france24.com/media/display/659e3cc8-e6a9-11f1-ae55-1bac47ab2f5d/w:1024/p:16x9/AP26326649718247.jpg",
+      "imageCaption": "Photo: France 24"
+    },
     {
       "slug": "hakeem-jeffries-willing-to-cross-political-aisle-to-work-on",
       "sections": [
@@ -1618,43 +1637,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 22, 18:25",
-      "text": "Hakeem Jeffries willing to cross political aisle to work on Democrats’ agenda",
+      "time": "Nov 22, 19:41",
+      "text": "Russian warship hit by suspected Ukrainian drone at Benghazi naval base, Libyan officials say",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 18:17",
-      "text": "COP31 climate talks fail to reach major deal amid deep divisions",
+      "time": "Nov 22, 19:37",
+      "text": "Burnham, 'Brejoin' & the Ghosts of Brexit",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 19:07",
-      "text": "Tanker incident “involving military forces” reported in Strait of Hormuz",
+      "time": "Nov 22, 20:35",
+      "text": "Marc Márquez wins eighth MotoGP title in Portugal, surpassing Rossi's record",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 18:00",
-      "text": "Virginia reports first measles-linked death of 2026 in child younger than 5",
+      "time": "Nov 22, 20:35",
+      "text": "French interior ministry rocked by probe into prefect's leaks to National Rally",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 17:55",
-      "text": "Two groups verify mathematician’s claim that Claude helped prove mathematics problem",
+      "time": "Nov 22, 19:34",
+      "text": "Jensen Huang’s reported affair was ‘most expensive sex since Helen of Troy’, US senator says",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 17:47",
-      "text": "Le Pen denies receiving leaked information from French interior ministry official",
+      "time": "Nov 22, 20:28",
+      "text": "Polls put Spain's PP ahead of PSOE a week before November 29 election",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 17:18",
-      "text": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 22, 17:16",
+      "time": "Nov 22, 19:26",
       "text": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 22, 19:25",
+      "text": "Sudan: Drones hit UN building, residential area in Khartoum",
       "link": "live.html"
     }
   ],
