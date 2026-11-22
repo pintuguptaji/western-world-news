@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "trump-vows-to-work-with-democrats-to-cap-credit-card-interest"
+    "heroSlug": "14-people-missing-after-russian-drone-strike-on-kyiv-region"
   },
   "breaking": {
-    "text": "Trump vows to work with Democrats to cap credit card interest at 10%",
-    "link": "articles/trump-vows-to-work-with-democrats-to-cap-credit-card-interest.html"
+    "text": "14 people missing after Russian drone strike on Kyiv region",
+    "link": "articles/14-people-missing-after-russian-drone-strike-on-kyiv-region.html"
   },
   "articles": [
+    {
+      "slug": "14-people-missing-after-russian-drone-strike-on-kyiv-region",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "14 people missing after Russian drone strike on Kyiv region",
+      "dek": "Timur Tkachenko, the head of the Kyiv Regional Military Administration, said the body of one person had been recovered from the rubble and that three people had been injured.",
+      "date": "November 22, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/22/14-people-missing-after-russian-drone-strike-on-kyiv-region",
+      "body": [
+        "Timur Tkachenko, the head of the Kyiv Regional Military Administration, said the body of one person had been recovered from the rubble and that three people had been injured."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/32/58/696x392_cmsv2_bda95ddb-450a-51a2-ad8a-c9b1d73df349-10003258.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "trump-vows-to-work-with-democrats-to-cap-credit-card-interest",
       "sections": [
@@ -1467,43 +1486,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 22",
-      "text": "Trump vows to work with Democrats to cap credit card interest at 10%",
+      "time": "Nov 22, 11:30",
+      "text": "Bayern Munich bosses under fire over Jamal Musiala comments",
       "link": "live.html"
     },
     {
-      "time": "Nov 22",
-      "text": "At least 24 dead as boat carrying funeral mourners capsizes in Nigeria",
+      "time": "Nov 22, 11:25",
+      "text": "Russia-bound ship still on fire after attack in Gulf of Finland",
       "link": "live.html"
     },
     {
-      "time": "Nov 22",
-      "text": "Pentagon moves to restrict defense ties with Canada in classified memo",
+      "time": "Nov 22, 12:20",
+      "text": "14 people missing after Russian drone strike on Kyiv region",
       "link": "live.html"
     },
     {
-      "time": "Nov 22",
-      "text": "Former Italian police chief found dead",
+      "time": "Nov 22, 11:07",
+      "text": "Messi throws ball in opponent’s face, avoids red card as Inter Miami lose",
       "link": "live.html"
     },
     {
-      "time": "Nov 22",
-      "text": "Europe sees new protests over rising costs, inequality and public services",
+      "time": "Nov 22, 11:00",
+      "text": "UK-EU food deal hailed by British firms: ‘We’re pretty aligned anyway’",
       "link": "live.html"
     },
     {
-      "time": "Nov 22",
-      "text": "FBI investigates apparent hack of its national crime database",
+      "time": "Nov 22, 12:00",
+      "text": "Mongolia faces snap presidential vote as outgoing leader calls for constitutional reform",
       "link": "live.html"
     },
     {
-      "time": "Nov 22",
-      "text": "Russian cargo ship still on fire off Finland after drone strike",
+      "time": "Nov 22, 10:44",
+      "text": "Theresa May 'aghast' at Burnham's EU plans and says 'Brexit is done'",
       "link": "live.html"
     },
     {
-      "time": "Nov 22",
-      "text": "COP31 final draft drops fossil fuels and admits 1.5C overshoot",
+      "time": "Nov 22, 10:39",
+      "text": "Russian cargo ship still on fire off Finland after drone attack",
       "link": "live.html"
     }
   ],
