@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "eu-goes-after-russia-s-banks-soldiers-and-athletes-in-new"
+    "heroSlug": "deeply-shocked-gisele-pelicot-to-sue-publisher-after-nude"
   },
   "breaking": {
-    "text": "EU goes after Russia's banks, soldiers and athletes in new sanctions package",
-    "link": "articles/eu-goes-after-russia-s-banks-soldiers-and-athletes-in-new.html"
+    "text": "'Deeply shocked': Gisèle Pelicot to sue publisher after nude photos used in book campaign",
+    "link": "articles/deeply-shocked-gisele-pelicot-to-sue-publisher-after-nude.html"
   },
   "articles": [
+    {
+      "slug": "deeply-shocked-gisele-pelicot-to-sue-publisher-after-nude",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "'Deeply shocked': Gisèle Pelicot to sue publisher after nude photos used in book campaign",
+      "dek": "French feminist icon Gisèle Pelicot, who became a worldwide symbol against sexual violence during the 2024 rape trials against her husband and dozens of other men, said Monday she will take legal action after nude images of her were sent.",
+      "date": "November 23, 2026",
+      "source": "France 24",
+      "source_url": "https://www.france24.com/en/france/20261123-deeply-shocked-gis%C3%A8le-pelicot-sue-publisher-nude-photos-used-book-campaign",
+      "body": [
+        "French feminist icon Gisèle Pelicot, who became a worldwide symbol against sexual violence during the 2024 rape trials against her husband and dozens of other men, said Monday she will take legal action after nude images of her were sent out without her permission to publicise a psychoanalyst's book on coercive control."
+      ],
+      "related": [],
+      "image": "https://s.france24.com/media/display/dc823ac4-e758-11f1-96c6-13439ca2fe89/w:1024/p:16x9/000-D8DK8WE.jpg",
+      "imageCaption": "Photo: France 24"
+    },
     {
       "slug": "eu-goes-after-russia-s-banks-soldiers-and-athletes-in-new",
       "sections": [
@@ -1861,43 +1880,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 23, 16:06",
-      "text": "Jury out in train stabbing attempted murder trial",
+      "time": "Nov 23, 17:52",
+      "text": "'Deeply shocked': Gisèle Pelicot to sue publisher after nude photos used in book campaign",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 17:03",
-      "text": "EU goes after Russia's banks, soldiers and athletes in new sanctions package",
+      "time": "Nov 23, 17:36",
+      "text": "Tajikistan moves to leave ICC amid US push against court",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 16:58",
-      "text": "Finland summons Russian ambassador as it condemns Russia's 'dangerous and reckless actions' in Europe",
+      "time": "Nov 23, 18:35",
+      "text": "No, Greenland isn't being handed over to Trump. But what exactly has Washington secured?",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 15:57",
-      "text": "After Japan's APEC snub, what's next for its China ties?",
+      "time": "Nov 23, 17:27",
+      "text": "Abolishing Natural England would be travesty, say campaigners",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 15:50",
-      "text": "Iran's courts order US to pay $290 billion in damages",
+      "time": "Nov 23, 17:27",
+      "text": "Jensen Huang reinstated as Nvidia CEO",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 15:49",
-      "text": "The rise and fall and rise again of Jensen Huang",
+      "time": "Nov 23, 17:24",
+      "text": "What failure of COP31 reveals about a divided world",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 15:41",
-      "text": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
+      "time": "Nov 23, 17:24",
+      "text": "Teenage girl stabbed multiple times by 14-year-old boy, murder trial told",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 15:40",
-      "text": "Behind COP31 failure: A showdown over fossil fuel interests",
+      "time": "Nov 23, 18:23",
+      "text": "United Kingdom to host 2035 Women's World Cup, FIFA confirms",
       "link": "live.html"
     }
   ],
