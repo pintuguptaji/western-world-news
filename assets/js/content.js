@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "longest-ever-un-climate-talks-end-with-no-deal-as-deep"
+    "heroSlug": "sanctions-summits-and-strikes-the-war-in-ukraine-shows-no"
   },
   "breaking": {
-    "text": "Longest-ever UN climate talks end with no deal as deep divisions exposed",
-    "link": "articles/longest-ever-un-climate-talks-end-with-no-deal-as-deep.html"
+    "text": "Sanctions, summits and strikes: The war in Ukraine shows no sign of slowing",
+    "link": "articles/sanctions-summits-and-strikes-the-war-in-ukraine-shows-no.html"
   },
   "articles": [
+    {
+      "slug": "sanctions-summits-and-strikes-the-war-in-ukraine-shows-no",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Sanctions, summits and strikes: The war in Ukraine shows no sign of slowing",
+      "dek": "Good morning. Leo Cendrowicz here, bringing you the Monday newsletter.",
+      "date": "November 23, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/23/sanctions-summits-and-strikes-the-war-in-ukraine-shows-no-sign-of-slowing",
+      "body": [
+        "Good morning. Leo Cendrowicz here, bringing you the Monday newsletter."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/37/25/696x392_cmsv2_b61d1d5c-2bdb-586f-be92-5a37e32ca1c5-10003725.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "longest-ever-un-climate-talks-end-with-no-deal-as-deep",
       "sections": [
@@ -1748,43 +1767,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 23, 05:15",
-      "text": "Longest-ever UN climate talks end with no deal as deep divisions exposed",
+      "time": "Nov 23, 08:26",
+      "text": "Sanctions, summits and strikes: The war in Ukraine shows no sign of slowing",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 06:00",
-      "text": "Who is Gevorg Tamamyan, the youngest candidate to lead the WHO?",
+      "time": "Nov 23, 08:24",
+      "text": "Champs-Élysées launch Christmas lights season and revive Paris Christmas market",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 06:00",
-      "text": "Nine people injured after gunfire at central California concert",
+      "time": "Nov 23, 07:19",
+      "text": "MotoGP maestro Marquez makes history with eighth premier-class world title",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 04:44",
-      "text": "Boy, 7, pulled alive from rubble hours after Russian strike on Ukraine, rescuers say",
+      "time": "Nov 23, 08:15",
+      "text": "Can Europe's data centres go green? Ask the Euronews AI chatbot",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 04:34",
-      "text": "Love made a fool of Beau Lamarre-Condon but did not make him a murderer, defense argues",
+      "time": "Nov 23, 08:08",
+      "text": "Portugal joins Europe's top 10 for tech investment on back of Tekever funding round",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 04:21",
-      "text": "Manchester's Co-op Live evacuated after 'unknown substance' let off in crowd",
+      "time": "Nov 23, 07:07",
+      "text": "India-Pakistan cricket fans want ‘dirty politics’ kept out of beloved sport",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 04:21",
-      "text": "‘Difficult geopolitical times’: Albanese defends Bowen after Cop31 deal failure",
+      "time": "Nov 23, 07:01",
+      "text": "Burnham to tell MPs 'landmark' EU deal could make next decade 'much better'",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 04:17",
-      "text": "Unemployment to surpass 5% and ‘things will get a bit harder’, treasurer Jim Chalmers warns",
+      "time": "Nov 23, 08:01",
+      "text": "Europe Today: COP31 talks collapsed over omission of fossil fuels",
       "link": "live.html"
     }
   ],
