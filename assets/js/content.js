@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "sanctions-summits-and-strikes-the-war-in-ukraine-shows-no"
+    "heroSlug": "gta-6-breaks-sales-records-as-trump-administration-co-opt"
   },
   "breaking": {
-    "text": "Sanctions, summits and strikes: The war in Ukraine shows no sign of slowing",
-    "link": "articles/sanctions-summits-and-strikes-the-war-in-ukraine-shows-no.html"
+    "text": "GTA 6 breaks sales records as Trump administration co-opt game and get ridiculed online",
+    "link": "articles/gta-6-breaks-sales-records-as-trump-administration-co-opt.html"
   },
   "articles": [
+    {
+      "slug": "gta-6-breaks-sales-records-as-trump-administration-co-opt",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "GTA 6 breaks sales records as Trump administration co-opt game and get ridiculed online",
+      "dek": "The release of the video game Grand Theft Auto VI has already broken all records.. and led the Trump administration to hijack the cultural moment via AI-generated posts.",
+      "date": "November 23, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/23/gta-6-breaks-sales-records-as-trump-administration-co-opt-game-and-get-ridiculed-online",
+      "body": [
+        "The release of the video game Grand Theft Auto VI has already broken all records.. and led the Trump administration to hijack the cultural moment via AI-generated posts."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/41/43/696x392_cmsv2_5e01936a-d41f-5d39-b432-7b53075c430d-10004143.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "sanctions-summits-and-strikes-the-war-in-ukraine-shows-no",
       "sections": [
@@ -1767,43 +1786,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 23, 08:26",
-      "text": "Sanctions, summits and strikes: The war in Ukraine shows no sign of slowing",
+      "time": "Nov 23, 10:19",
+      "text": "GTA 6 breaks sales records as Trump administration co-opt game and get ridiculed online",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 08:24",
-      "text": "Champs-Élysées launch Christmas lights season and revive Paris Christmas market",
+      "time": "Nov 23, 09:12",
+      "text": "Pip assessments need 'fundamental overhaul', report to say",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 07:19",
-      "text": "MotoGP maestro Marquez makes history with eighth premier-class world title",
+      "time": "Nov 23, 09:09",
+      "text": "Manchester's Co-op Live evacuated after 'unknown substance' let off in crowd",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 08:15",
-      "text": "Can Europe's data centres go green? Ask the Euronews AI chatbot",
+      "time": "Nov 23, 10:06",
+      "text": "Germany restaurant owner plans women's shifts around menstrual cycles",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 08:08",
-      "text": "Portugal joins Europe's top 10 for tech investment on back of Tekever funding round",
+      "time": "Nov 23, 09:04",
+      "text": "How we formed a friendship to blend our families",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 07:07",
-      "text": "India-Pakistan cricket fans want ‘dirty politics’ kept out of beloved sport",
+      "time": "Nov 23, 08:53",
+      "text": "Widowed amid war and displacement: Sudanese mothers struggle to survive",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 07:01",
+      "time": "Nov 23, 08:53",
+      "text": "Kenya and DR Congo agree to restore ties after tensions over conflict",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 08:41",
       "text": "Burnham to tell MPs 'landmark' EU deal could make next decade 'much better'",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 08:01",
-      "text": "Europe Today: COP31 talks collapsed over omission of fossil fuels",
       "link": "live.html"
     }
   ],
