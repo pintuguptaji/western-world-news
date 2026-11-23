@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "i-want-to-destroy-capitalism-not-france-on-the-streets-with"
+    "heroSlug": "robotaxis-and-stock-exchanges-why-bolt-s-ceo-says-europe-is"
   },
   "breaking": {
-    "text": "'I want to destroy capitalism, not France': On the streets with the French ultra left",
-    "link": "articles/i-want-to-destroy-capitalism-not-france-on-the-streets-with.html"
+    "text": "Robotaxis and stock exchanges: Why Bolt's CEO says Europe is way behind",
+    "link": "articles/robotaxis-and-stock-exchanges-why-bolt-s-ceo-says-europe-is.html"
   },
   "articles": [
+    {
+      "slug": "robotaxis-and-stock-exchanges-why-bolt-s-ceo-says-europe-is",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Robotaxis and stock exchanges: Why Bolt's CEO says Europe is way behind",
+      "dek": "Bolt’s CEO spoke to Euronews about the company’s future IPO plans, why he believes Europe is falling behind, and whether the US could offer a more attractive market. He also shared his vision for the future of autonomous vehicles.",
+      "date": "November 23, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/23/robotaxis-and-stock-exchanges-why-bolts-ceo-says-europe-is-way-behind",
+      "body": [
+        "Bolt’s CEO spoke to Euronews about the company’s future IPO plans, why he believes Europe is falling behind, and whether the US could offer a more attractive market. He also shared his vision for the future of autonomous vehicles."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/09/99/83/88/696x392_cmsv2_4ce3d2af-65b2-5222-a865-7d924d30bd59-9998388.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "i-want-to-destroy-capitalism-not-france-on-the-streets-with",
       "sections": [
@@ -1823,43 +1842,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 23, 13:09",
-      "text": "'I want to destroy capitalism, not France': On the streets with the French ultra left",
+      "time": "Nov 23, 15:55",
+      "text": "Robotaxis and stock exchanges: Why Bolt's CEO says Europe is way behind",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 14:09",
-      "text": "Hungary's PM to visit Transcarpathia, pledges support to Ukrainian people and local Hungarians",
+      "time": "Nov 23, 14:54",
+      "text": "Mexican soldiers attacked in wake of drug lord's arrest",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 13:03",
-      "text": "A reset for climate diplomacy?",
+      "time": "Nov 23, 14:49",
+      "text": "Nepal's new PM eyes closer ties with India amid lingering disputes",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 13:02",
-      "text": "Democrats win largest House majority since 1992 after flipping North Carolina seat",
+      "time": "Nov 23, 14:42",
+      "text": "US rapper Don Toliver postpones O2 arena show after Manchester evacuation",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 12:58",
-      "text": "'Friends were sceptical but it works for us': How to get along with your ex's previous and new partners",
+      "time": "Nov 23, 14:39",
+      "text": "Dhaka bursting at the seams: Bangladeshi capital faces public health, housing crisis",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 13:52",
-      "text": "CrowdStrike buys Zscaler in €40 billion cybersecurity deal",
+      "time": "Nov 23, 15:39",
+      "text": "At least 24 people killed in Indonesia factory fire, police say",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 13:43",
-      "text": "EU opens antitrust probe into Coca-Cola's European distributor",
+      "time": "Nov 23, 14:34",
+      "text": "Nine people shot at central California concert with one in critical condition",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 12:42",
-      "text": "Police investigate unknown substance that caused Manchester's Co-op Live evacuation",
+      "time": "Nov 23, 14:32",
+      "text": "Amtrak train derails after colliding with tractor-trailer in Louisiana",
       "link": "live.html"
     }
   ],
