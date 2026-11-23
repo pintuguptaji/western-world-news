@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "tajikistan-follows-us-call-withdraws-from-icc"
+    "heroSlug": "israel-seeks-to-jail-palestinian-student-activist-without"
   },
   "breaking": {
-    "text": "Tajikistan follows US call, withdraws from ICC",
-    "link": "articles/tajikistan-follows-us-call-withdraws-from-icc.html"
+    "text": "Israel seeks to jail Palestinian student activist without trial after dorm arrest",
+    "link": "articles/israel-seeks-to-jail-palestinian-student-activist-without.html"
   },
   "articles": [
+    {
+      "slug": "israel-seeks-to-jail-palestinian-student-activist-without",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Israel seeks to jail Palestinian student activist without trial after dorm arrest",
+      "dek": "Mahdi Tounsi appeared with visible bruising after being interrogated by police on his association with Israeli-Palestinian organisations.",
+      "date": "November 23, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/nov/23/student-arrest-racist-campaign-israel-palestine-benjamin-netanyahu",
+      "body": [
+        "Mahdi Tounsi appeared with visible bruising after being interrogated by police on his association with Israeli-Palestinian organisations. Israeli professors, students and rights activists are calling for the immediate release of Mahdi Tounsi, a sociology student at Jerusalem’s Hebrew University who has been held without charge for more than two weeks after he was seized from his dorm room."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/3b697e211fd94382a4c76bc1361873d607c3ea2d/0_41_1200_960/master/1200.jpg?width=700&quality=85&auto=format&fit=max&s=ee95f67836c53353ebe83916accdea4b",
+      "imageCaption": "Photo: The Guardian"
+    },
     {
       "slug": "tajikistan-follows-us-call-withdraws-from-icc",
       "sections": [
@@ -1899,43 +1918,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 23, 19:42",
-      "text": "'Don't waste those talents': GTA VI hacker released on license",
+      "time": "Nov 23, 19:48",
+      "text": "Israel seeks to jail Palestinian student activist without trial after dorm arrest",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 18:40",
-      "text": "Tajikistan follows US call, withdraws from ICC",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 19:29",
-      "text": "Iran carries out flogging of singer who performed without hijab",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 18:23",
+      "time": "Nov 23, 19:47",
       "text": "US rapper Don Toliver postpones O2 arena show after Manchester evacuation",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 18:20",
-      "text": "Former prince Andrew was paid £750,000 in hope of helping Turkish woman with passport, high court told",
+      "time": "Nov 23, 19:43",
+      "text": "As tech outages mount, some New Yorkers prepare for the worst",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 18:12",
-      "text": "India pledges $1.6bn in flood relief for Nepal as Balendra Shah visits Modi",
+      "time": "Nov 23, 19:42",
+      "text": "Trump defers to appeals court over army plan to detonate bomb-making material in Iowa",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 18:04",
-      "text": "Iranian authorities flog singer who performed without hijab, lawyers say",
+      "time": "Nov 23, 19:36",
+      "text": "Andrew Mountbatten-Windsor received £750,000 from Turkish millionaire, court told",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 18:00",
-      "text": "Danish top court’s ‘ghetto law’ ruling supports hardline immigration policy",
+      "time": "Nov 23, 19:26",
+      "text": "Burnham says it would be ‘unthinkable’ to rejoin EU without referendum",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 19:20",
+      "text": "Russia threatens ‘hostile’ Estonia with ‘open war’",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 19:10",
+      "text": "My approach to EU is pragmatic, says Burnham",
       "link": "live.html"
     }
   ],
