@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "who-chief-calls-for-peace-amid-heavy-fighting-in-ebola-hit"
+    "heroSlug": "video-of-ice-detaining-father-and-daughter-while-boarding"
   },
   "breaking": {
-    "text": "WHO chief calls for peace amid heavy fighting in Ebola-hit DR Congo region",
-    "link": "articles/who-chief-calls-for-peace-amid-heavy-fighting-in-ebola-hit.html"
+    "text": "Video of ICE detaining father and daughter while boarding flight sparks protests in Seattle",
+    "link": "articles/video-of-ice-detaining-father-and-daughter-while-boarding.html"
   },
   "articles": [
+    {
+      "slug": "video-of-ice-detaining-father-and-daughter-while-boarding",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Video of ICE detaining father and daughter while boarding flight sparks protests in Seattle",
+      "dek": "Footage of Saturday incident, filmed by fellow passengers, quickly went viral on social media as mayor calls tactics ‘un-American’.",
+      "date": "November 23, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/us-news/2026/nov/23/father-daughter-ice-arrests-video-sparks-protests-seattle-airport",
+      "body": [
+        "Footage of Saturday incident, filmed by fellow passengers, quickly went viral on social media as mayor calls tactics ‘un-American’. Protesters marched through the Seattle-Tacoma international airport on Sunday after widely shared footage captured masked immigration agents detaining a father and daughter on an airport jet bridge as they boarded their Alaska Airlines flight."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/97c8d10c9aa99e4620ecf17b447bec64df7ce184/58_0_909_727/master/909.jpg?width=700&quality=85&auto=format&fit=max&s=9cc0c9ce357e71bb1e8ea2f5e34d969f",
+      "imageCaption": "Photo: The Guardian"
+    },
     {
       "slug": "who-chief-calls-for-peace-amid-heavy-fighting-in-ebola-hit",
       "sections": [
@@ -1693,43 +1711,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 23, 00:50",
-      "text": "COP31 fails to reach major climate deal as talks expose deep divisions",
+      "time": "Nov 23, 02:38",
+      "text": "Video of ICE detaining father and daughter while boarding flight sparks protests in Seattle",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 00:49",
-      "text": "Can AI spot breast cancer earlier? NHS launches world's largest trial to find out",
+      "time": "Nov 23, 02:37",
+      "text": "Boy, 7, pulled alive from rubble hours after Russian strike on Ukraine, rescuers say",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 00:39",
-      "text": "WHO chief calls for peace amid heavy fighting in Ebola-hit DR Congo region",
+      "time": "Nov 23, 02:35",
+      "text": "Indonesian police remove 24 body bags from factory fire site",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 00:33",
-      "text": "Italian jeweller and businessman Paolo Bulgari dies aged 89",
+      "time": "Nov 23, 02:24",
+      "text": "The Papers: 'Complete COP-out' and Tyson Fury's 'torment'",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 00:22",
-      "text": "What is going on with Poundland?",
+      "time": "Nov 23, 02:23",
+      "text": "US intelligence chief defends Trump’s comments calling Putin his ‘friend’",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 00:18",
-      "text": "South Korea’s stock market tumbles as AI bubble fears mount",
+      "time": "Nov 23, 02:15",
+      "text": "Thousands rally in Istanbul against Turkey’s crackdown on opposition and media",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 00:03",
-      "text": "Cameroon’s ex-rebels caught between hiding and broken promises",
+      "time": "Nov 23, 02:09",
+      "text": "‘Extremely concerning’: Inside a US Army plan to detonate Iowa lead stores",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 23:59",
-      "text": "Iran war live: Tankers set ablaze in Hormuz as IRGC warns of unrest threat",
+      "time": "Nov 23, 02:07",
+      "text": "Manchester Co-op Live evacuated after suspected tear gas incident",
       "link": "live.html"
     }
   ],
