@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "gta-6-breaks-sales-records-as-trump-administration-co-opt"
+    "heroSlug": "schools-across-german-receive-bomb-threats-by-email-in"
   },
   "breaking": {
-    "text": "GTA 6 breaks sales records as Trump administration co-opt game and get ridiculed online",
-    "link": "articles/gta-6-breaks-sales-records-as-trump-administration-co-opt.html"
+    "text": "Schools across German receive bomb threats by email in similar pattern seen in other European countries",
+    "link": "articles/schools-across-german-receive-bomb-threats-by-email-in.html"
   },
   "articles": [
+    {
+      "slug": "schools-across-german-receive-bomb-threats-by-email-in",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Schools across German receive bomb threats by email in similar pattern seen in other European countries",
+      "dek": "Police in Germany are responding to bomb threats against a series of schools, but say that at present they don't believe them to be credible. Danish authorities are reporting a similar series of apparent hoaxes.",
+      "date": "November 23, 2026",
+      "source": "DW",
+      "source_url": "https://www.dw.com/en/schools-across-german-receive-bomb-threats-by-email-in-similar-pattern-seen-in-other-european-countries/a-80018842",
+      "body": [
+        "Police in Germany are responding to bomb threats against a series of schools, but say that at present they don't believe them to be credible. Danish authorities are reporting a similar series of apparent hoaxes."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "gta-6-breaks-sales-records-as-trump-administration-co-opt",
       "sections": [
@@ -1786,43 +1805,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 23, 10:19",
-      "text": "GTA 6 breaks sales records as Trump administration co-opt game and get ridiculed online",
+      "time": "Nov 23, 11:01",
+      "text": "Schools across German receive bomb threats by email in similar pattern seen in other European countries",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 09:12",
-      "text": "Pip assessments need 'fundamental overhaul', report to say",
+      "time": "Nov 23, 11:59",
+      "text": "Belgian unions lead protest against austerity policies as government's future hangs in balance",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 09:09",
-      "text": "Manchester's Co-op Live evacuated after 'unknown substance' let off in crowd",
+      "time": "Nov 23, 10:58",
+      "text": "'I've Lost Her Forever', Why German voice actors are refusing to sign Netflix's AI contract",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 10:06",
-      "text": "Germany restaurant owner plans women's shifts around menstrual cycles",
+      "time": "Nov 23, 10:55",
+      "text": "'On the verge of collapse': Germany's budget cuts threaten anti-racism and democracy work",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 09:04",
-      "text": "How we formed a friendship to blend our families",
+      "time": "Nov 23, 10:54",
+      "text": "Police investigate unknown substance that caused Manchester's Co-Op Live evacuation",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 08:53",
-      "text": "Widowed amid war and displacement: Sudanese mothers struggle to survive",
+      "time": "Nov 23, 10:54",
+      "text": "Papers discuss James Bond's soft power and the next Bond girl",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 08:53",
-      "text": "Kenya and DR Congo agree to restore ties after tensions over conflict",
+      "time": "Nov 23, 10:52",
+      "text": "Chamonix mayor plans tourist limits for Alpine beauty spot",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 08:41",
-      "text": "Burnham to tell MPs 'landmark' EU deal could make next decade 'much better'",
+      "time": "Nov 23, 10:51",
+      "text": "NHS caterer Compass ‘plans stock market switch’ in blow to London",
       "link": "live.html"
     }
   ],
