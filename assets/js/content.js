@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "video-of-ice-detaining-father-and-daughter-while-boarding"
+    "heroSlug": "belgiums-airports-set-to-shut-down-due-to-anti-austerity"
   },
   "breaking": {
-    "text": "Video of ICE detaining father and daughter while boarding flight sparks protests in Seattle",
-    "link": "articles/video-of-ice-detaining-father-and-daughter-while-boarding.html"
+    "text": "Belgium’s airports set to shut down due to anti-austerity strike",
+    "link": "articles/belgiums-airports-set-to-shut-down-due-to-anti-austerity.html"
   },
   "articles": [
+    {
+      "slug": "belgiums-airports-set-to-shut-down-due-to-anti-austerity",
+      "sections": [
+        "business-finance",
+        "world"
+      ],
+      "section": "business-finance",
+      "headline": "Belgium’s airports set to shut down due to anti-austerity strike",
+      "dek": "Skeyes halts air traffic control services, grounding flights at Belgian airports amid union-led strike.",
+      "date": "November 23, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/11/23/belgiums-airports-set-to-shut-down-due-to-anti-austerity-strike",
+      "body": [
+        "Skeyes halts air traffic control services, grounding flights at Belgian airports amid union-led strike."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "video-of-ice-detaining-father-and-daughter-while-boarding",
       "sections": [
@@ -1711,6 +1730,26 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 23, 03:51",
+      "text": "Manchester's Co-op Live evacuated after 'unknown substance' let off in crowd",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 03:15",
+      "text": "Belgium’s airports set to shut down due to anti-austerity strike",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 03:07",
+      "text": "Beau Lamarre-Condon acted like a ‘poorly behaved boyfriend’ before alleged double murders, defense argues",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 02:59",
+      "text": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 23, 02:38",
       "text": "Video of ICE detaining father and daughter while boarding flight sparks protests in Seattle",
       "link": "live.html"
@@ -1728,26 +1767,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 23, 02:24",
       "text": "The Papers: 'Complete COP-out' and Tyson Fury's 'torment'",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 02:23",
-      "text": "US intelligence chief defends Trump’s comments calling Putin his ‘friend’",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 02:15",
-      "text": "Thousands rally in Istanbul against Turkey’s crackdown on opposition and media",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 02:09",
-      "text": "‘Extremely concerning’: Inside a US Army plan to detonate Iowa lead stores",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 02:07",
-      "text": "Manchester Co-op Live evacuated after suspected tear gas incident",
       "link": "live.html"
     }
   ],
