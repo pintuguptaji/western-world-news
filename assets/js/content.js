@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "belgiums-airports-set-to-shut-down-due-to-anti-austerity"
+    "heroSlug": "longest-ever-un-climate-talks-end-with-no-deal-as-deep"
   },
   "breaking": {
-    "text": "Belgium’s airports set to shut down due to anti-austerity strike",
-    "link": "articles/belgiums-airports-set-to-shut-down-due-to-anti-austerity.html"
+    "text": "Longest-ever UN climate talks end with no deal as deep divisions exposed",
+    "link": "articles/longest-ever-un-climate-talks-end-with-no-deal-as-deep.html"
   },
   "articles": [
+    {
+      "slug": "longest-ever-un-climate-talks-end-with-no-deal-as-deep",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Longest-ever UN climate talks end with no deal as deep divisions exposed",
+      "dek": "The prime minister Australia, which co-hosted COP31, attributed the failure to \"difficult geopolitical times\".",
+      "date": "November 23, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqwy06zrd26lo",
+      "body": [
+        "The prime minister Australia, which co-hosted COP31, attributed the failure to \"difficult geopolitical times\"."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/ffb0/live/d31e6e50-e6fc-11f1-9d32-695d6c00481f.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "belgiums-airports-set-to-shut-down-due-to-anti-austerity",
       "sections": [
@@ -1730,43 +1748,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 23, 03:51",
-      "text": "Manchester's Co-op Live evacuated after 'unknown substance' let off in crowd",
+      "time": "Nov 23, 05:15",
+      "text": "Longest-ever UN climate talks end with no deal as deep divisions exposed",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 03:15",
-      "text": "Belgium’s airports set to shut down due to anti-austerity strike",
+      "time": "Nov 23, 06:00",
+      "text": "Who is Gevorg Tamamyan, the youngest candidate to lead the WHO?",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 03:07",
-      "text": "Beau Lamarre-Condon acted like a ‘poorly behaved boyfriend’ before alleged double murders, defense argues",
+      "time": "Nov 23, 06:00",
+      "text": "Nine people injured after gunfire at central California concert",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 02:59",
-      "text": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 02:38",
-      "text": "Video of ICE detaining father and daughter while boarding flight sparks protests in Seattle",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 02:37",
+      "time": "Nov 23, 04:44",
       "text": "Boy, 7, pulled alive from rubble hours after Russian strike on Ukraine, rescuers say",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 02:35",
-      "text": "Indonesian police remove 24 body bags from factory fire site",
+      "time": "Nov 23, 04:34",
+      "text": "Love made a fool of Beau Lamarre-Condon but did not make him a murderer, defense argues",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 02:24",
-      "text": "The Papers: 'Complete COP-out' and Tyson Fury's 'torment'",
+      "time": "Nov 23, 04:21",
+      "text": "Manchester's Co-op Live evacuated after 'unknown substance' let off in crowd",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 04:21",
+      "text": "‘Difficult geopolitical times’: Albanese defends Bowen after Cop31 deal failure",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 04:17",
+      "text": "Unemployment to surpass 5% and ‘things will get a bit harder’, treasurer Jim Chalmers warns",
       "link": "live.html"
     }
   ],

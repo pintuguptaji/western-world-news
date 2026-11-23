@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "slug": "longest-ever-un-climate-talks-end-with-no-deal-as-deep",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Longest-ever UN climate talks end with no deal as deep divisions exposed",
+      "dek": "The prime minister Australia, which co-hosted COP31, attributed the failure to \"difficult geopolitical times\".",
+      "date": "November 23, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqwy06zrd26lo",
+      "body": [
+        "The prime minister Australia, which co-hosted COP31, attributed the failure to \"difficult geopolitical times\"."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/ffb0/live/d31e6e50-e6fc-11f1-9d32-695d6c00481f.jpg",
+      "imageCaption": "Photo: BBC",
+      "auto": true
+    },
+    {
       "slug": "belgiums-airports-set-to-shut-down-due-to-anti-austerity",
       "sections": [
         "business-finance",
@@ -1763,36 +1782,36 @@
   ],
   "justIn": [
     {
-      "time": "23 Nov, 03:51",
-      "text": "Manchester's Co-op Live evacuated after 'unknown substance' let off in crowd"
+      "time": "23 Nov, 05:15",
+      "text": "Longest-ever UN climate talks end with no deal as deep divisions exposed"
     },
     {
-      "time": "23 Nov, 03:15",
-      "text": "Belgium’s airports set to shut down due to anti-austerity strike"
+      "time": "23 Nov, 06:00",
+      "text": "Who is Gevorg Tamamyan, the youngest candidate to lead the WHO?"
     },
     {
-      "time": "23 Nov, 03:07",
-      "text": "Beau Lamarre-Condon acted like a ‘poorly behaved boyfriend’ before alleged double murders, defense argues"
+      "time": "23 Nov, 06:00",
+      "text": "Nine people injured after gunfire at central California concert"
     },
     {
-      "time": "23 Nov, 02:59",
-      "text": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say"
-    },
-    {
-      "time": "23 Nov, 02:38",
-      "text": "Video of ICE detaining father and daughter while boarding flight sparks protests in Seattle"
-    },
-    {
-      "time": "23 Nov, 02:37",
+      "time": "23 Nov, 04:44",
       "text": "Boy, 7, pulled alive from rubble hours after Russian strike on Ukraine, rescuers say"
     },
     {
-      "time": "23 Nov, 02:35",
-      "text": "Indonesian police remove 24 body bags from factory fire site"
+      "time": "23 Nov, 04:34",
+      "text": "Love made a fool of Beau Lamarre-Condon but did not make him a murderer, defense argues"
     },
     {
-      "time": "23 Nov, 02:24",
-      "text": "The Papers: 'Complete COP-out' and Tyson Fury's 'torment'"
+      "time": "23 Nov, 04:21",
+      "text": "Manchester's Co-op Live evacuated after 'unknown substance' let off in crowd"
+    },
+    {
+      "time": "23 Nov, 04:21",
+      "text": "‘Difficult geopolitical times’: Albanese defends Bowen after Cop31 deal failure"
+    },
+    {
+      "time": "23 Nov, 04:17",
+      "text": "Unemployment to surpass 5% and ‘things will get a bit harder’, treasurer Jim Chalmers warns"
     }
   ],
   "liveUpdates": [
@@ -1854,9 +1873,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "belgiums-airports-set-to-shut-down-due-to-anti-austerity",
+  "heroSlug": "longest-ever-un-climate-talks-end-with-no-deal-as-deep",
   "breaking": {
-    "text": "Belgium’s airports set to shut down due to anti-austerity strike",
-    "link": "articles/belgiums-airports-set-to-shut-down-due-to-anti-austerity.html"
+    "text": "Longest-ever UN climate talks end with no deal as deep divisions exposed",
+    "link": "articles/longest-ever-un-climate-talks-end-with-no-deal-as-deep.html"
   }
 }
