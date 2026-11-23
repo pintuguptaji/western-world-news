@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "israel-seeks-to-jail-palestinian-student-activist-without"
+    "heroSlug": "us-escalates-sanctions-on-iran-targets-shadow-banking"
   },
   "breaking": {
-    "text": "Israel seeks to jail Palestinian student activist without trial after dorm arrest",
-    "link": "articles/israel-seeks-to-jail-palestinian-student-activist-without.html"
+    "text": "US escalates sanctions on Iran, targets ‘shadow banking’ networks",
+    "link": "articles/us-escalates-sanctions-on-iran-targets-shadow-banking.html"
   },
   "articles": [
+    {
+      "slug": "us-escalates-sanctions-on-iran-targets-shadow-banking",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "US escalates sanctions on Iran, targets ‘shadow banking’ networks",
+      "dek": "US Treasury sanctions over two dozen Iranian entities, citing efforts to disrupt Tehran's global financial activities.",
+      "date": "November 23, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/11/23/us-escalates-sanctions-on-iran-targets-shadow-banking-networks",
+      "body": [
+        "US Treasury sanctions over two dozen Iranian entities, citing efforts to disrupt Tehran's global financial activities."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "israel-seeks-to-jail-palestinian-student-activist-without",
       "sections": [
@@ -1918,43 +1937,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 23, 19:48",
-      "text": "Israel seeks to jail Palestinian student activist without trial after dorm arrest",
+      "time": "Nov 23, 21:30",
+      "text": "US escalates sanctions on Iran, targets ‘shadow banking’ networks",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 19:47",
-      "text": "US rapper Don Toliver postpones O2 arena show after Manchester evacuation",
+      "time": "Nov 23, 22:18",
+      "text": "German-Ukrainian interceptor shoots down Russian jet-powered drone, company says",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 19:43",
-      "text": "As tech outages mount, some New Yorkers prepare for the worst",
+      "time": "Nov 23, 21:15",
+      "text": "US states sue SpaceX over Grok AI’s creation of child sexual abuse material",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 19:42",
-      "text": "Trump defers to appeals court over army plan to detonate bomb-making material in Iowa",
+      "time": "Nov 23, 21:09",
+      "text": "Republican senators criticize Nvidia’s decision to reinstate Jensen Huang",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 19:36",
-      "text": "Andrew Mountbatten-Windsor received £750,000 from Turkish millionaire, court told",
+      "time": "Nov 23, 21:04",
+      "text": "Republican sheriff racked up $3m security bill for California taxpayers, including Ritz-Carlton stays and stea",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 19:26",
-      "text": "Burnham says it would be ‘unthinkable’ to rejoin EU without referendum",
+      "time": "Nov 23, 21:03",
+      "text": "UK sanctions top Myanmar military leaders after Rohingya genocide ruling",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 19:20",
-      "text": "Russia threatens ‘hostile’ Estonia with ‘open war’",
+      "time": "Nov 23, 21:02",
+      "text": "US drug prices leave patients facing impossible choices",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 19:10",
-      "text": "My approach to EU is pragmatic, says Burnham",
+      "time": "Nov 23, 20:49",
+      "text": "US rapper Don Toliver postpones two arena shows after Manchester evacuation",
       "link": "live.html"
     }
   ],
