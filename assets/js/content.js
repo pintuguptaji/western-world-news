@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "deeply-shocked-gisele-pelicot-to-sue-publisher-after-nude"
+    "heroSlug": "tajikistan-follows-us-call-withdraws-from-icc"
   },
   "breaking": {
-    "text": "'Deeply shocked': Gisèle Pelicot to sue publisher after nude photos used in book campaign",
-    "link": "articles/deeply-shocked-gisele-pelicot-to-sue-publisher-after-nude.html"
+    "text": "Tajikistan follows US call, withdraws from ICC",
+    "link": "articles/tajikistan-follows-us-call-withdraws-from-icc.html"
   },
   "articles": [
+    {
+      "slug": "tajikistan-follows-us-call-withdraws-from-icc",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "Tajikistan follows US call, withdraws from ICC",
+      "dek": "Tajikistan has initiated its withdrawal from the International Criminal Court as the US calls for it to be \"dismantled.\" The decision was made during a recent visit from Russian President Vladimir Putin.",
+      "date": "November 23, 2026",
+      "source": "DW",
+      "source_url": "https://www.dw.com/en/tajikistan-follows-us-call-withdraws-from-icc/a-80023903",
+      "body": [
+        "Tajikistan has initiated its withdrawal from the International Criminal Court as the US calls for it to be \"dismantled.\" The decision was made during a recent visit from Russian President Vladimir Putin."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "deeply-shocked-gisele-pelicot-to-sue-publisher-after-nude",
       "sections": [
@@ -1880,43 +1899,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 23, 17:52",
-      "text": "'Deeply shocked': Gisèle Pelicot to sue publisher after nude photos used in book campaign",
+      "time": "Nov 23, 19:42",
+      "text": "'Don't waste those talents': GTA VI hacker released on license",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 17:36",
-      "text": "Tajikistan moves to leave ICC amid US push against court",
+      "time": "Nov 23, 18:40",
+      "text": "Tajikistan follows US call, withdraws from ICC",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 18:35",
-      "text": "No, Greenland isn't being handed over to Trump. But what exactly has Washington secured?",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 17:27",
-      "text": "Abolishing Natural England would be travesty, say campaigners",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 17:27",
-      "text": "Jensen Huang reinstated as Nvidia CEO",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 17:24",
-      "text": "What failure of COP31 reveals about a divided world",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 17:24",
-      "text": "Teenage girl stabbed multiple times by 14-year-old boy, murder trial told",
+      "time": "Nov 23, 19:29",
+      "text": "Iran carries out flogging of singer who performed without hijab",
       "link": "live.html"
     },
     {
       "time": "Nov 23, 18:23",
-      "text": "United Kingdom to host 2035 Women's World Cup, FIFA confirms",
+      "text": "US rapper Don Toliver postpones O2 arena show after Manchester evacuation",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 18:20",
+      "text": "Former prince Andrew was paid £750,000 in hope of helping Turkish woman with passport, high court told",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 18:12",
+      "text": "India pledges $1.6bn in flood relief for Nepal as Balendra Shah visits Modi",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 18:04",
+      "text": "Iranian authorities flog singer who performed without hijab, lawyers say",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 18:00",
+      "text": "Danish top court’s ‘ghetto law’ ruling supports hardline immigration policy",
       "link": "live.html"
     }
   ],
