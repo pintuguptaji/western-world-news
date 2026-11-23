@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "schools-across-german-receive-bomb-threats-by-email-in"
+    "heroSlug": "i-want-to-destroy-capitalism-not-france-on-the-streets-with"
   },
   "breaking": {
-    "text": "Schools across German receive bomb threats by email in similar pattern seen in other European countries",
-    "link": "articles/schools-across-german-receive-bomb-threats-by-email-in.html"
+    "text": "'I want to destroy capitalism, not France': On the streets with the French ultra left",
+    "link": "articles/i-want-to-destroy-capitalism-not-france-on-the-streets-with.html"
   },
   "articles": [
+    {
+      "slug": "i-want-to-destroy-capitalism-not-france-on-the-streets-with",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "'I want to destroy capitalism, not France': On the streets with the French ultra left",
+      "dek": "The BBC meets the far-left protesters French President Emmanuel Macron says are trying to bring down the Republic.",
+      "date": "November 23, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cw074km48myeo",
+      "body": [
+        "The BBC meets the far-left protesters French President Emmanuel Macron says are trying to bring down the Republic."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/87ae/live/24717fd0-e73f-11f1-802a-678be58471bb.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "schools-across-german-receive-bomb-threats-by-email-in",
       "sections": [
@@ -1805,43 +1823,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 23, 11:01",
-      "text": "Schools across German receive bomb threats by email in similar pattern seen in other European countries",
+      "time": "Nov 23, 13:09",
+      "text": "'I want to destroy capitalism, not France': On the streets with the French ultra left",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 11:59",
-      "text": "Belgian unions lead protest against austerity policies as government's future hangs in balance",
+      "time": "Nov 23, 14:09",
+      "text": "Hungary's PM to visit Transcarpathia, pledges support to Ukrainian people and local Hungarians",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 10:58",
-      "text": "'I've Lost Her Forever', Why German voice actors are refusing to sign Netflix's AI contract",
+      "time": "Nov 23, 13:03",
+      "text": "A reset for climate diplomacy?",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 10:55",
-      "text": "'On the verge of collapse': Germany's budget cuts threaten anti-racism and democracy work",
+      "time": "Nov 23, 13:02",
+      "text": "Democrats win largest House majority since 1992 after flipping North Carolina seat",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 10:54",
-      "text": "Police investigate unknown substance that caused Manchester's Co-Op Live evacuation",
+      "time": "Nov 23, 12:58",
+      "text": "'Friends were sceptical but it works for us': How to get along with your ex's previous and new partners",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 10:54",
-      "text": "Papers discuss James Bond's soft power and the next Bond girl",
+      "time": "Nov 23, 13:52",
+      "text": "CrowdStrike buys Zscaler in €40 billion cybersecurity deal",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 10:52",
-      "text": "Chamonix mayor plans tourist limits for Alpine beauty spot",
+      "time": "Nov 23, 13:43",
+      "text": "EU opens antitrust probe into Coca-Cola's European distributor",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 10:51",
-      "text": "NHS caterer Compass ‘plans stock market switch’ in blow to London",
+      "time": "Nov 23, 12:42",
+      "text": "Police investigate unknown substance that caused Manchester's Co-op Live evacuation",
       "link": "live.html"
     }
   ],
