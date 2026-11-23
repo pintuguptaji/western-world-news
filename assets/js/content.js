@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "robotaxis-and-stock-exchanges-why-bolt-s-ceo-says-europe-is"
+    "heroSlug": "eu-goes-after-russia-s-banks-soldiers-and-athletes-in-new"
   },
   "breaking": {
-    "text": "Robotaxis and stock exchanges: Why Bolt's CEO says Europe is way behind",
-    "link": "articles/robotaxis-and-stock-exchanges-why-bolt-s-ceo-says-europe-is.html"
+    "text": "EU goes after Russia's banks, soldiers and athletes in new sanctions package",
+    "link": "articles/eu-goes-after-russia-s-banks-soldiers-and-athletes-in-new.html"
   },
   "articles": [
+    {
+      "slug": "eu-goes-after-russia-s-banks-soldiers-and-athletes-in-new",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "EU goes after Russia's banks, soldiers and athletes in new sanctions package",
+      "dek": "Russian banks, crypto, \"shadow fleet\", oil refineries, soldiers and athletes are all targeted in the latest sanctions package proposed by Brussels.",
+      "date": "November 23, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/23/eu-goes-after-russias-banks-soldiers-and-athletes-in-new-sanctions-package",
+      "body": [
+        "Russian banks, crypto, \"shadow fleet\", oil refineries, soldiers and athletes are all targeted in the latest sanctions package proposed by Brussels."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/43/22/696x392_cmsv2_6062d2c8-9a48-5562-a080-5f2ad24d6507-10004322.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "robotaxis-and-stock-exchanges-why-bolt-s-ceo-says-europe-is",
       "sections": [
@@ -1842,43 +1861,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 23, 15:55",
-      "text": "Robotaxis and stock exchanges: Why Bolt's CEO says Europe is way behind",
+      "time": "Nov 23, 16:06",
+      "text": "Jury out in train stabbing attempted murder trial",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 14:54",
-      "text": "Mexican soldiers attacked in wake of drug lord's arrest",
+      "time": "Nov 23, 17:03",
+      "text": "EU goes after Russia's banks, soldiers and athletes in new sanctions package",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 14:49",
-      "text": "Nepal's new PM eyes closer ties with India amid lingering disputes",
+      "time": "Nov 23, 16:58",
+      "text": "Finland summons Russian ambassador as it condemns Russia's 'dangerous and reckless actions' in Europe",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 14:42",
-      "text": "US rapper Don Toliver postpones O2 arena show after Manchester evacuation",
+      "time": "Nov 23, 15:57",
+      "text": "After Japan's APEC snub, what's next for its China ties?",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 14:39",
-      "text": "Dhaka bursting at the seams: Bangladeshi capital faces public health, housing crisis",
+      "time": "Nov 23, 15:50",
+      "text": "Iran's courts order US to pay $290 billion in damages",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 15:39",
-      "text": "At least 24 people killed in Indonesia factory fire, police say",
+      "time": "Nov 23, 15:49",
+      "text": "The rise and fall and rise again of Jensen Huang",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 14:34",
-      "text": "Nine people shot at central California concert with one in critical condition",
+      "time": "Nov 23, 15:41",
+      "text": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 14:32",
-      "text": "Amtrak train derails after colliding with tractor-trailer in Louisiana",
+      "time": "Nov 23, 15:40",
+      "text": "Behind COP31 failure: A showdown over fossil fuel interests",
       "link": "live.html"
     }
   ],
