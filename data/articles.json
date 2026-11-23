@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "slug": "who-chief-calls-for-peace-amid-heavy-fighting-in-ebola-hit",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "WHO chief calls for peace amid heavy fighting in Ebola-hit DR Congo region",
+      "dek": "Fighting near a DRC hospital disrupts Ebola efforts, putting patients and workers at 'grave risk', WHO warns.",
+      "date": "November 23, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/11/23/who-chief-calls-for-peace-amid-heavy-fighting-in-ebola-hit-dr-congo-region",
+      "body": [
+        "Fighting near a DRC hospital disrupts Ebola efforts, putting patients and workers at 'grave risk', WHO warns."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": "",
+      "auto": true
+    },
+    {
       "slug": "turkey-thousands-protest-closure-of-critical-media-outlets",
       "sections": [
         "europe",
@@ -1705,36 +1724,36 @@
   ],
   "justIn": [
     {
-      "time": "22 Nov, 23:22",
-      "text": "Trump criticises Schumer amid push for new Democrat leadership in US Senate"
+      "time": "23 Nov, 00:50",
+      "text": "COP31 fails to reach major climate deal as talks expose deep divisions"
     },
     {
-      "time": "22 Nov, 22:49",
-      "text": "Burnham to tell MPs 'landmark' EU deal could make next decade 'much better'"
+      "time": "23 Nov, 00:49",
+      "text": "Can AI spot breast cancer earlier? NHS launches world's largest trial to find out"
     },
     {
-      "time": "22 Nov, 22:37",
-      "text": "Trump to host private dinner for largest owners of his meme coin"
+      "time": "23 Nov, 00:39",
+      "text": "WHO chief calls for peace amid heavy fighting in Ebola-hit DR Congo region"
     },
     {
-      "time": "22 Nov, 22:25",
-      "text": "Boy, 7, pulled from rubble hours after Russian strike in Ukraine, rescuers say"
+      "time": "23 Nov, 00:33",
+      "text": "Italian jeweller and businessman Paolo Bulgari dies aged 89"
     },
     {
-      "time": "22 Nov, 22:19",
-      "text": "Democrats win largest House majority since 1992 with North Carolina seat"
+      "time": "23 Nov, 00:22",
+      "text": "What is going on with Poundland?"
     },
     {
-      "time": "22 Nov, 22:01",
-      "text": "Abdul El-Sayed doubles down on ‘TrumpCare’ health plan, urging president to ‘get it done’"
+      "time": "23 Nov, 00:18",
+      "text": "South Korea’s stock market tumbles as AI bubble fears mount"
     },
     {
-      "time": "22 Nov, 22:00",
-      "text": "Theresa May’s blast from the past calls Tories back to their unhappy place | Peter Walker"
+      "time": "23 Nov, 00:03",
+      "text": "Cameroon’s ex-rebels caught between hiding and broken promises"
     },
     {
-      "time": "22 Nov, 21:46",
-      "text": "Cop31 left Chris Bowen stuck between petrostates and climate reality. But the f-word failure is not his alone"
+      "time": "22 Nov, 23:59",
+      "text": "Iran war live: Tankers set ablaze in Hormuz as IRGC warns of unrest threat"
     }
   ],
   "liveUpdates": [
@@ -1796,9 +1815,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "turkey-thousands-protest-closure-of-critical-media-outlets",
+  "heroSlug": "who-chief-calls-for-peace-amid-heavy-fighting-in-ebola-hit",
   "breaking": {
-    "text": "Turkey: Thousands protest closure of critical media outlets",
-    "link": "articles/turkey-thousands-protest-closure-of-critical-media-outlets.html"
+    "text": "WHO chief calls for peace amid heavy fighting in Ebola-hit DR Congo region",
+    "link": "articles/who-chief-calls-for-peace-amid-heavy-fighting-in-ebola-hit.html"
   }
 }

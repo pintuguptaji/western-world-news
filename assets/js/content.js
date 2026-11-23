@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "turkey-thousands-protest-closure-of-critical-media-outlets"
+    "heroSlug": "who-chief-calls-for-peace-amid-heavy-fighting-in-ebola-hit"
   },
   "breaking": {
-    "text": "Turkey: Thousands protest closure of critical media outlets",
-    "link": "articles/turkey-thousands-protest-closure-of-critical-media-outlets.html"
+    "text": "WHO chief calls for peace amid heavy fighting in Ebola-hit DR Congo region",
+    "link": "articles/who-chief-calls-for-peace-amid-heavy-fighting-in-ebola-hit.html"
   },
   "articles": [
+    {
+      "slug": "who-chief-calls-for-peace-amid-heavy-fighting-in-ebola-hit",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "WHO chief calls for peace amid heavy fighting in Ebola-hit DR Congo region",
+      "dek": "Fighting near a DRC hospital disrupts Ebola efforts, putting patients and workers at 'grave risk', WHO warns.",
+      "date": "November 23, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/11/23/who-chief-calls-for-peace-amid-heavy-fighting-in-ebola-hit-dr-congo-region",
+      "body": [
+        "Fighting near a DRC hospital disrupts Ebola efforts, putting patients and workers at 'grave risk', WHO warns."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "turkey-thousands-protest-closure-of-critical-media-outlets",
       "sections": [
@@ -1675,43 +1693,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 22, 23:22",
-      "text": "Trump criticises Schumer amid push for new Democrat leadership in US Senate",
+      "time": "Nov 23, 00:50",
+      "text": "COP31 fails to reach major climate deal as talks expose deep divisions",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 22:49",
-      "text": "Burnham to tell MPs 'landmark' EU deal could make next decade 'much better'",
+      "time": "Nov 23, 00:49",
+      "text": "Can AI spot breast cancer earlier? NHS launches world's largest trial to find out",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 22:37",
-      "text": "Trump to host private dinner for largest owners of his meme coin",
+      "time": "Nov 23, 00:39",
+      "text": "WHO chief calls for peace amid heavy fighting in Ebola-hit DR Congo region",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 22:25",
-      "text": "Boy, 7, pulled from rubble hours after Russian strike in Ukraine, rescuers say",
+      "time": "Nov 23, 00:33",
+      "text": "Italian jeweller and businessman Paolo Bulgari dies aged 89",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 22:19",
-      "text": "Democrats win largest House majority since 1992 with North Carolina seat",
+      "time": "Nov 23, 00:22",
+      "text": "What is going on with Poundland?",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 22:01",
-      "text": "Abdul El-Sayed doubles down on ‘TrumpCare’ health plan, urging president to ‘get it done’",
+      "time": "Nov 23, 00:18",
+      "text": "South Korea’s stock market tumbles as AI bubble fears mount",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 22:00",
-      "text": "Theresa May’s blast from the past calls Tories back to their unhappy place | Peter Walker",
+      "time": "Nov 23, 00:03",
+      "text": "Cameroon’s ex-rebels caught between hiding and broken promises",
       "link": "live.html"
     },
     {
-      "time": "Nov 22, 21:46",
-      "text": "Cop31 left Chris Bowen stuck between petrostates and climate reality. But the f-word failure is not his alone",
+      "time": "Nov 22, 23:59",
+      "text": "Iran war live: Tankers set ablaze in Hormuz as IRGC warns of unrest threat",
       "link": "live.html"
     }
   ],
