@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "us-escalates-sanctions-on-iran-targets-shadow-banking"
+    "heroSlug": "us-to-blacklist-asian-ai-firm-megaspeed-after-nvidia-scandal"
   },
   "breaking": {
-    "text": "US escalates sanctions on Iran, targets ‘shadow banking’ networks",
-    "link": "articles/us-escalates-sanctions-on-iran-targets-shadow-banking.html"
+    "text": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
+    "link": "articles/us-to-blacklist-asian-ai-firm-megaspeed-after-nvidia-scandal.html"
   },
   "articles": [
+    {
+      "slug": "us-to-blacklist-asian-ai-firm-megaspeed-after-nvidia-scandal",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
+      "dek": "Megaspeed has been accused of funneling AI chips to China after a former executive's affair with Jensen Huang became public.",
+      "date": "November 23, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo",
+      "body": [
+        "Megaspeed has been accused of funneling AI chips to China after a former executive's affair with Jensen Huang became public."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/4a66/live/7c413f70-e78a-11f1-a5c2-c57ab9df3111.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "us-escalates-sanctions-on-iran-targets-shadow-banking",
       "sections": [
@@ -1937,43 +1956,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 23, 22:45",
+      "text": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 23:43",
+      "text": "Visegrád Four leaders voice concerns over EU budget proposal",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 22:35",
+      "text": "US adds Megaspeed, at center of Nvidia scandal, to a trade blacklist",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 22:23",
+      "text": "Jensen Huang reinstated as Nvidia CEO after Trump intervenes",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 22:22",
+      "text": "Trump defers to appeals court over army plan to detonate bomb-making material in Iowa",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 22:21",
+      "text": "Jimmy Gomez to resign after House ethics panel finds evidence of sexual misconduct",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 23, 21:30",
       "text": "US escalates sanctions on Iran, targets ‘shadow banking’ networks",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 22:18",
-      "text": "German-Ukrainian interceptor shoots down Russian jet-powered drone, company says",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 21:15",
-      "text": "US states sue SpaceX over Grok AI’s creation of child sexual abuse material",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 21:09",
-      "text": "Republican senators criticize Nvidia’s decision to reinstate Jensen Huang",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 21:04",
-      "text": "Republican sheriff racked up $3m security bill for California taxpayers, including Ritz-Carlton stays and stea",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 21:03",
-      "text": "UK sanctions top Myanmar military leaders after Rohingya genocide ruling",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 21:02",
-      "text": "US drug prices leave patients facing impossible choices",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 20:49",
-      "text": "US rapper Don Toliver postpones two arena shows after Manchester evacuation",
+      "time": "Nov 23, 21:24",
+      "text": "Gisèle Pelicot 'humiliated' after nude photos sent to media to promote book",
       "link": "live.html"
     }
   ],
