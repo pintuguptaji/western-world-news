@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "us-to-blacklist-asian-ai-firm-megaspeed-after-nvidia-scandal"
+    "heroSlug": "eu-plans-sports-ban-in-sweeping-new-russia-sanctions"
   },
   "breaking": {
-    "text": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
-    "link": "articles/us-to-blacklist-asian-ai-firm-megaspeed-after-nvidia-scandal.html"
+    "text": "EU plans sports ban in sweeping new Russia sanctions proposal",
+    "link": "articles/eu-plans-sports-ban-in-sweeping-new-russia-sanctions.html"
   },
   "articles": [
+    {
+      "slug": "eu-plans-sports-ban-in-sweeping-new-russia-sanctions",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "EU plans sports ban in sweeping new Russia sanctions proposal",
+      "dek": "Proposed sanctions aim to curb Russian crypto financing and 'propaganda' in sports.",
+      "date": "November 23, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/11/23/eu-plans-sports-ban-in-sweeping-new-russia-sanctions-proposal",
+      "body": [
+        "Proposed sanctions aim to curb Russian crypto financing and 'propaganda' in sports."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "us-to-blacklist-asian-ai-firm-megaspeed-after-nvidia-scandal",
       "sections": [
@@ -1956,8 +1975,28 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 23, 22:45",
+      "time": "Nov 23, 23:26",
+      "text": "EU plans sports ban in sweeping new Russia sanctions proposal",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 23:16",
       "text": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 23:10",
+      "text": "Nvidia reinstates CEO Jensen Huang after affair with alleged spy as Trump says 'I made the deal'",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 23:10",
+      "text": "14 countries acknowledge ICJ ruling of genocide against Rohingya",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 23, 23:06",
+      "text": "What Nvidia’s Jensen Huang’s return means for Washington and Wall Street?",
       "link": "live.html"
     },
     {
@@ -1966,33 +2005,13 @@ window.WWN_DEFAULT_CONTENT = {
       "link": "live.html"
     },
     {
+      "time": "Nov 23, 22:41",
+      "text": "Butt of the joke: Trump impersonator mocks president at Canada press dinner",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 23, 22:35",
       "text": "US adds Megaspeed, at center of Nvidia scandal, to a trade blacklist",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 22:23",
-      "text": "Jensen Huang reinstated as Nvidia CEO after Trump intervenes",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 22:22",
-      "text": "Trump defers to appeals court over army plan to detonate bomb-making material in Iowa",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 22:21",
-      "text": "Jimmy Gomez to resign after House ethics panel finds evidence of sexual misconduct",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 21:30",
-      "text": "US escalates sanctions on Iran, targets ‘shadow banking’ networks",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 23, 21:24",
-      "text": "Gisèle Pelicot 'humiliated' after nude photos sent to media to promote book",
       "link": "live.html"
     }
   ],
