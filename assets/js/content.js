@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "china-to-launch-first-space-mission-with-a-foreign-astronaut"
+    "heroSlug": "authors-warn-libraries-proposals-could-pave-the-way-for"
   },
   "breaking": {
-    "text": "China to launch first space mission with a foreign astronaut",
-    "link": "articles/china-to-launch-first-space-mission-with-a-foreign-astronaut.html"
+    "text": "Authors warn libraries proposals could 'pave the way' for censorship",
+    "link": "articles/authors-warn-libraries-proposals-could-pave-the-way-for.html"
   },
   "articles": [
+    {
+      "slug": "authors-warn-libraries-proposals-could-pave-the-way-for",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Authors warn libraries proposals could 'pave the way' for censorship",
+      "dek": "The signatories say they are concerned the proposals \"could pave the way for book bans, restrictions for minority group visibility and library closures\".",
+      "date": "November 24, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck1l0d8j7n68o",
+      "body": [
+        "The signatories say they are concerned the proposals \"could pave the way for book bans, restrictions for minority group visibility and library closures\"."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/4d02/live/aabb4c70-e7e3-11f1-a094-5fdc692f3e33.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "china-to-launch-first-space-mission-with-a-foreign-astronaut",
       "sections": [
@@ -2087,43 +2106,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 24, 10:07",
+      "text": "Authors warn libraries proposals could 'pave the way' for censorship",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 10:04",
+      "text": "Pip benefits review to suggest quicker payment for some disabled people",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 10:57",
+      "text": "Hungary's Magyar meets Zelenskyy in Ukraine in sharp break with Orbán era",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 09:54",
+      "text": "Death of Nahel: French police officer who shot dead a teenage boy to stand trial for murder",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 09:54",
+      "text": "Trump made up to $15m on Nvidia stock after Huang’s return",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 24, 09:53",
-      "text": "Copenhagen Airport plans major expansion to accommodate 55 million passengers a year",
+      "text": "Why S Korea issued air raid alert after Russian jets flew near its airspace",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 08:50",
-      "text": "China to launch first space mission with a foreign astronaut",
+      "time": "Nov 24, 10:53",
+      "text": "From Ravenna to Bolzano: Emerging European rail destinations for travel travel in 2027",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 09:48",
-      "text": "Housing, immigration and polarisation, key Spanish concerns before November election",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 09:42",
-      "text": "UN chief urges nations to establish AI safety safeguards within a year",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 08:41",
-      "text": "Chinese official gets death sentence in spy case, report says",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 08:35",
-      "text": "DR Congo says aircraft missing as rebels claim to shoot down plane",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 08:34",
-      "text": "What happens if a nuclear weapon explodes in space?",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 09:30",
-      "text": "What is the EU doing to regulate data center expansion?",
+      "time": "Nov 24, 10:53",
+      "text": "Ukraine's sanctions envoy urges EU to target Rosatom and alumina sales",
       "link": "live.html"
     }
   ],
