@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "european-court-states-can-turn-back-migrants-in-some-cases"
+    "heroSlug": "ex-boss-of-pride-in-london-given-suspended-sentence-for"
   },
   "breaking": {
-    "text": "European court: States can turn back migrants in some cases",
-    "link": "articles/european-court-states-can-turn-back-migrants-in-some-cases.html"
+    "text": "Ex-boss of Pride in London given suspended sentence for ‘harvesting’ documents",
+    "link": "articles/ex-boss-of-pride-in-london-given-suspended-sentence-for.html"
   },
   "articles": [
+    {
+      "slug": "ex-boss-of-pride-in-london-given-suspended-sentence-for",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Ex-boss of Pride in London given suspended sentence for ‘harvesting’ documents",
+      "dek": "Christopher Joell-Deshields accessed internal records after organisation sacked him in ‘flagrant flouting’ of court order.",
+      "date": "November 24, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/nov/24/ex-boss-christopher-joell-deshields-pride-in-london-suspended-sentence",
+      "body": [
+        "Christopher Joell-Deshields accessed internal records after organisation sacked him in ‘flagrant flouting’ of court order. The sacked boss of the Pride in London LGBTQ+ parade has been given a suspended prison sentence for his “flagrant” contempt of court when accessing the organisation’s records in breach of a judicial order."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/767a3d72a37f102fb9efc9642321b387291fdd19/911_0_2989_2393/master/2989.jpg?width=700&quality=85&auto=format&fit=max&s=7e74f55ff266756046f2b5d6b32e6392",
+      "imageCaption": "Photo: The Guardian"
+    },
     {
       "slug": "european-court-states-can-turn-back-migrants-in-some-cases",
       "sections": [
@@ -2200,43 +2218,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 24, 17:46",
-      "text": "Man charged with murder of missing 20-year-old woman",
+      "time": "Nov 24, 18:39",
+      "text": "Ex-boss of Pride in London given suspended sentence for ‘harvesting’ documents",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 17:43",
-      "text": "European court: States can turn back migrants in some cases",
+      "time": "Nov 24, 18:36",
+      "text": "Armed men take 25 hostages at supermarket in one of Colombia’s top tourist destinations",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 17:39",
-      "text": "Businesses supporting Ukraine told to 'act now' to protect against Russian sabotage",
+      "time": "Nov 24, 18:21",
+      "text": "Faisal Islam: Fears over the AI boom haven't gone away",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 17:38",
-      "text": "Disability benefit review calls for closer link with claimant costs",
+      "time": "Nov 24, 18:09",
+      "text": "Trump honors Rudy Giuliani with presidential medal of freedom",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 17:35",
-      "text": "Gunmen hold two dozen people hostage at supermarket in Colombia's Cartagena",
+      "time": "Nov 24, 18:07",
+      "text": "Indian government has 'lost the plot', says 'cockroach' leader barred from UK flight",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 18:35",
-      "text": "Matryoshka: What is the Russian disinformation campaign targeting Spain's election?",
+      "time": "Nov 24, 19:04",
+      "text": "At least 24 injured after car bomb detonates in central Colombia",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 17:27",
-      "text": "Former police chief inspector jailed for rape",
+      "time": "Nov 24, 18:02",
+      "text": "Israel attempts to jail Palestinian student at Hebrew University without trial",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 17:26",
-      "text": "Russia's war on Ukraine: 'Both sides are prepared to operate outside of the conflict zone'",
+      "time": "Nov 24, 17:58",
+      "text": "Sacked London Pride boss given suspended prison sentence",
       "link": "live.html"
     }
   ],
