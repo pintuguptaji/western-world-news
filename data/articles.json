@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "slug": "triple-killer-admits-murdering-ian-huntley-in-jail",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Triple killer admits murdering Ian Huntley in jail",
+      "dek": "Anthony Russell changes his plea on the second day of his trial at Newcastle Crown Court.",
+      "date": "November 24, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm930y07p0j2o",
+      "body": [
+        "Anthony Russell changes his plea on the second day of his trial at Newcastle Crown Court."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/be90/live/aad9c570-e729-11f1-914b-6d226d813a52.jpg",
+      "imageCaption": "Photo: BBC",
+      "auto": true
+    },
+    {
       "slug": "authors-warn-libraries-proposals-could-pave-the-way-for",
       "sections": [
         "war-conflict",
@@ -2159,36 +2178,36 @@
   ],
   "justIn": [
     {
-      "time": "24 Nov, 10:07",
-      "text": "Authors warn libraries proposals could 'pave the way' for censorship"
+      "time": "24 Nov, 11:52",
+      "text": "Triple killer admits murdering Ian Huntley in jail"
     },
     {
-      "time": "24 Nov, 10:04",
-      "text": "Pip benefits review to suggest quicker payment for some disabled people"
+      "time": "24 Nov, 12:47",
+      "text": "France to build strategic reserves of rare earths and critical minerals"
     },
     {
-      "time": "24 Nov, 10:57",
-      "text": "Hungary's Magyar meets Zelenskyy in Ukraine in sharp break with Orbán era"
+      "time": "24 Nov, 12:47",
+      "text": "International Space Forum in Rome gathers 45 countries to shape future space rules"
     },
     {
-      "time": "24 Nov, 09:54",
-      "text": "Death of Nahel: French police officer who shot dead a teenage boy to stand trial for murder"
+      "time": "24 Nov, 12:45",
+      "text": "West's weak response to Litvinenko's murder emboldened Putin, widow tells Euronews"
     },
     {
-      "time": "24 Nov, 09:54",
-      "text": "Trump made up to $15m on Nvidia stock after Huang’s return"
+      "time": "24 Nov, 11:37",
+      "text": "Prince William meets Burnham on first Downing Street visit"
     },
     {
-      "time": "24 Nov, 09:53",
-      "text": "Why S Korea issued air raid alert after Russian jets flew near its airspace"
+      "time": "24 Nov, 12:37",
+      "text": "How Jensen Huang's return to Nvidia made the world trillions richer"
     },
     {
-      "time": "24 Nov, 10:53",
-      "text": "From Ravenna to Bolzano: Emerging European rail destinations for travel travel in 2027"
+      "time": "24 Nov, 11:28",
+      "text": "'Nothing will ever be the same' for Jensen Huang and Nvidia after his return"
     },
     {
-      "time": "24 Nov, 10:53",
-      "text": "Ukraine's sanctions envoy urges EU to target Rosatom and alumina sales"
+      "time": "24 Nov, 12:25",
+      "text": "Carbon capture was a sticking point at COP31: Is it a delay tactic or genuine solution?"
     }
   ],
   "liveUpdates": [
@@ -2250,9 +2269,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "authors-warn-libraries-proposals-could-pave-the-way-for",
+  "heroSlug": "triple-killer-admits-murdering-ian-huntley-in-jail",
   "breaking": {
-    "text": "Authors warn libraries proposals could 'pave the way' for censorship",
-    "link": "articles/authors-warn-libraries-proposals-could-pave-the-way-for.html"
+    "text": "Triple killer admits murdering Ian Huntley in jail",
+    "link": "articles/triple-killer-admits-murdering-ian-huntley-in-jail.html"
   }
 }
