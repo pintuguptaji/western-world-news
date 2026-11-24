@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "signs-of-heart-attack-and-stroke-risk-can-appear-decades"
+    "heroSlug": "is-no-deal-better-than-a-bad-deal-why-some-see-hope-in"
   },
   "breaking": {
-    "text": "Signs of heart attack and stroke risk can appear decades earlier, study finds",
-    "link": "articles/signs-of-heart-attack-and-stroke-risk-can-appear-decades.html"
+    "text": "Is no deal better than a bad deal? Why some see hope in COP31’s collapse",
+    "link": "articles/is-no-deal-better-than-a-bad-deal-why-some-see-hope-in.html"
   },
   "articles": [
+    {
+      "slug": "is-no-deal-better-than-a-bad-deal-why-some-see-hope-in",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Is no deal better than a bad deal? Why some see hope in COP31’s collapse",
+      "dek": "The EU, the UK and many small nations rejected a pact that promoted carbon capture and omitted a commitment to move away from fossil fuels.",
+      "date": "November 24, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/24/is-no-deal-better-than-a-bad-deal-why-some-see-hope-in-cop31s-collapse",
+      "body": [
+        "The EU, the UK and many small nations rejected a pact that promoted carbon capture and omitted a commitment to move away from fossil fuels."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/49/56/696x392_cmsv2_4f42ce96-10bd-5d27-b59b-f2c8d9a2cff3-10004956.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "signs-of-heart-attack-and-stroke-risk-can-appear-decades",
       "sections": [
@@ -2050,43 +2069,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 24, 08:08",
+      "text": "Europe Today: EU Commission proposes new round of sanctions against Russia",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 06:24",
+      "text": "Nvidia live: Markets surge as Jensen Huang returns as CEO",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 06:23",
+      "text": "Bangladesh's ex-PM Sheikh Hasina says she plans to return on December 16",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 06:15",
+      "text": "Vapes seized in schools spiked with drugs, Met says",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 07:02",
+      "text": "Is no deal better than a bad deal? Why some see hope in COP31’s collapse",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 06:02",
+      "text": "State failing to keep public safe, warns victims' commissioner",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 06:01",
+      "text": "From dancing on the Tube to being sectioned: Sabrina Bahsoon on her psychosis misdiagnosis",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 24, 06:00",
-      "text": "Signs of heart attack and stroke risk can appear decades earlier, study finds",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 04:36",
-      "text": "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 04:35",
-      "text": "WHO chief visits Cuba as healthcare system deteriorates",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 05:30",
-      "text": "Stocks climb as Huang's return to Nvidia lifts investor optimism",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 04:14",
-      "text": "South Korea tells island residents to take shelter after Russian military aircraft approach",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 04:03",
-      "text": "Social media companies could be fined 5% of global revenue after Labor and Greens join forces on online safety",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 03:20",
-      "text": "Mexico to try ‘El Chapo Isidro’ despite US extradition request",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 03:00",
-      "text": "Myanmar has been found guilty of genocide. Should Israel be worried?, podcast",
+      "text": "Afghan women with UK university offers 'heartbroken' after visas stopped",
       "link": "live.html"
     }
   ],
