@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "tech-giant-huawei-found-guilty-of-stealing-trade-secrets"
+    "heroSlug": "ministers-ask-public-for-views-on-changing-age-of-consent"
   },
   "breaking": {
-    "text": "Tech giant Huawei found guilty of stealing trade secrets but acquitted of racketeering",
-    "link": "articles/tech-giant-huawei-found-guilty-of-stealing-trade-secrets.html"
+    "text": "Ministers ask public for views on changing age of consent",
+    "link": "articles/ministers-ask-public-for-views-on-changing-age-of-consent.html"
   },
   "articles": [
+    {
+      "slug": "ministers-ask-public-for-views-on-changing-age-of-consent",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Ministers ask public for views on changing age of consent",
+      "dek": "Some campaigners have argued that different limits should apply, depending on the age gap between the people involved.",
+      "date": "November 24, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwgkl31kmnddo",
+      "body": [
+        "Some campaigners have argued that different limits should apply, depending on the age gap between the people involved."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/9ec8/live/48a72fa0-e850-11f1-aa88-031e8213533d.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "tech-giant-huawei-found-guilty-of-stealing-trade-secrets",
       "sections": [
@@ -2255,43 +2273,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 24, 22:51",
-      "text": "Tech giant Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+      "time": "Nov 24, 22:52",
+      "text": "Ministers ask public for views on changing age of consent",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 21:32",
+      "time": "Nov 24, 22:49",
+      "text": "Nuclear test veterans will get full truth, says Burnham, as he confirms independent panel",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 22:39",
+      "text": "Jury considers verdict in Beau Lamarre-Condon double-murder trial",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 22:37",
+      "text": "Bellingham stunner, Mbappe brace help Real Madrid rout PSV",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 22:34",
+      "text": "Scientists discover quasar formed 630 million years after the Big Bang",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 22:30",
+      "text": "Burnham launches inquiry into nuclear bomb test veterans’ records",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 22:24",
       "text": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 21:28",
-      "text": "Jensen Huang's Nvidia comeback sends AI videos into overdrive",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 21:20",
-      "text": "Did Nvidia knowingly send chips to China 'cutout'? Was there ‘pay-to-play’ involving Trump, Lutnick?",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 21:19",
-      "text": "US attorney general dodges questions about Nvidia investigation",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 21:14",
-      "text": "Senegal reinstated as AFCON 2025 winners",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 22:10",
-      "text": "Europe Tonight debriefs: can the EU budget compete with China and the US?",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 21:06",
-      "text": "Armed men hold hostages at supermarket in top Colombian tourist destination",
+      "time": "Nov 24, 22:09",
+      "text": "Climate scientists urge US lawmakers to vote no on sweeping permitting bill",
       "link": "live.html"
     }
   ],
