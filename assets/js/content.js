@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "ministers-ask-public-for-views-on-changing-age-of-consent"
+    "heroSlug": "fort-hood-survivors-denied-bid-to-witness-shooters-firing"
   },
   "breaking": {
-    "text": "Ministers ask public for views on changing age of consent",
-    "link": "articles/ministers-ask-public-for-views-on-changing-age-of-consent.html"
+    "text": "Fort Hood survivors denied bid to witness shooter’s firing-squad execution",
+    "link": "articles/fort-hood-survivors-denied-bid-to-witness-shooters-firing.html"
   },
   "articles": [
+    {
+      "slug": "fort-hood-survivors-denied-bid-to-witness-shooters-firing",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Fort Hood survivors denied bid to witness shooter’s firing-squad execution",
+      "dek": "Army says trio injured in 2009 attack were not direct victims of Nidal Hasan’s and thus cannot attend event.",
+      "date": "November 24, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/us-news/2026/nov/24/fort-hood-shooting-survivors-execution",
+      "body": [
+        "Army says trio injured in 2009 attack were not direct victims of Nidal Hasan’s and thus cannot attend event. Three survivors of the shooting at Fort Hood will not be allowed to witness the execution by military firing squad of Nidal Hasan who shot 13 people dead in the attack at the Texas army post in 2009, military officials said Tuesday."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/460deb91b5ac7fce62e4d1f4f42f38496eab4ca7/499_0_2501_2000/master/2501.jpg?width=700&quality=85&auto=format&fit=max&s=1ca13bfb0f34e8b0b38a2e0b01a53785",
+      "imageCaption": "Photo: The Guardian"
+    },
     {
       "slug": "ministers-ask-public-for-views-on-changing-age-of-consent",
       "sections": [
@@ -2273,43 +2291,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 24, 22:52",
-      "text": "Ministers ask public for views on changing age of consent",
+      "time": "Nov 24, 23:47",
+      "text": "Thomas Markle indicted by federal grand jury in US for possessing child sex abuse images",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 22:49",
-      "text": "Nuclear test veterans will get full truth, says Burnham, as he confirms independent panel",
+      "time": "Nov 24, 23:45",
+      "text": "Fort Hood survivors denied bid to witness shooter’s firing-squad execution",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 22:39",
-      "text": "Jury considers verdict in Beau Lamarre-Condon double-murder trial",
+      "time": "Nov 24, 23:38",
+      "text": "Third of young Brits have never had sex, but many are sexting and watching porn",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 22:37",
-      "text": "Bellingham stunner, Mbappe brace help Real Madrid rout PSV",
+      "time": "Nov 24, 23:33",
+      "text": "Thomas Markle, father of Meghan, indicted over child sexual abuse material",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 22:34",
-      "text": "Scientists discover quasar formed 630 million years after the Big Bang",
+      "time": "Nov 24, 23:31",
+      "text": "New York jury convicts Huawei of stealing trade secrets",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 22:30",
-      "text": "Burnham launches inquiry into nuclear bomb test veterans’ records",
+      "time": "Nov 24, 23:05",
+      "text": "China-linked network using AI fakes to smear Taiwan election candidates, BBC Verify finds",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 22:24",
-      "text": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+      "time": "Nov 24, 23:03",
+      "text": "These North Koreans say they were spied on, beaten and jailed for being Christian",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 22:09",
-      "text": "Climate scientists urge US lawmakers to vote no on sweeping permitting bill",
+      "time": "Nov 24, 22:59",
+      "text": "Champions League: Real Madrid thrash PSV 5-1 in comeback win as Manchester City held by Napoli",
       "link": "live.html"
     }
   ],
