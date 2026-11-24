@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "cas-awards-senegal-afcon-title-after-successful-appeal"
+    "heroSlug": "italy-watches-worryingly-as-ukraine-strikes-russian-boats"
   },
   "breaking": {
-    "text": "CAS awards Senegal AFCON title after successful appeal",
-    "link": "articles/cas-awards-senegal-afcon-title-after-successful-appeal.html"
+    "text": "Italy watches worryingly as Ukraine strikes Russian boats in Libya",
+    "link": "articles/italy-watches-worryingly-as-ukraine-strikes-russian-boats.html"
   },
   "articles": [
+    {
+      "slug": "italy-watches-worryingly-as-ukraine-strikes-russian-boats",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Italy watches worryingly as Ukraine strikes Russian boats in Libya",
+      "dek": "Ukraine's naval drone strikes on two Russian vessels in and off Benghazi have alarmed Italy, amid fears that the attacks could reignite Libya's civil war.",
+      "date": "November 24, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/24/italy-watches-worryingly-as-ukraine-strikes-russian-boats-in-libya",
+      "body": [
+        "Ukraine's naval drone strikes on two Russian vessels in and off Benghazi have alarmed Italy, amid fears that the attacks could reignite Libya's civil war."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/65/29/696x392_cmsv2_cfbc319b-1caa-56c3-8ea3-12ae7027e9cc-10006529.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "cas-awards-senegal-afcon-title-after-successful-appeal",
       "sections": [
@@ -2162,43 +2181,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 24, 15:51",
-      "text": "CAS awards Senegal AFCON title after successful appeal",
+      "time": "Nov 24, 16:05",
+      "text": "Two arrested on suspicion of burglary at Prince and Princess of Wales's Norfolk home",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 14:49",
-      "text": "EU enlargement: Why do some EU member states use their vetoes to block the accession of certain candidate coun",
+      "time": "Nov 24, 17:05",
+      "text": "Italy watches worryingly as Ukraine strikes Russian boats in Libya",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 14:45",
-      "text": "China’s media hails Huang’s Nvidia return as it warns over ‘witch-hunts’",
+      "time": "Nov 24, 16:01",
+      "text": "Arsenal vs Borussia Dortmund LIVE: UEFA Champions League",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 15:45",
-      "text": "South Korea tells island residents to take shelter as Russian warplanes near its airspace",
+      "time": "Nov 24, 15:56",
+      "text": "Palestine Weekly: A night of arson sees Israel ‘Jewish terrorism’ reckoning",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 14:42",
-      "text": "CAS reinstates Senegal as 2025 AFCON champions",
+      "time": "Nov 24, 15:55",
+      "text": "Five women killed every hour globally by partner, relative last year: UN",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 14:40",
-      "text": "Inquiry expected into Birmingham housing scheme 'exploitation' after BBC investigation",
+      "time": "Nov 24, 15:53",
+      "text": "Irish plan could let UK join EU’s Made in Europe without trade alignment",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 14:36",
-      "text": "Meta launches Muse in UK, the AI agent that can do your Christmas shopping",
+      "time": "Nov 24, 15:47",
+      "text": "Nvidia stock cools after Huang’s return-driven surge",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 14:36",
-      "text": "Why Iran's medicine supply chain is seizing up",
+      "time": "Nov 24, 15:43",
+      "text": "Two arrested after suspected burglary at home of Prince and Princess of Wales",
       "link": "live.html"
     }
   ],
