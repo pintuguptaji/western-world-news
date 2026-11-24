@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "myanmar-has-been-found-guilty-of-genocide-should-israel-be"
+    "heroSlug": "signs-of-heart-attack-and-stroke-risk-can-appear-decades"
   },
   "breaking": {
-    "text": "Myanmar has been found guilty of genocide. Should Israel be worried?, podcast",
-    "link": "articles/myanmar-has-been-found-guilty-of-genocide-should-israel-be.html"
+    "text": "Signs of heart attack and stroke risk can appear decades earlier, study finds",
+    "link": "articles/signs-of-heart-attack-and-stroke-risk-can-appear-decades.html"
   },
   "articles": [
+    {
+      "slug": "signs-of-heart-attack-and-stroke-risk-can-appear-decades",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Signs of heart attack and stroke risk can appear decades earlier, study finds",
+      "dek": "Early warning signs could alert people that they're at risk of heart disease and give them time to make lifestyle changes, the researchers said.",
+      "date": "November 24, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/24/signs-of-heart-attack-and-stroke-risk-can-appear-decades-earlier-study-finds",
+      "body": [
+        "Early warning signs could alert people that they're at risk of heart disease and give them time to make lifestyle changes, the researchers said."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/51/52/696x392_cmsv2_0c680a49-e1fe-56f6-8154-b388accf6699-10005152.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "myanmar-has-been-found-guilty-of-genocide-should-israel-be",
       "sections": [
@@ -2031,6 +2050,36 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 24, 06:00",
+      "text": "Signs of heart attack and stroke risk can appear decades earlier, study finds",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 04:36",
+      "text": "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 04:35",
+      "text": "WHO chief visits Cuba as healthcare system deteriorates",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 05:30",
+      "text": "Stocks climb as Huang's return to Nvidia lifts investor optimism",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 04:14",
+      "text": "South Korea tells island residents to take shelter after Russian military aircraft approach",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 04:03",
+      "text": "Social media companies could be fined 5% of global revenue after Labor and Greens join forces on online safety",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 24, 03:20",
       "text": "Mexico to try ‘El Chapo Isidro’ despite US extradition request",
       "link": "live.html"
@@ -2038,36 +2087,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 24, 03:00",
       "text": "Myanmar has been found guilty of genocide. Should Israel be worried?, podcast",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 02:37",
-      "text": "China sentences official to death for spying for foreign country",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 02:27",
-      "text": "UN chief calls for world to agree on AI oversight within a year",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 02:25",
-      "text": "Federal court clears way for army to detonate bomb-making chemicals in Iowa",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 02:09",
-      "text": "US flew surveillance drone over Mexico to help capture top drug lord",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 01:47",
-      "text": "US adds Megaspeed, AI firm at center of Nvidia scandal, to trade blacklist",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 01:25",
-      "text": "Beau Lamarre-Condon chose ‘long walk’ to witness box rather than silence, his barrister tells court",
       "link": "live.html"
     }
   ],
