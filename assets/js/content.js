@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "italy-watches-worryingly-as-ukraine-strikes-russian-boats"
+    "heroSlug": "european-court-states-can-turn-back-migrants-in-some-cases"
   },
   "breaking": {
-    "text": "Italy watches worryingly as Ukraine strikes Russian boats in Libya",
-    "link": "articles/italy-watches-worryingly-as-ukraine-strikes-russian-boats.html"
+    "text": "European court: States can turn back migrants in some cases",
+    "link": "articles/european-court-states-can-turn-back-migrants-in-some-cases.html"
   },
   "articles": [
+    {
+      "slug": "european-court-states-can-turn-back-migrants-in-some-cases",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "European court: States can turn back migrants in some cases",
+      "dek": "The European Court ruled that states belonging to the Council of Europe can turn back migrants, even under \"hostile\" conditions unless they've been identified as people who may be subject to ill-treatment.",
+      "date": "November 24, 2026",
+      "source": "DW",
+      "source_url": "https://www.dw.com/en/european-court-states-can-turn-back-migrants-in-some-cases/a-80038352",
+      "body": [
+        "The European Court ruled that states belonging to the Council of Europe can turn back migrants, even under \"hostile\" conditions unless they've been identified as people who may be subject to ill-treatment."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "italy-watches-worryingly-as-ukraine-strikes-russian-boats",
       "sections": [
@@ -2181,43 +2200,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 24, 16:05",
-      "text": "Two arrested on suspicion of burglary at Prince and Princess of Wales's Norfolk home",
+      "time": "Nov 24, 17:46",
+      "text": "Man charged with murder of missing 20-year-old woman",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 17:05",
-      "text": "Italy watches worryingly as Ukraine strikes Russian boats in Libya",
+      "time": "Nov 24, 17:43",
+      "text": "European court: States can turn back migrants in some cases",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 16:01",
-      "text": "Arsenal vs Borussia Dortmund LIVE: UEFA Champions League",
+      "time": "Nov 24, 17:39",
+      "text": "Businesses supporting Ukraine told to 'act now' to protect against Russian sabotage",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 15:56",
-      "text": "Palestine Weekly: A night of arson sees Israel ‘Jewish terrorism’ reckoning",
+      "time": "Nov 24, 17:38",
+      "text": "Disability benefit review calls for closer link with claimant costs",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 15:55",
-      "text": "Five women killed every hour globally by partner, relative last year: UN",
+      "time": "Nov 24, 17:35",
+      "text": "Gunmen hold two dozen people hostage at supermarket in Colombia's Cartagena",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 15:53",
-      "text": "Irish plan could let UK join EU’s Made in Europe without trade alignment",
+      "time": "Nov 24, 18:35",
+      "text": "Matryoshka: What is the Russian disinformation campaign targeting Spain's election?",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 15:47",
-      "text": "Nvidia stock cools after Huang’s return-driven surge",
+      "time": "Nov 24, 17:27",
+      "text": "Former police chief inspector jailed for rape",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 15:43",
-      "text": "Two arrested after suspected burglary at home of Prince and Princess of Wales",
+      "time": "Nov 24, 17:26",
+      "text": "Russia's war on Ukraine: 'Both sides are prepared to operate outside of the conflict zone'",
       "link": "live.html"
     }
   ],
