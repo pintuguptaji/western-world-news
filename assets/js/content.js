@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "chris-mason-can-burnham-turn-volume-down-on-eu-debate"
+    "heroSlug": "china-sentences-official-to-death-for-spying-for-foreign"
   },
   "breaking": {
-    "text": "Chris Mason: Can Burnham turn volume down on EU debate?",
-    "link": "articles/chris-mason-can-burnham-turn-volume-down-on-eu-debate.html"
+    "text": "China sentences official to death for spying for foreign country",
+    "link": "articles/china-sentences-official-to-death-for-spying-for-foreign.html"
   },
   "articles": [
+    {
+      "slug": "china-sentences-official-to-death-for-spying-for-foreign",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "China sentences official to death for spying for foreign country",
+      "dek": "Accused official leaked national secrets to unnamed country and received payments worth over $150,000, state-linked publisher says.",
+      "date": "November 24, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/nov/24/china-official-ma-death-sentence-spying-leaking-national-secrets",
+      "body": [
+        "Accused official leaked national secrets to unnamed country and received payments worth over $150,000, state-linked publisher says. A Chinese official has been sentenced to death for spying for a foreign country, a government-linked publisher has said."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/5d7028c1f7418b6df67a8b82c97cfc5563385eba/154_0_2536_2029/master/2536.jpg?width=700&quality=85&auto=format&fit=max&s=a8334ba7ee5504ed586b8b567e4ab1e0",
+      "imageCaption": "Photo: The Guardian"
+    },
     {
       "slug": "chris-mason-can-burnham-turn-volume-down-on-eu-debate",
       "sections": [
@@ -1994,43 +2012,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 24, 00:53",
-      "text": "Benefits review to suggest quicker payment for some disabled people",
+      "time": "Nov 24, 02:37",
+      "text": "China sentences official to death for spying for foreign country",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 00:45",
-      "text": "Chris Mason: Can Burnham turn volume down on EU debate?",
+      "time": "Nov 24, 02:25",
+      "text": "Federal court clears way for army to detonate bomb-making chemicals in Iowa",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 00:39",
-      "text": "What could Democrats do with their expanding congressional majority?",
+      "time": "Nov 24, 02:09",
+      "text": "US flew surveillance drone over Mexico to help capture top drug lord",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 00:31",
-      "text": "No 10 North will face greater scrutiny as Burnham's 10-year plan looms",
+      "time": "Nov 24, 01:47",
+      "text": "US adds Megaspeed, AI firm at center of Nvidia scandal, to trade blacklist",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 00:30",
-      "text": "Zelensky urges four-way peace talks with Russia, Europe and US 'as soon as possible'",
+      "time": "Nov 24, 01:25",
+      "text": "Beau Lamarre-Condon chose ‘long walk’ to witness box rather than silence, his barrister tells court",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 00:28",
-      "text": "Britain's landlords are getting bigger. A two-tier rental market may follow",
+      "time": "Nov 24, 01:17",
+      "text": "Appeals court renews Trump bid for federal jurisdiction in hush-money case",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 00:11",
-      "text": "BBC secret filming shows dog breeder selling sick puppies for £2k each",
+      "time": "Nov 24, 01:11",
+      "text": "Nvidia reinstates CEO Jensen Huang after affair with alleged spy as Trump says 'I made the deal'",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 00:04",
-      "text": "Trump calls to ‘expedite’ US federal executions, blasts Gavin Newsom",
+      "time": "Nov 24, 01:09",
+      "text": "Israeli minister approves return of Flydubai flights",
       "link": "live.html"
     }
   ],
