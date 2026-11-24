@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "triple-killer-admits-murdering-ian-huntley-in-jail"
+    "heroSlug": "israeli-strikes-on-gaza-kill-senior-hamas-security-official"
   },
   "breaking": {
-    "text": "Triple killer admits murdering Ian Huntley in jail",
-    "link": "articles/triple-killer-admits-murdering-ian-huntley-in-jail.html"
+    "text": "Israeli strikes on Gaza kill senior Hamas security official and six other people, medics say",
+    "link": "articles/israeli-strikes-on-gaza-kill-senior-hamas-security-official.html"
   },
   "articles": [
+    {
+      "slug": "israeli-strikes-on-gaza-kill-senior-hamas-security-official",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Israeli strikes on Gaza kill senior Hamas security official and six other people, medics say",
+      "dek": "Israeli air strikes on the devastated Gaza Strip killed Brigadier General Naeem Abu Nahel, director-general of the Palestinian territory's Internal Security Service on Tuesday, the ministry said.",
+      "date": "November 24, 2026",
+      "source": "France 24",
+      "source_url": "https://www.france24.com/en/middle-east/20261124-israeli-strikes-on-gaza-kill-senior-hamas-security-official-and-six-other-people-medics-say",
+      "body": [
+        "Israeli air strikes on the devastated Gaza Strip killed Brigadier General Naeem Abu Nahel, director-general of the Palestinian territory's Internal Security Service on Tuesday, the ministry said. Another six people, including two police officers and a 17-year-old teenager, were killed in Israeli strikes across the enclave."
+      ],
+      "related": [],
+      "image": "https://s.france24.com/media/display/627512ce-e802-11f1-ad6d-1991d4929b54/w:1024/p:16x9/000-D7J44LE.jpg",
+      "imageCaption": "Photo: France 24"
+    },
     {
       "slug": "triple-killer-admits-murdering-ian-huntley-in-jail",
       "sections": [
@@ -2124,43 +2143,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 24, 11:52",
-      "text": "Triple killer admits murdering Ian Huntley in jail",
+      "time": "Nov 24, 13:10",
+      "text": "Huntley murderer handed new whole life jail term",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 12:47",
-      "text": "France to build strategic reserves of rare earths and critical minerals",
+      "time": "Nov 24, 13:07",
+      "text": "Israeli strikes on Gaza kill senior Hamas security official and six other people, medics say",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 12:47",
-      "text": "International Space Forum in Rome gathers 45 countries to shape future space rules",
+      "time": "Nov 24, 14:04",
+      "text": "China and Singapore expand yuan financing as Beijing pushes currency’s global use",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 13:02",
+      "text": "Baby P's mother given open prison recommendation",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 14:01",
+      "text": "Doctors warn of pesticide risk to fertility as EU moves to cut red tape",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 12:51",
+      "text": "Is North Korea holding back on sending Russia more troops?",
       "link": "live.html"
     },
     {
       "time": "Nov 24, 12:45",
-      "text": "West's weak response to Litvinenko's murder emboldened Putin, widow tells Euronews",
+      "text": "Russian governor detained in rare criminal case against regional leader",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 11:37",
-      "text": "Prince William meets Burnham on first Downing Street visit",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 12:37",
-      "text": "How Jensen Huang's return to Nvidia made the world trillions richer",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 11:28",
-      "text": "'Nothing will ever be the same' for Jensen Huang and Nvidia after his return",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 12:25",
-      "text": "Carbon capture was a sticking point at COP31: Is it a delay tactic or genuine solution?",
+      "time": "Nov 24, 12:43",
+      "text": "Afghan women with UK university offers 'heartbroken' after visas stopped",
       "link": "live.html"
     }
   ],
