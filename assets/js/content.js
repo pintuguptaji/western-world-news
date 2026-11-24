@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "is-no-deal-better-than-a-bad-deal-why-some-see-hope-in"
+    "heroSlug": "china-to-launch-first-space-mission-with-a-foreign-astronaut"
   },
   "breaking": {
-    "text": "Is no deal better than a bad deal? Why some see hope in COP31’s collapse",
-    "link": "articles/is-no-deal-better-than-a-bad-deal-why-some-see-hope-in.html"
+    "text": "China to launch first space mission with a foreign astronaut",
+    "link": "articles/china-to-launch-first-space-mission-with-a-foreign-astronaut.html"
   },
   "articles": [
+    {
+      "slug": "china-to-launch-first-space-mission-with-a-foreign-astronaut",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "China to launch first space mission with a foreign astronaut",
+      "dek": "Pakistan's Muhammad Zeeshan Ali will become the first foreign astronaut to board China's Tiangong space station when the latest crew blasts off Wednesday. Ali said he would be carrying \"the hopes of 250 million Pakistanis\" with him.",
+      "date": "November 24, 2026",
+      "source": "France 24",
+      "source_url": "https://www.france24.com/en/asia-pacific/20261124-china-to-launch-first-space-mission-with-a-foreign-astronaut",
+      "body": [
+        "Pakistan's Muhammad Zeeshan Ali will become the first foreign astronaut to board China's Tiangong space station when the latest crew blasts off Wednesday. Ali said he would be carrying \"the hopes of 250 million Pakistanis\" with him."
+      ],
+      "related": [],
+      "image": "https://s.france24.com/media/display/dd5a9c58-e7d9-11f1-a14d-1bac47ab2f5d/w:1024/p:16x9/AP26328149750361.jpg",
+      "imageCaption": "Photo: France 24"
+    },
     {
       "slug": "is-no-deal-better-than-a-bad-deal-why-some-see-hope-in",
       "sections": [
@@ -2069,43 +2087,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 24, 08:08",
-      "text": "Europe Today: EU Commission proposes new round of sanctions against Russia",
+      "time": "Nov 24, 09:53",
+      "text": "Copenhagen Airport plans major expansion to accommodate 55 million passengers a year",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 06:24",
-      "text": "Nvidia live: Markets surge as Jensen Huang returns as CEO",
+      "time": "Nov 24, 08:50",
+      "text": "China to launch first space mission with a foreign astronaut",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 06:23",
-      "text": "Bangladesh's ex-PM Sheikh Hasina says she plans to return on December 16",
+      "time": "Nov 24, 09:48",
+      "text": "Housing, immigration and polarisation, key Spanish concerns before November election",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 06:15",
-      "text": "Vapes seized in schools spiked with drugs, Met says",
+      "time": "Nov 24, 09:42",
+      "text": "UN chief urges nations to establish AI safety safeguards within a year",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 07:02",
-      "text": "Is no deal better than a bad deal? Why some see hope in COP31’s collapse",
+      "time": "Nov 24, 08:41",
+      "text": "Chinese official gets death sentence in spy case, report says",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 06:02",
-      "text": "State failing to keep public safe, warns victims' commissioner",
+      "time": "Nov 24, 08:35",
+      "text": "DR Congo says aircraft missing as rebels claim to shoot down plane",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 06:01",
-      "text": "From dancing on the Tube to being sectioned: Sabrina Bahsoon on her psychosis misdiagnosis",
+      "time": "Nov 24, 08:34",
+      "text": "What happens if a nuclear weapon explodes in space?",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 06:00",
-      "text": "Afghan women with UK university offers 'heartbroken' after visas stopped",
+      "time": "Nov 24, 09:30",
+      "text": "What is the EU doing to regulate data center expansion?",
       "link": "live.html"
     }
   ],
