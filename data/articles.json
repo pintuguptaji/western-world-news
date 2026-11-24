@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "slug": "tech-giant-huawei-found-guilty-of-stealing-trade-secrets",
+      "sections": [
+        "business-finance",
+        "world"
+      ],
+      "section": "business-finance",
+      "headline": "Tech giant Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+      "dek": "In a statement, Huawei said the acquittal on the racketeering charge \"confirms that these allegations lack factual basis and vindicates our consistent position over the past eight years.\"",
+      "date": "November 24, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/24/tech-giant-huawei-found-guilty-of-stealing-trade-secrets-but-acquitted-of-racketeering",
+      "body": [
+        "In a statement, Huawei said the acquittal on the racketeering charge \"confirms that these allegations lack factual basis and vindicates our consistent position over the past eight years.\""
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/68/79/696x392_cmsv2_4ad7e8fc-0d5d-5324-a280-ed8a89d84cae-10006879.jpg",
+      "imageCaption": "Photo: Euronews",
+      "auto": true
+    },
+    {
       "slug": "senegal-afcon-ruling-good-in-the-books-of-sports-law-expert",
       "sections": [
         "world"
@@ -2296,36 +2316,36 @@
   ],
   "justIn": [
     {
-      "time": "24 Nov, 19:54",
-      "text": "Senegal AFCON ruling 'good in the books of sports law', expert says"
+      "time": "24 Nov, 22:51",
+      "text": "Tech giant Huawei found guilty of stealing trade secrets but acquitted of racketeering"
     },
     {
-      "time": "24 Nov, 19:52",
-      "text": "Senegal regain AFCON title on appeal at Morocco's expense"
+      "time": "24 Nov, 21:32",
+      "text": "Huawei found guilty of stealing trade secrets but acquitted of racketeering"
     },
     {
-      "time": "24 Nov, 19:49",
-      "text": "Disability benefit review calls for closer link with claimant costs"
+      "time": "24 Nov, 21:28",
+      "text": "Jensen Huang's Nvidia comeback sends AI videos into overdrive"
     },
     {
-      "time": "24 Nov, 19:41",
-      "text": "Nvidia CEO Jensen Huang apologizes to staff: ‘I made some terrible mistakes’"
+      "time": "24 Nov, 21:20",
+      "text": "Did Nvidia knowingly send chips to China 'cutout'? Was there ‘pay-to-play’ involving Trump, Lutnick?"
     },
     {
-      "time": "24 Nov, 19:27",
-      "text": "DR Congo says military aircraft missing as rebels claim to shoot down plane"
+      "time": "24 Nov, 21:19",
+      "text": "US attorney general dodges questions about Nvidia investigation"
     },
     {
-      "time": "24 Nov, 19:27",
-      "text": "Car bomb destroys buildings in central Colombian city"
+      "time": "24 Nov, 21:14",
+      "text": "Senegal reinstated as AFCON 2025 winners"
     },
     {
-      "time": "24 Nov, 19:22",
-      "text": "Putin says retaliation ‘inevitable’ after Ukraine hit Russian oil plants"
+      "time": "24 Nov, 22:10",
+      "text": "Europe Tonight debriefs: can the EU budget compete with China and the US?"
     },
     {
-      "time": "24 Nov, 19:22",
-      "text": "Russian losses on Ukrainian front top 700,000 including missing"
+      "time": "24 Nov, 21:06",
+      "text": "Armed men hold hostages at supermarket in top Colombian tourist destination"
     }
   ],
   "liveUpdates": [
@@ -2387,9 +2407,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "senegal-afcon-ruling-good-in-the-books-of-sports-law-expert",
+  "heroSlug": "tech-giant-huawei-found-guilty-of-stealing-trade-secrets",
   "breaking": {
-    "text": "Senegal AFCON ruling 'good in the books of sports law', expert says",
-    "link": "articles/senegal-afcon-ruling-good-in-the-books-of-sports-law-expert.html"
+    "text": "Tech giant Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+    "link": "articles/tech-giant-huawei-found-guilty-of-stealing-trade-secrets.html"
   }
 }

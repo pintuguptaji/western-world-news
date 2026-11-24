@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "senegal-afcon-ruling-good-in-the-books-of-sports-law-expert"
+    "heroSlug": "tech-giant-huawei-found-guilty-of-stealing-trade-secrets"
   },
   "breaking": {
-    "text": "Senegal AFCON ruling 'good in the books of sports law', expert says",
-    "link": "articles/senegal-afcon-ruling-good-in-the-books-of-sports-law-expert.html"
+    "text": "Tech giant Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+    "link": "articles/tech-giant-huawei-found-guilty-of-stealing-trade-secrets.html"
   },
   "articles": [
+    {
+      "slug": "tech-giant-huawei-found-guilty-of-stealing-trade-secrets",
+      "sections": [
+        "business-finance",
+        "world"
+      ],
+      "section": "business-finance",
+      "headline": "Tech giant Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+      "dek": "In a statement, Huawei said the acquittal on the racketeering charge \"confirms that these allegations lack factual basis and vindicates our consistent position over the past eight years.\"",
+      "date": "November 24, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/24/tech-giant-huawei-found-guilty-of-stealing-trade-secrets-but-acquitted-of-racketeering",
+      "body": [
+        "In a statement, Huawei said the acquittal on the racketeering charge \"confirms that these allegations lack factual basis and vindicates our consistent position over the past eight years.\""
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/68/79/696x392_cmsv2_4ad7e8fc-0d5d-5324-a280-ed8a89d84cae-10006879.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "senegal-afcon-ruling-good-in-the-books-of-sports-law-expert",
       "sections": [
@@ -2236,43 +2255,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 24, 19:54",
-      "text": "Senegal AFCON ruling 'good in the books of sports law', expert says",
+      "time": "Nov 24, 22:51",
+      "text": "Tech giant Huawei found guilty of stealing trade secrets but acquitted of racketeering",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 19:52",
-      "text": "Senegal regain AFCON title on appeal at Morocco's expense",
+      "time": "Nov 24, 21:32",
+      "text": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 19:49",
-      "text": "Disability benefit review calls for closer link with claimant costs",
+      "time": "Nov 24, 21:28",
+      "text": "Jensen Huang's Nvidia comeback sends AI videos into overdrive",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 19:41",
-      "text": "Nvidia CEO Jensen Huang apologizes to staff: ‘I made some terrible mistakes’",
+      "time": "Nov 24, 21:20",
+      "text": "Did Nvidia knowingly send chips to China 'cutout'? Was there ‘pay-to-play’ involving Trump, Lutnick?",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 19:27",
-      "text": "DR Congo says military aircraft missing as rebels claim to shoot down plane",
+      "time": "Nov 24, 21:19",
+      "text": "US attorney general dodges questions about Nvidia investigation",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 19:27",
-      "text": "Car bomb destroys buildings in central Colombian city",
+      "time": "Nov 24, 21:14",
+      "text": "Senegal reinstated as AFCON 2025 winners",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 19:22",
-      "text": "Putin says retaliation ‘inevitable’ after Ukraine hit Russian oil plants",
+      "time": "Nov 24, 22:10",
+      "text": "Europe Tonight debriefs: can the EU budget compete with China and the US?",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 19:22",
-      "text": "Russian losses on Ukrainian front top 700,000 including missing",
+      "time": "Nov 24, 21:06",
+      "text": "Armed men hold hostages at supermarket in top Colombian tourist destination",
       "link": "live.html"
     }
   ],
