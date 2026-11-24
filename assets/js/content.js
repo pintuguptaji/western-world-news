@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "israeli-strikes-on-gaza-kill-senior-hamas-security-official"
+    "heroSlug": "cas-awards-senegal-afcon-title-after-successful-appeal"
   },
   "breaking": {
-    "text": "Israeli strikes on Gaza kill senior Hamas security official and six other people, medics say",
-    "link": "articles/israeli-strikes-on-gaza-kill-senior-hamas-security-official.html"
+    "text": "CAS awards Senegal AFCON title after successful appeal",
+    "link": "articles/cas-awards-senegal-afcon-title-after-successful-appeal.html"
   },
   "articles": [
+    {
+      "slug": "cas-awards-senegal-afcon-title-after-successful-appeal",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "CAS awards Senegal AFCON title after successful appeal",
+      "dek": "In March, the Confederation of African Football awarded Morocco a 3-0 victory, and the title, after many Senegalese players walked off the pitch in protest over a penalty.",
+      "date": "November 24, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/24/cas-awards-senegal-afcon-title-after-successful-appeal",
+      "body": [
+        "In March, the Confederation of African Football awarded Morocco a 3-0 victory, and the title, after many Senegalese players walked off the pitch in protest over a penalty."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/64/27/696x392_cmsv2_ff54b4c0-20f1-5922-b746-bfe957710ee0-10006427.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "israeli-strikes-on-gaza-kill-senior-hamas-security-official",
       "sections": [
@@ -2143,43 +2162,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 24, 13:10",
-      "text": "Huntley murderer handed new whole life jail term",
+      "time": "Nov 24, 15:51",
+      "text": "CAS awards Senegal AFCON title after successful appeal",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 13:07",
-      "text": "Israeli strikes on Gaza kill senior Hamas security official and six other people, medics say",
+      "time": "Nov 24, 14:49",
+      "text": "EU enlargement: Why do some EU member states use their vetoes to block the accession of certain candidate coun",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 14:04",
-      "text": "China and Singapore expand yuan financing as Beijing pushes currency’s global use",
+      "time": "Nov 24, 14:45",
+      "text": "China’s media hails Huang’s Nvidia return as it warns over ‘witch-hunts’",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 13:02",
-      "text": "Baby P's mother given open prison recommendation",
+      "time": "Nov 24, 15:45",
+      "text": "South Korea tells island residents to take shelter as Russian warplanes near its airspace",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 14:01",
-      "text": "Doctors warn of pesticide risk to fertility as EU moves to cut red tape",
+      "time": "Nov 24, 14:42",
+      "text": "CAS reinstates Senegal as 2025 AFCON champions",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 12:51",
-      "text": "Is North Korea holding back on sending Russia more troops?",
+      "time": "Nov 24, 14:40",
+      "text": "Inquiry expected into Birmingham housing scheme 'exploitation' after BBC investigation",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 12:45",
-      "text": "Russian governor detained in rare criminal case against regional leader",
+      "time": "Nov 24, 14:36",
+      "text": "Meta launches Muse in UK, the AI agent that can do your Christmas shopping",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 12:43",
-      "text": "Afghan women with UK university offers 'heartbroken' after visas stopped",
+      "time": "Nov 24, 14:36",
+      "text": "Why Iran's medicine supply chain is seizing up",
       "link": "live.html"
     }
   ],
