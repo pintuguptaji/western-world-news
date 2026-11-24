@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "eu-plans-sports-ban-in-sweeping-new-russia-sanctions"
+    "heroSlug": "chris-mason-can-burnham-turn-volume-down-on-eu-debate"
   },
   "breaking": {
-    "text": "EU plans sports ban in sweeping new Russia sanctions proposal",
-    "link": "articles/eu-plans-sports-ban-in-sweeping-new-russia-sanctions.html"
+    "text": "Chris Mason: Can Burnham turn volume down on EU debate?",
+    "link": "articles/chris-mason-can-burnham-turn-volume-down-on-eu-debate.html"
   },
   "articles": [
+    {
+      "slug": "chris-mason-can-burnham-turn-volume-down-on-eu-debate",
+      "sections": [
+        "business-finance",
+        "world"
+      ],
+      "section": "business-finance",
+      "headline": "Chris Mason: Can Burnham turn volume down on EU debate?",
+      "dek": "The BBC's Chris Mason analyses what the EU conversation means for Labor and the PM.",
+      "date": "November 24, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6pw47jyyz5no",
+      "body": [
+        "The BBC's Chris Mason analyses what the EU conversation means for Labor and the PM."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/d52f/live/4268b250-e79f-11f1-b8f0-1fdd88d7e7ad.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "eu-plans-sports-ban-in-sweeping-new-russia-sanctions",
       "sections": [
@@ -1975,43 +1994,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 23, 23:26",
-      "text": "EU plans sports ban in sweeping new Russia sanctions proposal",
+      "time": "Nov 24, 00:53",
+      "text": "Benefits review to suggest quicker payment for some disabled people",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 23:16",
-      "text": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
+      "time": "Nov 24, 00:45",
+      "text": "Chris Mason: Can Burnham turn volume down on EU debate?",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 23:10",
-      "text": "Nvidia reinstates CEO Jensen Huang after affair with alleged spy as Trump says 'I made the deal'",
+      "time": "Nov 24, 00:39",
+      "text": "What could Democrats do with their expanding congressional majority?",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 23:10",
-      "text": "14 countries acknowledge ICJ ruling of genocide against Rohingya",
+      "time": "Nov 24, 00:31",
+      "text": "No 10 North will face greater scrutiny as Burnham's 10-year plan looms",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 23:06",
-      "text": "What Nvidia’s Jensen Huang’s return means for Washington and Wall Street?",
+      "time": "Nov 24, 00:30",
+      "text": "Zelensky urges four-way peace talks with Russia, Europe and US 'as soon as possible'",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 23:43",
-      "text": "Visegrád Four leaders voice concerns over EU budget proposal",
+      "time": "Nov 24, 00:28",
+      "text": "Britain's landlords are getting bigger. A two-tier rental market may follow",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 22:41",
-      "text": "Butt of the joke: Trump impersonator mocks president at Canada press dinner",
+      "time": "Nov 24, 00:11",
+      "text": "BBC secret filming shows dog breeder selling sick puppies for £2k each",
       "link": "live.html"
     },
     {
-      "time": "Nov 23, 22:35",
-      "text": "US adds Megaspeed, at center of Nvidia scandal, to a trade blacklist",
+      "time": "Nov 24, 00:04",
+      "text": "Trump calls to ‘expedite’ US federal executions, blasts Gavin Newsom",
       "link": "live.html"
     }
   ],
