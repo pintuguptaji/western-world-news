@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "ex-boss-of-pride-in-london-given-suspended-sentence-for"
+    "heroSlug": "senegal-afcon-ruling-good-in-the-books-of-sports-law-expert"
   },
   "breaking": {
-    "text": "Ex-boss of Pride in London given suspended sentence for ‘harvesting’ documents",
-    "link": "articles/ex-boss-of-pride-in-london-given-suspended-sentence-for.html"
+    "text": "Senegal AFCON ruling 'good in the books of sports law', expert says",
+    "link": "articles/senegal-afcon-ruling-good-in-the-books-of-sports-law-expert.html"
   },
   "articles": [
+    {
+      "slug": "senegal-afcon-ruling-good-in-the-books-of-sports-law-expert",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Senegal AFCON ruling 'good in the books of sports law', expert says",
+      "dek": "Speaking with FRANCE 24's Jennie Shin, sports presenter and journalist Thando Sibiya explains that the decision by the Court of Arbitration for Sport to reinstate Senegal as ⁠winner of ​the 2025 Africa Cup of Nations \"from a jurisprudence.",
+      "date": "November 24, 2026",
+      "source": "France 24",
+      "source_url": "https://www.france24.com/en/senegal-afcon-ruling-good-in-the-books-of-sports-law-expert-says",
+      "body": [
+        "Speaking with FRANCE 24's Jennie Shin, sports presenter and journalist Thando Sibiya explains that the decision by the Court of Arbitration for Sport to reinstate Senegal as ⁠winner of ​the 2025 Africa Cup of Nations \"from a jurisprudence perspective or creating precedent, it is going to be good in the books of sports law, because if every single decision of a referee is taken to a court of law all the time, it really tampers with the quality."
+      ],
+      "related": [],
+      "image": "https://s.france24.com/media/display/2c587954-e840-11f1-a6fd-29d00e23de9a/w:1024/p:16x9/EN-20261124-203334-203830-CS.jpg",
+      "imageCaption": "Photo: France 24"
+    },
     {
       "slug": "ex-boss-of-pride-in-london-given-suspended-sentence-for",
       "sections": [
@@ -2218,43 +2236,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 24, 18:39",
-      "text": "Ex-boss of Pride in London given suspended sentence for ‘harvesting’ documents",
+      "time": "Nov 24, 19:54",
+      "text": "Senegal AFCON ruling 'good in the books of sports law', expert says",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 18:36",
-      "text": "Armed men take 25 hostages at supermarket in one of Colombia’s top tourist destinations",
+      "time": "Nov 24, 19:52",
+      "text": "Senegal regain AFCON title on appeal at Morocco's expense",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 18:21",
-      "text": "Faisal Islam: Fears over the AI boom haven't gone away",
+      "time": "Nov 24, 19:49",
+      "text": "Disability benefit review calls for closer link with claimant costs",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 18:09",
-      "text": "Trump honors Rudy Giuliani with presidential medal of freedom",
+      "time": "Nov 24, 19:41",
+      "text": "Nvidia CEO Jensen Huang apologizes to staff: ‘I made some terrible mistakes’",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 18:07",
-      "text": "Indian government has 'lost the plot', says 'cockroach' leader barred from UK flight",
+      "time": "Nov 24, 19:27",
+      "text": "DR Congo says military aircraft missing as rebels claim to shoot down plane",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 19:04",
-      "text": "At least 24 injured after car bomb detonates in central Colombia",
+      "time": "Nov 24, 19:27",
+      "text": "Car bomb destroys buildings in central Colombian city",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 18:02",
-      "text": "Israel attempts to jail Palestinian student at Hebrew University without trial",
+      "time": "Nov 24, 19:22",
+      "text": "Putin says retaliation ‘inevitable’ after Ukraine hit Russian oil plants",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 17:58",
-      "text": "Sacked London Pride boss given suspended prison sentence",
+      "time": "Nov 24, 19:22",
+      "text": "Russian losses on Ukrainian front top 700,000 including missing",
       "link": "live.html"
     }
   ],
