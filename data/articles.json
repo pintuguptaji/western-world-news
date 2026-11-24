@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "slug": "myanmar-has-been-found-guilty-of-genocide-should-israel-be",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Myanmar has been found guilty of genocide. Should Israel be worried?, podcast",
+      "dek": "The international court of justice has for the first time ruled that a state has committed genocide. Yasmin Ullah explains what it means for the Rohingya people, while Kaamil Ahmed lays out how the case unfolded.",
+      "date": "November 24, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/news/audio/2026/nov/24/myanmar-found-guilty-genocide-should-israel-be-worried-podcast",
+      "body": [
+        "The international court of justice has for the first time ruled that a state has committed genocide. Yasmin Ullah explains what it means for the Rohingya people, while Kaamil Ahmed lays out how the case unfolded."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/a82d0ec0cbb51aadb63a0edd4721abfa0ba5d96b/606_0_6493_5195/master/6493.jpg?width=700&quality=85&auto=format&fit=max&s=7accb568d4a3e27e1dfb7d02ed284939",
+      "imageCaption": "Photo: The Guardian",
+      "auto": true
+    },
+    {
       "slug": "china-sentences-official-to-death-for-spying-for-foreign",
       "sections": [
         "world"
@@ -2060,8 +2080,20 @@
   ],
   "justIn": [
     {
+      "time": "24 Nov, 03:20",
+      "text": "Mexico to try ‘El Chapo Isidro’ despite US extradition request"
+    },
+    {
+      "time": "24 Nov, 03:00",
+      "text": "Myanmar has been found guilty of genocide. Should Israel be worried?, podcast"
+    },
+    {
       "time": "24 Nov, 02:37",
       "text": "China sentences official to death for spying for foreign country"
+    },
+    {
+      "time": "24 Nov, 02:27",
+      "text": "UN chief calls for world to agree on AI oversight within a year"
     },
     {
       "time": "24 Nov, 02:25",
@@ -2078,18 +2110,6 @@
     {
       "time": "24 Nov, 01:25",
       "text": "Beau Lamarre-Condon chose ‘long walk’ to witness box rather than silence, his barrister tells court"
-    },
-    {
-      "time": "24 Nov, 01:17",
-      "text": "Appeals court renews Trump bid for federal jurisdiction in hush-money case"
-    },
-    {
-      "time": "24 Nov, 01:11",
-      "text": "Nvidia reinstates CEO Jensen Huang after affair with alleged spy as Trump says 'I made the deal'"
-    },
-    {
-      "time": "24 Nov, 01:09",
-      "text": "Israeli minister approves return of Flydubai flights"
     }
   ],
   "liveUpdates": [
@@ -2151,9 +2171,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "china-sentences-official-to-death-for-spying-for-foreign",
+  "heroSlug": "myanmar-has-been-found-guilty-of-genocide-should-israel-be",
   "breaking": {
-    "text": "China sentences official to death for spying for foreign country",
-    "link": "articles/china-sentences-official-to-death-for-spying-for-foreign.html"
+    "text": "Myanmar has been found guilty of genocide. Should Israel be worried?, podcast",
+    "link": "articles/myanmar-has-been-found-guilty-of-genocide-should-israel-be.html"
   }
 }

@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "china-sentences-official-to-death-for-spying-for-foreign"
+    "heroSlug": "myanmar-has-been-found-guilty-of-genocide-should-israel-be"
   },
   "breaking": {
-    "text": "China sentences official to death for spying for foreign country",
-    "link": "articles/china-sentences-official-to-death-for-spying-for-foreign.html"
+    "text": "Myanmar has been found guilty of genocide. Should Israel be worried?, podcast",
+    "link": "articles/myanmar-has-been-found-guilty-of-genocide-should-israel-be.html"
   },
   "articles": [
+    {
+      "slug": "myanmar-has-been-found-guilty-of-genocide-should-israel-be",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Myanmar has been found guilty of genocide. Should Israel be worried?, podcast",
+      "dek": "The international court of justice has for the first time ruled that a state has committed genocide. Yasmin Ullah explains what it means for the Rohingya people, while Kaamil Ahmed lays out how the case unfolded.",
+      "date": "November 24, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/news/audio/2026/nov/24/myanmar-found-guilty-genocide-should-israel-be-worried-podcast",
+      "body": [
+        "The international court of justice has for the first time ruled that a state has committed genocide. Yasmin Ullah explains what it means for the Rohingya people, while Kaamil Ahmed lays out how the case unfolded."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/a82d0ec0cbb51aadb63a0edd4721abfa0ba5d96b/606_0_6493_5195/master/6493.jpg?width=700&quality=85&auto=format&fit=max&s=7accb568d4a3e27e1dfb7d02ed284939",
+      "imageCaption": "Photo: The Guardian"
+    },
     {
       "slug": "china-sentences-official-to-death-for-spying-for-foreign",
       "sections": [
@@ -2012,8 +2031,23 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 24, 03:20",
+      "text": "Mexico to try ‘El Chapo Isidro’ despite US extradition request",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 03:00",
+      "text": "Myanmar has been found guilty of genocide. Should Israel be worried?, podcast",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 24, 02:37",
       "text": "China sentences official to death for spying for foreign country",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 24, 02:27",
+      "text": "UN chief calls for world to agree on AI oversight within a year",
       "link": "live.html"
     },
     {
@@ -2034,21 +2068,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 24, 01:25",
       "text": "Beau Lamarre-Condon chose ‘long walk’ to witness box rather than silence, his barrister tells court",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 01:17",
-      "text": "Appeals court renews Trump bid for federal jurisdiction in hush-money case",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 01:11",
-      "text": "Nvidia reinstates CEO Jensen Huang after affair with alleged spy as Trump says 'I made the deal'",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 24, 01:09",
-      "text": "Israeli minister approves return of Flydubai flights",
       "link": "live.html"
     }
   ],
