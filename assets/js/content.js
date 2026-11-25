@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "colombian-police-storm-supermarket-to-free-76-held-hostage"
+    "heroSlug": "us-army-declares-iowa-lead-azide-detonation-tremendously"
   },
   "breaking": {
-    "text": "Colombian police storm supermarket to free 76 held hostage for 17 hours",
-    "link": "articles/colombian-police-storm-supermarket-to-free-76-held-hostage.html"
+    "text": "US Army declares Iowa lead azide detonation ‘tremendously successful’",
+    "link": "articles/us-army-declares-iowa-lead-azide-detonation-tremendously.html"
   },
   "articles": [
+    {
+      "slug": "us-army-declares-iowa-lead-azide-detonation-tremendously",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "US Army declares Iowa lead azide detonation ‘tremendously successful’",
+      "dek": "Army hails Iowa's lead azide disposal operation as some experts warn of potentially hidden toxins.",
+      "date": "November 25, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/11/25/us-army-declares-iowa-lead-azide-detonation-tremendously-successful",
+      "body": [
+        "Army hails Iowa's lead azide disposal operation as some experts warn of potentially hidden toxins."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "colombian-police-storm-supermarket-to-free-76-held-hostage",
       "sections": [
@@ -2535,43 +2554,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 25, 18:41",
-      "text": "Colombian police storm supermarket to free 76 held hostage for 17 hours",
+      "time": "Nov 25, 19:41",
+      "text": "US Army declares Iowa lead azide detonation ‘tremendously successful’",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 18:29",
-      "text": "Poundland collapses putting 11,000 jobs at risk",
+      "time": "Nov 25, 19:36",
+      "text": "Kilmar Ábrego García, target of Trump’s immigration crackdown, lands in Spain after ‘leaving happy’",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 18:24",
-      "text": "Smoke seen from a mile away as army detonates US stockpile of bomb-making chemicals in Iowa",
+      "time": "Nov 25, 19:36",
+      "text": "Vance says Jensen Huang doesn’t need pardon after Trump says ‘it’s an option’",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 18:21",
-      "text": "Trump administration approves Elon Musk’s plan for datacenters in space",
+      "time": "Nov 25, 19:26",
+      "text": "Two children among six dead after plane crash off Mississippi coast",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 18:20",
-      "text": "All hostages rescued after Colombian security forces storm supermarket",
+      "time": "Nov 25, 19:25",
+      "text": "UK food inflation could hit 5% next year, Bank of England says",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 18:14",
-      "text": "Nigeria’s Tinubu pledges to bring peace to rebellion-hit border region",
+      "time": "Nov 25, 19:23",
+      "text": "US Army says controlled blast of explosives in Iowa was 'huge success'",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 18:14",
-      "text": "UN sacked Palestinian staff on back of unproven Israeli allegations, tribunal rules",
+      "time": "Nov 25, 20:20",
+      "text": "Europe Tonight: Russia reportedly prepares nuclear satellite launch",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 19:01",
-      "text": "Bring the noise: Meet the young Italians ringing church bells to protect the past",
+      "time": "Nov 25, 19:19",
+      "text": "North Korea expels Swiss diplomat in sanctions row",
       "link": "live.html"
     }
   ],
