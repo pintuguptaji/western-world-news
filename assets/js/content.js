@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "fort-hood-survivors-denied-bid-to-witness-shooters-firing"
+    "heroSlug": "the-rising-cost-of-putting-food-on-the-table-in-india"
   },
   "breaking": {
-    "text": "Fort Hood survivors denied bid to witness shooter’s firing-squad execution",
-    "link": "articles/fort-hood-survivors-denied-bid-to-witness-shooters-firing.html"
+    "text": "The rising cost of putting food on the table in India",
+    "link": "articles/the-rising-cost-of-putting-food-on-the-table-in-india.html"
   },
   "articles": [
+    {
+      "slug": "the-rising-cost-of-putting-food-on-the-table-in-india",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "The rising cost of putting food on the table in India",
+      "dek": "India's food inflation is broadening, squeezing household budgets.",
+      "date": "November 25, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmy0xj41kl50o",
+      "body": [
+        "India's food inflation is broadening, squeezing household budgets."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/e93a/live/237a32d0-e7d4-11f1-939f-471cde339c0e.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "fort-hood-survivors-denied-bid-to-witness-shooters-firing",
       "sections": [
@@ -2291,43 +2309,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 24, 23:47",
-      "text": "Thomas Markle indicted by federal grand jury in US for possessing child sex abuse images",
+      "time": "Nov 25, 01:02",
+      "text": "The rising cost of putting food on the table in India",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 23:45",
-      "text": "Fort Hood survivors denied bid to witness shooter’s firing-squad execution",
+      "time": "Nov 25, 01:00",
+      "text": "Shot in the face at 15: The lives shattered by Cameroon's decade of conflict",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 23:38",
-      "text": "Third of young Brits have never had sex, but many are sexting and watching porn",
+      "time": "Nov 25, 00:58",
+      "text": "Clashing political visions reflect a divided Spain ahead of election",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 23:33",
-      "text": "Thomas Markle, father of Meghan, indicted over child sexual abuse material",
+      "time": "Nov 25, 00:58",
+      "text": "Beau Lamarre-Condon found guilty of murdering Jesse Baird and Luke Davies",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 23:31",
-      "text": "New York jury convicts Huawei of stealing trade secrets",
+      "time": "Nov 25, 00:56",
+      "text": "Russia's own figures show almost 500,000 deaths in war in Ukraine",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 23:05",
-      "text": "China-linked network using AI fakes to smear Taiwan election candidates, BBC Verify finds",
+      "time": "Nov 25, 00:54",
+      "text": "My family died in Ukraine. My mum blamed Zelensky's troops - the truth is complicated",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 23:03",
-      "text": "These North Koreans say they were spied on, beaten and jailed for being Christian",
+      "time": "Nov 25, 00:42",
+      "text": "What will Victoria’s election result mean for nine datacentre projects awaiting approval?",
       "link": "live.html"
     },
     {
-      "time": "Nov 24, 22:59",
-      "text": "Champions League: Real Madrid thrash PSV 5-1 in comeback win as Manchester City held by Napoli",
+      "time": "Nov 25, 00:38",
+      "text": "US preparing to unveil new tariffs on global trading partners",
       "link": "live.html"
     }
   ],
