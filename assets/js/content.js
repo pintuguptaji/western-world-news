@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "le-pen-party-leaks-prefect-dismissed-paris-deputy"
+    "heroSlug": "duran-duran-guitarist-andy-taylor-dies-aged-65"
   },
   "breaking": {
-    "text": "Le Pen party leaks: prefect dismissed, Paris deputy prosecutor placed under investigation",
-    "link": "articles/le-pen-party-leaks-prefect-dismissed-paris-deputy.html"
+    "text": "Duran Duran guitarist Andy Taylor dies aged 65",
+    "link": "articles/duran-duran-guitarist-andy-taylor-dies-aged-65.html"
   },
   "articles": [
+    {
+      "slug": "duran-duran-guitarist-andy-taylor-dies-aged-65",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Duran Duran guitarist Andy Taylor dies aged 65",
+      "dek": "Andy Taylor, whose guitar riffs helped shape Duran Duran's distinctive sound and propel the British band to global fame in the 1980s, has died aged 65 after a long battle with prostate cancer, the band and his family said Wednesday.",
+      "date": "November 25, 2026",
+      "source": "France 24",
+      "source_url": "https://www.france24.com/en/culture/20261125-duran-duran-guitarist-andy-taylor-dies-aged-65",
+      "body": [
+        "Andy Taylor, whose guitar riffs helped shape Duran Duran's distinctive sound and propel the British band to global fame in the 1980s, has died aged 65 after a long battle with prostate cancer, the band and his family said Wednesday."
+      ],
+      "related": [],
+      "image": "https://s.france24.com/media/display/968794c0-e928-11f1-a2c5-c131ae9bfe9c/w:1024/p:16x9/063-53536468KV127-Fashion-Rocks.jpg",
+      "imageCaption": "Photo: France 24"
+    },
     {
       "slug": "le-pen-party-leaks-prefect-dismissed-paris-deputy",
       "sections": [
@@ -2609,43 +2627,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 25, 23:37",
+      "text": "Duran Duran guitarist Andy Taylor dies aged 65",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 23:26",
+      "text": "A renovation to upgrade these Hong Kong homes ended in an inferno that killed 168",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 23:08",
+      "text": "Flinders Island bushfire grows to 13,000 hectares with Tasmanian homes and properties at risk",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 22:56",
+      "text": "Record-breaking California tides cause major flooding of roads and businesses",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 22:53",
+      "text": "Duran Duran guitarist Andy Taylor dies at 65",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 25, 22:47",
       "text": "PSG's perfect Champions League record ends as Roma snatch 2-2 draw with late penalty",
       "link": "live.html"
     },
     {
+      "time": "Nov 25, 22:41",
+      "text": "Malen and Roma deny injury-hit PSG in Champions League draw",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 25, 22:28",
       "text": "Le Pen party leaks: prefect dismissed, Paris deputy prosecutor placed under investigation",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 22:26",
-      "text": "Israeli lawmakers advance October 7 inquiry opposed by Netanyahu",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 22:19",
-      "text": "Duran Duran guitarist Andy Taylor dies aged 65",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 22:18",
-      "text": "Thirty-one killed in massive fire as fuel tanker crashes on Cairo highway",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 22:16",
-      "text": "Andy Taylor: Duran Duran's livewire guitarist who was a true Wild Boy",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 22:15",
-      "text": "Man United denied at Sporting as referee overshadows Fernandes double",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 22:13",
-      "text": "New US tariffs: 'Trump lashing out really indiscriminately', expert says",
       "link": "live.html"
     }
   ],
