@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "us-stocks-fall-further-as-fears-over-ai-intensify"
+    "heroSlug": "can-europe-fix-its-chronic-medicine-shortage-and-supply"
   },
   "breaking": {
-    "text": "US stocks fall further as fears over AI intensify",
-    "link": "articles/us-stocks-fall-further-as-fears-over-ai-intensify.html"
+    "text": "Can Europe fix its chronic medicine shortage and supply chain disruptions?",
+    "link": "articles/can-europe-fix-its-chronic-medicine-shortage-and-supply.html"
   },
   "articles": [
+    {
+      "slug": "can-europe-fix-its-chronic-medicine-shortage-and-supply",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Can Europe fix its chronic medicine shortage and supply chain disruptions?",
+      "dek": "The European Parliament just approved new legislation to strengthen the production of essential treatments and cut risks linked to limited suppliers. But will it be enough?",
+      "date": "November 25, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/25/can-europe-fix-its-chronic-medicine-shortage-and-supply-chain-disruptions",
+      "body": [
+        "The European Parliament just approved new legislation to strengthen the production of essential treatments and cut risks linked to limited suppliers. But will it be enough?"
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/09/99/89/54/696x392_cmsv2_b22730b7-4bc1-5a40-b80f-93ac7babd470-9998954.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "us-stocks-fall-further-as-fears-over-ai-intensify",
       "sections": [
@@ -2498,43 +2517,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 25, 16:07",
+      "time": "Nov 25, 17:48",
+      "text": "Gordon Ramsay to host Top Gear as show revived after Flintoff crash",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 17:48",
       "text": "US stocks fall further as fears over AI intensify",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 16:06",
-      "text": "€561 Billion and Still Not Enough: Germany's 2027 Budget Exposes a Coalition on the Brink",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 16:03",
+      "time": "Nov 25, 17:47",
       "text": "Poundland collapses putting 11,000 jobs at risk",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 15:52",
-      "text": "Poundland collapses into administration, putting 12,000 jobs at risk",
+      "time": "Nov 25, 18:43",
+      "text": "Community care: Former Jewish school becomes Iraq's first Jewish museum",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 15:46",
-      "text": "'We need to stop the war in Iran': US Congresswoman Pramila Jayapal",
+      "time": "Nov 25, 18:40",
+      "text": "Can Europe fix its chronic medicine shortage and supply chain disruptions?",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 15:46",
-      "text": "US inflation hits highest since May after prices climb 3.8% over the last year",
+      "time": "Nov 25, 17:30",
+      "text": "Images of asteroid targeted to test Earth's defenses reveal stadium-sized crater",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 15:42",
-      "text": "South Africa's Ramaphosa wins court battle over impeachment threat",
+      "time": "Nov 25, 18:30",
+      "text": "ESA releases first images showing 'complete chaos' on asteroid smashed by NASA probe",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 15:39",
-      "text": "Brussels on split-screen: where it flexes, and where it bends",
+      "time": "Nov 25, 17:29",
+      "text": "Iraq’s top court rules government can take over Kurdish borders, oil fields",
       "link": "live.html"
     }
   ],
