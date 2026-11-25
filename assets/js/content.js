@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "13-restaurants-topped-lalistes-ranking-for-2027-including"
+    "heroSlug": "german-hiker-battles-fierce-winds-on-torres-del-paine"
   },
   "breaking": {
-    "text": "13 restaurants topped LaListe’s ranking for 2027, including seven in Europe",
-    "link": "articles/13-restaurants-topped-lalistes-ranking-for-2027-including.html"
+    "text": "German hiker battles fierce winds on Torres del Paine suspension bridge",
+    "link": "articles/german-hiker-battles-fierce-winds-on-torres-del-paine.html"
   },
   "articles": [
+    {
+      "slug": "german-hiker-battles-fierce-winds-on-torres-del-paine",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "German hiker battles fierce winds on Torres del Paine suspension bridge",
+      "dek": "Violent gusts of wind set a suspension bridge swaying in Chile's Torres del Paine National Park. A fellow hiker captures the moment the German tourist struggled to keep his balance.",
+      "date": "November 25, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/25/german-hiker-battles-fierce-winds-on-torres-del-paine-suspension-bridge",
+      "body": [
+        "Violent gusts of wind set a suspension bridge swaying in Chile's Torres del Paine National Park. A fellow hiker captures the moment the German tourist struggled to keep his balance."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/72/09/696x392_cmsv2_68644ef2-ea1a-5128-9065-4c40c78b873e-10007209.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "13-restaurants-topped-lalistes-ranking-for-2027-including",
       "sections": [
@@ -2403,43 +2422,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 25, 09:51",
-      "text": "13 restaurants topped LaListe’s ranking for 2027, including seven in Europe",
+      "time": "Nov 25, 11:55",
+      "text": "German hiker battles fierce winds on Torres del Paine suspension bridge",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 08:51",
-      "text": "German auto workers on back foot as costs, competition bite",
+      "time": "Nov 25, 10:52",
+      "text": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 09:40",
-      "text": "Stunning Supermoon photos: The best shots of last night's Beaver moon lighting up the night sky",
+      "time": "Nov 25, 10:51",
+      "text": "Australia, Solomon Islands sign sweeping pact seen as countering China",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 08:38",
-      "text": "Energy bills to rise by 26% from January",
+      "time": "Nov 25, 11:49",
+      "text": "Aid cuts leave 446,000 fewer people on HIV prevention drugs, UN agency warns",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 08:31",
-      "text": "All hostages freed after Colombian security forces storm supermarket, says president",
+      "time": "Nov 25, 10:48",
+      "text": "Cyberattack exposes unclassified information from CIA system, US media reports",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 08:27",
-      "text": "Colombian security forces storm supermarket, free hostages",
+      "time": "Nov 25, 11:43",
+      "text": "Burgas and Huesca-Pirineos among the world’s most innovative airports of 2026",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 08:23",
-      "text": "Saudi-led coalition intercepts Houthi attacks after Hodeidah strike",
+      "time": "Nov 25, 10:40",
+      "text": "General Synod could vote to ban C of E clergy from supporting Restore Britain",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 08:23",
-      "text": "Countries that thrive on global cooperation must help sustain it",
+      "time": "Nov 25, 11:37",
+      "text": "French navy seizes 3.3 tonnes of methamphetamine from stateless tanker in Pacific",
       "link": "live.html"
     }
   ],
