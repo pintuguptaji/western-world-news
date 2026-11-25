@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "the-rising-cost-of-putting-food-on-the-table-in-india"
+    "heroSlug": "kilmar-abrego-garcia-self-deports-to-spain-after-lengthy-us"
   },
   "breaking": {
-    "text": "The rising cost of putting food on the table in India",
-    "link": "articles/the-rising-cost-of-putting-food-on-the-table-in-india.html"
+    "text": "Kilmar Abrego Garcia self-deports to Spain after lengthy US legal battle",
+    "link": "articles/kilmar-abrego-garcia-self-deports-to-spain-after-lengthy-us.html"
   },
   "articles": [
+    {
+      "slug": "kilmar-abrego-garcia-self-deports-to-spain-after-lengthy-us",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "Kilmar Abrego Garcia self-deports to Spain after lengthy US legal battle",
+      "dek": "US Senator Chris Van Hollen hails Kilmar Abrego Garcia's safe departure to Spain as a 'free man'.",
+      "date": "November 25, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/11/25/kilmar-abrego-garcia-self-deports-to-spain-after-lengthy-us-legal-battle",
+      "body": [
+        "US Senator Chris Van Hollen hails Kilmar Abrego Garcia's safe departure to Spain as a 'free man'."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "the-rising-cost-of-putting-food-on-the-table-in-india",
       "sections": [
@@ -2309,43 +2328,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 25, 01:02",
-      "text": "The rising cost of putting food on the table in India",
+      "time": "Nov 25, 02:40",
+      "text": "Kilmar Abrego Garcia self-deports to Spain after lengthy US legal battle",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 01:00",
-      "text": "Shot in the face at 15: The lives shattered by Cameroon's decade of conflict",
+      "time": "Nov 25, 02:23",
+      "text": "WHO chief urges end to US fuel blockade on Cuba",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 00:58",
-      "text": "Clashing political visions reflect a divided Spain ahead of election",
+      "time": "Nov 25, 02:17",
+      "text": "Rescue crews search for six people after plane crash off Mississippi coast",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 00:58",
-      "text": "Beau Lamarre-Condon found guilty of murdering Jesse Baird and Luke Davies",
+      "time": "Nov 25, 02:01",
+      "text": "US jury convicts Huawei of violating sanctions, stealing trade secrets",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 00:56",
-      "text": "Russia's own figures show almost 500,000 deaths in war in Ukraine",
+      "time": "Nov 25, 01:51",
+      "text": "Lies, a disguise and surfboard bags: how a jealous Sydney policeman tried to cover up double murder",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 00:54",
-      "text": "My family died in Ukraine. My mum blamed Zelensky's troops - the truth is complicated",
+      "time": "Nov 25, 01:51",
+      "text": "Kilmar Ábrego García leaving US for Spain, bringing deportation battle to an end",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 00:42",
-      "text": "What will Victoria’s election result mean for nine datacentre projects awaiting approval?",
+      "time": "Nov 25, 01:51",
+      "text": "Australia’s security pact with Solomon Islands a blow to China’s influence in the Pacific",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 00:38",
-      "text": "US preparing to unveil new tariffs on global trading partners",
+      "time": "Nov 25, 01:42",
+      "text": "Inflation rate jumps to 4.9% as Australia’s cost-of-living crisis intensifies",
       "link": "live.html"
     }
   ],
