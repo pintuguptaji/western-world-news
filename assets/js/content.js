@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "kilmar-abrego-garcia-leaving-us-for-spain-ending-trump"
+    "heroSlug": "in-charts-how-power-could-shift-in-europes-big-year-of"
   },
   "breaking": {
-    "text": "Kilmar Ábrego García leaving US for Spain, ending Trump deportation battle",
-    "link": "articles/kilmar-abrego-garcia-leaving-us-for-spain-ending-trump.html"
+    "text": "In charts: how power could shift in Europe’s big year of elections",
+    "link": "articles/in-charts-how-power-could-shift-in-europes-big-year-of.html"
   },
   "articles": [
+    {
+      "slug": "in-charts-how-power-could-shift-in-europes-big-year-of",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "In charts: how power could shift in Europe’s big year of elections",
+      "dek": "More than half of EU voters will go to the polls in the next 12 months, with the far right targeting significant gains. We set out the political landscape and trends.",
+      "date": "November 25, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/nov/25/charts-europe-big-year-of-elections-eu-far-right",
+      "body": [
+        "More than half of EU voters will go to the polls in the next 12 months, with the far right targeting significant gains. We set out the political landscape and trends."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/3fb443520d5ae15fd4e46dca873678b8da5e63ea/683_0_6827_5464/master/6827.jpg?width=700&quality=85&auto=format&fit=max&s=fe7114fd09ea258af70aa0461f6b01b7",
+      "imageCaption": "Photo: The Guardian"
+    },
     {
       "slug": "kilmar-abrego-garcia-leaving-us-for-spain-ending-trump",
       "sections": [
@@ -2347,43 +2365,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 25, 03:54",
+      "time": "Nov 25, 06:00",
+      "text": "Summer vitamin D levels may say more about your health than winter levels, study finds",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 05:00",
+      "text": "In charts: how power could shift in Europe’s big year of elections",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 05:00",
+      "text": "‘They don’t believe in freedom’: Yemenis plan their escape as Houthis advance on Aden",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 05:50",
+      "text": "North Korea expels Swiss diplomat and orders Bern's new Pyongyang office to close",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 04:49",
       "text": "Kilmar Ábrego García leaving US for Spain, ending Trump deportation battle",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 03:46",
-      "text": "Live: Two Libyan soldiers killed in Ukrainian attack on Russian vessels in Benghazi",
+      "time": "Nov 25, 04:48",
+      "text": "UK warns companies of potential Russian sabotage threat",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 03:44",
-      "text": "US attorney general dodges questions about Nvidia investigation",
+      "time": "Nov 25, 04:41",
+      "text": "Libya: 2 dead after Ukrainian attack on Russian warship in Benghazi",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 03:05",
-      "text": "Beau Lamarre-Condon found guilty of murdering Jesse Baird and Luke Davies",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 03:00",
-      "text": "The Russian army’s secret death toll, podcast",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 02:59",
-      "text": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 02:56",
-      "text": "China launches Shenzhou-24 to Tiangong station",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 02:40",
-      "text": "Kilmar Abrego Garcia self-deports to Spain after lengthy US legal battle",
+      "time": "Nov 25, 04:01",
+      "text": "Amnesty calls for ICC genocide probe over Israel's impact on births in Gaza",
       "link": "live.html"
     }
   ],
