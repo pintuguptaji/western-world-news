@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "slug": "czech-republic-ready-to-support-poland-after-russian",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Czech Republic ready to support Poland after Russian airspace violations",
+      "dek": "Prague's offer comes after Russian weapons entered Polish airspace during a large-scale attack on western Ukraine on November 20.",
+      "date": "November 25, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/25/czech-republic-to-support-poland-after-russian-airspace-violations",
+      "body": [
+        "Prague's offer comes after Russian weapons entered Polish airspace during a large-scale attack on western Ukraine on November 20."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/70/82/696x392_cmsv2_5c436ef6-94ce-50df-8901-ca2cf2086be0-10007082.jpg",
+      "imageCaption": "Photo: Euronews",
+      "auto": true
+    },
+    {
       "slug": "german-hiker-battles-fierce-winds-on-torres-del-paine",
       "sections": [
         "europe",
@@ -2492,36 +2512,36 @@
   ],
   "justIn": [
     {
-      "time": "25 Nov, 11:55",
-      "text": "German hiker battles fierce winds on Torres del Paine suspension bridge"
+      "time": "25 Nov, 12:57",
+      "text": "Czech Republic ready to support Poland after Russian airspace violations"
     },
     {
-      "time": "25 Nov, 10:52",
-      "text": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering"
+      "time": "25 Nov, 11:57",
+      "text": "Spain: Catalan separatist Puigdemont sets date for return"
     },
     {
-      "time": "25 Nov, 10:51",
-      "text": "Australia, Solomon Islands sign sweeping pact seen as countering China"
+      "time": "25 Nov, 12:56",
+      "text": "Meet TeoTronico: The sassy, 53-fingered robot pianist challenging human musicians"
     },
     {
-      "time": "25 Nov, 11:49",
-      "text": "Aid cuts leave 446,000 fewer people on HIV prevention drugs, UN agency warns"
+      "time": "25 Nov, 11:46",
+      "text": "Influencers hit back at criticism of Downing Street videos"
     },
     {
-      "time": "25 Nov, 10:48",
-      "text": "Cyberattack exposes unclassified information from CIA system, US media reports"
+      "time": "25 Nov, 11:45",
+      "text": "Colombian police storm supermarket to free 20 held hostage for 17 hours"
     },
     {
-      "time": "25 Nov, 11:43",
-      "text": "Burgas and Huesca-Pirineos among the world’s most innovative airports of 2026"
+      "time": "25 Nov, 11:44",
+      "text": "Energy bills to rise by 26% from January after gas prices surge"
     },
     {
-      "time": "25 Nov, 10:40",
-      "text": "General Synod could vote to ban C of E clergy from supporting Restore Britain"
+      "time": "25 Nov, 11:42",
+      "text": "Sinner uncertain for Australian Open after undergoing knee surgery"
     },
     {
-      "time": "25 Nov, 11:37",
-      "text": "French navy seizes 3.3 tonnes of methamphetamine from stateless tanker in Pacific"
+      "time": "25 Nov, 11:33",
+      "text": "US Army to detonate unstable lead-based explosives in Iowa"
     }
   ],
   "liveUpdates": [
@@ -2583,9 +2603,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "german-hiker-battles-fierce-winds-on-torres-del-paine",
+  "heroSlug": "czech-republic-ready-to-support-poland-after-russian",
   "breaking": {
-    "text": "German hiker battles fierce winds on Torres del Paine suspension bridge",
-    "link": "articles/german-hiker-battles-fierce-winds-on-torres-del-paine.html"
+    "text": "Czech Republic ready to support Poland after Russian airspace violations",
+    "link": "articles/czech-republic-ready-to-support-poland-after-russian.html"
   }
 }

@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "german-hiker-battles-fierce-winds-on-torres-del-paine"
+    "heroSlug": "czech-republic-ready-to-support-poland-after-russian"
   },
   "breaking": {
-    "text": "German hiker battles fierce winds on Torres del Paine suspension bridge",
-    "link": "articles/german-hiker-battles-fierce-winds-on-torres-del-paine.html"
+    "text": "Czech Republic ready to support Poland after Russian airspace violations",
+    "link": "articles/czech-republic-ready-to-support-poland-after-russian.html"
   },
   "articles": [
+    {
+      "slug": "czech-republic-ready-to-support-poland-after-russian",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Czech Republic ready to support Poland after Russian airspace violations",
+      "dek": "Prague's offer comes after Russian weapons entered Polish airspace during a large-scale attack on western Ukraine on November 20.",
+      "date": "November 25, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/25/czech-republic-to-support-poland-after-russian-airspace-violations",
+      "body": [
+        "Prague's offer comes after Russian weapons entered Polish airspace during a large-scale attack on western Ukraine on November 20."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/70/82/696x392_cmsv2_5c436ef6-94ce-50df-8901-ca2cf2086be0-10007082.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "german-hiker-battles-fierce-winds-on-torres-del-paine",
       "sections": [
@@ -2422,43 +2441,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 25, 11:55",
-      "text": "German hiker battles fierce winds on Torres del Paine suspension bridge",
+      "time": "Nov 25, 12:57",
+      "text": "Czech Republic ready to support Poland after Russian airspace violations",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 10:52",
-      "text": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering",
+      "time": "Nov 25, 11:57",
+      "text": "Spain: Catalan separatist Puigdemont sets date for return",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 10:51",
-      "text": "Australia, Solomon Islands sign sweeping pact seen as countering China",
+      "time": "Nov 25, 12:56",
+      "text": "Meet TeoTronico: The sassy, 53-fingered robot pianist challenging human musicians",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 11:49",
-      "text": "Aid cuts leave 446,000 fewer people on HIV prevention drugs, UN agency warns",
+      "time": "Nov 25, 11:46",
+      "text": "Influencers hit back at criticism of Downing Street videos",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 10:48",
-      "text": "Cyberattack exposes unclassified information from CIA system, US media reports",
+      "time": "Nov 25, 11:45",
+      "text": "Colombian police storm supermarket to free 20 held hostage for 17 hours",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 11:43",
-      "text": "Burgas and Huesca-Pirineos among the world’s most innovative airports of 2026",
+      "time": "Nov 25, 11:44",
+      "text": "Energy bills to rise by 26% from January after gas prices surge",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 10:40",
-      "text": "General Synod could vote to ban C of E clergy from supporting Restore Britain",
+      "time": "Nov 25, 11:42",
+      "text": "Sinner uncertain for Australian Open after undergoing knee surgery",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 11:37",
-      "text": "French navy seizes 3.3 tonnes of methamphetamine from stateless tanker in Pacific",
+      "time": "Nov 25, 11:33",
+      "text": "US Army to detonate unstable lead-based explosives in Iowa",
       "link": "live.html"
     }
   ],
