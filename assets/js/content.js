@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "in-charts-how-power-could-shift-in-europes-big-year-of"
+    "heroSlug": "spain-s-economy-is-booming-why-are-real-wages-still-below"
   },
   "breaking": {
-    "text": "In charts: how power could shift in Europe’s big year of elections",
-    "link": "articles/in-charts-how-power-could-shift-in-europes-big-year-of.html"
+    "text": "Spain's economy is booming. Why are real wages still below their 2009 peak?",
+    "link": "articles/spain-s-economy-is-booming-why-are-real-wages-still-below.html"
   },
   "articles": [
+    {
+      "slug": "spain-s-economy-is-booming-why-are-real-wages-still-below",
+      "sections": [
+        "business-finance",
+        "world"
+      ],
+      "section": "business-finance",
+      "headline": "Spain's economy is booming. Why are real wages still below their 2009 peak?",
+      "dek": "Spain's economy is forecast to grow more than twice as fast as the eurozone's this year, but average pay still buys less than it did in 2009.",
+      "date": "November 25, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/25/spains-economy-is-booming-why-are-real-wages-still-below-their-2009-peak",
+      "body": [
+        "Spain's economy is forecast to grow more than twice as fast as the eurozone's this year, but average pay still buys less than it did in 2009. Rising housing and food costs are putting household budgets under pressure ahead of Sunday's election."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/09/98/91/87/696x392_cmsv2_32ec34ab-5f58-5955-a732-bafcac9a3734-9989187.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "in-charts-how-power-could-shift-in-europes-big-year-of",
       "sections": [
@@ -2365,43 +2384,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 25, 08:10",
+      "text": "Spain's economy is booming. Why are real wages still below their 2009 peak?",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 07:05",
+      "text": "Household energy prices to rise by 26% in January as new price cap confirmed",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 08:02",
+      "text": "Colombia security forces storm supermarket where hostages are being held",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 06:57",
+      "text": "Domestic violence soars to record high in Germany",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 06:36",
+      "text": "Kilmar Ábrego García leaves US for Spain, ending Trump deportation battle",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 06:20",
+      "text": "2025 AFCON: CAS gives title to Senegal as Morocco vows to challenge verdict",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 06:17",
+      "text": "Ministers ask public for views on changing age of consent",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 25, 06:00",
-      "text": "Summer vitamin D levels may say more about your health than winter levels, study finds",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 05:00",
-      "text": "In charts: how power could shift in Europe’s big year of elections",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 05:00",
-      "text": "‘They don’t believe in freedom’: Yemenis plan their escape as Houthis advance on Aden",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 05:50",
-      "text": "North Korea expels Swiss diplomat and orders Bern's new Pyongyang office to close",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 04:49",
-      "text": "Kilmar Ábrego García leaving US for Spain, ending Trump deportation battle",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 04:48",
-      "text": "UK warns companies of potential Russian sabotage threat",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 04:41",
-      "text": "Libya: 2 dead after Ukrainian attack on Russian warship in Benghazi",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 04:01",
-      "text": "Amnesty calls for ICC genocide probe over Israel's impact on births in Gaza",
+      "text": "UK sent sex offender refugee to African country in undisclosed deal",
       "link": "live.html"
     }
   ],

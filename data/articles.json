@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "slug": "spain-s-economy-is-booming-why-are-real-wages-still-below",
+      "sections": [
+        "business-finance",
+        "world"
+      ],
+      "section": "business-finance",
+      "headline": "Spain's economy is booming. Why are real wages still below their 2009 peak?",
+      "dek": "Spain's economy is forecast to grow more than twice as fast as the eurozone's this year, but average pay still buys less than it did in 2009.",
+      "date": "November 25, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/25/spains-economy-is-booming-why-are-real-wages-still-below-their-2009-peak",
+      "body": [
+        "Spain's economy is forecast to grow more than twice as fast as the eurozone's this year, but average pay still buys less than it did in 2009. Rising housing and food costs are putting household budgets under pressure ahead of Sunday's election."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/09/98/91/87/696x392_cmsv2_32ec34ab-5f58-5955-a732-bafcac9a3734-9989187.jpg",
+      "imageCaption": "Photo: Euronews",
+      "auto": true
+    },
+    {
       "slug": "in-charts-how-power-could-shift-in-europes-big-year-of",
       "sections": [
         "world"
@@ -2432,36 +2452,36 @@
   ],
   "justIn": [
     {
+      "time": "25 Nov, 08:10",
+      "text": "Spain's economy is booming. Why are real wages still below their 2009 peak?"
+    },
+    {
+      "time": "25 Nov, 07:05",
+      "text": "Household energy prices to rise by 26% in January as new price cap confirmed"
+    },
+    {
+      "time": "25 Nov, 08:02",
+      "text": "Colombia security forces storm supermarket where hostages are being held"
+    },
+    {
+      "time": "25 Nov, 06:57",
+      "text": "Domestic violence soars to record high in Germany"
+    },
+    {
+      "time": "25 Nov, 06:36",
+      "text": "Kilmar Ábrego García leaves US for Spain, ending Trump deportation battle"
+    },
+    {
+      "time": "25 Nov, 06:20",
+      "text": "2025 AFCON: CAS gives title to Senegal as Morocco vows to challenge verdict"
+    },
+    {
+      "time": "25 Nov, 06:17",
+      "text": "Ministers ask public for views on changing age of consent"
+    },
+    {
       "time": "25 Nov, 06:00",
-      "text": "Summer vitamin D levels may say more about your health than winter levels, study finds"
-    },
-    {
-      "time": "25 Nov, 05:00",
-      "text": "In charts: how power could shift in Europe’s big year of elections"
-    },
-    {
-      "time": "25 Nov, 05:00",
-      "text": "‘They don’t believe in freedom’: Yemenis plan their escape as Houthis advance on Aden"
-    },
-    {
-      "time": "25 Nov, 05:50",
-      "text": "North Korea expels Swiss diplomat and orders Bern's new Pyongyang office to close"
-    },
-    {
-      "time": "25 Nov, 04:49",
-      "text": "Kilmar Ábrego García leaving US for Spain, ending Trump deportation battle"
-    },
-    {
-      "time": "25 Nov, 04:48",
-      "text": "UK warns companies of potential Russian sabotage threat"
-    },
-    {
-      "time": "25 Nov, 04:41",
-      "text": "Libya: 2 dead after Ukrainian attack on Russian warship in Benghazi"
-    },
-    {
-      "time": "25 Nov, 04:01",
-      "text": "Amnesty calls for ICC genocide probe over Israel's impact on births in Gaza"
+      "text": "UK sent sex offender refugee to African country in undisclosed deal"
     }
   ],
   "liveUpdates": [
@@ -2523,9 +2543,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "in-charts-how-power-could-shift-in-europes-big-year-of",
+  "heroSlug": "spain-s-economy-is-booming-why-are-real-wages-still-below",
   "breaking": {
-    "text": "In charts: how power could shift in Europe’s big year of elections",
-    "link": "articles/in-charts-how-power-could-shift-in-europes-big-year-of.html"
+    "text": "Spain's economy is booming. Why are real wages still below their 2009 peak?",
+    "link": "articles/spain-s-economy-is-booming-why-are-real-wages-still-below.html"
   }
 }
