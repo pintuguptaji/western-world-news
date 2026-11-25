@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "slug": "us-announces-new-tariffs-on-host-of-countries-including",
+      "sections": [
+        "business-finance",
+        "world"
+      ],
+      "section": "business-finance",
+      "headline": "US announces new tariffs on host of countries including China",
+      "dek": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
+      "date": "November 25, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o",
+      "body": [
+        "The new levies would hit many of America's biggest trading partners, including China and the EU."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/511d/live/da29c130-e860-11f1-a330-6153c8fb2fad.jpg",
+      "imageCaption": "Photo: BBC",
+      "auto": true
+    },
+    {
       "slug": "czech-republic-ready-to-support-poland-after-russian",
       "sections": [
         "war-conflict",
@@ -2512,36 +2532,36 @@
   ],
   "justIn": [
     {
-      "time": "25 Nov, 12:57",
-      "text": "Czech Republic ready to support Poland after Russian airspace violations"
+      "time": "25 Nov, 13:21",
+      "text": "Two men charged with trespass at Prince and Princess of Wales's Norfolk home"
     },
     {
-      "time": "25 Nov, 11:57",
-      "text": "Spain: Catalan separatist Puigdemont sets date for return"
+      "time": "25 Nov, 13:19",
+      "text": "Raheem Sterling given suspended jail sentence for dangerous driving and nitrous oxide possession"
     },
     {
-      "time": "25 Nov, 12:56",
-      "text": "Meet TeoTronico: The sassy, 53-fingered robot pianist challenging human musicians"
+      "time": "25 Nov, 13:19",
+      "text": "US announces new tariffs on host of countries including China"
     },
     {
-      "time": "25 Nov, 11:46",
-      "text": "Influencers hit back at criticism of Downing Street videos"
+      "time": "25 Nov, 14:19",
+      "text": "Craiova, Riga, Sofia: These are the best Christmas markets in Europe for 2027, according to travellers"
     },
     {
-      "time": "25 Nov, 11:45",
-      "text": "Colombian police storm supermarket to free 20 held hostage for 17 hours"
+      "time": "25 Nov, 13:17",
+      "text": "Why Indians are still ending up in Russia's war"
     },
     {
-      "time": "25 Nov, 11:44",
-      "text": "Energy bills to rise by 26% from January after gas prices surge"
+      "time": "25 Nov, 14:13",
+      "text": "Montenegro will become EU’s next member by 2028, says President"
     },
     {
-      "time": "25 Nov, 11:42",
-      "text": "Sinner uncertain for Australian Open after undergoing knee surgery"
+      "time": "25 Nov, 14:07",
+      "text": "Haftar visits Ankara as Erdoğan prepares first Libya trip in 15 years"
     },
     {
-      "time": "25 Nov, 11:33",
-      "text": "US Army to detonate unstable lead-based explosives in Iowa"
+      "time": "25 Nov, 13:04",
+      "text": "‘Second home’: Why Israel is celebrating Jensen Huang’s return to Nvidia"
     }
   ],
   "liveUpdates": [
@@ -2603,9 +2623,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "czech-republic-ready-to-support-poland-after-russian",
+  "heroSlug": "us-announces-new-tariffs-on-host-of-countries-including",
   "breaking": {
-    "text": "Czech Republic ready to support Poland after Russian airspace violations",
-    "link": "articles/czech-republic-ready-to-support-poland-after-russian.html"
+    "text": "US announces new tariffs on host of countries including China",
+    "link": "articles/us-announces-new-tariffs-on-host-of-countries-including.html"
   }
 }

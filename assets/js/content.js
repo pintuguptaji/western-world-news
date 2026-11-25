@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "czech-republic-ready-to-support-poland-after-russian"
+    "heroSlug": "us-announces-new-tariffs-on-host-of-countries-including"
   },
   "breaking": {
-    "text": "Czech Republic ready to support Poland after Russian airspace violations",
-    "link": "articles/czech-republic-ready-to-support-poland-after-russian.html"
+    "text": "US announces new tariffs on host of countries including China",
+    "link": "articles/us-announces-new-tariffs-on-host-of-countries-including.html"
   },
   "articles": [
+    {
+      "slug": "us-announces-new-tariffs-on-host-of-countries-including",
+      "sections": [
+        "business-finance",
+        "world"
+      ],
+      "section": "business-finance",
+      "headline": "US announces new tariffs on host of countries including China",
+      "dek": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
+      "date": "November 25, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o",
+      "body": [
+        "The new levies would hit many of America's biggest trading partners, including China and the EU."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/511d/live/da29c130-e860-11f1-a330-6153c8fb2fad.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "czech-republic-ready-to-support-poland-after-russian",
       "sections": [
@@ -2441,43 +2460,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 25, 12:57",
-      "text": "Czech Republic ready to support Poland after Russian airspace violations",
+      "time": "Nov 25, 13:21",
+      "text": "Two men charged with trespass at Prince and Princess of Wales's Norfolk home",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 11:57",
-      "text": "Spain: Catalan separatist Puigdemont sets date for return",
+      "time": "Nov 25, 13:19",
+      "text": "Raheem Sterling given suspended jail sentence for dangerous driving and nitrous oxide possession",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 12:56",
-      "text": "Meet TeoTronico: The sassy, 53-fingered robot pianist challenging human musicians",
+      "time": "Nov 25, 13:19",
+      "text": "US announces new tariffs on host of countries including China",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 11:46",
-      "text": "Influencers hit back at criticism of Downing Street videos",
+      "time": "Nov 25, 14:19",
+      "text": "Craiova, Riga, Sofia: These are the best Christmas markets in Europe for 2027, according to travellers",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 11:45",
-      "text": "Colombian police storm supermarket to free 20 held hostage for 17 hours",
+      "time": "Nov 25, 13:17",
+      "text": "Why Indians are still ending up in Russia's war",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 11:44",
-      "text": "Energy bills to rise by 26% from January after gas prices surge",
+      "time": "Nov 25, 14:13",
+      "text": "Montenegro will become EU’s next member by 2028, says President",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 11:42",
-      "text": "Sinner uncertain for Australian Open after undergoing knee surgery",
+      "time": "Nov 25, 14:07",
+      "text": "Haftar visits Ankara as Erdoğan prepares first Libya trip in 15 years",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 11:33",
-      "text": "US Army to detonate unstable lead-based explosives in Iowa",
+      "time": "Nov 25, 13:04",
+      "text": "‘Second home’: Why Israel is celebrating Jensen Huang’s return to Nvidia",
       "link": "live.html"
     }
   ],
