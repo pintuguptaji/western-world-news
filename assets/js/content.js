@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "one-eu-budget-too-many-priorities-meps-join-the-ring-in"
+    "heroSlug": "north-korea-expels-swiss-diplomat-in-sanctions-row"
   },
   "breaking": {
-    "text": "One EU budget. Too many priorities? MEPs join The Ring in Strasbourg",
-    "link": "articles/one-eu-budget-too-many-priorities-meps-join-the-ring-in.html"
+    "text": "North Korea expels Swiss diplomat in sanctions row",
+    "link": "articles/north-korea-expels-swiss-diplomat-in-sanctions-row.html"
   },
   "articles": [
+    {
+      "slug": "north-korea-expels-swiss-diplomat-in-sanctions-row",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "North Korea expels Swiss diplomat in sanctions row",
+      "dek": "Swiss officials said relations would be kept through North Korea's embassy in Bern, and its own embassy in Beijing.",
+      "date": "November 25, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq0l34e4kkr5o",
+      "body": [
+        "Swiss officials said relations would be kept through North Korea's embassy in Bern, and its own embassy in Beijing."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/b4ee/live/fcd47260-e8fc-11f1-99b6-a35a62fa4264.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "one-eu-budget-too-many-priorities-meps-join-the-ring-in",
       "sections": [
@@ -2573,43 +2591,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 25, 20:43",
+      "time": "Nov 25, 21:51",
+      "text": "North Korea expels Swiss diplomat in sanctions row",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 21:43",
+      "text": "Duran Duran guitarist Andy Taylor dies, aged 65",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 21:43",
+      "text": "US stocks fall further as fears over AI intensify",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 21:37",
+      "text": "Egypt: At least 31 dead after fuel truck overturns on highway",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 21:32",
+      "text": "Flinders Island bushfire grows to 13,000 hectares with Tasmanian homes and properties at risk",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 21:31",
       "text": "Poundland collapses putting 11,000 jobs at risk",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 21:42",
-      "text": "One EU budget. Too many priorities? MEPs join The Ring in Strasbourg",
+      "time": "Nov 25, 21:25",
+      "text": "At least 30 killed in massive fire as fuel tanker crashes on Cairo highway",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 20:38",
-      "text": "Did GTA 6 really recreate Charlie Kirk's assassination?",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 20:32",
-      "text": "Liberal senator Leah Blyth announces defection to One Nation",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 20:29",
-      "text": "Netanyahu says corruption trial ‘must end’ as court suggests dropping case",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 20:28",
-      "text": "Nigeria detains 5 Mexicans, confiscates over $220 million of meth",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 20:20",
-      "text": "All hostages rescued after Colombian security forces storm supermarket, police says",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 21:15",
-      "text": "Wrongly deported Salvadoran arrives in Spain after US legal battle",
+      "time": "Nov 25, 21:03",
+      "text": "Winter rains threaten 1,000 Gaza shelter sites, councils warn",
       "link": "live.html"
     }
   ],
