@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "us-announces-new-tariffs-on-host-of-countries-including"
+    "heroSlug": "captain-of-sunken-costa-concordia-hired-by-tourism-agency"
   },
   "breaking": {
-    "text": "US announces new tariffs on host of countries including China",
-    "link": "articles/us-announces-new-tariffs-on-host-of-countries-including.html"
+    "text": "Captain of sunken Costa Concordia hired by tourism agency in Sorrento",
+    "link": "articles/captain-of-sunken-costa-concordia-hired-by-tourism-agency.html"
   },
   "articles": [
+    {
+      "slug": "captain-of-sunken-costa-concordia-hired-by-tourism-agency",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Captain of sunken Costa Concordia hired by tourism agency in Sorrento",
+      "dek": "The former captain Francesco Schettino was sentenced to 16 years and one month in prison after the sinking of the Costa Concordia in 2012",
+      "date": "November 25, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/25/captain-of-sunken-costa-concordia-hired-by-tourism-agency-in-sorrento",
+      "body": [
+        "The former captain Francesco Schettino was sentenced to 16 years and one month in prison after the sinking of the Costa Concordia in 2012"
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/70/20/696x392_cmsv2_a1513586-277c-550e-9a1f-255b6f5da3dd-10007020.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "us-announces-new-tariffs-on-host-of-countries-including",
       "sections": [
@@ -2460,43 +2479,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 25, 13:21",
-      "text": "Two men charged with trespass at Prince and Princess of Wales's Norfolk home",
+      "time": "Nov 25, 15:58",
+      "text": "Captain of sunken Costa Concordia hired by tourism agency in Sorrento",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 13:19",
-      "text": "Raheem Sterling given suspended jail sentence for dangerous driving and nitrous oxide possession",
+      "time": "Nov 25, 14:54",
+      "text": "US plans new tariffs on EU, China and 12 others",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 13:19",
-      "text": "US announces new tariffs on host of countries including China",
+      "time": "Nov 25, 14:46",
+      "text": "Five Russian military jets hit in airfield strike, says Ukraine",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 14:19",
-      "text": "Craiova, Riga, Sofia: These are the best Christmas markets in Europe for 2027, according to travellers",
+      "time": "Nov 25, 15:42",
+      "text": "US proposes new tariffs on 14 major trading partners, the EU included",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 13:17",
-      "text": "Why Indians are still ending up in Russia's war",
+      "time": "Nov 25, 14:41",
+      "text": "No 10 does not rule out inviting back influencer at center of video row",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 14:13",
-      "text": "Montenegro will become EU’s next member by 2028, says President",
+      "time": "Nov 25, 14:40",
+      "text": "Man and daughter who dumped murdered woman in canal jailed",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 14:07",
-      "text": "Haftar visits Ankara as Erdoğan prepares first Libya trip in 15 years",
+      "time": "Nov 25, 14:38",
+      "text": "Trump announces new tariffs on EU, China despite US midterms defeat",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 13:04",
-      "text": "‘Second home’: Why Israel is celebrating Jensen Huang’s return to Nvidia",
+      "time": "Nov 25, 14:38",
+      "text": "German firms eye Africa as global trade shocks hit traditional markets",
       "link": "live.html"
     }
   ],
