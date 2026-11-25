@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "slug": "le-pen-party-leaks-prefect-dismissed-paris-deputy",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Le Pen party leaks: prefect dismissed, Paris deputy prosecutor placed under investigation",
+      "dek": "Two senior figures in France have been caught up in an investigation into suspected leaks to the far-right party of Marine Le Pen, the National Rally.",
+      "date": "November 25, 2026",
+      "source": "France 24",
+      "source_url": "https://www.france24.com/en/le-pen-party-leaks-prefect-dismissed-paris-deputy-prosecutor-placed-under-investigation",
+      "body": [
+        "Two senior figures in France have been caught up in an investigation into suspected leaks to the far-right party of Marine Le Pen, the National Rally. The prefect of the Loiret, Hugues Moutouh, a former top official at the Interior Ministry, has been removed from his post after being suspected of passing on confidential information about investigations."
+      ],
+      "related": [],
+      "image": "https://s.france24.com/media/display/b1d2a0a0-d094-11f1-92d3-bba4eee3dc72/w:1024/p:16x9/AP26298597827263.jpg",
+      "imageCaption": "Photo: France 24",
+      "auto": true
+    },
+    {
       "slug": "north-korea-expels-swiss-diplomat-in-sanctions-row",
       "sections": [
         "world"
@@ -2670,36 +2689,36 @@
   ],
   "justIn": [
     {
-      "time": "25 Nov, 21:51",
-      "text": "North Korea expels Swiss diplomat in sanctions row"
+      "time": "25 Nov, 22:47",
+      "text": "PSG's perfect Champions League record ends as Roma snatch 2-2 draw with late penalty"
     },
     {
-      "time": "25 Nov, 21:43",
-      "text": "Duran Duran guitarist Andy Taylor dies, aged 65"
+      "time": "25 Nov, 22:28",
+      "text": "Le Pen party leaks: prefect dismissed, Paris deputy prosecutor placed under investigation"
     },
     {
-      "time": "25 Nov, 21:43",
-      "text": "US stocks fall further as fears over AI intensify"
+      "time": "25 Nov, 22:26",
+      "text": "Israeli lawmakers advance October 7 inquiry opposed by Netanyahu"
     },
     {
-      "time": "25 Nov, 21:37",
-      "text": "Egypt: At least 31 dead after fuel truck overturns on highway"
+      "time": "25 Nov, 22:19",
+      "text": "Duran Duran guitarist Andy Taylor dies aged 65"
     },
     {
-      "time": "25 Nov, 21:32",
-      "text": "Flinders Island bushfire grows to 13,000 hectares with Tasmanian homes and properties at risk"
+      "time": "25 Nov, 22:18",
+      "text": "Thirty-one killed in massive fire as fuel tanker crashes on Cairo highway"
     },
     {
-      "time": "25 Nov, 21:31",
-      "text": "Poundland collapses putting 11,000 jobs at risk"
+      "time": "25 Nov, 22:16",
+      "text": "Andy Taylor: Duran Duran's livewire guitarist who was a true Wild Boy"
     },
     {
-      "time": "25 Nov, 21:25",
-      "text": "At least 30 killed in massive fire as fuel tanker crashes on Cairo highway"
+      "time": "25 Nov, 22:15",
+      "text": "Man United denied at Sporting as referee overshadows Fernandes double"
     },
     {
-      "time": "25 Nov, 21:03",
-      "text": "Winter rains threaten 1,000 Gaza shelter sites, councils warn"
+      "time": "25 Nov, 22:13",
+      "text": "New US tariffs: 'Trump lashing out really indiscriminately', expert says"
     }
   ],
   "liveUpdates": [
@@ -2761,9 +2780,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "north-korea-expels-swiss-diplomat-in-sanctions-row",
+  "heroSlug": "le-pen-party-leaks-prefect-dismissed-paris-deputy",
   "breaking": {
-    "text": "North Korea expels Swiss diplomat in sanctions row",
-    "link": "articles/north-korea-expels-swiss-diplomat-in-sanctions-row.html"
+    "text": "Le Pen party leaks: prefect dismissed, Paris deputy prosecutor placed under investigation",
+    "link": "articles/le-pen-party-leaks-prefect-dismissed-paris-deputy.html"
   }
 }
