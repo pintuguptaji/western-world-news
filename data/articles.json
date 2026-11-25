@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "slug": "colombian-police-storm-supermarket-to-free-76-held-hostage",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Colombian police storm supermarket to free 76 held hostage for 17 hours",
+      "dek": "One gunman was killed after what the country's president described as a robbery of a cash-laden armoured car gone wrong.",
+      "date": "November 25, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo",
+      "body": [
+        "One gunman was killed after what the country's president described as a robbery of a cash-laden armoured car gone wrong."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/997a/live/4f4b3940-e8c4-11f1-ac76-db9e97f93d67.jpg",
+      "imageCaption": "Photo: BBC",
+      "auto": true
+    },
+    {
       "slug": "can-europe-fix-its-chronic-medicine-shortage-and-supply",
       "sections": [
         "europe",
@@ -2592,36 +2611,36 @@
   ],
   "justIn": [
     {
-      "time": "25 Nov, 17:48",
-      "text": "Gordon Ramsay to host Top Gear as show revived after Flintoff crash"
+      "time": "25 Nov, 18:41",
+      "text": "Colombian police storm supermarket to free 76 held hostage for 17 hours"
     },
     {
-      "time": "25 Nov, 17:48",
-      "text": "US stocks fall further as fears over AI intensify"
-    },
-    {
-      "time": "25 Nov, 17:47",
+      "time": "25 Nov, 18:29",
       "text": "Poundland collapses putting 11,000 jobs at risk"
     },
     {
-      "time": "25 Nov, 18:43",
-      "text": "Community care: Former Jewish school becomes Iraq's first Jewish museum"
+      "time": "25 Nov, 18:24",
+      "text": "Smoke seen from a mile away as army detonates US stockpile of bomb-making chemicals in Iowa"
     },
     {
-      "time": "25 Nov, 18:40",
-      "text": "Can Europe fix its chronic medicine shortage and supply chain disruptions?"
+      "time": "25 Nov, 18:21",
+      "text": "Trump administration approves Elon Musk’s plan for datacenters in space"
     },
     {
-      "time": "25 Nov, 17:30",
-      "text": "Images of asteroid targeted to test Earth's defenses reveal stadium-sized crater"
+      "time": "25 Nov, 18:20",
+      "text": "All hostages rescued after Colombian security forces storm supermarket"
     },
     {
-      "time": "25 Nov, 18:30",
-      "text": "ESA releases first images showing 'complete chaos' on asteroid smashed by NASA probe"
+      "time": "25 Nov, 18:14",
+      "text": "Nigeria’s Tinubu pledges to bring peace to rebellion-hit border region"
     },
     {
-      "time": "25 Nov, 17:29",
-      "text": "Iraq’s top court rules government can take over Kurdish borders, oil fields"
+      "time": "25 Nov, 18:14",
+      "text": "UN sacked Palestinian staff on back of unproven Israeli allegations, tribunal rules"
+    },
+    {
+      "time": "25 Nov, 19:01",
+      "text": "Bring the noise: Meet the young Italians ringing church bells to protect the past"
     }
   ],
   "liveUpdates": [
@@ -2683,9 +2702,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "can-europe-fix-its-chronic-medicine-shortage-and-supply",
+  "heroSlug": "colombian-police-storm-supermarket-to-free-76-held-hostage",
   "breaking": {
-    "text": "Can Europe fix its chronic medicine shortage and supply chain disruptions?",
-    "link": "articles/can-europe-fix-its-chronic-medicine-shortage-and-supply.html"
+    "text": "Colombian police storm supermarket to free 76 held hostage for 17 hours",
+    "link": "articles/colombian-police-storm-supermarket-to-free-76-held-hostage.html"
   }
 }

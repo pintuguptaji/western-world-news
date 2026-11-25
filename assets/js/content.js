@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "can-europe-fix-its-chronic-medicine-shortage-and-supply"
+    "heroSlug": "colombian-police-storm-supermarket-to-free-76-held-hostage"
   },
   "breaking": {
-    "text": "Can Europe fix its chronic medicine shortage and supply chain disruptions?",
-    "link": "articles/can-europe-fix-its-chronic-medicine-shortage-and-supply.html"
+    "text": "Colombian police storm supermarket to free 76 held hostage for 17 hours",
+    "link": "articles/colombian-police-storm-supermarket-to-free-76-held-hostage.html"
   },
   "articles": [
+    {
+      "slug": "colombian-police-storm-supermarket-to-free-76-held-hostage",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Colombian police storm supermarket to free 76 held hostage for 17 hours",
+      "dek": "One gunman was killed after what the country's president described as a robbery of a cash-laden armoured car gone wrong.",
+      "date": "November 25, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo",
+      "body": [
+        "One gunman was killed after what the country's president described as a robbery of a cash-laden armoured car gone wrong."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/997a/live/4f4b3940-e8c4-11f1-ac76-db9e97f93d67.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "can-europe-fix-its-chronic-medicine-shortage-and-supply",
       "sections": [
@@ -2517,43 +2535,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 25, 17:48",
-      "text": "Gordon Ramsay to host Top Gear as show revived after Flintoff crash",
+      "time": "Nov 25, 18:41",
+      "text": "Colombian police storm supermarket to free 76 held hostage for 17 hours",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 17:48",
-      "text": "US stocks fall further as fears over AI intensify",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 17:47",
+      "time": "Nov 25, 18:29",
       "text": "Poundland collapses putting 11,000 jobs at risk",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 18:43",
-      "text": "Community care: Former Jewish school becomes Iraq's first Jewish museum",
+      "time": "Nov 25, 18:24",
+      "text": "Smoke seen from a mile away as army detonates US stockpile of bomb-making chemicals in Iowa",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 18:40",
-      "text": "Can Europe fix its chronic medicine shortage and supply chain disruptions?",
+      "time": "Nov 25, 18:21",
+      "text": "Trump administration approves Elon Musk’s plan for datacenters in space",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 17:30",
-      "text": "Images of asteroid targeted to test Earth's defenses reveal stadium-sized crater",
+      "time": "Nov 25, 18:20",
+      "text": "All hostages rescued after Colombian security forces storm supermarket",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 18:30",
-      "text": "ESA releases first images showing 'complete chaos' on asteroid smashed by NASA probe",
+      "time": "Nov 25, 18:14",
+      "text": "Nigeria’s Tinubu pledges to bring peace to rebellion-hit border region",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 17:29",
-      "text": "Iraq’s top court rules government can take over Kurdish borders, oil fields",
+      "time": "Nov 25, 18:14",
+      "text": "UN sacked Palestinian staff on back of unproven Israeli allegations, tribunal rules",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 19:01",
+      "text": "Bring the noise: Meet the young Italians ringing church bells to protect the past",
       "link": "live.html"
     }
   ],
