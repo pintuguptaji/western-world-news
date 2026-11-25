@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "slug": "kilmar-abrego-garcia-leaving-us-for-spain-ending-trump",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "Kilmar Ábrego García leaving US for Spain, ending Trump deportation battle",
+      "dek": "His deportation to El Salvador and return to the US became a flash point in the debate over President Donald Trump's immigration agenda.",
+      "date": "November 25, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6808pyy5dl9o",
+      "body": [
+        "His deportation to El Salvador and return to the US became a flash point in the debate over President Donald Trump's immigration agenda."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/3c4a/live/dcbcfdf0-e85a-11f1-9b85-e50d1e9de678.jpg",
+      "imageCaption": "Photo: BBC",
+      "auto": true
+    },
+    {
       "slug": "kilmar-abrego-garcia-self-deports-to-spain-after-lengthy-us",
       "sections": [
         "us",
@@ -2393,36 +2413,36 @@
   ],
   "justIn": [
     {
+      "time": "25 Nov, 03:54",
+      "text": "Kilmar Ábrego García leaving US for Spain, ending Trump deportation battle"
+    },
+    {
+      "time": "25 Nov, 03:46",
+      "text": "Live: Two Libyan soldiers killed in Ukrainian attack on Russian vessels in Benghazi"
+    },
+    {
+      "time": "25 Nov, 03:44",
+      "text": "US attorney general dodges questions about Nvidia investigation"
+    },
+    {
+      "time": "25 Nov, 03:05",
+      "text": "Beau Lamarre-Condon found guilty of murdering Jesse Baird and Luke Davies"
+    },
+    {
+      "time": "25 Nov, 03:00",
+      "text": "The Russian army’s secret death toll, podcast"
+    },
+    {
+      "time": "25 Nov, 02:59",
+      "text": "Huawei found guilty of stealing trade secrets but acquitted of racketeering"
+    },
+    {
+      "time": "25 Nov, 02:56",
+      "text": "China launches Shenzhou-24 to Tiangong station"
+    },
+    {
       "time": "25 Nov, 02:40",
       "text": "Kilmar Abrego Garcia self-deports to Spain after lengthy US legal battle"
-    },
-    {
-      "time": "25 Nov, 02:23",
-      "text": "WHO chief urges end to US fuel blockade on Cuba"
-    },
-    {
-      "time": "25 Nov, 02:17",
-      "text": "Rescue crews search for six people after plane crash off Mississippi coast"
-    },
-    {
-      "time": "25 Nov, 02:01",
-      "text": "US jury convicts Huawei of violating sanctions, stealing trade secrets"
-    },
-    {
-      "time": "25 Nov, 01:51",
-      "text": "Lies, a disguise and surfboard bags: how a jealous Sydney policeman tried to cover up double murder"
-    },
-    {
-      "time": "25 Nov, 01:51",
-      "text": "Kilmar Ábrego García leaving US for Spain, bringing deportation battle to an end"
-    },
-    {
-      "time": "25 Nov, 01:51",
-      "text": "Australia’s security pact with Solomon Islands a blow to China’s influence in the Pacific"
-    },
-    {
-      "time": "25 Nov, 01:42",
-      "text": "Inflation rate jumps to 4.9% as Australia’s cost-of-living crisis intensifies"
     }
   ],
   "liveUpdates": [
@@ -2484,9 +2504,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "kilmar-abrego-garcia-self-deports-to-spain-after-lengthy-us",
+  "heroSlug": "kilmar-abrego-garcia-leaving-us-for-spain-ending-trump",
   "breaking": {
-    "text": "Kilmar Abrego Garcia self-deports to Spain after lengthy US legal battle",
-    "link": "articles/kilmar-abrego-garcia-self-deports-to-spain-after-lengthy-us.html"
+    "text": "Kilmar Ábrego García leaving US for Spain, ending Trump deportation battle",
+    "link": "articles/kilmar-abrego-garcia-leaving-us-for-spain-ending-trump.html"
   }
 }

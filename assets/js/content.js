@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "kilmar-abrego-garcia-self-deports-to-spain-after-lengthy-us"
+    "heroSlug": "kilmar-abrego-garcia-leaving-us-for-spain-ending-trump"
   },
   "breaking": {
-    "text": "Kilmar Abrego Garcia self-deports to Spain after lengthy US legal battle",
-    "link": "articles/kilmar-abrego-garcia-self-deports-to-spain-after-lengthy-us.html"
+    "text": "Kilmar Ábrego García leaving US for Spain, ending Trump deportation battle",
+    "link": "articles/kilmar-abrego-garcia-leaving-us-for-spain-ending-trump.html"
   },
   "articles": [
+    {
+      "slug": "kilmar-abrego-garcia-leaving-us-for-spain-ending-trump",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "Kilmar Ábrego García leaving US for Spain, ending Trump deportation battle",
+      "dek": "His deportation to El Salvador and return to the US became a flash point in the debate over President Donald Trump's immigration agenda.",
+      "date": "November 25, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6808pyy5dl9o",
+      "body": [
+        "His deportation to El Salvador and return to the US became a flash point in the debate over President Donald Trump's immigration agenda."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/3c4a/live/dcbcfdf0-e85a-11f1-9b85-e50d1e9de678.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "kilmar-abrego-garcia-self-deports-to-spain-after-lengthy-us",
       "sections": [
@@ -2328,43 +2347,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 25, 03:54",
+      "text": "Kilmar Ábrego García leaving US for Spain, ending Trump deportation battle",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 03:46",
+      "text": "Live: Two Libyan soldiers killed in Ukrainian attack on Russian vessels in Benghazi",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 03:44",
+      "text": "US attorney general dodges questions about Nvidia investigation",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 03:05",
+      "text": "Beau Lamarre-Condon found guilty of murdering Jesse Baird and Luke Davies",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 03:00",
+      "text": "The Russian army’s secret death toll, podcast",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 02:59",
+      "text": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 02:56",
+      "text": "China launches Shenzhou-24 to Tiangong station",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 25, 02:40",
       "text": "Kilmar Abrego Garcia self-deports to Spain after lengthy US legal battle",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 02:23",
-      "text": "WHO chief urges end to US fuel blockade on Cuba",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 02:17",
-      "text": "Rescue crews search for six people after plane crash off Mississippi coast",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 02:01",
-      "text": "US jury convicts Huawei of violating sanctions, stealing trade secrets",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 01:51",
-      "text": "Lies, a disguise and surfboard bags: how a jealous Sydney policeman tried to cover up double murder",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 01:51",
-      "text": "Kilmar Ábrego García leaving US for Spain, bringing deportation battle to an end",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 01:51",
-      "text": "Australia’s security pact with Solomon Islands a blow to China’s influence in the Pacific",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 01:42",
-      "text": "Inflation rate jumps to 4.9% as Australia’s cost-of-living crisis intensifies",
       "link": "live.html"
     }
   ],
