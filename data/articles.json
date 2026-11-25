@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "slug": "us-stocks-fall-further-as-fears-over-ai-intensify",
+      "sections": [
+        "business-finance",
+        "world"
+      ],
+      "section": "business-finance",
+      "headline": "US stocks fall further as fears over AI intensify",
+      "dek": "All three main US indexes were down in early trading, with the tech-dominated Nasdaq down almost 4%.",
+      "date": "November 25, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq0md8g14zryo",
+      "body": [
+        "All three main US indexes were down in early trading, with the tech-dominated Nasdaq down almost 4%."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/76b3/live/acdb5650-e8e0-11f1-a3b9-79c60ec9ab33.jpg",
+      "imageCaption": "Photo: BBC",
+      "auto": true
+    },
+    {
       "slug": "captain-of-sunken-costa-concordia-hired-by-tourism-agency",
       "sections": [
         "europe",
@@ -2552,36 +2572,36 @@
   ],
   "justIn": [
     {
-      "time": "25 Nov, 15:58",
-      "text": "Captain of sunken Costa Concordia hired by tourism agency in Sorrento"
+      "time": "25 Nov, 16:07",
+      "text": "US stocks fall further as fears over AI intensify"
     },
     {
-      "time": "25 Nov, 14:54",
-      "text": "US plans new tariffs on EU, China and 12 others"
+      "time": "25 Nov, 16:06",
+      "text": "€561 Billion and Still Not Enough: Germany's 2027 Budget Exposes a Coalition on the Brink"
     },
     {
-      "time": "25 Nov, 14:46",
-      "text": "Five Russian military jets hit in airfield strike, says Ukraine"
+      "time": "25 Nov, 16:03",
+      "text": "Poundland collapses putting 11,000 jobs at risk"
+    },
+    {
+      "time": "25 Nov, 15:52",
+      "text": "Poundland collapses into administration, putting 12,000 jobs at risk"
+    },
+    {
+      "time": "25 Nov, 15:46",
+      "text": "'We need to stop the war in Iran': US Congresswoman Pramila Jayapal"
+    },
+    {
+      "time": "25 Nov, 15:46",
+      "text": "US inflation hits highest since May after prices climb 3.8% over the last year"
     },
     {
       "time": "25 Nov, 15:42",
-      "text": "US proposes new tariffs on 14 major trading partners, the EU included"
+      "text": "South Africa's Ramaphosa wins court battle over impeachment threat"
     },
     {
-      "time": "25 Nov, 14:41",
-      "text": "No 10 does not rule out inviting back influencer at center of video row"
-    },
-    {
-      "time": "25 Nov, 14:40",
-      "text": "Man and daughter who dumped murdered woman in canal jailed"
-    },
-    {
-      "time": "25 Nov, 14:38",
-      "text": "Trump announces new tariffs on EU, China despite US midterms defeat"
-    },
-    {
-      "time": "25 Nov, 14:38",
-      "text": "German firms eye Africa as global trade shocks hit traditional markets"
+      "time": "25 Nov, 15:39",
+      "text": "Brussels on split-screen: where it flexes, and where it bends"
     }
   ],
   "liveUpdates": [
@@ -2643,9 +2663,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "captain-of-sunken-costa-concordia-hired-by-tourism-agency",
+  "heroSlug": "us-stocks-fall-further-as-fears-over-ai-intensify",
   "breaking": {
-    "text": "Captain of sunken Costa Concordia hired by tourism agency in Sorrento",
-    "link": "articles/captain-of-sunken-costa-concordia-hired-by-tourism-agency.html"
+    "text": "US stocks fall further as fears over AI intensify",
+    "link": "articles/us-stocks-fall-further-as-fears-over-ai-intensify.html"
   }
 }

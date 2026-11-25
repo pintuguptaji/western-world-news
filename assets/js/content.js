@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "captain-of-sunken-costa-concordia-hired-by-tourism-agency"
+    "heroSlug": "us-stocks-fall-further-as-fears-over-ai-intensify"
   },
   "breaking": {
-    "text": "Captain of sunken Costa Concordia hired by tourism agency in Sorrento",
-    "link": "articles/captain-of-sunken-costa-concordia-hired-by-tourism-agency.html"
+    "text": "US stocks fall further as fears over AI intensify",
+    "link": "articles/us-stocks-fall-further-as-fears-over-ai-intensify.html"
   },
   "articles": [
+    {
+      "slug": "us-stocks-fall-further-as-fears-over-ai-intensify",
+      "sections": [
+        "business-finance",
+        "world"
+      ],
+      "section": "business-finance",
+      "headline": "US stocks fall further as fears over AI intensify",
+      "dek": "All three main US indexes were down in early trading, with the tech-dominated Nasdaq down almost 4%.",
+      "date": "November 25, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq0md8g14zryo",
+      "body": [
+        "All three main US indexes were down in early trading, with the tech-dominated Nasdaq down almost 4%."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/76b3/live/acdb5650-e8e0-11f1-a3b9-79c60ec9ab33.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "captain-of-sunken-costa-concordia-hired-by-tourism-agency",
       "sections": [
@@ -2479,43 +2498,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 25, 15:58",
-      "text": "Captain of sunken Costa Concordia hired by tourism agency in Sorrento",
+      "time": "Nov 25, 16:07",
+      "text": "US stocks fall further as fears over AI intensify",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 14:54",
-      "text": "US plans new tariffs on EU, China and 12 others",
+      "time": "Nov 25, 16:06",
+      "text": "€561 Billion and Still Not Enough: Germany's 2027 Budget Exposes a Coalition on the Brink",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 14:46",
-      "text": "Five Russian military jets hit in airfield strike, says Ukraine",
+      "time": "Nov 25, 16:03",
+      "text": "Poundland collapses putting 11,000 jobs at risk",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 15:52",
+      "text": "Poundland collapses into administration, putting 12,000 jobs at risk",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 15:46",
+      "text": "'We need to stop the war in Iran': US Congresswoman Pramila Jayapal",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 25, 15:46",
+      "text": "US inflation hits highest since May after prices climb 3.8% over the last year",
       "link": "live.html"
     },
     {
       "time": "Nov 25, 15:42",
-      "text": "US proposes new tariffs on 14 major trading partners, the EU included",
+      "text": "South Africa's Ramaphosa wins court battle over impeachment threat",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 14:41",
-      "text": "No 10 does not rule out inviting back influencer at center of video row",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 14:40",
-      "text": "Man and daughter who dumped murdered woman in canal jailed",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 14:38",
-      "text": "Trump announces new tariffs on EU, China despite US midterms defeat",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 25, 14:38",
-      "text": "German firms eye Africa as global trade shocks hit traditional markets",
+      "time": "Nov 25, 15:39",
+      "text": "Brussels on split-screen: where it flexes, and where it bends",
       "link": "live.html"
     }
   ],
