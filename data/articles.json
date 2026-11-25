@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "slug": "one-eu-budget-too-many-priorities-meps-join-the-ring-in",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "One EU budget. Too many priorities? MEPs join The Ring in Strasbourg",
+      "dek": "In this week's edition of our show, MEPs Marcos Ros (S&D) and Ondřej Kolář (EPP) debate the future of the EU's budget. Is a deal in sight?",
+      "date": "November 25, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/25/one-eu-budget-too-many-priorities-meps-join-the-ring-in-strasbourg",
+      "body": [
+        "In this week's edition of our show, MEPs Marcos Ros (S&D) and Ondřej Kolář (EPP) debate the future of the EU's budget. Is a deal in sight?"
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/77/66/696x392_cmsv2_f8d48733-2144-562d-b3fa-6fb2ab5a9210-10007766.jpg",
+      "imageCaption": "Photo: Euronews",
+      "auto": true
+    },
+    {
       "slug": "us-army-declares-iowa-lead-azide-detonation-tremendously",
       "sections": [
         "us",
@@ -2631,36 +2651,36 @@
   ],
   "justIn": [
     {
-      "time": "25 Nov, 19:41",
-      "text": "US Army declares Iowa lead azide detonation ‘tremendously successful’"
+      "time": "25 Nov, 20:43",
+      "text": "Poundland collapses putting 11,000 jobs at risk"
     },
     {
-      "time": "25 Nov, 19:36",
-      "text": "Kilmar Ábrego García, target of Trump’s immigration crackdown, lands in Spain after ‘leaving happy’"
+      "time": "25 Nov, 21:42",
+      "text": "One EU budget. Too many priorities? MEPs join The Ring in Strasbourg"
     },
     {
-      "time": "25 Nov, 19:36",
-      "text": "Vance says Jensen Huang doesn’t need pardon after Trump says ‘it’s an option’"
+      "time": "25 Nov, 20:38",
+      "text": "Did GTA 6 really recreate Charlie Kirk's assassination?"
     },
     {
-      "time": "25 Nov, 19:26",
-      "text": "Two children among six dead after plane crash off Mississippi coast"
+      "time": "25 Nov, 20:32",
+      "text": "Liberal senator Leah Blyth announces defection to One Nation"
     },
     {
-      "time": "25 Nov, 19:25",
-      "text": "UK food inflation could hit 5% next year, Bank of England says"
+      "time": "25 Nov, 20:29",
+      "text": "Netanyahu says corruption trial ‘must end’ as court suggests dropping case"
     },
     {
-      "time": "25 Nov, 19:23",
-      "text": "US Army says controlled blast of explosives in Iowa was 'huge success'"
+      "time": "25 Nov, 20:28",
+      "text": "Nigeria detains 5 Mexicans, confiscates over $220 million of meth"
     },
     {
       "time": "25 Nov, 20:20",
-      "text": "Europe Tonight: Russia reportedly prepares nuclear satellite launch"
+      "text": "All hostages rescued after Colombian security forces storm supermarket, police says"
     },
     {
-      "time": "25 Nov, 19:19",
-      "text": "North Korea expels Swiss diplomat in sanctions row"
+      "time": "25 Nov, 21:15",
+      "text": "Wrongly deported Salvadoran arrives in Spain after US legal battle"
     }
   ],
   "liveUpdates": [
@@ -2722,9 +2742,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "us-army-declares-iowa-lead-azide-detonation-tremendously",
+  "heroSlug": "one-eu-budget-too-many-priorities-meps-join-the-ring-in",
   "breaking": {
-    "text": "US Army declares Iowa lead azide detonation ‘tremendously successful’",
-    "link": "articles/us-army-declares-iowa-lead-azide-detonation-tremendously.html"
+    "text": "One EU budget. Too many priorities? MEPs join The Ring in Strasbourg",
+    "link": "articles/one-eu-budget-too-many-priorities-meps-join-the-ring-in.html"
   }
 }
