@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "spain-s-economy-is-booming-why-are-real-wages-still-below"
+    "heroSlug": "13-restaurants-topped-lalistes-ranking-for-2027-including"
   },
   "breaking": {
-    "text": "Spain's economy is booming. Why are real wages still below their 2009 peak?",
-    "link": "articles/spain-s-economy-is-booming-why-are-real-wages-still-below.html"
+    "text": "13 restaurants topped LaListe’s ranking for 2027, including seven in Europe",
+    "link": "articles/13-restaurants-topped-lalistes-ranking-for-2027-including.html"
   },
   "articles": [
+    {
+      "slug": "13-restaurants-topped-lalistes-ranking-for-2027-including",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "13 restaurants topped LaListe’s ranking for 2027, including seven in Europe",
+      "dek": "L’Assiette Champenoise in Tinqueux, France, earned a 99.5 score, reserved for the best restaurants in the world, for the first time this year.",
+      "date": "November 25, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/25/13-restaurants-topped-lalistes-ranking-for-2027-including-seven-in-europe",
+      "body": [
+        "L’Assiette Champenoise in Tinqueux, France, earned a 99.5 score, reserved for the best restaurants in the world, for the first time this year."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/73/46/696x392_cmsv2_30cce9ab-4ee2-5ee2-8d7b-e4d68a0f8f26-10007346.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "spain-s-economy-is-booming-why-are-real-wages-still-below",
       "sections": [
@@ -2384,43 +2403,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 25, 08:10",
-      "text": "Spain's economy is booming. Why are real wages still below their 2009 peak?",
+      "time": "Nov 25, 09:51",
+      "text": "13 restaurants topped LaListe’s ranking for 2027, including seven in Europe",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 07:05",
-      "text": "Household energy prices to rise by 26% in January as new price cap confirmed",
+      "time": "Nov 25, 08:51",
+      "text": "German auto workers on back foot as costs, competition bite",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 08:02",
-      "text": "Colombia security forces storm supermarket where hostages are being held",
+      "time": "Nov 25, 09:40",
+      "text": "Stunning Supermoon photos: The best shots of last night's Beaver moon lighting up the night sky",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 06:57",
-      "text": "Domestic violence soars to record high in Germany",
+      "time": "Nov 25, 08:38",
+      "text": "Energy bills to rise by 26% from January",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 06:36",
-      "text": "Kilmar Ábrego García leaves US for Spain, ending Trump deportation battle",
+      "time": "Nov 25, 08:31",
+      "text": "All hostages freed after Colombian security forces storm supermarket, says president",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 06:20",
-      "text": "2025 AFCON: CAS gives title to Senegal as Morocco vows to challenge verdict",
+      "time": "Nov 25, 08:27",
+      "text": "Colombian security forces storm supermarket, free hostages",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 06:17",
-      "text": "Ministers ask public for views on changing age of consent",
+      "time": "Nov 25, 08:23",
+      "text": "Saudi-led coalition intercepts Houthi attacks after Hodeidah strike",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 06:00",
-      "text": "UK sent sex offender refugee to African country in undisclosed deal",
+      "time": "Nov 25, 08:23",
+      "text": "Countries that thrive on global cooperation must help sustain it",
       "link": "live.html"
     }
   ],

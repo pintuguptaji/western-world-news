@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "slug": "13-restaurants-topped-lalistes-ranking-for-2027-including",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "13 restaurants topped LaListe’s ranking for 2027, including seven in Europe",
+      "dek": "L’Assiette Champenoise in Tinqueux, France, earned a 99.5 score, reserved for the best restaurants in the world, for the first time this year.",
+      "date": "November 25, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/25/13-restaurants-topped-lalistes-ranking-for-2027-including-seven-in-europe",
+      "body": [
+        "L’Assiette Champenoise in Tinqueux, France, earned a 99.5 score, reserved for the best restaurants in the world, for the first time this year."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/73/46/696x392_cmsv2_30cce9ab-4ee2-5ee2-8d7b-e4d68a0f8f26-10007346.jpg",
+      "imageCaption": "Photo: Euronews",
+      "auto": true
+    },
+    {
       "slug": "spain-s-economy-is-booming-why-are-real-wages-still-below",
       "sections": [
         "business-finance",
@@ -2452,36 +2472,36 @@
   ],
   "justIn": [
     {
-      "time": "25 Nov, 08:10",
-      "text": "Spain's economy is booming. Why are real wages still below their 2009 peak?"
+      "time": "25 Nov, 09:51",
+      "text": "13 restaurants topped LaListe’s ranking for 2027, including seven in Europe"
     },
     {
-      "time": "25 Nov, 07:05",
-      "text": "Household energy prices to rise by 26% in January as new price cap confirmed"
+      "time": "25 Nov, 08:51",
+      "text": "German auto workers on back foot as costs, competition bite"
     },
     {
-      "time": "25 Nov, 08:02",
-      "text": "Colombia security forces storm supermarket where hostages are being held"
+      "time": "25 Nov, 09:40",
+      "text": "Stunning Supermoon photos: The best shots of last night's Beaver moon lighting up the night sky"
     },
     {
-      "time": "25 Nov, 06:57",
-      "text": "Domestic violence soars to record high in Germany"
+      "time": "25 Nov, 08:38",
+      "text": "Energy bills to rise by 26% from January"
     },
     {
-      "time": "25 Nov, 06:36",
-      "text": "Kilmar Ábrego García leaves US for Spain, ending Trump deportation battle"
+      "time": "25 Nov, 08:31",
+      "text": "All hostages freed after Colombian security forces storm supermarket, says president"
     },
     {
-      "time": "25 Nov, 06:20",
-      "text": "2025 AFCON: CAS gives title to Senegal as Morocco vows to challenge verdict"
+      "time": "25 Nov, 08:27",
+      "text": "Colombian security forces storm supermarket, free hostages"
     },
     {
-      "time": "25 Nov, 06:17",
-      "text": "Ministers ask public for views on changing age of consent"
+      "time": "25 Nov, 08:23",
+      "text": "Saudi-led coalition intercepts Houthi attacks after Hodeidah strike"
     },
     {
-      "time": "25 Nov, 06:00",
-      "text": "UK sent sex offender refugee to African country in undisclosed deal"
+      "time": "25 Nov, 08:23",
+      "text": "Countries that thrive on global cooperation must help sustain it"
     }
   ],
   "liveUpdates": [
@@ -2543,9 +2563,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "spain-s-economy-is-booming-why-are-real-wages-still-below",
+  "heroSlug": "13-restaurants-topped-lalistes-ranking-for-2027-including",
   "breaking": {
-    "text": "Spain's economy is booming. Why are real wages still below their 2009 peak?",
-    "link": "articles/spain-s-economy-is-booming-why-are-real-wages-still-below.html"
+    "text": "13 restaurants topped LaListe’s ranking for 2027, including seven in Europe",
+    "link": "articles/13-restaurants-topped-lalistes-ranking-for-2027-including.html"
   }
 }
