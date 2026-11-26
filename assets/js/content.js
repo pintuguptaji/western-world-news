@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "nhs-boss-warns-of-horrible-spike-in-flu-as-hospital"
+    "heroSlug": "huw-edwards-gives-first-interviews-since-child-abuse-image"
   },
   "breaking": {
-    "text": "NHS boss warns of 'horrible spike' in flu as hospital admissions surge",
-    "link": "articles/nhs-boss-warns-of-horrible-spike-in-flu-as-hospital.html"
+    "text": "Huw Edwards gives first interviews since child abuse image conviction",
+    "link": "articles/huw-edwards-gives-first-interviews-since-child-abuse-image.html"
   },
   "articles": [
+    {
+      "slug": "huw-edwards-gives-first-interviews-since-child-abuse-image",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Huw Edwards gives first interviews since child abuse image conviction",
+      "dek": "Minister Anna Turley said she was \"deeply uncomfortable\" with the interviews, while Channel 4 has insisted it \"holds Edwards to account\".",
+      "date": "November 26, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/c38x05jrjnx7o",
+      "body": [
+        "Minister Anna Turley said she was \"deeply uncomfortable\" with the interviews, while Channel 4 has insisted it \"holds Edwards to account\"."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/6404/live/dbd5d520-e9c1-11f1-a094-5fdc692f3e33.jpg",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "nhs-boss-warns-of-horrible-spike-in-flu-as-hospital",
       "sections": [
@@ -2924,6 +2942,31 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 26, 23:29",
+      "text": "Huw Edwards gives first interviews since child abuse image conviction",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 26, 23:17",
+      "text": "UK to pay 'participation' fee to deliver EU deals",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 26, 23:07",
+      "text": "Israeli settlers damage Palestinian family’s homes in West Bank attack",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 26, 22:51",
+      "text": "In Canada, Quebec’s religious symbols ban faces a Supreme Court test",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 26, 22:49",
+      "text": "US too focused on Middle East and not pushing Russia hard enough, Zelensky tells BBC",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 26, 22:06",
       "text": "Report: CIA tortured more people with waterboarding than US agency admitted",
       "link": "live.html"
@@ -2936,31 +2979,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 26, 22:01",
       "text": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 22:57",
-      "text": "Thanksgiving storms flood US coasts and disrupt holiday travel",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 21:40",
-      "text": "Spain's De Cos chosen as next ECB president",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 21:33",
-      "text": "Southern and central Australia face summer of heightened bushfire risk and heatwaves",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 22:24",
-      "text": "France's presidential hopefuls speak to Euronews as they court local politicians for endorsements",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 21:21",
-      "text": "Nigeria faces rising election violence in run up to vote",
       "link": "live.html"
     }
   ],
