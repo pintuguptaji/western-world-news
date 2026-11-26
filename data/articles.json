@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "slug": "son-of-myanmar-s-suu-kyi-relieved-by-first-call-in-five",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Son of Myanmar's Suu Kyi 'relieved' by first call in five years, questions military's motives",
+      "dek": "Speaking to Euronews’ The World Conversation, Kim Aris described his relief at hearing his mother’s voice after five years, called for tougher sanctions enforcement and defended her record on the Rohingya genocide ruling.",
+      "date": "November 26, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/26/son-of-myanmars-suu-kyi-relieved-by-first-call-in-five-years-questions-militarys-motives",
+      "body": [
+        "Speaking to Euronews’ The World Conversation, Kim Aris described his relief at hearing his mother’s voice after five years, called for tougher sanctions enforcement and defended her record on the Rohingya genocide ruling."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/01/00/60/696x392_cmsv2_c879fa96-1548-5f13-a8da-40c7db23d6e7-10010060.jpg",
+      "imageCaption": "Photo: Euronews",
+      "auto": true
+    },
+    {
       "slug": "reporters-without-borders-demands-suspension-of",
       "sections": [
         "world"
@@ -2962,36 +2982,36 @@
   ],
   "justIn": [
     {
-      "time": "26 Nov, 18:48",
-      "text": "Reporters Without Borders demands suspension of controversial French TV channel CNews"
+      "time": "26 Nov, 20:43",
+      "text": "Son of Myanmar's Suu Kyi 'relieved' by first call in five years, questions military's motives"
     },
     {
-      "time": "26 Nov, 18:27",
-      "text": "Trump calls GDP data released before midterms ‘fake’, demands investigation"
+      "time": "26 Nov, 19:41",
+      "text": "Trump alleges ‘fake’ economic figures released before US midterms but doesn’t provide evidence"
     },
     {
-      "time": "26 Nov, 18:26",
-      "text": "Burnham joined by former PMs at Ann Widdecombe service"
+      "time": "26 Nov, 19:38",
+      "text": "How much of the sharp fall in UK immigration is due to Labor’s policies?"
     },
     {
-      "time": "26 Nov, 18:22",
-      "text": "Mandelson kept shares as ambassador despite conflict of interest fears, documents show"
+      "time": "26 Nov, 19:27",
+      "text": "Two Italians killed in strike in Kuwait, as Iran denies responsibility"
     },
     {
-      "time": "26 Nov, 18:21",
-      "text": "Drug rape husband says wife 'would have been terrified', court hears"
+      "time": "26 Nov, 19:19",
+      "text": "Why are winter rains forcing Palestinians in Gaza to flee again?"
     },
     {
-      "time": "26 Nov, 18:18",
-      "text": "Huntingdon train attacker found guilty of all 14 counts of attempted murder"
+      "time": "26 Nov, 19:16",
+      "text": "US Senate ‘permitting bill’ threatens clean water protections to speed up energy projects"
     },
     {
-      "time": "26 Nov, 18:15",
-      "text": "Huw Edwards gives first interviews since child abuse image conviction"
+      "time": "26 Nov, 19:09",
+      "text": "Judge strikes down Trump’s latest restrictions on US birthright citizenship"
     },
     {
-      "time": "26 Nov, 18:14",
-      "text": "Scotland's chief medical officer Gregor Smith resigns on mental health grounds"
+      "time": "26 Nov, 19:07",
+      "text": "Psychiatric care under scrutiny after abuse scandals in Croatia and Bosnia"
     }
   ],
   "liveUpdates": [
@@ -3053,9 +3073,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "reporters-without-borders-demands-suspension-of",
+  "heroSlug": "son-of-myanmar-s-suu-kyi-relieved-by-first-call-in-five",
   "breaking": {
-    "text": "Reporters Without Borders demands suspension of controversial French TV channel CNews",
-    "link": "articles/reporters-without-borders-demands-suspension-of.html"
+    "text": "Son of Myanmar's Suu Kyi 'relieved' by first call in five years, questions military's motives",
+    "link": "articles/son-of-myanmar-s-suu-kyi-relieved-by-first-call-in-five.html"
   }
 }

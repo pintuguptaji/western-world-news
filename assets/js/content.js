@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "reporters-without-borders-demands-suspension-of"
+    "heroSlug": "son-of-myanmar-s-suu-kyi-relieved-by-first-call-in-five"
   },
   "breaking": {
-    "text": "Reporters Without Borders demands suspension of controversial French TV channel CNews",
-    "link": "articles/reporters-without-borders-demands-suspension-of.html"
+    "text": "Son of Myanmar's Suu Kyi 'relieved' by first call in five years, questions military's motives",
+    "link": "articles/son-of-myanmar-s-suu-kyi-relieved-by-first-call-in-five.html"
   },
   "articles": [
+    {
+      "slug": "son-of-myanmar-s-suu-kyi-relieved-by-first-call-in-five",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Son of Myanmar's Suu Kyi 'relieved' by first call in five years, questions military's motives",
+      "dek": "Speaking to Euronews’ The World Conversation, Kim Aris described his relief at hearing his mother’s voice after five years, called for tougher sanctions enforcement and defended her record on the Rohingya genocide ruling.",
+      "date": "November 26, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/26/son-of-myanmars-suu-kyi-relieved-by-first-call-in-five-years-questions-militarys-motives",
+      "body": [
+        "Speaking to Euronews’ The World Conversation, Kim Aris described his relief at hearing his mother’s voice after five years, called for tougher sanctions enforcement and defended her record on the Rohingya genocide ruling."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/01/00/60/696x392_cmsv2_c879fa96-1548-5f13-a8da-40c7db23d6e7-10010060.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "reporters-without-borders-demands-suspension-of",
       "sections": [
@@ -2868,43 +2887,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 26, 18:48",
-      "text": "Reporters Without Borders demands suspension of controversial French TV channel CNews",
+      "time": "Nov 26, 20:43",
+      "text": "Son of Myanmar's Suu Kyi 'relieved' by first call in five years, questions military's motives",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 18:27",
-      "text": "Trump calls GDP data released before midterms ‘fake’, demands investigation",
+      "time": "Nov 26, 19:41",
+      "text": "Trump alleges ‘fake’ economic figures released before US midterms but doesn’t provide evidence",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 18:26",
-      "text": "Burnham joined by former PMs at Ann Widdecombe service",
+      "time": "Nov 26, 19:38",
+      "text": "How much of the sharp fall in UK immigration is due to Labor’s policies?",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 18:22",
-      "text": "Mandelson kept shares as ambassador despite conflict of interest fears, documents show",
+      "time": "Nov 26, 19:27",
+      "text": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 18:21",
-      "text": "Drug rape husband says wife 'would have been terrified', court hears",
+      "time": "Nov 26, 19:19",
+      "text": "Why are winter rains forcing Palestinians in Gaza to flee again?",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 18:18",
-      "text": "Huntingdon train attacker found guilty of all 14 counts of attempted murder",
+      "time": "Nov 26, 19:16",
+      "text": "US Senate ‘permitting bill’ threatens clean water protections to speed up energy projects",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 18:15",
-      "text": "Huw Edwards gives first interviews since child abuse image conviction",
+      "time": "Nov 26, 19:09",
+      "text": "Judge strikes down Trump’s latest restrictions on US birthright citizenship",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 18:14",
-      "text": "Scotland's chief medical officer Gregor Smith resigns on mental health grounds",
+      "time": "Nov 26, 19:07",
+      "text": "Psychiatric care under scrutiny after abuse scandals in Croatia and Bosnia",
       "link": "live.html"
     }
   ],
