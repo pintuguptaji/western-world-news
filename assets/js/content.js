@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "extreme-weather-threatens-thanksgiving-festivities-in-us"
+    "heroSlug": "spains-election-the-end-of-a-leftwing-icon-podcast"
   },
   "breaking": {
-    "text": "Extreme weather threatens Thanksgiving festivities in US",
-    "link": "articles/extreme-weather-threatens-thanksgiving-festivities-in-us.html"
+    "text": "Spain’s election: the end of a leftwing icon? - podcast",
+    "link": "articles/spains-election-the-end-of-a-leftwing-icon-podcast.html"
   },
   "articles": [
+    {
+      "slug": "spains-election-the-end-of-a-leftwing-icon-podcast",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Spain’s election: the end of a leftwing icon? - podcast",
+      "dek": "Madrid correspondent Sam Jones and European community affairs correspondent Ashifa Kassam report on a pivotal election in Spain this weekend, which could see longtime PM Pedro Sánchez replaced by a conservative coalition including the far.",
+      "date": "November 26, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/news/audio/2026/nov/26/spains-election-the-end-of-a-leftwing-icon-podcast",
+      "body": [
+        "Madrid correspondent Sam Jones and European community affairs correspondent Ashifa Kassam report on a pivotal election in Spain this weekend, which could see longtime PM Pedro Sánchez replaced by a conservative coalition including the far right. He has become an icon of the European left."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/a4570fa84a7e3ee4aac3e257799591f91a8b2aba/175_0_6119_4896/master/6119.jpg?width=700&quality=85&auto=format&fit=max&s=e392825321c38f84bd274e1f5821e862",
+      "imageCaption": "Photo: The Guardian"
+    },
     {
       "slug": "extreme-weather-threatens-thanksgiving-festivities-in-us",
       "sections": [
@@ -2664,6 +2682,26 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 26, 03:20",
+      "text": "Anthropic CEO Amodei denies wanting humanity to ‘surrender’ free will to AI",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 26, 03:02",
+      "text": "US authorizes SpaceX to launch up to one million satellites for orbital data centers",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 26, 03:01",
+      "text": "US announces new tariffs on host of countries including China",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 26, 03:00",
+      "text": "Spain’s election: the end of a leftwing icon? - podcast",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 26, 02:47",
       "text": "Extreme weather threatens Thanksgiving festivities in US",
       "link": "live.html"
@@ -2674,33 +2712,13 @@ window.WWN_DEFAULT_CONTENT = {
       "link": "live.html"
     },
     {
+      "time": "Nov 26, 02:26",
+      "text": "Australia projected to completely miss 2035 emissions target without new climate policies",
+      "link": "live.html"
+    },
+    {
       "time": "Nov 26, 02:13",
       "text": "UK government set to publish new treaties agreed with EU",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 02:03",
-      "text": "Kim Jong Un says North Korea should widen deployment of tactical nukes",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 01:59",
-      "text": "Out-of-control bushfire with flames 10-metres high destroys at least six homes on Flinders Island",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 01:40",
-      "text": "Photos: Storms and an El Nino-charged king tide batter California’s coast",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 01:39",
-      "text": "Ukraine attacks Russian military base, says five planes struck",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 01:25",
-      "text": "At least 31 killed in Cairo fire after fuel truck overturns on busy highway",
       "link": "live.html"
     }
   ],

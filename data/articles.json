@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "slug": "spains-election-the-end-of-a-leftwing-icon-podcast",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Spain’s election: the end of a leftwing icon? - podcast",
+      "dek": "Madrid correspondent Sam Jones and European community affairs correspondent Ashifa Kassam report on a pivotal election in Spain this weekend, which could see longtime PM Pedro Sánchez replaced by a conservative coalition including the far.",
+      "date": "November 26, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/news/audio/2026/nov/26/spains-election-the-end-of-a-leftwing-icon-podcast",
+      "body": [
+        "Madrid correspondent Sam Jones and European community affairs correspondent Ashifa Kassam report on a pivotal election in Spain this weekend, which could see longtime PM Pedro Sánchez replaced by a conservative coalition including the far right. He has become an icon of the European left."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/a4570fa84a7e3ee4aac3e257799591f91a8b2aba/175_0_6119_4896/master/6119.jpg?width=700&quality=85&auto=format&fit=max&s=e392825321c38f84bd274e1f5821e862",
+      "imageCaption": "Photo: The Guardian",
+      "auto": true
+    },
+    {
       "slug": "extreme-weather-threatens-thanksgiving-festivities-in-us",
       "sections": [
         "us",
@@ -2747,6 +2766,22 @@
   ],
   "justIn": [
     {
+      "time": "26 Nov, 03:20",
+      "text": "Anthropic CEO Amodei denies wanting humanity to ‘surrender’ free will to AI"
+    },
+    {
+      "time": "26 Nov, 03:02",
+      "text": "US authorizes SpaceX to launch up to one million satellites for orbital data centers"
+    },
+    {
+      "time": "26 Nov, 03:01",
+      "text": "US announces new tariffs on host of countries including China"
+    },
+    {
+      "time": "26 Nov, 03:00",
+      "text": "Spain’s election: the end of a leftwing icon? - podcast"
+    },
+    {
       "time": "26 Nov, 02:47",
       "text": "Extreme weather threatens Thanksgiving festivities in US"
     },
@@ -2755,28 +2790,12 @@
       "text": "Coalition would privatise Melbourne’s sewage treatment while selling state-owned land and renewables to fund V"
     },
     {
+      "time": "26 Nov, 02:26",
+      "text": "Australia projected to completely miss 2035 emissions target without new climate policies"
+    },
+    {
       "time": "26 Nov, 02:13",
       "text": "UK government set to publish new treaties agreed with EU"
-    },
-    {
-      "time": "26 Nov, 02:03",
-      "text": "Kim Jong Un says North Korea should widen deployment of tactical nukes"
-    },
-    {
-      "time": "26 Nov, 01:59",
-      "text": "Out-of-control bushfire with flames 10-metres high destroys at least six homes on Flinders Island"
-    },
-    {
-      "time": "26 Nov, 01:40",
-      "text": "Photos: Storms and an El Nino-charged king tide batter California’s coast"
-    },
-    {
-      "time": "26 Nov, 01:39",
-      "text": "Ukraine attacks Russian military base, says five planes struck"
-    },
-    {
-      "time": "26 Nov, 01:25",
-      "text": "At least 31 killed in Cairo fire after fuel truck overturns on busy highway"
     }
   ],
   "liveUpdates": [
@@ -2838,9 +2857,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "extreme-weather-threatens-thanksgiving-festivities-in-us",
+  "heroSlug": "spains-election-the-end-of-a-leftwing-icon-podcast",
   "breaking": {
-    "text": "Extreme weather threatens Thanksgiving festivities in US",
-    "link": "articles/extreme-weather-threatens-thanksgiving-festivities-in-us.html"
+    "text": "Spain’s election: the end of a leftwing icon? - podcast",
+    "link": "articles/spains-election-the-end-of-a-leftwing-icon-podcast.html"
   }
 }
