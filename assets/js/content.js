@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "injury-hit-psg-drop-first-points-of-champions-league"
+    "heroSlug": "uk-sent-sri-lankan-refugee-to-eswatini-in-secret-deal-the"
   },
   "breaking": {
-    "text": "Injury-hit PSG drop first points of Champions League campaign against Roma",
-    "link": "articles/injury-hit-psg-drop-first-points-of-champions-league.html"
+    "text": "UK sent Sri Lankan refugee to Eswatini in secret deal, the BBC says",
+    "link": "articles/uk-sent-sri-lankan-refugee-to-eswatini-in-secret-deal-the.html"
   },
   "articles": [
+    {
+      "slug": "uk-sent-sri-lankan-refugee-to-eswatini-in-secret-deal-the",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "UK sent Sri Lankan refugee to Eswatini in secret deal, the BBC says",
+      "dek": "The United Kingdom reportedly sent a Sri Lankan refugee who had been convicted of sexual assault to Eswatini, where he committed suicide, as part of a secret deal, according to an investigation by the BBC.",
+      "date": "November 26, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/26/uk-sent-sri-lankan-refugee-to-eswatini-in-secret-deal-the-bbc-says",
+      "body": [
+        "The United Kingdom reportedly sent a Sri Lankan refugee who had been convicted of sexual assault to Eswatini, where he committed suicide, as part of a secret deal, according to an investigation by the BBC."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/74/29/696x392_cmsv2_f423ae7c-3d7e-552c-baf1-37c502c96fbf-10007429.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "injury-hit-psg-drop-first-points-of-champions-league",
       "sections": [
@@ -2738,43 +2757,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 26, 09:56",
-      "text": "Christmas 2026 travel gift guide: Perfect presents for people who love traveling",
+      "time": "Nov 26, 11:10",
+      "text": "UK sent Sri Lankan refugee to Eswatini in secret deal, the BBC says",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 08:43",
-      "text": "BBC Radio 1's Big Weekend 2027 heads to Brighton",
+      "time": "Nov 26, 10:00",
+      "text": "Israel ‘officially sanctions’ torture of Palestinian prisoners to extract confessions, report concludes",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 08:39",
-      "text": "'We are not fighting culture, we fight to end FGM: It's a human rights violation of women and girls'",
+      "time": "Nov 26, 09:59",
+      "text": "New UK-EU treaty has 10-year termination clause",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 08:34",
-      "text": "Injury-hit PSG drop first points of Champions League campaign against Roma",
+      "time": "Nov 26, 10:58",
+      "text": "Cheaper, generic HIV prevention drug arrives in Zambia",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 08:33",
-      "text": "Thanksgiving and National Day of Mourning: What is the history?",
+      "time": "Nov 26, 10:54",
+      "text": "Ebola cases in Congo surpass 12,000 in fastest-growing outbreak",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 09:32",
-      "text": "Inquiry into UK nuclear test veterans granted after 40 year campaign",
+      "time": "Nov 26, 09:52",
+      "text": "Ex-Cricket Australia boss James Sutherland defends ‘Sandpapergate’ probe",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 09:30",
-      "text": "EU wants more data centres but won't force new green commitments, leaked draft reveals",
+      "time": "Nov 26, 09:52",
+      "text": "Government preparing to publish more Mandelson papers",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 08:30",
-      "text": "Two screenings of Pakistani TV show canceled in India after backlash",
+      "time": "Nov 26, 10:46",
+      "text": "New Danish data breach hits 11,000 despite security upgrades",
       "link": "live.html"
     }
   ],
