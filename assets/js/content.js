@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "uk-to-invest-9-5m-in-ukraine-windfarm-to-bolster-war-hit"
+    "heroSlug": "three-iberian-cities-among-ten-most-sought-by-real-estate"
   },
   "breaking": {
-    "text": "UK to invest £9.5m in Ukraine windfarm to bolster war-hit energy system",
-    "link": "articles/uk-to-invest-9-5m-in-ukraine-windfarm-to-bolster-war-hit.html"
+    "text": "Three Iberian cities among ten most sought by real estate investors in Europe in 2027",
+    "link": "articles/three-iberian-cities-among-ten-most-sought-by-real-estate.html"
   },
   "articles": [
+    {
+      "slug": "three-iberian-cities-among-ten-most-sought-by-real-estate",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Three Iberian cities among ten most sought by real estate investors in Europe in 2027",
+      "dek": "According to Colliers' report for next year, Madrid, Lisbon and Barcelona rank among the ten European cities most sought by investors, at a time when protests over access to housing are spreading across the Iberian Peninsula.",
+      "date": "November 26, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/26/three-iberian-cities-among-ten-most-sought-by-real-estate-investors-in-europe-in-2027",
+      "body": [
+        "According to Colliers' report for next year, Madrid, Lisbon and Barcelona rank among the ten European cities most sought by investors, at a time when protests over access to housing are spreading across the Iberian Peninsula."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/01/91/696x392_cmsv2_6973340f-c781-5fe2-a9f4-a073d1c6d7a5-10000191.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "uk-to-invest-9-5m-in-ukraine-windfarm-to-bolster-war-hit",
       "sections": [
@@ -2701,43 +2720,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 26, 05:00",
-      "text": "UK to invest £9.5m in Ukraine windfarm to bolster war-hit energy system",
+      "time": "Nov 26, 08:06",
+      "text": "Three Iberian cities among ten most sought by real estate investors in Europe in 2027",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 05:00",
-      "text": "German boat dealer suspected of supplying Channel smuggling gangs, BBC finds",
+      "time": "Nov 26, 08:02",
+      "text": "Europe Today: EU leaders in Brussels for budget talks and Latvian PM Kulbergs on Euronews",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 04:47",
-      "text": "Flinders Island bushfire: Out-of-control fire with flames 10-metres high destroys at least six homes in Tasman",
+      "time": "Nov 26, 08:00",
+      "text": "EU summit: Leaders ready to spar over new budget and Ukraine aid",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 04:36",
-      "text": "US court blocks regulator's early review of ABC's broadcast licenses",
+      "time": "Nov 26, 07:57",
+      "text": "UK discounter Poundland enters administration with 11,000 jobs at risk",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 04:34",
-      "text": "Coalition would privatise Melbourne’s sewage treatment while selling state land and renewables to fund Victori",
+      "time": "Nov 26, 06:56",
+      "text": "London commuters braced for disruption as tube strike begins",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 05:25",
-      "text": "Global markets rebound as tech shares recover and tariff fears ease",
+      "time": "Nov 26, 06:56",
+      "text": "EU leaders face showdown over Ukraine funding as divisions deepen",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 04:12",
-      "text": "Kim Jong Un tours nuclear material sites, urges wider use of tactical nuclear weapons",
+      "time": "Nov 26, 06:55",
+      "text": "‘Are they all turncoats?’: Barnaby Joyce says voters are turning to One Nation, and Liberals like Blyth can to",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 04:10",
-      "text": "US announces new tariffs on host of countries including China",
+      "time": "Nov 26, 06:53",
+      "text": "The world must choose between nuclear abolition and nuclear catastrophe",
       "link": "live.html"
     }
   ],
