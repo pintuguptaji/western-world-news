@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "three-iberian-cities-among-ten-most-sought-by-real-estate"
+    "heroSlug": "injury-hit-psg-drop-first-points-of-champions-league"
   },
   "breaking": {
-    "text": "Three Iberian cities among ten most sought by real estate investors in Europe in 2027",
-    "link": "articles/three-iberian-cities-among-ten-most-sought-by-real-estate.html"
+    "text": "Injury-hit PSG drop first points of Champions League campaign against Roma",
+    "link": "articles/injury-hit-psg-drop-first-points-of-champions-league.html"
   },
   "articles": [
+    {
+      "slug": "injury-hit-psg-drop-first-points-of-champions-league",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Injury-hit PSG drop first points of Champions League campaign against Roma",
+      "dek": "After kicking off their Champions League title defense with four consecutive wins, Luis Enrique's men were held to a draw at home by the Italian side. Real Madrid are now two points clear at the top of the standings.",
+      "date": "November 26, 2026",
+      "source": "France 24",
+      "source_url": "https://www.france24.com/en/tv-shows/sports/20261126-injury-hit-psg-drop-first-points-of-champions-league-campaign-against-roma",
+      "body": [
+        "After kicking off their Champions League title defense with four consecutive wins, Luis Enrique's men were held to a draw at home by the Italian side. Real Madrid are now two points clear at the top of the standings."
+      ],
+      "related": [],
+      "image": "https://s.france24.com/media/display/204f7dde-e948-11f1-b29b-81bc2b1dcd65/w:1024/p:16x9/J24-PSG-6.jpg",
+      "imageCaption": "Photo: France 24"
+    },
     {
       "slug": "three-iberian-cities-among-ten-most-sought-by-real-estate",
       "sections": [
@@ -2720,43 +2738,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 26, 08:06",
-      "text": "Three Iberian cities among ten most sought by real estate investors in Europe in 2027",
+      "time": "Nov 26, 09:56",
+      "text": "Christmas 2026 travel gift guide: Perfect presents for people who love traveling",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 08:02",
-      "text": "Europe Today: EU leaders in Brussels for budget talks and Latvian PM Kulbergs on Euronews",
+      "time": "Nov 26, 08:43",
+      "text": "BBC Radio 1's Big Weekend 2027 heads to Brighton",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 08:00",
-      "text": "EU summit: Leaders ready to spar over new budget and Ukraine aid",
+      "time": "Nov 26, 08:39",
+      "text": "'We are not fighting culture, we fight to end FGM: It's a human rights violation of women and girls'",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 07:57",
-      "text": "UK discounter Poundland enters administration with 11,000 jobs at risk",
+      "time": "Nov 26, 08:34",
+      "text": "Injury-hit PSG drop first points of Champions League campaign against Roma",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 06:56",
-      "text": "London commuters braced for disruption as tube strike begins",
+      "time": "Nov 26, 08:33",
+      "text": "Thanksgiving and National Day of Mourning: What is the history?",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 06:56",
-      "text": "EU leaders face showdown over Ukraine funding as divisions deepen",
+      "time": "Nov 26, 09:32",
+      "text": "Inquiry into UK nuclear test veterans granted after 40 year campaign",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 06:55",
-      "text": "‘Are they all turncoats?’: Barnaby Joyce says voters are turning to One Nation, and Liberals like Blyth can to",
+      "time": "Nov 26, 09:30",
+      "text": "EU wants more data centres but won't force new green commitments, leaked draft reveals",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 06:53",
-      "text": "The world must choose between nuclear abolition and nuclear catastrophe",
+      "time": "Nov 26, 08:30",
+      "text": "Two screenings of Pakistani TV show canceled in India after backlash",
       "link": "live.html"
     }
   ],
