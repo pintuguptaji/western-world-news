@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "slug": "nhs-boss-warns-of-horrible-spike-in-flu-as-hospital",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "NHS boss warns of 'horrible spike' in flu as hospital admissions surge",
+      "dek": "Health officials are urging those at risk of getting flu to get vaccinated as soon as possible.",
+      "date": "November 26, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwvg2ndxdjr2o",
+      "body": [
+        "Health officials are urging those at risk of getting flu to get vaccinated as soon as possible."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/8436/live/1c6edae0-e9dc-11f1-9361-cd8ed0157587.jpg",
+      "imageCaption": "Photo: BBC",
+      "auto": true
+    },
+    {
       "slug": "spain-s-de-cos-chosen-as-next-ecb-president",
       "sections": [
         "world"
@@ -3001,6 +3021,22 @@
   ],
   "justIn": [
     {
+      "time": "26 Nov, 22:06",
+      "text": "Report: CIA tortured more people with waterboarding than US agency admitted"
+    },
+    {
+      "time": "26 Nov, 22:06",
+      "text": "NHS boss warns of 'horrible spike' in flu as hospital admissions surge"
+    },
+    {
+      "time": "26 Nov, 22:01",
+      "text": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one"
+    },
+    {
+      "time": "26 Nov, 22:57",
+      "text": "Thanksgiving storms flood US coasts and disrupt holiday travel"
+    },
+    {
       "time": "26 Nov, 21:40",
       "text": "Spain's De Cos chosen as next ECB president"
     },
@@ -3015,22 +3051,6 @@
     {
       "time": "26 Nov, 21:21",
       "text": "Nigeria faces rising election violence in run up to vote"
-    },
-    {
-      "time": "26 Nov, 21:17",
-      "text": "Two Italians killed in strike in Kuwait, as Iran denies responsibility"
-    },
-    {
-      "time": "26 Nov, 21:09",
-      "text": "Iranian monarchists disrupt Paris event, highlighting bitter diaspora divide"
-    },
-    {
-      "time": "26 Nov, 21:08",
-      "text": "Egypt detains driver over Cairo fuel tanker fire that killed 31"
-    },
-    {
-      "time": "26 Nov, 20:58",
-      "text": "Coalition team up with Labor to pass 20% gas reservation scheme for Australia’s largest exporters"
     }
   ],
   "liveUpdates": [
@@ -3092,9 +3112,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "spain-s-de-cos-chosen-as-next-ecb-president",
+  "heroSlug": "nhs-boss-warns-of-horrible-spike-in-flu-as-hospital",
   "breaking": {
-    "text": "Spain's De Cos chosen as next ECB president",
-    "link": "articles/spain-s-de-cos-chosen-as-next-ecb-president.html"
+    "text": "NHS boss warns of 'horrible spike' in flu as hospital admissions surge",
+    "link": "articles/nhs-boss-warns-of-horrible-spike-in-flu-as-hospital.html"
   }
 }
