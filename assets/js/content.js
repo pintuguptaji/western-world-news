@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "marlboro-maker-altria-considering-takeover-bid-for-imperial"
+    "heroSlug": "reporters-without-borders-demands-suspension-of"
   },
   "breaking": {
-    "text": "Marlboro maker Altria considering takeover bid for Imperial Brands",
-    "link": "articles/marlboro-maker-altria-considering-takeover-bid-for-imperial.html"
+    "text": "Reporters Without Borders demands suspension of controversial French TV channel CNews",
+    "link": "articles/reporters-without-borders-demands-suspension-of.html"
   },
   "articles": [
+    {
+      "slug": "reporters-without-borders-demands-suspension-of",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Reporters Without Borders demands suspension of controversial French TV channel CNews",
+      "dek": "Paris-based international press freedom group Reporters Without Borders (RSF) on Thursday called on France's media regulator Arcom to suspend right-wing channel CNews for one month over its failure to uphold pluralism.",
+      "date": "November 26, 2026",
+      "source": "France 24",
+      "source_url": "https://www.france24.com/en/france/20261126-reporters-without-borders-demands-suspension-controversial-french-tv-channel-cnews",
+      "body": [
+        "Paris-based international press freedom group Reporters Without Borders (RSF) on Thursday called on France's media regulator Arcom to suspend right-wing channel CNews for one month over its failure to uphold pluralism. The news channel owned by conservative billionaire Vincent Bolloré condemned the call for its suspension."
+      ],
+      "related": [],
+      "image": "https://s.france24.com/media/display/3a179a3c-dbb8-11f1-8811-a575454bc579/w:1024/p:16x9/000-D6EK9T4.jpg",
+      "imageCaption": "Photo: France 24"
+    },
     {
       "slug": "marlboro-maker-altria-considering-takeover-bid-for-imperial",
       "sections": [
@@ -2850,43 +2868,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 26, 17:44",
-      "text": "Marlboro maker Altria considering takeover bid for Imperial Brands",
+      "time": "Nov 26, 18:48",
+      "text": "Reporters Without Borders demands suspension of controversial French TV channel CNews",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 17:44",
-      "text": "Trial of Berlin woman accused of spying for Russia begins after delay",
+      "time": "Nov 26, 18:27",
+      "text": "Trump calls GDP data released before midterms ‘fake’, demands investigation",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 17:43",
-      "text": "Man found guilty of attempted murder of 14 people including 10 on LNER train",
+      "time": "Nov 26, 18:26",
+      "text": "Burnham joined by former PMs at Ann Widdecombe service",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 17:38",
-      "text": "More than 1,000 flights canceled or delayed in US as weather disrupts Thanksgiving travel",
+      "time": "Nov 26, 18:22",
+      "text": "Mandelson kept shares as ambassador despite conflict of interest fears, documents show",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 17:38",
-      "text": "Netanyahu’s corruption trial: Is it really all over?",
+      "time": "Nov 26, 18:21",
+      "text": "Drug rape husband says wife 'would have been terrified', court hears",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 17:37",
-      "text": "Saudi pop music is thriving, but for the right reasons?",
+      "time": "Nov 26, 18:18",
+      "text": "Huntingdon train attacker found guilty of all 14 counts of attempted murder",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 18:35",
-      "text": "Euronews Verify: How can the EU continue to afford supporting Ukraine?",
+      "time": "Nov 26, 18:15",
+      "text": "Huw Edwards gives first interviews since child abuse image conviction",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 18:35",
-      "text": "NATO deploys AWACS airborne radar to monitor Polish airspace",
+      "time": "Nov 26, 18:14",
+      "text": "Scotland's chief medical officer Gregor Smith resigns on mental health grounds",
       "link": "live.html"
     }
   ],
