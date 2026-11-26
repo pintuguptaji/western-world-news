@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "slug": "net-migration-to-uk-falls-to-lowest-level-since-1997",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Net migration to UK falls to lowest level since 1997 excluding pandemic",
+      "dek": "Latest figures show difference between number of people arriving and leaving UK was ⁠77,000 in ​year ‌to ‌June. UK politics live, latest updates.",
+      "date": "November 26, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/uk-news/2026/nov/26/net-migration-to-uk-falls-to-lowest-level-since-1997-excluding-pandemic",
+      "body": [
+        "Latest figures show difference between number of people arriving and leaving UK was ⁠77,000 in ​year ‌to ‌June. UK politics live, latest updates."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/5c23523ac46bb71db2d8067325e32d1261591fb5/661_0_6630_5304/master/6630.jpg?width=700&quality=85&auto=format&fit=max&s=8e5b24426a0000f1aeb9b012e60fa7ec",
+      "imageCaption": "Photo: The Guardian",
+      "auto": true
+    },
+    {
       "slug": "tui-boss-wants-eu-to-cut-bureaucracy-attract-talent-and",
       "sections": [
         "europe",
@@ -2865,36 +2884,36 @@
   ],
   "justIn": [
     {
-      "time": "26 Nov, 12:51",
-      "text": "TUI boss wants EU to cut bureaucracy, attract talent and expand green energy"
+      "time": "26 Nov, 13:09",
+      "text": "Miami runway incident disrupts flights on Thanksgiving eve"
     },
     {
-      "time": "26 Nov, 12:46",
-      "text": "Norwegian low-cost carrier Norse Atlantic suspends flights as bankruptcy looms"
+      "time": "26 Nov, 13:08",
+      "text": "Double jeopardy killer recommended for release from prison"
     },
     {
-      "time": "26 Nov, 11:40",
-      "text": "UK reservists contacted as 'threat environment' rises, Streeting says"
+      "time": "26 Nov, 13:05",
+      "text": "Net migration to UK falls to lowest level since 1997 excluding pandemic"
     },
     {
-      "time": "26 Nov, 11:38",
-      "text": "LeBron James becomes oldest NBA player to post triple-double as 76ers win"
+      "time": "26 Nov, 13:00",
+      "text": "Rescuers blocked from a fire. A child killed on the way to school. Miles-long trains are upending US lives"
     },
     {
-      "time": "26 Nov, 12:29",
-      "text": "Feminists march across Spain against violence ahead of general election"
+      "time": "26 Nov, 12:48",
+      "text": "'As humans we feel spiritually homeless': Turkish author Ece Temelkuran on belonging"
     },
     {
-      "time": "26 Nov, 11:29",
-      "text": "Heathrow third runway plans 'should be grounded'"
+      "time": "26 Nov, 12:43",
+      "text": "MP hosts 400,000 guests at daughter’s wedding in India’s poorest state"
     },
     {
-      "time": "26 Nov, 11:26",
-      "text": "French media publish fresh claims of far-right leader Bardella's 'anti-Semitic torrent'"
+      "time": "26 Nov, 13:42",
+      "text": "Fathers' antidepressant use tied to slight blood pressure risk in kids, but drugs may not be why"
     },
     {
-      "time": "26 Nov, 12:26",
-      "text": "‘The taste layer of the internet ’: Reddit's COO on why AI needs humans"
+      "time": "26 Nov, 12:37",
+      "text": "‘I’m no longer a UAE official’: UN hopeful Lana Nusseibeh tries to shake off Sudan record"
     }
   ],
   "liveUpdates": [
@@ -2956,9 +2975,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "tui-boss-wants-eu-to-cut-bureaucracy-attract-talent-and",
+  "heroSlug": "net-migration-to-uk-falls-to-lowest-level-since-1997",
   "breaking": {
-    "text": "TUI boss wants EU to cut bureaucracy, attract talent and expand green energy",
-    "link": "articles/tui-boss-wants-eu-to-cut-bureaucracy-attract-talent-and.html"
+    "text": "Net migration to UK falls to lowest level since 1997 excluding pandemic",
+    "link": "articles/net-migration-to-uk-falls-to-lowest-level-since-1997.html"
   }
 }
