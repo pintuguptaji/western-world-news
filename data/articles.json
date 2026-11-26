@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "slug": "uk-papers-six-day-streak-smashes-global-temperature-record",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "UK papers: Six-day streak 'smashes' global temperature record and 'Gord speed'",
+      "dek": "The world has experienced six consecutive days of temperatures 2C warmer than pre-industrial levels, according to the Guardian.",
+      "date": "November 26, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmj4reknwv9eo",
+      "body": [
+        "The world has experienced six consecutive days of temperatures 2C warmer than pre-industrial levels, according to the Guardian."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/bdf9/live/612032a0-e933-11f1-9bc3-811961023815.png",
+      "imageCaption": "Photo: BBC",
+      "auto": true
+    },
+    {
       "slug": "duran-duran-guitarist-andy-taylor-dies-aged-65",
       "sections": [
         "world"
@@ -2708,36 +2727,36 @@
   ],
   "justIn": [
     {
-      "time": "25 Nov, 23:37",
-      "text": "Duran Duran guitarist Andy Taylor dies aged 65"
+      "time": "26 Nov, 01:01",
+      "text": "UK papers: Six-day streak 'smashes' global temperature record and 'Gord speed'"
     },
     {
-      "time": "25 Nov, 23:26",
-      "text": "A renovation to upgrade these Hong Kong homes ended in an inferno that killed 168"
+      "time": "26 Nov, 01:00",
+      "text": "US announces new tariffs on host of countries including China"
     },
     {
-      "time": "25 Nov, 23:08",
-      "text": "Flinders Island bushfire grows to 13,000 hectares with Tasmanian homes and properties at risk"
+      "time": "26 Nov, 00:58",
+      "text": "‘Turncoat’: Liberal senator Leah Blyth announces defection to One Nation, blindsiding Coalition"
     },
     {
-      "time": "25 Nov, 22:56",
-      "text": "Record-breaking California tides cause major flooding of roads and businesses"
+      "time": "26 Nov, 00:39",
+      "text": "At least 31 killed as fuel tanker crash ignites large fire on Cairo highway"
     },
     {
-      "time": "25 Nov, 22:53",
-      "text": "Duran Duran guitarist Andy Taylor dies at 65"
+      "time": "26 Nov, 00:24",
+      "text": "The US pastor who wants to see women's right to vote overturned"
     },
     {
-      "time": "25 Nov, 22:47",
-      "text": "PSG's perfect Champions League record ends as Roma snatch 2-2 draw with late penalty"
+      "time": "26 Nov, 00:23",
+      "text": "Spanish elections: What you need to know and what's at stake"
     },
     {
-      "time": "25 Nov, 22:41",
-      "text": "Malen and Roma deny injury-hit PSG in Champions League draw"
+      "time": "26 Nov, 00:23",
+      "text": "France's political mainstream risks presidential vote debacle with no clear candidate"
     },
     {
-      "time": "25 Nov, 22:28",
-      "text": "Le Pen party leaks: prefect dismissed, Paris deputy prosecutor placed under investigation"
+      "time": "26 Nov, 00:23",
+      "text": "US Army says controlled blast of explosives in Iowa was 'huge success'"
     }
   ],
   "liveUpdates": [
@@ -2799,9 +2818,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "duran-duran-guitarist-andy-taylor-dies-aged-65",
+  "heroSlug": "uk-papers-six-day-streak-smashes-global-temperature-record",
   "breaking": {
-    "text": "Duran Duran guitarist Andy Taylor dies aged 65",
-    "link": "articles/duran-duran-guitarist-andy-taylor-dies-aged-65.html"
+    "text": "UK papers: Six-day streak 'smashes' global temperature record and 'Gord speed'",
+    "link": "articles/uk-papers-six-day-streak-smashes-global-temperature-record.html"
   }
 }

@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "duran-duran-guitarist-andy-taylor-dies-aged-65"
+    "heroSlug": "uk-papers-six-day-streak-smashes-global-temperature-record"
   },
   "breaking": {
-    "text": "Duran Duran guitarist Andy Taylor dies aged 65",
-    "link": "articles/duran-duran-guitarist-andy-taylor-dies-aged-65.html"
+    "text": "UK papers: Six-day streak 'smashes' global temperature record and 'Gord speed'",
+    "link": "articles/uk-papers-six-day-streak-smashes-global-temperature-record.html"
   },
   "articles": [
+    {
+      "slug": "uk-papers-six-day-streak-smashes-global-temperature-record",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "UK papers: Six-day streak 'smashes' global temperature record and 'Gord speed'",
+      "dek": "The world has experienced six consecutive days of temperatures 2C warmer than pre-industrial levels, according to the Guardian.",
+      "date": "November 26, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmj4reknwv9eo",
+      "body": [
+        "The world has experienced six consecutive days of temperatures 2C warmer than pre-industrial levels, according to the Guardian."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/bdf9/live/612032a0-e933-11f1-9bc3-811961023815.png",
+      "imageCaption": "Photo: BBC"
+    },
     {
       "slug": "duran-duran-guitarist-andy-taylor-dies-aged-65",
       "sections": [
@@ -2627,43 +2645,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 25, 23:37",
-      "text": "Duran Duran guitarist Andy Taylor dies aged 65",
+      "time": "Nov 26, 01:01",
+      "text": "UK papers: Six-day streak 'smashes' global temperature record and 'Gord speed'",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 23:26",
-      "text": "A renovation to upgrade these Hong Kong homes ended in an inferno that killed 168",
+      "time": "Nov 26, 01:00",
+      "text": "US announces new tariffs on host of countries including China",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 23:08",
-      "text": "Flinders Island bushfire grows to 13,000 hectares with Tasmanian homes and properties at risk",
+      "time": "Nov 26, 00:58",
+      "text": "‘Turncoat’: Liberal senator Leah Blyth announces defection to One Nation, blindsiding Coalition",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 22:56",
-      "text": "Record-breaking California tides cause major flooding of roads and businesses",
+      "time": "Nov 26, 00:39",
+      "text": "At least 31 killed as fuel tanker crash ignites large fire on Cairo highway",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 22:53",
-      "text": "Duran Duran guitarist Andy Taylor dies at 65",
+      "time": "Nov 26, 00:24",
+      "text": "The US pastor who wants to see women's right to vote overturned",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 22:47",
-      "text": "PSG's perfect Champions League record ends as Roma snatch 2-2 draw with late penalty",
+      "time": "Nov 26, 00:23",
+      "text": "Spanish elections: What you need to know and what's at stake",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 22:41",
-      "text": "Malen and Roma deny injury-hit PSG in Champions League draw",
+      "time": "Nov 26, 00:23",
+      "text": "France's political mainstream risks presidential vote debacle with no clear candidate",
       "link": "live.html"
     },
     {
-      "time": "Nov 25, 22:28",
-      "text": "Le Pen party leaks: prefect dismissed, Paris deputy prosecutor placed under investigation",
+      "time": "Nov 26, 00:23",
+      "text": "US Army says controlled blast of explosives in Iowa was 'huge success'",
       "link": "live.html"
     }
   ],
