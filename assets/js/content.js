@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "uk-sent-sri-lankan-refugee-to-eswatini-in-secret-deal-the"
+    "heroSlug": "tui-boss-wants-eu-to-cut-bureaucracy-attract-talent-and"
   },
   "breaking": {
-    "text": "UK sent Sri Lankan refugee to Eswatini in secret deal, the BBC says",
-    "link": "articles/uk-sent-sri-lankan-refugee-to-eswatini-in-secret-deal-the.html"
+    "text": "TUI boss wants EU to cut bureaucracy, attract talent and expand green energy",
+    "link": "articles/tui-boss-wants-eu-to-cut-bureaucracy-attract-talent-and.html"
   },
   "articles": [
+    {
+      "slug": "tui-boss-wants-eu-to-cut-bureaucracy-attract-talent-and",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "TUI boss wants EU to cut bureaucracy, attract talent and expand green energy",
+      "dek": "Euronews spoke with TUI's CEO Sebastian Ebel about manure-powered cruise ships, migration, dependence on the US, Artificial Intelligence, and the future of tourism.",
+      "date": "November 26, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/26/tui-boss-wants-eu-to-cut-bureaucracy-attract-talent-and-expand-green-energy",
+      "body": [
+        "Euronews spoke with TUI's CEO Sebastian Ebel about manure-powered cruise ships, migration, dependence on the US, Artificial Intelligence, and the future of tourism."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/09/97/23/38/696x392_cmsv2_e2ee8cd8-585c-53f1-9faf-cade74f06239-9972338.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "uk-sent-sri-lankan-refugee-to-eswatini-in-secret-deal-the",
       "sections": [
@@ -2757,43 +2776,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 26, 11:10",
-      "text": "UK sent Sri Lankan refugee to Eswatini in secret deal, the BBC says",
+      "time": "Nov 26, 12:51",
+      "text": "TUI boss wants EU to cut bureaucracy, attract talent and expand green energy",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 10:00",
-      "text": "Israel ‘officially sanctions’ torture of Palestinian prisoners to extract confessions, report concludes",
+      "time": "Nov 26, 12:46",
+      "text": "Norwegian low-cost carrier Norse Atlantic suspends flights as bankruptcy looms",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 09:59",
-      "text": "New UK-EU treaty has 10-year termination clause",
+      "time": "Nov 26, 11:40",
+      "text": "UK reservists contacted as 'threat environment' rises, Streeting says",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 10:58",
-      "text": "Cheaper, generic HIV prevention drug arrives in Zambia",
+      "time": "Nov 26, 11:38",
+      "text": "LeBron James becomes oldest NBA player to post triple-double as 76ers win",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 10:54",
-      "text": "Ebola cases in Congo surpass 12,000 in fastest-growing outbreak",
+      "time": "Nov 26, 12:29",
+      "text": "Feminists march across Spain against violence ahead of general election",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 09:52",
-      "text": "Ex-Cricket Australia boss James Sutherland defends ‘Sandpapergate’ probe",
+      "time": "Nov 26, 11:29",
+      "text": "Heathrow third runway plans 'should be grounded'",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 09:52",
-      "text": "Government preparing to publish more Mandelson papers",
+      "time": "Nov 26, 11:26",
+      "text": "French media publish fresh claims of far-right leader Bardella's 'anti-Semitic torrent'",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 10:46",
-      "text": "New Danish data breach hits 11,000 despite security upgrades",
+      "time": "Nov 26, 12:26",
+      "text": "‘The taste layer of the internet ’: Reddit's COO on why AI needs humans",
       "link": "live.html"
     }
   ],
