@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "spains-election-the-end-of-a-leftwing-icon-podcast"
+    "heroSlug": "uk-to-invest-9-5m-in-ukraine-windfarm-to-bolster-war-hit"
   },
   "breaking": {
-    "text": "Spain’s election: the end of a leftwing icon? - podcast",
-    "link": "articles/spains-election-the-end-of-a-leftwing-icon-podcast.html"
+    "text": "UK to invest £9.5m in Ukraine windfarm to bolster war-hit energy system",
+    "link": "articles/uk-to-invest-9-5m-in-ukraine-windfarm-to-bolster-war-hit.html"
   },
   "articles": [
+    {
+      "slug": "uk-to-invest-9-5m-in-ukraine-windfarm-to-bolster-war-hit",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "UK to invest £9.5m in Ukraine windfarm to bolster war-hit energy system",
+      "dek": "Project capable of powering 300,000 homes, with Britain having offered more than £770m to rebuild energy sector.",
+      "date": "November 26, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/business/2026/nov/26/uk-to-invest-95m-in-ukraine-windfarm-war-hit-energy-system",
+      "body": [
+        "Project capable of powering 300,000 homes, with Britain having offered more than £770m to rebuild energy sector. Britain will add to its multimillion pound investments in rebuilding Ukraine’s energy system by funding a windfarm project capable of powering 300,000 Ukrainian households."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/0eb49fd7cf3892e47cfeb7ea38b317f175a29005/0_1053_3000_2400/master/3000.jpg?width=700&quality=85&auto=format&fit=max&s=9bf10c87c1df79e3febc4e2bc2b6a9f5",
+      "imageCaption": "Photo: The Guardian"
+    },
     {
       "slug": "spains-election-the-end-of-a-leftwing-icon-podcast",
       "sections": [
@@ -2682,43 +2701,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 26, 03:20",
-      "text": "Anthropic CEO Amodei denies wanting humanity to ‘surrender’ free will to AI",
+      "time": "Nov 26, 05:00",
+      "text": "UK to invest £9.5m in Ukraine windfarm to bolster war-hit energy system",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 03:02",
-      "text": "US authorizes SpaceX to launch up to one million satellites for orbital data centers",
+      "time": "Nov 26, 05:00",
+      "text": "German boat dealer suspected of supplying Channel smuggling gangs, BBC finds",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 03:01",
+      "time": "Nov 26, 04:47",
+      "text": "Flinders Island bushfire: Out-of-control fire with flames 10-metres high destroys at least six homes in Tasman",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 26, 04:36",
+      "text": "US court blocks regulator's early review of ABC's broadcast licenses",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 26, 04:34",
+      "text": "Coalition would privatise Melbourne’s sewage treatment while selling state land and renewables to fund Victori",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 26, 05:25",
+      "text": "Global markets rebound as tech shares recover and tariff fears ease",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 26, 04:12",
+      "text": "Kim Jong Un tours nuclear material sites, urges wider use of tactical nuclear weapons",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 26, 04:10",
       "text": "US announces new tariffs on host of countries including China",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 03:00",
-      "text": "Spain’s election: the end of a leftwing icon? - podcast",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 02:47",
-      "text": "Extreme weather threatens Thanksgiving festivities in US",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 02:35",
-      "text": "Coalition would privatise Melbourne’s sewage treatment while selling state-owned land and renewables to fund V",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 02:26",
-      "text": "Australia projected to completely miss 2035 emissions target without new climate policies",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 02:13",
-      "text": "UK government set to publish new treaties agreed with EU",
       "link": "live.html"
     }
   ],
