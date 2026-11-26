@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "freigang-banned-germany-star-to-miss-2027-world-cup"
+    "heroSlug": "germany-ig-metall-union-says-deal-reached-with-employers"
   },
   "breaking": {
-    "text": "Freigang banned, Germany star to miss 2027 World Cup",
-    "link": "articles/freigang-banned-germany-star-to-miss-2027-world-cup.html"
+    "text": "Germany: IG Metall union says deal reached with employers",
+    "link": "articles/germany-ig-metall-union-says-deal-reached-with-employers.html"
   },
   "articles": [
+    {
+      "slug": "germany-ig-metall-union-says-deal-reached-with-employers",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Germany: IG Metall union says deal reached with employers",
+      "dek": "IG Metall, representing millions of workers in Germany's metal and electrical industry, is the country's largest trade union. The deal came after more than 24 hours of talks with employers.",
+      "date": "November 26, 2026",
+      "source": "DW",
+      "source_url": "https://www.dw.com/en/germany-ig-metall-union-says-deal-reached-with-employers/a-80066792",
+      "body": [
+        "IG Metall, representing millions of workers in Germany's metal and electrical industry, is the country's largest trade union. The deal came after more than 24 hours of talks with employers."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "freigang-banned-germany-star-to-miss-2027-world-cup",
       "sections": [
@@ -2813,43 +2832,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 26, 14:55",
-      "text": "UK net migration at lowest level since 1997 as asylum claims also fall",
+      "time": "Nov 26, 15:58",
+      "text": "Germany: IG Metall union says deal reached with employers",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 14:50",
-      "text": "Freigang banned, Germany star to miss 2027 World Cup",
+      "time": "Nov 26, 15:57",
+      "text": "Hundreds of flights canceled as severe weather disrupts Thanksgiving travel in US",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 14:48",
-      "text": "French woman on trial for IS group propaganda tells court she’s ‘ashamed’",
+      "time": "Nov 26, 15:55",
+      "text": "Spanish economist de Cos to succeed Lagarde as head of ECB",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 14:45",
-      "text": "FIFA says a cyberattack against it targeted a 'limited set of personal and business information'",
+      "time": "Nov 26, 15:46",
+      "text": "Mandelson kept lobby firm shares despite conflict of interest fears, documents show",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 26, 15:45",
+      "text": "Qatari, Egyptian leaders discuss Gaza ‘ceasefire’ and regional security",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 26, 15:45",
+      "text": "Double jeopardy killer recommended for release from prison",
       "link": "live.html"
     },
     {
       "time": "Nov 26, 15:41",
-      "text": "French presidential candidate Raphaël Glucksmann to Euronews: 'France's vote will shape Europe's destiny'",
+      "text": "Politician hosts 400,000 guests at daughter’s wedding in India’s poorest state",
       "link": "live.html"
     },
     {
       "time": "Nov 26, 15:41",
-      "text": "Jordan Bardella denies fresh wave of antisemitism allegations",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 14:35",
-      "text": "Season's eatings! Celebrating Thanksgiving in France",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 15:34",
-      "text": "Temu agrees to change commercial practices in EU, says Commission",
+      "text": "Lost homes, stolen freedom: National Book Award winners on exile and imprisonment",
       "link": "live.html"
     }
   ],
