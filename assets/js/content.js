@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "son-of-myanmar-s-suu-kyi-relieved-by-first-call-in-five"
+    "heroSlug": "spain-s-de-cos-chosen-as-next-ecb-president"
   },
   "breaking": {
-    "text": "Son of Myanmar's Suu Kyi 'relieved' by first call in five years, questions military's motives",
-    "link": "articles/son-of-myanmar-s-suu-kyi-relieved-by-first-call-in-five.html"
+    "text": "Spain's De Cos chosen as next ECB president",
+    "link": "articles/spain-s-de-cos-chosen-as-next-ecb-president.html"
   },
   "articles": [
+    {
+      "slug": "spain-s-de-cos-chosen-as-next-ecb-president",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Spain's De Cos chosen as next ECB president",
+      "dek": "European leaders have agreed to nominate the former head of the Bank of Spain as the next president of the European Central Bank.",
+      "date": "November 26, 2026",
+      "source": "France 24",
+      "source_url": "https://www.france24.com/en/spain-s-de-cos-chosen-as-next-ecb-president",
+      "body": [
+        "European leaders have agreed to nominate the former head of the Bank of Spain as the next president of the European Central Bank. Pablo ​Hernandez ‌de ⁠Cos will replace the outgoing Christine Lagarde as the bank faces pressure to tackle high inflation, borrowing costs, and government debt."
+      ],
+      "related": [],
+      "image": "https://s.france24.com/media/display/a2393400-e9e0-11f1-93c6-174dac1c1bf0/w:1024/p:16x9/capture-10efea26.jpg",
+      "imageCaption": "Photo: France 24"
+    },
     {
       "slug": "son-of-myanmar-s-suu-kyi-relieved-by-first-call-in-five",
       "sections": [
@@ -2887,43 +2905,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 26, 20:43",
-      "text": "Son of Myanmar's Suu Kyi 'relieved' by first call in five years, questions military's motives",
+      "time": "Nov 26, 21:40",
+      "text": "Spain's De Cos chosen as next ECB president",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 19:41",
-      "text": "Trump alleges ‘fake’ economic figures released before US midterms but doesn’t provide evidence",
+      "time": "Nov 26, 21:33",
+      "text": "Southern and central Australia face summer of heightened bushfire risk and heatwaves",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 19:38",
-      "text": "How much of the sharp fall in UK immigration is due to Labor’s policies?",
+      "time": "Nov 26, 22:24",
+      "text": "France's presidential hopefuls speak to Euronews as they court local politicians for endorsements",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 19:27",
+      "time": "Nov 26, 21:21",
+      "text": "Nigeria faces rising election violence in run up to vote",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 26, 21:17",
       "text": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 19:19",
-      "text": "Why are winter rains forcing Palestinians in Gaza to flee again?",
+      "time": "Nov 26, 21:09",
+      "text": "Iranian monarchists disrupt Paris event, highlighting bitter diaspora divide",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 19:16",
-      "text": "US Senate ‘permitting bill’ threatens clean water protections to speed up energy projects",
+      "time": "Nov 26, 21:08",
+      "text": "Egypt detains driver over Cairo fuel tanker fire that killed 31",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 19:09",
-      "text": "Judge strikes down Trump’s latest restrictions on US birthright citizenship",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 19:07",
-      "text": "Psychiatric care under scrutiny after abuse scandals in Croatia and Bosnia",
+      "time": "Nov 26, 20:58",
+      "text": "Coalition team up with Labor to pass 20% gas reservation scheme for Australia’s largest exporters",
       "link": "live.html"
     }
   ],
