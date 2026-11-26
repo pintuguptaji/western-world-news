@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "slug": "freigang-banned-germany-star-to-miss-2027-world-cup",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Freigang banned, Germany star to miss 2027 World Cup",
+      "dek": "Germany forward Laura Freigang has been suspended until October 2027 after missing three doping tests, ruling her out of next year's Women's World Cup in Brazil. Freigang denies any intention to evade controls.",
+      "date": "November 26, 2026",
+      "source": "DW",
+      "source_url": "https://www.dw.com/en/freigang-banned-germany-star-to-miss-2027-world-cup/a-80063930",
+      "body": [
+        "Germany forward Laura Freigang has been suspended until October 2027 after missing three doping tests, ruling her out of next year's Women's World Cup in Brazil. Freigang denies any intention to evade controls."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": "",
+      "auto": true
+    },
+    {
       "slug": "net-migration-to-uk-falls-to-lowest-level-since-1997",
       "sections": [
         "world"
@@ -2884,36 +2904,36 @@
   ],
   "justIn": [
     {
-      "time": "26 Nov, 13:09",
-      "text": "Miami runway incident disrupts flights on Thanksgiving eve"
+      "time": "26 Nov, 14:55",
+      "text": "UK net migration at lowest level since 1997 as asylum claims also fall"
     },
     {
-      "time": "26 Nov, 13:08",
-      "text": "Double jeopardy killer recommended for release from prison"
+      "time": "26 Nov, 14:50",
+      "text": "Freigang banned, Germany star to miss 2027 World Cup"
     },
     {
-      "time": "26 Nov, 13:05",
-      "text": "Net migration to UK falls to lowest level since 1997 excluding pandemic"
+      "time": "26 Nov, 14:48",
+      "text": "French woman on trial for IS group propaganda tells court she’s ‘ashamed’"
     },
     {
-      "time": "26 Nov, 13:00",
-      "text": "Rescuers blocked from a fire. A child killed on the way to school. Miles-long trains are upending US lives"
+      "time": "26 Nov, 14:45",
+      "text": "FIFA says a cyberattack against it targeted a 'limited set of personal and business information'"
     },
     {
-      "time": "26 Nov, 12:48",
-      "text": "'As humans we feel spiritually homeless': Turkish author Ece Temelkuran on belonging"
+      "time": "26 Nov, 15:41",
+      "text": "French presidential candidate Raphaël Glucksmann to Euronews: 'France's vote will shape Europe's destiny'"
     },
     {
-      "time": "26 Nov, 12:43",
-      "text": "MP hosts 400,000 guests at daughter’s wedding in India’s poorest state"
+      "time": "26 Nov, 15:41",
+      "text": "Jordan Bardella denies fresh wave of antisemitism allegations"
     },
     {
-      "time": "26 Nov, 13:42",
-      "text": "Fathers' antidepressant use tied to slight blood pressure risk in kids, but drugs may not be why"
+      "time": "26 Nov, 14:35",
+      "text": "Season's eatings! Celebrating Thanksgiving in France"
     },
     {
-      "time": "26 Nov, 12:37",
-      "text": "‘I’m no longer a UAE official’: UN hopeful Lana Nusseibeh tries to shake off Sudan record"
+      "time": "26 Nov, 15:34",
+      "text": "Temu agrees to change commercial practices in EU, says Commission"
     }
   ],
   "liveUpdates": [
@@ -2975,9 +2995,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "net-migration-to-uk-falls-to-lowest-level-since-1997",
+  "heroSlug": "freigang-banned-germany-star-to-miss-2027-world-cup",
   "breaking": {
-    "text": "Net migration to UK falls to lowest level since 1997 excluding pandemic",
-    "link": "articles/net-migration-to-uk-falls-to-lowest-level-since-1997.html"
+    "text": "Freigang banned, Germany star to miss 2027 World Cup",
+    "link": "articles/freigang-banned-germany-star-to-miss-2027-world-cup.html"
   }
 }
