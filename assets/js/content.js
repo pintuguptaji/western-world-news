@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "uk-papers-six-day-streak-smashes-global-temperature-record"
+    "heroSlug": "extreme-weather-threatens-thanksgiving-festivities-in-us"
   },
   "breaking": {
-    "text": "UK papers: Six-day streak 'smashes' global temperature record and 'Gord speed'",
-    "link": "articles/uk-papers-six-day-streak-smashes-global-temperature-record.html"
+    "text": "Extreme weather threatens Thanksgiving festivities in US",
+    "link": "articles/extreme-weather-threatens-thanksgiving-festivities-in-us.html"
   },
   "articles": [
+    {
+      "slug": "extreme-weather-threatens-thanksgiving-festivities-in-us",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "Extreme weather threatens Thanksgiving festivities in US",
+      "dek": "A major storm is forecast to move up the US East Coast and is likely to cause travel delays. Weather warnings were enough to postpone Macy's Thanksgiving Day Parade for the first time in its 100 years.",
+      "date": "November 26, 2026",
+      "source": "DW",
+      "source_url": "https://www.dw.com/en/extreme-weather-threatens-thanksgiving-festivities-in-us/a-80055880",
+      "body": [
+        "A major storm is forecast to move up the US East Coast and is likely to cause travel delays. Weather warnings were enough to postpone Macy's Thanksgiving Day Parade for the first time in its 100 years."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "uk-papers-six-day-streak-smashes-global-temperature-record",
       "sections": [
@@ -2645,43 +2664,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 26, 01:01",
-      "text": "UK papers: Six-day streak 'smashes' global temperature record and 'Gord speed'",
+      "time": "Nov 26, 02:47",
+      "text": "Extreme weather threatens Thanksgiving festivities in US",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 01:00",
-      "text": "US announces new tariffs on host of countries including China",
+      "time": "Nov 26, 02:35",
+      "text": "Coalition would privatise Melbourne’s sewage treatment while selling state-owned land and renewables to fund V",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 00:58",
-      "text": "‘Turncoat’: Liberal senator Leah Blyth announces defection to One Nation, blindsiding Coalition",
+      "time": "Nov 26, 02:13",
+      "text": "UK government set to publish new treaties agreed with EU",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 00:39",
-      "text": "At least 31 killed as fuel tanker crash ignites large fire on Cairo highway",
+      "time": "Nov 26, 02:03",
+      "text": "Kim Jong Un says North Korea should widen deployment of tactical nukes",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 00:24",
-      "text": "The US pastor who wants to see women's right to vote overturned",
+      "time": "Nov 26, 01:59",
+      "text": "Out-of-control bushfire with flames 10-metres high destroys at least six homes on Flinders Island",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 00:23",
-      "text": "Spanish elections: What you need to know and what's at stake",
+      "time": "Nov 26, 01:40",
+      "text": "Photos: Storms and an El Nino-charged king tide batter California’s coast",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 00:23",
-      "text": "France's political mainstream risks presidential vote debacle with no clear candidate",
+      "time": "Nov 26, 01:39",
+      "text": "Ukraine attacks Russian military base, says five planes struck",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 00:23",
-      "text": "US Army says controlled blast of explosives in Iowa was 'huge success'",
+      "time": "Nov 26, 01:25",
+      "text": "At least 31 killed in Cairo fire after fuel truck overturns on busy highway",
       "link": "live.html"
     }
   ],
