@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "germany-ig-metall-union-says-deal-reached-with-employers"
+    "heroSlug": "marlboro-maker-altria-considering-takeover-bid-for-imperial"
   },
   "breaking": {
-    "text": "Germany: IG Metall union says deal reached with employers",
-    "link": "articles/germany-ig-metall-union-says-deal-reached-with-employers.html"
+    "text": "Marlboro maker Altria considering takeover bid for Imperial Brands",
+    "link": "articles/marlboro-maker-altria-considering-takeover-bid-for-imperial.html"
   },
   "articles": [
+    {
+      "slug": "marlboro-maker-altria-considering-takeover-bid-for-imperial",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Marlboro maker Altria considering takeover bid for Imperial Brands",
+      "dek": "Shares in UK tobacco company jump by more than 14% on news US rival is looking into making offer. Business live, latest updates.",
+      "date": "November 26, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/business/2026/nov/26/marlboro-maker-altria-considering-takeover-bid-for-imperial-brands",
+      "body": [
+        "Shares in UK tobacco company jump by more than 14% on news US rival is looking into making offer. Business live, latest updates."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/5bd7ec433dfc2df44e54e41b625bf03b06d8d5bc/588_0_3333_2667/master/3333.jpg?width=700&quality=85&auto=format&fit=max&s=e0ed7dc310bdc4b486e96215152baf12",
+      "imageCaption": "Photo: The Guardian"
+    },
     {
       "slug": "germany-ig-metall-union-says-deal-reached-with-employers",
       "sections": [
@@ -2832,43 +2850,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 26, 15:58",
-      "text": "Germany: IG Metall union says deal reached with employers",
+      "time": "Nov 26, 17:44",
+      "text": "Marlboro maker Altria considering takeover bid for Imperial Brands",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 15:57",
-      "text": "Hundreds of flights canceled as severe weather disrupts Thanksgiving travel in US",
+      "time": "Nov 26, 17:44",
+      "text": "Trial of Berlin woman accused of spying for Russia begins after delay",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 15:55",
-      "text": "Spanish economist de Cos to succeed Lagarde as head of ECB",
+      "time": "Nov 26, 17:43",
+      "text": "Man found guilty of attempted murder of 14 people including 10 on LNER train",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 15:46",
-      "text": "Mandelson kept lobby firm shares despite conflict of interest fears, documents show",
+      "time": "Nov 26, 17:38",
+      "text": "More than 1,000 flights canceled or delayed in US as weather disrupts Thanksgiving travel",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 15:45",
-      "text": "Qatari, Egyptian leaders discuss Gaza ‘ceasefire’ and regional security",
+      "time": "Nov 26, 17:38",
+      "text": "Netanyahu’s corruption trial: Is it really all over?",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 15:45",
-      "text": "Double jeopardy killer recommended for release from prison",
+      "time": "Nov 26, 17:37",
+      "text": "Saudi pop music is thriving, but for the right reasons?",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 15:41",
-      "text": "Politician hosts 400,000 guests at daughter’s wedding in India’s poorest state",
+      "time": "Nov 26, 18:35",
+      "text": "Euronews Verify: How can the EU continue to afford supporting Ukraine?",
       "link": "live.html"
     },
     {
-      "time": "Nov 26, 15:41",
-      "text": "Lost homes, stolen freedom: National Book Award winners on exile and imprisonment",
+      "time": "Nov 26, 18:35",
+      "text": "NATO deploys AWACS airborne radar to monitor Polish airspace",
       "link": "live.html"
     }
   ],
