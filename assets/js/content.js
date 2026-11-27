@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "new-zealand-election-final-results-show-ruling-coalition"
+    "heroSlug": "asian-stock-markets-rise-after-earlier-tech-rout"
   },
   "breaking": {
-    "text": "New Zealand election: final results show ruling coalition needs minor party to govern",
-    "link": "articles/new-zealand-election-final-results-show-ruling-coalition.html"
+    "text": "Asian stock markets rise after earlier tech rout",
+    "link": "articles/asian-stock-markets-rise-after-earlier-tech-rout.html"
   },
   "articles": [
+    {
+      "slug": "asian-stock-markets-rise-after-earlier-tech-rout",
+      "sections": [
+        "business-finance",
+        "world"
+      ],
+      "section": "business-finance",
+      "headline": "Asian stock markets rise after earlier tech rout",
+      "dek": "Indices in Japan, South Korea, Australia and Hong Kong rise as New Zealand stocks dip on election uncertainty.",
+      "date": "November 27, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/economy/2026/11/27/asian-stock-markets-rise-after-earlier-tech-rout",
+      "body": [
+        "Indices in Japan, South Korea, Australia and Hong Kong rise as New Zealand stocks dip on election uncertainty."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "new-zealand-election-final-results-show-ruling-coalition",
       "sections": [
@@ -2978,13 +2997,28 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 27, 02:38",
-      "text": "New Zealand election: final results show ruling coalition needs minor party to govern",
+      "time": "Nov 27, 03:42",
+      "text": "Asian stock markets rise after earlier tech rout",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 02:22",
+      "time": "Nov 27, 03:28",
       "text": "New Zealand's ruling coalition falls short of parliamentary majority by one seat",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 27, 03:14",
+      "text": "Heatwaves, floods, fires and rain: weekend of weather extremes expected across Australia",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 27, 03:13",
+      "text": "New Zealand election ends in hung parliament",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 27, 02:38",
+      "text": "New Zealand election: final results show ruling coalition needs minor party to govern",
       "link": "live.html"
     },
     {
@@ -3000,21 +3034,6 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "time": "Nov 27, 01:07",
       "text": "Global news agency AFP reports cyberattack, shuts down content platform",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 27, 01:00",
-      "text": "Threat from China looms large over Taiwan’s local elections",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 27, 00:58",
-      "text": "From £250 job to £9,000 bill: Inside the rogue trader networks scamming customers at scale",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 27, 00:54",
-      "text": "I spend £200 a month on fancy meals by myself - would you dine solo?",
       "link": "live.html"
     }
   ],
