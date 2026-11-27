@@ -22,7 +22,7 @@
 
 <div class="gate-card" id="gate">
 <h1>Admin login</h1>
-<p>Enter the admin passcode to manage the site. (Default passcode: <b>admin123</b>. Change it in assets/js/admin.js. Note: this is a basic gate on a static site, not real server security.)</p>
+<p>Enter the admin passcode to manage the site. (Change the passcode in the ADMIN_JS template in tools/build_site.py. Note: this is a basic gate on a static site, not real server security.)</p>
 <form id="gate-form">
 <div class="field"><label for="passcode">Passcode</label>
 <input id="passcode" type="password" autocomplete="current-password" required></div>
@@ -35,14 +35,20 @@
 <h1 class="section-head"><span class="tag">&#9632;</span> Dashboard</h1>
 <div class="notice"><b>How saving works</b>
 Changes you save here apply across the whole site <b>immediately in this browser</b> (they are stored in this browser's localStorage).
-To make them permanent for everyone, use <b>Export JSON</b> below and send the file to musu, or save it in the site folder as <b>content-export.json</b> and rebuild the site. Until then, other browsers still see the default content.</div>
+To make them permanent for everyone, use <b>Export JSON</b> below and send the file to Muse, or save it in the site folder as <b>content-export.json</b> and rebuild the site. Until then, other browsers still see the default content.</div>
 <div class="admin-grid">
 <div class="stat"><b id="stat-articles">0</b><span>Articles</span></div>
 <div class="stat"><b id="stat-sections">0</b><span>Sections in use</span></div>
 <div class="stat"><b id="stat-justin">0</b><span>Just In items</span></div>
 <div class="stat"><b id="stat-live">0</b><span>Live updates</span></div>
+<div class="stat"><b id="stat-review">0</b><span>Needs review</span></div>
 </div>
 <p id="saved-note" style="color:var(--muted)"></p>
+
+<section class="panel"><h2>Review queue</h2><div class="body">
+<p class="note">New stories published automatically start here as <b>unreviewed</b> — the publisher does not hold them back, it only flags them. Read each one against its source link, then mark it reviewed. Marking reviewed is a record for the site operator; it does not change what readers see. Older stories published before this system was added do not appear here.</p>
+<ul class="admin-list" id="review-list"></ul>
+</div></section>
 
 <section class="panel"><h2>Articles</h2><div class="body">
 <ul class="admin-list" id="article-list"></ul>
@@ -118,7 +124,7 @@ To make them permanent for everyone, use <b>Export JSON</b> below and send the f
 </div></section>
 
 <section class="panel"><h2>Data: export, import, reset</h2><div class="body">
-<p>Export downloads the site's full content as <b>wwn-content.json</b>. To make admin changes permanent for all visitors, send that file to musu, or save it in the site folder as <b>content-export.json</b> and re-run the build script (<b>tools/build_site.py</b>). The static pages are then regenerated with your content, including a real page for every new article.</p>
+<p>Export downloads the site's full content as <b>wwn-content.json</b>. To make admin changes permanent for all visitors, send that file to Muse, or save it in the site folder as <b>content-export.json</b> and re-run the build script (<b>tools/build_site.py</b>). The static pages are then regenerated with your content, including a real page for every new article.</p>
 <div class="form-actions">
 <button class="btn" id="export-btn" type="button">Export JSON</button>
 <label class="btn ghost" for="import-file" style="cursor:pointer">Import JSON</label>

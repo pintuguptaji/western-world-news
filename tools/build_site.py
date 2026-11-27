@@ -2,8 +2,8 @@
 """Build script for Western World News (static site).
 Generates all HTML pages, sitemap.xml and robots.txt from
 data/articles.json (see _load_data below). Run: python3 /tmp/build_site.py
-Content refreshed 20 Nov 2026: original summaries of real stories, 19-20 Nov 2026,
-each credited to its source with a link. See README.md in the site root.
+Content refreshed automatically: short summaries of real stories, each
+credited to its source with a link. See README.md in the site root.
 """
 import datetime
 import os
@@ -29,6 +29,16 @@ GOOGLE_ANALYTICS_ID = "G-1FTJR8MHNF"
 # https://buttondown.com/api/emails/embed-subscribe/<username> and
 # Buttondown handles double opt-in and its own confirmation page.
 NEWSLETTER_BUTTONDOWN_USERNAME = "pintu"
+
+# Contact form endpoint (Formspree recommended — free tier, no backend).
+# How to connect it: create a free form at https://formspree.io (sign up,
+# create a form, copy its endpoint, which looks like
+# https://formspree.io/f/xxxxxxxx), paste it here, rebuild and push.
+# While this is empty, the contact page shows the form disabled with an
+# honest note pointing at the email address instead — it never pretends
+# to send a message. The honeypot field ("website") catches simple bots;
+# Formspree also filters spam on its side.
+CONTACT_FORM_ENDPOINT = ""
 
 NAV = [
     ("index.html", "Home"),
@@ -319,41 +329,37 @@ body {
 h1, h2, h3, h4 { font-family: var(--serif); color: var(--navy); }
 a { color: var(--navy); text-decoration: none; }
 a:hover { color: var(--red); text-decoration: underline; }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; display: block; height: auto; }
 /* Grid/flex children must be allowed to shrink below their content's
    intrinsic width, otherwise a large image forces its track wider than
    the viewport (horizontal scroll on mobile). */
-.hero-grid > *, .card-grid > *, .split-sections > *, .section-grid > *,
-.article-layout > *, .lead-card > *, .hero, .card, .lead-card,
-.side-story, .latest-item > * { min-width: 0; }
+.top-hero > *, .card-grid > *, .split-sections > *, .section-grid > *,
+.article-layout > *, .lead-card > *, .top-hero-main, .stack-card, .card, .lead-card,
+.latest-item > * { min-width: 0; }
 figure { margin: 0; }
 figcaption { font-size: 0.78rem; color: var(--muted); padding: 0.35rem 0 0; line-height: 1.4; }
 
-.wrap { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+.wrap { max-width: 1760px; margin: 0 auto; padding: 0 1rem; }
 .sr-only { position: absolute; left: -9999px; }
 .skip-link { position: absolute; left: -999px; top: 0; background: var(--red); color: #fff; padding: 0.5rem 1rem; z-index: 300; }
 .skip-link:focus { left: 0; }
 
-/* ---------- Top bar: white, brand left, date + social right ---------- */
-.topbar { background: #fff; border-bottom: 1px solid var(--line); }
-.topbar-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 0.9rem; padding-bottom: 0.9rem; }
 .brand-name { font-family: var(--serif); font-size: 1.9rem; font-weight: 900; letter-spacing: -0.01em; line-height: 1.05; color: var(--navy); white-space: nowrap; }
 .brand-name span { color: var(--red); }
 .brand-name:hover { text-decoration: none; color: var(--navy); }
-.brand-tagline { margin: 0.15rem 0 0; font-size: 0.82rem; color: var(--muted); font-weight: 600; letter-spacing: 0.04em; }
-.topbar-right { display: flex; align-items: center; gap: 1rem; flex-shrink: 0; }
-.dateline { font-size: 0.88rem; color: var(--muted); font-weight: 600; white-space: nowrap; }
 .social-links { display: flex; gap: 0.4rem; }
 .social-links a { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid var(--line); border-radius: 50%; color: var(--navy); }
 .social-links a:hover { background: var(--navy); color: #fff; text-decoration: none; border-color: var(--navy); }
 .social-links svg { width: 15px; height: 15px; display: block; }
 
-/* ---------- Sticky navy navigation ---------- */
+/* ---------- Sticky navy header: brand, nav, search, subscribe ---------- */
 .site-header { position: sticky; top: 0; z-index: 100; background: var(--navy); }
-.header-row { display: flex; align-items: center; gap: 0.6rem; padding-top: 0; padding-bottom: 0; }
-.nav-wordmark { font-family: var(--serif); font-size: 1.05rem; font-weight: 900; color: #fff; white-space: nowrap; padding: 0.7rem 0.4rem 0.7rem 0; flex-shrink: 0; }
-.nav-wordmark span { color: #fff; }
+.header-row { display: flex; align-items: center; gap: 0.8rem; padding-top: 0; padding-bottom: 0; }
+.brand-lockup { flex-shrink: 0; padding: 0.55rem 0.6rem 0.55rem 0; line-height: 1; }
+.nav-wordmark { font-family: var(--serif); font-size: 1.45rem; font-weight: 900; color: #fff; white-space: nowrap; display: block; }
+.nav-wordmark span { color: var(--red); }
 .nav-wordmark:hover { text-decoration: none; color: #fff; }
+.nav-tagline { margin: 0.3rem 0 0; font-size: 0.72rem; color: rgba(255,255,255,0.72); font-weight: 600; letter-spacing: 0.05em; white-space: nowrap; }
 .main-nav { flex: 1; min-width: 0; }
 .main-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
 .main-nav ul::-webkit-scrollbar { display: none; }
@@ -362,8 +368,8 @@ figcaption { font-size: 0.78rem; color: var(--muted); padding: 0.35rem 0 0; line
 .main-nav a.active { color: #fff; background: var(--navy2); border-bottom-color: var(--red); }
 .nav-toggle { display: none; background: none; border: 0; color: #fff; font-size: 1.5rem; padding: 0.4rem 0.5rem; cursor: pointer; line-height: 1; }
 .header-actions { display: flex; align-items: center; gap: 0.7rem; margin-left: auto; flex-shrink: 0; }
-.header-actions .live-link { color: #fff; font-weight: 800; font-size: 0.92rem; display: flex; align-items: center; gap: 0.35rem; white-space: nowrap; }
-.header-actions .live-link:hover { text-decoration: none; color: #fff; }
+.subscribe-btn { background: var(--red); color: #fff; font-weight: 800; font-size: 0.92rem; padding: 0.55rem 1.1rem; border-radius: 3px; white-space: nowrap; }
+.subscribe-btn:hover { background: var(--red-dark); color: #fff; text-decoration: none; }
 .search-box { position: relative; display: flex; align-items: center; }
 .search-toggle { background: none; border: 0; padding: 0.45rem; cursor: pointer; color: #fff; line-height: 0; }
 .search-toggle:hover { color: #fff; }
@@ -386,11 +392,6 @@ figcaption { font-size: 0.78rem; color: var(--muted); padding: 0.35rem 0 0; line
 .search-results a:hover { background: var(--bg); text-decoration: none; }
 .search-results a small { display: block; color: var(--red); font-weight: 700; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
 .search-results .none { padding: 0.7rem 0.8rem; color: var(--muted); font-size: 0.9rem; }
-.topic-row { border-bottom: 1px solid var(--line); background: #fff; }
-.topic-row .wrap { display: flex; gap: 1.4rem; padding-top: 0.5rem; padding-bottom: 0.5rem; overflow-x: auto; scrollbar-width: none; }
-.topic-row .wrap::-webkit-scrollbar { display: none; }
-.topic-row a { color: var(--muted); font-size: 0.88rem; font-weight: 600; white-space: nowrap; max-width: 260px; overflow: hidden; text-overflow: ellipsis; }
-.topic-row a:hover { color: var(--red); text-decoration: none; }
 @media (max-width: 1080px) {
   .nav-toggle { display: block; }
   .main-nav { order: 4; flex-basis: 100%; }
@@ -400,8 +401,8 @@ figcaption { font-size: 0.78rem; color: var(--muted); padding: 0.35rem 0 0; line
   .main-nav a.active { border-bottom-color: var(--red); }
   .header-row { flex-wrap: wrap; padding-top: 0.3rem; padding-bottom: 0.3rem; }
   .search-box.open input { width: 150px; }
-  .brand-name { font-size: 1.5rem; }
-  .dateline { display: none; }
+  .nav-wordmark { font-size: 1.2rem; }
+  .nav-tagline { display: none; }
 }
 
 /* ---------- Layout ---------- */
@@ -428,38 +429,87 @@ main > .wrap { padding-top: 1.4rem; }
 .breadcrumbs a:hover { color: var(--red); }
 .breadcrumbs span { color: var(--navy); font-weight: 600; }
 
-/* ---------- Breaking bar ---------- */
-.breaking-bar { display: flex; align-items: center; gap: 0.9rem; background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--red); padding: 0.6rem 0.9rem; margin: 0 0 1.4rem; }
-.breaking-label { background: var(--red); color: #fff; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.6rem; border-radius: 2px; white-space: nowrap; flex-shrink: 0; }
-.breaking-main { font-family: var(--serif); font-weight: 700; font-size: 1rem; color: var(--navy); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.breaking-main:hover { color: var(--red); }
+/* ---------- Trending ticker strip ---------- */
+.trend-strip { display: flex; align-items: center; gap: 1rem; background: #fff; border-bottom: 1px solid var(--line); padding: 0.55rem 0; margin: 0 0 1.3rem; }
+.trend-badge { background: var(--red); color: #fff; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.32rem 0.65rem; border-radius: 2px; white-space: nowrap; flex-shrink: 0; }
+.trend-live { display: flex; align-items: center; gap: 0.35rem; margin-left: auto; color: var(--red); font-weight: 800; font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; white-space: nowrap; flex-shrink: 0; }
+.trend-live:hover { color: var(--red-dark); text-decoration: none; }
+.trend-live .live-dot { margin-right: 0; }
 .ticker { overflow: hidden; flex: 1; min-width: 0; mask-image: linear-gradient(90deg, transparent, #000 3%, #000 97%, transparent); -webkit-mask-image: linear-gradient(90deg, transparent, #000 3%, #000 97%, transparent); }
 .ticker-track { display: inline-flex; gap: 2.5rem; white-space: nowrap; animation: ticker 60s linear infinite; will-change: transform; }
 .ticker:hover .ticker-track { animation-play-state: paused; }
 .ticker-track a, .ticker-track span { font-size: 0.9rem; color: var(--text); font-weight: 600; }
 .ticker-track a:hover { color: var(--red); }
 @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-@media (max-width: 700px) { .ticker { display: none; } }
+@media (max-width: 700px) {
+  .ticker { overflow-x: auto; mask-image: none; -webkit-mask-image: none; scrollbar-width: none; }
+  .ticker::-webkit-scrollbar { display: none; }
+  .ticker-track { animation: none; }
+  .trend-strip { gap: 0.7rem; }
+}
 
-/* ---------- Hero: 65 / 35 ---------- */
-.hero-grid { display: grid; grid-template-columns: 1fr; gap: 1.6rem; margin-bottom: 2rem; }
-@media (min-width: 1000px) { .hero-grid { grid-template-columns: 65fr 35fr; } }
-.hero-media { margin: 0; }
-.hero-media img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
-.hero .art { aspect-ratio: 16 / 9; }
-.hero h1 { font-size: 1.7rem; line-height: 1.2; margin: 0.5rem 0 0; font-weight: 900; }
-.hero h1 a { color: var(--navy); }
-.hero h1 a:hover { color: var(--red); }
-@media (min-width: 1000px) { .hero h1 { font-size: 2.1rem; } }
-.hero .dek { color: var(--text); font-size: 1.05rem; margin: 0.7rem 0 0.4rem; line-height: 1.55; }
-.hero-side { display: flex; flex-direction: column; gap: 1.4rem; }
-.side-story figure { margin: 0 0 0.55rem; }
-.side-story figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
-.side-story .art { aspect-ratio: 16 / 9; }
-.side-story h3 { font-size: 1.18rem; line-height: 1.3; margin: 0.3rem 0 0; font-weight: 700; }
-.side-story h3 a { color: var(--navy); }
-.side-story h3 a:hover { color: var(--red); }
-.side-story p { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.92rem; line-height: 1.5; }
+/* ---------- Homepage top hero: intro + top story + stacked stories ---------- */
+.top-hero { display: grid; grid-template-columns: 1fr; gap: 1.6rem; margin: 0 0 1.2rem; }
+@media (min-width: 1100px) { .top-hero { grid-template-columns: 1.45fr 1.2fr 1fr; gap: 1.5rem; align-items: stretch; } }
+
+/* Left: brand statement, like a newspaper masthead block. */
+.top-hero-intro { display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.4rem 0.6rem 0; background-image: radial-gradient(#E4EAF1 1.2px, transparent 1.2px); background-size: 15px 15px; }
+.top-hero-title { font-family: var(--serif); font-size: 2.5rem; line-height: 1.12; margin: 0 0 0.9rem; font-weight: 900; color: var(--navy); }
+@media (min-width: 1100px) { .top-hero-title { font-size: 3.05rem; } }
+.top-hero-pulse { color: var(--red); margin: 0 0 1.1rem; }
+.top-hero-pulse svg { width: 64px; height: 18px; display: block; }
+.top-hero-intro .lede { font-size: 1.02rem; color: var(--text); line-height: 1.6; margin: 0 0 1.4rem; max-width: 34rem; }
+.btn-red { display: inline-block; background: var(--red); color: #fff; font-weight: 800; font-size: 1rem; padding: 0.75rem 1.5rem; border-radius: 3px; align-self: flex-start; }
+.btn-red:hover { background: var(--red-dark); color: #fff; text-decoration: none; }
+
+/* Center: large top-story card, navy body under the photo. */
+.top-hero-main { background: var(--navy); border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(23,43,69,0.18); display: flex; flex-direction: column; }
+.top-hero-media { position: relative; display: block; overflow: hidden; }
+.top-hero-media img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.top-hero-media .art { aspect-ratio: 16 / 9; }
+.top-story-badge { position: absolute; left: 0.9rem; bottom: 0.9rem; background: var(--red); color: #fff; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.6rem; border-radius: 2px; }
+.top-hero-body { padding: 1.1rem 1.2rem 1.25rem; }
+.top-hero-body h1 { font-size: 1.5rem; line-height: 1.25; margin: 0 0 0.55rem; font-weight: 900; color: #fff; }
+.top-hero-body h1 a { color: #fff; }
+.top-hero-body h1 a:hover { color: #fff; }
+.top-hero-body .dek { color: rgba(255,255,255,0.85); font-size: 0.98rem; line-height: 1.55; margin: 0 0 0.7rem; }
+.top-hero-body .byline { color: rgba(255,255,255,0.65); font-size: 0.85rem; margin: 0; }
+.top-hero-body .byline time { color: rgba(255,255,255,0.85); }
+.top-hero-body .byline a { color: #fff; }
+
+/* Right: four stacked stories, one per top section. */
+.top-hero-side { display: flex; flex-direction: column; gap: 0.85rem; justify-content: space-between; }
+.stack-card { display: flex; gap: 0.85rem; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 0.65rem; flex: 1; align-items: center; }
+.stack-thumb { width: 120px; height: 100px; flex-shrink: 0; display: block; overflow: hidden; border-radius: 4px; }
+.stack-thumb img, .stack-thumb .art { width: 100%; height: 100%; object-fit: cover; }
+.stack-thumb .art { aspect-ratio: auto; }
+.stack-body { min-width: 0; }
+.stack-body p { margin: 0 0 0.2rem; }
+.stack-kicker { font-weight: 800; font-size: 0.72rem; letter-spacing: 0.09em; text-transform: uppercase; }
+.stack-card h3 { font-size: 0.98rem; line-height: 1.3; margin: 0 0 0.3rem; font-weight: 700; }
+.stack-card h3 a { color: var(--navy); }
+.stack-card h3 a:hover { color: var(--red); }
+.stack-meta { margin: 0; color: var(--muted); font-size: 0.82rem; }
+
+/* ---------- Category quick bar ---------- */
+.quick-bar { display: grid; grid-template-columns: repeat(4, 1fr); background: var(--navy); border-radius: 8px; margin: 0 0 1.7rem; overflow: hidden; }
+.quick-bar a { display: flex; align-items: center; justify-content: center; gap: 0.6rem; color: #fff; font-weight: 800; font-size: 0.95rem; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.95rem 0.5rem; }
+.quick-bar a:hover { background: var(--navy2); text-decoration: none; color: #fff; }
+.quick-bar a + a { border-left: 1px solid rgba(255,255,255,0.12); }
+.quick-bar svg { width: 22px; height: 22px; flex-shrink: 0; }
+@media (max-width: 700px) {
+  .quick-bar { grid-template-columns: repeat(2, 1fr); }
+  .quick-bar a { font-size: 0.82rem; padding: 0.75rem 0.3rem; }
+  .quick-bar a:nth-child(3) { border-left: 0; }
+  .quick-bar a:nth-child(n+3) { border-top: 1px solid rgba(255,255,255,0.12); }
+}
+
+/* ---------- Featured articles row ---------- */
+.featured-card { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; box-shadow: 0 2px 12px rgba(23,43,69,0.06); }
+.featured-card figure { margin: 0 0 0.6rem; }
+.featured-card figure img { border-radius: 0; }
+.featured-card > h3, .featured-card > p { padding-left: 0.9rem; padding-right: 0.9rem; }
+.featured-card .byline { padding-bottom: 0.9rem; }
 
 /* ---------- Cards & grids ---------- */
 .card-grid { display: grid; grid-template-columns: 1fr; gap: 1.6rem; }
@@ -674,13 +724,10 @@ footer.site-footer .fineprint .social-links a:hover { background: #fff; color: v
 .page-404 .btn:hover { background: var(--navy2); text-decoration: none; }
 
 @media (max-width: 640px) {
-  .topic-row .wrap { gap: 1rem; }
-  .topic-row a { flex: 0 0 auto; } /* scroll the strip instead of squishing items to 2 letters */
-  .hero h1 { font-size: 1.45rem; }
+  .top-hero-title { font-size: 2rem; }
+  .top-hero-body h1 { font-size: 1.3rem; }
   .section-head { font-size: 1.15rem; }
   .article-head h1 { font-size: 1.6rem; }
-  .breaking-bar { flex-wrap: wrap; }
-  .topbar-right .social-links { display: none; }
 }
 """
 
@@ -696,47 +743,29 @@ def nav_html(active, prefix=""):
 
 
 def header_html(active, prefix=""):
-    topics = "".join(
-        f'<a href="{prefix}{href}">{label}</a>' for label, href in TOPICS
-    )
+    # Single dark navy header: brand lockup, nav, search, Subscribe.
+    # The Subscribe button jumps to the newsletter signup on the homepage.
+    subscribe_href = "#newsletter" if not prefix else f"{prefix}index.html#newsletter"
     return f"""<a class="skip-link" href="#main">Skip to main content</a>
-<header class="topbar">
-<div class="wrap topbar-row">
-<div class="brand">
-<a class="brand-name" href="{prefix}index.html" data-site-name>Western World <span>News</span></a>
-<p class="brand-tagline">Independent News. Global Perspective.</p>
-</div>
-<div class="topbar-right">
-<span class="dateline" data-today></span>
-<span class="social-links">
-<a href="#" data-share="facebook" aria-label="Share on Facebook" title="Share on Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7V11H8.3v3h2.4v7h2.8z"/></svg></a>
-<a href="#" data-share="x" aria-label="Share on X" title="Share on X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.7 3H21l-7.3 8.3L22.2 21h-6.7l-5.2-6.2L4.3 21H1l7.8-8.9L1.8 3h6.9l4.7 5.6L17.7 3zm-1.2 16h1.9L6.4 4.9H4.4L16.5 19z"/></svg></a>
-</span>
-</div>
-</div>
-</header>
 <header class="site-header">
 <div class="wrap header-row">
-<a class="nav-wordmark" href="{prefix}index.html">Western World <span>News</span></a>
+<div class="brand-lockup">
+<a class="nav-wordmark" href="{prefix}index.html" data-site-name>Western World <span>News</span></a>
+<p class="nav-tagline">Independent News. Global Perspective.</p>
+</div>
 <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
 <nav class="main-nav" id="main-nav" aria-label="Main navigation">{nav_html(active, prefix)}</nav>
 <div class="header-actions">
-<a class="live-link" href="{prefix}live.html"><span class="live-dot"></span>Live</a>
 <div class="search-box">
 <button class="search-toggle" id="search-toggle" type="button" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><line x1="16.5" y1="16.5" x2="21" y2="21"></line></svg></button>
 <input type="search" id="site-search" placeholder="Search news..." aria-label="Search news" autocomplete="off">
 <div class="search-results" id="search-results" role="listbox" aria-label="Search results"></div>
 </div>
+<a class="subscribe-btn" href="{subscribe_href}">Subscribe</a>
 </div>
 </div>
-</header>
-<div class="topic-row"><div class="wrap">{topics}</div></div>"""
+</header>"""
 
-
-# Topic links under the header: the newest headlines, regenerated each build.
-TOPICS = [
-    (s["headline"][:90], f"articles/{s['slug']}.html") for s in STORIES[:8]
-]
 
 
 def ad_slot_html(position=""):
@@ -791,7 +820,7 @@ def footer_html(prefix=""):
 </ul>
 </div>
 </div>
-<p class="fineprint"><span>&copy; 2026 Western World News (westernworldnews.com). All Rights Reserved. Stories are original summaries written by our editors; original reporting is credited and linked. Content updated hourly.</span><span class="social-links">
+<p class="fineprint"><span>&copy; 2026 Western World News (westernworldnews.com). All Rights Reserved. Stories are automated summaries of credited source reports; original reporting is credited and linked. New stories are added automatically during the day.</span><span class="social-links">
 <a href="#" data-share="facebook" aria-label="Share on Facebook" title="Share on Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7V11H8.3v3h2.4v7h2.8z"/></svg></a>
 <a href="#" data-share="x" aria-label="Share on X" title="Share on X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.7 3H21l-7.3 8.3L22.2 21h-6.7l-5.2-6.2L4.3 21H1l7.8-8.9L1.8 3h6.9l4.7 5.6L17.7 3zm-1.2 16h1.9L6.4 4.9H4.4L16.5 19z"/></svg></a>
 </span></p>
@@ -813,6 +842,12 @@ def page(title, description, active, body, canonical, og_type="website", prefix=
                   + "  try { if (localStorage.getItem('wwn-cookie-choice') === 'accepted') { gtag('consent', 'update', {'analytics_storage': 'granted'}); } } catch (e) {}" + nl
                   + "  gtag('config', '" + GOOGLE_ANALYTICS_ID + "');" + nl + '</script>')
     full_title = title if title == "Western World News" else f"{title} | Western World News"
+    # Default social image: the branded 1200x630 card in assets/img/.
+    # Pages with their own photo (article pages, category pages) pass
+    # that image instead; pages without one (info pages, 404, no-photo
+    # articles) fall back to this so no page shares without an image.
+    if not og_image:
+        og_image = BASE + "/assets/img/og-default.png"
     og_image_tag = ""
     if og_image:
         og_image_tag = ('<meta property="og:image" content="' + hescape(og_image) + '">' + chr(10)
@@ -918,6 +953,78 @@ def card_html(s, prefix=""):
 <h3><a href="{prefix}articles/{s['slug']}.html">{s['headline']}</a></h3>
 <p>{s['dek']}</p>
 <p class="byline"><time>{s['date']}</time> &middot; Source: {s['source']}</p>
+</article>"""
+
+
+def _read_time(s):
+    """Approximate read time from the article body, e.g. '3 min read'."""
+    words = sum(len(p.split()) for p in (s.get("body") or []))
+    return f"{max(1, round(words / 200))} min read"
+
+
+def _short_date(date_str):
+    """'November 27, 2026' -> 'Nov 27, 2026' for compact meta lines."""
+    m = _re.match(r"(\w+) (\d{1,2}), (\d{4})", date_str or "")
+    if not m:
+        return date_str or ""
+    return f"{m.group(1)[:3]} {m.group(2)}, {m.group(3)}"
+
+
+# Section accent colors for the homepage top (stacked cards, quick bar).
+SECTION_COLORS = {
+    "world": "#D93036",
+    "us": "#2563EB",
+    "europe": "#7C3AED",
+    "war-conflict": "#C2410C",
+}
+
+# Small stroke icons for the category quick bar (globe, flag, landmark, shield).
+QUICK_ICONS = {
+    "world": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.9 5.7 3.9 9s-1.4 6.4-3.9 9c-2.5-2.6-3.9-5.7-3.9-9S9.5 5.6 12 3z"/></svg>',
+    "us": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4"/><path d="M5 4h13l-2.5 4L18 12H5"/></svg>',
+    "europe": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-6 9 6"/><path d="M6 9v9M10 9v9M14 9v9M18 9v9"/><path d="M3 21h18"/><path d="M3 18h18"/></svg>',
+    "war-conflict": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.5 9.3-8 11-4.5-1.7-8-6-8-11V5l8-3z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>',
+}
+
+# Red heartbeat divider used under the homepage intro headline.
+PULSE_SVG = ('<svg viewBox="0 0 64 18" fill="none" stroke="currentColor" stroke-width="2" '
+             'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+             '<polyline points="0,9 10,9 14,3 20,15 24,9 38,9 43,5 48,9 64,9"/></svg>')
+
+
+def _top_hero_media(s):
+    """Top-story photo with the red TOP STORY badge, or the navy tile."""
+    url = _img_url(s["slug"])
+    alt = hescape(s["headline"])
+    if url:
+        media = f'<img src="{hescape(url)}" alt="{alt}" width="1200" height="675" loading="eager">'
+    else:
+        media = art_html(SECTIONS[s["section"]])
+    return (f'<a class="top-hero-media" href="articles/{s["slug"]}.html" aria-label="{alt}">'
+            f'{media}<span class="top-story-badge">Top Story</span></a>')
+
+
+def stack_card_html(s):
+    """One stacked story for the hero's right column: thumb, section, headline, date."""
+    color = SECTION_COLORS.get(s["section"], "#D93036")
+    return f"""<article class="stack-card">
+<a class="stack-thumb" href="articles/{s['slug']}.html">{thumb_html(s['slug'], w=320)}</a>
+<div class="stack-body">
+<p><span class="stack-kicker" style="color:{color}">{SECTIONS[s['section']]}</span></p>
+<h3><a href="articles/{s['slug']}.html">{s['headline']}</a></h3>
+<p class="stack-meta"><time>{_short_date(s['date'])}</time></p>
+</div>
+</article>"""
+
+
+def featured_card_html(s):
+    """Featured Articles card: photo, section, headline, dek, date + read time."""
+    return f"""<article class="card featured-card">
+{img_html(s['slug'], w=800)}
+<p><span class="kicker">{SECTIONS[s['section']]}</span></p>
+<h3><a href="articles/{s['slug']}.html">{s['headline']}</a></h3>
+<p>{s['dek']}</p>
+<p class="byline"><time>{s['date']}</time> &middot; {_read_time(s)}</p>
 </article>"""
 
 
@@ -1116,6 +1223,43 @@ def newsletter_html():
 </section>"""
 
 
+def contact_form_html():
+    """Contact form for the contact page.
+
+    Posts to CONTACT_FORM_ENDPOINT (Formspree) when set; the form
+    includes a honeypot field ("website") that real visitors leave
+    blank. While the endpoint is unset, the form renders disabled with
+    an honest note pointing at the email address — it never pretends
+    to send a message.
+    """
+    if CONTACT_FORM_ENDPOINT:
+        return f"""<form class="contact-form" action="{CONTACT_FORM_ENDPOINT}" method="post">
+<label for="cf-name">Your name</label>
+<input id="cf-name" type="text" name="name" autocomplete="name" required>
+<label for="cf-email">Your email</label>
+<input id="cf-email" type="email" name="email" autocomplete="email" required>
+<label for="cf-subject">Subject</label>
+<input id="cf-subject" type="text" name="subject" required>
+<label for="cf-message">Message</label>
+<textarea id="cf-message" name="message" rows="6" required></textarea>
+<input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
+<button type="submit">Send message</button>
+</form>
+<p class="note">Your message goes to the site operator at lurenmira@gmail.com. Please include the story headline when reporting a correction.</p>"""
+    return """<form class="contact-form" action="#" method="post" onsubmit="return false;">
+<label for="cf-name">Your name</label>
+<input id="cf-name" type="text" name="name" disabled>
+<label for="cf-email">Your email</label>
+<input id="cf-email" type="email" name="email" disabled>
+<label for="cf-subject">Subject</label>
+<input id="cf-subject" type="text" name="subject" disabled>
+<label for="cf-message">Message</label>
+<textarea id="cf-message" name="message" rows="6" disabled></textarea>
+<button type="submit" disabled>Send message</button>
+</form>
+<p class="note">The contact form is not connected yet. Please email lurenmira@gmail.com for now — news tips, corrections and advertising inquiries all go there.</p>"""
+
+
 def stories_for(section):
     return [s for s in STORIES if section in s["sections"]]
 
@@ -1137,7 +1281,6 @@ SECTION_DESCRIPTIONS = {
 
 def build_index():
     hero = BY_SLUG.get(HERO_SLUG) or STORIES[0]
-    rest = [s for s in STORIES if s["slug"] != hero["slug"]]
     used = {hero["slug"]}
 
     def pick_newest(stories):
@@ -1147,22 +1290,22 @@ def build_index():
                 return s
         return None
 
-    # --- B: hero secondary stories (2) ---
-    side = []
-    for s in rest:
-        if len(side) >= 2:
-            break
-        side.append(s)
-        used.add(s["slug"])
-
-    # --- Breaking bar (A): real headline + Just In ticker ---
+    # --- Trending ticker (A): breaking story first, then Just In items ---
     breaking_link = BREAKING.get("link", "")
     breaking_text = BREAKING.get("text", "")
     if not breaking_link or not breaking_text:
         breaking_link = f"articles/{hero['slug']}.html"
         breaking_text = hero["headline"]
-    ticker_items = []
+
+    def _norm_head(t):
+        return _re.sub(r"[^a-z0-9]+", " ", (t or "").lower()).strip()
+
+    ticker_items = [f'<a href="{breaking_link}">{breaking_text}</a>']
+    seen_heads = {_norm_head(breaking_text)}
     for t, h, stored_link in _justin_sorted():
+        if _norm_head(h) in seen_heads:
+            continue
+        seen_heads.add(_norm_head(h))
         link = stored_link or _justin_link(h)
         if link:
             ext = ' target="_blank" rel="noopener"' if link.startswith("http") else ""
@@ -1172,29 +1315,45 @@ def build_index():
     ticker = "".join(ticker_items)
     ticker_html = f'<div class="ticker" aria-hidden="true"><div class="ticker-track">{ticker}{ticker}</div></div>'
 
-    is_breaking = breaking_link.endswith(hero["slug"] + ".html")
-    hero_kicker = "Breaking" if is_breaking else SECTIONS[hero["section"]]
     hero_headline = hero["headline"].lower()
     live_link = ""
     if any(w in hero_headline for w in ("ukraine", "russia", "kyiv", "kremlin")):
         live_link = ' &middot; <a href="live.html">Follow live updates</a>'
 
-    side_html = "".join(
-        f"""<article class="side-story">
-{img_html(s['slug'], w=800)}
-<p><span class="kicker">{SECTIONS[s['section']]}</span></p>
-<h3><a href="articles/{s['slug']}.html">{s['headline']}</a></h3>
-<p>{s['dek']}</p>
-<p class="byline"><time>{s['date']}</time></p>
-</article>""" for s in side
+    # --- B: top-story card (center of the hero) ---
+    hero_main_html = f"""<article class="top-hero-main" data-hero>
+{_top_hero_media(hero)}
+<div class="top-hero-body">
+<h1><a href="articles/{hero['slug']}.html">{hero['headline']}</a></h1>
+<p class="dek">{hero['dek']}</p>
+<p class="byline"><time>{hero['date']}</time> &middot; {_read_time(hero)}{live_link}</p>
+</div>
+</article>"""
+
+    # --- B: stacked stories (right column), newest per top section ---
+    stack_html = "".join(
+        stack_card_html(s) for s in (
+            pick_newest([x for x in STORIES if x["section"] == sec])
+            for sec in ("world", "us", "europe", "war-conflict")
+        ) if s
     )
 
-    # --- C: Top Stories, one card per category ---
-    top_picks = []
-    for secs in (["us", "politics"], ["europe"], ["war-conflict"], ["business-finance"]):
-        pool = [s for s in STORIES if s["section"] in secs]
-        top_picks.append(pick_newest(pool))
-    top_cards = "".join(card_html(s) for s in top_picks if s)
+    # --- Quick bar: the same four sections, with icons ---
+    quick_html = "".join(
+        f'<a href="{sec}.html"><span style="color:{SECTION_COLORS[sec]}">{QUICK_ICONS[sec]}</span>'
+        f"{SECTIONS[sec]}</a>"
+        for sec in ("world", "us", "europe", "war-conflict")
+    )
+
+    # --- C: Featured Articles, the next 4 newest stories ---
+    featured = []
+    for s in STORIES:
+        if len(featured) >= 4:
+            break
+        if s["slug"] not in used:
+            used.add(s["slug"])
+            featured.append(s)
+    featured_cards = "".join(featured_card_html(s) for s in featured)
 
     # --- Section blocks D-G: lead + 3 cards each ---
     def section_block(section, title, view_all):
@@ -1264,30 +1423,34 @@ def build_index():
                      'type="button">Load More</button></div>')
 
     body = f"""
-<section class="breaking-bar" aria-label="Breaking news">
-<span class="breaking-label">Breaking News</span>
-<a class="breaking-main" id="breaking-link" href="{breaking_link}">{breaking_text}</a>
+<div class="trend-strip" aria-label="Trending news">
+<span class="trend-badge">Trending</span>
 {ticker_html}
-</section>
+<a class="trend-live" href="live.html"><span class="live-dot"></span>Live</a>
+</div>
 
 {ad_slot_html("below-nav")}
 
-<div class="hero-grid">
-<article class="hero" data-hero>
-{img_html(hero['slug'], w=1600, cls="hero-media", caption=False, loading="eager")}
-<p><span class="kicker">{hero_kicker}</span></p>
-<h1><a href="articles/{hero['slug']}.html">{hero['headline']}</a></h1>
-<p class="dek">{hero['dek']}</p>
-<p class="byline"><time>{hero['date']}</time> &middot; Source: {hero['source']}{live_link}</p>
-</article>
-<div class="hero-side">
-{side_html}
+<section class="top-hero" aria-label="Top stories">
+<div class="top-hero-intro">
+<p class="top-hero-title">Breaking News &amp; Timely Updates</p>
+<span class="top-hero-pulse" aria-hidden="true">{PULSE_SVG}</span>
+<p class="lede">Stay informed with the latest headlines, expert analysis, and real-time updates from around the globe.</p>
+<a class="btn-red" href="#latest">Read Latest News</a>
 </div>
+{hero_main_html}
+<div class="top-hero-side">
+{stack_html}
 </div>
+</section>
 
-<section class="section-block" aria-label="Top stories">
-<h2 class="section-head">Top Stories</h2>
-<div class="card-grid four">{top_cards}</div>
+<nav class="quick-bar" aria-label="Top categories">
+{quick_html}
+</nav>
+
+<section class="section-block" aria-label="Featured articles">
+<h2 class="section-head">Featured Articles<a class="view-all" href="#latest">View All &rarr;</a></h2>
+<div class="card-grid four">{featured_cards}</div>
 </section>
 
 {ad_slot_html("mid-homepage")}
@@ -1302,7 +1465,7 @@ def build_index():
 {tech_block}
 </section>
 
-<section class="section-block" aria-label="Latest news">
+<section class="section-block" id="latest" aria-label="Latest news">
 <h2 class="section-head">Latest News</h2>
 <ul class="latest-list" id="latest-list" data-exclude="{','.join(sorted(used))}">{''.join(latest_items)}</ul>
 {load_more}
@@ -1357,46 +1520,82 @@ def build_section(section, filename):
 # ---------------- Live page ----------------
 
 def build_live():
-    updates = "".join(
-        f"""<div class="live-update">
+    def update_html(t, h, p):
+        # Link the update's headline to its article when one exists
+        # (live entries added by the publisher use the article headline
+        # verbatim, so this matches). Older seed entries with no matching
+        # article stay as plain text rather than pointing at the wrong page.
+        link = _justin_link(h)
+        head = f'<h3><a href="{link}">{h}</a></h3>' if link else f"<h3>{h}</h3>"
+        return f"""<div class="live-update">
 <time>{t}</time>
-<h3>{h}</h3>
+{head}
 <p>{p}</p>
-</div>""" for t, h, p in LIVE_UPDATES
-    )
+</div>"""
+    updates = "".join(update_html(t, h, p) for t, h, p in LIVE_UPDATES)
     last = _live_last_updated()
     last_line = f"Last updated {last}." if last else ""
     body = f"""
 <h1 class="section-head"><span class="live-dot"></span>Live: Ukraine war</h1>
-<p>Rolling updates on Russia's war in Ukraine: the overnight missile strikes, the summit and Europe's response. Times are in CET. {last_line}</p>
+<p>Rolling updates on Russia's war in Ukraine and Europe's response. Times are in UTC. {last_line}</p>
 <div id="live-updates">{updates}</div>
 <p><a class="btn" href="articles/russia-ukraine-missile-attack.html">Read the full story</a></p>
 {newsletter_html()}
 """
     return page(
         "Live: Ukraine war (rolling updates)",
-        "Live updates on Russia's war in Ukraine: missile strikes, the summit and Europe's response.",
+        "Live updates on Russia's war in Ukraine and Europe's response.",
         "live.html", body, BASE + "/live.html",
     )
 
 
 # ---------------- Article pages ----------------
 
-def build_article(s):
-    body_paras = "".join(f"<p>{p}</p>" for p in s["body"])
-    if s.get("auto"):
-        # Auto-published articles are short summaries of the source's own
-        # report (feed description), not original WWN summaries — say so.
-        if s["source"].startswith("The "):
-            src_phrase = f"a report by {s['source']}"
+def _dedup_dek_body(dek, body):
+    """The dek is a truncation of the same summary the body starts with,
+    so the first body paragraph usually repeats the dek word for word
+    (127 of 164 articles at the 2026-11-27 audit). Strip the repeated
+    dek text from the start of the first body paragraph, and drop the
+    paragraph entirely when nothing is left, so the page does not show
+    the same sentence twice. Only exact and clean sentence-boundary
+    prefixes are stripped: a mid-sentence cut is left alone rather
+    than starting the body mid-sentence. No facts are added or removed.
+    """
+    if not dek or not body:
+        return list(body or [])
+    paras = list(body)
+    first = paras[0]
+    if first == dek:
+        return paras[1:]
+    if first.startswith(dek):
+        rest = first[len(dek):].lstrip(" .")
+        if rest:
+            paras[0] = rest
         else:
-            src_phrase = f"a {s['source']} report"
+            paras = paras[1:]
+    return paras
+
+
+def build_article(s):
+    body_paras = "".join(f"<p>{p}</p>" for p in _dedup_dek_body(s["dek"], s["body"]))
+    # Every story is a short summary of the source's own report (feed
+    # description), not original WWN reporting — say so, for auto and
+    # seed stories alike.
+    if s["source"].startswith("The "):
+        src_phrase = f"a report by {s['source']}"
+    else:
+        src_phrase = f"a {s['source']} report"
+    if s.get("auto"):
         source_note = (f"This is a short summary of {src_phrase}. "
                        f"Read the full story at {s['source']}: "
                        f"<a href=\"{s['source_url']}\" target=\"_blank\" rel=\"noopener\">Original article: {s['source']}</a>.")
     else:
-        source_note = (f"This story is an original summary by Western World News, based on reporting by {s['source']} ({s['date']}). "
-                       f"Read the original report: <a href=\"{s['source_url']}\" target=\"_blank\" rel=\"noopener\">Original article: {s['source']}</a>.")
+        # Seed stories (auto is null/false) were written when the site was
+        # set up; they are short summaries of the source's own report too,
+        # not original WWN reporting — use the same honest wording.
+        source_note = (f"This is a short summary of {src_phrase}. "
+                       f"Read the full story at {s['source']}: "
+                       f"<a href=\"{s['source_url']}\" target=\"_blank\" rel=\"noopener\">Original article: {s['source']}</a>.")
     rel_slugs = _related_slugs(s)
     rel = "".join(
         f'<li><a href="{r}.html">{BY_SLUG[r]["headline"]}</a> <span class="byline">{BY_SLUG[r]["date"]}</span></li>'
@@ -1455,7 +1654,7 @@ def build_article(s):
 <div class="avatar" aria-hidden="true">WWN</div>
 <div>
 <h3>Western World News Editorial Team</h3>
-<p>Stories on Western World News are written by our editorial team, which selects, rewrites and checks the news every day. Every story is rewritten in our own words, credited to its original source and linked to the original report. <a href="../authors.html">More about our team</a></p>
+<p>Stories on Western World News are published automatically from trusted news feeds under a team byline. Each story is a short excerpt of its source's own report, credited and linked to the original. <a href="../authors.html">More about how our stories are made</a></p>
 </div>
 </div>
 {ad_slot_html("after-article")}
@@ -1544,9 +1743,10 @@ def build_404():
 
 # ---------------- Info pages ----------------
 
-def build_info(slug, title, description, heading, paragraphs):
+def build_info(slug, title, description, heading, paragraphs, extra=""):
     body = ('<div class="info-page"><h1 class="section-head">' + heading + "</h1>" + chr(10)
-            + chr(10).join(f"<p>{p}</p>" for p in paragraphs) + "</div>")
+            + chr(10).join(f"<p>{p}</p>" for p in paragraphs)
+            + (chr(10) + extra if extra else "") + "</div>")
     return page(title, description, "index.html", body, BASE + "/" + slug + ".html")
 
 
@@ -1569,6 +1769,11 @@ def default_content():
             "related": s["related"],
             "image": s.get("image") or (uimg(pid, 1200) if pid else ""),
             "imageCaption": s.get("imageCaption") or cap,
+            # Editorial review queue: new auto-published stories carry
+            # reviewed=false (set by the publisher); older stories have
+            # no flag and count as reviewed, so the queue only shows
+            # stories published after the review system was added.
+            "reviewed": s.get("reviewed", True),
         })
     return {
         "version": 1,
@@ -1674,11 +1879,30 @@ MAIN_JS = """// Western World News: front-end behavior (v4 redesign).
     return prefix() + link;
   }
   function articleUrl(slug) { return prefix() + "articles/" + slug + ".html"; }
+  // Mirror of the Python _dedup_dek_body in tools/build_site.py: the dek
+  // is a truncation of the same summary the body starts with, so strip
+  // the repeated dek text from the first body paragraph (dropping the
+  // paragraph when nothing is left) instead of showing it twice.
+  function dedupDekBody(a) {
+    var paras = (a.body || []).slice();
+    if (!a.dek || !paras.length) return paras;
+    var first = paras[0];
+    if (first === a.dek) return paras.slice(1);
+    if (first.indexOf(a.dek) === 0) {
+      var rest = first.slice(a.dek.length).replace(/^[ .]+/, "");
+      if (rest) paras[0] = rest; else paras = paras.slice(1);
+    }
+    return paras;
+  }
   function sectionLabel(slug) {
     var map = { world: "World", europe: "Europe", us: "US", politics: "Politics",
       "war-conflict": "War & Conflict", "business-finance": "Business",
       technology: "Technology", sport: "Sport", culture: "Culture", live: "Live" };
     return map[slug] || slug;
+  }
+  function readTime(a) {
+    var words = (a.body || []).join(" ").split(/\\s+/).filter(function (w) { return w; }).length;
+    return Math.max(1, Math.round(words / 200)) + " min read";
   }
   function sectionPage(slug) {
     var map = { world: "world.html", europe: "europe.html", us: "us.html",
@@ -1823,44 +2047,52 @@ MAIN_JS = """// Western World News: front-end behavior (v4 redesign).
       a.target = "_blank"; a.rel = "noopener";
     });
 
-    // Breaking bar.
-    var bl = $("#breaking-link");
-    if (bl && store.breaking) {
-      bl.textContent = store.breaking.text;
-      bl.href = fixLink(store.breaking.link);
-    }
-
-    // Ticker (Just In headlines, duplicated for the marquee loop).
+    // Ticker (breaking story first, then Just In headlines, duplicated
+    // for the marquee loop).
     var track = $(".ticker-track");
     if (track && store.justIn.length) {
-      var items = store.justIn.map(function (it) {
+      var normT = function (t) { return String(t || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim(); };
+      // The breaking story may also be a Just In item: drop that duplicate
+      // and put the breaking story first, matching the server render.
+      var list = store.justIn.filter(function (it) {
+        return !(store.breaking && store.breaking.text && normT(it.text) === normT(store.breaking.text));
+      });
+      var items = list.map(function (it) {
         var link = it.link || "";
         if (link) return '<a href="' + fixLink(link) + '">' + esc(it.text) + "</a>";
         return "<span>" + esc(it.text) + "</span>";
       }).join("");
+      if (store.breaking && store.breaking.text) {
+        var bLink = store.breaking.link || "";
+        var bItem = bLink
+          ? '<a href="' + fixLink(bLink) + '">' + esc(store.breaking.text) + "</a>"
+          : "<span>" + esc(store.breaking.text) + "</span>";
+        items = bItem + items;
+      }
       track.innerHTML = items + items;
     }
 
-    // Hero (homepage): photo, kicker, headline, dek, byline.
+    // Top-story card (homepage hero): photo with TOP STORY badge, navy
+    // body with headline, dek and date + read time. The intro column and
+    // the stacked stories beside it are server-rendered and stay as-is.
     var heroEl = $("[data-hero]");
     var hero = bySlug[store.settings.heroSlug] || store.articles[0];
     if (heroEl && hero) {
-      var heroImg = hero.image
-        ? '<figure class="hero-media"><img src="' + esc(hero.image) + '" alt="' + esc(hero.headline) + '" width="1600" height="900"></figure>'
+      var heroMedia = hero.image
+        ? '<img src="' + esc(hero.image) + '" alt="' + esc(hero.headline) + '" width="1200" height="675" loading="eager">'
         : '<div class="art" role="img" aria-label="Graphic placeholder"><span class="monogram">WWN</span><span class="art-label">' + esc(sectionLabel(hero.section)) + "</span></div>";
-      var isBreaking = store.breaking && store.breaking.link && store.breaking.link.indexOf(hero.slug) !== -1;
-      var kick = isBreaking ? "Breaking" : esc(sectionLabel(hero.section));
       var liveLink = "";
       if (/ukraine|russia|kyiv|kremlin/i.test(hero.headline)) {
         liveLink = ' &middot; <a href="' + fixLink("live.html") + '">Follow live updates</a>';
       }
       heroEl.innerHTML =
-        heroImg +
-        '<p><span class="kicker">' + kick + "</span></p>" +
+        '<a class="top-hero-media" href="' + articleUrl(hero.slug) + '" aria-label="' + esc(hero.headline) + '">' +
+        heroMedia + '<span class="top-story-badge">Top Story</span></a>' +
+        '<div class="top-hero-body">' +
         '<h1><a href="' + articleUrl(hero.slug) + '">' + esc(hero.headline) + "</a></h1>" +
         '<p class="dek">' + esc(hero.dek) + "</p>" +
-        '<p class="byline"><time>' + esc(hero.date) + "</time> &middot; Source: " + esc(hero.source) +
-        liveLink + "</p>";
+        '<p class="byline"><time>' + esc(hero.date) + "</time> &middot; " + readTime(hero) +
+        liveLink + "</p></div>";
     }
 
     // Homepage section blocks (lead + cards, or lead + mini-list).
@@ -1927,9 +2159,16 @@ MAIN_JS = """// Western World News: front-end behavior (v4 redesign).
     // Live blog.
     var live = $("#live-updates");
     if (live) {
+      var byHeadline = {};
+      store.articles.forEach(function (a) {
+        byHeadline[String(a.headline || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()] = a.slug;
+      });
       live.innerHTML = store.liveUpdates.map(function (u) {
-        return '<div class="live-update"><time>' + esc(u.time) + "</time><h3>" + esc(u.headline) +
-          "</h3><p>" + esc(u.text) + "</p></div>";
+        var slug = byHeadline[String(u.headline || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()];
+        var h3 = slug ? '<h3><a href="' + articleUrl(slug) + '">' + esc(u.headline) + "</a></h3>"
+                      : "<h3>" + esc(u.headline) + "</h3>";
+        return '<div class="live-update"><time>' + esc(u.time) + "</time>" + h3 +
+          "<p>" + esc(u.text) + "</p></div>";
       }).join("");
     }
 
@@ -1945,12 +2184,13 @@ MAIN_JS = """// Western World News: front-end behavior (v4 redesign).
         var heroBox = $(".article-hero", art);
         if (heroBox) heroBox.innerHTML = tileFor(a, 1600);
         var bodyBox = $(".article-body", art);
-        if (bodyBox) bodyBox.innerHTML = (a.body || []).map(function (p) { return "<p>" + esc(p) + "</p>"; }).join("");
+        if (bodyBox) bodyBox.innerHTML = dedupDekBody(a).map(function (p) { return "<p>" + esc(p) + "</p>"; }).join("");
         var src = $(".source-box", art);
         if (src) {
-          src.innerHTML = "<strong>Source</strong>This story is an original summary by " +
-            esc(store.settings.siteName) + ", based on reporting by " + esc(a.source) + " (" + esc(a.date) +
-            '). Read the original report: <a href="' + esc(a.source_url) +
+          var srcPhrase = a.source.indexOf("The ") === 0 ? "a report by " + esc(a.source) : "a " + esc(a.source) + " report";
+          src.innerHTML = "<strong>Source</strong>This is a short summary of " +
+            srcPhrase + '. Read the full story at ' + esc(a.source) +
+            ': <a href="' + esc(a.source_url) +
             '" target="_blank" rel="noopener">' + "Original article: " + esc(a.source) + "</a>.";
         }
       }
@@ -2041,8 +2281,10 @@ MAIN_JS = """// Western World News: front-end behavior (v4 redesign).
 
 
 # ---------------- Admin panel ----------------
-
-ADMIN_PASSCODE = "admin123"
+# NOTE: the admin passcode lives in the ADMIN_JS template below
+# (var PASSCODE = ...). It is a basic gate on a static site, not real
+# security — anyone who can read the built admin.js can see it. Change
+# it there and rebuild; do not print the value on any page or in docs.
 
 ADMIN_CSS = """/* Western World News: admin panel styles (admin.html only). */
 .admin-top { background: var(--navy-dark); color: #fff; padding: 0.9rem 0; }
@@ -2106,6 +2348,8 @@ ADMIN_JS = """// Western World News: admin panel (admin.html).
 // Passcode gate only: this is a static site, so the passcode is a basic
 // gate, NOT real server security. Anyone with the site files can read the
 // content. Do not rely on it to protect secrets.
+// To change the passcode, edit the PASSCODE line below (in this template
+// in tools/build_site.py), then rebuild and push.
 (function () {
   var PASSCODE = "admin123";
   var SECTION_OPTIONS = ["world", "europe", "us", "politics", "war-conflict",
@@ -2176,6 +2420,7 @@ ADMIN_JS = """// Western World News: admin panel (admin.html).
   // ---------- Render ----------
   function renderAll() {
     renderStats();
+    renderReview();
     renderArticles();
     renderJustIn();
     renderLive();
@@ -2189,9 +2434,39 @@ ADMIN_JS = """// Western World News: admin panel (admin.html).
     $("#stat-sections").textContent = Object.keys(secs).length;
     $("#stat-justin").textContent = data.justIn.length;
     $("#stat-live").textContent = data.liveUpdates.length;
+    $("#stat-review").textContent = data.articles.filter(function (a) { return a.reviewed === false; }).length;
     $("#saved-note").textContent = store.hasSaved()
       ? "You have unpublished changes saved in this browser. Export JSON below to make them permanent."
       : "No unpublished changes. Showing the site's default content.";
+  }
+  // Review queue: auto-published stories start unreviewed. Marking one
+  // reviewed only records that a human checked it against its source;
+  // it does not change the published page. Use Export JSON to make the
+  // reviewed flags permanent in the repo.
+  function renderReview() {
+    var list = $("#review-list");
+    var pending = data.articles.filter(function (a) { return a.reviewed === false; });
+    list.innerHTML = pending.map(function (a) {
+      var src = a.source_url
+        ? ' <a href="' + esc(a.source_url) + '" target="_blank" rel="noopener">Source: ' + esc(a.source) + '</a>'
+        : " · Source: " + esc(a.source);
+      return '<li><div class="t"><b>' + esc(a.headline) + "</b>" +
+        "<small>" + esc(SECTION_LABELS[a.section] || a.section) + " · " + esc(a.date) + src + "</small></div>" +
+        '<button class="btn small" data-review="' + esc(a.slug) + '">Mark reviewed</button>' +
+        '<button class="btn small" data-edit="' + esc(a.slug) + '">Edit</button></li>';
+    }).join("") || '<li>Nothing waiting for review.</li>';
+    list.querySelectorAll("[data-review]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var slug = b.getAttribute("data-review");
+        var a = data.articles.find(function (x) { return x.slug === slug; });
+        if (!a) return;
+        a.reviewed = true;
+        save("Marked reviewed: " + a.headline);
+      });
+    });
+    list.querySelectorAll("[data-edit]").forEach(function (b) {
+      b.addEventListener("click", function () { openArticleForm(b.getAttribute("data-edit")); });
+    });
   }
   function renderArticles() {
     var list = $("#article-list");
@@ -2348,7 +2623,9 @@ ADMIN_JS = """// Western World News: admin panel (admin.html).
       body: body,
       related: [],
       image: $("#af-image").value.trim(),
-      imageCaption: $("#af-caption").value.trim() || "Photo: Unsplash"
+      imageCaption: $("#af-caption").value.trim() || "Photo: Unsplash",
+      // A human just wrote or edited this story, so it counts as reviewed.
+      reviewed: true
     };
     var idx = data.articles.findIndex(function (x) { return x.slug === slug; });
     if (editingSlug && editingSlug !== slug) {
@@ -2496,7 +2773,7 @@ def build_admin():
 
 <div class="gate-card" id="gate">
 <h1>Admin login</h1>
-<p>Enter the admin passcode to manage the site. (Default passcode: <b>admin123</b>. Change it in assets/js/admin.js. Note: this is a basic gate on a static site, not real server security.)</p>
+<p>Enter the admin passcode to manage the site. (Change the passcode in the ADMIN_JS template in tools/build_site.py. Note: this is a basic gate on a static site, not real server security.)</p>
 <form id="gate-form">
 <div class="field"><label for="passcode">Passcode</label>
 <input id="passcode" type="password" autocomplete="current-password" required></div>
@@ -2509,14 +2786,20 @@ def build_admin():
 <h1 class="section-head"><span class="tag">&#9632;</span> Dashboard</h1>
 <div class="notice"><b>How saving works</b>
 Changes you save here apply across the whole site <b>immediately in this browser</b> (they are stored in this browser's localStorage).
-To make them permanent for everyone, use <b>Export JSON</b> below and send the file to musu, or save it in the site folder as <b>content-export.json</b> and rebuild the site. Until then, other browsers still see the default content.</div>
+To make them permanent for everyone, use <b>Export JSON</b> below and send the file to Muse, or save it in the site folder as <b>content-export.json</b> and rebuild the site. Until then, other browsers still see the default content.</div>
 <div class="admin-grid">
 <div class="stat"><b id="stat-articles">0</b><span>Articles</span></div>
 <div class="stat"><b id="stat-sections">0</b><span>Sections in use</span></div>
 <div class="stat"><b id="stat-justin">0</b><span>Just In items</span></div>
 <div class="stat"><b id="stat-live">0</b><span>Live updates</span></div>
+<div class="stat"><b id="stat-review">0</b><span>Needs review</span></div>
 </div>
 <p id="saved-note" style="color:var(--muted)"></p>
+
+<section class="panel"><h2>Review queue</h2><div class="body">
+<p class="note">New stories published automatically start here as <b>unreviewed</b> — the publisher does not hold them back, it only flags them. Read each one against its source link, then mark it reviewed. Marking reviewed is a record for the site operator; it does not change what readers see. Older stories published before this system was added do not appear here.</p>
+<ul class="admin-list" id="review-list"></ul>
+</div></section>
 
 <section class="panel"><h2>Articles</h2><div class="body">
 <ul class="admin-list" id="article-list"></ul>
@@ -2592,7 +2875,7 @@ To make them permanent for everyone, use <b>Export JSON</b> below and send the f
 </div></section>
 
 <section class="panel"><h2>Data: export, import, reset</h2><div class="body">
-<p>Export downloads the site's full content as <b>wwn-content.json</b>. To make admin changes permanent for all visitors, send that file to musu, or save it in the site folder as <b>content-export.json</b> and re-run the build script (<b>tools/build_site.py</b>). The static pages are then regenerated with your content, including a real page for every new article.</p>
+<p>Export downloads the site's full content as <b>wwn-content.json</b>. To make admin changes permanent for all visitors, send that file to Muse, or save it in the site folder as <b>content-export.json</b> and re-run the build script (<b>tools/build_site.py</b>). The static pages are then regenerated with your content, including a real page for every new article.</p>
 <div class="form-actions">
 <button class="btn" id="export-btn" type="button">Export JSON</button>
 <label class="btn ghost" for="import-file" style="cursor:pointer">Import JSON</label>
@@ -2682,7 +2965,8 @@ western-world-news/
 │       ├── main.js             Dateline, search, hamburger, Load More,
 │       │                       pagination, dynamic regions from the
 │       │                       content store
-│       └── admin.js            Admin panel logic (passcode "admin123")
+│       └── admin.js            Admin panel logic (passcode gate; see the
+│                               ADMIN_JS template in tools/build_site.py)
 ├── data/articles.json          All article text (source of truth for the
 │                               build; updated by tools/auto_publish.py)
 ├── data/search-index.json      (generated) lightweight search index
@@ -2701,8 +2985,13 @@ western-world-news/
 
 Open **admin.html** and enter the passcode:
 
-- **Default passcode: `admin123`** (change it in `assets/js/admin.js`).
-- The dashboard shows article/section/Just In/live counts.
+- **Passcode:** the admin gate uses a default passcode. Change it in the
+  ADMIN_JS template in `tools/build_site.py` (the `var PASSCODE = ...`
+  line), then rebuild and push. It is a basic gate, not real security —
+  do not print the value on any page or in docs.
+- The dashboard shows article/section/Just In/live counts, plus a
+  **Review queue** of new auto-published stories waiting for a human
+  check (see \"Editorial review\" below).
 - You can **add, edit and delete articles** (headline, section, date,
   summary, body, photo URL + caption, source name + link, hero / Most
   Read flags), **edit the breaking banner**, **add/edit/delete Just In
@@ -2725,7 +3014,7 @@ Open **admin.html** and enter the passcode:
 ### Making admin changes permanent
 
 1. In the admin, click **Export JSON** — it downloads `wwn-content.json`.
-2. Send that file to musu, **or** save it in this folder as
+2. Send that file to Muse, **or** save it in this folder as
    `content-export.json` and run `python3 tools/build_site.py`.
 3. The script regenerates every static page from your exported content,
    including a real page for each new article, then the updated files
@@ -2737,8 +3026,8 @@ The articles in `articles/` are refreshed hourly by the automatic
 publisher (see below) from trusted RSS feeds. The homepage hero, the
 Just In feed and the breaking bar update with every run.
 
-- Every story is an **original summary written in our own words** — nothing
-  is copied from another publication.
+- Every story is a **short automated summary of the source's own report**
+  — nothing is copied from another publication.
 - Every story **credits its source by name and links to the original
   article** (BBC, Al Jazeera, The Guardian, Euronews, France 24, DW).
 - Section classification is done by the publisher from the headline:
@@ -2789,13 +3078,33 @@ output folder (used by the automatic publisher's tests).
 
 `.github/workflows/auto-publish.yml` runs every hour inside GitHub:
 `tools/auto_publish.py` fetches trusted RSS feeds (BBC, Al Jazeera,
-The Guardian, Euronews, France 24, DW), adds 1 verified new story per
+The Guardian, Euronews, France 24, DW), adds 1 new story per
 hourly run (max 20/day) to `data/articles.json`, refreshes the Just In
-feed, rebuilds the site and pushes — using only the automatic
-`GITHUB_TOKEN`. Auto stories are short summaries of the source's own
-report with a "Read the full story" link, and the photo is the feed's
-own image for that story (verified to load) or no photo at all.
-Test locally first: `python3 tools/auto_publish.py --dry-run`.
+feed, feeds Ukraine-war stories into the live blog, rebuilds the site
+and pushes — using only the automatic `GITHUB_TOKEN`. Auto stories are
+short summaries of the source's own report with a "Read the full
+story" link, and the photo is the feed's own image for that story
+(verified to load) or no photo at all. Nothing is independently
+verified before publication — stories are selected by keyword filters
+only. Test locally first: `python3 tools/auto_publish.py --dry-run`.
+
+### Editorial review (flag + queue, no gate by default)
+
+New auto-published stories start with `reviewed: false` and appear in
+the admin panel's **Review queue** (dashboard, "Needs review" count).
+The publisher does **not** hold them back — they go live immediately
+and are only flagged. To review: open the admin, read the story
+against its source link, then **Mark reviewed** (or edit and save it —
+saving counts as reviewed). Use **Export JSON** to make the reviewed
+flags permanent in the repo.
+
+To require human approval **before** a story goes live, set
+`REVIEW_GATE = True` in `tools/auto_publish.py`: new stories are then
+held in `data/pending-review.json` and nothing is published until the
+owner releases them (review in the admin, then move them into
+`data/articles.json` and rebuild). Leave it `False` unless the owner
+wants that extra step — with the gate on, the site can go quiet if
+nobody clears the pending file.
 
 One-time setup (repo owner): Settings → Actions → General → Workflow
 permissions → **Read and write permissions** → Save. Without that, the
@@ -2838,6 +3147,9 @@ def load_export():
             "related": a.get("related") or [],
             "image": a.get("image", ""),
             "imageCaption": a.get("imageCaption", ""),
+            # Review flag survives an admin export round-trip: a story
+            # the admin exported without reviewing stays in the queue.
+            "reviewed": a.get("reviewed", True),
         })
     STORIES = stories
     JUST_IN = [(it.get("time", ""), it.get("text", ""), None) for it in data.get("justIn", [])]
@@ -2884,27 +3196,28 @@ def main():
         "about", "About Western World News",
         "About Western World News: independent news from the West and the world.",
         "About us",
-        ["Western World News is an independent news site covering worldwide news with a main focus on Western and European politics, war and breaking news, plus a small Business &amp; Finance section.",
-         "We write our stories in our own words, based on reporting from trusted sources, and we always credit and link the original reporting. We do not copy articles word for word, and we do not publish rumors or unconfirmed claims as fact.",
-         "The site is free to read. There is no paywall at launch.",
+        ["Western World News is an independently run news website covering worldwide news with a main focus on Western and European politics, war and breaking news, plus a small Business &amp; Finance section. It is owned and operated by its publisher and is not part of a larger media group.",
+         "Our stories are short automated summaries of reporting by trusted sources: each one takes the opening of the source's own report, credits the source by name, and links to the original article. Stories are selected automatically from our source feeds and are not independently verified before publication, so an unconfirmed claim in a source report can appear here. If a detail matters, please read the original article.",
+         "The site is free to read. There is no paywall.",
          "Contact us via the contact page."])))
     files.append(write("contact.html", build_info(
         "contact", "Contact Western World News",
         "Contact Western World News: news tips, corrections and advertising inquiries.",
         "Contact",
         ["News tips, corrections and general inquiries: lurenmira@gmail.com.",
-         "For corrections, please include the story headline and the fact to be corrected. We correct errors promptly and transparently.",
-         "Advertising inquiries: lurenmira@gmail.com."])))
+         "For corrections, please include the story headline and the fact to be corrected. Corrections are made manually after your report is read; we do not promise a response time.",
+         "Advertising inquiries: lurenmira@gmail.com."],
+        extra=contact_form_html())))
     files.append(write("privacy.html", build_info(
         "privacy", "Privacy policy | Western World News",
         "Privacy policy for Western World News: what we collect, cookies, and how advertising works.",
         "Privacy policy",
         ["Western World News is a free news website. This privacy policy explains what information we collect when you visit westernworldnews.com, how we use it, and the choices you have. If you do not agree with this policy, please do not use the site.",
-         "Information you send us. We do not ask you to create an account, and we do not collect your name, address, or payment details. If you email us or sign up for our newsletter, we receive the email address and the message you send. We use that information only to reply to you or to send the newsletter you asked for. We do not sell your email address or any other personal information, and we do not share it except where the law requires it.",
+         "Information you send us. We do not ask you to create an account, and we do not collect your name, address, or payment details. If you email us, we receive the email address and the message you send, and we use it only to reply to you. If you sign up for our newsletter, your email address is sent to Buttondown, the service that runs our newsletter list: Buttondown stores it, sends you a confirmation email, and handles unsubscribes. Your newsletter address is governed by Buttondown's privacy policy as well as this one. We do not sell your email address or any other personal information, and we do not share it except with the services named here or where the law requires it.",
          "Cookies and advertising. Advertising may appear on this site in the future, once an advertising program such as Google AdSense is approved. Until then, no advertising is shown and no advertising cookies are used. When advertising does appear, third-party vendors, including Google, may use cookies to serve ads based on your prior visits to this website or other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to this site and other sites on the internet. You can opt out of personalized advertising by visiting <a href='https://adssettings.google.com/'>Google Ads Settings</a>, or by visiting <a href='https://www.aboutads.info/choices/'>www.aboutads.info/choices</a>. This section describes how advertising on this site will work when ads are live.",
-         "Analytics. This site uses Google Analytics to understand how visitors use it, such as which stories are read most and where visitors come from. Google Analytics uses cookies and collects anonymous usage data. It does not collect your name, address, or payment details. Analytics only runs if you accept cookies on the banner at the bottom of the page. If you decline, no analytics data is stored.",
-         "Links to other websites. Our stories link to the original reporting on other websites, such as the BBC, Reuters, and Al Jazeera. Those sites have their own privacy policies, and we are not responsible for how they handle your information.",
-         "Children's privacy. This site is a general news site and is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has sent us personal information, please contact us and we will delete it.",
+         "Analytics. This site uses Google Analytics to understand how visitors use it, such as which stories are read most and where visitors come from. Google Analytics uses cookies and collects anonymous usage data. It does not collect your name, address, or payment details. The Google Analytics tag loads on every page, but with consent mode it stores nothing and collects no analytics data unless you accept cookies on the banner at the bottom of the page. If you decline, no analytics data is stored.",
+         "Links to other websites. Our stories link to the original reporting on other websites, such as the BBC, Al Jazeera, The Guardian, Euronews, France 24, and DW. Those sites have their own privacy policies, and we are not responsible for how they handle your information.",
+         "Children's privacy. This site is a general news site and is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has sent us personal information, please contact us at lurenmira@gmail.com and we will delete it from our mailbox and our newsletter list.",
          "Changes to this policy. We may update this policy from time to time. The current version is always the one published on this page.",
          "Contact. If you have questions about this policy, contact us through the <a href='contact.html'>contact page</a>."])))
     files.append(write("terms.html", build_info(
@@ -2913,10 +3226,10 @@ def main():
         "Terms of Service",
         ["These terms explain the rules for using westernworldnews.com. By using the site, you agree to these terms. If you do not agree, please do not use the site.",
          "Free to read. Western World News is free to read. There is no paywall, and you do not need an account to read our stories.",
-         "Our content. Our stories are short summaries written in our own words, based on reporting by the sources we credit and link to. The summaries are ours, and the original reporting belongs to its publishers. You are welcome to share links to our stories. Please do not copy our text and republish it as your own.",
-         "Accuracy. News changes fast. We work hard to keep our summaries accurate and up to date, and we correct mistakes when we find them. But we cannot promise that every fact on the site is complete or current at all times, and you should check important facts against the original reporting. See our <a href='corrections.html'>corrections policy</a> for how corrections work.",
+         "Our content. Our stories are short automated summaries of reporting by the sources we credit and link to: each one takes the opening of the source's own report. The original reporting belongs to its publishers. You are welcome to share links to our stories. Please do not copy our text and republish it as your own.",
+         "Accuracy. News changes fast. Summaries are published automatically without human checking and are not routinely updated after publication. We correct mistakes when they are reported to us by email, but we cannot promise that every fact on the site is complete or current at all times, and you should check important facts against the original reporting. See our <a href='corrections.html'>corrections policy</a> for how corrections work.",
          "Not advice. Nothing on this site is financial, legal, medical, or professional advice. Do not rely on a news summary to make financial, legal, or medical decisions.",
-         "Advertising. Advertising may appear on this site in the future, once approved. Any advertising will be separate from our editorial content, and advertising does not affect what we report or how we report it. See our <a href='privacy.html'>privacy policy</a> for how advertising cookies work.",
+         "Advertising. Advertising may appear on this site in the future, once approved. There is currently no advertising on the site. Any advertising that appears will be separate from our editorial content, and advertising will not affect what we report or how we report it. See our <a href='privacy.html'>privacy policy</a> for how advertising cookies work.",
          "Changes and availability. We may change, pause, or remove any part of the site at any time, and we may update these terms. The current terms are always the ones published on this page.",
          "Liability. The site is provided as it is, without warranties of any kind. We are not liable for any loss or damage that comes from using the site or relying on its content.",
          "Contact. If you have questions about these terms, contact us through the <a href='contact.html'>contact page</a>."])))
@@ -2924,41 +3237,41 @@ def main():
         "disclaimer", "Disclaimer | Western World News",
         "Disclaimer for Western World News: what our news summaries are, and what they are not.",
         "Disclaimer",
-        ["Western World News publishes short news summaries based on reporting by trusted news organizations, including the BBC, Reuters, the Associated Press, Al Jazeera, Euronews, DW, France 24, The Guardian, CNN, and others. Each story credits and links to its original source.",
-         "Our summaries are not the original reporting. They are our own brief account of what the source reported. If a detail matters to you, please read the original article we link to.",
-         "News changes fast. Facts can change within hours of a story being published. We update our stories and correct mistakes when we learn of them, but we cannot promise that every page is current at the moment you read it.",
+        ["Western World News publishes short news summaries based on reporting by trusted news organizations, including the BBC, Al Jazeera, The Guardian, Euronews, France 24, and DW. Each story credits and links to its original source.",
+         "Our summaries are not the original reporting. Each one is an automated excerpt of the source's own report — the opening of the feed text — credited and linked to the original. If a detail matters to you, please read the original article we link to.",
+         "News changes fast. Facts can change within hours of a story being published. Published summaries are not routinely updated after publication. If you spot a mistake, please report it by email and we will correct it manually. But we cannot promise that every page is current at the moment you read it.",
          "Not advice. Nothing on this site is financial, legal, medical, or other professional advice, and nothing here should be treated as a recommendation to buy, sell, or do anything else.",
-         "Images. Photos on this site come from freely licensed sources such as Wikimedia Commons and Unsplash, or from the news feed that published the story. Each photo is credited. Photos labelled as illustrations do not show the event described in the story.",
+         "Images. Photos on this site come from the news feed that published the story, credited to that publisher, or, for a few stories, from freely licensed sources such as Wikimedia Commons and Unsplash. We do not own the news photos we display; they remain the property of their publishers. Photos labelled as illustrations do not show the event described in the story.",
          "Links. Our stories link to other websites. We are not responsible for the content or privacy practices of those sites."])))
     files.append(write("editorial-policy.html", build_info(
         "editorial-policy", "Editorial Policy | Western World News",
         "Editorial Policy for Western World News: how we choose, check, and write our news.",
         "Editorial Policy",
-        ["Western World News is an independent news site. We cover worldwide news with a main focus on Western and European politics, war and conflict, and breaking news, plus a small Business and Finance section.",
-         "Trusted sources. We base our stories on reporting by trusted news organizations, including the BBC, Reuters, the Associated Press, Al Jazeera, Euronews, DW, France 24, The Guardian, CNN, and others. We do not base stories on rumors, anonymous social media posts, or unconfirmed claims.",
-         "Our own words. We write every story in our own words. We do not copy articles from other publications. Every story credits its source by name and links to the original report so readers can check the facts themselves.",
-         "What we do not publish. We do not publish rumors or unconfirmed breaking claims as fact. We do not publish graphic war detail. If a story cannot be verified, we wait or we leave it out.",
-         "Corrections. When we get something wrong, we correct it promptly and openly. Significant corrections are noted on the story itself. See our <a href='corrections.html'>corrections policy</a> for the details.",
-         "Advertising and sponsorship. Advertising is separate from editorial content. We do not present sponsored content as news, and advertisers do not decide what we cover or how we cover it.",
-         "Photos and video. Photos and videos on this site must match the story they go with. We use freely licensed photos, credited to their source, and we label illustrations clearly as illustrations. We never present stock or generated imagery as real event footage."])))
+        ["Western World News is an independently run news site. We cover worldwide news with a main focus on Western and European politics, war and conflict, and breaking news, plus a small Business and Finance section.",
+         "Trusted sources. Our stories come automatically from the RSS feeds of the BBC, Al Jazeera, The Guardian, Euronews, France 24, and DW. Stories are selected by keyword filters, not by a human editor, and are not independently verified before publication. We do not base stories on rumors or anonymous social media posts as a matter of policy, but an unconfirmed claim in a source feed can still appear here, so please check important facts against the original report.",
+         "How stories are made. Each story is an automated excerpt — the opening of the source feed's own text — credited to its source by name and linked to the original report so readers can check the facts themselves. We do not copy full articles, and we do not present the source's words as our own reporting.",
+         "What we do not publish. We filter out clearly off-topic material (puzzles, celebrity gossip, reviews, horoscopes and similar). We do not publish graphic war detail as a matter of policy. There is no pre-publication verification or graphic-detail review: selection is automated.",
+         "Corrections. Errors reported by email are fixed manually when noticed. We do not promise a speed for corrections, and there is no standing correction-note format on stories. See our <a href='corrections.html'>corrections policy</a> for the details.",
+         "Advertising and sponsorship. There is currently no advertising or sponsored content on this site. If advertising appears in the future, it will be separate from editorial content. We do not present sponsored content as news, and advertisers will not decide what we cover or how we cover it.",
+         "Photos. Photos come from the news feed that published the story, credited to that publisher, or, for a few stories, from freely licensed sources. We label illustrations clearly as illustrations. We never present stock or generated imagery as real event footage. This site has no video content."])))
     files.append(write("corrections.html", build_info(
         "corrections", "Corrections Policy | Western World News",
         "Corrections Policy for Western World News: how we fix mistakes, and how to report one.",
         "Corrections Policy",
         ["Western World News aims to get every fact right. When we make a mistake, we fix it.",
-         "How we correct. We correct errors as soon as we find them. Small typos and formatting fixes are corrected quietly. If a fact in a story was wrong, we correct the story and add a short note on the page saying what was changed.",
-         "How to report an error. If you spot a mistake, please tell us through the <a href='contact.html'>contact page</a>. Include the headline of the story and the fact that needs correcting. We read every report.",
-         "What we do not do. We do not remove stories because someone dislikes the news. We correct facts, and we leave the record of a correction on the page so readers can see what changed.",
-         "Sources. Most of our facts come from the reporting we credit and link to. If the original source corrects its own report, we update our summary to match."])))
+         "How we correct. Errors are fixed manually after they are reported to us by email. Small typos and formatting fixes are corrected quietly. If a fact in a story was wrong, we correct the story. We do not promise a response time, and there is no standing correction-note format on story pages.",
+         "How to report an error. If you spot a mistake, please tell us through the <a href='contact.html'>contact page</a>. Include the headline of the story and the fact that needs correcting. Reports sent to the contact email are read by the site operator.",
+         "What we do not do. We do not remove stories because someone dislikes the news. We correct facts when they are shown to be wrong.",
+         "Sources. Most of our facts come from the reporting we credit and link to. The automatic publisher does not revisit published stories, so if the original source corrects its own report, our summary is only updated if someone reports it to us by email."])))
     files.append(write("authors.html", build_info(
         "authors", "Our Editorial Team | Western World News",
         "Our Editorial Team: the people behind Western World News, and how our stories are made.",
         "Our Editorial Team",
-        ["Stories on Western World News are written by the Western World News Editorial Team, a small team that selects, rewrites, and checks the news every day. We publish under a team byline because the work is done together, from choosing a story to checking it before it goes live.",
-         "How we work. The team monitors trusted news sources around the clock, including the BBC, Reuters, the Associated Press, Al Jazeera, Euronews, DW, France 24, The Guardian, CNN, and others. We pick the stories that matter most to readers in the West and in Europe, and to readers who want to follow world news.",
-         "Every story is rewritten in our own words, credited to its original source, and linked to the original report. Before a story is published, the team checks the facts against the source and makes sure the summary is fair and accurate.",
-         "We also keep the site up to date. When news moves on, we add new stories and update the live blog. When we make a mistake, we correct it openly. See our <a href='editorial-policy.html'>editorial policy</a> and our <a href='corrections.html'>corrections policy</a> for the details.",
-         "Contact. You can reach the editorial team through the <a href='contact.html'>contact page</a>, for news tips, corrections, or questions about our coverage."])))
+        ["Stories on Western World News are published under the Western World News Editorial Team byline. Stories are published automatically from RSS feeds: there is no individual staff writer, and no human editor selects or checks stories before publication.",
+         "How we work. The site automatically checks the feeds of the BBC, Al Jazeera, The Guardian, Euronews, France 24, and DW each hour and publishes stories that match our topics. There is no around-the-clock human monitoring.",
+         "Each story is an automated excerpt of the source feed's own text, credited to its original source and linked to the original report. No story is fact-checked by anyone before publication.",
+         "New stories are added automatically as the feeds publish them. The live blog is updated only when new Ukraine-war stories are published. When we make a mistake, we correct it manually after it is reported to us by email. See our <a href='editorial-policy.html'>editorial policy</a> and our <a href='corrections.html'>corrections policy</a> for the details.",
+         "Contact. Messages go to the site's single contact email address, lurenmira@gmail.com, for news tips, corrections, or questions about our coverage."])))
 
     files.append(write("cookie-policy.html", build_info(
         "cookie-policy", "Cookie Policy | Western World News",
@@ -2966,7 +3279,7 @@ def main():
         "Cookie Policy",
         ["This page explains which cookies Western World News uses and how you can control them.",
          "What cookies are. Cookies are small text files that a website asks your browser to store. They let the site remember a choice you made, such as accepting or declining cookies.",
-         "Cookies we use. This site uses one cookie choice record, stored in your browser, to remember whether you accepted or declined cookies on the banner at the bottom of the page. If you accept cookies, Google Analytics runs and uses its own cookies to collect anonymous usage data, such as which stories are read most and where visitors come from. It does not collect your name, address, or payment details.",
+         "Cookies we use. This site stores one cookie-choice record in your browser's local storage (not as a cookie) to remember whether you accepted or declined cookies on the banner at the bottom of the page. The Google Analytics tag loads on every page, but with consent mode it stores no data and collects nothing unless you accept cookies. If you accept cookies, Google Analytics runs and uses its own cookies to collect anonymous usage data, such as which stories are read most and where visitors come from. It does not collect your name, address, or payment details.",
          "Advertising cookies. Advertising may appear on this site in the future, once an advertising program such as Google AdSense is approved. Until then, no advertising is shown and no advertising cookies are used. When advertising does appear, third-party vendors, including Google, may use cookies to serve ads based on your prior visits to this website or other websites. You can opt out of personalized advertising by visiting <a href='https://adssettings.google.com/'>Google Ads Settings</a>, or by visiting <a href='https://www.aboutads.info/choices/'>www.aboutads.info/choices</a>.",
          "How to control cookies. You can accept or decline cookies on the banner at the bottom of every page. You can also delete cookies or block them in your browser settings at any time. Blocking cookies does not stop you reading the site.",
          "Contact. If you have questions about this policy, contact us through the <a href='contact.html'>contact page</a>."])))
@@ -2974,9 +3287,9 @@ def main():
         "advertise", "Advertise With Us | Western World News",
         "Advertise with Western World News: reach readers in the United States, the United Kingdom, Europe and Canada.",
         "Advertise With Us",
-        ["Western World News reaches readers in the United States, the United Kingdom, Europe, Canada and beyond, with daily coverage of world news, politics, war and conflict, business and technology.",
-         "Advertising space on the site is reserved for future sponsors. We are preparing the site for advertising and will open advertising placements once our advertising program is approved.",
-         "If you would like to advertise with us, please contact us at lurenmira@gmail.com with details of what you would like to promote. We will reply with availability and rates.",
+        ["Western World News covers world news, politics, war and conflict, business and technology, with new stories added automatically through the day.",
+         "There are no advertising placements on the site yet, and no advertising program has been approved. Advertising space is reserved for future sponsors.",
+         "If you would like to advertise with us, please contact us at lurenmira@gmail.com with details of what you would like to promote. Enquiries are answered by email; availability and rates do not exist yet, because no advertising program has been approved.",
          "Advertising is always separate from editorial content. Advertisers do not decide what we cover or how we cover it, and advertising is never presented as news."])))
 
     # robots.txt — keep the admin panel out of search engines.

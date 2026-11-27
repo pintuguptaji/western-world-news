@@ -2,6 +2,8 @@
 // Passcode gate only: this is a static site, so the passcode is a basic
 // gate, NOT real server security. Anyone with the site files can read the
 // content. Do not rely on it to protect secrets.
+// To change the passcode, edit the PASSCODE line below (in this template
+// in tools/build_site.py), then rebuild and push.
 (function () {
   var PASSCODE = "admin123";
   var SECTION_OPTIONS = ["world", "europe", "us", "politics", "war-conflict",
@@ -72,6 +74,7 @@
   // ---------- Render ----------
   function renderAll() {
     renderStats();
+    renderReview();
     renderArticles();
     renderJustIn();
     renderLive();
@@ -85,9 +88,39 @@
     $("#stat-sections").textContent = Object.keys(secs).length;
     $("#stat-justin").textContent = data.justIn.length;
     $("#stat-live").textContent = data.liveUpdates.length;
+    $("#stat-review").textContent = data.articles.filter(function (a) { return a.reviewed === false; }).length;
     $("#saved-note").textContent = store.hasSaved()
       ? "You have unpublished changes saved in this browser. Export JSON below to make them permanent."
       : "No unpublished changes. Showing the site's default content.";
+  }
+  // Review queue: auto-published stories start unreviewed. Marking one
+  // reviewed only records that a human checked it against its source;
+  // it does not change the published page. Use Export JSON to make the
+  // reviewed flags permanent in the repo.
+  function renderReview() {
+    var list = $("#review-list");
+    var pending = data.articles.filter(function (a) { return a.reviewed === false; });
+    list.innerHTML = pending.map(function (a) {
+      var src = a.source_url
+        ? ' <a href="' + esc(a.source_url) + '" target="_blank" rel="noopener">Source: ' + esc(a.source) + '</a>'
+        : " · Source: " + esc(a.source);
+      return '<li><div class="t"><b>' + esc(a.headline) + "</b>" +
+        "<small>" + esc(SECTION_LABELS[a.section] || a.section) + " · " + esc(a.date) + src + "</small></div>" +
+        '<button class="btn small" data-review="' + esc(a.slug) + '">Mark reviewed</button>' +
+        '<button class="btn small" data-edit="' + esc(a.slug) + '">Edit</button></li>';
+    }).join("") || '<li>Nothing waiting for review.</li>';
+    list.querySelectorAll("[data-review]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var slug = b.getAttribute("data-review");
+        var a = data.articles.find(function (x) { return x.slug === slug; });
+        if (!a) return;
+        a.reviewed = true;
+        save("Marked reviewed: " + a.headline);
+      });
+    });
+    list.querySelectorAll("[data-edit]").forEach(function (b) {
+      b.addEventListener("click", function () { openArticleForm(b.getAttribute("data-edit")); });
+    });
   }
   function renderArticles() {
     var list = $("#article-list");
@@ -244,7 +277,9 @@
       body: body,
       related: [],
       image: $("#af-image").value.trim(),
-      imageCaption: $("#af-caption").value.trim() || "Photo: Unsplash"
+      imageCaption: $("#af-caption").value.trim() || "Photo: Unsplash",
+      // A human just wrote or edited this story, so it counts as reviewed.
+      reviewed: true
     };
     var idx = data.articles.findIndex(function (x) { return x.slug === slug; });
     if (editingSlug && editingSlug !== slug) {

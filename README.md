@@ -64,7 +64,8 @@ western-world-news/
 │       ├── main.js             Dateline, search, hamburger, Load More,
 │       │                       pagination, dynamic regions from the
 │       │                       content store
-│       └── admin.js            Admin panel logic (passcode "admin123")
+│       └── admin.js            Admin panel logic (passcode gate; see the
+│                               ADMIN_JS template in tools/build_site.py)
 ├── data/articles.json          All article text (source of truth for the
 │                               build; updated by tools/auto_publish.py)
 ├── data/search-index.json      (generated) lightweight search index
@@ -83,8 +84,13 @@ western-world-news/
 
 Open **admin.html** and enter the passcode:
 
-- **Default passcode: `admin123`** (change it in `assets/js/admin.js`).
-- The dashboard shows article/section/Just In/live counts.
+- **Passcode:** the admin gate uses a default passcode. Change it in the
+  ADMIN_JS template in `tools/build_site.py` (the `var PASSCODE = ...`
+  line), then rebuild and push. It is a basic gate, not real security —
+  do not print the value on any page or in docs.
+- The dashboard shows article/section/Just In/live counts, plus a
+  **Review queue** of new auto-published stories waiting for a human
+  check (see "Editorial review" below).
 - You can **add, edit and delete articles** (headline, section, date,
   summary, body, photo URL + caption, source name + link, hero / Most
   Read flags), **edit the breaking banner**, **add/edit/delete Just In
@@ -107,7 +113,7 @@ Open **admin.html** and enter the passcode:
 ### Making admin changes permanent
 
 1. In the admin, click **Export JSON** — it downloads `wwn-content.json`.
-2. Send that file to musu, **or** save it in this folder as
+2. Send that file to Muse, **or** save it in this folder as
    `content-export.json` and run `python3 tools/build_site.py`.
 3. The script regenerates every static page from your exported content,
    including a real page for each new article, then the updated files
@@ -119,8 +125,8 @@ The articles in `articles/` are refreshed hourly by the automatic
 publisher (see below) from trusted RSS feeds. The homepage hero, the
 Just In feed and the breaking bar update with every run.
 
-- Every story is an **original summary written in our own words** — nothing
-  is copied from another publication.
+- Every story is a **short automated summary of the source's own report**
+  — nothing is copied from another publication.
 - Every story **credits its source by name and links to the original
   article** (BBC, Al Jazeera, The Guardian, Euronews, France 24, DW).
 - Section classification is done by the publisher from the headline:
@@ -171,13 +177,33 @@ output folder (used by the automatic publisher's tests).
 
 `.github/workflows/auto-publish.yml` runs every hour inside GitHub:
 `tools/auto_publish.py` fetches trusted RSS feeds (BBC, Al Jazeera,
-The Guardian, Euronews, France 24, DW), adds 1 verified new story per
+The Guardian, Euronews, France 24, DW), adds 1 new story per
 hourly run (max 20/day) to `data/articles.json`, refreshes the Just In
-feed, rebuilds the site and pushes — using only the automatic
-`GITHUB_TOKEN`. Auto stories are short summaries of the source's own
-report with a "Read the full story" link, and the photo is the feed's
-own image for that story (verified to load) or no photo at all.
-Test locally first: `python3 tools/auto_publish.py --dry-run`.
+feed, feeds Ukraine-war stories into the live blog, rebuilds the site
+and pushes — using only the automatic `GITHUB_TOKEN`. Auto stories are
+short summaries of the source's own report with a "Read the full
+story" link, and the photo is the feed's own image for that story
+(verified to load) or no photo at all. Nothing is independently
+verified before publication — stories are selected by keyword filters
+only. Test locally first: `python3 tools/auto_publish.py --dry-run`.
+
+### Editorial review (flag + queue, no gate by default)
+
+New auto-published stories start with `reviewed: false` and appear in
+the admin panel's **Review queue** (dashboard, "Needs review" count).
+The publisher does **not** hold them back — they go live immediately
+and are only flagged. To review: open the admin, read the story
+against its source link, then **Mark reviewed** (or edit and save it —
+saving counts as reviewed). Use **Export JSON** to make the reviewed
+flags permanent in the repo.
+
+To require human approval **before** a story goes live, set
+`REVIEW_GATE = True` in `tools/auto_publish.py`: new stories are then
+held in `data/pending-review.json` and nothing is published until the
+owner releases them (review in the admin, then move them into
+`data/articles.json` and rebuild). Leave it `False` unless the owner
+wants that extra step — with the gate on, the site can go quiet if
+nobody clears the pending file.
 
 One-time setup (repo owner): Settings → Actions → General → Workflow
 permissions → **Read and write permissions** → Save. Without that, the

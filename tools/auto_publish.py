@@ -45,6 +45,19 @@ IMAGE_TIMEOUT = 10
 MAX_NEW_PER_RUN = 1
 MAX_PER_DAY = 20
 
+# Editorial review gate (OFF by default — the default path publishes
+# immediately and only flags new stories reviewed=false for the admin
+# review queue). Turn this ON only if the owner wants human approval
+# before any new story goes live: when True, new stories are NOT added
+# to data/articles.json. Instead they are appended to
+# data/pending-review.json and the run only refreshes Just In / the
+# live blog from already-published stories. To release held stories,
+# the owner reviews them in the admin panel (Add article, or edit and
+# save — either marks them reviewed) and exports, or moves them into
+# data/articles.json and rebuilds. See the audit report, 2026-11-27.
+REVIEW_GATE = False
+PENDING_PATH = os.path.join(SITE_ROOT, "data", "pending-review.json")
+
 # (source name, feed URL, default section)
 FEEDS = [
     ("BBC", "https://feeds.bbci.co.uk/news/rss.xml", "world"),
@@ -244,8 +257,18 @@ def norm_title(title):
     return re.sub(r"[^a-z0-9]+", " ", title.lower()).strip()
 
 
-def first_sentences(text, max_chars=450, max_sentences=2):
-    """Take the first 1-2 sentences of plain text, capped at max_chars."""
+def first_sentences(text, max_chars=900, max_sentences=4):
+    """Take the first sentences of plain text, capped at max_chars.
+
+    The body summary is up to 4 sentences / 900 chars of the source
+    feed's own description (raised from 2 sentences / 450 chars in the
+    2026-11-27 audit: the Guardian feed, for example, writes 3-6
+    sentence descriptions, and the old cap was discarding most of them,
+    which is why so many articles were under 300 characters. The BBC
+    writes 1-2 sentence descriptions, so its summaries stay short —
+    that is the source's own length, not a cap. The dek is still cut
+    separately to 240 chars by truncate_dek.
+    """
     parts = re.split(r"(?<=[.!?])\s+", text)
     out = []
     for p in parts:
@@ -256,8 +279,11 @@ def first_sentences(text, max_chars=450, max_sentences=2):
             break
     result = " ".join(out).strip()
     if len(result) > max_chars:
-        cut = result[:max_chars].rsplit(" ", 1)[0]
-        result = cut.rstrip(".,;:") + "."
+        # Cut at a word boundary and leave the summary without a full
+        # stop, instead of inventing a sentence ending (see
+        # truncate_dek: an added "." made the dek a fake prefix of the
+        # body, which the build's dedup then could not strip cleanly).
+        result = result[:max_chars].rsplit(" ", 1)[0]
     return result
 
 
@@ -268,7 +294,11 @@ def truncate_dek(text, max_chars=240):
     end = max(cut.rfind(". "), cut.rfind("! "), cut.rfind("? "))
     if end > 80:
         return cut[:end + 1]
-    return cut.rsplit(" ", 1)[0].rstrip(".,;:") + "."
+    # No sentence boundary in range: cut at a word boundary and leave the
+    # dek without a full stop, instead of inventing a sentence ending
+    # (an added "." made the dek a fake prefix of the body, which the
+    # build's dedup then could not strip cleanly).
+    return cut.rsplit(" ", 1)[0]
 
 
 def fetch_url(url, timeout, accept="*/*"):
@@ -577,15 +607,52 @@ def main():
             "image": image,
             "imageCaption": f"Photo: {item['source']}" if image else "",
             "auto": True,
+            # Editorial review queue (see the audit report, 2026-11-27):
+            # new auto-published stories start unreviewed so the admin
+            # panel can list them. This flag changes nothing about
+            # publishing — the story still goes live this run.
+            "reviewed": False,
         }
         new_articles.append(article)
         seen_titles.add(ntitle)
         seen_urls.add(nurl)
 
-    # Related stories: other new articles from this same run.
+    # Related stories: other new articles from this same run, IN THE SAME
+    # SECTION only. Linking same-run articles from other sections produced
+    # unrelated "Related stories" (e.g. a Europe story linking to
+    # Bolsonaro's hospitalisation); the build's _related_slugs falls back
+    # to same-section newest when an article has no stored related list.
     for a in new_articles:
         a["related"] = [b["slug"] for b in new_articles
-                        if b["slug"] != a["slug"]][:3]
+                        if b["slug"] != a["slug"]
+                        and b.get("section") == a.get("section")][:3]
+
+    # --- Editorial review gate (off by default; see REVIEW_GATE above). ---
+    # When on, new stories are held in data/pending-review.json instead
+    # of being published: they do not become articles, hero, breaking,
+    # Just In article links, or live-blog updates, and they do not count
+    # toward the daily cap. The run still refreshes Just In from the
+    # feeds (linking to source reports) and rebuilds only if something
+    # else changed.
+    if REVIEW_GATE and new_articles:
+        pending = []
+        if os.path.exists(PENDING_PATH):
+            try:
+                with open(PENDING_PATH, encoding="utf-8") as f:
+                    pending = json.load(f)
+            except (OSError, ValueError):
+                pending = []
+        held_slugs = {a["slug"] for a in pending}
+        for a in new_articles:
+            if a["slug"] not in held_slugs:
+                pending.append(a)
+        with open(PENDING_PATH, "w", encoding="utf-8") as f:
+            json.dump(pending, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+        log(f"REVIEW GATE ON: held {len(new_articles)} new article(s) in "
+            f"data/pending-review.json ({len(pending)} held in total). "
+            f"Nothing was published this run.")
+        new_articles = []
 
     # --- Refresh Just In from the newest relevant items. ---
     just_in = []
@@ -617,6 +684,46 @@ def main():
         just_in.append({"time": time_str, "text": title[:110], "link": link})
     just_in_changed = just_in != data.get("justIn", [])
 
+    # --- Live blog: feed Ukraine-war stories into liveUpdates. ---
+    # The live blog ("Live: Ukraine war") was seed data from Nov 19-20
+    # and was never updated by the publisher, which made the "Live /
+    # rolling updates" framing false. Each new war-conflict story about
+    # Ukraine now prepends an update (time = when the run published it,
+    # UTC, matching the existing "Nov 20, 10:33" format), capped at 10
+    # updates so old entries age out. Non-Ukraine war stories do not
+    # feed the live blog. The build links each update's headline to its
+    # article by headline match, so no new data field is needed.
+    live_changed = False
+    if new_articles:
+        now_utc = dt.datetime.now(dt.timezone.utc)
+        live_time = f"{now_utc.strftime('%b')} {now_utc.day}, {now_utc.strftime('%H:%M')}"
+        live = list(data.get("liveUpdates", []))
+        for a in new_articles:
+            # Ukraine-war stories feed the live blog. Any news section
+            # qualifies (war-conflict, us, politics, europe, world) when
+            # the headline/dek is clearly about Ukraine or Russia;
+            # sport, culture and business-finance never feed it, and a
+            # war-conflict story about another conflict does not either.
+            if a["section"] in ("sport", "culture", "business-finance"):
+                continue
+            head = (a["headline"] + " " + a["dek"]).lower()
+            if not any(w in head for w in (
+                    "ukraine", "ukrainian", "kyiv", "kiev", "zelensky",
+                    "russia", "russian", "kremlin", "putin", "donbas",
+                    "crimea")):
+                continue
+            if any(norm_title(u.get("headline", "")) == norm_title(a["headline"])
+                   for u in live):
+                continue
+            live.insert(0, {
+                "time": live_time,
+                "headline": a["headline"],
+                "text": a["dek"],
+            })
+            live_changed = True
+        if live_changed:
+            data["liveUpdates"] = live[:10]
+
     # --- Report / dry run. ---
     log(f"Selected {len(new_articles)} new article(s) "
         f"(slots this run: {slots}, published today: {state['published_today']}/{MAX_PER_DAY})")
@@ -626,6 +733,8 @@ def main():
             f"image={'yes' if a['image'] else 'no'}")
     log(f"Just In refreshed: {len(just_in)} items "
         f"({'changed' if just_in_changed else 'unchanged'})")
+    log(f"Live blog: {len(data.get('liveUpdates', []))} updates "
+        f"({'changed' if live_changed else 'unchanged'})")
 
     if dry_run:
         log("DRY RUN — nothing written, site not rebuilt.")
@@ -643,6 +752,8 @@ def main():
         changed = True
     if just_in_changed:
         data["justIn"] = just_in
+        changed = True
+    if live_changed:
         changed = True
 
     if not changed:

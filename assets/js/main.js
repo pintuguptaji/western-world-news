@@ -22,11 +22,30 @@
     return prefix() + link;
   }
   function articleUrl(slug) { return prefix() + "articles/" + slug + ".html"; }
+  // Mirror of the Python _dedup_dek_body in tools/build_site.py: the dek
+  // is a truncation of the same summary the body starts with, so strip
+  // the repeated dek text from the first body paragraph (dropping the
+  // paragraph when nothing is left) instead of showing it twice.
+  function dedupDekBody(a) {
+    var paras = (a.body || []).slice();
+    if (!a.dek || !paras.length) return paras;
+    var first = paras[0];
+    if (first === a.dek) return paras.slice(1);
+    if (first.indexOf(a.dek) === 0) {
+      var rest = first.slice(a.dek.length).replace(/^[ .]+/, "");
+      if (rest) paras[0] = rest; else paras = paras.slice(1);
+    }
+    return paras;
+  }
   function sectionLabel(slug) {
     var map = { world: "World", europe: "Europe", us: "US", politics: "Politics",
       "war-conflict": "War & Conflict", "business-finance": "Business",
       technology: "Technology", sport: "Sport", culture: "Culture", live: "Live" };
     return map[slug] || slug;
+  }
+  function readTime(a) {
+    var words = (a.body || []).join(" ").split(/\s+/).filter(function (w) { return w; }).length;
+    return Math.max(1, Math.round(words / 200)) + " min read";
   }
   function sectionPage(slug) {
     var map = { world: "world.html", europe: "europe.html", us: "us.html",
@@ -171,44 +190,52 @@
       a.target = "_blank"; a.rel = "noopener";
     });
 
-    // Breaking bar.
-    var bl = $("#breaking-link");
-    if (bl && store.breaking) {
-      bl.textContent = store.breaking.text;
-      bl.href = fixLink(store.breaking.link);
-    }
-
-    // Ticker (Just In headlines, duplicated for the marquee loop).
+    // Ticker (breaking story first, then Just In headlines, duplicated
+    // for the marquee loop).
     var track = $(".ticker-track");
     if (track && store.justIn.length) {
-      var items = store.justIn.map(function (it) {
+      var normT = function (t) { return String(t || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim(); };
+      // The breaking story may also be a Just In item: drop that duplicate
+      // and put the breaking story first, matching the server render.
+      var list = store.justIn.filter(function (it) {
+        return !(store.breaking && store.breaking.text && normT(it.text) === normT(store.breaking.text));
+      });
+      var items = list.map(function (it) {
         var link = it.link || "";
         if (link) return '<a href="' + fixLink(link) + '">' + esc(it.text) + "</a>";
         return "<span>" + esc(it.text) + "</span>";
       }).join("");
+      if (store.breaking && store.breaking.text) {
+        var bLink = store.breaking.link || "";
+        var bItem = bLink
+          ? '<a href="' + fixLink(bLink) + '">' + esc(store.breaking.text) + "</a>"
+          : "<span>" + esc(store.breaking.text) + "</span>";
+        items = bItem + items;
+      }
       track.innerHTML = items + items;
     }
 
-    // Hero (homepage): photo, kicker, headline, dek, byline.
+    // Top-story card (homepage hero): photo with TOP STORY badge, navy
+    // body with headline, dek and date + read time. The intro column and
+    // the stacked stories beside it are server-rendered and stay as-is.
     var heroEl = $("[data-hero]");
     var hero = bySlug[store.settings.heroSlug] || store.articles[0];
     if (heroEl && hero) {
-      var heroImg = hero.image
-        ? '<figure class="hero-media"><img src="' + esc(hero.image) + '" alt="' + esc(hero.headline) + '" width="1600" height="900"></figure>'
+      var heroMedia = hero.image
+        ? '<img src="' + esc(hero.image) + '" alt="' + esc(hero.headline) + '" width="1200" height="675" loading="eager">'
         : '<div class="art" role="img" aria-label="Graphic placeholder"><span class="monogram">WWN</span><span class="art-label">' + esc(sectionLabel(hero.section)) + "</span></div>";
-      var isBreaking = store.breaking && store.breaking.link && store.breaking.link.indexOf(hero.slug) !== -1;
-      var kick = isBreaking ? "Breaking" : esc(sectionLabel(hero.section));
       var liveLink = "";
       if (/ukraine|russia|kyiv|kremlin/i.test(hero.headline)) {
         liveLink = ' &middot; <a href="' + fixLink("live.html") + '">Follow live updates</a>';
       }
       heroEl.innerHTML =
-        heroImg +
-        '<p><span class="kicker">' + kick + "</span></p>" +
+        '<a class="top-hero-media" href="' + articleUrl(hero.slug) + '" aria-label="' + esc(hero.headline) + '">' +
+        heroMedia + '<span class="top-story-badge">Top Story</span></a>' +
+        '<div class="top-hero-body">' +
         '<h1><a href="' + articleUrl(hero.slug) + '">' + esc(hero.headline) + "</a></h1>" +
         '<p class="dek">' + esc(hero.dek) + "</p>" +
-        '<p class="byline"><time>' + esc(hero.date) + "</time> &middot; Source: " + esc(hero.source) +
-        liveLink + "</p>";
+        '<p class="byline"><time>' + esc(hero.date) + "</time> &middot; " + readTime(hero) +
+        liveLink + "</p></div>";
     }
 
     // Homepage section blocks (lead + cards, or lead + mini-list).
@@ -275,9 +302,16 @@
     // Live blog.
     var live = $("#live-updates");
     if (live) {
+      var byHeadline = {};
+      store.articles.forEach(function (a) {
+        byHeadline[String(a.headline || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()] = a.slug;
+      });
       live.innerHTML = store.liveUpdates.map(function (u) {
-        return '<div class="live-update"><time>' + esc(u.time) + "</time><h3>" + esc(u.headline) +
-          "</h3><p>" + esc(u.text) + "</p></div>";
+        var slug = byHeadline[String(u.headline || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()];
+        var h3 = slug ? '<h3><a href="' + articleUrl(slug) + '">' + esc(u.headline) + "</a></h3>"
+                      : "<h3>" + esc(u.headline) + "</h3>";
+        return '<div class="live-update"><time>' + esc(u.time) + "</time>" + h3 +
+          "<p>" + esc(u.text) + "</p></div>";
       }).join("");
     }
 
@@ -293,12 +327,13 @@
         var heroBox = $(".article-hero", art);
         if (heroBox) heroBox.innerHTML = tileFor(a, 1600);
         var bodyBox = $(".article-body", art);
-        if (bodyBox) bodyBox.innerHTML = (a.body || []).map(function (p) { return "<p>" + esc(p) + "</p>"; }).join("");
+        if (bodyBox) bodyBox.innerHTML = dedupDekBody(a).map(function (p) { return "<p>" + esc(p) + "</p>"; }).join("");
         var src = $(".source-box", art);
         if (src) {
-          src.innerHTML = "<strong>Source</strong>This story is an original summary by " +
-            esc(store.settings.siteName) + ", based on reporting by " + esc(a.source) + " (" + esc(a.date) +
-            '). Read the original report: <a href="' + esc(a.source_url) +
+          var srcPhrase = a.source.indexOf("The ") === 0 ? "a report by " + esc(a.source) : "a " + esc(a.source) + " report";
+          src.innerHTML = "<strong>Source</strong>This is a short summary of " +
+            srcPhrase + '. Read the full story at ' + esc(a.source) +
+            ': <a href="' + esc(a.source_url) +
             '" target="_blank" rel="noopener">' + "Original article: " + esc(a.source) + "</a>.";
         }
       }

@@ -33,7 +33,28 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/01/11/44/696x392_cmsv2_8b52a882-cea9-5caa-ad4f-ddc2dd4d853f-10011144.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": false
+    },
+    {
+      "slug": "zelensky-criticises-strange-trump-putin-friendship-in-bbc",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
+      "dek": "Ukraine's president voices frustration with US and says it is not pushing Russia hard enough in peace talks to end the war.",
+      "date": "November 27, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo",
+      "body": [
+        "Ukraine's president voices frustration with US and says it is not pushing Russia hard enough in peace talks to end the war."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/fdee/live/21e805d0-ea60-11f1-99b6-a35a62fa4264.jpg",
+      "imageCaption": "Photo: BBC",
+      "reviewed": false
     },
     {
       "slug": "big-eu-defense-projects-under-threat-from-proposed-budget",
@@ -51,7 +72,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://s.france24.com/media/display/d8b20618-ea78-11f1-9216-f9cf020caef6/w:1024/p:16x9/PHOTO-ANDRIUS-KUBILIUS.jpg",
-      "imageCaption": "Photo: France 24"
+      "imageCaption": "Photo: France 24",
+      "reviewed": true
     },
     {
       "slug": "norse-atlantic-airways-files-for-bankruptcy-and-cancels-all",
@@ -69,7 +91,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/e1f07f0b2a8329b3e1557eed373d0458f8cb7e9a/71_0_3289_2633/master/3289.jpg?width=700&quality=85&auto=format&fit=max&s=1452f35dc1b0df01c30cb7af1a6eb5d5",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "with-new-law-iraq-sees-rise-in-child-marriage-custody",
@@ -87,7 +110,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://s.france24.com/media/display/377a84f8-ea66-11f1-af1d-77d069279b82/w:1024/p:16x9/capture-077060cd.jpg",
-      "imageCaption": "Photo: France 24"
+      "imageCaption": "Photo: France 24",
+      "reviewed": true
     },
     {
       "slug": "risks-of-child-marriage-in-iran-complicated-by-war",
@@ -106,7 +130,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "russias-hybrid-war-on-europe-evolving-but-failing-iiss",
@@ -121,11 +146,15 @@ window.WWN_DEFAULT_CONTENT = {
       "source": "Al Jazeera",
       "source_url": "https://www.aljazeera.com/news/2026/11/27/russias-hybrid-war-on-europe-evolving-but-failing-iiss",
       "body": [
-        "Growing attacks have damaged European infrastructure, but have not reduced support for Ukraine, analysis says."
+        "Growing attacks have damaged European infrastructure, but have not reduced support for Ukraine, analysis says.",
+        "Sabotage attacks on European infrastructure rose by 16 percent in the 12 months leading up to September 2026, the IISS said, and the use of arson and explosives roughly doubled. Targeting of critical infrastructure, specifically military-industrial and transport, accounted for more than half of recorded incidents between October 2025 and September 2026.",
+        "Germany and Poland, the main conduits for military support for Ukraine, have suffered the most incidents, the report said. IISS data shows European defense spending grew by 12.6 percent in real terms in 2025, while Russia's rose by 3 percent.",
+        "On Tuesday, Britain warned defense companies working with Ukraine's military that they faced an increased sabotage threat. Moscow has denied involvement, Russia's embassy in London said Russia has \"no plans, reasons or intentions to attack the UK.\""
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "israeli-justice-system-at-tipping-point-as-judges-call-for",
@@ -144,7 +173,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/4b6175712949d01a8b832dc4670e3721e65a6c17/221_138_2799_2239/master/2799.jpg?width=700&quality=85&auto=format&fit=max&s=8f29209c13989a3009f726f2cc143bfc",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "shanghai-named-the-world-s-best-shopping-city-and-europe",
@@ -163,7 +193,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/01/08/56/696x392_cmsv2_e442923d-b6f3-5cd1-97c0-6be15f7f67bb-10010856.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "half-of-new-hiv-diagnoses-in-greece-are-made-late-early",
@@ -182,7 +213,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/94/01/696x392_cmsv2_00adccd2-c3f6-532f-bb43-8d192b38d837-10009401.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "race-hate-exploded-in-this-spanish-town-last-year-now-its",
@@ -200,7 +232,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/9d3d58c198fcc24a8b26df39126e909732d8a356/50_41_3288_2631/master/3288.jpg?width=700&quality=85&auto=format&fit=max&s=07420711aea56d6dd1c3d48b8704adb1",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "asian-stock-markets-rise-after-earlier-tech-rout",
@@ -215,11 +248,15 @@ window.WWN_DEFAULT_CONTENT = {
       "source": "Al Jazeera",
       "source_url": "https://www.aljazeera.com/economy/2026/11/27/asian-stock-markets-rise-after-earlier-tech-rout",
       "body": [
-        "Indices in Japan, South Korea, Australia and Hong Kong rise as New Zealand stocks dip on election uncertainty."
+        "Indices in Japan, South Korea, Australia and Hong Kong rise as New Zealand stocks dip on election uncertainty.",
+        "Japan's benchmark Nikkei 225 on Friday added 0.7 percent to 57,919.30 in morning trading. Australia's S&P/ASX 200 rose 0.4 percent to 8,800.50. South Korea's Kospi surged 2.2 percent to 4,812.65, and Hong Kong's Hang Seng edged up 0.4 percent to 22,310.11.",
+        "New Zealand's bourse edged down as Prime Minister Christopher Luxon's right-wing coalition lost its parliamentary majority, plunging the country into political uncertainty. Wall Street was closed for the Thanksgiving holiday on Thursday, so traders had no new business-driving catalysts heading into the weekend.",
+        "They were also keeping an eye on possible retaliation against US President Donald Trump's proposed tariffs of up to 20 percent on some of the United States' biggest trading partners, including China, the European Union, India, Japan and South Korea. Oil prices extended Thursday's gains of more than 1 percent amid fresh concerns over an escalation of hostilities in the Middle East after Iran-aligned Houthis struck a Saudi refinery, temporarily halting some operations."
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "new-zealand-election-final-results-show-ruling-coalition",
@@ -237,7 +274,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/15bb64d1f1fa3f1840538248518d963a2c8d39e8/0_0_5000_4000/master/5000.jpg?width=700&quality=85&auto=format&fit=max&s=2289119a91f82e1e66025988d92e41f9",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "threat-from-china-looms-large-over-taiwans-local-elections",
@@ -255,7 +293,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/46917c80b05c42e1fe661080ca09495a31ff79a7/387_0_3750_3000/master/3750.jpg?width=700&quality=85&auto=format&fit=max&s=e39b2fbe826a4bbdf674e9714a48cde8",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "huw-edwards-gives-first-interviews-since-child-abuse-image",
@@ -273,7 +312,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/6404/live/dbd5d520-e9c1-11f1-a094-5fdc692f3e33.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "nhs-boss-warns-of-horrible-spike-in-flu-as-hospital",
@@ -292,7 +332,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/8436/live/1c6edae0-e9dc-11f1-9361-cd8ed0157587.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "spain-s-de-cos-chosen-as-next-ecb-president",
@@ -310,7 +351,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://s.france24.com/media/display/a2393400-e9e0-11f1-93c6-174dac1c1bf0/w:1024/p:16x9/capture-10efea26.jpg",
-      "imageCaption": "Photo: France 24"
+      "imageCaption": "Photo: France 24",
+      "reviewed": true
     },
     {
       "slug": "son-of-myanmar-s-suu-kyi-relieved-by-first-call-in-five",
@@ -329,7 +371,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/01/00/60/696x392_cmsv2_c879fa96-1548-5f13-a8da-40c7db23d6e7-10010060.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "reporters-without-borders-demands-suspension-of",
@@ -347,7 +390,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://s.france24.com/media/display/3a179a3c-dbb8-11f1-8811-a575454bc579/w:1024/p:16x9/000-D6EK9T4.jpg",
-      "imageCaption": "Photo: France 24"
+      "imageCaption": "Photo: France 24",
+      "reviewed": true
     },
     {
       "slug": "marlboro-maker-altria-considering-takeover-bid-for-imperial",
@@ -365,7 +409,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/5bd7ec433dfc2df44e54e41b625bf03b06d8d5bc/588_0_3333_2667/master/3333.jpg?width=700&quality=85&auto=format&fit=max&s=e0ed7dc310bdc4b486e96215152baf12",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "germany-ig-metall-union-says-deal-reached-with-employers",
@@ -384,7 +429,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "freigang-banned-germany-star-to-miss-2027-world-cup",
@@ -403,7 +449,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "net-migration-to-uk-falls-to-lowest-level-since-1997",
@@ -421,7 +468,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/5c23523ac46bb71db2d8067325e32d1261591fb5/661_0_6630_5304/master/6630.jpg?width=700&quality=85&auto=format&fit=max&s=8e5b24426a0000f1aeb9b012e60fa7ec",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "tui-boss-wants-eu-to-cut-bureaucracy-attract-talent-and",
@@ -440,7 +488,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/09/97/23/38/696x392_cmsv2_e2ee8cd8-585c-53f1-9faf-cade74f06239-9972338.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "uk-sent-sri-lankan-refugee-to-eswatini-in-secret-deal-the",
@@ -459,7 +508,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/74/29/696x392_cmsv2_f423ae7c-3d7e-552c-baf1-37c502c96fbf-10007429.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "injury-hit-psg-drop-first-points-of-champions-league",
@@ -477,7 +527,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://s.france24.com/media/display/204f7dde-e948-11f1-b29b-81bc2b1dcd65/w:1024/p:16x9/J24-PSG-6.jpg",
-      "imageCaption": "Photo: France 24"
+      "imageCaption": "Photo: France 24",
+      "reviewed": true
     },
     {
       "slug": "three-iberian-cities-among-ten-most-sought-by-real-estate",
@@ -496,7 +547,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/01/91/696x392_cmsv2_6973340f-c781-5fe2-a9f4-a073d1c6d7a5-10000191.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "uk-to-invest-9-5m-in-ukraine-windfarm-to-bolster-war-hit",
@@ -515,7 +567,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/0eb49fd7cf3892e47cfeb7ea38b317f175a29005/0_1053_3000_2400/master/3000.jpg?width=700&quality=85&auto=format&fit=max&s=9bf10c87c1df79e3febc4e2bc2b6a9f5",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "spains-election-the-end-of-a-leftwing-icon-podcast",
@@ -533,7 +586,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/a4570fa84a7e3ee4aac3e257799591f91a8b2aba/175_0_6119_4896/master/6119.jpg?width=700&quality=85&auto=format&fit=max&s=e392825321c38f84bd274e1f5821e862",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "extreme-weather-threatens-thanksgiving-festivities-in-us",
@@ -552,7 +606,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "uk-papers-six-day-streak-smashes-global-temperature-record",
@@ -570,7 +625,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/bdf9/live/612032a0-e933-11f1-9bc3-811961023815.png",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "duran-duran-guitarist-andy-taylor-dies-aged-65",
@@ -588,7 +644,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://s.france24.com/media/display/968794c0-e928-11f1-a2c5-c131ae9bfe9c/w:1024/p:16x9/063-53536468KV127-Fashion-Rocks.jpg",
-      "imageCaption": "Photo: France 24"
+      "imageCaption": "Photo: France 24",
+      "reviewed": true
     },
     {
       "slug": "le-pen-party-leaks-prefect-dismissed-paris-deputy",
@@ -606,7 +663,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://s.france24.com/media/display/b1d2a0a0-d094-11f1-92d3-bba4eee3dc72/w:1024/p:16x9/AP26298597827263.jpg",
-      "imageCaption": "Photo: France 24"
+      "imageCaption": "Photo: France 24",
+      "reviewed": true
     },
     {
       "slug": "north-korea-expels-swiss-diplomat-in-sanctions-row",
@@ -624,7 +682,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/b4ee/live/fcd47260-e8fc-11f1-99b6-a35a62fa4264.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "one-eu-budget-too-many-priorities-meps-join-the-ring-in",
@@ -643,7 +702,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/77/66/696x392_cmsv2_f8d48733-2144-562d-b3fa-6fb2ab5a9210-10007766.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "us-army-declares-iowa-lead-azide-detonation-tremendously",
@@ -662,7 +722,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "colombian-police-storm-supermarket-to-free-76-held-hostage",
@@ -680,7 +741,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/997a/live/4f4b3940-e8c4-11f1-ac76-db9e97f93d67.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "can-europe-fix-its-chronic-medicine-shortage-and-supply",
@@ -699,7 +761,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/09/99/89/54/696x392_cmsv2_b22730b7-4bc1-5a40-b80f-93ac7babd470-9998954.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "us-stocks-fall-further-as-fears-over-ai-intensify",
@@ -718,7 +781,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/76b3/live/acdb5650-e8e0-11f1-a3b9-79c60ec9ab33.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "captain-of-sunken-costa-concordia-hired-by-tourism-agency",
@@ -737,7 +801,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/70/20/696x392_cmsv2_a1513586-277c-550e-9a1f-255b6f5da3dd-10007020.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "us-announces-new-tariffs-on-host-of-countries-including",
@@ -756,7 +821,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/511d/live/da29c130-e860-11f1-a330-6153c8fb2fad.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "czech-republic-ready-to-support-poland-after-russian",
@@ -775,7 +841,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/70/82/696x392_cmsv2_5c436ef6-94ce-50df-8901-ca2cf2086be0-10007082.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "german-hiker-battles-fierce-winds-on-torres-del-paine",
@@ -794,7 +861,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/72/09/696x392_cmsv2_68644ef2-ea1a-5128-9065-4c40c78b873e-10007209.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "13-restaurants-topped-lalistes-ranking-for-2027-including",
@@ -813,7 +881,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/73/46/696x392_cmsv2_30cce9ab-4ee2-5ee2-8d7b-e4d68a0f8f26-10007346.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "spain-s-economy-is-booming-why-are-real-wages-still-below",
@@ -832,7 +901,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/09/98/91/87/696x392_cmsv2_32ec34ab-5f58-5955-a732-bafcac9a3734-9989187.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "in-charts-how-power-could-shift-in-europes-big-year-of",
@@ -850,7 +920,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/3fb443520d5ae15fd4e46dca873678b8da5e63ea/683_0_6827_5464/master/6827.jpg?width=700&quality=85&auto=format&fit=max&s=fe7114fd09ea258af70aa0461f6b01b7",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "kilmar-abrego-garcia-leaving-us-for-spain-ending-trump",
@@ -869,7 +940,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/3c4a/live/dcbcfdf0-e85a-11f1-9b85-e50d1e9de678.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "kilmar-abrego-garcia-self-deports-to-spain-after-lengthy-us",
@@ -888,7 +960,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "the-rising-cost-of-putting-food-on-the-table-in-india",
@@ -906,7 +979,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/e93a/live/237a32d0-e7d4-11f1-939f-471cde339c0e.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "fort-hood-survivors-denied-bid-to-witness-shooters-firing",
@@ -924,7 +998,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/460deb91b5ac7fce62e4d1f4f42f38496eab4ca7/499_0_2501_2000/master/2501.jpg?width=700&quality=85&auto=format&fit=max&s=1ca13bfb0f34e8b0b38a2e0b01a53785",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "ministers-ask-public-for-views-on-changing-age-of-consent",
@@ -942,7 +1017,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/9ec8/live/48a72fa0-e850-11f1-aa88-031e8213533d.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "tech-giant-huawei-found-guilty-of-stealing-trade-secrets",
@@ -961,7 +1037,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/68/79/696x392_cmsv2_4ad7e8fc-0d5d-5324-a280-ed8a89d84cae-10006879.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "senegal-afcon-ruling-good-in-the-books-of-sports-law-expert",
@@ -979,7 +1056,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://s.france24.com/media/display/2c587954-e840-11f1-a6fd-29d00e23de9a/w:1024/p:16x9/EN-20261124-203334-203830-CS.jpg",
-      "imageCaption": "Photo: France 24"
+      "imageCaption": "Photo: France 24",
+      "reviewed": true
     },
     {
       "slug": "ex-boss-of-pride-in-london-given-suspended-sentence-for",
@@ -997,7 +1075,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/767a3d72a37f102fb9efc9642321b387291fdd19/911_0_2989_2393/master/2989.jpg?width=700&quality=85&auto=format&fit=max&s=7e74f55ff266756046f2b5d6b32e6392",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "european-court-states-can-turn-back-migrants-in-some-cases",
@@ -1016,7 +1095,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "italy-watches-worryingly-as-ukraine-strikes-russian-boats",
@@ -1035,7 +1115,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/65/29/696x392_cmsv2_cfbc319b-1caa-56c3-8ea3-12ae7027e9cc-10006529.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "cas-awards-senegal-afcon-title-after-successful-appeal",
@@ -1053,7 +1134,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/64/27/696x392_cmsv2_ff54b4c0-20f1-5922-b746-bfe957710ee0-10006427.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "israeli-strikes-on-gaza-kill-senior-hamas-security-official",
@@ -1072,7 +1154,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://s.france24.com/media/display/627512ce-e802-11f1-ad6d-1991d4929b54/w:1024/p:16x9/000-D7J44LE.jpg",
-      "imageCaption": "Photo: France 24"
+      "imageCaption": "Photo: France 24",
+      "reviewed": true
     },
     {
       "slug": "triple-killer-admits-murdering-ian-huntley-in-jail",
@@ -1090,7 +1173,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/be90/live/aad9c570-e729-11f1-914b-6d226d813a52.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "authors-warn-libraries-proposals-could-pave-the-way-for",
@@ -1109,7 +1193,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/4d02/live/aabb4c70-e7e3-11f1-a094-5fdc692f3e33.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "china-to-launch-first-space-mission-with-a-foreign-astronaut",
@@ -1128,7 +1213,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://s.france24.com/media/display/dd5a9c58-e7d9-11f1-a14d-1bac47ab2f5d/w:1024/p:16x9/AP26328149750361.jpg",
-      "imageCaption": "Photo: France 24"
+      "imageCaption": "Photo: France 24",
+      "reviewed": true
     },
     {
       "slug": "is-no-deal-better-than-a-bad-deal-why-some-see-hope-in",
@@ -1146,7 +1232,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/49/56/696x392_cmsv2_4f42ce96-10bd-5d27-b59b-f2c8d9a2cff3-10004956.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "signs-of-heart-attack-and-stroke-risk-can-appear-decades",
@@ -1164,7 +1251,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/51/52/696x392_cmsv2_0c680a49-e1fe-56f6-8154-b388accf6699-10005152.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "myanmar-has-been-found-guilty-of-genocide-should-israel-be",
@@ -1183,7 +1271,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/a82d0ec0cbb51aadb63a0edd4721abfa0ba5d96b/606_0_6493_5195/master/6493.jpg?width=700&quality=85&auto=format&fit=max&s=7accb568d4a3e27e1dfb7d02ed284939",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "china-sentences-official-to-death-for-spying-for-foreign",
@@ -1201,7 +1290,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/5d7028c1f7418b6df67a8b82c97cfc5563385eba/154_0_2536_2029/master/2536.jpg?width=700&quality=85&auto=format&fit=max&s=a8334ba7ee5504ed586b8b567e4ab1e0",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "chris-mason-can-burnham-turn-volume-down-on-eu-debate",
@@ -1220,7 +1310,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/d52f/live/4268b250-e79f-11f1-b8f0-1fdd88d7e7ad.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "eu-plans-sports-ban-in-sweeping-new-russia-sanctions",
@@ -1239,7 +1330,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "us-to-blacklist-asian-ai-firm-megaspeed-after-nvidia-scandal",
@@ -1258,7 +1350,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/4a66/live/7c413f70-e78a-11f1-a5c2-c57ab9df3111.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "us-escalates-sanctions-on-iran-targets-shadow-banking",
@@ -1277,7 +1370,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "israel-seeks-to-jail-palestinian-student-activist-without",
@@ -1296,7 +1390,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/3b697e211fd94382a4c76bc1361873d607c3ea2d/0_41_1200_960/master/1200.jpg?width=700&quality=85&auto=format&fit=max&s=ee95f67836c53353ebe83916accdea4b",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "tajikistan-follows-us-call-withdraws-from-icc",
@@ -1315,7 +1410,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "deeply-shocked-gisele-pelicot-to-sue-publisher-after-nude",
@@ -1334,7 +1430,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://s.france24.com/media/display/dc823ac4-e758-11f1-96c6-13439ca2fe89/w:1024/p:16x9/000-D8DK8WE.jpg",
-      "imageCaption": "Photo: France 24"
+      "imageCaption": "Photo: France 24",
+      "reviewed": true
     },
     {
       "slug": "eu-goes-after-russia-s-banks-soldiers-and-athletes-in-new",
@@ -1353,7 +1450,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/43/22/696x392_cmsv2_6062d2c8-9a48-5562-a080-5f2ad24d6507-10004322.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "robotaxis-and-stock-exchanges-why-bolt-s-ceo-says-europe-is",
@@ -1372,7 +1470,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/09/99/83/88/696x392_cmsv2_4ce3d2af-65b2-5222-a865-7d924d30bd59-9998388.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "i-want-to-destroy-capitalism-not-france-on-the-streets-with",
@@ -1390,7 +1489,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/87ae/live/24717fd0-e73f-11f1-802a-678be58471bb.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "schools-across-german-receive-bomb-threats-by-email-in",
@@ -1409,7 +1509,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "gta-6-breaks-sales-records-as-trump-administration-co-opt",
@@ -1428,7 +1529,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/41/43/696x392_cmsv2_5e01936a-d41f-5d39-b432-7b53075c430d-10004143.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "sanctions-summits-and-strikes-the-war-in-ukraine-shows-no",
@@ -1448,7 +1550,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/37/25/696x392_cmsv2_b61d1d5c-2bdb-586f-be92-5a37e32ca1c5-10003725.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "longest-ever-un-climate-talks-end-with-no-deal-as-deep",
@@ -1466,7 +1569,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/ffb0/live/d31e6e50-e6fc-11f1-9d32-695d6c00481f.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "belgiums-airports-set-to-shut-down-due-to-anti-austerity",
@@ -1485,7 +1589,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "video-of-ice-detaining-father-and-daughter-while-boarding",
@@ -1503,7 +1608,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/97c8d10c9aa99e4620ecf17b447bec64df7ce184/58_0_909_727/master/909.jpg?width=700&quality=85&auto=format&fit=max&s=9cc0c9ce357e71bb1e8ea2f5e34d969f",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "who-chief-calls-for-peace-amid-heavy-fighting-in-ebola-hit",
@@ -1521,7 +1627,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "turkey-thousands-protest-closure-of-critical-media-outlets",
@@ -1540,7 +1647,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "democrats-win-largest-house-majority-since-1992-after",
@@ -1559,7 +1667,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/2aab/live/8ca719f0-e6b0-11f1-b45e-bf1e220bd648.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "russian-warship-hit-by-suspected-ukrainian-drone-at",
@@ -1578,7 +1687,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://s.france24.com/media/display/659e3cc8-e6a9-11f1-ae55-1bac47ab2f5d/w:1024/p:16x9/AP26326649718247.jpg",
-      "imageCaption": "Photo: France 24"
+      "imageCaption": "Photo: France 24",
+      "reviewed": true
     },
     {
       "slug": "hakeem-jeffries-willing-to-cross-political-aisle-to-work-on",
@@ -1597,7 +1707,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/4e6eb28d17340c345907199ceb683c4277945b37/471_0_3333_2667/master/3333.jpg?width=700&quality=85&auto=format&fit=max&s=c2b5e9dd5d30693241d365d10927c7cd",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "russia-bound-ship-towed-away-after-it-was-attacked-in-gulf",
@@ -1616,7 +1727,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/d6f9/live/a55b16b0-e66d-11f1-9e24-791c5321ff0f.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "theresa-mays-blast-from-the-past-calls-tories-back-to-their",
@@ -1634,7 +1746,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/323290cab4a059e743deb4e7ae0928f6d847b2af/681_32_4857_3885/master/4857.jpg?width=700&quality=85&auto=format&fit=max&s=4b11d44d7ade66f2f41b91bb001c5ba9",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "netanyahu-rival-condemns-settler-arson-attacks-on",
@@ -1653,7 +1766,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/efe4dd70505bfcec6b5ab71dc65a3481bf1215d9/1004_0_6827_5464/master/6827.jpg?width=700&quality=85&auto=format&fit=max&s=02cd87d09d705f7a50460fa0fe12f59e",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "cop31-climate-talks-fail-after-eu-and-others-reject-final",
@@ -1672,7 +1786,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/34/69/696x392_cmsv2_46cbae24-c8ca-5789-947b-7639c5bcdb04-10003469.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "briton-swims-length-of-strait-of-hormuz-to-highlight",
@@ -1691,7 +1806,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/e6a395e17ba14aa21ecea678066783a153abb5d1/316_0_5000_4000/master/5000.jpg?width=700&quality=85&auto=format&fit=max&s=372b847909a417a76014f4c56e279b57",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "just-wrong-british-right-distances-itself-from-trump-after",
@@ -1710,7 +1826,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/9d90a7d8b6f21d4c00d9de61f70de2d1a4a80ebf/82_0_4618_3696/master/4618.jpg?width=700&quality=85&auto=format&fit=max&s=dd6a0fbf75ca97d950fd01c74338726d",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "14-people-missing-after-russian-drone-strike-on-kyiv-region",
@@ -1729,7 +1846,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/32/58/696x392_cmsv2_bda95ddb-450a-51a2-ad8a-c9b1d73df349-10003258.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "trump-vows-to-work-with-democrats-to-cap-credit-card-interest",
@@ -1748,13 +1866,10 @@ window.WWN_DEFAULT_CONTENT = {
         "Trump first proposed the cap in January, as part of the White House's affordability push. Banks and credit card companies immediately and aggressively opposed the idea, saying any cap would force them to cancel cards for poor and less creditworthy customers or substantially cut back on the rewards they offer. The proposal also did not sit well with Republicans, and the GOP-controlled Congress made little effort to fulfill the promise.",
         "That could change now that Democrats will control both the House and Senate. Senator Elizabeth Warren, who is expected to chair the Senate Banking Committee, has said repeatedly that she wants to cap rates. After the Fox News interview she said: \"Let's cap credit card interest rates and save Americans money.\" Representative Maxine Waters also backs the idea, and Senator Josh Hawley of Missouri has proposed several caps of his own. But this is still only a proposal, not a law. Congress would have to pass it, and the banking industry is expected to fight it."
       ],
-      "related": [
-        "trump-orders-contractors-to-notify-white-house-before-congress",
-        "trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
-        "republican-senator-blocks-trump-cyber-nominee-over-january"
-      ],
+      "related": [],
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Credit-cards.jpg/1280px-Credit-cards.jpg",
-      "imageCaption": "Credit cards. Photo: Wikimedia Commons (CC BY-SA 2.5)"
+      "imageCaption": "Credit cards. Photo: Wikimedia Commons (CC BY-SA 2.5)",
+      "reviewed": true
     },
     {
       "slug": "at-least-24-dead-as-boat-carrying-funeral-mourners-capsizes-in-nigeria",
@@ -1779,7 +1894,8 @@ window.WWN_DEFAULT_CONTENT = {
         "gadi-eisenkot-invites-netanyahu-s-likud-party-for-marathon"
       ],
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Wooden_boat_River_Niger.jpg/1280px-Wooden_boat_River_Niger.jpg",
-      "imageCaption": "A wooden boat on the River Niger in Nigeria. This is not the boat in the accident. Photo: Wikimedia Commons (CC BY-SA 4.0)"
+      "imageCaption": "A wooden boat on the River Niger in Nigeria. This is not the boat in the accident. Photo: Wikimedia Commons (CC BY-SA 4.0)",
+      "reviewed": true
     },
     {
       "slug": "pentagon-moves-to-restrict-defense-ties-with-canada-in-classified-memo",
@@ -1804,7 +1920,8 @@ window.WWN_DEFAULT_CONTENT = {
         "gadi-eisenkot-invites-netanyahu-s-likud-party-for-marathon"
       ],
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/The_Pentagon_US_Department_of_Defense_building.jpg/1280px-The_Pentagon_US_Department_of_Defense_building.jpg",
-      "imageCaption": "The Pentagon, headquarters of the US Department of Defense, in Arlington, Virginia. Photo: Wikimedia Commons (Public domain)"
+      "imageCaption": "The Pentagon, headquarters of the US Department of Defense, in Arlington, Virginia. Photo: Wikimedia Commons (Public domain)",
+      "reviewed": true
     },
     {
       "slug": "former-italian-police-chief-found-dead",
@@ -1822,7 +1939,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://s.france24.com/media/display/a9d7f9c0-e658-11f1-9bb1-ebb478925cf0/w:1024/p:16x9/EN-20261122-101007-101157-CS.jpg",
-      "imageCaption": "Photo: France 24"
+      "imageCaption": "Photo: France 24",
+      "reviewed": true
     },
     {
       "slug": "europe-sees-new-protests-over-rising-costs-inequality-and",
@@ -1840,7 +1958,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://s.france24.com/media/display/53de5938-e658-11f1-9f3b-6b451f569414/w:1024/p:16x9/EN-20261122-100542-100715-CS.jpg",
-      "imageCaption": "Photo: France 24"
+      "imageCaption": "Photo: France 24",
+      "reviewed": true
     },
     {
       "slug": "fbi-investigates-apparent-hack-of-national-crime-database",
@@ -1865,7 +1984,8 @@ window.WWN_DEFAULT_CONTENT = {
         "white-house-removes-cyber-security-chief-after-series-of"
       ],
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/FBI_Headquarters_-_J._Edgar_Hoover_Building_%2853840035941%29.jpg/1280px-FBI_Headquarters_-_J._Edgar_Hoover_Building_%2853840035941%29.jpg",
-      "imageCaption": "The J. Edgar Hoover Building, the headquarters of the FBI in Washington, D.C. Photo: Wikimedia Commons (CC BY 2.0)"
+      "imageCaption": "The J. Edgar Hoover Building, the headquarters of the FBI in Washington, D.C. Photo: Wikimedia Commons (CC BY 2.0)",
+      "reviewed": true
     },
     {
       "slug": "russian-cargo-ship-still-on-fire-off-finland-after-drone-strike",
@@ -1884,12 +2004,10 @@ window.WWN_DEFAULT_CONTENT = {
         "Finland's military has said the strike was likely carried out by Ukraine, but that has not been confirmed, and it is unclear why the ship was targeted. Ukraine has sent waves of military drones toward Russia's northwest coastal Leningrad region this year, including some that strayed into the airspace of nearby Baltic countries, raising fears that the war was spilling onto NATO territory.",
         "The Sparta II is a 121-meter Russian-flagged cargo vessel owned by the Russian shipping company Oboronlogistika, which provides logistics services for the Russian Defense Ministry, according to the company's website. The vessel, which left St. Petersburg on Friday bound for the Russian exclave of Kaliningrad, is subject to US sanctions, according to the US Treasury Department. The risk of further attacks in the Gulf of Finland cannot be ruled out, the commander of the Estonian Navy, Ivo Vark, told public broadcaster ERR on Sunday."
       ],
-      "related": [
-        "denmark-expels-russian-diplomat-over-alleged-plot-to-kill",
-        "russia-ukraine-missile-attack"
-      ],
+      "related": [],
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Patrol_vessel_Turva_from_air.jpg/1280px-Patrol_vessel_Turva_from_air.jpg",
-      "imageCaption": "Finnish Coast Guard patrol vessel Turva. Finland's coast guard is fighting the fire on the Russian cargo ship Sparta II in the Gulf of Finland. Photo: Wikimedia Commons (CC BY 2.0)"
+      "imageCaption": "Finnish Coast Guard patrol vessel Turva. Finland's coast guard is fighting the fire on the Russian cargo ship Sparta II in the Gulf of Finland. Photo: Wikimedia Commons (CC BY 2.0)",
+      "reviewed": true
     },
     {
       "slug": "cop31-final-draft-drops-fossil-fuels-admits-1-5c-overshoot",
@@ -1914,7 +2032,8 @@ window.WWN_DEFAULT_CONTENT = {
         "cop31-deep-divisions-persist-over-energy-finance-and-science"
       ],
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/General_view_of_the_COP31_Presidency%E2%80%99s_Energy_Ministerial_Meeting.jpg/1280px-General_view_of_the_COP31_Presidency%E2%80%99s_Energy_Ministerial_Meeting.jpg",
-      "imageCaption": "A general view of the COP31 Presidency's Energy Ministerial Meeting in Antalya, Turkey. Photo: Wikimedia Commons (CC BY 4.0)"
+      "imageCaption": "A general view of the COP31 Presidency's Energy Ministerial Meeting in Antalya, Turkey. Photo: Wikimedia Commons (CC BY 4.0)",
+      "reviewed": true
     },
     {
       "slug": "trump-orders-contractors-to-notify-white-house-before-congress",
@@ -1933,13 +2052,10 @@ window.WWN_DEFAULT_CONTENT = {
         "The order also says agencies must coordinate with the White House and contractors on responses to such requests, including the use of any relevant privileges, and that contractors must follow White House instructions to withhold communications protected by executive privilege. Companies that do not comply could face contract termination, cancellation, debarment or suspension, and the Office of Management and Budget is to issue guidance on how the order works in practice.",
         "The order follows a directive from White House Counsel Will Scharf requiring agencies to get White House approval before their employees agree to testify before Congress. It comes as Democrats prepare to take control of Congress in January, and critics have described it as an attempt to limit congressional oversight, while the White House says it protects sensitive executive branch communications from being taken out of context."
       ],
-      "related": [
-        "democrats-document-preservation",
-        "trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
-        "republican-senator-blocks-trump-cyber-nominee-over-january"
-      ],
+      "related": [],
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Donald_Trump_boards_on_the_South_Lawn_of_the_White_House_on_October_6%2C_2026_-_14.jpg/1280px-Donald_Trump_boards_on_the_South_Lawn_of_the_White_House_on_October_6%2C_2026_-_14.jpg",
-      "imageCaption": "President Donald Trump waves to guests on the South Lawn of the White House in October 2026. Photo: Wikimedia Commons (Public domain)"
+      "imageCaption": "President Donald Trump waves to guests on the South Lawn of the White House in October 2026. Photo: Wikimedia Commons (Public domain)",
+      "reviewed": true
     },
     {
       "slug": "theresa-may-aghast-at-burnham-eu-plans-brexit-is-done",
@@ -1964,7 +2080,8 @@ window.WWN_DEFAULT_CONTENT = {
         "thousands-protest-across-europe-demanding-better-wages-and"
       ],
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Official_portrait_of_Baroness_May_of_Maidenhead_crop_2.jpg/1280px-Official_portrait_of_Baroness_May_of_Maidenhead_crop_2.jpg",
-      "imageCaption": "Former prime minister Theresa May, now Baroness May of Maidenhead. Photo: Wikimedia Commons (CC BY 3.0)"
+      "imageCaption": "Former prime minister Theresa May, now Baroness May of Maidenhead. Photo: Wikimedia Commons (CC BY 3.0)",
+      "reviewed": true
     },
     {
       "slug": "washington-governor-condemns-ice-arrests-at-seattle-airport",
@@ -1989,7 +2106,8 @@ window.WWN_DEFAULT_CONTENT = {
         "white-house-removes-cyber-security-chief-after-series-of"
       ],
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Sea-Tac_Airport_International_Terminal_%28South_Satellite%29_aerial_view%2C_2016.jpg/1280px-Sea-Tac_Airport_International_Terminal_%28South_Satellite%29_aerial_view%2C_2016.jpg",
-      "imageCaption": "Seattle-Tacoma International Airport, where the arrests took place on Saturday. Photo: Wikimedia Commons (CC BY-SA 4.0)"
+      "imageCaption": "Seattle-Tacoma International Airport, where the arrests took place on Saturday. Photo: Wikimedia Commons (CC BY-SA 4.0)",
+      "reviewed": true
     },
     {
       "slug": "eleven-killed-as-mexican-forces-capture-cartel-boss-el-chapo-isidro",
@@ -2014,7 +2132,8 @@ window.WWN_DEFAULT_CONTENT = {
         "anc-fights-to-keep-control-of-south-africa-s-key-cities"
       ],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "verstappen-wins-las-vegas-grand-prix-as-ferraris-collide",
@@ -2037,7 +2156,8 @@ window.WWN_DEFAULT_CONTENT = {
         "nations-league-draw"
       ],
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/2025_Japan_GP_-_Red_Bull_-_Max_Verstappen_-_Race.jpg/1280px-2025_Japan_GP_-_Red_Bull_-_Max_Verstappen_-_Race.jpg",
-      "imageCaption": "Max Verstappen racing for Red Bull at the 2025 Japanese Grand Prix. Photo: Wikimedia Commons (CC BY-SA 4.0)"
+      "imageCaption": "Max Verstappen racing for Red Bull at the 2025 Japanese Grand Prix. Photo: Wikimedia Commons (CC BY-SA 4.0)",
+      "reviewed": true
     },
     {
       "slug": "china-asean-countries-struggle-over-south-china-sea-code-of",
@@ -2055,7 +2175,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "gadi-eisenkot-invites-netanyahu-s-likud-party-for-marathon",
@@ -2073,7 +2194,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/31/41/696x392_cmsv2_d548eeab-03c0-5d09-9e23-1d4460d8e068-10003141.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "displaced-darfur-families-face-volatile-winter-as-sudan-aid",
@@ -2092,7 +2214,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "fossil-fuel-dispute-threatens-to-derail-cop31-climate-deal",
@@ -2110,7 +2233,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/9b71/live/e0c68530-e61e-11f1-94c8-1db910b5b42e.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "displaced-palestinians-protest-as-israeli-air-strikes",
@@ -2129,7 +2253,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "no-time-for-a-culture-war-victorias-electricity-supply-is",
@@ -2148,7 +2273,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://i.guim.co.uk/img/media/2ba7cd3a290bb4876a32e7f44df6d629f62996df/0_0_6112_4892/master/6112.jpg?width=700&quality=85&auto=format&fit=max&s=d260f781e881407ce67b031f3a1e57b6",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "nigerian-youth-have-shown-their-power-in-the-past-why-aren",
@@ -2166,7 +2292,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/abb2/live/99a82d30-e4e7-11f1-99a1-253766e7ad8b.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "lock-of-former-us-president-george-washington-s-hair-sells",
@@ -2185,7 +2312,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/5138/live/c4d4d0c0-e5ec-11f1-ad4d-5dd9d517a6dd.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "fight-over-fossil-fuels-leaves-cop31-climate-talks-in",
@@ -2203,7 +2331,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/5253/live/c9ca5500-e579-11f1-a5f6-b3028adf2d6d.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "iran-attacks-us-bases-in-bahrain-as-its-tankers-get-ready",
@@ -2222,7 +2351,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/29/79/696x392_cmsv2_6cfb00d1-cc46-548f-8f54-bd7a83007f6c-10002979.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "frances-sixth-consecutive-saturday-of-protests-draw-lower",
@@ -2240,7 +2370,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://s.france24.com/media/display/c7c4cc2e-e5e5-11f1-a66f-6b451f569414/w:1024/p:16x9/000-D88T7BJ.jpg",
-      "imageCaption": "Photo: France 24"
+      "imageCaption": "Photo: France 24",
+      "reviewed": true
     },
     {
       "slug": "thousands-take-to-streets-in-portugal-france-and-spain-over",
@@ -2259,7 +2390,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/28/26/696x392_cmsv2_43a6dd87-426a-5c91-9b45-97d5c2b7da11-10002826.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "mexican-special-forces-arrest-drug-kingpin-chapo-isidro",
@@ -2277,7 +2409,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "cop31-deep-divisions-persist-over-energy-finance-and-science",
@@ -2295,7 +2428,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "https://s.france24.com/media/display/2e281d9c-e5d0-11f1-9a79-6b451f569414/w:1024/p:16x9/EN-20261121-171141-171326-CS.jpg",
-      "imageCaption": "Photo: France 24"
+      "imageCaption": "Photo: France 24",
+      "reviewed": true
     },
     {
       "slug": "indias-opposition-stages-protests-against-meta-over-account",
@@ -2313,7 +2447,8 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "brazil-ex-president-jair-bolsonaro-taken-to-hospital-over",
@@ -2335,7 +2470,8 @@ window.WWN_DEFAULT_CONTENT = {
         "a-new-nepal-an-old-neighbour-balendra-shah-s-india-test"
       ],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "three-french-police-officers-sentenced-over-racist-assault",
@@ -2357,7 +2493,8 @@ window.WWN_DEFAULT_CONTENT = {
         "a-new-nepal-an-old-neighbour-balendra-shah-s-india-test"
       ],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "uk-anti-migrant-activist-jailed-for-slashing-channel-dinghy",
@@ -2374,13 +2511,10 @@ window.WWN_DEFAULT_CONTENT = {
       "body": [
         "Daniel Thomas, known as \"Danny Tommo,\" slashed a dinghy with a knife while a French rescue worker was on board. The incident was livestreamed to a large social media audience amid growing tensions over migrant crossings."
       ],
-      "related": [
-        "brazil-ex-president-jair-bolsonaro-taken-to-hospital-over",
-        "three-french-police-officers-sentenced-over-racist-assault",
-        "a-new-nepal-an-old-neighbour-balendra-shah-s-india-test"
-      ],
+      "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
@@ -2403,7 +2537,8 @@ window.WWN_DEFAULT_CONTENT = {
         "republican-senator-blocks-trump-cyber-nominee-over-january"
       ],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "denmark-expels-russian-diplomat-over-alleged-plot-to-kill",
@@ -2420,13 +2555,10 @@ window.WWN_DEFAULT_CONTENT = {
       "body": [
         "Copenhagen accuses Moscow of planning assassination with banned local gang; Russia says no evidence for allegation."
       ],
-      "related": [
-        "trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
-        "they-were-fined-811m-for-conning-detained-migrants-but-the",
-        "republican-senator-blocks-trump-cyber-nominee-over-january"
-      ],
+      "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "they-were-fined-811m-for-conning-detained-migrants-but-the",
@@ -2442,13 +2574,10 @@ window.WWN_DEFAULT_CONTENT = {
       "body": [
         "How convicted fraudsters made millions from detained immigrants, evaded efforts to shut down their bail business and left migrants behind bars."
       ],
-      "related": [
-        "trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
-        "denmark-expels-russian-diplomat-over-alleged-plot-to-kill",
-        "republican-senator-blocks-trump-cyber-nominee-over-january"
-      ],
+      "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/b187/live/6d4c58d0-e42c-11f1-a630-a951c13e48b7.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "anc-fights-to-keep-control-of-south-africa-s-key-cities",
@@ -2470,7 +2599,8 @@ window.WWN_DEFAULT_CONTENT = {
         "iran-war-live-saudi-led-coalition-downs-houthi-missiles"
       ],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/aad1/live/7d1c0de0-e4ff-11f1-a8e4-b1e12a49db15.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "victorian-greens-seek-urgent-injunction-over-how-to-vote",
@@ -2492,7 +2622,8 @@ window.WWN_DEFAULT_CONTENT = {
         "iran-war-live-saudi-led-coalition-downs-houthi-missiles"
       ],
       "image": "https://i.guim.co.uk/img/media/96ab340872e588ad309196b07390be6b1c05c064/0_0_935_748/master/935.jpg?width=700&quality=85&auto=format&fit=max&s=50806757fc5fd112480c6a731407982f",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "mamdani-announces-plan-to-close-new-york-s-rikers-island",
@@ -2514,7 +2645,8 @@ window.WWN_DEFAULT_CONTENT = {
         "iran-war-live-saudi-led-coalition-downs-houthi-missiles"
       ],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/4622/live/d8e189d0-e52b-11f1-964d-a1d5fe40573e.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "iran-war-live-saudi-led-coalition-downs-houthi-missiles",
@@ -2531,13 +2663,10 @@ window.WWN_DEFAULT_CONTENT = {
       "body": [
         "Saudi Arabia issues a flurry of emergency alerts for Riyadh, as the Saudi coalition says it intercepted three missiles."
       ],
-      "related": [
-        "anc-fights-to-keep-control-of-south-africa-s-key-cities",
-        "victorian-greens-seek-urgent-injunction-over-how-to-vote",
-        "mamdani-announces-plan-to-close-new-york-s-rikers-island"
-      ],
+      "related": [],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "a-new-nepal-an-old-neighbour-balendra-shah-s-india-test",
@@ -2559,7 +2688,8 @@ window.WWN_DEFAULT_CONTENT = {
         "uk-anti-migrant-activist-jailed-for-slashing-channel-dinghy"
       ],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/6ce4/live/0cd0ed60-e3e9-11f1-a16c-7de3762c094b.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "republican-senator-blocks-trump-cyber-nominee-over-january",
@@ -2582,7 +2712,8 @@ window.WWN_DEFAULT_CONTENT = {
         "they-were-fined-811m-for-conning-detained-migrants-but-the"
       ],
       "image": "https://i.guim.co.uk/img/media/cac7b215020ab17f2e1926d910d082e9f9ca8ad3/444_0_4416_3535/master/4416.jpg?width=700&quality=85&auto=format&fit=max&s=4a04958e10540d591086e2d7824c311d",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "gerard-depardieu-and-french-author-investigated-over-sexual",
@@ -2604,7 +2735,8 @@ window.WWN_DEFAULT_CONTENT = {
         "white-house-removes-cyber-security-chief-after-series-of"
       ],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/e9a6/live/0355fa40-e51b-11f1-99a1-253766e7ad8b.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "jp-morgan-boss-says-he-will-set-example-in-offsetting-uk",
@@ -2626,7 +2758,8 @@ window.WWN_DEFAULT_CONTENT = {
         "white-house-removes-cyber-security-chief-after-series-of"
       ],
       "image": "https://i.guim.co.uk/img/media/a2ea0114fa7d8b930b2b6fb3b7c565d76348f5f3/0_0_3028_2423/master/3028.jpg?width=700&quality=85&auto=format&fit=max&s=8421110c29fd7638017f4a61e37546ad",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "germany-intensifies-engagement-with-south-caucasus-as",
@@ -2643,13 +2776,10 @@ window.WWN_DEFAULT_CONTENT = {
       "body": [
         "Germany's foreign minister visited Azerbaijan and Armenia to develop projects of “strategic importance to Europe both economically and politically,\" in the context of Russia's aggression against Ukraine and the economic situation in Europe."
       ],
-      "related": [
-        "gerard-depardieu-and-french-author-investigated-over-sexual",
-        "jp-morgan-boss-says-he-will-set-example-in-offsetting-uk",
-        "white-house-removes-cyber-security-chief-after-series-of"
-      ],
+      "related": [],
       "image": "https://images.euronews.com/articles/stories/09/99/71/65/696x392_cmsv2_caab5567-8512-5736-88f6-091e60bbb275-9997165.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "white-house-removes-cyber-security-chief-after-series-of",
@@ -2666,13 +2796,10 @@ window.WWN_DEFAULT_CONTENT = {
       "body": [
         "He has been fired after losing the confidence of new White House chief of staff Stephen Miller, according to reports."
       ],
-      "related": [
-        "gerard-depardieu-and-french-author-investigated-over-sexual",
-        "jp-morgan-boss-says-he-will-set-example-in-offsetting-uk",
-        "germany-intensifies-engagement-with-south-caucasus-as"
-      ],
+      "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/76fa/live/ea62ee60-e4bd-11f1-87df-79d8910e0f29.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "florida-mechanic-found-guilty-of-murdering-british-woman",
@@ -2695,7 +2822,8 @@ window.WWN_DEFAULT_CONTENT = {
         "misty-eyed-burnham-gambles-on-closer-ties-with-eu-as-he"
       ],
       "image": "https://i.guim.co.uk/img/media/68822b4af6e85f21c7ca85d279e5ad43ec97d7f0/0_739_4252_3402/master/4252.jpg?width=700&quality=85&auto=format&fit=max&s=716055784c9ffee0a14af22dffc5c8e8",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "spain-frees-wealthy-us-sought-activist-on-bail-as-irish",
@@ -2718,7 +2846,8 @@ window.WWN_DEFAULT_CONTENT = {
         "misty-eyed-burnham-gambles-on-closer-ties-with-eu-as-he"
       ],
       "image": "https://i.guim.co.uk/img/media/74547b1071ce9ebdb86931120adc604b11828149/468_0_4680_3744/master/4680.jpg?width=700&quality=85&auto=format&fit=max&s=d6d0d9a2a231f653614a28393a00aa5e",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "indian-man-sentenced-to-19-years-in-prison-for-conspiring",
@@ -2734,13 +2863,10 @@ window.WWN_DEFAULT_CONTENT = {
       "body": [
         "Nikhil Gupta admitted to plotting with Indian government official to hire hitman to murder dual US-Canadian citizen. An Indian ⁠man was sentenced to more ⁠than 19 ​years in US prison on Friday after admitting to orchestrating a failed Indian government-backed plot to kill a Sikh separatist in New York ⁠City , in connection with what US and Canadian authorities have called a broader effort to target Indian dissidents."
       ],
-      "related": [
-        "florida-mechanic-found-guilty-of-murdering-british-woman",
-        "spain-frees-wealthy-us-sought-activist-on-bail-as-irish",
-        "misty-eyed-burnham-gambles-on-closer-ties-with-eu-as-he"
-      ],
+      "related": [],
       "image": "https://i.guim.co.uk/img/media/9685e16f610038a3820904f81eb1dba749b72664/117_0_2813_2250/master/2813.jpg?width=700&quality=85&auto=format&fit=max&s=ea38836f1db278dae5d70c1e78bdd81f",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "misty-eyed-burnham-gambles-on-closer-ties-with-eu-as-he",
@@ -2757,13 +2883,10 @@ window.WWN_DEFAULT_CONTENT = {
       "body": [
         "PM challenges rivals to rebuff plan he says could add 0.5% annual growth to economy and offer young people hope. Several sentences in to a slightly convoluted answer about where UK-EU relations might go next, Andy Burnham abruptly changed tack."
       ],
-      "related": [
-        "florida-mechanic-found-guilty-of-murdering-british-woman",
-        "spain-frees-wealthy-us-sought-activist-on-bail-as-irish",
-        "indian-man-sentenced-to-19-years-in-prison-for-conspiring"
-      ],
+      "related": [],
       "image": "https://i.guim.co.uk/img/media/298e2e76a81f2b29227315e2f639e4892114e948/507_0_4299_3440/master/4299.jpg?width=700&quality=85&auto=format&fit=max&s=4aafdbe80398ac5cbfe550a1af2f5d7a",
-      "imageCaption": "Photo: The Guardian"
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": true
     },
     {
       "slug": "at-cop31-conflict-over-climate-science-slows-action-on",
@@ -2780,13 +2903,10 @@ window.WWN_DEFAULT_CONTENT = {
       "body": [
         "Attacks on climate science and disinformation risk delaying key measures at COP31 in Antalya. As the UN climate talks draw to a close, how will that affect efforts to come to an agreement?"
       ],
-      "related": [
-        "thousands-protest-across-europe-demanding-better-wages-and",
-        "what-do-we-know-about-rwanda-return-hubs-and-how-effective",
-        "better-educated-than-ever-yet-germany-s-gen-z-is-being-shut"
-      ],
+      "related": [],
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/COP31_-_Ant%C3%B3nio_Guterres_05.jpg/1280px-COP31_-_Ant%C3%B3nio_Guterres_05.jpg",
-      "imageCaption": "UN Secretary-General António Guterres at COP31 in Antalya, Turkey. Photo: Wikimedia Commons (CC BY-SA 4.0)"
+      "imageCaption": "UN Secretary-General António Guterres at COP31 in Antalya, Turkey. Photo: Wikimedia Commons (CC BY-SA 4.0)",
+      "reviewed": true
     },
     {
       "slug": "thousands-protest-across-europe-demanding-better-wages-and",
@@ -2809,7 +2929,8 @@ window.WWN_DEFAULT_CONTENT = {
         "better-educated-than-ever-yet-germany-s-gen-z-is-being-shut"
       ],
       "image": "https://images.euronews.com/articles/stories/10/00/21/02/696x392_cmsv2_6d8a3374-39d3-5f0c-a86f-23b5059b8d65-10002102.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "what-do-we-know-about-rwanda-return-hubs-and-how-effective",
@@ -2832,7 +2953,8 @@ window.WWN_DEFAULT_CONTENT = {
         "better-educated-than-ever-yet-germany-s-gen-z-is-being-shut"
       ],
       "image": "https://images.euronews.com/articles/stories/09/98/96/17/696x392_cmsv2_a67117be-28d2-5fab-ab3a-b72d73f4b481-9989617.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "better-educated-than-ever-yet-germany-s-gen-z-is-being-shut",
@@ -2855,7 +2977,8 @@ window.WWN_DEFAULT_CONTENT = {
         "what-do-we-know-about-rwanda-return-hubs-and-how-effective"
       ],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "youth-protests-sweep-europe",
@@ -2880,7 +3003,8 @@ window.WWN_DEFAULT_CONTENT = {
         "eu-rwanda-return-hub"
       ],
       "image": "https://images.euronews.com/articles/stories/10/00/21/02/696x392_cmsv2_6d8a3374-39d3-5f0c-a86f-23b5059b8d65-10002102.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "anthropic-shares-fall-after-ipo",
@@ -2901,12 +3025,10 @@ window.WWN_DEFAULT_CONTENT = {
         "The losses spread beyond the United States. In Europe, Germany’s Dax was down 2% and the FTSE 100 down 0.5%, while in Asia South Korea’s Kospi and Japan’s Nikkei 225 closed down about 5%. Taiwan’s market dropped about 6% on Friday, taking its weekly fall to more than 17%, its biggest weekly fall since 1990, with memory-chip makers including SK Hynix, Kioxia, Tokyo Electron and Samsung among the hardest hit.",
         "Ed Moya, a strategist at market intelligence firm AlphaSense, said the debut had not changed the picture for AI stocks: demand remains very strong, but investors are asking how much spending is coming and whether it will deliver enough profit. Wall Street, he said, is starting to shift away from rewarding growth at any price. Analysts said volatility was to be expected in the first days of trading."
       ],
-      "related": [
-        "youth-protests-sweep-europe",
-        "eu-rwanda-return-hub"
-      ],
+      "related": [],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/03d5/live/7b6fe9b0-e4ed-11f1-8781-bf15c9202663.jpg",
-      "imageCaption": "Photo: BBC"
+      "imageCaption": "Photo: BBC",
+      "reviewed": true
     },
     {
       "slug": "eu-rwanda-return-hub",
@@ -2932,7 +3054,8 @@ window.WWN_DEFAULT_CONTENT = {
         "anthropic-shares-fall-after-ipo"
       ],
       "image": "https://images.euronews.com/articles/stories/09/98/96/17/696x392_cmsv2_a67117be-28d2-5fab-ab3a-b72d73f4b481-9989617.jpg",
-      "imageCaption": "Photo: Euronews"
+      "imageCaption": "Photo: Euronews",
+      "reviewed": true
     },
     {
       "slug": "russia-ukraine-missile-attack",
@@ -2961,7 +3084,8 @@ window.WWN_DEFAULT_CONTENT = {
         "gaza-yellow-line-raid"
       ],
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Kyiv_skyline_%2815688086793%29.jpg/1280px-Kyiv_skyline_%2815688086793%29.jpg",
-      "imageCaption": "The Kyiv skyline across the Dnipro river at dawn. Photo: Wikimedia Commons (CC BY-SA 2.0)"
+      "imageCaption": "The Kyiv skyline across the Dnipro river at dawn. Photo: Wikimedia Commons (CC BY-SA 2.0)",
+      "reviewed": true
     },
     {
       "slug": "eu-uk-reset-deal",
@@ -2984,13 +3108,10 @@ window.WWN_DEFAULT_CONTENT = {
         "One big issue remains unresolved: university tuition fees. Brussels wants EU students at British universities to pay the same domestic rates as British students, rather than the much higher international fees charged now. The two sides gave themselves six months to reach an agreement.",
         "Burnham said a bill covering the agreements will go before Parliament next week. Von der Leyen called the deal a “win-win” and said there was a strong foundation to deepen security ties, a theme sharpened by the overnight Russian missile strikes on Ukraine and the violation of Polish airspace."
       ],
-      "related": [
-        "shenzhen-aftermath-europe-pushback",
-        "wall-street-selloff",
-        "democrats-document-preservation"
-      ],
+      "related": [],
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/European_Parliament_-_Hemicycle.jpg/1280px-European_Parliament_-_Hemicycle.jpg",
-      "imageCaption": "The European Parliament hemicycle in Brussels. Photo: Wikimedia Commons (CC BY-SA 3.0)"
+      "imageCaption": "The European Parliament hemicycle in Brussels. Photo: Wikimedia Commons (CC BY-SA 3.0)",
+      "reviewed": true
     },
     {
       "slug": "shenzhen-aftermath-europe-pushback",
@@ -3018,7 +3139,8 @@ window.WWN_DEFAULT_CONTENT = {
         "icj-myanmar-genocide-ruling"
       ],
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Skyline_of_Shenzhen_from_Hong_Kong.jpg/1280px-Skyline_of_Shenzhen_from_Hong_Kong.jpg",
-      "imageCaption": "The Shenzhen skyline, seen from across the border in Hong Kong. Photo: Wikimedia Commons (CC BY-SA 4.0)"
+      "imageCaption": "The Shenzhen skyline, seen from across the border in Hong Kong. Photo: Wikimedia Commons (CC BY-SA 4.0)",
+      "reviewed": true
     },
     {
       "slug": "democrats-document-preservation",
@@ -3040,12 +3162,10 @@ window.WWN_DEFAULT_CONTENT = {
         "The White House said Democrats were making claims about document destruction without evidence, but also indicated it saw no obligation to comply with the demands before the new Congress takes over on January 3. Democrats are preparing far-reaching investigations into the administration and fear destroyed records could hinder their oversight.",
         "One former White House lawyer described the letters as Congress “drawing a line in the sand”, so that anyone who destroys records could later face prosecution for obstruction of Congress. Whistleblowers have also warned that key paperwork about the president’s construction projects in Washington may be at risk."
       ],
-      "related": [
-        "shenzhen-aftermath-europe-pushback",
-        "wall-street-selloff"
-      ],
+      "related": [],
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Capitol_at_Dusk_2.jpg/1280px-Capitol_at_Dusk_2.jpg",
-      "imageCaption": "The United States Capitol in Washington at dusk. Photo: Wikimedia Commons (CC BY-SA 3.0)"
+      "imageCaption": "The United States Capitol in Washington at dusk. Photo: Wikimedia Commons (CC BY-SA 3.0)",
+      "reviewed": true
     },
     {
       "slug": "wall-street-selloff",
@@ -3065,12 +3185,10 @@ window.WWN_DEFAULT_CONTENT = {
         "The sell-off came on the same day that Anthropic, the AI company behind the Claude chatbot, made its stock market debut. Shares were priced at $83, opened at about $111, and closed about 17 percent above the offer price at $97.17, the largest initial public offering ever, but the success did nothing to stem the selling.",
         "In Europe, the FTSE 100 fell 0.9 percent to 10,452.68 and Germany’s DAX lost 1.1 percent on Thursday. The selling spread to Asia on Friday, with Japan’s Nikkei down more than 5 percent. The VIX, Wall Street’s fear gauge, closed at 28.44, up nearly 16 percent."
       ],
-      "related": [
-        "eu-uk-reset-deal",
-        "democrats-document-preservation"
-      ],
+      "related": [],
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Wall_Street_-_New_York_Stock_Exchange.jpg/1280px-Wall_Street_-_New_York_Stock_Exchange.jpg",
-      "imageCaption": "The New York Stock Exchange on Wall Street. Photo: Wikimedia Commons (CC BY-SA 3.0)"
+      "imageCaption": "The New York Stock Exchange on Wall Street. Photo: Wikimedia Commons (CC BY-SA 3.0)",
+      "reviewed": true
     },
     {
       "slug": "nations-league-draw",
@@ -3091,11 +3209,10 @@ window.WWN_DEFAULT_CONTENT = {
         "The other ties pair defending Nations League champions Portugal against the Netherlands, and Belgium against Germany. The winners of the Netherlands-Portugal tie will meet Spain or France in the semi-finals, while England or Norway will face Belgium or Germany.",
         "England captain Harry Kane is the competition’s leading scorer with eight goals. The quarter-finals will be played at the same time as qualifying begins for Euro 2028."
       ],
-      "related": [
-        "raye-grammy-nominations"
-      ],
+      "related": [],
       "image": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=80",
-      "imageCaption": "A football stadium under lights during a match. Illustrative photo. Photo: Unsplash"
+      "imageCaption": "A football stadium under lights during a match. Illustrative photo. Photo: Unsplash",
+      "reviewed": true
     },
     {
       "slug": "raye-grammy-nominations",
@@ -3116,11 +3233,10 @@ window.WWN_DEFAULT_CONTENT = {
         "Beyoncé, meanwhile, reached her 100th career Grammy nomination, for ‘Morning Dew (Donk)’ in the best R&B solo performance category, making her the most-nominated artist in the awards’ history.",
         "The 69th Grammy Awards will be held on February 7, 2027 at the Crypto.com Arena in Los Angeles, with winners chosen by the Recording Academy’s nearly 16,000 voting members."
       ],
-      "related": [
-        "nations-league-draw"
-      ],
+      "related": [],
       "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80",
-      "imageCaption": "A singer performs on stage. Illustrative photo. Photo: Unsplash"
+      "imageCaption": "A singer performs on stage. Illustrative photo. Photo: Unsplash",
+      "reviewed": true
     },
     {
       "slug": "gaza-yellow-line-raid",
@@ -3147,7 +3263,8 @@ window.WWN_DEFAULT_CONTENT = {
         "icj-myanmar-genocide-ruling"
       ],
       "image": "",
-      "imageCaption": ""
+      "imageCaption": "",
+      "reviewed": true
     },
     {
       "slug": "icj-myanmar-genocide-ruling",
@@ -3168,12 +3285,10 @@ window.WWN_DEFAULT_CONTENT = {
         "The case was brought in 2019 by The Gambia, a country thousands of miles from Myanmar, in a first of its kind. The ruling is final and cannot be appealed, though the court has no power to enforce it.",
         "A spokesperson for Myanmar’s military-backed government dismissed the ruling on Friday as “unfair”, noting that not all 15 judges agreed. Human Rights Watch called it “long-awaited recognition of the suffering the Rohingya have endured”."
       ],
-      "related": [
-        "gaza-yellow-line-raid",
-        "russia-ukraine-missile-attack"
-      ],
+      "related": [],
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Friedenspalast_Den_Haag.jpg/1280px-Friedenspalast_Den_Haag.jpg",
-      "imageCaption": "The Peace Palace in The Hague, home of the International Court of Justice. Photo: Wikimedia Commons (CC BY-SA 3.0)"
+      "imageCaption": "The Peace Palace in The Hague, home of the International Court of Justice. Photo: Wikimedia Commons (CC BY-SA 3.0)",
+      "reviewed": true
     },
     {
       "slug": "bank-of-england-raises-rates",
@@ -3198,7 +3313,8 @@ window.WWN_DEFAULT_CONTENT = {
         "eu-ukraine-loan-45-billion"
       ],
       "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1600&q=80",
-      "imageCaption": "Westminster, London. Illustrative photo. Photo: Unsplash"
+      "imageCaption": "Westminster, London. Illustrative photo. Photo: Unsplash",
+      "reviewed": true
     },
     {
       "slug": "democrats-win-congress-midterms",
@@ -3221,12 +3337,10 @@ window.WWN_DEFAULT_CONTENT = {
         "Democrats have nominated Hakeem Jeffries to be the next House speaker, putting him on course to become the first Black lawmaker to hold the gavel when the new Congress convenes on January 3.",
         "Voter discontent over inflation, tariffs, AI data centres and the war in Iran drove the result, according to Nikkei Asia's reporting."
       ],
-      "related": [
-        "trump-xi-putin-shenzhen-summit",
-        "uk-inflation-3-6-percent"
-      ],
+      "related": [],
       "image": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1600&q=80",
-      "imageCaption": "A parliament chamber in session. Illustrative photo. Photo: Unsplash"
+      "imageCaption": "A parliament chamber in session. Illustrative photo. Photo: Unsplash",
+      "reviewed": true
     },
     {
       "slug": "denmark-greenland-security-deal",
@@ -3252,7 +3366,8 @@ window.WWN_DEFAULT_CONTENT = {
         "eu-ukraine-loan-45-billion"
       ],
       "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=80",
-      "imageCaption": "Snow-covered mountains under a night sky. Illustrative photo. Photo: Unsplash"
+      "imageCaption": "Snow-covered mountains under a night sky. Illustrative photo. Photo: Unsplash",
+      "reviewed": true
     },
     {
       "slug": "eu-ukraine-loan-45-billion",
@@ -3274,13 +3389,10 @@ window.WWN_DEFAULT_CONTENT = {
         "The plan needs approval from EU governments and the European Parliament. The budget amendment underpinning it would need unanimous support from member states.",
         "Commission President Ursula von der Leyen said she was confident all 27 members would back the plan. EU leaders were due to discuss it at a Brussels summit."
       ],
-      "related": [
-        "russia-ukraine-missile-attack",
-        "bank-of-england-raises-rates",
-        "uk-inflation-3-6-percent"
-      ],
+      "related": [],
       "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1600&q=80",
-      "imageCaption": "A street in a European old town. Illustrative photo. Photo: Unsplash"
+      "imageCaption": "A street in a European old town. Illustrative photo. Photo: Unsplash",
+      "reviewed": true
     },
     {
       "slug": "gaza-ceasefire-collapse-warning",
@@ -3307,7 +3419,8 @@ window.WWN_DEFAULT_CONTENT = {
         "trump-xi-putin-shenzhen-summit"
       ],
       "image": "https://images.unsplash.com/photo-1547234935-80c7145ec969?auto=format&fit=crop&w=1600&q=80",
-      "imageCaption": "Desert landscape in the Middle East. Illustrative photo. Photo: Unsplash"
+      "imageCaption": "Desert landscape in the Middle East. Illustrative photo. Photo: Unsplash",
+      "reviewed": true
     },
     {
       "slug": "japan-beats-brazil-3-2",
@@ -3327,11 +3440,10 @@ window.WWN_DEFAULT_CONTENT = {
         "The win avenged Japan's 2-1 defeat by Brazil in the round of 32 at the 2026 World Cup last summer.",
         "Moriyasu, who has led Japan since 2018, will step down after the November international window. Japan face Paraguay next as they build towards the next World Cup."
       ],
-      "related": [
-        "van-gogh-record-190-million"
-      ],
+      "related": [],
       "image": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1600&q=80",
-      "imageCaption": "A football stadium under lights. Illustrative photo. Photo: Unsplash"
+      "imageCaption": "A football stadium under lights. Illustrative photo. Photo: Unsplash",
+      "reviewed": true
     },
     {
       "slug": "trump-xi-putin-shenzhen-summit",
@@ -3353,13 +3465,10 @@ window.WWN_DEFAULT_CONTENT = {
         "The leaders of the E3, the UK, Germany and France, and Ukraine called on Russia to agree to a ceasefire on attacks on energy infrastructure for the duration of winter.",
         "Trump also told NBC News that he would meet North Korean leader Kim Jong-un at “some point”."
       ],
-      "related": [
-        "russia-ukraine-missile-attack",
-        "democrats-win-congress-midterms",
-        "denmark-greenland-security-deal"
-      ],
+      "related": [],
       "image": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?auto=format&fit=crop&w=1600&q=80",
-      "imageCaption": "A modern city skyline at dusk. Illustrative photo. Photo: Unsplash"
+      "imageCaption": "A modern city skyline at dusk. Illustrative photo. Photo: Unsplash",
+      "reviewed": true
     },
     {
       "slug": "uk-inflation-3-6-percent",
@@ -3384,7 +3493,8 @@ window.WWN_DEFAULT_CONTENT = {
         "eu-ukraine-loan-45-billion"
       ],
       "image": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=1600&q=80",
-      "imageCaption": "A food market. Illustrative photo. Photo: Unsplash"
+      "imageCaption": "A food market. Illustrative photo. Photo: Unsplash",
+      "reviewed": true
     },
     {
       "slug": "van-gogh-record-190-million",
@@ -3405,38 +3515,17 @@ window.WWN_DEFAULT_CONTENT = {
         "The painting, which had not been seen in public for more than 50 years, was the top lot in the sale of 12 works from the Blaquier-Arrieta Collection. All 12 sold for a combined $412 million.",
         "The sale went ahead a day after Sotheby's announced an agreement with the heirs of German Jewish publisher Samuel Fischer, who said the painting had been sold under duress in 1936 during Nazi persecution."
       ],
-      "related": [
-        "japan-beats-brazil-3-2"
-      ],
+      "related": [],
       "image": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1600&q=80",
-      "imageCaption": "An abstract painting. Illustrative photo. Photo: Unsplash"
+      "imageCaption": "An abstract painting. Illustrative photo. Photo: Unsplash",
+      "reviewed": true
     }
   ],
   "justIn": [
     {
-      "time": "Nov 27, 18:52",
-      "text": "'We couldn't give up that easily': Marching bands scramble to cover costs after Thanksgiving parade rearranged",
-      "link": "https://www.bbc.co.uk/news/articles/ckd71ypy9e8eo"
-    },
-    {
-      "time": "Nov 27, 18:48",
+      "time": "Nov 27, 18:54",
       "text": "Estonia will close border with Russia 'to secure Europe,' foreign minister says during Baku visit",
       "link": "articles/estonia-will-close-border-with-russia-to-secure-europe.html"
-    },
-    {
-      "time": "Nov 27, 18:42",
-      "text": "Weary of war but with no sign of backing down, Kyiv faces another punishing winter",
-      "link": "https://www.bbc.co.uk/news/articles/c3pw4yrr8kz9o"
-    },
-    {
-      "time": "Nov 27, 18:36",
-      "text": "Azerbaijani and Armenian civil societies seek 'new history' in new round of peace talks",
-      "link": "https://www.euronews.com/2026/11/27/azerbaijani-and-armenian-civil-societies-seek-new-history-in-new-round-of-peace-talks"
-    },
-    {
-      "time": "Nov 27, 18:32",
-      "text": "Relatives say jailed Iranian twins beaten and tortured, one faces execution",
-      "link": "https://www.euronews.com/2026/11/27/relatives-say-jailed-iranian-twins-beaten-and-tortured-one-faces-execution"
     },
     {
       "time": "Nov 27, 18:02",
@@ -3445,20 +3534,75 @@ window.WWN_DEFAULT_CONTENT = {
     },
     {
       "time": "Nov 27, 18:01",
-      "text": "Serbia’s student movement puts forward Professor Saičić as its presidential candidate",
-      "link": "https://www.euronews.com/2026/11/27/serbias-student-movement-puts-forward-professor-saicic-as-its-presidential-candidate"
-    },
-    {
-      "time": "Nov 27, 18:01",
       "text": "Spanish rider Marc Marquez announces MotoGP retirement, days after clinching record 8th world title",
       "link": "https://www.dw.com/en/spanish-rider-marc-marquez-announces-motogp-retirement-days-after-clinching-record-8th-world-title/a-80079930"
+    },
+    {
+      "time": "Nov 27, 18:00",
+      "text": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
+      "link": "articles/zelensky-criticises-strange-trump-putin-friendship-in-bbc.html"
+    },
+    {
+      "time": "Nov 27, 17:58",
+      "text": "Mexico files complaint with US over tip line on alleged drug traffickers",
+      "link": "https://www.aljazeera.com/news/2026/11/27/mexico-files-complaint-with-us-over-tip-line-on-alleged-drug-traffickers"
+    },
+    {
+      "time": "Nov 27, 17:44",
+      "text": "Kyiv offers Black Sea ceasefire, as Putin expands Russia’s navy",
+      "link": "https://www.aljazeera.com/news/2026/11/27/kyiv-offers-black-sea-ceasefire-as-putin-expands-russias-navy"
+    },
+    {
+      "time": "Nov 27, 17:41",
+      "text": "Mecca pact allies condemn ‘heinous’ Houthi attacks on Saudi Arabia",
+      "link": "https://www.aljazeera.com/news/2026/11/27/mecca-pact-allies-condemn-heinous-houthi-attacks-on-saudi-arabia"
+    },
+    {
+      "time": "Nov 27, 17:39",
+      "text": "GTA 6 crashes into top end of music chart after its record launch",
+      "link": "https://www.bbc.co.uk/news/articles/ckp80d8vz1ego"
     }
   ],
   "liveUpdates": [
     {
-      "time": "Nov 20, evening",
-      "headline": "Youth-led protests sweep Europe",
-      "text": "Tens of thousands of young people marched in more than 25 countries on Friday, calling for more spending on schools and public services and less on the military, with the largest marches in Italy and Germany. Organizers say the demonstrations will continue through the weekend."
+      "time": "Nov 27, 18:21",
+      "headline": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
+      "text": "Ukraine's president voices frustration with US and says it is not pushing Russia hard enough in peace talks to end the war."
+    },
+    {
+      "time": "Nov 27",
+      "headline": "Russia’s hybrid war on Europe evolving, but failing: IISS",
+      "text": "Growing attacks have damaged European infrastructure, but have not reduced support for Ukraine, analysis says."
+    },
+    {
+      "time": "Nov 26",
+      "headline": "UK to invest £9.5m in Ukraine windfarm to bolster war-hit energy system",
+      "text": "Project capable of powering 300,000 homes, with Britain having offered more than £770m to rebuild energy sector."
+    },
+    {
+      "time": "Nov 25",
+      "headline": "Czech Republic ready to support Poland after Russian airspace violations",
+      "text": "Prague's offer comes after Russian weapons entered Polish airspace during a large-scale attack on western Ukraine on November 20."
+    },
+    {
+      "time": "Nov 24",
+      "headline": "Italy watches worryingly as Ukraine strikes Russian boats in Libya",
+      "text": "Ukraine's naval drone strikes on two Russian vessels in and off Benghazi have alarmed Italy, amid fears that the attacks could reignite Libya's civil war."
+    },
+    {
+      "time": "Nov 23",
+      "headline": "EU plans sports ban in sweeping new Russia sanctions proposal",
+      "text": "Proposed sanctions aim to curb Russian crypto financing and 'propaganda' in sports."
+    },
+    {
+      "time": "Nov 23",
+      "headline": "EU goes after Russia's banks, soldiers and athletes in new sanctions package",
+      "text": "Russian banks, crypto, \"shadow fleet\", oil refineries, soldiers and athletes are all targeted in the latest sanctions package proposed by Brussels."
+    },
+    {
+      "time": "Nov 23",
+      "headline": "Sanctions, summits and strikes: The war in Ukraine shows no sign of slowing",
+      "text": "Sanctions, summits and strikes continue side by side as the war in Ukraine shows no sign of slowing, Euronews reports."
     },
     {
       "time": "Nov 20, afternoon",
@@ -3469,41 +3613,6 @@ window.WWN_DEFAULT_CONTENT = {
       "time": "Nov 20, morning",
       "headline": "Coalition allies pledge €70bn for Ukraine in 2027",
       "text": "The 40 countries in the “coalition of the willing” meeting in Berlin committed to honouring NATO’s pledge of €70 billion in military aid to Ukraine this year, and to keeping it at at least that level in 2027, despite pressure from Washington."
-    },
-    {
-      "time": "Nov 20, 10:33",
-      "headline": "Embassies damaged in Kyiv barrage",
-      "text": "A daytime Russian barrage blew out windows at the Austrian and Dutch missions in Kyiv and damaged a cathedral, prompting Brussels to summon Moscow's envoy."
-    },
-    {
-      "time": "Nov 20, 09:15",
-      "headline": "Netherlands summons Russian ambassador",
-      "text": "The Dutch government summoned Russia's ambassador after its embassy in Kyiv suffered minor damage when a projectile landed near the building. No one was hurt."
-    },
-    {
-      "time": "Nov 20, 08:00",
-      "headline": "Poland scrambles jets as airspace is violated",
-      "text": "Poland said fighter jets were scrambled and Patriot air defense systems activated early on Friday after objects flew into and fell inside Polish territory during the overnight attack."
-    },
-    {
-      "time": "Nov 20, 06:30",
-      "headline": "More than 110 missiles fired at Ukraine overnight",
-      "text": "Ukraine said Russia fired at least 110 missiles and around 400 drones overnight, an unusually large number even amid frequent aerial assaults. At least nine people were killed and 28 injured, and three of Kyiv's bridges were damaged."
-    },
-    {
-      "time": "Nov 19, 22:10",
-      "headline": "Trump tells European leaders Putin is “tired” and ready for a deal",
-      "text": "After the Shenzhen talks, President Trump spoke with the “coalition of the willing” in Berlin. According to a senior European official, his main message was that “Putin is tired, wants to end this, ready for a deal.”"
-    },
-    {
-      "time": "Nov 19, 18:40",
-      "headline": "E3 leaders call for winter energy ceasefire",
-      "text": "The leaders of the UK, Germany and France and Ukraine called on Russia to agree to a ceasefire on attacks on energy infrastructure for the duration of winter."
-    },
-    {
-      "time": "Nov 19, 17:00",
-      "headline": "Trilateral talks end without breakthrough",
-      "text": "Trump, Xi and Putin met in Shenzhen for just over an hour. A joint declaration covered UN reform, nuclear weapons and oil production, but produced no breakthrough on Ukraine and no official declaration was released."
     }
   ],
   "mostRead": [
