@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "slug": "spanish-pm-and-rivals-rally-supporters-in-final-pitch-for",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Spanish PM and rivals rally supporters in final pitch for votes",
+      "dek": "Prime Minister Pedro Sánchez wants to defy the polls, and his main rivals accuse him of not telling the truth and of \"betrayal\".",
+      "date": "November 27, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/c8wy5p4gdnwvo",
+      "body": [
+        "Prime Minister Pedro Sánchez wants to defy the polls, and his main rivals accuse him of not telling the truth and of \"betrayal\"."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/1bb1/live/dd63ff10-ea99-11f1-a094-5fdc692f3e33.jpg",
+      "imageCaption": "Photo: BBC",
+      "auto": true,
+      "reviewed": false
+    },
+    {
       "slug": "europe-tonight-how-do-opposing-spanish-parties-expect-to",
       "sections": [
         "europe",
@@ -3523,44 +3543,44 @@
   ],
   "justIn": [
     {
+      "time": "27 Nov, 21:45",
+      "text": "Uganda begins Africa's first mRNA Ebola vaccine trial",
+      "link": "https://www.euronews.com/2026/11/27/uganda-begins-africas-first-mrna-ebola-vaccine-trial"
+    },
+    {
+      "time": "27 Nov, 21:40",
+      "text": "Spanish PM and rivals rally supporters in final pitch for votes",
+      "link": "articles/spanish-pm-and-rivals-rally-supporters-in-final-pitch-for.html"
+    },
+    {
+      "time": "27 Nov, 21:26",
+      "text": "Charity founded in Captain Tom's name bids to be struck off",
+      "link": "https://www.bbc.co.uk/news/articles/c6jeqyqzy1y7o"
+    },
+    {
+      "time": "27 Nov, 21:24",
+      "text": "‘Abusive and insulting to Canadians’: campaign to oust US ambassador presented to parliament",
+      "link": "https://www.theguardian.com/world/2026/nov/27/pete-hoekstra-canada-us-ambassador-petition"
+    },
+    {
+      "time": "27 Nov, 21:11",
+      "text": "Why are families going hungry in northern Yemen even where food is on sale?",
+      "link": "https://www.aljazeera.com/economy/2026/11/27/why-are-families-going-hungry-in-northern-yemen-even-where-food-is-on-sale"
+    },
+    {
+      "time": "27 Nov, 21:09",
+      "text": "Ukraine submits Black Sea ceasefire offer, awaits Russian response",
+      "link": "https://www.france24.com/en/europe/20261127-ukraine-submits-black-sea-ceasefire-offer-awaits-russian-response"
+    },
+    {
       "time": "27 Nov, 20:47",
       "text": "Europe Tonight: How do opposing Spanish parties expect to address housing or imiigration issues?",
       "link": "articles/europe-tonight-how-do-opposing-spanish-parties-expect-to.html"
     },
     {
-      "time": "27 Nov, 20:43",
-      "text": "Spanish elections: 'Right-wing voters extremely mobilised, left-wing voters not mobilised enough'",
-      "link": "https://www.france24.com/en/tv-shows/spotlight/20261127-spanish-elections-right-wing-voters-extremely-mobilised-left-wing-voters-not-mobilised-enough"
-    },
-    {
-      "time": "27 Nov, 20:43",
-      "text": "Canada: Supreme Court largely upholds Quebec secularism bill",
-      "link": "https://www.dw.com/en/canada-supreme-court-largely-upholds-quebec-secularism-bill/a-80082571"
-    },
-    {
-      "time": "27 Nov, 20:42",
-      "text": "Millions lose access to benefits and pensions services after 'cyber incident'",
-      "link": "https://www.bbc.co.uk/news/articles/c8wy5p6pv2e2o"
-    },
-    {
-      "time": "27 Nov, 20:34",
-      "text": "Capsized tanker carrying 7,000 tonnes of diesel to be towed away from Ibiza",
-      "link": "https://www.bbc.co.uk/news/articles/cvrlgz6g0ekgo"
-    },
-    {
-      "time": "27 Nov, 20:19",
-      "text": "‘Abusive and insulting to Canadians’: campaign to oust US ambassador presented to parliament",
-      "link": "https://www.theguardian.com/world/2026/nov/27/pete-hoekstra-canada-us-ambassador-petition"
-    },
-    {
-      "time": "27 Nov, 20:14",
-      "text": "The End of Spain’s ‘Frankenstein’ Coalition? Presidential Plotting in Paris, Kushner & Kremlin Trap",
-      "link": "https://www.france24.com/en/tv-shows/the-world-this-week/20261127-the-end-of-spain-s-frankenstein-coalition-presidential-plotting-in-paris-kushner-kremlin-trap"
-    },
-    {
-      "time": "27 Nov, 20:09",
-      "text": "Spanish PM and rivals rally supporters in final pitch for votes",
-      "link": "https://www.bbc.co.uk/news/articles/c8wy5p4gdnwvo"
+      "time": "27 Nov, 20:44",
+      "text": "Venezuela to repeal law that bans opposition figures from office",
+      "link": "https://www.aljazeera.com/news/2026/11/27/venezuela-to-repeal-law-that-bans-opposition-figures-from-office"
     }
   ],
   "liveUpdates": [
@@ -3622,9 +3642,9 @@
     "risks-of-child-marriage-in-iran-complicated-by-war",
     "russias-hybrid-war-on-europe-evolving-but-failing-iiss"
   ],
-  "heroSlug": "europe-tonight-how-do-opposing-spanish-parties-expect-to",
+  "heroSlug": "spanish-pm-and-rivals-rally-supporters-in-final-pitch-for",
   "breaking": {
-    "text": "Europe Tonight: How do opposing Spanish parties expect to address housing or imiigration issues?",
-    "link": "articles/europe-tonight-how-do-opposing-spanish-parties-expect-to.html"
+    "text": "Spanish PM and rivals rally supporters in final pitch for votes",
+    "link": "articles/spanish-pm-and-rivals-rally-supporters-in-final-pitch-for.html"
   }
 }
