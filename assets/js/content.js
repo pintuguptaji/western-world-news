@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "half-of-new-hiv-diagnoses-in-greece-are-made-late-early"
+    "heroSlug": "shanghai-named-the-world-s-best-shopping-city-and-europe"
   },
   "breaking": {
-    "text": "Half of new HIV diagnoses in Greece are made late, early data shows",
-    "link": "articles/half-of-new-hiv-diagnoses-in-greece-are-made-late-early.html"
+    "text": "Shanghai named the world's best shopping city, and Europe has just six entries in the top 20",
+    "link": "articles/shanghai-named-the-world-s-best-shopping-city-and-europe.html"
   },
   "articles": [
+    {
+      "slug": "shanghai-named-the-world-s-best-shopping-city-and-europe",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Shanghai named the world's best shopping city, and Europe has just six entries in the top 20",
+      "dek": "Europe may be home to three of the world’s fashion capitals, but it has just six cities in Time Out’s top 20 shopping destinations ranking, with only London and Copenhagen making the top 10.",
+      "date": "November 27, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/27/shanghai-named-the-worlds-best-shopping-city-and-europe-has-just-six-entries-in-the-top-20",
+      "body": [
+        "Europe may be home to three of the world’s fashion capitals, but it has just six cities in Time Out’s top 20 shopping destinations ranking, with only London and Copenhagen making the top 10."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/01/08/56/696x392_cmsv2_e442923d-b6f3-5cd1-97c0-6be15f7f67bb-10010856.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "half-of-new-hiv-diagnoses-in-greece-are-made-late-early",
       "sections": [
@@ -3034,43 +3053,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 27, 08:05",
-      "text": "Half of new HIV diagnoses in Greece are made late, early data shows",
+      "time": "Nov 27, 09:51",
+      "text": "Shanghai named the world's best shopping city, and Europe has just six entries in the top 20",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 08:03",
-      "text": "Europe Today: EU leaders unable to find an agreement on EU's budget",
+      "time": "Nov 27, 08:39",
+      "text": "Labor’s split over Rosebank oilfield exposed by letter from nearly 100 MPs",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 07:00",
-      "text": "Natural England objected to a datacentre. Weeks later ministers threatened to abolish the agency",
+      "time": "Nov 27, 08:39",
+      "text": "Costa Rica denies entry to UN’s Albanese over ‘links to terrorist acts’",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 06:54",
-      "text": "Grace Tame calls out ex-Murdoch media executive who said she ‘must be looking to be raped again’",
+      "time": "Nov 27, 08:37",
+      "text": "‘Will I get taller?’: Gaza’s children suffer stunting amid war, blockade",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 06:54",
-      "text": "Messi confirms Tevez testimonial as Ronaldo showdown in offing",
+      "time": "Nov 27, 08:33",
+      "text": "At critical juncture, Friedrich Merz finds Germans’ support for Ukraine wavering",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 06:46",
-      "text": "Israel's Eisenkot agrees to coalition deal with left-wing Democrats",
+      "time": "Nov 27, 09:25",
+      "text": "Germany and Austria push for European ownership of TikTok",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 07:44",
-      "text": "Germany's IG Metall reaches pay deal amid industrial crisis",
+      "time": "Nov 27, 09:18",
+      "text": "Denmark arrests teenager over data breach affecting 11,000 people",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 06:37",
-      "text": "French, Bulgarian presidents slam Marseille violence, five fans in hospital",
+      "time": "Nov 27, 08:17",
+      "text": "Banks may pass on £1.5bn tax rise to customers, warns Bank of England chief",
       "link": "live.html"
     }
   ],
