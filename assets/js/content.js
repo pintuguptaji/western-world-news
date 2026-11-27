@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "shanghai-named-the-world-s-best-shopping-city-and-europe"
+    "heroSlug": "israeli-justice-system-at-tipping-point-as-judges-call-for"
   },
   "breaking": {
-    "text": "Shanghai named the world's best shopping city, and Europe has just six entries in the top 20",
-    "link": "articles/shanghai-named-the-world-s-best-shopping-city-and-europe.html"
+    "text": "Israeli justice system at tipping point as judges call for end to Netanyahu trial",
+    "link": "articles/israeli-justice-system-at-tipping-point-as-judges-call-for.html"
   },
   "articles": [
+    {
+      "slug": "israeli-justice-system-at-tipping-point-as-judges-call-for",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Israeli justice system at tipping point as judges call for end to Netanyahu trial",
+      "dek": "Dropping of corruption charges against PM after highly unusual intervention could set damaging precedent.",
+      "date": "November 27, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/nov/27/israeli-justice-system-judges-call-drop-netanyahu-charges",
+      "body": [
+        "Dropping of corruption charges against PM after highly unusual intervention could set damaging precedent. The Israeli judges presiding over Benjamin Netanyahu’s corruption trial have called on prosecutors to end proceedings, a highly unusual intervention that leaves the attorney general facing a momentous political decision."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/4b6175712949d01a8b832dc4670e3721e65a6c17/221_138_2799_2239/master/2799.jpg?width=700&quality=85&auto=format&fit=max&s=8f29209c13989a3009f726f2cc143bfc",
+      "imageCaption": "Photo: The Guardian"
+    },
     {
       "slug": "shanghai-named-the-world-s-best-shopping-city-and-europe",
       "sections": [
@@ -3053,43 +3072,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 27, 09:51",
-      "text": "Shanghai named the world's best shopping city, and Europe has just six entries in the top 20",
+      "time": "Nov 27, 10:48",
+      "text": "Israeli justice system at tipping point as judges call for end to Netanyahu trial",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 08:39",
-      "text": "Labor’s split over Rosebank oilfield exposed by letter from nearly 100 MPs",
+      "time": "Nov 27, 10:46",
+      "text": "For whom the bells troll: French town divided over church’s night-time chimes",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 08:39",
-      "text": "Costa Rica denies entry to UN’s Albanese over ‘links to terrorist acts’",
+      "time": "Nov 27, 11:41",
+      "text": "NATO jets scrambled after drone briefly enters Latvian airspace",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 08:37",
-      "text": "‘Will I get taller?’: Gaza’s children suffer stunting amid war, blockade",
+      "time": "Nov 27, 11:37",
+      "text": "German sofware giant SAP weighs at least 10,000 job cuts amid AI shift, reports say",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 08:33",
-      "text": "At critical juncture, Friedrich Merz finds Germans’ support for Ukraine wavering",
+      "time": "Nov 27, 10:31",
+      "text": "Australia sanctions suspects in Iran-linked anti-Semitic attacks",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 09:25",
-      "text": "Germany and Austria push for European ownership of TikTok",
+      "time": "Nov 27, 10:28",
+      "text": "Ex media executive admits saying Australian child sex abuse survivor 'looking to be raped again'",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 09:18",
-      "text": "Denmark arrests teenager over data breach affecting 11,000 people",
+      "time": "Nov 27, 10:26",
+      "text": "Hundreds of thousands still without power after storms hit US on Thanksgiving",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 08:17",
-      "text": "Banks may pass on £1.5bn tax rise to customers, warns Bank of England chief",
+      "time": "Nov 27, 10:22",
+      "text": "Live: Trump calls on Putin to end all 'military aggression' against Europe",
       "link": "live.html"
     }
   ],
