@@ -9,13 +9,33 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "us-military-says-it-disabled-merchant-ship-trying-to-breach"
+    "heroSlug": "openai-countersues-apple-for-allegedly-stealing-trade"
   },
   "breaking": {
-    "text": "US military says it disabled merchant ship trying to breach Iran blockade",
-    "link": "articles/us-military-says-it-disabled-merchant-ship-trying-to-breach.html"
+    "text": "OpenAI countersues Apple for allegedly stealing trade secrets",
+    "link": "articles/openai-countersues-apple-for-allegedly-stealing-trade.html"
   },
   "articles": [
+    {
+      "slug": "openai-countersues-apple-for-allegedly-stealing-trade",
+      "sections": [
+        "technology",
+        "world"
+      ],
+      "section": "technology",
+      "headline": "OpenAI countersues Apple for allegedly stealing trade secrets",
+      "dek": "Lawsuit also alleging pressure on hardware suppliers comes after Apple sued OpenAI for allegedly poaching employees.",
+      "date": "November 27, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/technology/2026/nov/27/openai-countersues-apple-trade-secrets",
+      "body": [
+        "Lawsuit also alleging pressure on hardware suppliers comes after Apple sued OpenAI for allegedly poaching employees. OpenAI sued Apple on Friday, accusing the company of ⁠stealing its trade secrets ​and discouraging hardware suppliers from working on future OpenAI devices. The suit, filed in northern California federal court, comes after Apple sued OpenAI for allegedly poaching its employees to gain access to its technology. Continue reading.."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/548f2774750f067b58b8293df2904e3bc1888919/417_0_4167_3335/master/4167.jpg?width=700&quality=85&auto=format&fit=max&s=818131de25d6aa917557056360ec5f95",
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": false
+    },
     {
       "slug": "us-military-says-it-disabled-merchant-ship-trying-to-breach",
       "sections": [
@@ -3601,6 +3621,26 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 27, 23:28",
+      "text": "OpenAI countersues Apple for allegedly stealing trade secrets",
+      "link": "articles/openai-countersues-apple-for-allegedly-stealing-trade.html"
+    },
+    {
+      "time": "Nov 27, 23:17",
+      "text": "US disables ship in Gulf of Oman under Iran blockade",
+      "link": "https://www.dw.com/en/us-disables-ship-in-gulf-of-oman-under-iran-blockade/a-80082950"
+    },
+    {
+      "time": "Nov 27, 23:09",
+      "text": "Will Taiwan vote to revive nuclear power, and why does that matter for AI?",
+      "link": "https://www.aljazeera.com/news/2026/11/27/will-taiwan-vote-to-revive-nuclear-power-and-why-does-that-matter-for-ai"
+    },
+    {
+      "time": "Nov 27, 23:02",
+      "text": "Behind China's spectacular rise, voices who defied it say they are being drowned out",
+      "link": "https://www.bbc.co.uk/news/articles/cme3d4y094x7o"
+    },
+    {
       "time": "Nov 27, 22:33",
       "text": "Kenyan cult leader guilty of manslaughter more than 123 starvation deaths",
       "link": "https://www.aljazeera.com/news/2026/11/27/kenyan-cult-leader-guilty-of-manslaughter-more-than-123-starvation-deaths"
@@ -3619,26 +3659,6 @@ window.WWN_DEFAULT_CONTENT = {
       "time": "Nov 27, 22:03",
       "text": "Prosecutors seek 25-year prison term for 'poison seller' Kenneth Law",
       "link": "https://www.bbc.co.uk/news/articles/cmx2898wq2qjo"
-    },
-    {
-      "time": "Nov 27, 22:03",
-      "text": "Catherine's emotional cancer documentary strips away the stiff upper lip",
-      "link": "https://www.bbc.co.uk/news/articles/c6zxvy9j0wpjo"
-    },
-    {
-      "time": "Nov 27, 22:00",
-      "text": "S&P revises France's outlook from 'stable' to 'negative'",
-      "link": "https://www.france24.com/en/france/20261127-s-p-revises-france-s-outlook-from-stable-to-negative"
-    },
-    {
-      "time": "Nov 27, 21:55",
-      "text": "Spanish PM and rivals rally supporters in final pitch for votes",
-      "link": "articles/spanish-pm-and-rivals-rally-supporters-in-final-pitch-for.html"
-    },
-    {
-      "time": "Nov 27, 21:45",
-      "text": "Uganda begins Africa's first mRNA Ebola vaccine trial",
-      "link": "https://www.euronews.com/2026/11/27/uganda-begins-africas-first-mrna-ebola-vaccine-trial"
     }
   ],
   "liveUpdates": [
