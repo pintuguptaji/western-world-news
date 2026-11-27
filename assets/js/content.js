@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "norse-atlantic-airways-files-for-bankruptcy-and-cancels-all"
+    "heroSlug": "big-eu-defense-projects-under-threat-from-proposed-budget"
   },
   "breaking": {
-    "text": "Norse Atlantic Airways files for bankruptcy and cancels all future flights",
-    "link": "articles/norse-atlantic-airways-files-for-bankruptcy-and-cancels-all.html"
+    "text": "Big EU defense projects under threat from proposed budget cuts: Commissioner Andrius Kubilius",
+    "link": "articles/big-eu-defense-projects-under-threat-from-proposed-budget.html"
   },
   "articles": [
+    {
+      "slug": "big-eu-defense-projects-under-threat-from-proposed-budget",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Big EU defense projects under threat from proposed budget cuts: Commissioner Andrius Kubilius",
+      "dek": "We speak to the EU's Commissioner for Defense and Space, Andrius Kubilius. The former prime minister of Lithuania, who grew up during the Soviet era, tells us how he sees the confrontation between Europe and Russia.",
+      "date": "November 27, 2026",
+      "source": "France 24",
+      "source_url": "https://www.france24.com/en/tv-shows/talking-europe/20261127-big-eu-defense-projects-under-threat-from-proposed-budget-cuts-commissioner-andrius-kubilius",
+      "body": [
+        "We speak to the EU's Commissioner for Defense and Space, Andrius Kubilius. The former prime minister of Lithuania, who grew up during the Soviet era, tells us how he sees the confrontation between Europe and Russia."
+      ],
+      "related": [],
+      "image": "https://s.france24.com/media/display/d8b20618-ea78-11f1-9216-f9cf020caef6/w:1024/p:16x9/PHOTO-ANDRIUS-KUBILIUS.jpg",
+      "imageCaption": "Photo: France 24"
+    },
     {
       "slug": "norse-atlantic-airways-files-for-bankruptcy-and-cancels-all",
       "sections": [
@@ -3146,43 +3164,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 27, 15:54",
-      "text": "Police look for more than 100 gig-goers to help Co-op Live probe",
+      "time": "Nov 27, 17:03",
+      "text": "Big EU defense projects under threat from proposed budget cuts: Commissioner Andrius Kubilius",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 15:48",
-      "text": "Dutch authorities seize 26 critically endangered turtles from luggage of passenger bound for Hong Kong",
+      "time": "Nov 27, 17:03",
+      "text": "Body found in woodland confirmed as missing Kelsey Hunter",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 15:40",
-      "text": "Norse Atlantic Airways files for bankruptcy and cancels all future flights",
+      "time": "Nov 27, 17:02",
+      "text": "From cyberbullying to extremist content, can EU Kids Act protect minors online?",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 15:38",
+      "time": "Nov 27, 17:59",
+      "text": "Italian MPs' EU committee questions the core of the hunting reform",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 27, 17:58",
+      "text": "Europe Tonight: EU budget summit collapses as Spain braces for vote and UK unveils deal",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 27, 16:53",
       "text": "Canada's top court largely upholds Quebec ban on religious symbols for public servants",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 16:37",
-      "text": "By Putin's logic, Russia should be returned to Mongolia, Belarus' Lukashenka says",
+      "time": "Nov 27, 16:53",
+      "text": "France seeks German man in Channel migrant boat probe",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 15:34",
-      "text": "British Gas owner seeks urgent government talks over future of storage facility",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 27, 15:26",
-      "text": "Serbia’s student-led movement nominates chemistry professor for presidency",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 27, 15:25",
-      "text": "Newly released documents suggest CIA did more post-9/11 waterboarding than previously acknowledged",
+      "time": "Nov 27, 16:51",
+      "text": "Divisions deepen between EU member states after tense budget summit",
       "link": "live.html"
     }
   ],
