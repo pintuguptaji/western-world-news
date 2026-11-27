@@ -110,8 +110,8 @@ exists; until then they are clearly a design element, not a video player.
 - **Newsletter form is a front-end demo only.** It shows a thank-you
   message but sends nothing. Connect a mailing service (e.g. Buttondown,
   Mailchimp, ConvertKit) before launch.
-- **Contact email addresses** (tips@ / ads@westernworldnews.com) are
-  placeholders — set up the mailboxes first.
+- **Contact email addresses**: lurenmira@gmail.com (used for both news tips
+  and advertising inquiries).
 - **Privacy policy** is complete, including the Google AdSense and third-party cookies disclosure.
 - **Domain**: westernworldnews.com — live since 20 Nov 2026 (GitHub Pages, DNS via Hostinger).
 - **Ads**: none included yet. Add ad slots only after traffic exists.

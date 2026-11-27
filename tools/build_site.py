@@ -2184,8 +2184,8 @@ exists; until then they are clearly a design element, not a video player.
 - **Newsletter form is a front-end demo only.** It shows a thank-you
   message but sends nothing. Connect a mailing service (e.g. Buttondown,
   Mailchimp, ConvertKit) before launch.
-- **Contact email addresses** (tips@ / ads@westernworldnews.com) are
-  placeholders — set up the mailboxes first.
+- **Contact email addresses**: lurenmira@gmail.com (used for both news tips
+  and advertising inquiries).
 - **Privacy policy** is complete, including the Google AdSense and third-party cookies disclosure.
 - **Domain**: westernworldnews.com \u2014 live since 20 Nov 2026 (GitHub Pages, DNS via Hostinger).
 - **Ads**: none included yet. Add ad slots only after traffic exists.
@@ -2303,9 +2303,9 @@ def main():
         "contact", "Contact Western World News",
         "Contact Western World News: news tips, corrections and advertising inquiries.",
         "Contact",
-        ["News tips, corrections and general inquiries: tips@westernworldnews.com (mailbox to be set up. See README.md).",
+        ["News tips, corrections and general inquiries: lurenmira@gmail.com.",
          "For corrections, please include the story headline and the fact to be corrected. We correct errors promptly and transparently.",
-         "Advertising inquiries: ads@westernworldnews.com (mailbox to be set up. See README.md)."])))
+         "Advertising inquiries: lurenmira@gmail.com."])))
     files.append(write("privacy.html", build_info(
         "privacy", "Privacy policy | Western World News",
         "Privacy policy for Western World News: what we collect, cookies, and how advertising works.",
