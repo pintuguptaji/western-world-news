@@ -9,13 +9,33 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "spanish-pm-and-rivals-rally-supporters-in-final-pitch-for"
+    "heroSlug": "us-military-says-it-disabled-merchant-ship-trying-to-breach"
   },
   "breaking": {
-    "text": "Spanish PM and rivals rally supporters in final pitch for votes",
-    "link": "articles/spanish-pm-and-rivals-rally-supporters-in-final-pitch-for.html"
+    "text": "US military says it disabled merchant ship trying to breach Iran blockade",
+    "link": "articles/us-military-says-it-disabled-merchant-ship-trying-to-breach.html"
   },
   "articles": [
+    {
+      "slug": "us-military-says-it-disabled-merchant-ship-trying-to-breach",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "US military says it disabled merchant ship trying to breach Iran blockade",
+      "dek": "The US military says it disabled the Palau-flagged ship’s propulsion but its crew was unharmed.",
+      "date": "November 27, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/11/27/us-military-says-it-disabled-merchant-ship-trying-to-breach-iran-blockade",
+      "body": [
+        "The US military says it disabled the Palau-flagged ship’s propulsion but its crew was unharmed."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": "",
+      "reviewed": false
+    },
     {
       "slug": "spanish-pm-and-rivals-rally-supporters-in-final-pitch-for",
       "sections": [
@@ -3581,44 +3601,44 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 27, 21:45",
-      "text": "Uganda begins Africa's first mRNA Ebola vaccine trial",
-      "link": "https://www.euronews.com/2026/11/27/uganda-begins-africas-first-mrna-ebola-vaccine-trial"
+      "time": "Nov 27, 22:33",
+      "text": "Kenyan cult leader guilty of manslaughter more than 123 starvation deaths",
+      "link": "https://www.aljazeera.com/news/2026/11/27/kenyan-cult-leader-guilty-of-manslaughter-more-than-123-starvation-deaths"
     },
     {
-      "time": "Nov 27, 21:40",
+      "time": "Nov 27, 22:22",
+      "text": "US military says it disabled merchant ship trying to breach Iran blockade",
+      "link": "articles/us-military-says-it-disabled-merchant-ship-trying-to-breach.html"
+    },
+    {
+      "time": "Nov 27, 22:14",
+      "text": "Thousands still without power after storms that snarled Thanksgiving travel",
+      "link": "https://www.theguardian.com/us-news/2026/nov/27/heavy-rain-wind-flooding-us-thanksgiving"
+    },
+    {
+      "time": "Nov 27, 22:03",
+      "text": "Prosecutors seek 25-year prison term for 'poison seller' Kenneth Law",
+      "link": "https://www.bbc.co.uk/news/articles/cmx2898wq2qjo"
+    },
+    {
+      "time": "Nov 27, 22:03",
+      "text": "Catherine's emotional cancer documentary strips away the stiff upper lip",
+      "link": "https://www.bbc.co.uk/news/articles/c6zxvy9j0wpjo"
+    },
+    {
+      "time": "Nov 27, 22:00",
+      "text": "S&P revises France's outlook from 'stable' to 'negative'",
+      "link": "https://www.france24.com/en/france/20261127-s-p-revises-france-s-outlook-from-stable-to-negative"
+    },
+    {
+      "time": "Nov 27, 21:55",
       "text": "Spanish PM and rivals rally supporters in final pitch for votes",
       "link": "articles/spanish-pm-and-rivals-rally-supporters-in-final-pitch-for.html"
     },
     {
-      "time": "Nov 27, 21:26",
-      "text": "Charity founded in Captain Tom's name bids to be struck off",
-      "link": "https://www.bbc.co.uk/news/articles/c6jeqyqzy1y7o"
-    },
-    {
-      "time": "Nov 27, 21:24",
-      "text": "‘Abusive and insulting to Canadians’: campaign to oust US ambassador presented to parliament",
-      "link": "https://www.theguardian.com/world/2026/nov/27/pete-hoekstra-canada-us-ambassador-petition"
-    },
-    {
-      "time": "Nov 27, 21:11",
-      "text": "Why are families going hungry in northern Yemen even where food is on sale?",
-      "link": "https://www.aljazeera.com/economy/2026/11/27/why-are-families-going-hungry-in-northern-yemen-even-where-food-is-on-sale"
-    },
-    {
-      "time": "Nov 27, 21:09",
-      "text": "Ukraine submits Black Sea ceasefire offer, awaits Russian response",
-      "link": "https://www.france24.com/en/europe/20261127-ukraine-submits-black-sea-ceasefire-offer-awaits-russian-response"
-    },
-    {
-      "time": "Nov 27, 20:47",
-      "text": "Europe Tonight: How do opposing Spanish parties expect to address housing or imiigration issues?",
-      "link": "articles/europe-tonight-how-do-opposing-spanish-parties-expect-to.html"
-    },
-    {
-      "time": "Nov 27, 20:44",
-      "text": "Venezuela to repeal law that bans opposition figures from office",
-      "link": "https://www.aljazeera.com/news/2026/11/27/venezuela-to-repeal-law-that-bans-opposition-figures-from-office"
+      "time": "Nov 27, 21:45",
+      "text": "Uganda begins Africa's first mRNA Ebola vaccine trial",
+      "link": "https://www.euronews.com/2026/11/27/uganda-begins-africas-first-mrna-ebola-vaccine-trial"
     }
   ],
   "liveUpdates": [
