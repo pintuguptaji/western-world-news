@@ -4,3 +4,5 @@ Disallow: /admin.html
 
 Sitemap: https://westernworldnews.com/sitemap.xml
 Sitemap: https://westernworldnews.com/news-sitemap.xml
+Sitemap: https://westernworldnews.com/post-sitemap.xml
+Sitemap: https://westernworldnews.com/page-sitemap.xml

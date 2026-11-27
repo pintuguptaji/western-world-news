@@ -1,7 +1,9 @@
-// Western World News: front-end behavior (v2).
+// Western World News: front-end behavior (v4 redesign).
 // Renders dynamic regions from the content store (assets/js/content.js),
 // so admin edits in localStorage apply across the whole site.
 // Static HTML in each page is the SEO fallback when JS is unavailable.
+// Newsletter forms post straight to Buttondown (or are disabled while the
+// Buttondown username is unset): this script never fakes a subscription.
 (function () {
   function $(s, r) { return (r || document).querySelector(s); }
   function $all(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
@@ -22,23 +24,106 @@
   function articleUrl(slug) { return prefix() + "articles/" + slug + ".html"; }
   function sectionLabel(slug) {
     var map = { world: "World", europe: "Europe", us: "US", politics: "Politics",
-      "war-conflict": "War & Conflict", "business-finance": "Business & Finance",
-      sport: "Sport", culture: "Culture", live: "Live" };
+      "war-conflict": "War & Conflict", "business-finance": "Business",
+      technology: "Technology", sport: "Sport", culture: "Culture", live: "Live" };
     return map[slug] || slug;
   }
-  function tileFor(a, w) {
+  function sectionPage(slug) {
+    var map = { world: "world.html", europe: "europe.html", us: "us.html",
+      politics: "politics.html", "war-conflict": "war-conflict.html",
+      "business-finance": "business-finance.html", technology: "technology.html",
+      sport: "sport.html", culture: "culture.html" };
+    return map[slug] || "world.html";
+  }
+  function tileFor(a, w, withCap) {
+    w = w || 800;
+    var h = Math.round(w * 9 / 16);
     if (a.image) {
-      return '<figure><img src="' + esc(a.image) + '" alt="' + esc(a.headline) +
-        '" loading="lazy"><figcaption>' + esc(a.imageCaption || "Photo: Unsplash") + "</figcaption></figure>";
+      var img = '<img src="' + esc(a.image) + '" alt="' + esc(a.headline) +
+        '" width="' + w + '" height="' + h + '" loading="lazy">';
+      if (withCap === false) return "<figure>" + img + "</figure>";
+      return "<figure>" + img + "<figcaption>" +
+        esc(a.imageCaption || "Photo: Unsplash") + "</figcaption></figure>";
     }
-    return '<div class="art small" role="img" aria-label="Graphic placeholder"><span class="monogram">WWN</span>' +
+    return '<div class="art" role="img" aria-label="Graphic placeholder"><span class="monogram">WWN</span>' +
       '<span class="art-label">' + esc(sectionLabel(a.section)) + "</span></div>";
+  }
+  function cardFor(a) {
+    return '<article class="card">' + tileFor(a, 800) +
+      '<p><span class="kicker">' + esc(sectionLabel(a.section)) + "</span></p>" +
+      '<h3><a href="' + articleUrl(a.slug) + '">' + esc(a.headline) + "</a></h3>" +
+      "<p>" + esc(a.dek) + "</p>" +
+      '<p class="byline"><time>' + esc(a.date) + "</time> &middot; Source: " + esc(a.source) + "</p></article>";
+  }
+  function leadFor(a) {
+    return '<article class="lead-card">' + tileFor(a, 1200) + "<div>" +
+      '<p><span class="kicker">' + esc(sectionLabel(a.section)) + "</span></p>" +
+      '<h3><a href="' + articleUrl(a.slug) + '">' + esc(a.headline) + "</a></h3>" +
+      "<p>" + esc(a.dek) + "</p>" +
+      '<p class="byline"><time>' + esc(a.date) + "</time> &middot; Source: " + esc(a.source) + "</p></div></article>";
+  }
+  function miniListFor(list) {
+    return '<ul class="mini-list">' + list.map(function (a) {
+      return '<li><a href="' + articleUrl(a.slug) + '">' + esc(a.headline) + "</a>" +
+        "<small>" + esc(sectionLabel(a.section)) + " &middot; " + esc(a.date) + "</small></li>";
+    }).join("") + "</ul>";
   }
 
   var store = window.WWNStore ? window.WWNStore.get() : null;
   if (!store) return;
   var bySlug = {};
   store.articles.forEach(function (a) { bySlug[a.slug] = a; });
+
+  // Load More (Latest News feed): reveal 10 hidden items per click.
+  function initLoadMore() {
+    var btn = $("#load-more"), list = $("#latest-list");
+    if (!btn || !list) return;
+    btn.addEventListener("click", function () {
+      var hidden = $all(".latest-hidden", list).slice(0, 10);
+      hidden.forEach(function (el) { el.classList.remove("latest-hidden"); });
+      if (!$all(".latest-hidden", list).length) btn.style.display = "none";
+    });
+    if (!$all(".latest-hidden", list).length) btn.style.display = "none";
+  }
+
+  // Category pagination: 12 cards per page, buttons + count.
+  function initPagination() {
+    var grid = $(".paginated-grid");
+    if (!grid) return;
+    var cards = $all(".card", grid);
+    var size = parseInt(grid.getAttribute("data-page-size") || "12", 10);
+    var pages = Math.max(1, Math.ceil(cards.length / size));
+    var pager = $("#pagination"), count = $("#page-count");
+    var current = 1;
+    function show(p) {
+      current = p;
+      cards.forEach(function (c, i) {
+        c.style.display = (i >= (p - 1) * size && i < p * size) ? "" : "none";
+      });
+      if (pager) {
+        var html = "";
+        html += '<button class="page-btn" data-page="prev"' + (p === 1 ? " disabled" : "") + ">&larr; Prev</button>";
+        for (var i = 1; i <= pages; i++) {
+          html += '<button class="page-btn' + (i === p ? " active" : "") + '" data-page="' + i + '">' + i + "</button>";
+        }
+        html += '<button class="page-btn" data-page="next"' + (p === pages ? " disabled" : "") + ">Next &rarr;</button>";
+        pager.innerHTML = html;
+        $all(".page-btn", pager).forEach(function (b) {
+          b.addEventListener("click", function () {
+            var v = b.getAttribute("data-page");
+            if (v === "prev") show(Math.max(1, current - 1));
+            else if (v === "next") show(Math.min(pages, current + 1));
+            else show(parseInt(v, 10));
+          });
+        });
+      }
+      if (count) {
+        var from = (p - 1) * size + 1, to = Math.min(p * size, cards.length);
+        count.textContent = "Showing " + from + "-" + to + " of " + cards.length + " stories";
+      }
+    }
+    show(1);
+  }
 
   document.addEventListener("DOMContentLoaded", function () {
     // Cookie consent banner.
@@ -60,21 +145,30 @@
       if (dec) dec.addEventListener("click", function () { saveChoice("declined"); });
     }
 
-    // Dateline.
+    // Dateline (US format).
     $all("[data-today]").forEach(function (el) {
-      el.textContent = new Date().toLocaleDateString("en-GB", {
-        weekday: "long", day: "numeric", month: "long", year: "numeric"
+      el.textContent = new Date().toLocaleDateString("en-US", {
+        weekday: "long", month: "long", day: "numeric", year: "numeric"
       });
     });
 
-    // Site name + tagline from settings.
+    // Site name from settings.
     $all("[data-site-name]").forEach(function (el) {
       var words = String(store.settings.siteName || "Western World News").split(" ");
       var last = words.pop();
-      el.innerHTML = esc(words.join(" ")) + ' <span class="news">' + esc(last) + "</span>";
+      el.innerHTML = esc(words.join(" ")) + ' <span>' + esc(last) + "</span>";
     });
-    $all("[data-tagline]").forEach(function (el) {
-      el.textContent = store.settings.tagline || "";
+
+    // Share links (Facebook / X) point at the current page.
+    var pageUrl = encodeURIComponent(window.location.href);
+    var pageTitle = encodeURIComponent(document.title);
+    $all('[data-share="facebook"]').forEach(function (a) {
+      a.href = "https://www.facebook.com/sharer/sharer.php?u=" + pageUrl;
+      a.target = "_blank"; a.rel = "noopener";
+    });
+    $all('[data-share="x"]').forEach(function (a) {
+      a.href = "https://twitter.com/intent/tweet?url=" + pageUrl + "&text=" + pageTitle;
+      a.target = "_blank"; a.rel = "noopener";
     });
 
     // Breaking bar.
@@ -88,70 +182,83 @@
     var track = $(".ticker-track");
     if (track && store.justIn.length) {
       var items = store.justIn.map(function (it) {
-        return '<a href="' + fixLink(it.link || "live.html") + '">' + esc(it.text) + "</a>";
+        var link = it.link || "";
+        if (link) return '<a href="' + fixLink(link) + '">' + esc(it.text) + "</a>";
+        return "<span>" + esc(it.text) + "</span>";
       }).join("");
       track.innerHTML = items + items;
     }
 
-    // Just In list.
-    var ji = $("#just-in-list");
-    if (ji) {
-      ji.innerHTML = store.justIn.map(function (it) {
-        return "<li><time>" + esc(it.time) + '</time><a href="' + fixLink(it.link || "live.html") +
-          '">' + esc(it.text) + "</a></li>";
-      }).join("");
-    }
-
-    // Hero (homepage): photo with the red headline box overlapping it.
+    // Hero (homepage): photo, kicker, headline, dek, byline.
     var heroEl = $("[data-hero]");
     var hero = bySlug[store.settings.heroSlug] || store.articles[0];
     if (heroEl && hero) {
       var heroImg = hero.image
-        ? '<figure class="hero-media"><img src="' + esc(hero.image) + '" alt="' + esc(hero.headline) + '" loading="lazy"></figure>'
+        ? '<figure class="hero-media"><img src="' + esc(hero.image) + '" alt="' + esc(hero.headline) + '" width="1600" height="900"></figure>'
         : '<div class="art" role="img" aria-label="Graphic placeholder"><span class="monogram">WWN</span><span class="art-label">' + esc(sectionLabel(hero.section)) + "</span></div>";
       var isBreaking = store.breaking && store.breaking.link && store.breaking.link.indexOf(hero.slug) !== -1;
-      var kick = isBreaking ? "Breaking" : esc(sectionLabel(hero.section)) + " &middot; Live";
+      var kick = isBreaking ? "Breaking" : esc(sectionLabel(hero.section));
+      var liveLink = "";
+      if (/ukraine|russia|kyiv|kremlin/i.test(hero.headline)) {
+        liveLink = ' &middot; <a href="' + fixLink("live.html") + '">Follow live updates</a>';
+      }
       heroEl.innerHTML =
         heroImg +
-        '<div class="hero-box"><p><span class="kicker">' + kick + "</span></p>" +
-        '<h1><a href="' + articleUrl(hero.slug) + '">' + esc(hero.headline) + "</a></h1></div>" +
+        '<p><span class="kicker">' + kick + "</span></p>" +
+        '<h1><a href="' + articleUrl(hero.slug) + '">' + esc(hero.headline) + "</a></h1>" +
         '<p class="dek">' + esc(hero.dek) + "</p>" +
         '<p class="byline"><time>' + esc(hero.date) + "</time> &middot; Source: " + esc(hero.source) +
-        ' &middot; <a href="' + fixLink("live.html") + '">Follow live updates</a></p>';
+        liveLink + "</p>";
     }
 
-    // Homepage section blocks.
-    $all("[data-section-block]").forEach(function (grid) {
-      var secs = (grid.getAttribute("data-section") || "").split(",");
+    // Homepage section blocks (lead + cards, or lead + mini-list).
+    $all("[data-section-block]").forEach(function (block) {
+      var secs = (block.getAttribute("data-section") || "").split(",");
+      var limit = parseInt(block.getAttribute("data-limit") || "4", 10);
+      var layout = block.getAttribute("data-layout") || "cards";
       var list = store.articles.filter(function (a) {
         var s = a.sections || [a.section];
         return secs.some(function (x) { return s.indexOf(x) !== -1; });
-      });
-      if (!list.length) return;
-      grid.innerHTML = list.map(function (a) {
-        return '<article class="card">' + tileFor(a) +
-          '<p><span class="kicker">' + esc(sectionLabel(a.section)) + "</span></p>" +
-          '<h3><a href="' + articleUrl(a.slug) + '">' + esc(a.headline) + "</a></h3>" +
-          "<p>" + esc(a.dek) + "</p>" +
-          '<p class="byline"><time>' + esc(a.date) + "</time> &middot; Source: " + esc(a.source) + "</p></article>";
-      }).join("");
+      }).slice(0, limit);
+      var target = $("[data-block-content]", block);
+      if (!target || !list.length) return;
+      if (layout === "split") {
+        target.innerHTML = leadFor(list[0]) + miniListFor(list.slice(1));
+      } else {
+        target.innerHTML = leadFor(list[0]) +
+          '<div class="card-grid three">' + list.slice(1).map(cardFor).join("") + "</div>";
+      }
     });
 
-    // Section pages: image-above cards.
+    // Section pages: card grid (the lead card stays server-rendered).
     $all("[data-section-list]").forEach(function (list) {
       var sec = list.getAttribute("data-section-list");
       var items = store.articles.filter(function (a) { return (a.sections || [a.section]).indexOf(sec) !== -1; });
       if (!items.length) return;
-      list.innerHTML = items.map(function (a) {
-        return '<article class="card">' + tileFor(a) +
+      list.innerHTML = items.slice(1).map(cardFor).join("");
+      initPagination();
+    });
+
+    // Latest News feed (homepage): newest 40, minus featured stories.
+    var latestList = $("#latest-list");
+    if (latestList) {
+      var exclude = (latestList.getAttribute("data-exclude") || "").split(",").filter(Boolean);
+      var latest = store.articles.filter(function (a) { return exclude.indexOf(a.slug) === -1; }).slice(0, 40);
+      latestList.innerHTML = latest.map(function (a, i) {
+        return '<li class="latest-item' + (i >= 10 ? " latest-hidden" : "") + '">' +
+          '<a class="latest-thumb" href="' + articleUrl(a.slug) + '">' + tileFor(a, 400, false) + "</a><div>" +
           '<p><span class="kicker">' + esc(sectionLabel(a.section)) + "</span></p>" +
           '<h3><a href="' + articleUrl(a.slug) + '">' + esc(a.headline) + "</a></h3>" +
           "<p>" + esc(a.dek) + "</p>" +
-          '<p class="byline"><time>' + esc(a.date) + "</time> &middot; Source: " + esc(a.source) + "</p></article>";
+          '<p class="byline"><time>' + esc(a.date) + "</time> &middot; Source: " + esc(a.source) + "</p></div></li>";
       }).join("");
-    });
+      initLoadMore();
+    } else {
+      initLoadMore();
+    }
+    initPagination();
 
-    // Most Popular: numbered list, up to 10.
+    // Trending Stories: numbered list, up to 10.
     var mr = $("#most-read-list");
     if (mr) {
       var slugs = (store.mostRead || []).filter(function (s) { return bySlug[s]; });
@@ -184,7 +291,7 @@
         if (dek) dek.textContent = a.dek;
         if (byl) byl.textContent = a.date;
         var heroBox = $(".article-hero", art);
-        if (heroBox) heroBox.innerHTML = tileFor(a);
+        if (heroBox) heroBox.innerHTML = tileFor(a, 1600);
         var bodyBox = $(".article-body", art);
         if (bodyBox) bodyBox.innerHTML = (a.body || []).map(function (p) { return "<p>" + esc(p) + "</p>"; }).join("");
         var src = $(".source-box", art);
@@ -227,18 +334,19 @@
         var hits = store.articles.filter(function (a) {
           return (a.headline + " " + a.dek + " " + sectionLabel(a.section)).toLowerCase().indexOf(q) !== -1;
         }).slice(0, 6);
+        var all = prefix() + "search.html?q=" + encodeURIComponent(input.value.trim());
         box.innerHTML = hits.length
           ? hits.map(function (a) {
               return '<a href="' + articleUrl(a.slug) + '"><small>' + esc(sectionLabel(a.section)) +
                 "</small>" + esc(a.headline) + "</a>";
-            }).join("")
+            }).join("") + '<a href="' + all + '"><small>Search</small>See all results &rarr;</a>'
           : '<div class="none">No stories match "' + esc(input.value.trim()) + '".</div>';
         box.classList.add("open");
       });
       input.addEventListener("keydown", function (e) {
         if (e.key === "Enter") {
-          var first = box.querySelector("a");
-          if (first) window.location.href = first.href;
+          e.preventDefault();
+          window.location.href = prefix() + "search.html?q=" + encodeURIComponent(input.value.trim());
         }
         if (e.key === "Escape") { box.classList.remove("open"); input.blur(); }
       });
@@ -247,17 +355,33 @@
       });
     }
 
-    // Newsletter forms (demo until a mailing service is connected).
-    $all("form.newsletter-form").forEach(function (form) {
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        var email = form.querySelector('input[type="email"]');
-        var ok = form.parentElement.querySelector(".success");
-        if (email && email.value.indexOf("@") > 0) {
-          form.style.display = "none";
-          if (ok) ok.style.display = "block";
-        } else if (email) { email.focus(); }
+    // Search results page (search.html): filter the generated index.
+    var resultsEl = $("#search-page-results");
+    if (resultsEl) {
+      var params = new URLSearchParams(window.location.search);
+      var q = (params.get("q") || "").trim();
+      var qInput = $("#q");
+      if (qInput) qInput.value = q;
+      var status = $("#search-status");
+      if (!q) {
+        if (status) status.textContent = "Type a word or phrase above to search every story on Western World News.";
+        return;
+      }
+      fetch(prefix() + "search-index.json").then(function (r) { return r.json(); }).then(function (idx) {
+        var ql = q.toLowerCase();
+        var hits = idx.filter(function (a) {
+          return (a.headline + " " + a.dek + " " + a.section).toLowerCase().indexOf(ql) !== -1;
+        });
+        if (status) status.textContent = hits.length + (hits.length === 1 ? " result" : " results") + ' for "' + q + '"';
+        resultsEl.innerHTML = hits.map(function (a) {
+          return '<article class="search-result"><p><span class="kicker">' + esc(a.section) + "</span></p>" +
+            '<h3><a href="' + prefix() + esc(a.url) + '">' + esc(a.headline) + "</a></h3>" +
+            "<p>" + esc(a.dek) + "</p>" +
+            '<p class="byline"><time>' + esc(a.date) + "</time></p></article>";
+        }).join("") || "<p>No stories match that search. Try a different word or phrase.</p>";
+      }).catch(function () {
+        if (status) status.textContent = "Search is unavailable right now. Please try again.";
       });
-    });
+    }
   });
 })();
