@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "russias-hybrid-war-on-europe-evolving-but-failing-iiss"
+    "heroSlug": "risks-of-child-marriage-in-iran-complicated-by-war"
   },
   "breaking": {
-    "text": "Russia’s hybrid war on Europe evolving, but failing: IISS",
-    "link": "articles/russias-hybrid-war-on-europe-evolving-but-failing-iiss.html"
+    "text": "Risks of child marriage in Iran complicated by war",
+    "link": "articles/risks-of-child-marriage-in-iran-complicated-by-war.html"
   },
   "articles": [
+    {
+      "slug": "risks-of-child-marriage-in-iran-complicated-by-war",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Risks of child marriage in Iran complicated by war",
+      "dek": "War, poverty and disrupted schooling could put more girls in Iran at risk of child marriage, rights advocates warn.",
+      "date": "November 27, 2026",
+      "source": "DW",
+      "source_url": "https://www.dw.com/en/risks-of-child-marriage-in-iran-complicated-by-war/a-80075473",
+      "body": [
+        "War, poverty and disrupted schooling could put more girls in Iran at risk of child marriage, rights advocates warn."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "russias-hybrid-war-on-europe-evolving-but-failing-iiss",
       "sections": [
@@ -3091,43 +3110,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 27, 11:44",
-      "text": "Russia’s hybrid war on Europe evolving, but failing: IISS",
+      "time": "Nov 27, 13:06",
+      "text": "Risks of child marriage in Iran complicated by war",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 11:44",
-      "text": "Ex-media executive admits saying Australian child sex abuse survivor 'looking to be raped again'",
+      "time": "Nov 27, 14:03",
+      "text": "Meet Eba, the 11-year-old poop-sniffing dog helping to protect endangered orcas",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 12:44",
-      "text": "Euronews Culture's Film of the Week: 'The Further Mis-Adventures of Cliff Booth' - Fincher with fries?",
+      "time": "Nov 27, 13:00",
+      "text": "Trump Medicaid cuts will hit the most vulnerable Americans, officials say",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 11:35",
-      "text": "Old wounds reopen as Kyrgyzstan’s Osh embraces a new urban project",
+      "time": "Nov 27, 13:53",
+      "text": "North Korea halts Russia military aid over Seoul row, Kyiv says",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 11:33",
-      "text": "What Spain’s election means for Morocco",
+      "time": "Nov 27, 13:52",
+      "text": "No burqas at school and fewer foreign pupils: Italy passes controversial education law",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 12:32",
-      "text": "Marseille stadium violence escalates into diplomatic affair between France and Bulgaria",
+      "time": "Nov 27, 13:51",
+      "text": "France's government faces mounting pressure from both sides of the barricades",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 12:30",
-      "text": "Does Europe have a cybersecurity problem? | Password",
+      "time": "Nov 27, 12:51",
+      "text": "Philippines: VP Duterte says father's ICC case 'not a fair trial'",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 11:18",
-      "text": "‘Crisis in empathy’: prison guard was watching TV while Aboriginal man was dying in custody, NSW coroner finds",
+      "time": "Nov 27, 12:48",
+      "text": "Who to watch in Spain's election race",
       "link": "live.html"
     }
   ],
