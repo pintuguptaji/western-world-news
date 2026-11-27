@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "estonia-will-close-border-with-russia-to-secure-europe"
+    "heroSlug": "graham-thorpes-widow-takes-legal-action-against-nhs-trust"
   },
   "breaking": {
-    "text": "Estonia will close border with Russia 'to secure Europe,' foreign minister says during Baku visit",
-    "link": "articles/estonia-will-close-border-with-russia-to-secure-europe.html"
+    "text": "Graham Thorpe’s widow takes legal action against NHS trust after inquest",
+    "link": "articles/graham-thorpes-widow-takes-legal-action-against-nhs-trust.html"
   },
   "articles": [
+    {
+      "slug": "graham-thorpes-widow-takes-legal-action-against-nhs-trust",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Graham Thorpe’s widow takes legal action against NHS trust after inquest",
+      "dek": "Former England Test cricketer was diagnosed with anxiety and depression before he took his own life in 2024.",
+      "date": "November 27, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/uk-news/2026/nov/27/graham-thorpe-widow-legal-action-against-nhs-trust-after-inquest",
+      "body": [
+        "Former England Test cricketer was diagnosed with anxiety and depression before he took his own life in 2024. The wife of Graham Thorpe, the former England cricketer who took his own life, has started legal proceedings against an NHS trust after an inquest identified “failings” in his mental health care. Thorpe died aged 55 in August 2024 in Surrey. His wife, Amanda, has lodged a personal injury claim at the high court against Surrey and Borders Partnership NHS foundation trust which was involved in his care, the Telegraph reported."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/65003307b1e98b9442467736c41f4291260ab315/0_0_4565_3652/master/4565.jpg?width=700&quality=85&auto=format&fit=max&s=718685a06cc9f4f9340dff5ed35fe444",
+      "imageCaption": "Photo: The Guardian",
+      "reviewed": false
+    },
     {
       "slug": "estonia-will-close-border-with-russia-to-secure-europe",
       "sections": [
@@ -3523,44 +3542,44 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 27, 18:54",
+      "time": "Nov 27, 19:47",
+      "text": "Graham Thorpe’s widow takes legal action against NHS trust after inquest",
+      "link": "articles/graham-thorpes-widow-takes-legal-action-against-nhs-trust.html"
+    },
+    {
+      "time": "Nov 27, 19:25",
+      "text": "NHS Grampian publishes leaked report at center of hospital scandal",
+      "link": "https://www.bbc.co.uk/news/articles/cq36gjdkdn2xo"
+    },
+    {
+      "time": "Nov 27, 19:15",
+      "text": "Millions lose access to benefits and pensions services after 'cyber incident'",
+      "link": "https://www.bbc.co.uk/news/articles/c8wy5p6pv2e2o"
+    },
+    {
+      "time": "Nov 27, 19:03",
+      "text": "New satellite data shows how fast some African cities are sinking",
+      "link": "https://www.bbc.co.uk/news/articles/cq074p95z4llo"
+    },
+    {
+      "time": "Nov 27, 18:52",
+      "text": "'We couldn't give up that easily': Marching bands scramble to cover costs after Thanksgiving parade rearranged",
+      "link": "https://www.bbc.co.uk/news/articles/ckd71ypy9e8eo"
+    },
+    {
+      "time": "Nov 27, 18:48",
       "text": "Estonia will close border with Russia 'to secure Europe,' foreign minister says during Baku visit",
       "link": "articles/estonia-will-close-border-with-russia-to-secure-europe.html"
     },
     {
-      "time": "Nov 27, 18:02",
-      "text": "Chicken Shop Date: The perfect end or a disappointing send-off?",
-      "link": "https://www.bbc.co.uk/news/articles/ckz74123x2jvo"
+      "time": "Nov 27, 18:42",
+      "text": "Weary of war but with no sign of backing down, Kyiv faces another punishing winter",
+      "link": "https://www.bbc.co.uk/news/articles/c3pw4yrr8kz9o"
     },
     {
-      "time": "Nov 27, 18:01",
-      "text": "Spanish rider Marc Marquez announces MotoGP retirement, days after clinching record 8th world title",
-      "link": "https://www.dw.com/en/spanish-rider-marc-marquez-announces-motogp-retirement-days-after-clinching-record-8th-world-title/a-80079930"
-    },
-    {
-      "time": "Nov 27, 18:00",
-      "text": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
-      "link": "articles/zelensky-criticises-strange-trump-putin-friendship-in-bbc.html"
-    },
-    {
-      "time": "Nov 27, 17:58",
-      "text": "Mexico files complaint with US over tip line on alleged drug traffickers",
-      "link": "https://www.aljazeera.com/news/2026/11/27/mexico-files-complaint-with-us-over-tip-line-on-alleged-drug-traffickers"
-    },
-    {
-      "time": "Nov 27, 17:44",
-      "text": "Kyiv offers Black Sea ceasefire, as Putin expands Russia’s navy",
-      "link": "https://www.aljazeera.com/news/2026/11/27/kyiv-offers-black-sea-ceasefire-as-putin-expands-russias-navy"
-    },
-    {
-      "time": "Nov 27, 17:41",
-      "text": "Mecca pact allies condemn ‘heinous’ Houthi attacks on Saudi Arabia",
-      "link": "https://www.aljazeera.com/news/2026/11/27/mecca-pact-allies-condemn-heinous-houthi-attacks-on-saudi-arabia"
-    },
-    {
-      "time": "Nov 27, 17:39",
-      "text": "GTA 6 crashes into top end of music chart after its record launch",
-      "link": "https://www.bbc.co.uk/news/articles/ckp80d8vz1ego"
+      "time": "Nov 27, 18:39",
+      "text": "The AI revolution: Will I lose my job?",
+      "link": "https://www.france24.com/en/tv-shows/the-51/20261127-the-ai-revolution-will-i-lose-my-job"
     }
   ],
   "liveUpdates": [
