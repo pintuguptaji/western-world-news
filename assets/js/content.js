@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "huw-edwards-gives-first-interviews-since-child-abuse-image"
+    "heroSlug": "threat-from-china-looms-large-over-taiwans-local-elections"
   },
   "breaking": {
-    "text": "Huw Edwards gives first interviews since child abuse image conviction",
-    "link": "articles/huw-edwards-gives-first-interviews-since-child-abuse-image.html"
+    "text": "Threat from China looms large over Taiwan’s local elections",
+    "link": "articles/threat-from-china-looms-large-over-taiwans-local-elections.html"
   },
   "articles": [
+    {
+      "slug": "threat-from-china-looms-large-over-taiwans-local-elections",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Threat from China looms large over Taiwan’s local elections",
+      "dek": "Taiwanese officials raise alarm over interference by China in elections that will shape fortunes of ruling party.",
+      "date": "November 27, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/nov/27/threat-from-china-looms-large-over-taiwan-local-elections",
+      "body": [
+        "Taiwanese officials raise alarm over interference by China in elections that will shape fortunes of ruling party. Taiwanese voters go to the polls on Saturday in closely watched local elections that will shape the fortunes of the ruling Democratic Progressive party (DPP) as it navigates an increasingly precarious set of relationships on the global stage."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/46917c80b05c42e1fe661080ca09495a31ff79a7/387_0_3750_3000/master/3750.jpg?width=700&quality=85&auto=format&fit=max&s=e39b2fbe826a4bbdf674e9714a48cde8",
+      "imageCaption": "Photo: The Guardian"
+    },
     {
       "slug": "huw-edwards-gives-first-interviews-since-child-abuse-image",
       "sections": [
@@ -2942,43 +2960,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 26, 23:29",
+      "time": "Nov 27, 01:00",
+      "text": "Threat from China looms large over Taiwan’s local elections",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 27, 00:58",
+      "text": "From £250 job to £9,000 bill: Inside the rogue trader networks scamming customers at scale",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 27, 00:54",
+      "text": "I spend £200 a month on fancy meals by myself - would you dine solo?",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 27, 00:52",
+      "text": "The young hikers finding friendship and fresh air offline",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 27, 00:52",
+      "text": "Major Thanksgiving storm brings flooding, flight delays across US",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 27, 00:48",
+      "text": "Met Police ruined my life, says Kenyan man wrongly sentenced over attack on UK couple",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 27, 00:47",
+      "text": "Death-sentenced Sheikh Hasina's planned return puts Bangladesh on edge - and India in a bind",
+      "link": "live.html"
+    },
+    {
+      "time": "Nov 27, 00:38",
       "text": "Huw Edwards gives first interviews since child abuse image conviction",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 23:17",
-      "text": "UK to pay 'participation' fee to deliver EU deals",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 23:07",
-      "text": "Israeli settlers damage Palestinian family’s homes in West Bank attack",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 22:51",
-      "text": "In Canada, Quebec’s religious symbols ban faces a Supreme Court test",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 22:49",
-      "text": "US too focused on Middle East and not pushing Russia hard enough, Zelensky tells BBC",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 22:06",
-      "text": "Report: CIA tortured more people with waterboarding than US agency admitted",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 22:06",
-      "text": "NHS boss warns of 'horrible spike' in flu as hospital admissions surge",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 26, 22:01",
-      "text": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
       "link": "live.html"
     }
   ],
