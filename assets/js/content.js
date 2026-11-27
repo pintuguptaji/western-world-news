@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "israeli-justice-system-at-tipping-point-as-judges-call-for"
+    "heroSlug": "russias-hybrid-war-on-europe-evolving-but-failing-iiss"
   },
   "breaking": {
-    "text": "Israeli justice system at tipping point as judges call for end to Netanyahu trial",
-    "link": "articles/israeli-justice-system-at-tipping-point-as-judges-call-for.html"
+    "text": "Russia’s hybrid war on Europe evolving, but failing: IISS",
+    "link": "articles/russias-hybrid-war-on-europe-evolving-but-failing-iiss.html"
   },
   "articles": [
+    {
+      "slug": "russias-hybrid-war-on-europe-evolving-but-failing-iiss",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Russia’s hybrid war on Europe evolving, but failing: IISS",
+      "dek": "Growing attacks have damaged European infrastructure, but have not reduced support for Ukraine, analysis says.",
+      "date": "November 27, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/11/27/russias-hybrid-war-on-europe-evolving-but-failing-iiss",
+      "body": [
+        "Growing attacks have damaged European infrastructure, but have not reduced support for Ukraine, analysis says."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": ""
+    },
     {
       "slug": "israeli-justice-system-at-tipping-point-as-judges-call-for",
       "sections": [
@@ -3072,43 +3091,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 27, 10:48",
-      "text": "Israeli justice system at tipping point as judges call for end to Netanyahu trial",
+      "time": "Nov 27, 11:44",
+      "text": "Russia’s hybrid war on Europe evolving, but failing: IISS",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 10:46",
-      "text": "For whom the bells troll: French town divided over church’s night-time chimes",
+      "time": "Nov 27, 11:44",
+      "text": "Ex-media executive admits saying Australian child sex abuse survivor 'looking to be raped again'",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 11:41",
-      "text": "NATO jets scrambled after drone briefly enters Latvian airspace",
+      "time": "Nov 27, 12:44",
+      "text": "Euronews Culture's Film of the Week: 'The Further Mis-Adventures of Cliff Booth' - Fincher with fries?",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 11:37",
-      "text": "German sofware giant SAP weighs at least 10,000 job cuts amid AI shift, reports say",
+      "time": "Nov 27, 11:35",
+      "text": "Old wounds reopen as Kyrgyzstan’s Osh embraces a new urban project",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 10:31",
-      "text": "Australia sanctions suspects in Iran-linked anti-Semitic attacks",
+      "time": "Nov 27, 11:33",
+      "text": "What Spain’s election means for Morocco",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 10:28",
-      "text": "Ex media executive admits saying Australian child sex abuse survivor 'looking to be raped again'",
+      "time": "Nov 27, 12:32",
+      "text": "Marseille stadium violence escalates into diplomatic affair between France and Bulgaria",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 10:26",
-      "text": "Hundreds of thousands still without power after storms hit US on Thanksgiving",
+      "time": "Nov 27, 12:30",
+      "text": "Does Europe have a cybersecurity problem? | Password",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 10:22",
-      "text": "Live: Trump calls on Putin to end all 'military aggression' against Europe",
+      "time": "Nov 27, 11:18",
+      "text": "‘Crisis in empathy’: prison guard was watching TV while Aboriginal man was dying in custody, NSW coroner finds",
       "link": "live.html"
     }
   ],
