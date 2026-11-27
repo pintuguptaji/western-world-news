@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "with-new-law-iraq-sees-rise-in-child-marriage-custody"
+    "heroSlug": "norse-atlantic-airways-files-for-bankruptcy-and-cancels-all"
   },
   "breaking": {
-    "text": "With new law, Iraq sees rise in child marriage, custody battles",
-    "link": "articles/with-new-law-iraq-sees-rise-in-child-marriage-custody.html"
+    "text": "Norse Atlantic Airways files for bankruptcy and cancels all future flights",
+    "link": "articles/norse-atlantic-airways-files-for-bankruptcy-and-cancels-all.html"
   },
   "articles": [
+    {
+      "slug": "norse-atlantic-airways-files-for-bankruptcy-and-cancels-all",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Norse Atlantic Airways files for bankruptcy and cancels all future flights",
+      "dek": "Norwegian airline tells customers not to come to airports after surging fuel costs caused by Iran war ruin finances.",
+      "date": "November 27, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/business/2026/nov/27/norse-atlantic-airways-files-for-bankruptcy-cancels-all-future-flights",
+      "body": [
+        "Norwegian airline tells customers not to come to airports after surging fuel costs caused by Iran war ruin finances. Norse Atlantic Airways has filed for bankruptcy and canceled all future flights after surging fuel costs caused by the Iran war ruined its finances."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/e1f07f0b2a8329b3e1557eed373d0458f8cb7e9a/71_0_3289_2633/master/3289.jpg?width=700&quality=85&auto=format&fit=max&s=1452f35dc1b0df01c30cb7af1a6eb5d5",
+      "imageCaption": "Photo: The Guardian"
+    },
     {
       "slug": "with-new-law-iraq-sees-rise-in-child-marriage-custody",
       "sections": [
@@ -3128,43 +3146,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 27, 14:49",
-      "text": "Hundreds of thousands still without power after storms hit US on Thanksgiving",
+      "time": "Nov 27, 15:54",
+      "text": "Police look for more than 100 gig-goers to help Co-op Live probe",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 14:48",
-      "text": "With new law, Iraq sees rise in child marriage, custody battles",
+      "time": "Nov 27, 15:48",
+      "text": "Dutch authorities seize 26 critically endangered turtles from luggage of passenger bound for Hong Kong",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 14:46",
-      "text": "‘Mass-casualty event’ in Europe possible amid rise in Russian sabotage, says thinktank",
+      "time": "Nov 27, 15:40",
+      "text": "Norse Atlantic Airways files for bankruptcy and cancels all future flights",
       "link": "live.html"
     },
     {
       "time": "Nov 27, 15:38",
-      "text": "Black Friday: Where in Europe are shoppers the gloomiest?",
+      "text": "Canada's top court largely upholds Quebec ban on religious symbols for public servants",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 14:33",
-      "text": "'We have no interest in hearing from Huw Edwards', Downing Street says",
+      "time": "Nov 27, 16:37",
+      "text": "By Putin's logic, Russia should be returned to Mongolia, Belarus' Lukashenka says",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 14:33",
-      "text": "Japan's radical past: Retracing the far-left groups of the 1970s",
+      "time": "Nov 27, 15:34",
+      "text": "British Gas owner seeks urgent government talks over future of storage facility",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 15:29",
-      "text": "Trump tariffs brought EU and Indonesia closer on trade, minister tells Euronews",
+      "time": "Nov 27, 15:26",
+      "text": "Serbia’s student-led movement nominates chemistry professor for presidency",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 14:21",
-      "text": "Georgia: Police clash with Besiktas fans at Israel club game",
+      "time": "Nov 27, 15:25",
+      "text": "Newly released documents suggest CIA did more post-9/11 waterboarding than previously acknowledged",
       "link": "live.html"
     }
   ],
