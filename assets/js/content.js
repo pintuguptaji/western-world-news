@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "big-eu-defense-projects-under-threat-from-proposed-budget"
+    "heroSlug": "estonia-will-close-border-with-russia-to-secure-europe"
   },
   "breaking": {
-    "text": "Big EU defense projects under threat from proposed budget cuts: Commissioner Andrius Kubilius",
-    "link": "articles/big-eu-defense-projects-under-threat-from-proposed-budget.html"
+    "text": "Estonia will close border with Russia 'to secure Europe,' foreign minister says during Baku visit",
+    "link": "articles/estonia-will-close-border-with-russia-to-secure-europe.html"
   },
   "articles": [
+    {
+      "slug": "estonia-will-close-border-with-russia-to-secure-europe",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Estonia will close border with Russia 'to secure Europe,' foreign minister says during Baku visit",
+      "dek": "Estonia has opened its embassies in Baku and Yerevan to strengthen its strategic ties with the South Caucasus.",
+      "date": "November 27, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/27/estonia-will-close-border-with-russia-to-secure-europe-foreign-minister-says-during-baku-v",
+      "body": [
+        "Estonia has opened its embassies in Baku and Yerevan to strengthen its strategic ties with the South Caucasus. Estonian Foreign Minister Margus Tsahkna confirmed during his visit to the Azerbaijani capital that the Baltic state will close its border with Russia on December 1."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/01/11/44/696x392_cmsv2_8b52a882-cea9-5caa-ad4f-ddc2dd4d853f-10011144.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "big-eu-defense-projects-under-threat-from-proposed-budget",
       "sections": [
@@ -3395,44 +3414,44 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 27, 17:03",
-      "text": "Big EU defense projects under threat from proposed budget cuts: Commissioner Andrius Kubilius",
-      "link": "articles/big-eu-defense-projects-under-threat-from-proposed-budget.html"
+      "time": "Nov 27, 18:52",
+      "text": "'We couldn't give up that easily': Marching bands scramble to cover costs after Thanksgiving parade rearranged",
+      "link": "https://www.bbc.co.uk/news/articles/ckd71ypy9e8eo"
     },
     {
-      "time": "Nov 27, 17:03",
-      "text": "Body found in woodland confirmed as missing Kelsey Hunter",
-      "link": ""
+      "time": "Nov 27, 18:48",
+      "text": "Estonia will close border with Russia 'to secure Europe,' foreign minister says during Baku visit",
+      "link": "articles/estonia-will-close-border-with-russia-to-secure-europe.html"
     },
     {
-      "time": "Nov 27, 15:40",
-      "text": "Norse Atlantic Airways files for bankruptcy and cancels all future flights",
-      "link": "articles/norse-atlantic-airways-files-for-bankruptcy-and-cancels-all.html"
+      "time": "Nov 27, 18:42",
+      "text": "Weary of war but with no sign of backing down, Kyiv faces another punishing winter",
+      "link": "https://www.bbc.co.uk/news/articles/c3pw4yrr8kz9o"
     },
     {
-      "time": "Nov 27, 17:59",
-      "text": "Italian MPs' EU committee questions the core of the hunting reform",
-      "link": ""
+      "time": "Nov 27, 18:36",
+      "text": "Azerbaijani and Armenian civil societies seek 'new history' in new round of peace talks",
+      "link": "https://www.euronews.com/2026/11/27/azerbaijani-and-armenian-civil-societies-seek-new-history-in-new-round-of-peace-talks"
     },
     {
-      "time": "Nov 27, 17:58",
-      "text": "Europe Tonight: EU budget summit collapses as Spain braces for vote and UK unveils deal",
-      "link": ""
+      "time": "Nov 27, 18:32",
+      "text": "Relatives say jailed Iranian twins beaten and tortured, one faces execution",
+      "link": "https://www.euronews.com/2026/11/27/relatives-say-jailed-iranian-twins-beaten-and-tortured-one-faces-execution"
     },
     {
-      "time": "Nov 27, 16:53",
-      "text": "Canada's top court largely upholds Quebec ban on religious symbols for public servants",
-      "link": ""
+      "time": "Nov 27, 18:02",
+      "text": "Chicken Shop Date: The perfect end or a disappointing send-off?",
+      "link": "https://www.bbc.co.uk/news/articles/ckz74123x2jvo"
     },
     {
-      "time": "Nov 27, 16:53",
-      "text": "France seeks German man in Channel migrant boat probe",
-      "link": ""
+      "time": "Nov 27, 18:01",
+      "text": "Serbia’s student movement puts forward Professor Saičić as its presidential candidate",
+      "link": "https://www.euronews.com/2026/11/27/serbias-student-movement-puts-forward-professor-saicic-as-its-presidential-candidate"
     },
     {
-      "time": "Nov 27, 16:51",
-      "text": "Divisions deepen between EU member states after tense budget summit",
-      "link": ""
+      "time": "Nov 27, 18:01",
+      "text": "Spanish rider Marc Marquez announces MotoGP retirement, days after clinching record 8th world title",
+      "link": "https://www.dw.com/en/spanish-rider-marc-marquez-announces-motogp-retirement-days-after-clinching-record-8th-world-title/a-80079930"
     }
   ],
   "liveUpdates": [
