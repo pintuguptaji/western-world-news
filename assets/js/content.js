@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "risks-of-child-marriage-in-iran-complicated-by-war"
+    "heroSlug": "with-new-law-iraq-sees-rise-in-child-marriage-custody"
   },
   "breaking": {
-    "text": "Risks of child marriage in Iran complicated by war",
-    "link": "articles/risks-of-child-marriage-in-iran-complicated-by-war.html"
+    "text": "With new law, Iraq sees rise in child marriage, custody battles",
+    "link": "articles/with-new-law-iraq-sees-rise-in-child-marriage-custody.html"
   },
   "articles": [
+    {
+      "slug": "with-new-law-iraq-sees-rise-in-child-marriage-custody",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "With new law, Iraq sees rise in child marriage, custody battles",
+      "dek": "In January 2025, Iraq's parliament passed an amendment allowing families to place their household under religious law, governing all issues around marriage, divorce and inheritance.",
+      "date": "November 27, 2026",
+      "source": "France 24",
+      "source_url": "https://www.france24.com/en/tv-shows/focus/20261127-with-new-law-iraq-sees-rise-in-child-marriage-custody-battles",
+      "body": [
+        "In January 2025, Iraq's parliament passed an amendment allowing families to place their household under religious law, governing all issues around marriage, divorce and inheritance. The new Ja'fari law, a Shiite law, came into force in October 2025."
+      ],
+      "related": [],
+      "image": "https://s.france24.com/media/display/377a84f8-ea66-11f1-af1d-77d069279b82/w:1024/p:16x9/capture-077060cd.jpg",
+      "imageCaption": "Photo: France 24"
+    },
     {
       "slug": "risks-of-child-marriage-in-iran-complicated-by-war",
       "sections": [
@@ -3110,43 +3128,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 27, 13:06",
-      "text": "Risks of child marriage in Iran complicated by war",
+      "time": "Nov 27, 14:49",
+      "text": "Hundreds of thousands still without power after storms hit US on Thanksgiving",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 14:03",
-      "text": "Meet Eba, the 11-year-old poop-sniffing dog helping to protect endangered orcas",
+      "time": "Nov 27, 14:48",
+      "text": "With new law, Iraq sees rise in child marriage, custody battles",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 13:00",
-      "text": "Trump Medicaid cuts will hit the most vulnerable Americans, officials say",
+      "time": "Nov 27, 14:46",
+      "text": "‘Mass-casualty event’ in Europe possible amid rise in Russian sabotage, says thinktank",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 13:53",
-      "text": "North Korea halts Russia military aid over Seoul row, Kyiv says",
+      "time": "Nov 27, 15:38",
+      "text": "Black Friday: Where in Europe are shoppers the gloomiest?",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 13:52",
-      "text": "No burqas at school and fewer foreign pupils: Italy passes controversial education law",
+      "time": "Nov 27, 14:33",
+      "text": "'We have no interest in hearing from Huw Edwards', Downing Street says",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 13:51",
-      "text": "France's government faces mounting pressure from both sides of the barricades",
+      "time": "Nov 27, 14:33",
+      "text": "Japan's radical past: Retracing the far-left groups of the 1970s",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 12:51",
-      "text": "Philippines: VP Duterte says father's ICC case 'not a fair trial'",
+      "time": "Nov 27, 15:29",
+      "text": "Trump tariffs brought EU and Indonesia closer on trade, minister tells Euronews",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 12:48",
-      "text": "Who to watch in Spain's election race",
+      "time": "Nov 27, 14:21",
+      "text": "Georgia: Police clash with Besiktas fans at Israel club game",
       "link": "live.html"
     }
   ],
