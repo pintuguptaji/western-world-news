@@ -1,34 +1,58 @@
 # Western World News — westernworldnews.com
 
-A plain static news website (HTML + CSS + JavaScript) with a publisher-style
-design and an admin panel. No build step needed to view it, no database, no
-framework. Upload the contents of this folder to any static host (GitHub
-Pages, Netlify, Cloudflare Pages, Hostinger) and it works.
+A plain static news website (HTML + CSS + JavaScript) with a premium
+navy-and-white newspaper design and an admin panel. No build step needed
+to view it, no database, no framework. Upload the contents of this folder
+to any static host (GitHub Pages, Netlify, Cloudflare Pages, Hostinger)
+and it works.
 
-## What's in the design (v2)
+## What's in the design (v4, November 2026 redesign)
 
-- Dark navy masthead with the wordmark and tagline, thin top utility bar
-  (date, Live indicator, working search box that filters articles).
-- Red BREAKING bar with a scrolling Just In ticker (pauses on hover).
-- Big photo-led hero story, section blocks with photos (Europe first),
-  numbered **Most Read** sidebar (top 5), a **Watch** strip, an
-  **Analysis** block and a full multi-column footer.
-- Serif display headlines (Georgia) + clean sans body — the broadsheet look.
-- Hamburger navigation on mobile; responsive throughout.
-- Photos are **real photos that match each story** — freely licensed Wikimedia Commons pictures of the actual place or institution (Kyiv, the European Parliament, Shenzhen, the US Capitol, Wall Street, the Peace Palace), and openly licensed Unsplash images used as clearly labelled illustrations where no real photo of the subject exists. Every caption says honestly what the photo shows. Stories without a suitable photo get the navy WWN gradient tile instead of a misleading image.
+- White top bar with the wordmark, the tagline "Independent News. Global
+  Perspective.", the date and share links; dark navy sticky navigation
+  (Home, World, US, Europe, Politics, War & Conflict, Business,
+  Technology, Culture) with a working search box and a mobile hamburger
+  menu. Sport stays as a section page, linked from the footer.
+- Red BREAKING bar with the newest headline and a scrolling Just In
+  ticker; every headline links to a real article.
+- Homepage in editorial order: hero (large featured story + two
+  secondary stories), Top Stories (one card per category), World, US News
+  & Politics, Europe, War & Conflict, Business + Technology side by side,
+  a chronological Latest News feed with a Load More button, and the
+  newsletter section "Stay Informed. Stay Ahead."
+- Article pages: breadcrumb, category label, headline, summary, author,
+  dates, featured image, a 700-760px content column, a 300px sidebar
+  (Trending Stories, Latest News, Popular Categories, advertising space),
+  related stories, previous/next article and an author profile.
+- Dark navy footer with four columns (Brand, Explore, About, Legal).
+- Reserved, clearly labelled "Advertisement" areas (below the navigation,
+  between homepage sections, article sidebar, after article content).
+  They are empty until advertising is approved. No fake ads.
+- Serif display headlines (Merriweather) + Inter body text.
+- Photos are **real photos that match each story** — the feed's own
+  image for that story, verified to load, or freely licensed Wikimedia
+  Commons / Unsplash images used as clearly labelled illustrations where
+  no real photo of the subject exists. Every caption says honestly what
+  the photo shows. Stories without a suitable photo get the navy WWN
+  tile instead of a misleading image.
 
 ## Folder structure
 
 ```
 western-world-news/
-├── index.html                  Homepage: breaking ticker, hero, Just In,
-│                               Most Read, Europe/World/US & Politics,
-│                               Watch strip, live teaser, newsletter,
-│                               Analysis, Business & Finance
+├── index.html                  Homepage: breaking bar, hero, Top Stories,
+│                               World, US & Politics, Europe, War &
+│                               Conflict, Business + Technology, Latest
+│                               News (Load More), newsletter
 ├── world.html / europe.html / us.html / politics.html
-├── war-conflict.html / business-finance.html / sport.html / culture.html
+├── war-conflict.html / business-finance.html / technology.html
+├── sport.html / culture.html
 ├── live.html                   Live blog (Ukraine war, rolling updates)
-├── about.html / contact.html / privacy.html
+├── search.html                 Search results page (search-index.json)
+├── 404.html                    Branded "page not found"
+├── about.html / contact.html / privacy.html / terms.html
+├── disclaimer.html / editorial-policy.html / corrections.html
+├── cookie-policy.html / advertise.html / authors.html
 ├── admin.html                  Admin panel (passcode gate, see below)
 ├── articles/                   One HTML page per story
 ├── assets/
@@ -37,18 +61,21 @@ western-world-news/
 │   └── js/
 │       ├── content.js          Central content store (default content +
 │       │                       localStorage merge used by every page)
-│       ├── main.js             Dateline, search, hamburger, renders
-│       │                       dynamic regions from the content store
+│       ├── main.js             Dateline, search, hamburger, Load More,
+│       │                       pagination, dynamic regions from the
+│       │                       content store
 │       └── admin.js            Admin panel logic (passcode "admin123")
 ├── data/articles.json          All article text (source of truth for the
 │                               build; updated by tools/auto_publish.py)
+├── data/search-index.json      (generated) lightweight search index
 ├── tools/build_site.py         Generator — re-run to rebuild every page
 ├── tools/auto_publish.py       Hourly auto-publisher (RSS feeds → new
 │                               stories; see "Automatic publishing" below)
 ├── .github/workflows/          auto-publish.yml — GitHub Actions schedule
 ├── content-export.json         (optional) admin export; if present, the
 │                               build script uses it as the content source
-├── sitemap.xml / robots.txt    (robots.txt blocks /admin.html)
+├── sitemap.xml / news-sitemap.xml / post-sitemap.xml
+├── page-sitemap.xml / robots.txt / ads.txt
 └── README.md                   This file
 ```
 
@@ -86,33 +113,47 @@ Open **admin.html** and enter the passcode:
    including a real page for each new article, then the updated files
    are committed/pushed as usual.
 
-## Seed content — read this first
+## Content — how it stays fresh
 
-The articles in `articles/` are the current front page, refreshed on the evening of 20 November 2026 with verified stories from 19–20 November 2026 (the Kyiv missile strikes, the EU–UK reset deal, the Shenzhen summit fallout, the Gaza Yellow Line raid, the US Congress records fight, the Wall Street sell-off, the Nations League draw, the ICJ’s Myanmar genocide ruling, and RAYE’s Grammy nominations).
+The articles in `articles/` are refreshed hourly by the automatic
+publisher (see below) from trusted RSS feeds. The homepage hero, the
+Just In feed and the breaking bar update with every run.
 
 - Every story is an **original summary written in our own words** — nothing
   is copied from another publication.
 - Every story **credits its source by name and links to the original
-  article** (CNN, The Times, Al Jazeera, Reuters, Associated Press).
-- **Replace this seed content with fresh daily posts.** News goes stale in
-  hours: the homepage hero, the Just In feed and the live blog must be
-  updated every day. Do not leave the 20 November 2026 stories on the
-  homepage once newer news exists.
+  article** (BBC, Al Jazeera, The Guardian, Euronews, France 24, DW).
+- Section classification is done by the publisher from the headline:
+  war and conflict, business, technology, US, Europe, or world. Stories
+  are re-checked at build time so the Europe section only carries
+  European news.
 
-## Watch strip — honest note
+## Newsletter — Buttondown (live)
 
-The "Watch" cards link to the live blog and full articles. There is no
-real video yet. Replace the cards with real video embeds when video
-exists; until then they are clearly a design element, not a video player.
+The newsletter is wired for **Buttondown** (free tier) and live at
+`buttondown.com/pintu` ("Western World News"). The forms post to
+Buttondown's free embed endpoint
+(`buttondown.com/api/emails/embed-subscribe/pintu`), which handles
+double opt-in and its own confirmation page. The username is set in
+`tools/build_site.py` as `NEWSLETTER_BUTTONDOWN_USERNAME = "pintu"`.
+
+## Advertising — not live yet
+
+- Reserved "Advertisement" areas are built into the layout (below the
+  navigation, between homepage sections, article sidebar, after article
+  content). They are empty placeholders until advertising is approved.
+- `ads.txt` is a placeholder until an AdSense publisher ID exists.
+- The privacy policy and terms describe advertising in the future tense
+  until ads actually run. Do not present the site as showing ads before
+  approval.
 
 ## Not yet connected — before launch
 
-- **Newsletter form is a front-end demo only.** It shows a thank-you
-  message but sends nothing. Connect a mailing service (e.g. Buttondown,
-  Mailchimp, ConvertKit) before launch.
+- **Newsletter**: live via Buttondown (buttondown.com/pintu).
 - **Contact email addresses**: lurenmira@gmail.com (used for both news tips
   and advertising inquiries).
-- **Privacy policy** is complete, including the Google AdSense and third-party cookies disclosure.
+- **Privacy policy** is complete, including the future advertising
+  disclosure.
 - **Domain**: westernworldnews.com — live since 20 Nov 2026 (GitHub Pages, DNS via Hostinger).
 - **Ads**: none included yet. Add ad slots only after traffic exists.
 - **GitHub**: the site is pushed to github.com/pintuguptaji/western-world-news (branch main); push updates with the GitHub connector.

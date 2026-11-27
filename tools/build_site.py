@@ -21,15 +21,24 @@ GOOGLE_SITE_VERIFICATION = "NygudsKNLm9w7kCNUvEYzlOYcf3eSNafgLbIvtD17Gc"
 # push. Leave empty until Google gives you an ID.
 GOOGLE_ANALYTICS_ID = "G-1FTJR8MHNF"
 
+# Newsletter (Buttondown — chosen 2026-11-27, free tier). Set this to the
+# Buttondown username (the last part of buttondown.com/<username>) once the
+# account exists, then rebuild. While it is empty, the newsletter forms
+# show an honest "subscriptions open soon" state and never pretend to
+# subscribe anyone. No API key is needed: the embed form posts to
+# https://buttondown.com/api/emails/embed-subscribe/<username> and
+# Buttondown handles double opt-in and its own confirmation page.
+NEWSLETTER_BUTTONDOWN_USERNAME = "pintu"
+
 NAV = [
     ("index.html", "Home"),
     ("world.html", "World"),
-    ("europe.html", "Europe"),
     ("us.html", "US"),
+    ("europe.html", "Europe"),
     ("politics.html", "Politics"),
     ("war-conflict.html", "War &amp; Conflict"),
-    ("business-finance.html", "Business &amp; Finance"),
-    ("sport.html", "Sport"),
+    ("business-finance.html", "Business"),
+    ("technology.html", "Technology"),
     ("culture.html", "Culture"),
 ]
 
@@ -40,6 +49,7 @@ SECTIONS = {
     "politics": "Politics",
     "war-conflict": "War &amp; Conflict",
     "business-finance": "Business &amp; Finance",
+    "technology": "Technology",
     "sport": "Sport",
     "culture": "Culture",
     "live": "Live",
@@ -165,7 +175,9 @@ def _alt_for(slug, cap):
     if ". Photo:" in base:
         base = base.split(". Photo:")[0]
     base = base.strip()
-    if base and base != "Photo: Unsplash":
+    if base.startswith("Photo:"):
+        base = ""
+    if base:
         return base
     if slug in BY_SLUG:
         return BY_SLUG[slug]["headline"]
@@ -233,7 +245,7 @@ def _load_data():
 
 _DATA = _load_data()
 STORIES = _DATA["articles"]
-JUST_IN = [(it["time"], it["text"], None) for it in _DATA.get("justIn", [])]
+JUST_IN = [(it["time"], it["text"], it.get("link")) for it in _DATA.get("justIn", [])]
 LIVE_UPDATES = [(u["time"], u["headline"], u["text"]) for u in _DATA.get("liveUpdates", [])]
 MOST_READ = list(_DATA.get("mostRead", []))
 HERO_SLUG = _DATA.get("heroSlug", STORIES[0]["slug"] if STORIES else "")
@@ -272,47 +284,25 @@ IMAGES = {
 
 # MOST_READ loaded from data/articles.json (see loader above).
 
-# "Watch" strip — video-style cards. NOTE: no real video exists yet; cards
-# link to the live blog / full articles. See README.md.
-WATCH = [
-    {"title": "The night Kyiv was hit: the story so far", "dur": "01:32",
-     "img": "1504711434969-e33886168f5c", "link": "live.html"},
-    {"title": "Europe\u2019s reset with Britain, explained", "dur": "02:14",
-     "img": "1473341304170-971dccb5ac1e", "link": "articles/eu-uk-reset-deal.html"},
-    {"title": "Markets: the sell-off, explained", "dur": "01:47",
-     "img": "1611974789855-9c2a0a7236a3", "link": "articles/wall-street-selloff.html"},
-]
 
-ANALYSIS = [
-    {"title": "After Shenzhen, Europe\u2019s answer is: not Yalta",
-     "blurb": "An hour of handshakes, a declaration on the UN and oil, and a war that carried on through the night. The summit mattered, but Europe\u2019s reply in Berlin mattered more.",
-     "link": "articles/shenzhen-aftermath-europe-pushback.html"},
-    {"title": "The EU-UK reset: what the deal actually changes",
-     "blurb": "Food checks gone, carbon markets linked, 100,000 young people on the move, and the hardest question, university fees, kicked six months down the road.",
-     "link": "articles/eu-uk-reset-deal.html"},
-    {"title": "The market\u2019s AI question has turned into a rout",
-     "blurb": "Six straight falls, the Dow below 50,000 and the Nikkei down 5 percent. The boom that carried stocks to records is now the thing investors fear most.",
-     "link": "articles/wall-street-selloff.html"},
-]
 
-CSS = """/* Western World News: publisher design v3.
-   Al Jazeera-format look: white page, light hairline rules, single centered
-   container, photo-led hero with a red headline box, small-caps section
-   labels, numbered Most Popular list. Sans-serif throughout; no webfonts
-   (system sans stack only). */
+CSS = """/* Western World News: redesign v4 — premium navy/white editorial design.
+   Headlines: Merriweather. Body/navigation: Inter (Google Fonts, with
+   Georgia/Arial fallbacks). Flat navy, white and light-gray surfaces;
+   no heavy gradients, no excess rounding, no clutter. */
 
 :root {
-  --red: #bb1919;
-  --red-dark: #8f1212;
-  --red-light: #ff6b6b;
-  --ink: #111111;
-  --muted: #666666;
-  --line: #eeeeee;
-  --line-strong: #dddddd;
-  --light: #fafafa;
-  --navy: #0e2244;
-  --navy-dark: #081426;
-  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --navy: #172B45;
+  --navy2: #243B53;
+  --red: #D93036;
+  --red-dark: #A92529;
+  --bg: #F5F7FA;
+  --gray: #E9EDF2;
+  --line: #E5E7EB;
+  --text: #303B49;
+  --muted: #718096;
+  --serif: "Merriweather", Georgia, "Times New Roman", serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -320,306 +310,378 @@ CSS = """/* Western World News: publisher design v3.
 body {
   margin: 0;
   font-family: var(--sans);
-  color: var(--ink);
+  color: var(--text);
   background: #fff;
   line-height: 1.55;
   font-size: 16px;
 }
 
-h1, h2, h3 { font-family: var(--sans); }
-a { color: var(--ink); text-decoration: none; }
-a:hover { color: var(--red); }
+h1, h2, h3, h4 { font-family: var(--serif); color: var(--navy); }
+a { color: var(--navy); text-decoration: none; }
+a:hover { color: var(--red); text-decoration: underline; }
 img { max-width: 100%; display: block; }
+/* Grid/flex children must be allowed to shrink below their content's
+   intrinsic width, otherwise a large image forces its track wider than
+   the viewport (horizontal scroll on mobile). */
+.hero-grid > *, .card-grid > *, .split-sections > *, .section-grid > *,
+.article-layout > *, .lead-card > *, .hero, .card, .lead-card,
+.side-story, .latest-item > * { min-width: 0; }
 figure { margin: 0; }
 figcaption { font-size: 0.78rem; color: var(--muted); padding: 0.35rem 0 0; line-height: 1.4; }
 
-.wrap { max-width: 1180px; margin: 0 auto; padding: 0 1rem; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
 .sr-only { position: absolute; left: -9999px; }
+.skip-link { position: absolute; left: -999px; top: 0; background: var(--red); color: #fff; padding: 0.5rem 1rem; z-index: 300; }
+.skip-link:focus { left: 0; }
 
-/* ---------- Sticky dark navy header: one compact row ---------- */
-.site-header { position: sticky; top: 0; z-index: 100; background: var(--navy); border-bottom: 1px solid var(--navy-dark); }
-.header-row { display: flex; align-items: center; gap: 1rem; padding-top: 0.75rem; padding-bottom: 0.75rem; padding-left: 1.5rem; padding-right: 1.5rem; flex-wrap: nowrap; max-width: none; margin: 0; }
-.wordmark { font-size: 1.45rem; font-weight: 800; letter-spacing: -0.01em; line-height: 1.1; color: #fff; white-space: nowrap; flex-shrink: 0; }
-.wordmark .news { color: var(--red-light); }
-.wordmark:hover { text-decoration: none; color: #fff; }
-.main-nav { flex: 1; display: flex; justify-content: center; min-width: 0; }
-.main-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; }
-.main-nav a { display: block; color: #fff; padding: 0.45rem 0.5rem; font-size: 1.1rem; font-weight: 600; white-space: nowrap; }
-.main-nav a:hover { color: var(--red-light); text-decoration: none; }
-.main-nav a.active { color: #fff; box-shadow: inset 0 -2px 0 var(--red-light); }
-.nav-toggle {
-  display: none; background: none; border: 0; color: #fff; font-size: 1.5rem;
-  padding: 0.4rem 0.6rem 0.4rem 0; cursor: pointer; line-height: 1; margin-left: auto;
-}
-.header-actions { display: flex; align-items: center; gap: 0.8rem; margin-left: auto; flex-shrink: 0; }
-.header-actions .live-link { color: var(--red-light); font-weight: 800; font-size: 1rem; display: flex; align-items: center; gap: 0.35rem; white-space: nowrap; }
-.header-actions .live-link:hover { text-decoration: none; }
-.header-actions .btn-black { background: var(--red); }
-.header-actions .btn-black:hover { background: var(--red-dark); }
-.btn-black { background: #111; color: #fff; border-radius: 999px; padding: 0.55rem 1.15rem; font-size: 0.95rem; font-weight: 700; white-space: nowrap; }
-.btn-black:hover { background: #000; color: #fff; text-decoration: none; }
+/* ---------- Top bar: white, brand left, date + social right ---------- */
+.topbar { background: #fff; border-bottom: 1px solid var(--line); }
+.topbar-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 0.9rem; padding-bottom: 0.9rem; }
+.brand-name { font-family: var(--serif); font-size: 1.9rem; font-weight: 900; letter-spacing: -0.01em; line-height: 1.05; color: var(--navy); white-space: nowrap; }
+.brand-name span { color: var(--red); }
+.brand-name:hover { text-decoration: none; color: var(--navy); }
+.brand-tagline { margin: 0.15rem 0 0; font-size: 0.82rem; color: var(--muted); font-weight: 600; letter-spacing: 0.04em; }
+.topbar-right { display: flex; align-items: center; gap: 1rem; flex-shrink: 0; }
+.dateline { font-size: 0.88rem; color: var(--muted); font-weight: 600; white-space: nowrap; }
+.social-links { display: flex; gap: 0.4rem; }
+.social-links a { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid var(--line); border-radius: 50%; color: var(--navy); }
+.social-links a:hover { background: var(--navy); color: #fff; text-decoration: none; border-color: var(--navy); }
+.social-links svg { width: 15px; height: 15px; display: block; }
+
+/* ---------- Sticky navy navigation ---------- */
+.site-header { position: sticky; top: 0; z-index: 100; background: var(--navy); }
+.header-row { display: flex; align-items: center; gap: 0.6rem; padding-top: 0; padding-bottom: 0; }
+.nav-wordmark { font-family: var(--serif); font-size: 1.05rem; font-weight: 900; color: #fff; white-space: nowrap; padding: 0.7rem 0.4rem 0.7rem 0; flex-shrink: 0; }
+.nav-wordmark span { color: #fff; }
+.nav-wordmark:hover { text-decoration: none; color: #fff; }
+.main-nav { flex: 1; min-width: 0; }
+.main-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+.main-nav ul::-webkit-scrollbar { display: none; }
+.main-nav a { display: block; color: #fff; padding: 0.75rem 0.65rem; font-size: 0.95rem; font-weight: 600; white-space: nowrap; border-bottom: 3px solid transparent; }
+.main-nav a:hover { color: #fff; background: var(--navy2); text-decoration: none; }
+.main-nav a.active { color: #fff; background: var(--navy2); border-bottom-color: var(--red); }
+.nav-toggle { display: none; background: none; border: 0; color: #fff; font-size: 1.5rem; padding: 0.4rem 0.5rem; cursor: pointer; line-height: 1; }
+.header-actions { display: flex; align-items: center; gap: 0.7rem; margin-left: auto; flex-shrink: 0; }
+.header-actions .live-link { color: #fff; font-weight: 800; font-size: 0.92rem; display: flex; align-items: center; gap: 0.35rem; white-space: nowrap; }
+.header-actions .live-link:hover { text-decoration: none; color: #fff; }
 .search-box { position: relative; display: flex; align-items: center; }
-.search-toggle { background: none; border: 0; padding: 0.4rem; cursor: pointer; color: #fff; line-height: 0; }
-.search-toggle:hover { color: var(--red-light); }
-.search-toggle svg { width: 22px; height: 22px; display: block; }
+.search-toggle { background: none; border: 0; padding: 0.45rem; cursor: pointer; color: #fff; line-height: 0; }
+.search-toggle:hover { color: #fff; }
+.search-toggle svg { width: 20px; height: 20px; display: block; }
 .search-box input {
-  background: #fff; border: 1px solid transparent; color: var(--ink);
-  border-radius: 999px; padding: 0.45rem 0; font-size: 0.9rem; width: 0; opacity: 0; outline: none;
+  background: #fff; border: 1px solid transparent; color: var(--text);
+  border-radius: 4px; padding: 0.45rem 0; font-size: 0.9rem; width: 0; opacity: 0; outline: none;
   transition: width 0.2s ease, opacity 0.2s ease, padding 0.2s ease;
 }
-.search-box.open input { width: 200px; opacity: 1; padding: 0.45rem 0.9rem; border-color: var(--line-strong); }
+.search-box.open input { width: 190px; opacity: 1; padding: 0.45rem 0.8rem; border-color: var(--line); }
 .search-box input::placeholder { color: #999; }
-.search-box input:focus { border-color: var(--ink); }
 .search-results {
-  display: none; position: absolute; right: 0; top: 110%; width: 320px; max-width: 90vw;
-  background: #fff; color: var(--ink); border: 1px solid var(--line); border-radius: 8px;
+  display: none; position: absolute; right: 0; top: 115%; width: 320px; max-width: 90vw;
+  background: #fff; color: var(--text); border: 1px solid var(--line); border-radius: 4px;
   box-shadow: 0 8px 28px rgba(0,0,0,0.18); z-index: 200; overflow: hidden;
 }
 .search-results.open { display: block; }
-.search-results a { display: block; padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--line); font-size: 0.92rem; color: var(--ink); }
+.search-results a { display: block; padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--line); font-size: 0.92rem; color: var(--text); }
 .search-results a:last-child { border-bottom: 0; }
-.search-results a:hover { background: var(--light); text-decoration: none; }
+.search-results a:hover { background: var(--bg); text-decoration: none; }
 .search-results a small { display: block; color: var(--red); font-weight: 700; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
 .search-results .none { padding: 0.7rem 0.8rem; color: var(--muted); font-size: 0.9rem; }
-.topic-row { border-top: 1px solid var(--line); background: #fff; }
-.topic-row .wrap { display: flex; gap: 1.4rem; padding-top: 0.55rem; padding-bottom: 0.55rem; padding-left: 1.5rem; padding-right: 1.5rem; overflow-x: auto; max-width: none; }
-.topic-row a { color: var(--muted); font-size: 0.9rem; font-weight: 600; white-space: nowrap; }
+.topic-row { border-bottom: 1px solid var(--line); background: #fff; }
+.topic-row .wrap { display: flex; gap: 1.4rem; padding-top: 0.5rem; padding-bottom: 0.5rem; overflow-x: auto; scrollbar-width: none; }
+.topic-row .wrap::-webkit-scrollbar { display: none; }
+.topic-row a { color: var(--muted); font-size: 0.88rem; font-weight: 600; white-space: nowrap; max-width: 260px; overflow: hidden; text-overflow: ellipsis; }
 .topic-row a:hover { color: var(--red); text-decoration: none; }
-@media (max-width: 1360px) {
-  .header-row { flex-wrap: wrap; gap: 0.5rem 1rem; }
+@media (max-width: 1080px) {
   .nav-toggle { display: block; }
-  .main-nav { order: 4; flex-basis: 100%; justify-content: flex-start; }
-  .main-nav ul { display: none; flex-direction: column; width: 100%; }
+  .main-nav { order: 4; flex-basis: 100%; }
+  .main-nav ul { display: none; flex-direction: column; overflow-x: visible; }
   .main-nav.open ul { display: flex; }
-  .main-nav a { padding: 0.55rem 0; border-top: 1px solid var(--line); }
-  .main-nav a.active { box-shadow: none; }
-  .search-box.open input { width: 160px; }
+  .main-nav a { padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.12); }
+  .main-nav a.active { border-bottom-color: var(--red); }
+  .header-row { flex-wrap: wrap; padding-top: 0.3rem; padding-bottom: 0.3rem; }
+  .search-box.open input { width: 150px; }
+  .brand-name { font-size: 1.5rem; }
+  .dateline { display: none; }
 }
 
 /* ---------- Layout ---------- */
-main { padding: 1.5rem 0 2rem; }
+main { padding: 0 0 2rem; }
+main > .wrap { padding-top: 1.4rem; }
 .section-head {
-  font-size: 0.95rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
-  color: var(--ink); border-bottom: 1px solid var(--line); padding-bottom: 0.5rem; margin: 0 0 1.1rem;
+  font-family: var(--serif); font-size: 1.35rem; font-weight: 900; color: var(--navy);
+  border-bottom: 2px solid var(--navy); padding-bottom: 0.45rem; margin: 0 0 1.1rem;
+  display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
 }
-.section-head a { color: var(--ink); }
+.section-head a { color: var(--navy); }
 .section-head a:hover { color: var(--red); }
-.tag { color: var(--red); }
-.kicker { color: var(--muted); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.section-head .view-all { font-family: var(--sans); font-size: 0.85rem; font-weight: 700; color: var(--red); white-space: nowrap; }
+.kicker { color: var(--red); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; }
 .byline { color: var(--muted); font-size: 0.85rem; margin: 0.5rem 0 0; }
-.byline time { font-weight: 600; color: var(--ink); }
+.byline time { font-weight: 600; color: var(--text); }
 .byline a { color: var(--red); font-weight: 700; }
+.section-block { margin: 0 0 2.4rem; }
+.section-desc { color: var(--muted); margin: -0.6rem 0 1.1rem; font-size: 0.95rem; }
 
 /* ---------- Breadcrumbs ---------- */
 .breadcrumbs { font-size: 0.85rem; color: var(--muted); margin: 0 0 1rem; }
 .breadcrumbs a { color: var(--muted); }
 .breadcrumbs a:hover { color: var(--red); }
-.breadcrumbs span { color: var(--ink); font-weight: 600; }
+.breadcrumbs span { color: var(--navy); font-weight: 600; }
 
-/* ---------- Hero (three-column) ---------- */
-.hero-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-bottom: 1.6rem; }
-@media (min-width: 1000px) { .hero-grid { grid-template-columns: 1.35fr 1fr 280px; } }
+/* ---------- Breaking bar ---------- */
+.breaking-bar { display: flex; align-items: center; gap: 0.9rem; background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--red); padding: 0.6rem 0.9rem; margin: 0 0 1.4rem; }
+.breaking-label { background: var(--red); color: #fff; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.3rem 0.6rem; border-radius: 2px; white-space: nowrap; flex-shrink: 0; }
+.breaking-main { font-family: var(--serif); font-weight: 700; font-size: 1rem; color: var(--navy); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.breaking-main:hover { color: var(--red); }
+.ticker { overflow: hidden; flex: 1; min-width: 0; mask-image: linear-gradient(90deg, transparent, #000 3%, #000 97%, transparent); -webkit-mask-image: linear-gradient(90deg, transparent, #000 3%, #000 97%, transparent); }
+.ticker-track { display: inline-flex; gap: 2.5rem; white-space: nowrap; animation: ticker 60s linear infinite; will-change: transform; }
+.ticker:hover .ticker-track { animation-play-state: paused; }
+.ticker-track a, .ticker-track span { font-size: 0.9rem; color: var(--text); font-weight: 600; }
+.ticker-track a:hover { color: var(--red); }
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (max-width: 700px) { .ticker { display: none; } }
+
+/* ---------- Hero: 65 / 35 ---------- */
+.hero-grid { display: grid; grid-template-columns: 1fr; gap: 1.6rem; margin-bottom: 2rem; }
+@media (min-width: 1000px) { .hero-grid { grid-template-columns: 65fr 35fr; } }
 .hero-media { margin: 0; }
-.hero-media img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 8px; }
-.hero .art { aspect-ratio: 16 / 10; border-radius: 8px; }
-.hero-box { background: var(--red); color: #fff; border-radius: 8px; padding: 1.1rem 1.3rem; margin: -3.4rem 1.4rem 0; position: relative; z-index: 2; }
-.hero-box .kicker { color: rgba(255,255,255,0.85); }
-.hero-box h1 { font-size: 1.75rem; line-height: 1.15; margin: 0.35rem 0 0; font-weight: 800; }
-.hero-box h1 a { color: #fff; }
-.hero-box h1 a:hover { color: #fff; text-decoration: underline; }
-@media (min-width: 1000px) { .hero-box h1 { font-size: 2rem; } }
-.hero .dek { color: #444; font-size: 1.02rem; margin: 0.9rem 0.2rem 0.5rem; line-height: 1.5; }
-.hero .byline { margin-left: 0.2rem; margin-right: 0.2rem; }
-
-/* Second story + text card (hero middle column) */
-.hero-second { display: flex; flex-direction: column; gap: 1.4rem; }
-.second-story figure { margin: 0 0 0.6rem; }
-.second-story figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; }
-.second-story .art { aspect-ratio: 16 / 9; border-radius: 8px; }
-.second-story h3 { font-size: 1.25rem; line-height: 1.3; margin: 0.3rem 0 0; font-weight: 800; }
-.second-story h3 a:hover { color: var(--red); }
-.text-card { display: flex; gap: 1rem; align-items: flex-start; border-top: 1px solid var(--line); padding-top: 1.2rem; }
-.text-card h3 { font-size: 1.08rem; line-height: 1.35; margin: 0.3rem 0 0; font-weight: 700; }
-.text-card h3 a:hover { color: var(--red); }
-.text-card-thumb { flex-shrink: 0; width: 110px; }
-.text-card-thumb img { width: 110px; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 6px; }
-.text-card-thumb .art { width: 110px; aspect-ratio: 16 / 10; border-radius: 6px; }
-.text-card-thumb .art .monogram { font-size: 1rem; padding: 0.1rem 0.5rem; }
-.text-card-thumb .art .art-label { display: none; }
-
-/* Right rail: Must Reads only. More Headlines lives in its own full-width
-   strip under the hero, so the rail stays about as tall as the lead story
-   and the hero grid does not leave a big empty area under the shorter
-   columns. */
-.hero-rail { display: flex; flex-direction: column; gap: 1.8rem; }
-.more-headlines-strip { margin: 0 0 1.6rem; }
-.more-headlines-strip .rail-list { display: grid; grid-template-columns: 1fr; column-gap: 2.5rem; }
-@media (min-width: 900px) { .more-headlines-strip .rail-list { grid-template-columns: 1fr 1fr; } }
-.rail-head { font-size: 0.85rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #666; border-left: 4px solid var(--red); padding-left: 0.6rem; margin: 0 0 0.9rem; }
-.rail-list { list-style: none; margin: 0; padding: 0; }
-.rail-list li { padding: 0.75rem 0; border-bottom: 1px solid var(--line); }
-.rail-list li:first-child { padding-top: 0; }
-.rail-list li:last-child { border-bottom: 0; }
-.rail-list a { font-weight: 700; font-size: 0.98rem; line-height: 1.35; }
-.rail-list a:hover { color: var(--red); }
-.rail-list .with-thumb { display: flex; gap: 0.9rem; align-items: flex-start; }
-.rail-list .with-thumb > div { flex: 1; }
-.rail-thumb { flex-shrink: 0; width: 120px; }
-.rail-thumb img { width: 120px; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 6px; }
-.rail-thumb .art { width: 120px; aspect-ratio: 16 / 10; border-radius: 6px; }
-.rail-thumb .art .monogram { font-size: 1rem; padding: 0.1rem 0.5rem; }
-.rail-thumb .art .art-label { display: none; }
-.rail-list small { display: block; color: var(--muted); font-size: 0.78rem; margin-top: 0.2rem; font-weight: 400; }
-
-/* ---------- Live Blog strip ---------- */
-.liveblog-strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 1rem 0 1.2rem; margin: 0 0 2rem; }
-.liveblog-label { color: var(--red); font-size: 0.85rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; margin: 0 0 0.7rem; }
-.liveblog-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 0.55rem 2.5rem; }
-@media (min-width: 900px) { .liveblog-list { grid-template-columns: 1fr 1fr; } }
-.liveblog-list li { font-size: 0.96rem; line-height: 1.45; }
-.liveblog-list time { color: var(--red); font-weight: 700; font-size: 0.82rem; margin-right: 0.5rem; }
-.liveblog-list a:hover { color: var(--red); }
-
-/* ---------- Most Popular ---------- */
-.most-read { margin: 0 0 2rem; }
-.most-read h2 { font-size: 0.95rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); border-left: 4px solid var(--red); padding-left: 0.6rem; margin: 0 0 0.6rem; }
-.most-read ol { list-style: none; margin: 0; padding: 0; counter-reset: mr; }
-.most-read li { counter-increment: mr; display: flex; gap: 0.9rem; align-items: flex-start; padding: 0.75rem 0; border-bottom: 1px solid var(--line); }
-.most-read li:last-child { border-bottom: 0; }
-.most-read li::before { content: counter(mr); font-weight: 800; font-size: 1.5rem; line-height: 1; color: var(--ink); min-width: 1.6rem; }
-.most-read a { font-size: 1rem; line-height: 1.35; font-weight: 700; }
-.most-read a:hover { color: var(--red); }
-.most-read small { display: block; color: var(--muted); font-size: 0.78rem; margin-top: 0.15rem; font-weight: 400; }
-.most-read.two-col ol { display: grid; grid-template-columns: 1fr; column-gap: 2.5rem; }
-@media (min-width: 900px) { .most-read.two-col ol { grid-template-columns: 1fr 1fr; } }
+.hero-media img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.hero .art { aspect-ratio: 16 / 9; }
+.hero h1 { font-size: 1.7rem; line-height: 1.2; margin: 0.5rem 0 0; font-weight: 900; }
+.hero h1 a { color: var(--navy); }
+.hero h1 a:hover { color: var(--red); }
+@media (min-width: 1000px) { .hero h1 { font-size: 2.1rem; } }
+.hero .dek { color: var(--text); font-size: 1.05rem; margin: 0.7rem 0 0.4rem; line-height: 1.55; }
+.hero-side { display: flex; flex-direction: column; gap: 1.4rem; }
+.side-story figure { margin: 0 0 0.55rem; }
+.side-story figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.side-story .art { aspect-ratio: 16 / 9; }
+.side-story h3 { font-size: 1.18rem; line-height: 1.3; margin: 0.3rem 0 0; font-weight: 700; }
+.side-story h3 a { color: var(--navy); }
+.side-story h3 a:hover { color: var(--red); }
+.side-story p { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.92rem; line-height: 1.5; }
 
 /* ---------- Cards & grids ---------- */
 .card-grid { display: grid; grid-template-columns: 1fr; gap: 1.6rem; }
 @media (min-width: 640px) { .card-grid { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 980px) { .card-grid.four { grid-template-columns: repeat(4, 1fr); } }
 @media (min-width: 980px) { .card-grid.three { grid-template-columns: repeat(3, 1fr); } }
-.card { border-top: 0; padding-top: 0; }
+.card { background: #fff; }
 .card figure { margin: 0 0 0.6rem; }
-.card figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; }
-.card h3 { font-size: 1.18rem; line-height: 1.3; margin: 0.35rem 0 0.35rem; font-weight: 800; }
+.card figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.card h3 { font-size: 1.12rem; line-height: 1.32; margin: 0.35rem 0 0.35rem; font-weight: 700; }
+.card h3 a { color: var(--navy); }
 .card h3 a:hover { color: var(--red); }
-.card p { margin: 0; color: #555; font-size: 0.95rem; line-height: 1.5; }
-.card .art { margin-bottom: 0.6rem; border-radius: 8px; }
+.card p { margin: 0; color: var(--muted); font-size: 0.93rem; line-height: 1.5; }
+.card .art { margin-bottom: 0.6rem; }
+/* Lead card: larger, spans the editorial row */
+.lead-card { display: grid; grid-template-columns: 1fr; gap: 0; margin-bottom: 1.6rem; }
+@media (min-width: 860px) { .lead-card { grid-template-columns: 1.5fr 1fr; gap: 1.6rem; align-items: start; } }
+.lead-card figure { margin: 0; }
+.lead-card figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.lead-card .art { aspect-ratio: 16 / 9; }
+.lead-card h3 { font-size: 1.5rem; line-height: 1.25; margin: 0.4rem 0 0.5rem; font-weight: 900; }
+.lead-card h3 a { color: var(--navy); }
+.lead-card h3 a:hover { color: var(--red); }
+.lead-card p { color: var(--text); font-size: 1rem; line-height: 1.55; margin: 0; }
 
-/* ---------- Graphic placeholder (stories without a photo) ---------- */
-.art {
-  aspect-ratio: 16 / 9;
-  background: linear-gradient(135deg, var(--navy) 0%, #274b7a 60%, #3d6aa8 100%);
-  color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 0.35rem; text-align: center; padding: 1rem; border-radius: 8px;
-}
-.art .monogram { font-size: 2.2rem; font-weight: 800; letter-spacing: 0.06em; border: 2px solid rgba(255,255,255,0.85); padding: 0.2rem 0.9rem; }
-.art .art-label { font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.85; }
-.art.small .monogram { font-size: 1.4rem; }
+/* ---------- Split sections (Business + Technology) ---------- */
+.split-sections { display: grid; grid-template-columns: 1fr; gap: 2.4rem; margin: 0 0 2.4rem; }
+@media (min-width: 980px) { .split-sections { grid-template-columns: 1fr 1fr; } }
+.split-sections .mini-list { list-style: none; margin: 0; padding: 0; }
+.split-sections .mini-list li { padding: 0.7rem 0; border-bottom: 1px solid var(--line); }
+.split-sections .mini-list li:last-child { border-bottom: 0; }
+.split-sections .mini-list a { font-family: var(--serif); font-weight: 700; font-size: 1.02rem; line-height: 1.35; color: var(--navy); }
+.split-sections .mini-list a:hover { color: var(--red); }
+.split-sections .mini-list small { display: block; color: var(--muted); font-size: 0.8rem; margin-top: 0.2rem; }
 
-/* ---------- Watch ---------- */
-.watch-strip { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin: 2.2rem 0; padding: 1.4rem 0 1.6rem; }
-.watch-strip h2 { font-size: 0.95rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); margin: 0 0 1rem; }
-.watch-grid { display: grid; grid-template-columns: 1fr; gap: 1.4rem; }
-@media (min-width: 700px) { .watch-grid { grid-template-columns: repeat(3, 1fr); } }
-.watch-card a { color: var(--ink); display: block; }
-.watch-card a:hover { text-decoration: none; }
-.watch-card a:hover h3 { text-decoration: underline; color: var(--red); }
-.watch-thumb { position: relative; }
-.watch-thumb img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; }
-.watch-thumb .play {
-  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
-  width: 44px; height: 44px; border-radius: 50%; background: #fff;
-  color: var(--red); font-size: 1rem; display: flex; align-items: center; justify-content: center; padding-left: 3px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
-}
-.watch-thumb .dur {
-  position: absolute; right: 0.5rem; bottom: 0.5rem; background: rgba(0,0,0,0.8);
-  color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.1rem 0.4rem; border-radius: 2px;
-}
-.watch-card h3 { font-size: 1.08rem; line-height: 1.3; margin: 0.55rem 0 0; color: var(--ink); font-weight: 800; }
-
-/* ---------- Analysis / Opinion ---------- */
-.analysis { margin: 0 0 2.2rem; }
-.analysis .cols { display: grid; grid-template-columns: 1fr; gap: 1.4rem; }
-@media (min-width: 700px) { .analysis .cols { grid-template-columns: repeat(3, 1fr); } }
-.analysis article { background: #fff; border-top: 0; padding: 0; }
-.analysis figure { margin: 0 0 0.6rem; }
-.analysis figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; }
-.analysis h3 { font-size: 1.15rem; line-height: 1.3; margin: 0.35rem 0 0.35rem; font-weight: 800; }
-.analysis h3 a:hover { color: var(--red); }
-.analysis p { margin: 0; font-size: 0.94rem; color: #555; line-height: 1.5; }
+/* ---------- Latest news feed ---------- */
+.latest-list { list-style: none; margin: 0; padding: 0; }
+.latest-item { display: grid; grid-template-columns: 1fr; gap: 0.8rem; padding: 1rem 0; border-bottom: 1px solid var(--line); }
+@media (min-width: 700px) { .latest-item { grid-template-columns: 180px 1fr; gap: 1.2rem; } }
+.latest-thumb img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.latest-thumb .art { aspect-ratio: 16 / 9; }
+.latest-item h3 { font-size: 1.15rem; line-height: 1.3; margin: 0.3rem 0 0.35rem; font-weight: 700; }
+.latest-item h3 a { color: var(--navy); }
+.latest-item h3 a:hover { color: var(--red); }
+.latest-item p { margin: 0; color: var(--muted); font-size: 0.94rem; line-height: 1.5; }
+.latest-hidden { display: none; }
+.load-more-wrap { text-align: center; margin: 1.4rem 0 0; }
+.load-more-btn { background: var(--navy); color: #fff; border: 0; padding: 0.7rem 1.6rem; font-size: 0.95rem; font-weight: 700; border-radius: 3px; cursor: pointer; }
+.load-more-btn:hover { background: var(--navy2); }
 
 /* ---------- Live blog ---------- */
 .live-dot { display: inline-block; width: 0.6rem; height: 0.6rem; background: var(--red); border-radius: 50%; margin-right: 0.4rem; animation: pulse 1.6s infinite; }
 @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
 .live-update { border-bottom: 1px solid var(--line); padding: 0 0 1rem; margin: 0 0 1rem; }
 .live-update time { font-weight: 700; color: var(--red); font-size: 0.88rem; }
-.live-update h3 { margin: 0.25rem 0 0.3rem; font-size: 1.15rem; font-weight: 800; line-height: 1.3; }
+.live-update h3 { margin: 0.25rem 0 0.3rem; font-size: 1.15rem; font-weight: 700; line-height: 1.3; }
+.live-update h3 a { color: var(--navy); }
 .live-update h3 a:hover { color: var(--red); }
-.live-update p { margin: 0; color: #333; }
+.live-update p { margin: 0; color: var(--text); }
 
 /* ---------- Newsletter ---------- */
-.newsletter { background: #fff; border: 1px solid var(--line-strong); color: var(--ink); padding: 1.6rem; margin: 2rem 0; border-radius: 8px; }
-.newsletter h2 { margin: 0 0 0.3rem; font-size: 1.35rem; font-weight: 800; }
-.newsletter p { margin: 0 0 0.9rem; color: var(--muted); }
-.newsletter form { display: flex; flex-wrap: wrap; gap: 0.6rem; }
-.newsletter input[type="email"] { flex: 1 1 220px; padding: 0.65rem 0.8rem; border: 1px solid var(--line-strong); border-radius: 4px; font-size: 1rem; background: #fff; color: var(--ink); }
-.newsletter button, .btn { background: #111; color: #fff; border: 0; padding: 0.65rem 1.2rem; font-size: 1rem; font-weight: 700; border-radius: 4px; cursor: pointer; display: inline-block; }
-.newsletter button:hover, .btn:hover { background: #000; text-decoration: none; }
-.newsletter .note { font-size: 0.8rem; color: var(--muted); margin: 0.6rem 0 0; }
-.newsletter .success { display: none; font-weight: 700; margin-top: 0.6rem; color: var(--ink); }
+.newsletter { background: var(--navy); color: #fff; padding: 2.2rem 1.6rem; margin: 2.4rem 0; text-align: center; }
+.newsletter h2 { margin: 0 0 0.4rem; font-size: 1.6rem; font-weight: 900; color: #fff; }
+.newsletter p { margin: 0 auto 1.1rem; color: rgba(255,255,255,0.85); max-width: 560px; }
+.newsletter form { display: flex; flex-wrap: wrap; gap: 0.6rem; max-width: 520px; margin: 0 auto; justify-content: center; }
+.newsletter input[type="email"] { flex: 1 1 240px; padding: 0.7rem 0.9rem; border: 1px solid rgba(255,255,255,0.4); border-radius: 3px; font-size: 1rem; background: #fff; color: var(--text); }
+.newsletter input[type="email"]:disabled { background: var(--gray); color: var(--muted); }
+.newsletter button { background: var(--red); color: #fff; border: 0; padding: 0.7rem 1.4rem; font-size: 1rem; font-weight: 700; border-radius: 3px; cursor: pointer; }
+.newsletter button:hover { background: var(--red-dark); }
+.newsletter button:disabled { background: var(--muted); cursor: not-allowed; }
+.newsletter .note { font-size: 0.8rem; color: rgba(255,255,255,0.7); margin: 0.8rem auto 0; }
+.newsletter .coming-soon { font-weight: 700; color: #fff; margin: 0.8rem auto 0; }
+
+/* ---------- Advertisement slots (reserved, empty) ---------- */
+.ad-slot { border: 1px dashed var(--line); background: var(--bg); text-align: center; padding: 1.4rem 1rem; margin: 0 0 2rem; min-height: 96px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.2rem; }
+.ad-slot .ad-label { font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+.ad-slot .ad-note { font-size: 0.82rem; color: var(--muted); }
+.ad-slot.banner { min-height: 90px; }
 
 /* ---------- Article page ---------- */
-.article-layout { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-@media (min-width: 960px) { .article-layout { grid-template-columns: 1fr 300px; } .article-layout .most-read { margin-top: 0.4rem; } }
-.article-head h1 { font-size: 2rem; line-height: 1.2; margin: 0.5rem 0; font-weight: 800; }
-@media (min-width: 860px) { .article-head h1 { font-size: 2.4rem; } }
-.article-head .dek { font-size: 1.12rem; color: #444; line-height: 1.5; }
+.article-layout { display: grid; grid-template-columns: 1fr; gap: 2.2rem; }
+@media (min-width: 960px) { .article-layout { grid-template-columns: minmax(0, 760px) 300px; justify-content: center; } }
+.article-head h1 { font-size: 1.9rem; line-height: 1.2; margin: 0.5rem 0; font-weight: 900; }
+@media (min-width: 860px) { .article-head h1 { font-size: 2.3rem; } }
+.article-head .dek { font-size: 1.12rem; color: var(--text); line-height: 1.55; }
 .article-hero { margin: 1rem 0 1.4rem; }
-.article-hero img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; }
-.article-hero .art { border-radius: 8px; }
+.article-hero img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.article-hero .art { aspect-ratio: 16 / 9; }
+.article-body { max-width: 760px; }
 .article-body p { font-size: 1.06rem; line-height: 1.7; margin: 0 0 1.1rem; }
-.source-box { border: 1px solid var(--line); border-left: 4px solid var(--red); background: var(--light); padding: 0.8rem 1rem; margin: 1.6rem 0; font-size: 0.95rem; }
+.article-body h2 { font-size: 1.35rem; margin: 1.6rem 0 0.6rem; }
+.article-body h3 { font-size: 1.15rem; margin: 1.4rem 0 0.5rem; }
+.source-box { border: 1px solid var(--line); border-left: 4px solid var(--red); background: var(--bg); padding: 0.8rem 1rem; margin: 1.6rem 0; font-size: 0.95rem; }
 .source-box strong { display: block; margin-bottom: 0.2rem; }
 .source-box a { color: var(--red); font-weight: 700; }
+/* Sidebar */
+.sidebar { display: flex; flex-direction: column; gap: 1.8rem; }
+.sidebar-block h2 { font-family: var(--sans); font-size: 0.9rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--navy); border-left: 4px solid var(--red); padding-left: 0.6rem; margin: 0 0 0.7rem; }
+.trending-list { list-style: none; margin: 0; padding: 0; counter-reset: tr; }
+.trending-list li { counter-increment: tr; display: flex; gap: 0.8rem; align-items: flex-start; padding: 0.65rem 0; border-bottom: 1px solid var(--line); }
+.trending-list li:last-child { border-bottom: 0; }
+.trending-list li::before { content: counter(tr); font-weight: 800; font-size: 1.4rem; line-height: 1; color: var(--navy); min-width: 1.4rem; }
+.trending-list a { font-size: 0.96rem; line-height: 1.35; font-weight: 700; color: var(--navy); }
+.trending-list a:hover { color: var(--red); }
+.trending-list small { display: block; color: var(--muted); font-size: 0.78rem; margin-top: 0.15rem; font-weight: 400; }
+.side-list { list-style: none; margin: 0; padding: 0; }
+.side-list li { padding: 0.6rem 0; border-bottom: 1px solid var(--line); }
+.side-list li:last-child { border-bottom: 0; }
+.side-list a { font-weight: 700; font-size: 0.95rem; line-height: 1.35; color: var(--navy); }
+.side-list a:hover { color: var(--red); }
+.side-list small { display: block; color: var(--muted); font-size: 0.78rem; margin-top: 0.15rem; }
+.cat-list { list-style: none; margin: 0; padding: 0; }
+.cat-list li { display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--line); font-size: 0.94rem; }
+.cat-list li:last-child { border-bottom: 0; }
+.cat-list a { font-weight: 600; color: var(--navy); }
+.cat-list span { color: var(--muted); }
+/* Related / prev-next / author */
 .related { margin-top: 2rem; border-top: 1px solid var(--line); padding-top: 0.8rem; }
-.related h2 { font-size: 0.95rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 0.6rem; }
+.related h2 { font-family: var(--sans); font-size: 0.95rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 0.6rem; }
 .related-list { list-style: none; margin: 0; padding: 0; }
 .related-list li { padding: 0.7rem 0; border-bottom: 1px solid var(--line); }
 .related-list li:last-child { border-bottom: 0; }
-.related-list a { font-weight: 700; }
+.related-list a { font-weight: 700; color: var(--navy); }
 .related-list a:hover { color: var(--red); }
+.prev-next { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 1.8rem 0 0; border-top: 1px solid var(--line); padding-top: 1.2rem; }
+@media (min-width: 700px) { .prev-next { grid-template-columns: 1fr 1fr; } }
+.prev-next a { display: block; border: 1px solid var(--line); padding: 0.8rem 1rem; }
+.prev-next a:hover { text-decoration: none; border-color: var(--navy); }
+.prev-next small { display: block; color: var(--red); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.prev-next strong { display: block; font-family: var(--serif); font-size: 1rem; line-height: 1.35; color: var(--navy); margin-top: 0.3rem; }
+.author-box { display: flex; gap: 1rem; align-items: flex-start; background: var(--bg); border: 1px solid var(--line); padding: 1rem 1.2rem; margin: 1.8rem 0 0; }
+.author-box .avatar { flex-shrink: 0; width: 56px; height: 56px; border-radius: 50%; background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.1rem; }
+.author-box h3 { margin: 0 0 0.3rem; font-size: 1.05rem; }
+.author-box p { margin: 0; color: var(--muted); font-size: 0.93rem; line-height: 1.5; }
+.share-row { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; margin: 1.4rem 0 0; }
+.share-row span { font-weight: 700; font-size: 0.9rem; color: var(--navy); }
+.share-row a { border: 1px solid var(--line); border-radius: 3px; padding: 0.4rem 0.8rem; font-size: 0.88rem; font-weight: 600; color: var(--navy); }
+.share-row a:hover { background: var(--navy); color: #fff; text-decoration: none; }
+
+/* ---------- Graphic placeholder (stories without a photo) ---------- */
+.art {
+  aspect-ratio: 16 / 9;
+  background: var(--navy);
+  color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 0.35rem; text-align: center; padding: 1rem;
+}
+.art .monogram { font-size: 2rem; font-weight: 800; letter-spacing: 0.06em; border: 2px solid rgba(255,255,255,0.85); padding: 0.2rem 0.9rem; }
+.art .art-label { font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.85; }
+.art.small .monogram { font-size: 1.3rem; }
+
+/* ---------- Category pages / pagination ---------- */
+.cat-nav { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 1.4rem; }
+.cat-nav a { border: 1px solid var(--line); border-radius: 3px; padding: 0.4rem 0.8rem; font-size: 0.88rem; font-weight: 600; color: var(--navy); background: #fff; }
+.cat-nav a:hover { background: var(--bg); text-decoration: none; }
+.cat-nav a.active { background: var(--navy); color: #fff; border-color: var(--navy); }
+.pagination { display: flex; gap: 0.4rem; flex-wrap: wrap; justify-content: center; margin: 1.8rem 0 0; }
+.page-btn { border: 1px solid var(--line); background: #fff; color: var(--navy); padding: 0.5rem 0.85rem; font-size: 0.92rem; font-weight: 700; border-radius: 3px; cursor: pointer; }
+.page-btn:hover { border-color: var(--navy); }
+.page-btn.active { background: var(--navy); color: #fff; border-color: var(--navy); }
+.page-btn:disabled { opacity: 0.45; cursor: default; }
+.page-count { text-align: center; color: var(--muted); font-size: 0.88rem; margin: 0.7rem 0 0; }
+
+/* ---------- Info pages ---------- */
+.info-page { max-width: 760px; }
+.info-page h1 { font-size: 1.8rem; margin: 0 0 1rem; }
+.info-page p { line-height: 1.7; color: var(--text); }
+.info-page a { color: var(--red); font-weight: 600; }
+
+/* ---------- Search page ---------- */
+.search-page .search-form { display: flex; gap: 0.6rem; max-width: 560px; margin: 0 0 1.4rem; }
+.search-page .search-form input[type="search"] { flex: 1; padding: 0.7rem 0.9rem; border: 1px solid var(--line); border-radius: 3px; font-size: 1rem; }
+.search-page .search-form button { background: var(--navy); color: #fff; border: 0; padding: 0.7rem 1.3rem; font-size: 1rem; font-weight: 700; border-radius: 3px; cursor: pointer; }
+.search-result { padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.search-result h3 { font-size: 1.15rem; margin: 0.3rem 0 0.35rem; }
+.search-result h3 a { color: var(--navy); }
+.search-result p { margin: 0; color: var(--muted); font-size: 0.94rem; }
 
 /* ---------- Footer ---------- */
-footer.site-footer { background: #fff; color: var(--ink); margin-top: 2.5rem; border-top: 1px solid var(--line); }
-footer.site-footer .wrap { padding-top: 1.8rem; padding-bottom: 1.4rem; }
-footer.site-footer a { color: #333; }
-footer.site-footer a:hover { color: var(--red); }
-footer.site-footer .cols { display: grid; grid-template-columns: 1fr; gap: 1.4rem; }
-@media (min-width: 700px) { footer.site-footer .cols { grid-template-columns: repeat(4, 1fr); } }
-footer.site-footer h3 { color: var(--ink); margin: 0 0 0.5rem; font-size: 0.95rem; font-weight: 800; }
-footer.site-footer h3 .news { color: var(--ink); }
+footer.site-footer { background: var(--navy); color: rgba(255,255,255,0.85); margin-top: 2.5rem; }
+footer.site-footer .wrap { padding-top: 2.2rem; padding-bottom: 1.4rem; }
+footer.site-footer a { color: rgba(255,255,255,0.85); }
+footer.site-footer a:hover { color: #fff; }
+footer.site-footer .cols { display: grid; grid-template-columns: 1fr; gap: 1.8rem; }
+@media (min-width: 700px) { footer.site-footer .cols { grid-template-columns: 1.4fr 1fr 1fr 1fr; } }
+footer.site-footer h3 { color: #fff; margin: 0 0 0.7rem; font-size: 0.98rem; font-weight: 800; font-family: var(--sans); }
+footer.site-footer h3 .news { color: #fff; }
+footer.site-footer .brand-name { font-size: 1.35rem; color: #fff; }
+footer.site-footer .brand-name span { color: #fff; }
 footer.site-footer ul { list-style: none; margin: 0; padding: 0; }
-footer.site-footer li { margin: 0.32rem 0; font-size: 0.94rem; }
-footer.site-footer p { font-size: 0.94rem; color: #555; }
-footer.site-footer .mini-form { display: flex; gap: 0.4rem; margin-top: 0.6rem; }
-footer.site-footer .mini-form input[type="email"] { flex: 1; min-width: 0; padding: 0.5rem 0.6rem; border: 1px solid var(--line-strong); border-radius: 4px; font-size: 0.9rem; background: #fff; color: var(--ink); }
-footer.site-footer .mini-form button { background: #111; color: #fff; border: 0; padding: 0.5rem 0.8rem; border-radius: 4px; font-weight: 700; cursor: pointer; }
-footer.site-footer .mini-form button:hover { background: #000; }
-footer.site-footer .fineprint { border-top: 1px solid var(--line); margin-top: 1.5rem; padding-top: 0.9rem; font-size: 0.82rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; justify-content: space-between; }
-.cookie-banner { position: fixed; left: 0; right: 0; bottom: 0; z-index: 200; background: #fff; border-top: 1px solid var(--line-strong); box-shadow: 0 -4px 16px rgba(0,0,0,0.08); padding: 0.9rem 1rem; display: none; }
+footer.site-footer li { margin: 0.4rem 0; font-size: 0.94rem; }
+footer.site-footer p { font-size: 0.94rem; color: rgba(255,255,255,0.75); line-height: 1.6; }
+footer.site-footer .fineprint { border-top: 1px solid rgba(255,255,255,0.2); margin-top: 1.8rem; padding-top: 1rem; font-size: 0.82rem; color: rgba(255,255,255,0.65); display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; justify-content: space-between; align-items: center; }
+footer.site-footer .fineprint .social-links a { border-color: rgba(255,255,255,0.4); color: #fff; }
+footer.site-footer .fineprint .social-links a:hover { background: #fff; color: var(--navy); border-color: #fff; }
+
+/* ---------- Cookie banner ---------- */
+.cookie-banner { position: fixed; left: 0; right: 0; bottom: 0; z-index: 200; background: #fff; border-top: 1px solid var(--line); box-shadow: 0 -4px 16px rgba(0,0,0,0.08); padding: 0.9rem 1rem; display: none; }
 .cookie-banner.show { display: block; }
 .cookie-banner .wrap { display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; align-items: center; justify-content: space-between; }
-.cookie-banner p { margin: 0; font-size: 0.92rem; color: #333; flex: 1; min-width: 200px; }
+.cookie-banner p { margin: 0; font-size: 0.92rem; color: var(--text); flex: 1; min-width: 200px; }
 .cookie-banner .actions { display: flex; gap: 0.5rem; }
-.cookie-banner button { border: 0; border-radius: 4px; padding: 0.55rem 1rem; font-weight: 700; font-size: 0.92rem; cursor: pointer; }
-.cookie-banner .accept { background: #111; color: #fff; }
-.cookie-banner .accept:hover { background: #000; }
-.cookie-banner .decline { background: #fff; color: #111; border: 1px solid var(--line-strong); }
+.cookie-banner button { border: 0; border-radius: 3px; padding: 0.55rem 1rem; font-weight: 700; font-size: 0.92rem; cursor: pointer; }
+.cookie-banner .accept { background: var(--navy); color: #fff; }
+.cookie-banner .accept:hover { background: var(--navy2); }
+.cookie-banner .decline { background: #fff; color: var(--navy); border: 1px solid var(--line); }
 
-.skip-link { position: absolute; left: -999px; top: 0; background: var(--red); color: #fff; padding: 0.5rem 1rem; z-index: 300; }
-.skip-link:focus { left: 0; }
+/* ---------- 404 ---------- */
+.page-404 { text-align: center; padding: 3rem 0; }
+.page-404 h1 { font-size: 3rem; margin: 0 0 0.5rem; }
+.page-404 p { color: var(--muted); }
+.page-404 .btn { background: var(--navy); color: #fff; padding: 0.7rem 1.4rem; border-radius: 3px; font-weight: 700; display: inline-block; margin-top: 1rem; }
+.page-404 .btn:hover { background: var(--navy2); text-decoration: none; }
+
+@media (max-width: 640px) {
+  .topic-row .wrap { gap: 1rem; }
+  .topic-row a { flex: 0 0 auto; } /* scroll the strip instead of squishing items to 2 letters */
+  .hero h1 { font-size: 1.45rem; }
+  .section-head { font-size: 1.15rem; }
+  .article-head h1 { font-size: 1.6rem; }
+  .breaking-bar { flex-wrap: wrap; }
+  .topbar-right .social-links { display: none; }
+}
 """
 
 
@@ -629,8 +691,6 @@ def nav_html(active, prefix=""):
     items = []
     for href, label in NAV:
         cls = "active" if href == active else ""
-        if href == "live.html":
-            cls += " live-link"
         items.append(f'<li><a href="{prefix}{href}" class="{cls.strip()}">{label}</a></li>')
     return '<ul>' + "".join(items) + "</ul>"
 
@@ -640,9 +700,24 @@ def header_html(active, prefix=""):
         f'<a href="{prefix}{href}">{label}</a>' for label, href in TOPICS
     )
     return f"""<a class="skip-link" href="#main">Skip to main content</a>
+<header class="topbar">
+<div class="wrap topbar-row">
+<div class="brand">
+<a class="brand-name" href="{prefix}index.html" data-site-name>Western World <span>News</span></a>
+<p class="brand-tagline">Independent News. Global Perspective.</p>
+</div>
+<div class="topbar-right">
+<span class="dateline" data-today></span>
+<span class="social-links">
+<a href="#" data-share="facebook" aria-label="Share on Facebook" title="Share on Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7V11H8.3v3h2.4v7h2.8z"/></svg></a>
+<a href="#" data-share="x" aria-label="Share on X" title="Share on X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.7 3H21l-7.3 8.3L22.2 21h-6.7l-5.2-6.2L4.3 21H1l7.8-8.9L1.8 3h6.9l4.7 5.6L17.7 3zm-1.2 16h1.9L6.4 4.9H4.4L16.5 19z"/></svg></a>
+</span>
+</div>
+</div>
+</header>
 <header class="site-header">
 <div class="wrap header-row">
-<a class="wordmark" href="{prefix}index.html" data-site-name>Western World News</a>
+<a class="nav-wordmark" href="{prefix}index.html">Western World <span>News</span></a>
 <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
 <nav class="main-nav" id="main-nav" aria-label="Main navigation">{nav_html(active, prefix)}</nav>
 <div class="header-actions">
@@ -652,90 +727,96 @@ def header_html(active, prefix=""):
 <input type="search" id="site-search" placeholder="Search news..." aria-label="Search news" autocomplete="off">
 <div class="search-results" id="search-results" role="listbox" aria-label="Search results"></div>
 </div>
-<a class="btn-black" href="#newsletter">Newsletter</a>
 </div>
 </div>
-<div class="topic-row"><div class="wrap">{topics}</div></div>
-</header>"""
+</header>
+<div class="topic-row"><div class="wrap">{topics}</div></div>"""
 
 
-# Smaller topic links under the header (real current stories).
+# Topic links under the header: the newest headlines, regenerated each build.
 TOPICS = [
-    ("Ukraine war", "live.html"),
-    ("Gaza ceasefire", "articles/gaza-yellow-line-raid.html"),
-    ("EU-UK reset", "articles/eu-uk-reset-deal.html"),
-    ("COP31", "articles/at-cop31-conflict-over-climate-science-slows-action-on.html"),
-    ("Wall Street", "articles/wall-street-selloff.html"),
-    ("Rwanda return hubs", "articles/eu-rwanda-return-hub.html"),
-    ("Nations League", "articles/nations-league-draw.html"),
-    ("Grammys", "articles/raye-grammy-nominations.html"),
+    (s["headline"][:90], f"articles/{s['slug']}.html") for s in STORIES[:8]
 ]
+
+
+def ad_slot_html(position=""):
+    """Reserved advertising area. Empty until AdSense is approved: no fake
+    ads, nothing disguised as news. The label makes it unmistakable."""
+    return (f'<div class="ad-slot" data-ad-slot="{position}" aria-label="Advertisement space">'
+            '<span class="ad-label">Advertisement</span>'
+            '<span class="ad-note">Advertising space reserved for future sponsors.</span></div>')
 
 
 def footer_html(prefix=""):
     return f"""<footer class="site-footer"><div class="wrap">
 <div class="cols">
 <div>
-<h3 data-site-name>Western World <span class="news">News</span></h3>
-<p data-tagline>Independent news from the West and the world: politics, war, business and culture, reported fast and in our own words. Free to read.</p>
+<a class="brand-name" href="{prefix}index.html">Western World <span>News</span></a>
+<p style="margin-top:0.7rem">Independent journalism bringing global developments, important stories and perspectives to readers worldwide.</p>
 </div>
 <div>
-<h3>Sections</h3>
+<h3>Explore</h3>
 <ul>
 <li><a href="{prefix}world.html">World</a></li>
-<li><a href="{prefix}europe.html">Europe</a></li>
 <li><a href="{prefix}us.html">US</a></li>
+<li><a href="{prefix}europe.html">Europe</a></li>
 <li><a href="{prefix}politics.html">Politics</a></li>
 <li><a href="{prefix}war-conflict.html">War &amp; Conflict</a></li>
-<li><a href="{prefix}business-finance.html">Business &amp; Finance</a></li>
-<li><a href="{prefix}sport.html">Sport</a></li>
+<li><a href="{prefix}business-finance.html">Business</a></li>
+<li><a href="{prefix}technology.html">Technology</a></li>
 <li><a href="{prefix}culture.html">Culture</a></li>
+<li><a href="{prefix}sport.html">Sport</a></li>
 <li><a href="{prefix}live.html">Live</a></li>
 </ul>
 </div>
 <div>
 <h3>About</h3>
 <ul>
-<li><a href="{prefix}about.html">About us</a></li>
-<li><a href="{prefix}contact.html">Contact</a></li>
-<li><a href="{prefix}privacy.html">Privacy policy</a></li>
-<li><a href="{prefix}terms.html">Terms of Service</a></li>
-<li><a href="{prefix}disclaimer.html">Disclaimer</a></li>
+<li><a href="{prefix}about.html">About Us</a></li>
+<li><a href="{prefix}authors.html">Our Authors</a></li>
+<li><a href="{prefix}contact.html">Contact Us</a></li>
 <li><a href="{prefix}editorial-policy.html">Editorial Policy</a></li>
 <li><a href="{prefix}corrections.html">Corrections Policy</a></li>
-<li><a href="{prefix}authors.html">Our Editorial Team</a></li>
-<li><a href="{prefix}sitemap.xml">Sitemap</a></li>
-<li><a href="{prefix}admin.html">Admin</a></li>
+<li><a href="{prefix}advertise.html">Advertise With Us</a></li>
 </ul>
 </div>
 <div>
-<h3>The Western Briefing</h3>
-<p>Our free morning newsletter: the day's Western and European news in your inbox before 8am.</p>
-<form class="mini-form newsletter-form" action="#" method="post">
-<label for="ft-email" class="sr-only">Email address</label>
-<input id="ft-email" type="email" name="email" placeholder="Your email" required>
-<button type="submit">Sign up</button>
-</form>
-<p class="success" style="display:none">Thank you. You are on the list.</p>
+<h3>Legal</h3>
+<ul>
+<li><a href="{prefix}privacy.html">Privacy Policy</a></li>
+<li><a href="{prefix}terms.html">Terms and Conditions</a></li>
+<li><a href="{prefix}disclaimer.html">Disclaimer</a></li>
+<li><a href="{prefix}cookie-policy.html">Cookie Policy</a></li>
+<li><a href="{prefix}sitemap.xml">Sitemap</a></li>
+</ul>
 </div>
 </div>
-<p class="fineprint"><span>&copy; 2026 Western World News (westernworldnews.com). All stories are original summaries written by our editors; original reporting is credited and linked. Content updated hourly.</span><span>Photos are credited to their sources.</span></p>
+<p class="fineprint"><span>&copy; 2026 Western World News (westernworldnews.com). All Rights Reserved. Stories are original summaries written by our editors; original reporting is credited and linked. Content updated hourly.</span><span class="social-links">
+<a href="#" data-share="facebook" aria-label="Share on Facebook" title="Share on Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7V11H8.3v3h2.4v7h2.8z"/></svg></a>
+<a href="#" data-share="x" aria-label="Share on X" title="Share on X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.7 3H21l-7.3 8.3L22.2 21h-6.7l-5.2-6.2L4.3 21H1l7.8-8.9L1.8 3h6.9l4.7 5.6L17.7 3zm-1.2 16h1.9L6.4 4.9H4.4L16.5 19z"/></svg></a>
+</span></p>
 </div></footer>"""
 
 
-def page(title, description, active, body, canonical, og_type="website", prefix="", extra_head=""):
+def page(title, description, active, body, canonical, og_type="website", prefix="", extra_head="", og_image=""):
     verify_tag = (f'<meta name="google-site-verification" content="{GOOGLE_SITE_VERIFICATION}">'
                   if GOOGLE_SITE_VERIFICATION else "")
     ga_tag = ""
     if GOOGLE_ANALYTICS_ID:
+        nl = chr(10)
         ga_tag = ('<script async src="https://www.googletagmanager.com/gtag/js?id='
-                  + GOOGLE_ANALYTICS_ID + '"></script>\n<script>\n'
-                  '  window.dataLayer = window.dataLayer || [];\n'
-                  '  function gtag(){dataLayer.push(arguments);}\n'
-                  "  gtag('consent', 'default', {'analytics_storage': 'denied'});\n"
-                  "  gtag('js', new Date());\n"
-                  "  try { if (localStorage.getItem('wwn-cookie-choice') === 'accepted') { gtag('consent', 'update', {'analytics_storage': 'granted'}); } } catch (e) {}\n"
-                  "  gtag('config', '" + GOOGLE_ANALYTICS_ID + "');\n</script>")
+                  + GOOGLE_ANALYTICS_ID + '"></script>' + nl + '<script>' + nl
+                  + '  window.dataLayer = window.dataLayer || [];' + nl
+                  + '  function gtag(){dataLayer.push(arguments);}' + nl
+                  + "  gtag('consent', 'default', {'analytics_storage': 'denied'});" + nl
+                  + "  gtag('js', new Date());" + nl
+                  + "  try { if (localStorage.getItem('wwn-cookie-choice') === 'accepted') { gtag('consent', 'update', {'analytics_storage': 'granted'}); } } catch (e) {}" + nl
+                  + "  gtag('config', '" + GOOGLE_ANALYTICS_ID + "');" + nl + '</script>')
+    full_title = title if title == "Western World News" else f"{title} | Western World News"
+    og_image_tag = ""
+    if og_image:
+        og_image_tag = ('<meta property="og:image" content="' + hescape(og_image) + '">' + chr(10)
+                        + '<meta name="twitter:image" content="' + hescape(og_image) + '">')
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -743,19 +824,23 @@ def page(title, description, active, body, canonical, og_type="website", prefix=
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {verify_tag}
 {ga_tag}
-<title>{title} | Western World News</title>
+<title>{full_title}</title>
 <meta name="description" content="{description}">
 <link rel="canonical" href="{canonical}">
 <meta property="og:type" content="{og_type}">
 <meta property="og:site_name" content="Western World News">
-<meta property="og:title" content="{title} | Western World News">
+<meta property="og:title" content="{full_title}">
 <meta property="og:description" content="{description}">
 <meta property="og:url" content="{canonical}">
+{og_image_tag}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{title} | Western World News">
+<meta name="twitter:title" content="{full_title}">
 <meta name="twitter:description" content="{description}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{prefix}assets/css/style.css">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23bb1919'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23172B45'/%3E%3Ctext x='16' y='22' font-family='Georgia' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
 {extra_head}
 {_org_jsonld()}
 </head>
@@ -767,7 +852,7 @@ def page(title, description, active, body, canonical, og_type="website", prefix=
 {footer_html(prefix)}
 <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent">
 <div class="wrap">
-<p>We use cookies to improve your experience and to show ads. You can accept or decline. Read our <a href="{prefix}privacy.html">Privacy Policy</a>.</p>
+<p>We use cookies to improve your experience. Advertising may appear on this site in the future, once approved; until then, no advertising cookies are used. Read our <a href="{prefix}privacy.html">Privacy Policy</a>.</p>
 <div class="actions">
 <button class="decline" id="cookie-decline" type="button">Decline</button>
 <button class="accept" id="cookie-accept" type="button">Accept</button>
@@ -787,36 +872,40 @@ def art_html(section_label, small=False):
             f'<span class="monogram">WWN</span><span class="art-label">{section_label}</span></div>')
 
 
-def img_html(slug, w=800, cls="", caption=True):
-    """Photo figure for a story, or the gradient tile if no photo is set."""
+def img_html(slug, w=800, cls="", caption=True, loading="lazy"):
+    """Photo figure for a story, or the navy tile if no photo is set.
+    width/height reserve the 16:9 display box so the page does not shift
+    while images load."""
+    h = w * 9 // 16
     if slug in IMAGES:
         pid, cap = IMAGES[slug]
         alt = _alt_for(slug, cap)
-        fig = (f'<figure class="{cls}"><img src="{uimg(pid, w)}" alt="{hescape(alt)}" loading="lazy">'
-               f'<figcaption>{hescape(cap)}</figcaption></figure>') if caption else \
-              f'<figure class="{cls}"><img src="{uimg(pid, w)}" alt="{hescape(alt)}" loading="lazy"></figure>'
+        img = f'<img src="{uimg(pid, w)}" alt="{hescape(alt)}" width="{w}" height="{h}" loading="{loading}">'
+        fig = (f'<figure class="{cls}">{img}<figcaption>{hescape(cap)}</figcaption></figure>') if caption else \
+              f'<figure class="{cls}">{img}</figure>'
         return fig
     if slug in BY_SLUG and BY_SLUG[slug].get("image"):
         cap = BY_SLUG[slug].get("imageCaption") or "Photo: Unsplash"
         alt = _alt_for(slug, cap)
-        fig = (f'<figure class="{cls}"><img src="{hescape(BY_SLUG[slug]["image"])}" alt="{hescape(alt)}" loading="lazy">'
-               f'<figcaption>{hescape(cap)}</figcaption></figure>') if caption else \
-              f'<figure class="{cls}"><img src="{hescape(BY_SLUG[slug]["image"])}" alt="{hescape(alt)}" loading="lazy"></figure>'
+        img = f'<img src="{hescape(BY_SLUG[slug]["image"])}" alt="{hescape(alt)}" width="{w}" height="{h}" loading="{loading}">'
+        fig = (f'<figure class="{cls}">{img}<figcaption>{hescape(cap)}</figcaption></figure>') if caption else \
+              f'<figure class="{cls}">{img}</figure>'
         return fig
     sec = SECTIONS[BY_SLUG[slug]["section"]] if slug in BY_SLUG else "News"
     return art_html(sec, small=(w <= 800))
 
 
 def thumb_html(slug, w=400):
-    """Small thumbnail image only (no caption), or the gradient tile.
+    """Small thumbnail image only (no caption), or the navy tile.
     Alt text always falls back to the article headline, never empty."""
     s = BY_SLUG.get(slug)
     alt = hescape(s["headline"]) if s else "Western World News"
+    h = w * 9 // 16
     if s and s.get("image"):
-        return f'<img src="{hescape(s["image"])}" alt="{alt}" loading="lazy">'
+        return f'<img src="{hescape(s["image"])}" alt="{alt}" width="{w}" height="{h}" loading="lazy">'
     if slug in IMAGES:
         pid, _cap = IMAGES[slug]
-        return f'<img src="{uimg(pid, w)}" alt="{alt}" loading="lazy">'
+        return f'<img src="{uimg(pid, w)}" alt="{alt}" width="{w}" height="{h}" loading="lazy">'
     sec = SECTIONS[s["section"]] if s else "News"
     return art_html(sec, small=True)
 
@@ -832,36 +921,198 @@ def card_html(s, prefix=""):
 </article>"""
 
 
-def most_read_html(prefix="", two_col=False):
+def _img_url(slug):
+    """Direct image URL for a story, or '' when it has no photo."""
+    s = BY_SLUG.get(slug)
+    if s and s.get("image"):
+        return s["image"]
+    if slug in IMAGES:
+        return uimg(IMAGES[slug][0], 1200)
+    return ""
+
+
+def _og_image(slug):
+    return _img_url(slug)
+
+
+def _justin_link(text):
+    """Link a Just In headline to its article when one exists (exact or
+    near title match). Returns the article path, or None when the story
+    was never published as an article: those items render as plain text
+    instead of pointing at the wrong page."""
+    norm = _re.sub(r"[^a-z0-9]+", " ", (text or "").lower()).strip()
+    for s in STORIES:
+        if _re.sub(r"[^a-z0-9]+", " ", s["headline"].lower()).strip() == norm:
+            return f"articles/{s['slug']}.html"
+    return None
+
+
+def _justin_sorted():
+    """Just In items, newest first (times are '27 Nov, 15:54' in UTC)."""
+    def key(item):
+        t, _h, _l = item
+        m = _re.match(r"(\d{1,2}) (\w{3}), (\d{2}):(\d{2})", t or "")
+        if not m:
+            return (0, 0, 0, 0)
+        months = {"Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6,
+                  "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12}
+        return (months.get(m.group(2), 0), int(m.group(1)), int(m.group(3)), int(m.group(4)))
+    return sorted(JUST_IN, key=key, reverse=True)
+
+
+def _related_slugs(s, limit=3):
+    """Related stories: the article's own list first, then the newest
+    stories in the same section, then the same source. Never empty when
+    the site has other stories in the section."""
+    out = []
+    for r in (s.get("related") or []):
+        if r in BY_SLUG and r != s["slug"] and r not in out:
+            out.append(r)
+    if len(out) < limit:
+        for x in STORIES:
+            if len(out) >= limit:
+                break
+            if x["slug"] != s["slug"] and x["section"] == s["section"] and x["slug"] not in out:
+                out.append(x["slug"])
+    if len(out) < limit:
+        for x in STORIES:
+            if len(out) >= limit:
+                break
+            if x["slug"] != s["slug"] and x.get("source") == s.get("source") and x["slug"] not in out:
+                out.append(x["slug"])
+    return out[:limit]
+
+
+def _live_last_updated():
+    """'Last updated' for the live blog, derived from the newest update's
+    date instead of a hardcoded string."""
+    best = None
+    months = {"Jan": "January", "Feb": "February", "Mar": "March", "Apr": "April",
+              "May": "May", "Jun": "June", "Jul": "July", "Aug": "August",
+              "Sep": "September", "Oct": "October", "Nov": "November", "Dec": "December"}
+    order = {"Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6,
+             "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12}
+    for t, _h, _p in LIVE_UPDATES:
+        m = _re.match(r"(\w{3}) (\d{1,2})", t or "")
+        if not m:
+            continue
+        key = (order.get(m.group(1), 0), int(m.group(2)))
+        if best is None or key > best[0]:
+            best = (key, f"{months[m.group(1)]} {int(m.group(2))}, {datetime.date.today().year}")
+    return best[1] if best else ""
+
+
+def lead_card_html(s, prefix=""):
+    sec = SECTIONS[s["section"]]
+    return f"""<article class="lead-card">
+{img_html(s['slug'], w=1200)}
+<div>
+<p><span class="kicker">{sec}</span></p>
+<h3><a href="{prefix}articles/{s['slug']}.html">{s['headline']}</a></h3>
+<p>{s['dek']}</p>
+<p class="byline"><time>{s['date']}</time> &middot; Source: {s['source']}</p>
+</div>
+</article>"""
+
+
+def mini_list_html(stories, prefix=""):
+    items = "".join(
+        f'<li><a href="{prefix}articles/{s["slug"]}.html">{s["headline"]}</a>'
+        f'<small>{SECTIONS[s["section"]]} &middot; {s["date"]}</small></li>'
+        for s in stories
+    )
+    return f'<ul class="mini-list">{items}</ul>'
+
+
+def trending_html(prefix="", limit=10):
     slugs = [s for s in MOST_READ if s in BY_SLUG]
     for s in STORIES:
-        if len(slugs) >= 10:
+        if len(slugs) >= limit:
             break
         if s["slug"] not in slugs:
             slugs.append(s["slug"])
     items = "".join(
         f'<li><div><a href="{prefix}articles/{s["slug"]}.html">{s["headline"]}</a>'
         f'<small>{SECTIONS[s["section"]]} &middot; {s["date"]}</small></div></li>'
-        for s in (BY_SLUG[slug] for slug in slugs)
+        for s in (BY_SLUG[slug] for slug in slugs[:limit])
     )
-    cls = "most-read two-col" if two_col else "most-read"
-    return f"""<aside class="{cls}" aria-label="Most popular">
-<h2>Most Popular</h2>
-<ol id="most-read-list">{items}</ol>
+    return f"""<aside class="sidebar-block" aria-label="Trending stories">
+<h2>Trending Stories</h2>
+<ol class="trending-list" id="most-read-list">{items}</ol>
 </aside>"""
 
 
+def latest_sidebar_html(prefix="", exclude_slug="", limit=5):
+    items = []
+    for s in STORIES:
+        if s["slug"] == exclude_slug:
+            continue
+        items.append(s)
+        if len(items) >= limit:
+            break
+    rows = "".join(
+        f'<li><a href="{prefix}articles/{s["slug"]}.html">{s["headline"]}</a>'
+        f'<small>{SECTIONS[s["section"]]} &middot; {s["date"]}</small></li>'
+        for s in items
+    )
+    return f"""<aside class="sidebar-block" aria-label="Latest news">
+<h2>Latest News</h2>
+<ul class="side-list">{rows}</ul>
+</aside>"""
+
+
+def categories_sidebar_html(prefix=""):
+    rows = ""
+    for key in ["world", "us", "europe", "politics", "war-conflict",
+                "business-finance", "technology", "culture", "sport"]:
+        n = len(stories_for(key))
+        if n:
+            rows += (f'<li><a href="{prefix}{key}.html">{SECTIONS[key]}</a>'
+                     f'<span>{n} {("story" if n == 1 else "stories")}</span></li>')
+    return f"""<aside class="sidebar-block" aria-label="Popular categories">
+<h2>Popular Categories</h2>
+<ul class="cat-list">{rows}</ul>
+</aside>"""
+
+
+def section_nav_html(active_file, prefix=""):
+    links = []
+    for href, label in NAV:
+        cls = "active" if href == active_file else ""
+        links.append(f'<a href="{prefix}{href}" class="{cls.strip()}">{label}</a>')
+    return '<nav class="cat-nav" aria-label="Sections">' + "".join(links) + "</nav>"
+
+
 def newsletter_html():
-    return """<section class="newsletter" id="newsletter" aria-label="Newsletter signup">
-<h2>The Western Briefing: free, every morning</h2>
-<p>Western and European news, war updates and the day's business headlines, in your inbox before 8am.</p>
-<form class="newsletter-form" action="#" method="post">
-<label for="nl-email" class="sr-only" style="position:absolute;left:-9999px">Email address</label>
+    """Newsletter section: 'Stay Informed. Stay Ahead.'
+
+    Wired to Buttondown (NEWSLETTER_BUTTONDOWN_USERNAME). The embed form
+    posts straight to Buttondown's public endpoint; Buttondown sends the
+    double opt-in confirmation and shows its own confirmation page.
+    While the username is unset, the form is honestly disabled with an
+    'opening soon' note — it never pretends to subscribe anyone."""
+    if NEWSLETTER_BUTTONDOWN_USERNAME:
+        action = ("https://buttondown.com/api/emails/embed-subscribe/"
+                  + NEWSLETTER_BUTTONDOWN_USERNAME)
+        form = f"""<form class="newsletter-form" action="{action}" method="post">
+<label for="nl-email" class="sr-only">Email address</label>
 <input id="nl-email" type="email" name="email" placeholder="Your email address" required>
-<button type="submit">Sign up free</button>
+<input type="hidden" value="1" name="embed">
+<button type="submit">Subscribe</button>
 </form>
-<p class="success">Thank you. You are on the list. Your first briefing arrives tomorrow morning.</p>
-<p class="note">No spam, no paywall. Unsubscribe any time. (Demo form: connect a mailing service before launch; see README.md.)</p>
+<p class="note">Powered by Buttondown. Double opt-in: check your inbox to confirm your subscription. You can unsubscribe at any time. We never sell your data.</p>"""
+    else:
+        form = """<form class="newsletter-form" action="#" method="post" onsubmit="return false;">
+<label for="nl-email" class="sr-only">Email address</label>
+<input id="nl-email" type="email" name="email" placeholder="Your email address" disabled>
+<button type="submit" disabled>Subscribe</button>
+</form>
+<p class="coming-soon">Subscriptions open soon. We are setting up our newsletter list, and sign-ups will open here shortly.</p>
+<p class="note">No spam, no paywall. Unsubscribe any time. We never sell your data.</p>"""
+    return f"""<section class="newsletter" id="newsletter" aria-label="Newsletter signup">
+<h2>Stay Informed. Stay Ahead.</h2>
+<p>Get the latest world news, important developments and expert perspectives delivered to your inbox.</p>
+{form}
 </section>"""
 
 
@@ -869,142 +1120,201 @@ def stories_for(section):
     return [s for s in STORIES if section in s["sections"]]
 
 
-def watch_html():
-    cards = "".join(
-        f"""<div class="watch-card"><a href="{w['link']}">
-<div class="watch-thumb"><img src="{uimg(w['img'], 800)}" alt="{hescape(w['title'])}" loading="lazy"><span class="play">&#9654;</span><span class="dur">{w['dur']}</span></div>
-<h3>{hescape(w['title'])}</h3></a></div>""" for w in WATCH
-    )
-    return f"""<section class="watch-strip" aria-label="Watch">
-<h2>Watch</h2>
-<div class="watch-grid">{cards}</div>
-</section>"""
-
-
-def analysis_html():
-    def slug_of(link):
-        return link.rsplit("/", 1)[-1].replace(".html", "")
-    items = "".join(
-        f"""<article>
-{img_html(slug_of(a['link']), w=800)}
-<p><span class="kicker">Analysis</span></p>
-<h3><a href="{a['link']}">{hescape(a['title'])}</a></h3>
-<p>{hescape(a['blurb'])}</p></article>""" for a in ANALYSIS
-    )
-    return f"""<section class="analysis" aria-label="Analysis">
-<h2 class="section-head">Analysis</h2>
-<div class="cols">{items}</div>
-</section>"""
-
-
 # ---------------- Homepage ----------------
+
+SECTION_DESCRIPTIONS = {
+    "world": "Global developments, diplomacy and major stories from every region.",
+    "europe": "European politics, the European Union, the UK, Germany, France and the continent's biggest stories.",
+    "us": "US politics, the White House, Congress, elections, the US economy and America's role in the world.",
+    "politics": "Politics in the West and around the world: elections, governments and the decisions that shape them.",
+    "war-conflict": "International conflicts, military developments, security, defense and geopolitics.",
+    "business-finance": "The global economy, financial markets, companies and trade.",
+    "technology": "Artificial intelligence, science, technology companies and innovation.",
+    "sport": "Sport from around the world.",
+    "culture": "Culture, arts and ideas.",
+}
+
 
 def build_index():
     hero = BY_SLUG.get(HERO_SLUG) or STORIES[0]
     rest = [s for s in STORIES if s["slug"] != hero["slug"]]
-    second, third = rest[0], rest[1]
-    must_slugs = [s for s in MOST_READ if s in BY_SLUG][:4]
-    used = {hero["slug"], second["slug"], third["slug"]} | set(must_slugs)
-    more = [s for s in STORIES if s["slug"] not in used][:6]
-    is_breaking = BREAKING.get("link", "").endswith(hero["slug"] + ".html")
-    hero_kicker = "Breaking" if is_breaking else f"{SECTIONS[hero['section']]} &middot; Live"
+    used = {hero["slug"]}
 
-    def rail_item(s, thumb=False):
-        small = f'<small>{SECTIONS[s["section"]]} &middot; {s["date"]}</small>'
-        link = f'articles/{s["slug"]}.html'
-        if thumb:
-            return (f'<li class="with-thumb"><div><a href="{link}">{s["headline"]}</a>{small}</div>'
-                    f'<a class="rail-thumb" href="{link}">{thumb_html(s["slug"])}</a></li>')
-        return f'<li><a href="{link}">{s["headline"]}</a>{small}</li>'
+    def pick_newest(stories):
+        for s in stories:
+            if s["slug"] not in used:
+                used.add(s["slug"])
+                return s
+        return None
 
-    must_items = "".join(rail_item(BY_SLUG[s], thumb=(i == 0)) for i, s in enumerate(must_slugs))
-    more_items = "".join(rail_item(s) for s in more)
-    just_in = "".join(
-        f'<li><time>{t}</time><a href="live.html">{h}</a></li>' for t, h, _ in JUST_IN
+    # --- B: hero secondary stories (2) ---
+    side = []
+    for s in rest:
+        if len(side) >= 2:
+            break
+        side.append(s)
+        used.add(s["slug"])
+
+    # --- Breaking bar (A): real headline + Just In ticker ---
+    breaking_link = BREAKING.get("link", "")
+    breaking_text = BREAKING.get("text", "")
+    if not breaking_link or not breaking_text:
+        breaking_link = f"articles/{hero['slug']}.html"
+        breaking_text = hero["headline"]
+    ticker_items = []
+    for t, h, stored_link in _justin_sorted():
+        link = stored_link or _justin_link(h)
+        if link:
+            ext = ' target="_blank" rel="noopener"' if link.startswith("http") else ""
+            ticker_items.append(f'<a href="{link}"{ext}>{h}</a>')
+        else:
+            ticker_items.append(f"<span>{h}</span>")
+    ticker = "".join(ticker_items)
+    ticker_html = f'<div class="ticker" aria-hidden="true"><div class="ticker-track">{ticker}{ticker}</div></div>'
+
+    is_breaking = breaking_link.endswith(hero["slug"] + ".html")
+    hero_kicker = "Breaking" if is_breaking else SECTIONS[hero["section"]]
+    hero_headline = hero["headline"].lower()
+    live_link = ""
+    if any(w in hero_headline for w in ("ukraine", "russia", "kyiv", "kremlin")):
+        live_link = ' &middot; <a href="live.html">Follow live updates</a>'
+
+    side_html = "".join(
+        f"""<article class="side-story">
+{img_html(s['slug'], w=800)}
+<p><span class="kicker">{SECTIONS[s['section']]}</span></p>
+<h3><a href="articles/{s['slug']}.html">{s['headline']}</a></h3>
+<p>{s['dek']}</p>
+<p class="byline"><time>{s['date']}</time></p>
+</article>""" for s in side
     )
-    europe = stories_for("europe")
-    world = stories_for("world")
-    us_pol = stories_for("us") + [s for s in stories_for("politics") if s["slug"] not in [x["slug"] for x in stories_for("us")]]
-    biz = stories_for("business-finance")
 
-    def block(title, stories, grid_cls="four", slug=""):
-        cards = "".join(card_html(s) for s in stories)
-        return f'<h2 class="section-head">{title}</h2><div class="card-grid {grid_cls}" data-section-block data-section="{slug}">{cards}</div>'
+    # --- C: Top Stories, one card per category ---
+    top_picks = []
+    for secs in (["us", "politics"], ["europe"], ["war-conflict"], ["business-finance"]):
+        pool = [s for s in STORIES if s["section"] in secs]
+        top_picks.append(pick_newest(pool))
+    top_cards = "".join(card_html(s) for s in top_picks if s)
+
+    # --- Section blocks D-G: lead + 3 cards each ---
+    def section_block(section, title, view_all):
+        stories = [s for s in stories_for(section) if s["slug"] not in used]
+        if not stories:
+            return ""
+        lead = stories[0]
+        used.add(lead["slug"])
+        cards = []
+        for s in stories[1:4]:
+            used.add(s["slug"])
+            cards.append(s)
+        cards_html = "".join(card_html(s) for s in cards)
+        return f"""<section class="section-block" aria-label="{title}" data-section-block data-section="{section}" data-limit="4">
+<h2 class="section-head">{title}<a class="view-all" href="{view_all}">View All &rarr;</a></h2>
+<div data-block-content>
+{lead_card_html(lead)}
+<div class="card-grid three">{cards_html}</div>
+</div>
+</section>"""
+
+    world_block = section_block("world", "World News", "world.html")
+    us_block = section_block("us", "US News &amp; Politics", "us.html")
+    europe_block = section_block("europe", "Europe News", "europe.html")
+    war_block = section_block("war-conflict", "War &amp; Conflict", "war-conflict.html")
+
+    # --- H: Business + Technology side by side ---
+    def split_block(section, title, view_all):
+        stories = [s for s in stories_for(section) if s["slug"] not in used]
+        if not stories:
+            return (f'<div><h2 class="section-head">{title}<a class="view-all" href="{view_all}">View All &rarr;</a></h2>'
+                    '<p class="section-desc">More coverage is added daily.</p></div>')
+        lead = stories[0]
+        used.add(lead["slug"])
+        rest_minis = []
+        for s in stories[1:4]:
+            used.add(s["slug"])
+            rest_minis.append(s)
+        return f"""<div data-section-block data-section="{section}" data-limit="4" data-layout="split">
+<h2 class="section-head">{title}<a class="view-all" href="{view_all}">View All &rarr;</a></h2>
+<div data-block-content>
+{lead_card_html(lead)}
+{mini_list_html(rest_minis)}
+</div>
+</div>"""
+
+    biz_block = split_block("business-finance", "Business", "business-finance.html")
+    tech_block = split_block("technology", "Technology", "technology.html")
+
+    # --- I: Latest News feed (chronological, nothing already featured) ---
+    latest = [s for s in STORIES if s["slug"] not in used][:40]
+    latest_items = []
+    for i, s in enumerate(latest):
+        hidden = ' latest-hidden' if i >= 10 else ""
+        latest_items.append(f"""<li class="latest-item{hidden}">
+<a class="latest-thumb" href="articles/{s['slug']}.html">{thumb_html(s['slug'])}</a>
+<div>
+<p><span class="kicker">{SECTIONS[s['section']]}</span></p>
+<h3><a href="articles/{s['slug']}.html">{s['headline']}</a></h3>
+<p>{s['dek']}</p>
+<p class="byline"><time>{s['date']}</time> &middot; Source: {s['source']}</p>
+</div>
+</li>""")
+    load_more = ""
+    if len(latest) > 10:
+        load_more = ('<div class="load-more-wrap"><button class="load-more-btn" id="load-more" '
+                     'type="button">Load More</button></div>')
 
     body = f"""
+<section class="breaking-bar" aria-label="Breaking news">
+<span class="breaking-label">Breaking News</span>
+<a class="breaking-main" id="breaking-link" href="{breaking_link}">{breaking_text}</a>
+{ticker_html}
+</section>
+
+{ad_slot_html("below-nav")}
+
 <div class="hero-grid">
 <article class="hero" data-hero>
-{img_html(hero['slug'], w=1600, cls="hero-media", caption=False)}
-<div class="hero-box">
+{img_html(hero['slug'], w=1600, cls="hero-media", caption=False, loading="eager")}
 <p><span class="kicker">{hero_kicker}</span></p>
 <h1><a href="articles/{hero['slug']}.html">{hero['headline']}</a></h1>
-</div>
 <p class="dek">{hero['dek']}</p>
-<p class="byline"><time>{hero['date']}</time> &middot; Source: {hero['source']} &middot; <a href="live.html">Follow live updates</a></p>
+<p class="byline"><time>{hero['date']}</time> &middot; Source: {hero['source']}{live_link}</p>
 </article>
-<div class="hero-second">
-<article class="second-story">
-{img_html(second['slug'], w=800)}
-<p><span class="kicker">{SECTIONS[second['section']]}</span></p>
-<h3><a href="articles/{second['slug']}.html">{second['headline']}</a></h3>
-</article>
-<article class="text-card">
-<div>
-<p><span class="kicker">{SECTIONS[third['section']]}</span></p>
-<h3><a href="articles/{third['slug']}.html">{third['headline']}</a></h3>
-</div>
-<a class="text-card-thumb" href="articles/{third['slug']}.html">{thumb_html(third['slug'])}</a>
-</article>
-</div>
-<div class="hero-rail">
-<aside class="rail-block" aria-label="Must reads">
-<h2 class="rail-head">Must Reads</h2>
-<ul class="rail-list">{must_items}</ul>
-</aside>
+<div class="hero-side">
+{side_html}
 </div>
 </div>
 
-<section class="more-headlines-strip" aria-label="More headlines">
-<h2 class="rail-head">More Headlines</h2>
-<ul class="rail-list">{more_items}</ul>
+<section class="section-block" aria-label="Top stories">
+<h2 class="section-head">Top Stories</h2>
+<div class="card-grid four">{top_cards}</div>
 </section>
 
-<section class="liveblog-strip" aria-label="Live blog">
-<h2 class="liveblog-label">Live Blog</h2>
-<ul id="just-in-list" class="liveblog-list">{just_in}</ul>
+{ad_slot_html("mid-homepage")}
+
+{world_block}
+{us_block}
+{europe_block}
+{war_block}
+
+<section class="split-sections" aria-label="Business and Technology">
+{biz_block}
+{tech_block}
 </section>
 
-{block("Europe", europe, slug="europe")}
-<div style="height:2rem"></div>
-{block("World", world, slug="world")}
-<div style="height:2rem"></div>
-
-{watch_html()}
-
-{block("US &amp; Politics", us_pol, slug="us,politics")}
-<div style="height:2rem"></div>
-
-{most_read_html(two_col=True)}
-
-<section aria-label="Live blog">
-<h2 class="section-head"><span class="live-dot"></span>Live: Ukraine war</h2>
-<div class="live-update">
-<time>Nov 20, 10:33</time>
-<h3><a href="live.html">Embassies damaged in Kyiv barrage</a></h3>
-<p>A daytime Russian barrage blew out windows at the Austrian and Dutch missions in Kyiv and damaged a cathedral, prompting Brussels to summon Moscow's envoy. <a href="live.html">Follow the live blog</a></p>
-</div>
+<section class="section-block" aria-label="Latest news">
+<h2 class="section-head">Latest News</h2>
+<ul class="latest-list" id="latest-list" data-exclude="{','.join(sorted(used))}">{''.join(latest_items)}</ul>
+{load_more}
 </section>
 
 {newsletter_html()}
-
-{analysis_html()}
-
-{block("Business &amp; Finance", biz, slug="business-finance")}
 """
     html = page(
-        "Western World News | Western and European news, live",
+        "Western World News",
         "Western World News: breaking news from Western Europe and the world: politics, war, business and culture, free to read.",
         "index.html", body, BASE + "/",
+        og_image=_og_image(hero["slug"]),
     )
     return html
 
@@ -1014,22 +1324,31 @@ def build_index():
 def build_section(section, filename):
     stories = stories_for(section)
     label = SECTIONS[section]
+    desc = SECTION_DESCRIPTIONS.get(section, "")
     if stories:
-        cards = "".join(card_html(s) for s in stories)
-        listing = f'<div class="card-grid three" data-section-list="{section}">{cards}</div>'
+        lead = stories[0]
+        rest_cards = "".join(card_html(s) for s in stories[1:])
+        listing = (f'{lead_card_html(lead)}'
+                   f'<div class="card-grid three paginated-grid" data-page-size="12" data-section-list="{section}">{rest_cards}</div>'
+                   f'<div class="pagination" id="pagination"></div>'
+                   f'<p class="page-count" id="page-count"></p>')
     else:
         listing = "<p>No stories in this section yet. New coverage is added daily.</p>"
     body = f"""
 {_breadcrumbs_html([("Home", "index.html"), (label, None)])}
-<h1 class="section-head">{label}</h1>
+{section_nav_html(filename)}
+<h1 class="section-head">{label} News</h1>
+<p class="section-desc">{desc}</p>
 {listing}
-{most_read_html()}
+{trending_html()}
 {newsletter_html()}
 """
+    og = _og_image(stories[0]["slug"]) if stories else ""
     return page(
         f"{label} news",
-        f"Latest {label.lower()} news from Western World News: Western and European coverage, free to read.",
+        f"Latest {label} news from Western World News: {desc}",
         filename, body, BASE + "/" + filename,
+        og_image=og,
         extra_head=_breadcrumb_jsonld([("Home", BASE + "/"),
                                        (SECTION_LABELS_PLAIN[section], BASE + "/" + filename)]),
     )
@@ -1045,16 +1364,18 @@ def build_live():
 <p>{p}</p>
 </div>""" for t, h, p in LIVE_UPDATES
     )
+    last = _live_last_updated()
+    last_line = f"Last updated {last}." if last else ""
     body = f"""
 <h1 class="section-head"><span class="live-dot"></span>Live: Ukraine war</h1>
-<p>Rolling updates on Russia's war in Ukraine: the overnight missile strikes, the Shenzhen summit and Europe's response. Times are in CET. Last updated November 20, 2026.</p>
+<p>Rolling updates on Russia's war in Ukraine: the overnight missile strikes, the summit and Europe's response. Times are in CET. {last_line}</p>
 <div id="live-updates">{updates}</div>
 <p><a class="btn" href="articles/russia-ukraine-missile-attack.html">Read the full story</a></p>
 {newsletter_html()}
 """
     return page(
         "Live: Ukraine war (rolling updates)",
-        "Live updates on Russia's war in Ukraine: missile strikes, the Trump-Xi-Putin summit and Europe's response.",
+        "Live updates on Russia's war in Ukraine: missile strikes, the summit and Europe's response.",
         "live.html", body, BASE + "/live.html",
     )
 
@@ -1066,16 +1387,41 @@ def build_article(s):
     if s.get("auto"):
         # Auto-published articles are short summaries of the source's own
         # report (feed description), not original WWN summaries — say so.
-        source_note = (f"This is a short summary of a {s['source']} report. "
+        if s["source"].startswith("The "):
+            src_phrase = f"a report by {s['source']}"
+        else:
+            src_phrase = f"a {s['source']} report"
+        source_note = (f"This is a short summary of {src_phrase}. "
                        f"Read the full story at {s['source']}: "
                        f"<a href=\"{s['source_url']}\" target=\"_blank\" rel=\"noopener\">Original article: {s['source']}</a>.")
     else:
         source_note = (f"This story is an original summary by Western World News, based on reporting by {s['source']} ({s['date']}). "
                        f"Read the original report: <a href=\"{s['source_url']}\" target=\"_blank\" rel=\"noopener\">Original article: {s['source']}</a>.")
+    rel_slugs = _related_slugs(s)
     rel = "".join(
         f'<li><a href="{r}.html">{BY_SLUG[r]["headline"]}</a> <span class="byline">{BY_SLUG[r]["date"]}</span></li>'
-        for r in s["related"]
+        for r in rel_slugs
     )
+    related_html = ""
+    if rel:
+        related_html = f"""<section class="related">
+<h2>Related stories</h2>
+<ul class="related-list">{rel}</ul>
+</section>"""
+    idx = STORIES.index(s)
+    prev_html = ""
+    if idx + 1 < len(STORIES):
+        older = STORIES[idx + 1]
+        prev_html = (f'<a href="{older["slug"]}.html"><small>&larr; Previous article</small>'
+                     f'<strong>{older["headline"]}</strong></a>')
+    next_html = ""
+    if idx > 0:
+        newer = STORIES[idx - 1]
+        next_html = (f'<a href="{newer["slug"]}.html"><small>Next article &rarr;</small>'
+                     f'<strong>{newer["headline"]}</strong></a>')
+    prev_next = ""
+    if prev_html or next_html:
+        prev_next = f'<nav class="prev-next" aria-label="More articles">{prev_html}{next_html}</nav>'
     sec = SECTIONS[s["section"]]
     crumbs = _breadcrumbs_html([("Home", "../index.html"),
                                 (sec, "../" + s["section"] + ".html"),
@@ -1091,7 +1437,7 @@ def build_article(s):
 <p class="dek">{s['dek']}</p>
 <p class="byline">By <a href="../authors.html">Western World News Editorial Team</a> &middot; <time>{s['date']}</time></p>
 </header>
-<div class="article-hero">{img_html(s['slug'], w=1600)}</div>
+<div class="article-hero">{img_html(s['slug'], w=1600, loading="eager")}</div>
 <div class="article-body">
 {body_paras}
 </div>
@@ -1099,15 +1445,28 @@ def build_article(s):
 <strong>Source</strong>
 {source_note}
 </div>
-<section class="related">
-<h2>Related stories</h2>
-<ul class="related-list">{rel}</ul>
-</section>
-</article>
-{newsletter_html()}
+<div class="share-row"><span>Share this story:</span>
+<a href="#" data-share="facebook">Facebook</a>
+<a href="#" data-share="x">X</a>
 </div>
+{related_html}
+{prev_next}
+<div class="author-box">
+<div class="avatar" aria-hidden="true">WWN</div>
 <div>
-{most_read_html(prefix="../")}
+<h3>Western World News Editorial Team</h3>
+<p>Stories on Western World News are written by our editorial team, which selects, rewrites and checks the news every day. Every story is rewritten in our own words, credited to its original source and linked to the original report. <a href="../authors.html">More about our team</a></p>
+</div>
+</div>
+{ad_slot_html("after-article")}
+{newsletter_html()}
+</article>
+</div>
+<div class="sidebar">
+{trending_html(prefix="../")}
+{latest_sidebar_html(prefix="../", exclude_slug=s['slug'])}
+{categories_sidebar_html(prefix="../")}
+{ad_slot_html("sidebar")}
 </div>
 </div>
 """
@@ -1119,14 +1478,75 @@ def build_article(s):
     return page(
         s["headline"], s["dek"], s["section"] + ".html" if s["section"] != "live" else "index.html",
         body, BASE + f"/articles/{s['slug']}.html", og_type="article", prefix="../",
-        extra_head=schema,
+        extra_head=schema, og_image=_og_image(s["slug"]),
+    )
+
+
+ADS_TXT = """# ads.txt for Western World News (westernworldnews.com)
+# Advertising is not live yet. This file is a placeholder: add the
+# Google AdSense publisher line here once AdSense is approved, e.g.:
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+"""
+
+
+def search_index_json():
+    """Lightweight search index: headline/dek/section/date/url per story."""
+    items = [{
+        "slug": s["slug"],
+        "headline": s["headline"],
+        "dek": s["dek"],
+        "section": SECTION_LABELS_PLAIN[s["section"]],
+        "date": s["date"],
+        "url": "articles/" + s["slug"] + ".html",
+    } for s in STORIES]
+    return json.dumps(items, ensure_ascii=False, indent=1)
+
+
+# ---------------- Search page ----------------
+
+def build_search():
+    body = """
+<div class="search-page">
+<h1 class="section-head">Search</h1>
+<form class="search-form" action="search.html" method="get" role="search">
+<label for="q" class="sr-only">Search news</label>
+<input type="search" id="q" name="q" placeholder="Search news..." aria-label="Search news" autocomplete="off">
+<button type="submit">Search</button>
+</form>
+<p id="search-status" class="section-desc">Type a word or phrase above to search every story on Western World News.</p>
+<div id="search-page-results"></div>
+</div>
+"""
+    return page(
+        "Search",
+        "Search every story on Western World News.",
+        "index.html", body, BASE + "/search.html",
+    )
+
+
+# ---------------- 404 page ----------------
+
+def build_404():
+    body = """
+<div class="page-404">
+<h1>Page not found</h1>
+<p>Sorry, the page you are looking for does not exist or has moved.</p>
+<p><a class="btn" href="index.html">Back to the homepage</a></p>
+<p style="margin-top:1.2rem"><a href="world.html">World</a> &middot; <a href="us.html">US</a> &middot; <a href="europe.html">Europe</a> &middot; <a href="search.html">Search</a></p>
+</div>
+"""
+    return page(
+        "Page not found",
+        "The page you are looking for does not exist on Western World News.",
+        "index.html", body, BASE + "/404.html",
     )
 
 
 # ---------------- Info pages ----------------
 
 def build_info(slug, title, description, heading, paragraphs):
-    body = f'<h1 class="section-head">{heading}</h1>\n' + "\n".join(f"<p>{p}</p>" for p in paragraphs)
+    body = ('<div class="info-page"><h1 class="section-head">' + heading + "</h1>" + chr(10)
+            + chr(10).join(f"<p>{p}</p>" for p in paragraphs) + "</div>")
     return page(title, description, "index.html", body, BASE + "/" + slug + ".html")
 
 
@@ -1159,7 +1579,7 @@ def default_content():
         },
         "breaking": BREAKING,
         "articles": articles,
-        "justIn": [{"time": t, "text": h, "link": "live.html"} for t, h, _ in JUST_IN],
+        "justIn": [{"time": t, "text": h, "link": l or _justin_link(h) or ""} for t, h, l in JUST_IN],
         "liveUpdates": [{"time": t, "headline": h, "text": p} for t, h, p in LIVE_UPDATES],
         "mostRead": list(MOST_READ),
     }
@@ -1230,10 +1650,12 @@ window.WWNStore = (function () {
 })();
 """
 
-MAIN_JS = """// Western World News: front-end behavior (v2).
+MAIN_JS = """// Western World News: front-end behavior (v4 redesign).
 // Renders dynamic regions from the content store (assets/js/content.js),
 // so admin edits in localStorage apply across the whole site.
 // Static HTML in each page is the SEO fallback when JS is unavailable.
+// Newsletter forms post straight to Buttondown (or are disabled while the
+// Buttondown username is unset): this script never fakes a subscription.
 (function () {
   function $(s, r) { return (r || document).querySelector(s); }
   function $all(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
@@ -1254,23 +1676,106 @@ MAIN_JS = """// Western World News: front-end behavior (v2).
   function articleUrl(slug) { return prefix() + "articles/" + slug + ".html"; }
   function sectionLabel(slug) {
     var map = { world: "World", europe: "Europe", us: "US", politics: "Politics",
-      "war-conflict": "War & Conflict", "business-finance": "Business & Finance",
-      sport: "Sport", culture: "Culture", live: "Live" };
+      "war-conflict": "War & Conflict", "business-finance": "Business",
+      technology: "Technology", sport: "Sport", culture: "Culture", live: "Live" };
     return map[slug] || slug;
   }
-  function tileFor(a, w) {
+  function sectionPage(slug) {
+    var map = { world: "world.html", europe: "europe.html", us: "us.html",
+      politics: "politics.html", "war-conflict": "war-conflict.html",
+      "business-finance": "business-finance.html", technology: "technology.html",
+      sport: "sport.html", culture: "culture.html" };
+    return map[slug] || "world.html";
+  }
+  function tileFor(a, w, withCap) {
+    w = w || 800;
+    var h = Math.round(w * 9 / 16);
     if (a.image) {
-      return '<figure><img src="' + esc(a.image) + '" alt="' + esc(a.headline) +
-        '" loading="lazy"><figcaption>' + esc(a.imageCaption || "Photo: Unsplash") + "</figcaption></figure>";
+      var img = '<img src="' + esc(a.image) + '" alt="' + esc(a.headline) +
+        '" width="' + w + '" height="' + h + '" loading="lazy">';
+      if (withCap === false) return "<figure>" + img + "</figure>";
+      return "<figure>" + img + "<figcaption>" +
+        esc(a.imageCaption || "Photo: Unsplash") + "</figcaption></figure>";
     }
-    return '<div class="art small" role="img" aria-label="Graphic placeholder"><span class="monogram">WWN</span>' +
+    return '<div class="art" role="img" aria-label="Graphic placeholder"><span class="monogram">WWN</span>' +
       '<span class="art-label">' + esc(sectionLabel(a.section)) + "</span></div>";
+  }
+  function cardFor(a) {
+    return '<article class="card">' + tileFor(a, 800) +
+      '<p><span class="kicker">' + esc(sectionLabel(a.section)) + "</span></p>" +
+      '<h3><a href="' + articleUrl(a.slug) + '">' + esc(a.headline) + "</a></h3>" +
+      "<p>" + esc(a.dek) + "</p>" +
+      '<p class="byline"><time>' + esc(a.date) + "</time> &middot; Source: " + esc(a.source) + "</p></article>";
+  }
+  function leadFor(a) {
+    return '<article class="lead-card">' + tileFor(a, 1200) + "<div>" +
+      '<p><span class="kicker">' + esc(sectionLabel(a.section)) + "</span></p>" +
+      '<h3><a href="' + articleUrl(a.slug) + '">' + esc(a.headline) + "</a></h3>" +
+      "<p>" + esc(a.dek) + "</p>" +
+      '<p class="byline"><time>' + esc(a.date) + "</time> &middot; Source: " + esc(a.source) + "</p></div></article>";
+  }
+  function miniListFor(list) {
+    return '<ul class="mini-list">' + list.map(function (a) {
+      return '<li><a href="' + articleUrl(a.slug) + '">' + esc(a.headline) + "</a>" +
+        "<small>" + esc(sectionLabel(a.section)) + " &middot; " + esc(a.date) + "</small></li>";
+    }).join("") + "</ul>";
   }
 
   var store = window.WWNStore ? window.WWNStore.get() : null;
   if (!store) return;
   var bySlug = {};
   store.articles.forEach(function (a) { bySlug[a.slug] = a; });
+
+  // Load More (Latest News feed): reveal 10 hidden items per click.
+  function initLoadMore() {
+    var btn = $("#load-more"), list = $("#latest-list");
+    if (!btn || !list) return;
+    btn.addEventListener("click", function () {
+      var hidden = $all(".latest-hidden", list).slice(0, 10);
+      hidden.forEach(function (el) { el.classList.remove("latest-hidden"); });
+      if (!$all(".latest-hidden", list).length) btn.style.display = "none";
+    });
+    if (!$all(".latest-hidden", list).length) btn.style.display = "none";
+  }
+
+  // Category pagination: 12 cards per page, buttons + count.
+  function initPagination() {
+    var grid = $(".paginated-grid");
+    if (!grid) return;
+    var cards = $all(".card", grid);
+    var size = parseInt(grid.getAttribute("data-page-size") || "12", 10);
+    var pages = Math.max(1, Math.ceil(cards.length / size));
+    var pager = $("#pagination"), count = $("#page-count");
+    var current = 1;
+    function show(p) {
+      current = p;
+      cards.forEach(function (c, i) {
+        c.style.display = (i >= (p - 1) * size && i < p * size) ? "" : "none";
+      });
+      if (pager) {
+        var html = "";
+        html += '<button class="page-btn" data-page="prev"' + (p === 1 ? " disabled" : "") + ">&larr; Prev</button>";
+        for (var i = 1; i <= pages; i++) {
+          html += '<button class="page-btn' + (i === p ? " active" : "") + '" data-page="' + i + '">' + i + "</button>";
+        }
+        html += '<button class="page-btn" data-page="next"' + (p === pages ? " disabled" : "") + ">Next &rarr;</button>";
+        pager.innerHTML = html;
+        $all(".page-btn", pager).forEach(function (b) {
+          b.addEventListener("click", function () {
+            var v = b.getAttribute("data-page");
+            if (v === "prev") show(Math.max(1, current - 1));
+            else if (v === "next") show(Math.min(pages, current + 1));
+            else show(parseInt(v, 10));
+          });
+        });
+      }
+      if (count) {
+        var from = (p - 1) * size + 1, to = Math.min(p * size, cards.length);
+        count.textContent = "Showing " + from + "-" + to + " of " + cards.length + " stories";
+      }
+    }
+    show(1);
+  }
 
   document.addEventListener("DOMContentLoaded", function () {
     // Cookie consent banner.
@@ -1292,21 +1797,30 @@ MAIN_JS = """// Western World News: front-end behavior (v2).
       if (dec) dec.addEventListener("click", function () { saveChoice("declined"); });
     }
 
-    // Dateline.
+    // Dateline (US format).
     $all("[data-today]").forEach(function (el) {
-      el.textContent = new Date().toLocaleDateString("en-GB", {
-        weekday: "long", day: "numeric", month: "long", year: "numeric"
+      el.textContent = new Date().toLocaleDateString("en-US", {
+        weekday: "long", month: "long", day: "numeric", year: "numeric"
       });
     });
 
-    // Site name + tagline from settings.
+    // Site name from settings.
     $all("[data-site-name]").forEach(function (el) {
       var words = String(store.settings.siteName || "Western World News").split(" ");
       var last = words.pop();
-      el.innerHTML = esc(words.join(" ")) + ' <span class="news">' + esc(last) + "</span>";
+      el.innerHTML = esc(words.join(" ")) + ' <span>' + esc(last) + "</span>";
     });
-    $all("[data-tagline]").forEach(function (el) {
-      el.textContent = store.settings.tagline || "";
+
+    // Share links (Facebook / X) point at the current page.
+    var pageUrl = encodeURIComponent(window.location.href);
+    var pageTitle = encodeURIComponent(document.title);
+    $all('[data-share="facebook"]').forEach(function (a) {
+      a.href = "https://www.facebook.com/sharer/sharer.php?u=" + pageUrl;
+      a.target = "_blank"; a.rel = "noopener";
+    });
+    $all('[data-share="x"]').forEach(function (a) {
+      a.href = "https://twitter.com/intent/tweet?url=" + pageUrl + "&text=" + pageTitle;
+      a.target = "_blank"; a.rel = "noopener";
     });
 
     // Breaking bar.
@@ -1320,70 +1834,83 @@ MAIN_JS = """// Western World News: front-end behavior (v2).
     var track = $(".ticker-track");
     if (track && store.justIn.length) {
       var items = store.justIn.map(function (it) {
-        return '<a href="' + fixLink(it.link || "live.html") + '">' + esc(it.text) + "</a>";
+        var link = it.link || "";
+        if (link) return '<a href="' + fixLink(link) + '">' + esc(it.text) + "</a>";
+        return "<span>" + esc(it.text) + "</span>";
       }).join("");
       track.innerHTML = items + items;
     }
 
-    // Just In list.
-    var ji = $("#just-in-list");
-    if (ji) {
-      ji.innerHTML = store.justIn.map(function (it) {
-        return "<li><time>" + esc(it.time) + '</time><a href="' + fixLink(it.link || "live.html") +
-          '">' + esc(it.text) + "</a></li>";
-      }).join("");
-    }
-
-    // Hero (homepage): photo with the red headline box overlapping it.
+    // Hero (homepage): photo, kicker, headline, dek, byline.
     var heroEl = $("[data-hero]");
     var hero = bySlug[store.settings.heroSlug] || store.articles[0];
     if (heroEl && hero) {
       var heroImg = hero.image
-        ? '<figure class="hero-media"><img src="' + esc(hero.image) + '" alt="' + esc(hero.headline) + '" loading="lazy"></figure>'
+        ? '<figure class="hero-media"><img src="' + esc(hero.image) + '" alt="' + esc(hero.headline) + '" width="1600" height="900"></figure>'
         : '<div class="art" role="img" aria-label="Graphic placeholder"><span class="monogram">WWN</span><span class="art-label">' + esc(sectionLabel(hero.section)) + "</span></div>";
       var isBreaking = store.breaking && store.breaking.link && store.breaking.link.indexOf(hero.slug) !== -1;
-      var kick = isBreaking ? "Breaking" : esc(sectionLabel(hero.section)) + " &middot; Live";
+      var kick = isBreaking ? "Breaking" : esc(sectionLabel(hero.section));
+      var liveLink = "";
+      if (/ukraine|russia|kyiv|kremlin/i.test(hero.headline)) {
+        liveLink = ' &middot; <a href="' + fixLink("live.html") + '">Follow live updates</a>';
+      }
       heroEl.innerHTML =
         heroImg +
-        '<div class="hero-box"><p><span class="kicker">' + kick + "</span></p>" +
-        '<h1><a href="' + articleUrl(hero.slug) + '">' + esc(hero.headline) + "</a></h1></div>" +
+        '<p><span class="kicker">' + kick + "</span></p>" +
+        '<h1><a href="' + articleUrl(hero.slug) + '">' + esc(hero.headline) + "</a></h1>" +
         '<p class="dek">' + esc(hero.dek) + "</p>" +
         '<p class="byline"><time>' + esc(hero.date) + "</time> &middot; Source: " + esc(hero.source) +
-        ' &middot; <a href="' + fixLink("live.html") + '">Follow live updates</a></p>';
+        liveLink + "</p>";
     }
 
-    // Homepage section blocks.
-    $all("[data-section-block]").forEach(function (grid) {
-      var secs = (grid.getAttribute("data-section") || "").split(",");
+    // Homepage section blocks (lead + cards, or lead + mini-list).
+    $all("[data-section-block]").forEach(function (block) {
+      var secs = (block.getAttribute("data-section") || "").split(",");
+      var limit = parseInt(block.getAttribute("data-limit") || "4", 10);
+      var layout = block.getAttribute("data-layout") || "cards";
       var list = store.articles.filter(function (a) {
         var s = a.sections || [a.section];
         return secs.some(function (x) { return s.indexOf(x) !== -1; });
-      });
-      if (!list.length) return;
-      grid.innerHTML = list.map(function (a) {
-        return '<article class="card">' + tileFor(a) +
-          '<p><span class="kicker">' + esc(sectionLabel(a.section)) + "</span></p>" +
-          '<h3><a href="' + articleUrl(a.slug) + '">' + esc(a.headline) + "</a></h3>" +
-          "<p>" + esc(a.dek) + "</p>" +
-          '<p class="byline"><time>' + esc(a.date) + "</time> &middot; Source: " + esc(a.source) + "</p></article>";
-      }).join("");
+      }).slice(0, limit);
+      var target = $("[data-block-content]", block);
+      if (!target || !list.length) return;
+      if (layout === "split") {
+        target.innerHTML = leadFor(list[0]) + miniListFor(list.slice(1));
+      } else {
+        target.innerHTML = leadFor(list[0]) +
+          '<div class="card-grid three">' + list.slice(1).map(cardFor).join("") + "</div>";
+      }
     });
 
-    // Section pages: image-above cards.
+    // Section pages: card grid (the lead card stays server-rendered).
     $all("[data-section-list]").forEach(function (list) {
       var sec = list.getAttribute("data-section-list");
       var items = store.articles.filter(function (a) { return (a.sections || [a.section]).indexOf(sec) !== -1; });
       if (!items.length) return;
-      list.innerHTML = items.map(function (a) {
-        return '<article class="card">' + tileFor(a) +
+      list.innerHTML = items.slice(1).map(cardFor).join("");
+      initPagination();
+    });
+
+    // Latest News feed (homepage): newest 40, minus featured stories.
+    var latestList = $("#latest-list");
+    if (latestList) {
+      var exclude = (latestList.getAttribute("data-exclude") || "").split(",").filter(Boolean);
+      var latest = store.articles.filter(function (a) { return exclude.indexOf(a.slug) === -1; }).slice(0, 40);
+      latestList.innerHTML = latest.map(function (a, i) {
+        return '<li class="latest-item' + (i >= 10 ? " latest-hidden" : "") + '">' +
+          '<a class="latest-thumb" href="' + articleUrl(a.slug) + '">' + tileFor(a, 400, false) + "</a><div>" +
           '<p><span class="kicker">' + esc(sectionLabel(a.section)) + "</span></p>" +
           '<h3><a href="' + articleUrl(a.slug) + '">' + esc(a.headline) + "</a></h3>" +
           "<p>" + esc(a.dek) + "</p>" +
-          '<p class="byline"><time>' + esc(a.date) + "</time> &middot; Source: " + esc(a.source) + "</p></article>";
+          '<p class="byline"><time>' + esc(a.date) + "</time> &middot; Source: " + esc(a.source) + "</p></div></li>";
       }).join("");
-    });
+      initLoadMore();
+    } else {
+      initLoadMore();
+    }
+    initPagination();
 
-    // Most Popular: numbered list, up to 10.
+    // Trending Stories: numbered list, up to 10.
     var mr = $("#most-read-list");
     if (mr) {
       var slugs = (store.mostRead || []).filter(function (s) { return bySlug[s]; });
@@ -1416,7 +1943,7 @@ MAIN_JS = """// Western World News: front-end behavior (v2).
         if (dek) dek.textContent = a.dek;
         if (byl) byl.textContent = a.date;
         var heroBox = $(".article-hero", art);
-        if (heroBox) heroBox.innerHTML = tileFor(a);
+        if (heroBox) heroBox.innerHTML = tileFor(a, 1600);
         var bodyBox = $(".article-body", art);
         if (bodyBox) bodyBox.innerHTML = (a.body || []).map(function (p) { return "<p>" + esc(p) + "</p>"; }).join("");
         var src = $(".source-box", art);
@@ -1459,18 +1986,19 @@ MAIN_JS = """// Western World News: front-end behavior (v2).
         var hits = store.articles.filter(function (a) {
           return (a.headline + " " + a.dek + " " + sectionLabel(a.section)).toLowerCase().indexOf(q) !== -1;
         }).slice(0, 6);
+        var all = prefix() + "search.html?q=" + encodeURIComponent(input.value.trim());
         box.innerHTML = hits.length
           ? hits.map(function (a) {
               return '<a href="' + articleUrl(a.slug) + '"><small>' + esc(sectionLabel(a.section)) +
                 "</small>" + esc(a.headline) + "</a>";
-            }).join("")
+            }).join("") + '<a href="' + all + '"><small>Search</small>See all results &rarr;</a>'
           : '<div class="none">No stories match "' + esc(input.value.trim()) + '".</div>';
         box.classList.add("open");
       });
       input.addEventListener("keydown", function (e) {
         if (e.key === "Enter") {
-          var first = box.querySelector("a");
-          if (first) window.location.href = first.href;
+          e.preventDefault();
+          window.location.href = prefix() + "search.html?q=" + encodeURIComponent(input.value.trim());
         }
         if (e.key === "Escape") { box.classList.remove("open"); input.blur(); }
       });
@@ -1479,18 +2007,34 @@ MAIN_JS = """// Western World News: front-end behavior (v2).
       });
     }
 
-    // Newsletter forms (demo until a mailing service is connected).
-    $all("form.newsletter-form").forEach(function (form) {
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        var email = form.querySelector('input[type="email"]');
-        var ok = form.parentElement.querySelector(".success");
-        if (email && email.value.indexOf("@") > 0) {
-          form.style.display = "none";
-          if (ok) ok.style.display = "block";
-        } else if (email) { email.focus(); }
+    // Search results page (search.html): filter the generated index.
+    var resultsEl = $("#search-page-results");
+    if (resultsEl) {
+      var params = new URLSearchParams(window.location.search);
+      var q = (params.get("q") || "").trim();
+      var qInput = $("#q");
+      if (qInput) qInput.value = q;
+      var status = $("#search-status");
+      if (!q) {
+        if (status) status.textContent = "Type a word or phrase above to search every story on Western World News.";
+        return;
+      }
+      fetch(prefix() + "search-index.json").then(function (r) { return r.json(); }).then(function (idx) {
+        var ql = q.toLowerCase();
+        var hits = idx.filter(function (a) {
+          return (a.headline + " " + a.dek + " " + a.section).toLowerCase().indexOf(ql) !== -1;
+        });
+        if (status) status.textContent = hits.length + (hits.length === 1 ? " result" : " results") + ' for "' + q + '"';
+        resultsEl.innerHTML = hits.map(function (a) {
+          return '<article class="search-result"><p><span class="kicker">' + esc(a.section) + "</span></p>" +
+            '<h3><a href="' + prefix() + esc(a.url) + '">' + esc(a.headline) + "</a></h3>" +
+            "<p>" + esc(a.dek) + "</p>" +
+            '<p class="byline"><time>' + esc(a.date) + "</time></p></article>";
+        }).join("") || "<p>No stories match that search. Try a different word or phrase.</p>";
+      }).catch(function () {
+        if (status) status.textContent = "Search is unavailable right now. Please try again.";
       });
-    });
+    }
   });
 })();
 """
@@ -2074,35 +2618,59 @@ To make them permanent for everyone, use <b>Export JSON</b> below and send the f
 
 README_MD = """# Western World News — westernworldnews.com
 
-A plain static news website (HTML + CSS + JavaScript) with a publisher-style
-design and an admin panel. No build step needed to view it, no database, no
-framework. Upload the contents of this folder to any static host (GitHub
-Pages, Netlify, Cloudflare Pages, Hostinger) and it works.
+A plain static news website (HTML + CSS + JavaScript) with a premium
+navy-and-white newspaper design and an admin panel. No build step needed
+to view it, no database, no framework. Upload the contents of this folder
+to any static host (GitHub Pages, Netlify, Cloudflare Pages, Hostinger)
+and it works.
 
-## What's in the design (v2)
+## What's in the design (v4, November 2026 redesign)
 
-- Dark navy masthead with the wordmark and tagline, thin top utility bar
-  (date, Live indicator, working search box that filters articles).
-- Red BREAKING bar with a scrolling Just In ticker (pauses on hover).
-- Big photo-led hero story, section blocks with photos (Europe first),
-  numbered **Most Read** sidebar (top 5), a **Watch** strip, an
-  **Analysis** block and a full multi-column footer.
-- Serif display headlines (Georgia) + clean sans body — the broadsheet look.
-- Hamburger navigation on mobile; responsive throughout.
-- Photos are **real photos that match each story** \u2014 freely licensed Wikimedia Commons pictures of the actual place or institution (Kyiv, the European Parliament, Shenzhen, the US Capitol, Wall Street, the Peace Palace), and openly licensed Unsplash images used as clearly labelled illustrations where no real photo of the subject exists. Every caption says honestly what the photo shows. Stories without a suitable photo get the navy WWN gradient tile instead of a misleading image.
+- White top bar with the wordmark, the tagline "Independent News. Global
+  Perspective.", the date and share links; dark navy sticky navigation
+  (Home, World, US, Europe, Politics, War & Conflict, Business,
+  Technology, Culture) with a working search box and a mobile hamburger
+  menu. Sport stays as a section page, linked from the footer.
+- Red BREAKING bar with the newest headline and a scrolling Just In
+  ticker; every headline links to a real article.
+- Homepage in editorial order: hero (large featured story + two
+  secondary stories), Top Stories (one card per category), World, US News
+  & Politics, Europe, War & Conflict, Business + Technology side by side,
+  a chronological Latest News feed with a Load More button, and the
+  newsletter section "Stay Informed. Stay Ahead."
+- Article pages: breadcrumb, category label, headline, summary, author,
+  dates, featured image, a 700-760px content column, a 300px sidebar
+  (Trending Stories, Latest News, Popular Categories, advertising space),
+  related stories, previous/next article and an author profile.
+- Dark navy footer with four columns (Brand, Explore, About, Legal).
+- Reserved, clearly labelled "Advertisement" areas (below the navigation,
+  between homepage sections, article sidebar, after article content).
+  They are empty until advertising is approved. No fake ads.
+- Serif display headlines (Merriweather) + Inter body text.
+- Photos are **real photos that match each story** — the feed's own
+  image for that story, verified to load, or freely licensed Wikimedia
+  Commons / Unsplash images used as clearly labelled illustrations where
+  no real photo of the subject exists. Every caption says honestly what
+  the photo shows. Stories without a suitable photo get the navy WWN
+  tile instead of a misleading image.
 
 ## Folder structure
 
 ```
 western-world-news/
-├── index.html                  Homepage: breaking ticker, hero, Just In,
-│                               Most Read, Europe/World/US & Politics,
-│                               Watch strip, live teaser, newsletter,
-│                               Analysis, Business & Finance
+├── index.html                  Homepage: breaking bar, hero, Top Stories,
+│                               World, US & Politics, Europe, War &
+│                               Conflict, Business + Technology, Latest
+│                               News (Load More), newsletter
 ├── world.html / europe.html / us.html / politics.html
-├── war-conflict.html / business-finance.html / sport.html / culture.html
+├── war-conflict.html / business-finance.html / technology.html
+├── sport.html / culture.html
 ├── live.html                   Live blog (Ukraine war, rolling updates)
-├── about.html / contact.html / privacy.html
+├── search.html                 Search results page (search-index.json)
+├── 404.html                    Branded "page not found"
+├── about.html / contact.html / privacy.html / terms.html
+├── disclaimer.html / editorial-policy.html / corrections.html
+├── cookie-policy.html / advertise.html / authors.html
 ├── admin.html                  Admin panel (passcode gate, see below)
 ├── articles/                   One HTML page per story
 ├── assets/
@@ -2111,18 +2679,21 @@ western-world-news/
 │   └── js/
 │       ├── content.js          Central content store (default content +
 │       │                       localStorage merge used by every page)
-│       ├── main.js             Dateline, search, hamburger, renders
-│       │                       dynamic regions from the content store
+│       ├── main.js             Dateline, search, hamburger, Load More,
+│       │                       pagination, dynamic regions from the
+│       │                       content store
 │       └── admin.js            Admin panel logic (passcode "admin123")
 ├── data/articles.json          All article text (source of truth for the
 │                               build; updated by tools/auto_publish.py)
+├── data/search-index.json      (generated) lightweight search index
 ├── tools/build_site.py         Generator — re-run to rebuild every page
 ├── tools/auto_publish.py       Hourly auto-publisher (RSS feeds → new
 │                               stories; see "Automatic publishing" below)
 ├── .github/workflows/          auto-publish.yml — GitHub Actions schedule
 ├── content-export.json         (optional) admin export; if present, the
 │                               build script uses it as the content source
-├── sitemap.xml / robots.txt    (robots.txt blocks /admin.html)
+├── sitemap.xml / news-sitemap.xml / post-sitemap.xml
+├── page-sitemap.xml / robots.txt / ads.txt
 └── README.md                   This file
 ```
 
@@ -2160,34 +2731,48 @@ Open **admin.html** and enter the passcode:
    including a real page for each new article, then the updated files
    are committed/pushed as usual.
 
-## Seed content — read this first
+## Content — how it stays fresh
 
-The articles in `articles/` are the current front page, refreshed on the evening of 20 November 2026 with verified stories from 19\u201320 November 2026 (the Kyiv missile strikes, the EU\u2013UK reset deal, the Shenzhen summit fallout, the Gaza Yellow Line raid, the US Congress records fight, the Wall Street sell-off, the Nations League draw, the ICJ\u2019s Myanmar genocide ruling, and RAYE\u2019s Grammy nominations).
+The articles in `articles/` are refreshed hourly by the automatic
+publisher (see below) from trusted RSS feeds. The homepage hero, the
+Just In feed and the breaking bar update with every run.
 
 - Every story is an **original summary written in our own words** — nothing
   is copied from another publication.
 - Every story **credits its source by name and links to the original
-  article** (CNN, The Times, Al Jazeera, Reuters, Associated Press).
-- **Replace this seed content with fresh daily posts.** News goes stale in
-  hours: the homepage hero, the Just In feed and the live blog must be
-  updated every day. Do not leave the 20 November 2026 stories on the
-  homepage once newer news exists.
+  article** (BBC, Al Jazeera, The Guardian, Euronews, France 24, DW).
+- Section classification is done by the publisher from the headline:
+  war and conflict, business, technology, US, Europe, or world. Stories
+  are re-checked at build time so the Europe section only carries
+  European news.
 
-## Watch strip — honest note
+## Newsletter — Buttondown (live)
 
-The "Watch" cards link to the live blog and full articles. There is no
-real video yet. Replace the cards with real video embeds when video
-exists; until then they are clearly a design element, not a video player.
+The newsletter is wired for **Buttondown** (free tier) and live at
+`buttondown.com/pintu` ("Western World News"). The forms post to
+Buttondown's free embed endpoint
+(`buttondown.com/api/emails/embed-subscribe/pintu`), which handles
+double opt-in and its own confirmation page. The username is set in
+`tools/build_site.py` as `NEWSLETTER_BUTTONDOWN_USERNAME = "pintu"`.
+
+## Advertising — not live yet
+
+- Reserved "Advertisement" areas are built into the layout (below the
+  navigation, between homepage sections, article sidebar, after article
+  content). They are empty placeholders until advertising is approved.
+- `ads.txt` is a placeholder until an AdSense publisher ID exists.
+- The privacy policy and terms describe advertising in the future tense
+  until ads actually run. Do not present the site as showing ads before
+  approval.
 
 ## Not yet connected — before launch
 
-- **Newsletter form is a front-end demo only.** It shows a thank-you
-  message but sends nothing. Connect a mailing service (e.g. Buttondown,
-  Mailchimp, ConvertKit) before launch.
+- **Newsletter**: live via Buttondown (buttondown.com/pintu).
 - **Contact email addresses**: lurenmira@gmail.com (used for both news tips
   and advertising inquiries).
-- **Privacy policy** is complete, including the Google AdSense and third-party cookies disclosure.
-- **Domain**: westernworldnews.com \u2014 live since 20 Nov 2026 (GitHub Pages, DNS via Hostinger).
+- **Privacy policy** is complete, including the future advertising
+  disclosure.
+- **Domain**: westernworldnews.com — live since 20 Nov 2026 (GitHub Pages, DNS via Hostinger).
 - **Ads**: none included yet. Add ad slots only after traffic exists.
 - **GitHub**: the site is pushed to github.com/pintuguptaji/western-world-news (branch main); push updates with the GitHub connector.
 
@@ -2284,9 +2869,13 @@ def main():
 
     # Pages
     files.append(write("index.html", build_index()))
-    for section in ["world", "europe", "us", "politics", "war-conflict", "business-finance", "sport", "culture"]:
+    for section in ["world", "europe", "us", "politics", "war-conflict", "business-finance", "technology", "sport", "culture"]:
         files.append(write(section + ".html", build_section(section, section + ".html")))
     files.append(write("live.html", build_live()))
+    files.append(write("search.html", build_search()))
+    files.append(write("404.html", build_404()))
+    files.append(write("ads.txt", ADS_TXT))
+    files.append(write("search-index.json", search_index_json()))
     for s in STORIES:
         files.append(write("articles/" + s["slug"] + ".html", build_article(s)))
     files.append(write("admin.html", build_admin()))
@@ -2312,7 +2901,7 @@ def main():
         "Privacy policy",
         ["Western World News is a free news website. This privacy policy explains what information we collect when you visit westernworldnews.com, how we use it, and the choices you have. If you do not agree with this policy, please do not use the site.",
          "Information you send us. We do not ask you to create an account, and we do not collect your name, address, or payment details. If you email us or sign up for our newsletter, we receive the email address and the message you send. We use that information only to reply to you or to send the newsletter you asked for. We do not sell your email address or any other personal information, and we do not share it except where the law requires it.",
-         "Cookies and advertising. This site shows advertising served by Google AdSense and other third party vendors. Third party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to this site and other sites on the internet. You can opt out of personalized advertising by visiting <a href='https://adssettings.google.com/'>Google Ads Settings</a>, or by visiting <a href='https://www.aboutads.info/choices/'>www.aboutads.info/choices</a>. Western World News uses Google AdSense to show advertising. We are in the process of applying for AdSense approval, and this section describes how advertising on this site works when ads are live.",
+         "Cookies and advertising. Advertising may appear on this site in the future, once an advertising program such as Google AdSense is approved. Until then, no advertising is shown and no advertising cookies are used. When advertising does appear, third-party vendors, including Google, may use cookies to serve ads based on your prior visits to this website or other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to this site and other sites on the internet. You can opt out of personalized advertising by visiting <a href='https://adssettings.google.com/'>Google Ads Settings</a>, or by visiting <a href='https://www.aboutads.info/choices/'>www.aboutads.info/choices</a>. This section describes how advertising on this site will work when ads are live.",
          "Analytics. This site uses Google Analytics to understand how visitors use it, such as which stories are read most and where visitors come from. Google Analytics uses cookies and collects anonymous usage data. It does not collect your name, address, or payment details. Analytics only runs if you accept cookies on the banner at the bottom of the page. If you decline, no analytics data is stored.",
          "Links to other websites. Our stories link to the original reporting on other websites, such as the BBC, Reuters, and Al Jazeera. Those sites have their own privacy policies, and we are not responsible for how they handle your information.",
          "Children's privacy. This site is a general news site and is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has sent us personal information, please contact us and we will delete it.",
@@ -2327,7 +2916,7 @@ def main():
          "Our content. Our stories are short summaries written in our own words, based on reporting by the sources we credit and link to. The summaries are ours, and the original reporting belongs to its publishers. You are welcome to share links to our stories. Please do not copy our text and republish it as your own.",
          "Accuracy. News changes fast. We work hard to keep our summaries accurate and up to date, and we correct mistakes when we find them. But we cannot promise that every fact on the site is complete or current at all times, and you should check important facts against the original reporting. See our <a href='corrections.html'>corrections policy</a> for how corrections work.",
          "Not advice. Nothing on this site is financial, legal, medical, or professional advice. Do not rely on a news summary to make financial, legal, or medical decisions.",
-         "Advertising. The site shows advertising, which is separate from our editorial content. Advertising does not affect what we report or how we report it. See our <a href='privacy.html'>privacy policy</a> for how advertising cookies work.",
+         "Advertising. Advertising may appear on this site in the future, once approved. Any advertising will be separate from our editorial content, and advertising does not affect what we report or how we report it. See our <a href='privacy.html'>privacy policy</a> for how advertising cookies work.",
          "Changes and availability. We may change, pause, or remove any part of the site at any time, and we may update these terms. The current terms are always the ones published on this page.",
          "Liability. The site is provided as it is, without warranties of any kind. We are not liable for any loss or damage that comes from using the site or relying on its content.",
          "Contact. If you have questions about these terms, contact us through the <a href='contact.html'>contact page</a>."])))
@@ -2371,24 +2960,50 @@ def main():
          "We also keep the site up to date. When news moves on, we add new stories and update the live blog. When we make a mistake, we correct it openly. See our <a href='editorial-policy.html'>editorial policy</a> and our <a href='corrections.html'>corrections policy</a> for the details.",
          "Contact. You can reach the editorial team through the <a href='contact.html'>contact page</a>, for news tips, corrections, or questions about our coverage."])))
 
+    files.append(write("cookie-policy.html", build_info(
+        "cookie-policy", "Cookie Policy | Western World News",
+        "Cookie Policy for Western World News: which cookies we use and how to control them.",
+        "Cookie Policy",
+        ["This page explains which cookies Western World News uses and how you can control them.",
+         "What cookies are. Cookies are small text files that a website asks your browser to store. They let the site remember a choice you made, such as accepting or declining cookies.",
+         "Cookies we use. This site uses one cookie choice record, stored in your browser, to remember whether you accepted or declined cookies on the banner at the bottom of the page. If you accept cookies, Google Analytics runs and uses its own cookies to collect anonymous usage data, such as which stories are read most and where visitors come from. It does not collect your name, address, or payment details.",
+         "Advertising cookies. Advertising may appear on this site in the future, once an advertising program such as Google AdSense is approved. Until then, no advertising is shown and no advertising cookies are used. When advertising does appear, third-party vendors, including Google, may use cookies to serve ads based on your prior visits to this website or other websites. You can opt out of personalized advertising by visiting <a href='https://adssettings.google.com/'>Google Ads Settings</a>, or by visiting <a href='https://www.aboutads.info/choices/'>www.aboutads.info/choices</a>.",
+         "How to control cookies. You can accept or decline cookies on the banner at the bottom of every page. You can also delete cookies or block them in your browser settings at any time. Blocking cookies does not stop you reading the site.",
+         "Contact. If you have questions about this policy, contact us through the <a href='contact.html'>contact page</a>."])))
+    files.append(write("advertise.html", build_info(
+        "advertise", "Advertise With Us | Western World News",
+        "Advertise with Western World News: reach readers in the United States, the United Kingdom, Europe and Canada.",
+        "Advertise With Us",
+        ["Western World News reaches readers in the United States, the United Kingdom, Europe, Canada and beyond, with daily coverage of world news, politics, war and conflict, business and technology.",
+         "Advertising space on the site is reserved for future sponsors. We are preparing the site for advertising and will open advertising placements once our advertising program is approved.",
+         "If you would like to advertise with us, please contact us at lurenmira@gmail.com with details of what you would like to promote. We will reply with availability and rates.",
+         "Advertising is always separate from editorial content. Advertisers do not decide what we cover or how we cover it, and advertising is never presented as news."])))
+
     # robots.txt — keep the admin panel out of search engines.
     files.append(write("robots.txt",
-        "User-agent: *\nAllow: /\nDisallow: /admin.html\n\n"
-        "Sitemap: " + BASE + "/sitemap.xml\n"
-        "Sitemap: " + BASE + "/news-sitemap.xml\n"))
+        "User-agent: *" + chr(10) + "Allow: /" + chr(10)
+        + "Disallow: /admin.html" + chr(10) + chr(10)
+        + "Sitemap: " + BASE + "/sitemap.xml" + chr(10)
+        + "Sitemap: " + BASE + "/news-sitemap.xml" + chr(10)
+        + "Sitemap: " + BASE + "/post-sitemap.xml" + chr(10)
+        + "Sitemap: " + BASE + "/page-sitemap.xml" + chr(10)))
 
     # Sitemaps (admin deliberately excluded from all of them).
     page_urls = ["", "world.html", "europe.html", "us.html", "politics.html",
-                 "war-conflict.html", "business-finance.html", "sport.html",
-                 "culture.html", "live.html", "about.html", "contact.html",
-                 "privacy.html", "terms.html", "disclaimer.html",
-                 "editorial-policy.html", "corrections.html", "authors.html"]
+                 "war-conflict.html", "business-finance.html", "technology.html",
+                 "sport.html", "culture.html", "live.html", "about.html",
+                 "contact.html", "privacy.html", "terms.html", "disclaimer.html",
+                 "editorial-policy.html", "corrections.html", "authors.html",
+                 "cookie-policy.html", "advertise.html"]
     article_urls = ["articles/" + s["slug"] + ".html" for s in STORIES]
     urls = page_urls + article_urls
     today_date = datetime.date.today()
     today = today_date.isoformat()
+    url_lastmod = {u: today for u in page_urls}
+    for s in STORIES:
+        url_lastmod["articles/" + s["slug"] + ".html"] = _iso_date(s["date"])
     entries = "".join(
-        f"  <url><loc>{BASE}/{u}</loc><lastmod>{today}</lastmod></url>\n" for u in urls
+        f"  <url><loc>{BASE}/{u}</loc><lastmod>{url_lastmod[u]}</lastmod></url>\n" for u in urls
     )
     files.append(write("sitemap.xml",
         '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -2396,7 +3011,7 @@ def main():
 
     # post-sitemap.xml: articles only.
     post_entries = "".join(
-        f"  <url><loc>{BASE}/{u}</loc><lastmod>{today}</lastmod></url>\n" for u in article_urls
+        f"  <url><loc>{BASE}/{u}</loc><lastmod>{url_lastmod[u]}</lastmod></url>\n" for u in article_urls
     )
     files.append(write("post-sitemap.xml",
         '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -2404,7 +3019,7 @@ def main():
 
     # page-sitemap.xml: non-article pages only.
     page_entries = "".join(
-        f"  <url><loc>{BASE}/{u}</loc><lastmod>{today}</lastmod></url>\n" for u in page_urls
+        f"  <url><loc>{BASE}/{u}</loc><lastmod>{url_lastmod[u]}</lastmod></url>\n" for u in page_urls
     )
     files.append(write("page-sitemap.xml",
         '<?xml version="1.0" encoding="UTF-8"?>\n'

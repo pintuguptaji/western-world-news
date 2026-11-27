@@ -9,13 +9,31 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "norse-atlantic-airways-files-for-bankruptcy-and-cancels-all"
+    "heroSlug": "big-eu-defense-projects-under-threat-from-proposed-budget"
   },
   "breaking": {
-    "text": "Norse Atlantic Airways files for bankruptcy and cancels all future flights",
-    "link": "articles/norse-atlantic-airways-files-for-bankruptcy-and-cancels-all.html"
+    "text": "Big EU defense projects under threat from proposed budget cuts: Commissioner Andrius Kubilius",
+    "link": "articles/big-eu-defense-projects-under-threat-from-proposed-budget.html"
   },
   "articles": [
+    {
+      "slug": "big-eu-defense-projects-under-threat-from-proposed-budget",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Big EU defense projects under threat from proposed budget cuts: Commissioner Andrius Kubilius",
+      "dek": "We speak to the EU's Commissioner for Defense and Space, Andrius Kubilius. The former prime minister of Lithuania, who grew up during the Soviet era, tells us how he sees the confrontation between Europe and Russia.",
+      "date": "November 27, 2026",
+      "source": "France 24",
+      "source_url": "https://www.france24.com/en/tv-shows/talking-europe/20261127-big-eu-defense-projects-under-threat-from-proposed-budget-cuts-commissioner-andrius-kubilius",
+      "body": [
+        "We speak to the EU's Commissioner for Defense and Space, Andrius Kubilius. The former prime minister of Lithuania, who grew up during the Soviet era, tells us how he sees the confrontation between Europe and Russia."
+      ],
+      "related": [],
+      "image": "https://s.france24.com/media/display/d8b20618-ea78-11f1-9216-f9cf020caef6/w:1024/p:16x9/PHOTO-ANDRIUS-KUBILIUS.jpg",
+      "imageCaption": "Photo: France 24"
+    },
     {
       "slug": "norse-atlantic-airways-files-for-bankruptcy-and-cancels-all",
       "sections": [
@@ -910,10 +928,10 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "slug": "tech-giant-huawei-found-guilty-of-stealing-trade-secrets",
       "sections": [
-        "business-finance",
-        "world"
+        "technology",
+        "business-finance"
       ],
-      "section": "business-finance",
+      "section": "technology",
       "headline": "Tech giant Huawei found guilty of stealing trade secrets but acquitted of racketeering",
       "dek": "In a statement, Huawei said the acquittal on the racketeering charge \"confirms that these allegations lack factual basis and vindicates our consistent position over the past eight years.\"",
       "date": "November 24, 2026",
@@ -1003,10 +1021,9 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "slug": "cas-awards-senegal-afcon-title-after-successful-appeal",
       "sections": [
-        "europe",
         "world"
       ],
-      "section": "europe",
+      "section": "world",
       "headline": "CAS awards Senegal AFCON title after successful appeal",
       "dek": "In March, the Confederation of African Football awarded Morocco a 3-0 victory, and the title, after many Senegalese players walked off the pitch in protest over a penalty.",
       "date": "November 24, 2026",
@@ -1078,9 +1095,10 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "slug": "china-to-launch-first-space-mission-with-a-foreign-astronaut",
       "sections": [
+        "technology",
         "world"
       ],
-      "section": "world",
+      "section": "technology",
       "headline": "China to launch first space mission with a foreign astronaut",
       "dek": "Pakistan's Muhammad Zeeshan Ali will become the first foreign astronaut to board China's Tiangong space station when the latest crew blasts off Wednesday. Ali said he would be carrying \"the hopes of 250 million Pakistanis\" with him.",
       "date": "November 24, 2026",
@@ -1096,10 +1114,9 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "slug": "is-no-deal-better-than-a-bad-deal-why-some-see-hope-in",
       "sections": [
-        "europe",
         "world"
       ],
-      "section": "europe",
+      "section": "world",
       "headline": "Is no deal better than a bad deal? Why some see hope in COP31’s collapse",
       "dek": "The EU, the UK and many small nations rejected a pact that promoted carbon capture and omitted a commitment to move away from fossil fuels.",
       "date": "November 24, 2026",
@@ -1115,10 +1132,9 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "slug": "signs-of-heart-attack-and-stroke-risk-can-appear-decades",
       "sections": [
-        "europe",
         "world"
       ],
-      "section": "europe",
+      "section": "world",
       "headline": "Signs of heart attack and stroke risk can appear decades earlier, study finds",
       "dek": "Early warning signs could alert people that they're at risk of heart disease and give them time to make lifestyle changes, the researchers said.",
       "date": "November 24, 2026",
@@ -1209,10 +1225,10 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "slug": "us-to-blacklist-asian-ai-firm-megaspeed-after-nvidia-scandal",
       "sections": [
-        "us",
-        "world"
+        "technology",
+        "us"
       ],
-      "section": "us",
+      "section": "technology",
       "headline": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
       "dek": "Megaspeed has been accused of funneling AI chips to China after a former executive's affair with Jensen Huang became public.",
       "date": "November 23, 2026",
@@ -1403,12 +1419,13 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "section": "war-conflict",
       "headline": "Sanctions, summits and strikes: The war in Ukraine shows no sign of slowing",
-      "dek": "Good morning. Leo Cendrowicz here, bringing you the Monday newsletter.",
+      "dek": "Sanctions, summits and strikes continue side by side as the war in Ukraine shows no sign of slowing, Euronews reports.",
       "date": "November 23, 2026",
       "source": "Euronews",
       "source_url": "https://www.euronews.com/2026/11/23/sanctions-summits-and-strikes-the-war-in-ukraine-shows-no-sign-of-slowing",
       "body": [
-        "Good morning. Leo Cendrowicz here, bringing you the Monday newsletter."
+        "The war in Ukraine shows no sign of slowing, with sanctions, summits and strikes continuing in parallel, according to Euronews.",
+        "Diplomatic efforts and fighting have carried on side by side, and the war continues with no breakthrough in sight."
       ],
       "related": [],
       "image": "https://images.euronews.com/articles/stories/10/00/37/25/696x392_cmsv2_b61d1d5c-2bdb-586f-be92-5a37e32ca1c5-10003725.jpg",
@@ -2006,10 +2023,9 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "slug": "china-asean-countries-struggle-over-south-china-sea-code-of",
       "sections": [
-        "europe",
         "world"
       ],
-      "section": "europe",
+      "section": "world",
       "headline": "China, ASEAN countries struggle over South China Sea code of conduct",
       "dek": "The Philippines wanted a South China Sea code of conduct in place by 2026. But persistent disagreements between China and ASEAN countries are slowing progress toward a deal.",
       "date": "November 22, 2026",
@@ -2025,10 +2041,9 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "slug": "gadi-eisenkot-invites-netanyahu-s-likud-party-for-marathon",
       "sections": [
-        "europe",
         "world"
       ],
-      "section": "europe",
+      "section": "world",
       "headline": "Gadi Eisenkot invites Netanyahu's Likud party for 'marathon' coalition talks",
       "dek": "Gadi Eisenkot has until early December to form a new government after both his and Netanyahu's blocs fell short of a majority in Israel's October legislative elections.",
       "date": "November 22, 2026",
@@ -2230,10 +2245,9 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "slug": "mexican-special-forces-arrest-drug-kingpin-chapo-isidro",
       "sections": [
-        "europe",
         "world"
       ],
-      "section": "europe",
+      "section": "world",
       "headline": "Mexican special forces arrest drug kingpin 'Chapo Isidro'",
       "dek": "The alleged leader of the Beltran Leyva gang and one of the FBI's most wanted fugitives, known as 'Chapo Isidro,' was captured by the Mexican military following a raid and a shootout in the coastal Sinaloa state.",
       "date": "November 21, 2026",
@@ -2285,10 +2299,9 @@ window.WWN_DEFAULT_CONTENT = {
     {
       "slug": "brazil-ex-president-jair-bolsonaro-taken-to-hospital-over",
       "sections": [
-        "europe",
         "world"
       ],
-      "section": "europe",
+      "section": "world",
       "headline": "Brazil ex-president Jair Bolsonaro taken to hospital over abdominal pain",
       "dek": "Jair Bolsonaro has been hospitalized in Brasilia with intestinal obstruction. The former far-right Brazilian leader is receiving pain medications, his son Carlos said.",
       "date": "November 21, 2026",
@@ -2349,28 +2362,6 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "image": "",
       "imageCaption": ""
-    },
-    {
-      "slug": "a-new-nepal-an-old-neighbour-balendra-shah-s-india-test",
-      "sections": [
-        "world"
-      ],
-      "section": "world",
-      "headline": "A new Nepal, an old neighbour - Balendra Shah's India test",
-      "dek": "Trade, connectivity and regional cooperation will be on top of the agenda when Nepal's PM meets his India counterpart.",
-      "date": "November 20, 2026",
-      "source": "BBC",
-      "source_url": "https://www.bbc.co.uk/news/articles/c6jre8xd83qgo",
-      "body": [
-        "Trade, connectivity and regional cooperation will be on top of the agenda when Nepal's PM meets his India counterpart."
-      ],
-      "related": [
-        "brazil-ex-president-jair-bolsonaro-taken-to-hospital-over",
-        "three-french-police-officers-sentenced-over-racist-assault",
-        "uk-anti-migrant-activist-jailed-for-slashing-channel-dinghy"
-      ],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/6ce4/live/0cd0ed60-e3e9-11f1-a16c-7de3762c094b.jpg",
-      "imageCaption": "Photo: BBC"
     },
     {
       "slug": "trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
@@ -2439,29 +2430,6 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/b187/live/6d4c58d0-e42c-11f1-a630-a951c13e48b7.jpg",
       "imageCaption": "Photo: BBC"
-    },
-    {
-      "slug": "republican-senator-blocks-trump-cyber-nominee-over-january",
-      "sections": [
-        "us",
-        "world"
-      ],
-      "section": "us",
-      "headline": "Republican senator blocks Trump cyber nominee over January 6 denial",
-      "dek": "Thom Tillis move comes after Michael LoSapio, nominated for Cisa role, told hearing ‘I don’t believe it was an attack’ .",
-      "date": "November 20, 2026",
-      "source": "The Guardian",
-      "source_url": "https://www.theguardian.com/us-news/2026/nov/20/tillis-republican-senator-trump-cyber-nominee",
-      "body": [
-        "Thom Tillis move comes after Michael LoSapio, nominated for Cisa role, told hearing ‘I don’t believe it was an attack’ . Senator Thom Tillis, the outgoing North Carolina Republican who is due to be replaced by a Democrat, has reportedly blocked a confirmation vote on Donald Trump’s nominee to lead a key US cybersecurity agency, Michael LoSapio, after he denied during a hearing that the Capitol was attacked on January 6 2021."
-      ],
-      "related": [
-        "trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
-        "denmark-expels-russian-diplomat-over-alleged-plot-to-kill",
-        "they-were-fined-811m-for-conning-detained-migrants-but-the"
-      ],
-      "image": "https://i.guim.co.uk/img/media/cac7b215020ab17f2e1926d910d082e9f9ca8ad3/444_0_4416_3535/master/4416.jpg?width=700&quality=85&auto=format&fit=max&s=4a04958e10540d591086e2d7824c311d",
-      "imageCaption": "Photo: The Guardian"
     },
     {
       "slug": "anc-fights-to-keep-control-of-south-africa-s-key-cities",
@@ -2551,6 +2519,51 @@ window.WWN_DEFAULT_CONTENT = {
       ],
       "image": "",
       "imageCaption": ""
+    },
+    {
+      "slug": "a-new-nepal-an-old-neighbour-balendra-shah-s-india-test",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "A new Nepal, an old neighbour - Balendra Shah's India test",
+      "dek": "Trade, connectivity and regional cooperation will be on top of the agenda when Nepal's PM meets his India counterpart.",
+      "date": "November 20, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6jre8xd83qgo",
+      "body": [
+        "Trade, connectivity and regional cooperation will be on top of the agenda when Nepal's PM meets his India counterpart."
+      ],
+      "related": [
+        "brazil-ex-president-jair-bolsonaro-taken-to-hospital-over",
+        "three-french-police-officers-sentenced-over-racist-assault",
+        "uk-anti-migrant-activist-jailed-for-slashing-channel-dinghy"
+      ],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/6ce4/live/0cd0ed60-e3e9-11f1-a16c-7de3762c094b.jpg",
+      "imageCaption": "Photo: BBC"
+    },
+    {
+      "slug": "republican-senator-blocks-trump-cyber-nominee-over-january",
+      "sections": [
+        "us",
+        "world"
+      ],
+      "section": "us",
+      "headline": "Republican senator blocks Trump cyber nominee over January 6 denial",
+      "dek": "Thom Tillis move comes after Michael LoSapio, nominated for Cisa role, told hearing ‘I don’t believe it was an attack’ .",
+      "date": "November 20, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/us-news/2026/nov/20/tillis-republican-senator-trump-cyber-nominee",
+      "body": [
+        "Thom Tillis move comes after Michael LoSapio, nominated for Cisa role, told hearing ‘I don’t believe it was an attack’ . Senator Thom Tillis, the outgoing North Carolina Republican who is due to be replaced by a Democrat, has reportedly blocked a confirmation vote on Donald Trump’s nominee to lead a key US cybersecurity agency, Michael LoSapio, after he denied during a hearing that the Capitol was attacked on January 6 2021."
+      ],
+      "related": [
+        "trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang",
+        "denmark-expels-russian-diplomat-over-alleged-plot-to-kill",
+        "they-were-fined-811m-for-conning-detained-migrants-but-the"
+      ],
+      "image": "https://i.guim.co.uk/img/media/cac7b215020ab17f2e1926d910d082e9f9ca8ad3/444_0_4416_3535/master/4416.jpg?width=700&quality=85&auto=format&fit=max&s=4a04958e10540d591086e2d7824c311d",
+      "imageCaption": "Photo: The Guardian"
     },
     {
       "slug": "gerard-depardieu-and-french-author-investigated-over-sexual",
@@ -2989,33 +3002,6 @@ window.WWN_DEFAULT_CONTENT = {
       "imageCaption": "The Shenzhen skyline, seen from across the border in Hong Kong. Photo: Wikimedia Commons (CC BY-SA 4.0)"
     },
     {
-      "slug": "gaza-yellow-line-raid",
-      "sections": [
-        "war-conflict",
-        "world"
-      ],
-      "section": "war-conflict",
-      "headline": "Israel ends first major Gaza ground raid across the ceasefire line since the truce",
-      "dek": "Tanks crossed the Yellow Line to demolish a Hamas tunnel in central Gaza, displacing thousands, the biggest Israeli ground operation since the October 2025 ceasefire began.",
-      "date": "November 19, 2026",
-      "source": "Reuters",
-      "source_url": "https://www.reuters.com/world/middle-east/israel-says-it-concludes-gaza-tank-raid-2026-11-19/",
-      "body": [
-        "Israel’s military said on Thursday it had concluded a tank raid to dismantle a suspected Hamas tunnel in the central Gaza Strip, its highest-profile ground incursion across the ceasefire line since the truce halted major fighting more than a year ago.",
-        "The operation began on Wednesday, when troops and intelligence personnel crossed the so-called Yellow Line, the boundary of Israel’s deployment under the US-brokered ceasefire, in the central Gaza Strip, near the Nuseirat and Bureij refugee camps.",
-        "The military said the tunnel crossed into the Israeli side of the line and was connected to Hamas “activity hubs” in central Gaza, and that it demolished a section Hamas was trying to restore. It described the tunnel as an “immediate and direct threat” to its forces.",
-        "Tanks and armoured bulldozers advanced 200 to 400 metres past the line, and the main north-south Salah al-Din road was closed before reopening on Thursday. Palestinian families fled the area, which the UN’s humanitarian office said was home to more than 18,000 people, including 4,000 in displaced-persons camps.",
-        "Israel, which says Hamas has been regrouping and rearming, has stepped up attacks against the group in recent weeks. The raid came a day after the Board of Peace, the body overseeing the ceasefire, warned the UN Security Council that the year-old truce risks collapse if its terms are not fully implemented.",
-        "The ceasefire formally began on October 10, 2025, but attacks have continued, and the Palestinian health ministry says more than 1,600 people have been killed in Israeli strikes since then."
-      ],
-      "related": [
-        "russia-ukraine-missile-attack",
-        "icj-myanmar-genocide-ruling"
-      ],
-      "image": "",
-      "imageCaption": ""
-    },
-    {
       "slug": "democrats-document-preservation",
       "sections": [
         "us",
@@ -3093,6 +3079,58 @@ window.WWN_DEFAULT_CONTENT = {
       "imageCaption": "A football stadium under lights during a match. Illustrative photo. Photo: Unsplash"
     },
     {
+      "slug": "raye-grammy-nominations",
+      "sections": [
+        "culture"
+      ],
+      "section": "culture",
+      "headline": "RAYE leads Grammy nominations with 11, tying Beyoncé’s record",
+      "dek": "The British singer tops the field for the 69th Grammy Awards, with her album ‘This Music May Contain Hope’ and single ‘Where Is My Husband!’ both up for the top prizes.",
+      "date": "November 20, 2026",
+      "source": "Associated Press",
+      "source_url": "https://cnalifestyle.channelnewsasia.com/entertainment/grammy-nominations-2027-raye-rosalia-olivia-rodrigo-591851",
+      "body": [
+        "British singer RAYE leads the nominations for the 69th Grammy Awards with 11 nods, tying Beyoncé’s record for the most nominations by a female artist in a single year.",
+        "The nominations, announced by the Recording Academy on Monday, put RAYE up for album of the year for ‘This Music May Contain Hope’, and record and song of the year for her hit single ‘Where Is My Husband!’, her first nominations in all three of the Grammys’ biggest categories.",
+        "She is also nominated for songwriter of the year, best pop solo performance and best pop vocal album, among others. The 11 nominations take her career total to 15.",
+        "Behind her are Spanish star Rosalía with nine nominations, while Olivia Rodrigo, Phoebe Bridgers, Miranda Lambert and Ella Langley have seven each. Olivia Dean has six.",
+        "Beyoncé, meanwhile, reached her 100th career Grammy nomination, for ‘Morning Dew (Donk)’ in the best R&B solo performance category, making her the most-nominated artist in the awards’ history.",
+        "The 69th Grammy Awards will be held on February 7, 2027 at the Crypto.com Arena in Los Angeles, with winners chosen by the Recording Academy’s nearly 16,000 voting members."
+      ],
+      "related": [
+        "nations-league-draw"
+      ],
+      "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80",
+      "imageCaption": "A singer performs on stage. Illustrative photo. Photo: Unsplash"
+    },
+    {
+      "slug": "gaza-yellow-line-raid",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Israel ends first major Gaza ground raid across the ceasefire line since the truce",
+      "dek": "Tanks crossed the Yellow Line to demolish a Hamas tunnel in central Gaza, displacing thousands, the biggest Israeli ground operation since the October 2025 ceasefire began.",
+      "date": "November 19, 2026",
+      "source": "Reuters",
+      "source_url": "https://www.reuters.com/world/middle-east/israel-says-it-concludes-gaza-tank-raid-2026-11-19/",
+      "body": [
+        "Israel’s military said on Thursday it had concluded a tank raid to dismantle a suspected Hamas tunnel in the central Gaza Strip, its highest-profile ground incursion across the ceasefire line since the truce halted major fighting more than a year ago.",
+        "The operation began on Wednesday, when troops and intelligence personnel crossed the so-called Yellow Line, the boundary of Israel’s deployment under the US-brokered ceasefire, in the central Gaza Strip, near the Nuseirat and Bureij refugee camps.",
+        "The military said the tunnel crossed into the Israeli side of the line and was connected to Hamas “activity hubs” in central Gaza, and that it demolished a section Hamas was trying to restore. It described the tunnel as an “immediate and direct threat” to its forces.",
+        "Tanks and armoured bulldozers advanced 200 to 400 metres past the line, and the main north-south Salah al-Din road was closed before reopening on Thursday. Palestinian families fled the area, which the UN’s humanitarian office said was home to more than 18,000 people, including 4,000 in displaced-persons camps.",
+        "Israel, which says Hamas has been regrouping and rearming, has stepped up attacks against the group in recent weeks. The raid came a day after the Board of Peace, the body overseeing the ceasefire, warned the UN Security Council that the year-old truce risks collapse if its terms are not fully implemented.",
+        "The ceasefire formally began on October 10, 2025, but attacks have continued, and the Palestinian health ministry says more than 1,600 people have been killed in Israeli strikes since then."
+      ],
+      "related": [
+        "russia-ukraine-missile-attack",
+        "icj-myanmar-genocide-ruling"
+      ],
+      "image": "",
+      "imageCaption": ""
+    },
+    {
       "slug": "icj-myanmar-genocide-ruling",
       "sections": [
         "world"
@@ -3119,71 +3157,282 @@ window.WWN_DEFAULT_CONTENT = {
       "imageCaption": "The Peace Palace in The Hague, home of the International Court of Justice. Photo: Wikimedia Commons (CC BY-SA 3.0)"
     },
     {
-      "slug": "raye-grammy-nominations",
+      "slug": "bank-of-england-raises-rates",
+      "sections": [
+        "business-finance"
+      ],
+      "section": "business-finance",
+      "headline": "Bank of England raises rates to 4%, first increase since 2023",
+      "dek": "The Bank acted as energy prices pushed by the Middle East conflict drive inflation higher, and warned it could reach around 5% by mid-2027.",
+      "date": "November 5, 2026",
+      "source": "Reuters",
+      "source_url": "https://www.reuters.com/world/uk/britains-long-wait-2-inflation-tests-public-faith-bank-england-2026-11-18/",
+      "body": [
+        "The Bank of England has raised interest rates to 4%, its first increase in more than three years, as energy prices push inflation higher.",
+        "The Monetary Policy Committee voted 8-1 to raise Bank Rate by a quarter of a percentage point from 3.75%. Catherine Mann dissented, preferring a larger rise to 4.25%.",
+        "The Bank said the Middle East conflict had driven energy prices sharply higher since July, with oil up 38% and UK gas up 81%, and warned inflation could reach around 5% by mid-2027, far above its 2% target.",
+        "Governor Andrew Bailey said the rise should not be seen as the start of an inevitable long sequence of increases, but warned more could follow if the conflict drags on.",
+        "The next decision is due on December 17. Markets had priced in a near-certain rise, and mortgage rates had already climbed since September."
+      ],
+      "related": [
+        "uk-inflation-3-6-percent",
+        "eu-ukraine-loan-45-billion"
+      ],
+      "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1600&q=80",
+      "imageCaption": "Westminster, London. Illustrative photo. Photo: Unsplash"
+    },
+    {
+      "slug": "democrats-win-congress-midterms",
+      "sections": [
+        "us",
+        "politics"
+      ],
+      "section": "us",
+      "headline": "Democrats seal 56-44 Senate majority as final midterm race is called",
+      "dek": "Mary Peltola's win in Alaska completes a sweeping Democratic victory in the US midterms, control of both chambers of Congress, and a divided government for Trump's final two years.",
+      "date": "November 19, 2026",
+      "source": "Nikkei Asia",
+      "source_url": "https://asia.nikkei.com/politics/u.s.-midterm-elections/us-midterms-democrats-seal-56-44-senate-majority-with-alaska-win",
+      "body": [
+        "Democrats have completed a sweeping victory in the US midterm elections, winning control of both the House of Representatives and the Senate.",
+        "Democrat Mary Peltola defeated two-term Republican Senator Dan Sullivan in Alaska, according to the Associated Press, completing the final unresolved Senate race and giving Democrats a 56-44 majority.",
+        "Democrats flipped nine Republican-held Senate seats, with wins in traditionally conservative states including Texas, Kansas, Mississippi and South Carolina.",
+        "In Texas, James Talarico defeated Ken Paxton, the first Democrat to win statewide office there in 32 years. In Kansas, Adam Hamilton beat Roger Marshall; Democrats last won a Senate seat there in 1932.",
+        "Democrats also won the House, passing the 218 seats needed for a majority. All 435 House seats and 35 of the Senate's 100 seats were contested in the November 3 elections.",
+        "Democrats have nominated Hakeem Jeffries to be the next House speaker, putting him on course to become the first Black lawmaker to hold the gavel when the new Congress convenes on January 3.",
+        "Voter discontent over inflation, tariffs, AI data centres and the war in Iran drove the result, according to Nikkei Asia's reporting."
+      ],
+      "related": [
+        "trump-xi-putin-shenzhen-summit",
+        "uk-inflation-3-6-percent"
+      ],
+      "image": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1600&q=80",
+      "imageCaption": "A parliament chamber in session. Illustrative photo. Photo: Unsplash"
+    },
+    {
+      "slug": "denmark-greenland-security-deal",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Denmark approves US-Greenland security deal, easing Arctic tensions",
+      "dek": "All 109 lawmakers present voted in favor of the agreement, which lets the US build two bases in Greenland while keeping the island under Danish sovereignty.",
+      "date": "November 19, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/news/2026/11/19/denmark-parliament-approves-security-deal-with-greenland-and-us",
+      "body": [
+        "Denmark's parliament has unanimously approved a security agreement with the United States covering Greenland, easing months of tension over President Donald Trump's desire to annex the Arctic island.",
+        "All 109 lawmakers present in the 179-seat Folketing voted in favor, with no votes against and no abstentions. Greenland's parliament approved the deal earlier in November by 16 votes to none, with seven abstentions.",
+        "The agreement, signed in New York on September 22, supplements a 1951 accord on the US military presence in Greenland. It allows the US to build two military bases in Greenland and blocks countries outside the EU and NATO from strategic sectors, to stop China or Russia gaining influence there.",
+        "The deal is an executive agreement and does not need a vote in the US Senate. It enters into force once Denmark's foreign ministry formally notifies the US that procedures are complete.",
+        "The agreement reaffirms the sovereignty of the Kingdom of Denmark and the right of Greenland's people to self-determination."
+      ],
+      "related": [
+        "trump-xi-putin-shenzhen-summit",
+        "eu-ukraine-loan-45-billion"
+      ],
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=80",
+      "imageCaption": "Snow-covered mountains under a night sky. Illustrative photo. Photo: Unsplash"
+    },
+    {
+      "slug": "eu-ukraine-loan-45-billion",
+      "sections": [
+        "europe",
+        "war-conflict"
+      ],
+      "section": "europe",
+      "headline": "EU proposes €45 billion loan to keep Ukraine funded in 2027",
+      "dek": "The loan would cover around two-thirds of Kyiv's expected funding gap next year, and would be repaid, the Commission says, through future war reparations by Russia.",
+      "date": "November 18, 2026",
+      "source": "Reuters",
+      "source_url": "https://www.reuters.com/world/eu-proposes-new-45-billion-loan-ukraine-2027-be-repaid-by-russia-2026-11-18/",
+      "body": [
+        "The European Commission has proposed a new €45 billion (about $49 billion) loan to Ukraine for 2027, to be repaid through future war reparations by Russia.",
+        "The loan would cover around two-thirds of Ukraine's expected €70 billion funding gap next year, with the rest to come from other international partners.",
+        "Up to €25 billion would go to military assistance and up to €20 billion to general budget support, keeping hospitals, schools and other public services running.",
+        "Disbursements would be tied to Kyiv continuing reforms, particularly on the rule of law, anti-corruption efforts and public finance management.",
+        "The plan needs approval from EU governments and the European Parliament. The budget amendment underpinning it would need unanimous support from member states.",
+        "Commission President Ursula von der Leyen said she was confident all 27 members would back the plan. EU leaders were due to discuss it at a Brussels summit."
+      ],
+      "related": [
+        "russia-ukraine-missile-attack",
+        "bank-of-england-raises-rates",
+        "uk-inflation-3-6-percent"
+      ],
+      "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1600&q=80",
+      "imageCaption": "A street in a European old town. Illustrative photo. Photo: Unsplash"
+    },
+    {
+      "slug": "gaza-ceasefire-collapse-warning",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Gaza ceasefire at risk of collapse, Board of Peace warns UN Security Council",
+      "dek": "The body overseeing the US-brokered truce says the gap between what was agreed and what is happening on the ground is now the main threat to the deal.",
+      "date": "November 18, 2026",
+      "source": "Al Jazeera",
+      "source_url": "https://www.aljazeera.com/amp/news/2026/11/18/board-of-peace-warns-gaza-ceasefire-faces-imminent-collapse-without-action",
+      "body": [
+        "The Board of Peace, the body overseeing the US-brokered ceasefire in Gaza, has warned the UN Security Council that the year-old truce risks collapse if its terms are not fully implemented.",
+        "In its first annual assessment, a copy of which was obtained by the Associated Press, the board said “the distance between what has been agreed and what is happening on the ground” was the principal risk to the process, and that “a ceasefire that delivers nothing visible cannot be sustained indefinitely.”",
+        "The ceasefire formally began on October 10, 2025, but attacks have continued. The Palestinian health ministry says more than 1,600 people have been killed in Israeli strikes since then.",
+        "At the center of the stall is the technocratic civil administration created to run Gaza on an interim basis. The board says Israel has still not allowed it to take up its job in the territory, delaying the international stabilisation force, an Israeli troop withdrawal, the disarmament of Hamas and reconstruction.",
+        "Israel says reconstruction can begin only after Hamas disarms. Hamas has refused to give up its weapons while Israeli forces remain in Gaza.",
+        "The board also noted that Israeli forces had begun a ground operation west of the Yellow Line in central Gaza. The military later said the operation was complete and reopened Salah al-Din Street."
+      ],
+      "related": [
+        "russia-ukraine-missile-attack",
+        "trump-xi-putin-shenzhen-summit"
+      ],
+      "image": "https://images.unsplash.com/photo-1547234935-80c7145ec969?auto=format&fit=crop&w=1600&q=80",
+      "imageCaption": "Desert landscape in the Middle East. Illustrative photo. Photo: Unsplash"
+    },
+    {
+      "slug": "japan-beats-brazil-3-2",
+      "sections": [
+        "sport"
+      ],
+      "section": "sport",
+      "headline": "Japan stun Brazil 3-2 in Moriyasu's farewell friendly",
+      "dek": "A stoppage-time winner from Tatsuhito Sakamoto sealed victory in Singapore, a final win for the coach who has led Japan for eight years.",
+      "date": "November 16, 2026",
+      "source": "Chosun Biz",
+      "source_url": "https://biz.chosun.com/en/en-sports/2026/11/16/7LRBK2NGSZCKXP3JUZJ5AUA74Q/",
+      "body": [
+        "Japan beat Brazil 3-2 in a November international friendly in Singapore, in coach Hajime Moriyasu's final match in charge after eight years.",
+        "Takefusa Kubo opened the scoring in the 15th minute and Keito Nakamura doubled the lead four minutes later. Brazil's Vinícius Júnior scored twice to level the match, but Tatsuhito Sakamoto struck the winner in the first minute of second-half stoppage time.",
+        "Japan, ranked 17th in the world, converted three of their eight shots, with Kubo, Nakamura and Sakamoto each scoring with their only shot on goal.",
+        "The win avenged Japan's 2-1 defeat by Brazil in the round of 32 at the 2026 World Cup last summer.",
+        "Moriyasu, who has led Japan since 2018, will step down after the November international window. Japan face Paraguay next as they build towards the next World Cup."
+      ],
+      "related": [
+        "van-gogh-record-190-million"
+      ],
+      "image": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1600&q=80",
+      "imageCaption": "A football stadium under lights. Illustrative photo. Photo: Unsplash"
+    },
+    {
+      "slug": "trump-xi-putin-shenzhen-summit",
+      "sections": [
+        "world",
+        "war-conflict"
+      ],
+      "section": "world",
+      "headline": "Trump, Xi and Putin hold historic trilateral talks, but no breakthrough on Ukraine",
+      "dek": "The leaders of the three biggest nuclear powers met in Shenzhen for the first time, agreeing a joint declaration on the UN, nuclear weapons and oil, while the war in Ukraine went on.",
+      "date": "November 19, 2026",
+      "source": "The Times",
+      "source_url": "https://www.thetimes.com/world/asia/article/trump-xi-putin-summit-shenzhen-latest-news-ddskr7pcx",
+      "body": [
+        "The leaders of the United States, China and Russia met in Shenzhen on Thursday for the first trilateral talks between the three nuclear powers.",
+        "A joint declaration covered reform of the United Nations, nuclear weapons, oil production and international law, but the meeting produced no breakthrough on the war in Ukraine.",
+        "The talks lasted just over an hour. President Donald Trump embraced President Vladimir Putin and called him “my friend” before the meeting, and left for the airport immediately afterwards.",
+        "Trump later spoke with European leaders in the “coalition of the willing”, who were meeting in Berlin with US envoys Steve Witkoff and Jared Kushner. According to an official present, he told them they were spending too much money on the war and should be spending it on their own countries.",
+        "The leaders of the E3, the UK, Germany and France, and Ukraine called on Russia to agree to a ceasefire on attacks on energy infrastructure for the duration of winter.",
+        "Trump also told NBC News that he would meet North Korean leader Kim Jong-un at “some point”."
+      ],
+      "related": [
+        "russia-ukraine-missile-attack",
+        "democrats-win-congress-midterms",
+        "denmark-greenland-security-deal"
+      ],
+      "image": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?auto=format&fit=crop&w=1600&q=80",
+      "imageCaption": "A modern city skyline at dusk. Illustrative photo. Photo: Unsplash"
+    },
+    {
+      "slug": "uk-inflation-3-6-percent",
+      "sections": [
+        "business-finance"
+      ],
+      "section": "business-finance",
+      "headline": "UK inflation hits 12-month high of 3.6% as fuel costs climb",
+      "dek": "Consumer prices rose for a fourth month in a row in October, driven by motor fuel and tobacco duty, complicating the Bank of England's fight against inflation.",
+      "date": "November 18, 2026",
+      "source": "Reuters",
+      "source_url": "https://www.reuters.com/world/uk/uk-inflation-one-year-high-weighs-ftse-100-2026-11-18/",
+      "body": [
+        "UK inflation rose to a 12-month high of 3.6% in October, up from 3.5% in September, official figures showed on Wednesday.",
+        "The Office for National Statistics said it was the fourth consecutive monthly increase, driven by motor fuel and tobacco duty changes.",
+        "Petrol and diesel prices pushed the annual rate higher, while tobacco prices rose 5.2% in the month and were 12.4% higher than a year earlier.",
+        "Core inflation, which strips out volatile energy, food, alcohol and tobacco prices, was unchanged at 2.8%.",
+        "The Bank of England expects inflation to approach 5% in the second quarter of 2027. The reading was slightly below the Bank's 3.7% forecast, prompting investors to trim bets on a December rate rise."
+      ],
+      "related": [
+        "bank-of-england-raises-rates",
+        "eu-ukraine-loan-45-billion"
+      ],
+      "image": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=1600&q=80",
+      "imageCaption": "A food market. Illustrative photo. Photo: Unsplash"
+    },
+    {
+      "slug": "van-gogh-record-190-million",
       "sections": [
         "culture"
       ],
       "section": "culture",
-      "headline": "RAYE leads Grammy nominations with 11, tying Beyoncé’s record",
-      "dek": "The British singer tops the field for the 69th Grammy Awards, with her album ‘This Music May Contain Hope’ and single ‘Where Is My Husband!’ both up for the top prizes.",
-      "date": "November 20, 2026",
-      "source": "Associated Press",
-      "source_url": "https://cnalifestyle.channelnewsasia.com/entertainment/grammy-nominations-2027-raye-rosalia-olivia-rodrigo-591851",
+      "headline": "Van Gogh sells for record $190.4 million at Sotheby's",
+      "dek": "“Châtaigniers en fleurs”, unseen in public for more than 50 years, became the fourth most expensive painting ever sold at auction, a day after a dispute over its Nazi-era sale was settled.",
+      "date": "November 19, 2026",
+      "source": "Reuters",
+      "source_url": "https://www.reuters.com/lifestyle/van-goghs-chataigniers-en-fleurs-sells-auction-record-1904-million-2026-11-19/",
       "body": [
-        "British singer RAYE leads the nominations for the 69th Grammy Awards with 11 nods, tying Beyoncé’s record for the most nominations by a female artist in a single year.",
-        "The nominations, announced by the Recording Academy on Monday, put RAYE up for album of the year for ‘This Music May Contain Hope’, and record and song of the year for her hit single ‘Where Is My Husband!’, her first nominations in all three of the Grammys’ biggest categories.",
-        "She is also nominated for songwriter of the year, best pop solo performance and best pop vocal album, among others. The 11 nominations take her career total to 15.",
-        "Behind her are Spanish star Rosalía with nine nominations, while Olivia Rodrigo, Phoebe Bridgers, Miranda Lambert and Ella Langley have seven each. Olivia Dean has six.",
-        "Beyoncé, meanwhile, reached her 100th career Grammy nomination, for ‘Morning Dew (Donk)’ in the best R&B solo performance category, making her the most-nominated artist in the awards’ history.",
-        "The 69th Grammy Awards will be held on February 7, 2027 at the Crypto.com Arena in Los Angeles, with winners chosen by the Recording Academy’s nearly 16,000 voting members."
+        "Vincent van Gogh's 1890 painting “Châtaigniers en fleurs” (Blossoming Chestnut Trees) has sold for $190.4 million at Sotheby's in New York, an auction record for the artist.",
+        "The hammer price was $165 million, with fees taking the total to $190.4 million. The buyer was veteran art dealer Bill Acquavella, head of Acquavella Galleries.",
+        "The previous Van Gogh record was $117.2 million, paid in 2022 for “Orchard with Cypresses” from the collection of Microsoft co-founder Paul Allen.",
+        "The sale makes it the fourth most expensive painting ever sold at auction, and the second most valuable work ever sold at Sotheby's, behind a Klimt portrait that fetched $236.4 million in November 2025.",
+        "The painting, which had not been seen in public for more than 50 years, was the top lot in the sale of 12 works from the Blaquier-Arrieta Collection. All 12 sold for a combined $412 million.",
+        "The sale went ahead a day after Sotheby's announced an agreement with the heirs of German Jewish publisher Samuel Fischer, who said the painting had been sold under duress in 1936 during Nazi persecution."
       ],
       "related": [
-        "nations-league-draw"
+        "japan-beats-brazil-3-2"
       ],
-      "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80",
-      "imageCaption": "A singer performs on stage. Illustrative photo. Photo: Unsplash"
+      "image": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1600&q=80",
+      "imageCaption": "An abstract painting. Illustrative photo. Photo: Unsplash"
     }
   ],
   "justIn": [
     {
-      "time": "Nov 27, 15:54",
-      "text": "Police look for more than 100 gig-goers to help Co-op Live probe",
-      "link": "live.html"
+      "time": "Nov 27, 17:03",
+      "text": "Big EU defense projects under threat from proposed budget cuts: Commissioner Andrius Kubilius",
+      "link": "articles/big-eu-defense-projects-under-threat-from-proposed-budget.html"
     },
     {
-      "time": "Nov 27, 15:48",
-      "text": "Dutch authorities seize 26 critically endangered turtles from luggage of passenger bound for Hong Kong",
-      "link": "live.html"
+      "time": "Nov 27, 17:03",
+      "text": "Body found in woodland confirmed as missing Kelsey Hunter",
+      "link": ""
     },
     {
       "time": "Nov 27, 15:40",
       "text": "Norse Atlantic Airways files for bankruptcy and cancels all future flights",
-      "link": "live.html"
+      "link": "articles/norse-atlantic-airways-files-for-bankruptcy-and-cancels-all.html"
     },
     {
-      "time": "Nov 27, 15:38",
+      "time": "Nov 27, 17:59",
+      "text": "Italian MPs' EU committee questions the core of the hunting reform",
+      "link": ""
+    },
+    {
+      "time": "Nov 27, 17:58",
+      "text": "Europe Tonight: EU budget summit collapses as Spain braces for vote and UK unveils deal",
+      "link": ""
+    },
+    {
+      "time": "Nov 27, 16:53",
       "text": "Canada's top court largely upholds Quebec ban on religious symbols for public servants",
-      "link": "live.html"
+      "link": ""
     },
     {
-      "time": "Nov 27, 16:37",
-      "text": "By Putin's logic, Russia should be returned to Mongolia, Belarus' Lukashenka says",
-      "link": "live.html"
+      "time": "Nov 27, 16:53",
+      "text": "France seeks German man in Channel migrant boat probe",
+      "link": ""
     },
     {
-      "time": "Nov 27, 15:34",
-      "text": "British Gas owner seeks urgent government talks over future of storage facility",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 27, 15:26",
-      "text": "Serbia’s student-led movement nominates chemistry professor for presidency",
-      "link": "live.html"
-    },
-    {
-      "time": "Nov 27, 15:25",
-      "text": "Newly released documents suggest CIA did more post-9/11 waterboarding than previously acknowledged",
-      "link": "live.html"
+      "time": "Nov 27, 16:51",
+      "text": "Divisions deepen between EU member states after tense budget summit",
+      "link": ""
     }
   ],
   "liveUpdates": [
@@ -3239,11 +3488,11 @@ window.WWN_DEFAULT_CONTENT = {
     }
   ],
   "mostRead": [
-    "russia-ukraine-missile-attack",
-    "eu-uk-reset-deal",
-    "shenzhen-aftermath-europe-pushback",
-    "icj-myanmar-genocide-ruling",
-    "wall-street-selloff"
+    "big-eu-defense-projects-under-threat-from-proposed-budget",
+    "norse-atlantic-airways-files-for-bankruptcy-and-cancels-all",
+    "with-new-law-iraq-sees-rise-in-child-marriage-custody",
+    "risks-of-child-marriage-in-iran-complicated-by-war",
+    "russias-hybrid-war-on-europe-evolving-but-failing-iiss"
   ]
 };
 

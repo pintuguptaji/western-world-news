@@ -55,6 +55,7 @@ FEEDS = [
     ("Euronews", "https://www.euronews.com/rss?format=mrss", "europe"),
     ("France 24", "https://www.france24.com/en/rss", "world"),
     ("DW", "https://rss.dw.com/xml/rss-en-all", "europe"),
+    ("BBC", "https://feeds.bbci.co.uk/news/technology/rss.xml", "technology"),
 ]
 
 # Strong off-topic signals — skip these outright.
@@ -93,11 +94,18 @@ WAR_WORDS = ["ukraine", "russia", "gaza", "israel", "palestin", "war",
              "kyiv", "kharkiv", "donetsk", "kremlin", "tehran", "beirut",
              "damascus"]
 BUSINESS_WORDS = ["market", "stocks", "dow", "ftse", "nikkei", "inflation",
-                  "central bank", "interest rate", "economy", "trade",
+                  "central bank", "bank of england", "interest rate", "economy", "trade",
                   "tariff", "unemployment", "recession", "shares"]
+# Market-movement words: checked before technology, so a story about shares
+# falling on AI fears stays a markets story, not a technology story.
+MARKET_WORDS = ["stocks", "dow", "ftse", "nikkei", "shares", "market"]
 US_WORDS = ["trump", "biden", "white house", "senate", "congress",
             "supreme court", "democrat", "republican", "us", "america",
             "washington", "pentagon"]
+TECHNOLOGY_WORDS = ["artificial intelligence", "chatgpt", "openai",
+                    "anthropic", "chip", "semiconductor", "software",
+                    "robot", "nasa", "satellite", "space", "astronaut",
+                    "spacex", "huawei", "nvidia"]
 EUROPE_WORDS = ["eu", "european", "brussels", "france", "french",
                 "germany", "german", "britain", "british", "uk",
                 "italy", "spain", "poland", "polish"]
@@ -116,6 +124,12 @@ LINK_SKIP_SECTIONS = {
 def has(hay, word):
     """True if word occurs at the start of a word in hay."""
     return re.search(r"\b" + re.escape(word), hay) is not None
+
+
+def has_word(hay, word):
+    """True if word occurs as a whole word in hay (so 'us' does not
+    match 'used' and 'ai' does not match 'air')."""
+    return re.search(r"\b" + re.escape(word) + r"\b", hay) is not None
 
 
 def log(msg):
@@ -379,11 +393,21 @@ def pick_section(item):
     hay = item.get("title", "").lower()
     if any(has(hay, w) for w in WAR_WORDS):
         return "war-conflict", ["war-conflict", "world"]
+    if any(has(hay, w) for w in MARKET_WORDS):
+        return "business-finance", ["business-finance", "world"]
+    if any(has(hay, w) for w in TECHNOLOGY_WORDS) or has_word(hay, "ai"):
+        return "technology", ["technology", "world"]
     if any(has(hay, w) for w in BUSINESS_WORDS):
         return "business-finance", ["business-finance", "world"]
-    if any(has(hay, w) for w in US_WORDS):
+    if any(has(hay, w) for w in US_WORDS if w != "us") or has_word(hay, "us"):
         return "us", ["us", "world"]
     sec = item["feed_section"]
+    if sec == "europe":
+        # Euronews/DW carry world news too: only keep the Europe default
+        # when the headline is actually about Europe.
+        if any(has(hay, w) for w in EUROPE_WORDS) or has_word(hay, "uk"):
+            return "europe", ["europe", "world"]
+        return "world", ["world"]
     if sec == "world":
         return "world", ["world"]
     return sec, [sec, "world"]
@@ -579,10 +603,18 @@ def main():
         seen_ji.add(norm_title(title))
         pub = item.get("pubdate")
         if pub:
+            pub = pub.astimezone(dt.timezone.utc)
             time_str = f"{pub.day} {pub.strftime('%b')}, {pub.strftime('%H:%M')}"
         else:
             time_str = dt.datetime.now(dt.timezone.utc).strftime("%d %b")
-        just_in.append({"time": time_str, "text": title[:110]})
+        # Link to the published article when this headline is one; else to
+        # the source report itself. Never to the live blog.
+        slug = slugify(title)
+        if slug in existing_slugs or slug in {a["slug"] for a in new_articles}:
+            link = f"articles/{slug}.html"
+        else:
+            link = item["link"].split("#")[0].split("?")[0]
+        just_in.append({"time": time_str, "text": title[:110], "link": link})
     just_in_changed = just_in != data.get("justIn", [])
 
     # --- Report / dry run. ---
