@@ -9,13 +9,33 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "graham-thorpes-widow-takes-legal-action-against-nhs-trust"
+    "heroSlug": "europe-tonight-how-do-opposing-spanish-parties-expect-to"
   },
   "breaking": {
-    "text": "Graham Thorpe’s widow takes legal action against NHS trust after inquest",
-    "link": "articles/graham-thorpes-widow-takes-legal-action-against-nhs-trust.html"
+    "text": "Europe Tonight: How do opposing Spanish parties expect to address housing or imiigration issues?",
+    "link": "articles/europe-tonight-how-do-opposing-spanish-parties-expect-to.html"
   },
   "articles": [
+    {
+      "slug": "europe-tonight-how-do-opposing-spanish-parties-expect-to",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Europe Tonight: How do opposing Spanish parties expect to address housing or imiigration issues?",
+      "dek": "Euronews' new weekly evening show, Europe Tonight, welcomed Javier Martínez-Cantó, a Research Fellow at the Spanish National Research Center, to discuss issues such as housing and immigration, which are dominating Spain's upcoming general",
+      "date": "November 27, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/27/europe-tonight-how-do-opposing-spanish-parties-expect-to-address-housing-or-imiigration-is",
+      "body": [
+        "Euronews' new weekly evening show, Europe Tonight, welcomed Javier Martínez-Cantó, a Research Fellow at the Spanish National Research Center, to discuss issues such as housing and immigration, which are dominating Spain's upcoming general elections."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/01/20/80/696x392_cmsv2_8e05e373-3e9a-5ad4-9c70-95e85fe9b70f-10012080.jpg",
+      "imageCaption": "Photo: Euronews",
+      "reviewed": false
+    },
     {
       "slug": "graham-thorpes-widow-takes-legal-action-against-nhs-trust",
       "sections": [
@@ -3542,44 +3562,44 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 27, 19:47",
-      "text": "Graham Thorpe’s widow takes legal action against NHS trust after inquest",
-      "link": "articles/graham-thorpes-widow-takes-legal-action-against-nhs-trust.html"
+      "time": "Nov 27, 20:47",
+      "text": "Europe Tonight: How do opposing Spanish parties expect to address housing or imiigration issues?",
+      "link": "articles/europe-tonight-how-do-opposing-spanish-parties-expect-to.html"
     },
     {
-      "time": "Nov 27, 19:25",
-      "text": "NHS Grampian publishes leaked report at center of hospital scandal",
-      "link": "https://www.bbc.co.uk/news/articles/cq36gjdkdn2xo"
+      "time": "Nov 27, 20:43",
+      "text": "Spanish elections: 'Right-wing voters extremely mobilised, left-wing voters not mobilised enough'",
+      "link": "https://www.france24.com/en/tv-shows/spotlight/20261127-spanish-elections-right-wing-voters-extremely-mobilised-left-wing-voters-not-mobilised-enough"
     },
     {
-      "time": "Nov 27, 19:15",
+      "time": "Nov 27, 20:43",
+      "text": "Canada: Supreme Court largely upholds Quebec secularism bill",
+      "link": "https://www.dw.com/en/canada-supreme-court-largely-upholds-quebec-secularism-bill/a-80082571"
+    },
+    {
+      "time": "Nov 27, 20:42",
       "text": "Millions lose access to benefits and pensions services after 'cyber incident'",
       "link": "https://www.bbc.co.uk/news/articles/c8wy5p6pv2e2o"
     },
     {
-      "time": "Nov 27, 19:03",
-      "text": "New satellite data shows how fast some African cities are sinking",
-      "link": "https://www.bbc.co.uk/news/articles/cq074p95z4llo"
+      "time": "Nov 27, 20:34",
+      "text": "Capsized tanker carrying 7,000 tonnes of diesel to be towed away from Ibiza",
+      "link": "https://www.bbc.co.uk/news/articles/cvrlgz6g0ekgo"
     },
     {
-      "time": "Nov 27, 18:52",
-      "text": "'We couldn't give up that easily': Marching bands scramble to cover costs after Thanksgiving parade rearranged",
-      "link": "https://www.bbc.co.uk/news/articles/ckd71ypy9e8eo"
+      "time": "Nov 27, 20:19",
+      "text": "‘Abusive and insulting to Canadians’: campaign to oust US ambassador presented to parliament",
+      "link": "https://www.theguardian.com/world/2026/nov/27/pete-hoekstra-canada-us-ambassador-petition"
     },
     {
-      "time": "Nov 27, 18:48",
-      "text": "Estonia will close border with Russia 'to secure Europe,' foreign minister says during Baku visit",
-      "link": "articles/estonia-will-close-border-with-russia-to-secure-europe.html"
+      "time": "Nov 27, 20:14",
+      "text": "The End of Spain’s ‘Frankenstein’ Coalition? Presidential Plotting in Paris, Kushner & Kremlin Trap",
+      "link": "https://www.france24.com/en/tv-shows/the-world-this-week/20261127-the-end-of-spain-s-frankenstein-coalition-presidential-plotting-in-paris-kushner-kremlin-trap"
     },
     {
-      "time": "Nov 27, 18:42",
-      "text": "Weary of war but with no sign of backing down, Kyiv faces another punishing winter",
-      "link": "https://www.bbc.co.uk/news/articles/c3pw4yrr8kz9o"
-    },
-    {
-      "time": "Nov 27, 18:39",
-      "text": "The AI revolution: Will I lose my job?",
-      "link": "https://www.france24.com/en/tv-shows/the-51/20261127-the-ai-revolution-will-i-lose-my-job"
+      "time": "Nov 27, 20:09",
+      "text": "Spanish PM and rivals rally supporters in final pitch for votes",
+      "link": "https://www.bbc.co.uk/news/articles/c8wy5p4gdnwvo"
     }
   ],
   "liveUpdates": [
