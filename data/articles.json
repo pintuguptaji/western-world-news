@@ -1,6 +1,25 @@
 {
   "articles": [
     {
+      "slug": "new-zealand-election-final-results-show-ruling-coalition",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "New Zealand election: final results show ruling coalition needs minor party to govern",
+      "dek": "Incumbent prime minister Christopher Luxon loses majority and needs support of Opportunity party to remain in power, or country faces another election.",
+      "date": "November 27, 2026",
+      "source": "The Guardian",
+      "source_url": "https://www.theguardian.com/world/2026/nov/27/new-zealand-nz-election-2026-final-results",
+      "body": [
+        "Incumbent prime minister Christopher Luxon loses majority and needs support of Opportunity party to remain in power, or country faces another election. The final results of New Zealand’s general election show the incumbent rightwing coalition will need the support of a centrist newcomer party to form a government, and to avoid sending the country back to the polls."
+      ],
+      "related": [],
+      "image": "https://i.guim.co.uk/img/media/15bb64d1f1fa3f1840538248518d963a2c8d39e8/0_0_5000_4000/master/5000.jpg?width=700&quality=85&auto=format&fit=max&s=2289119a91f82e1e66025988d92e41f9",
+      "imageCaption": "Photo: The Guardian",
+      "auto": true
+    },
+    {
       "slug": "threat-from-china-looms-large-over-taiwans-local-elections",
       "sections": [
         "world"
@@ -3059,6 +3078,26 @@
   ],
   "justIn": [
     {
+      "time": "27 Nov, 02:38",
+      "text": "New Zealand election: final results show ruling coalition needs minor party to govern"
+    },
+    {
+      "time": "27 Nov, 02:22",
+      "text": "New Zealand's ruling coalition falls short of parliamentary majority by one seat"
+    },
+    {
+      "time": "27 Nov, 02:14",
+      "text": "Zelenskyy warns of major Russian attack as Trump urges Putin to ‘pull back’"
+    },
+    {
+      "time": "27 Nov, 01:23",
+      "text": "UK papers: 'Scores' of Labor MPs oppose Rosebank and 'Shameless Huw'"
+    },
+    {
+      "time": "27 Nov, 01:07",
+      "text": "Global news agency AFP reports cyberattack, shuts down content platform"
+    },
+    {
       "time": "27 Nov, 01:00",
       "text": "Threat from China looms large over Taiwan’s local elections"
     },
@@ -3069,26 +3108,6 @@
     {
       "time": "27 Nov, 00:54",
       "text": "I spend £200 a month on fancy meals by myself - would you dine solo?"
-    },
-    {
-      "time": "27 Nov, 00:52",
-      "text": "The young hikers finding friendship and fresh air offline"
-    },
-    {
-      "time": "27 Nov, 00:52",
-      "text": "Major Thanksgiving storm brings flooding, flight delays across US"
-    },
-    {
-      "time": "27 Nov, 00:48",
-      "text": "Met Police ruined my life, says Kenyan man wrongly sentenced over attack on UK couple"
-    },
-    {
-      "time": "27 Nov, 00:47",
-      "text": "Death-sentenced Sheikh Hasina's planned return puts Bangladesh on edge - and India in a bind"
-    },
-    {
-      "time": "27 Nov, 00:38",
-      "text": "Huw Edwards gives first interviews since child abuse image conviction"
     }
   ],
   "liveUpdates": [
@@ -3150,9 +3169,9 @@
     "icj-myanmar-genocide-ruling",
     "wall-street-selloff"
   ],
-  "heroSlug": "threat-from-china-looms-large-over-taiwans-local-elections",
+  "heroSlug": "new-zealand-election-final-results-show-ruling-coalition",
   "breaking": {
-    "text": "Threat from China looms large over Taiwan’s local elections",
-    "link": "articles/threat-from-china-looms-large-over-taiwans-local-elections.html"
+    "text": "New Zealand election: final results show ruling coalition needs minor party to govern",
+    "link": "articles/new-zealand-election-final-results-show-ruling-coalition.html"
   }
 }
