@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "race-hate-exploded-in-this-spanish-town-last-year-now-its"
+    "heroSlug": "half-of-new-hiv-diagnoses-in-greece-are-made-late-early"
   },
   "breaking": {
-    "text": "Race hate exploded in this Spanish town last year. Now its residents are bracing for more",
-    "link": "articles/race-hate-exploded-in-this-spanish-town-last-year-now-its.html"
+    "text": "Half of new HIV diagnoses in Greece are made late, early data shows",
+    "link": "articles/half-of-new-hiv-diagnoses-in-greece-are-made-late-early.html"
   },
   "articles": [
+    {
+      "slug": "half-of-new-hiv-diagnoses-in-greece-are-made-late-early",
+      "sections": [
+        "europe",
+        "world"
+      ],
+      "section": "europe",
+      "headline": "Half of new HIV diagnoses in Greece are made late, early data shows",
+      "dek": "The number of new HIV diagnoses has fallen over the past year, but late diagnoses remain a challenge in Greece.",
+      "date": "November 27, 2026",
+      "source": "Euronews",
+      "source_url": "https://www.euronews.com/2026/11/27/half-of-new-hiv-diagnoses-in-greece-are-made-late-early-data-shows",
+      "body": [
+        "The number of new HIV diagnoses has fallen over the past year, but late diagnoses remain a challenge in Greece."
+      ],
+      "related": [],
+      "image": "https://images.euronews.com/articles/stories/10/00/94/01/696x392_cmsv2_00adccd2-c3f6-532f-bb43-8d192b38d837-10009401.jpg",
+      "imageCaption": "Photo: Euronews"
+    },
     {
       "slug": "race-hate-exploded-in-this-spanish-town-last-year-now-its",
       "sections": [
@@ -3015,43 +3034,43 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 27, 05:00",
-      "text": "Race hate exploded in this Spanish town last year. Now its residents are bracing for more",
+      "time": "Nov 27, 08:05",
+      "text": "Half of new HIV diagnoses in Greece are made late, early data shows",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 06:00",
-      "text": "Pablo Hernández de Cos, Spain's consensus technocrat to head ECB",
+      "time": "Nov 27, 08:03",
+      "text": "Europe Today: EU leaders unable to find an agreement on EU's budget",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 04:56",
-      "text": "Former RAAF pilot convicted of murder after staging wife’s death as lawnmower accident",
+      "time": "Nov 27, 07:00",
+      "text": "Natural England objected to a datacentre. Weeks later ministers threatened to abolish the agency",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 04:47",
-      "text": "MoD has no email addresses for about half of its reservists",
+      "time": "Nov 27, 06:54",
+      "text": "Grace Tame calls out ex-Murdoch media executive who said she ‘must be looking to be raped again’",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 04:34",
-      "text": "Thanksgiving storms leave nearly a million without power across the US",
+      "time": "Nov 27, 06:54",
+      "text": "Messi confirms Tevez testimonial as Ronaldo showdown in offing",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 04:06",
-      "text": "At least 13 Niger soldiers killed in Sanam armed attack",
+      "time": "Nov 27, 06:46",
+      "text": "Israel's Eisenkot agrees to coalition deal with left-wing Democrats",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 03:49",
-      "text": "Trump downplays Russia, China support for Iran during talks with US troops",
+      "time": "Nov 27, 07:44",
+      "text": "Germany's IG Metall reaches pay deal amid industrial crisis",
       "link": "live.html"
     },
     {
-      "time": "Nov 27, 03:42",
-      "text": "Asian stock markets rise after earlier tech rout",
+      "time": "Nov 27, 06:37",
+      "text": "French, Bulgarian presidents slam Marseille violence, five fans in hospital",
       "link": "live.html"
     }
   ],
