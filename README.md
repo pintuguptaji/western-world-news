@@ -121,14 +121,19 @@ Open **admin.html** and enter the passcode:
 
 ## Content — how it stays fresh
 
-The articles in `articles/` are refreshed hourly by the automatic
-publisher (see below) from trusted RSS feeds. The homepage hero, the
-Just In feed and the breaking bar update with every run.
+New articles are researched and written by the editorial team from
+several trusted sources and published several times a day. The homepage
+hero, the Just In feed and the breaking bar update with every new story.
+(The old hourly automatic publisher that posted short summaries is paused
+since 2026-11-28 — see `tools/auto_publish.py`, PUBLISHING_PAUSED.)
 
-- Every story is a **short automated summary of the source's own report**
-  — nothing is copied from another publication.
-- Every story **credits its source by name and links to the original
-  article** (BBC, Al Jazeera, The Guardian, Euronews, France 24, DW).
+- Every story is an **original article written in our own words** from
+  reporting by trusted sources — nothing is copied from another publication.
+- Every story **credits its sources by name and links to the original
+  articles** (BBC, Al Jazeera, The Guardian, Euronews, France 24, DW,
+  Reuters and others).
+- A small number of older stories are still short summaries; they are
+  being expanded into full articles.
 - Section classification is done by the publisher from the headline:
   war and conflict, business, technology, US, Europe, or world. Stories
   are re-checked at build time so the Europe section only carries

@@ -1661,7 +1661,7 @@ def build_article(s):
 <div class="avatar" aria-hidden="true">WWN</div>
 <div>
 <h3>Western World News Editorial Team</h3>
-<p>Stories on Western World News are published automatically from trusted news feeds under a team byline. Each story is a short excerpt of its source's own report, credited and linked to the original. <a href="../authors.html">More about how our stories are made</a></p>
+<p>Stories on Western World News are written by our editorial team: each one is researched from several trusted news sources and written in our own words, with the sources credited and linked. A few older stories are still short summaries that we are expanding into full articles. <a href="../authors.html">More about how our stories are made</a></p>
 </div>
 </div>
 {ad_slot_html("after-article")}
@@ -3037,14 +3037,19 @@ Open **admin.html** and enter the passcode:
 
 ## Content — how it stays fresh
 
-The articles in `articles/` are refreshed hourly by the automatic
-publisher (see below) from trusted RSS feeds. The homepage hero, the
-Just In feed and the breaking bar update with every run.
+New articles are researched and written by the editorial team from
+several trusted sources and published several times a day. The homepage
+hero, the Just In feed and the breaking bar update with every new story.
+(The old hourly automatic publisher that posted short summaries is paused
+since 2026-11-28 — see `tools/auto_publish.py`, PUBLISHING_PAUSED.)
 
-- Every story is a **short automated summary of the source's own report**
-  — nothing is copied from another publication.
-- Every story **credits its source by name and links to the original
-  article** (BBC, Al Jazeera, The Guardian, Euronews, France 24, DW).
+- Every story is an **original article written in our own words** from
+  reporting by trusted sources — nothing is copied from another publication.
+- Every story **credits its sources by name and links to the original
+  articles** (BBC, Al Jazeera, The Guardian, Euronews, France 24, DW,
+  Reuters and others).
+- A small number of older stories are still short summaries; they are
+  being expanded into full articles.
 - Section classification is done by the publisher from the headline:
   war and conflict, business, technology, US, Europe, or world. Stories
   are re-checked at build time so the Europe section only carries
@@ -3212,7 +3217,7 @@ def main():
         "About Western World News: independent news from the West and the world.",
         "About us",
         ["Western World News is an independently run news website covering worldwide news with a main focus on Western and European politics, war and breaking news, plus a small Business &amp; Finance section. It is owned and operated by its publisher and is not part of a larger media group.",
-         "Our stories are short automated summaries of reporting by trusted sources: each one takes the opening of the source's own report, credits the source by name, and links to the original article. Stories are selected automatically from our source feeds and are not independently verified before publication, so an unconfirmed claim in a source report can appear here. If a detail matters, please read the original article.",
+         "Our stories are researched and written by the Western World News editorial team. Each article is based on reporting from several trusted sources — the BBC, Al Jazeera, The Guardian, Euronews, France 24, DW, Reuters and others — rewritten in our own words, checked before publication, and credited with links to the original reporting. A small number of older stories are still short summaries; we are expanding them into full articles. If a detail matters, please read the original article.",
          "The site is free to read. There is no paywall.",
          "Contact us via the contact page."])))
     files.append(write("contact.html", build_info(
@@ -3241,8 +3246,8 @@ def main():
         "Terms of Service",
         ["These terms explain the rules for using westernworldnews.com. By using the site, you agree to these terms. If you do not agree, please do not use the site.",
          "Free to read. Western World News is free to read. There is no paywall, and you do not need an account to read our stories.",
-         "Our content. Our stories are short automated summaries of reporting by the sources we credit and link to: each one takes the opening of the source's own report. The original reporting belongs to its publishers. You are welcome to share links to our stories. Please do not copy our text and republish it as your own.",
-         "Accuracy. News changes fast. Summaries are published automatically without human checking and are not routinely updated after publication. We correct mistakes when they are reported to us by email, but we cannot promise that every fact on the site is complete or current at all times, and you should check important facts against the original reporting. See our <a href='corrections.html'>corrections policy</a> for how corrections work.",
+         "Our content. Our stories are original articles researched and written by Western World News from reporting by the sources we credit and link to. The original reporting belongs to its publishers. You are welcome to share links to our stories. Please do not copy our text and republish it as your own.",
+         "Accuracy. News changes fast. Our articles are checked before publication, but facts can change within hours and stories are not routinely updated after publication. We correct mistakes when they are reported to us by email, but we cannot promise that every fact on the site is complete or current at all times, and you should check important facts against the original reporting. See our <a href='corrections.html'>corrections policy</a> for how corrections work.",
          "Not advice. Nothing on this site is financial, legal, medical, or professional advice. Do not rely on a news summary to make financial, legal, or medical decisions.",
          "Advertising. Advertising may appear on this site in the future, once approved. There is currently no advertising on the site. Any advertising that appears will be separate from our editorial content, and advertising will not affect what we report or how we report it. See our <a href='privacy.html'>privacy policy</a> for how advertising cookies work.",
          "Changes and availability. We may change, pause, or remove any part of the site at any time, and we may update these terms. The current terms are always the ones published on this page.",
@@ -3252,23 +3257,23 @@ def main():
         "disclaimer", "Disclaimer | Western World News",
         "Disclaimer for Western World News: what our news summaries are, and what they are not.",
         "Disclaimer",
-        ["Western World News publishes short news summaries based on reporting by trusted news organizations, including the BBC, Al Jazeera, The Guardian, Euronews, France 24, and DW. Each story credits and links to its original source.",
-         "Our summaries are not the original reporting. Each one is an automated excerpt of the source's own report — the opening of the feed text — credited and linked to the original. If a detail matters to you, please read the original article we link to.",
-         "News changes fast. Facts can change within hours of a story being published. Published summaries are not routinely updated after publication. If you spot a mistake, please report it by email and we will correct it manually. But we cannot promise that every page is current at the moment you read it.",
+        ["Western World News publishes original news articles based on reporting by trusted news organizations, including the BBC, Al Jazeera, The Guardian, Euronews, France 24, DW, and Reuters. Each story credits and links to its original sources.",
+         "Our articles are written in our own words from several sources, credited and linked to the originals. A few older stories are still short summaries that we are expanding into full articles. If a detail matters to you, please read the original article we link to.",
+         "News changes fast. Facts can change within hours of a story being published. Published articles are not routinely updated after publication. If you spot a mistake, please report it by email and we will correct it manually. But we cannot promise that every page is current at the moment you read it.",
          "Not advice. Nothing on this site is financial, legal, medical, or other professional advice, and nothing here should be treated as a recommendation to buy, sell, or do anything else.",
-         "Images. Photos on this site come from the news feed that published the story, credited to that publisher, or, for a few stories, from freely licensed sources such as Wikimedia Commons and Unsplash. We do not own the news photos we display; they remain the property of their publishers. Photos labelled as illustrations do not show the event described in the story.",
+         "Images. Photos on this site come from freely licensed sources such as Pexels, credited to the photographer, or from the news feed that published the story, credited to that publisher. We are replacing publisher photos with licensed photos. We do not own the news photos we display; they remain the property of their publishers. Photos labelled as illustrations do not show the event described in the story.",
          "Links. Our stories link to other websites. We are not responsible for the content or privacy practices of those sites."])))
     files.append(write("editorial-policy.html", build_info(
         "editorial-policy", "Editorial Policy | Western World News",
         "Editorial Policy for Western World News: how we choose, check, and write our news.",
         "Editorial Policy",
         ["Western World News is an independently run news site. We cover worldwide news with a main focus on Western and European politics, war and conflict, and breaking news, plus a small Business and Finance section.",
-         "Trusted sources. Our stories come automatically from the RSS feeds of the BBC, Al Jazeera, The Guardian, Euronews, France 24, and DW. Stories are selected by keyword filters, not by a human editor, and are not independently verified before publication. We do not base stories on rumors or anonymous social media posts as a matter of policy, but an unconfirmed claim in a source feed can still appear here, so please check important facts against the original report.",
-         "How stories are made. Each story is an automated excerpt — the opening of the source feed's own text — credited to its source by name and linked to the original report so readers can check the facts themselves. We do not copy full articles, and we do not present the source's words as our own reporting.",
-         "What we do not publish. We filter out clearly off-topic material (puzzles, celebrity gossip, reviews, horoscopes and similar). We do not publish graphic war detail as a matter of policy. There is no pre-publication verification or graphic-detail review: selection is automated.",
+         "Trusted sources. Our stories are researched from the reporting of trusted news organizations — the BBC, Al Jazeera, The Guardian, Euronews, France 24, DW, Reuters and others. Each article is written in our own words from several sources and checked before publication. We do not base stories on rumors or anonymous social media posts as a matter of policy, but an unconfirmed claim in a source report can still appear here, so please check important facts against the original report.",
+         "How stories are made. Each article is researched from multiple sources, written in our own words, and checked before it is published, with the sources credited by name and linked so readers can check the facts themselves. A small number of older stories are still short summaries; we are expanding them into full articles. We do not copy full articles, and we do not present a source's words as our own reporting.",
+         "What we do not publish. We filter out clearly off-topic material (puzzles, celebrity gossip, reviews, horoscopes and similar). We do not publish graphic war detail as a matter of policy.",
          "Corrections. Errors reported by email are fixed manually when noticed. We do not promise a speed for corrections, and there is no standing correction-note format on stories. See our <a href='corrections.html'>corrections policy</a> for the details.",
          "Advertising and sponsorship. There is currently no advertising or sponsored content on this site. If advertising appears in the future, it will be separate from editorial content. We do not present sponsored content as news, and advertisers will not decide what we cover or how we cover it.",
-         "Photos. Photos come from the news feed that published the story, credited to that publisher, or, for a few stories, from freely licensed sources. We label illustrations clearly as illustrations. We never present stock or generated imagery as real event footage. This site has no video content."])))
+         "Photos. Photos come from freely licensed sources such as Pexels, credited to the photographer, or from the news feed that published the story, credited to that publisher. We are replacing publisher photos with licensed photos. We label illustrations clearly as illustrations. We never present stock or generated imagery as real event footage. This site has no video content."])))
     files.append(write("corrections.html", build_info(
         "corrections", "Corrections Policy | Western World News",
         "Corrections Policy for Western World News: how we fix mistakes, and how to report one.",
@@ -3277,15 +3282,15 @@ def main():
          "How we correct. Errors are fixed manually after they are reported to us by email. Small typos and formatting fixes are corrected quietly. If a fact in a story was wrong, we correct the story. We do not promise a response time, and there is no standing correction-note format on story pages.",
          "How to report an error. If you spot a mistake, please tell us through the <a href='contact.html'>contact page</a>. Include the headline of the story and the fact that needs correcting. Reports sent to the contact email are read by the site operator.",
          "What we do not do. We do not remove stories because someone dislikes the news. We correct facts when they are shown to be wrong.",
-         "Sources. Most of our facts come from the reporting we credit and link to. The automatic publisher does not revisit published stories, so if the original source corrects its own report, our summary is only updated if someone reports it to us by email."])))
+         "Sources. Most of our facts come from the reporting we credit and link to. If the original source corrects its own report, we update our article when we notice it or when someone reports it to us by email."])))
     files.append(write("authors.html", build_info(
         "authors", "Our Editorial Team | Western World News",
         "Our Editorial Team: the people behind Western World News, and how our stories are made.",
         "Our Editorial Team",
-        ["Stories on Western World News are published under the Western World News Editorial Team byline. Stories are published automatically from RSS feeds: there is no individual staff writer, and no human editor selects or checks stories before publication.",
-         "How we work. The site automatically checks the feeds of the BBC, Al Jazeera, The Guardian, Euronews, France 24, and DW each hour and publishes stories that match our topics. There is no around-the-clock human monitoring.",
-         "Each story is an automated excerpt of the source feed's own text, credited to its original source and linked to the original report. No story is fact-checked by anyone before publication.",
-         "New stories are added automatically as the feeds publish them. The live blog is updated only when new Ukraine-war stories are published. When we make a mistake, we correct it manually after it is reported to us by email. See our <a href='editorial-policy.html'>editorial policy</a> and our <a href='corrections.html'>corrections policy</a> for the details.",
+        ["Stories on Western World News are published under the Western World News Editorial Team byline. Each story is researched from several trusted sources and written in our own words by the editorial team, then checked before publication.",
+         "How we work. Our team follows the news through trusted outlets — the BBC, Al Jazeera, The Guardian, Euronews, France 24, DW, Reuters and others — and publishes full articles on the most important stories several times a day. A few older stories are still short summaries that we are expanding into full articles.",
+         "Each story credits its sources by name and links to the original reports so readers can check the facts themselves.",
+         "New stories are added through the day as important news breaks. The live blog is updated only when new Ukraine-war stories are published. When we make a mistake, we correct it manually after it is reported to us by email. See our <a href='editorial-policy.html'>editorial policy</a> and our <a href='corrections.html'>corrections policy</a> for the details.",
          "Contact. Messages go to the site's single contact email address, lurenmira@gmail.com, for news tips, corrections, or questions about our coverage."])))
 
     files.append(write("cookie-policy.html", build_info(
