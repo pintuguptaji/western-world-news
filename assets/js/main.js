@@ -215,14 +215,30 @@
       track.innerHTML = items + items;
     }
 
+    // pxImg: client-side twin of the Python pximg() helper — resizes a
+    // Pexels image URL to width w, never upscaling, scaling a h= crop
+    // proportionally. Other URLs pass through unchanged.
+    function pxImg(u, w) {
+      if (u.indexOf("images.pexels.com") === -1) return u;
+      var m = u.match(/([?&])w=(\d+)/);
+      if (!m) return u;
+      var oldW = parseInt(m[2], 10), nw = Math.min(w, oldW);
+      if (nw === oldW) return u;
+      u = u.replace(/([?&])w=\d+/, "$1w=" + nw);
+      var mh = u.match(/([?&])h=(\d+)/);
+      if (mh) { var nh = Math.max(1, Math.round(parseInt(mh[2], 10) * nw / oldW)); u = u.replace(/([?&])h=\d+/, "$1h=" + nh); }
+      return u;
+    }
+
     // Top-story card (homepage hero): photo with TOP STORY badge, navy
     // body with headline, dek and date + read time. The intro column and
     // the stacked stories beside it are server-rendered and stay as-is.
     var heroEl = $("[data-hero]");
     var hero = bySlug[store.settings.heroSlug] || store.articles[0];
     if (heroEl && hero) {
+      var heroSrc = pxImg(hero.image, 1200), heroSmall = pxImg(hero.image, 640);
       var heroMedia = hero.image
-        ? '<img src="' + esc(hero.image) + '" alt="' + esc(hero.headline) + '" width="1200" height="675" loading="eager">'
+        ? '<img src="' + esc(heroSrc) + '"' + (heroSmall !== heroSrc ? ' srcset="' + esc(heroSmall) + ' 640w, ' + esc(heroSrc) + ' 1200w" sizes="(max-width: 700px) 100vw, 1200px"' : '') + ' alt="' + esc(hero.headline) + '" width="1200" height="675" loading="eager" fetchpriority="high">'
         : '<div class="art" role="img" aria-label="Graphic placeholder"><span class="monogram">WWN</span><span class="art-label">' + esc(sectionLabel(hero.section)) + "</span></div>";
       var liveLink = "";
       if (/ukraine|russia|kyiv|kremlin/i.test(hero.headline)) {
