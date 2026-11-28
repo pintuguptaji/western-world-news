@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "polls-open-in-taiwan-s-closely-watched-local-elections"
+    "heroSlug": "carly-rae-jepsen-s-viral-hit-proves-what-fans-knew-all-along"
   },
   "breaking": {
-    "text": "Polls open in Taiwan's closely watched local elections",
-    "link": "articles/polls-open-in-taiwan-s-closely-watched-local-elections.html"
+    "text": "Carly Rae Jepsen's viral hit proves what fans knew all along",
+    "link": "articles/carly-rae-jepsen-s-viral-hit-proves-what-fans-knew-all-along.html"
   },
   "articles": [
+    {
+      "slug": "carly-rae-jepsen-s-viral-hit-proves-what-fans-knew-all-along",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Carly Rae Jepsen's viral hit proves what fans knew all along",
+      "dek": "The Call Me Maybe star returns to the UK Top 40 as her single Run Away With Me gets a GTA VI boost.",
+      "date": "November 28, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq3dgp88p744o",
+      "body": [
+        "The Call Me Maybe star returns to the UK Top 40 as her single Run Away With Me gets a GTA VI boost."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/f840/live/b254cec0-e9b9-11f1-8d2a-f5d2aabc11cb.jpg",
+      "imageCaption": "Photo: BBC",
+      "reviewed": false
+    },
     {
       "slug": "polls-open-in-taiwan-s-closely-watched-local-elections",
       "sections": [
@@ -3659,6 +3678,21 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 28, 03:03",
+      "text": "Carly Rae Jepsen's viral hit proves what fans knew all along",
+      "link": "articles/carly-rae-jepsen-s-viral-hit-proves-what-fans-knew-all-along.html"
+    },
+    {
+      "time": "Nov 28, 03:00",
+      "text": "Parts of US clean up after Thanksgiving storm lashes East Coast",
+      "link": "https://www.aljazeera.com/news/2026/11/28/parts-of-us-clean-up-after-thanksgiving-storm-lashes-east-coast"
+    },
+    {
+      "time": "Nov 28, 02:39",
+      "text": "Australia’s east coast deluged by storms as roads flood and damaging winds forecast for NSW and Victoria",
+      "link": "https://www.theguardian.com/australia-news/2026/nov/28/australias-east-coast-deluged-by-storms-as-roads-flood-and-damaging-winds-forecast-for-nsw-and-victoria"
+    },
+    {
       "time": "Nov 28, 02:37",
       "text": "Polls open in Taiwan's closely watched local elections",
       "link": "articles/polls-open-in-taiwan-s-closely-watched-local-elections.html"
@@ -3682,21 +3716,6 @@ window.WWN_DEFAULT_CONTENT = {
       "time": "Nov 28, 01:30",
       "text": "How gamers are using AI and leaked files to clone Grand Theft Auto 6",
       "link": "https://www.bbc.co.uk/news/articles/c64gn8pe5eeqo"
-    },
-    {
-      "time": "Nov 28, 01:20",
-      "text": "Nigeria's 'ultimate hard man' who become an online meme",
-      "link": "https://www.bbc.co.uk/news/articles/cm3vg3lkrk03o"
-    },
-    {
-      "time": "Nov 28, 01:12",
-      "text": "'I don't know what I'd do without it': Why shoppers and staff fear losing Poundland",
-      "link": "https://www.bbc.co.uk/news/articles/c65y1l9j7j9ko"
-    },
-    {
-      "time": "Nov 28, 01:03",
-      "text": "Should I get a flu vaccine now?",
-      "link": "https://www.bbc.co.uk/news/articles/cq8e018jyjngo"
     }
   ],
   "liveUpdates": [
