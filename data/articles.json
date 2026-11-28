@@ -1,6 +1,40 @@
 {
  "articles": [
   {
+   "slug": "canada-supreme-court-upholds-quebec-bill-21-religious-symbols-ban",
+   "headline": "Canada's Supreme Court upholds Quebec's Bill 21 religious symbols ban in landmark ruling",
+   "dek": "The court ruled Quebec validly used the notwithstanding clause to shield the 2019 secularism law, striking down only the rule barring elected lawmakers from covering their faces — a decision rights groups called a dark day and Quebec's premier hailed as a victory.",
+   "body": [
+    "Canada's Supreme Court on Friday largely upheld Quebec's ban on public servants wearing religious symbols at work, ending a seven-year legal battle, in a sweeping endorsement of governments' power to set constitutional rights aside.",
+    "The seven-judge court ruled in English Montreal School Board v. Quebec (Attorney General), 2026 SCC 41, that Quebec had validly used the notwithstanding clause to shield the law, known as Bill 21. Passed in June 2019, it bars teachers, police officers, judges, prosecutors and other public servants in positions of authority from wearing hijabs, turbans, kippahs, crosses and other religious symbols while on duty.",
+    "The decision runs to more than 500 pages. Chief Justice Richard Wagner, writing for three justices, said the law was \"rooted in Quebec's legitimate and historical commitment to ensuring the laicity of the state in a free and democratic society\". The court also rejected the claim that the law violated the minority-language education rights of English school boards.",
+    "The court struck down only one small part of the law. The rule requiring officials to perform their duties with their faces uncovered will no longer apply to members of Quebec's National Assembly, because it violates the democratic right to run for office and take part in the legislative process — a right the notwithstanding clause cannot override.",
+    "At the heart of the case was section 33 of Canada's Charter of Rights and Freedoms, the notwithstanding clause. It lets federal and provincial governments keep a law in force for up to five years even if it violates certain Charter rights, including freedom of religion. Quebec invoked it when it passed Bill 21 in 2019 and renewed it in 2024. The court found Quebec had used it lawfully, and that it can be used pre-emptively, before any court rules. \"It is not open to the courts to place additional limits on the exercise of the override power,\" the decision said.",
+    "The judges were split on whether a court can formally declare that a law violates the Charter even when the override keeps it in force. Four of the seven agreed that it can — a declaration would leave the law standing but let citizens know how their rights were being temporarily overridden. But only three of the justices would have issued one in this case, so the court issued none.",
+    "In a partial dissent, Justices Andromache Karakatsanis and Michelle O'Bonsawin wrote that there was no serious question the law violates the right to freedom of religion. They described how Muslim women had been turned away from jobs because they wear a hijab, and how the law had blocked promotions and transfers. \"The Act's effects are not experienced equally,\" they wrote. \"They fall most heavily on Muslim women.\"",
+    "The law has already reshaped lives in Quebec. Teachers already in their posts on March 27, 2019, could keep wearing religious symbols if they stayed in the same role, but others lost jobs or left the province, and some Muslim women took off their hijabs at work to keep theirs. Nevien Waly, who wears a hijab and was barred from volunteering at her children's school under a later expansion of the rules, had expected the court to uphold the law but was holding out hope. \"I'm sad for myself, worried about the future of our kids,\" she told Al Jazeera.",
+    "Rights groups condemned the ruling. The National Council of Canadian Muslims, one of the groups that challenged Bill 21, called it \"a dark day in our constitutional democracy\". Its chief executive, Stephen Brown, said the decision was \"an unrestricted licence for every government in this country to pass legislation taking away the fundamental freedoms and the legal rights of every Canadian\". The Canadian Civil Liberties Association said that \"for the people this law affects every day, that door remains closed\" — Bill 21 had \"already denied a generation of Quebecers their chosen profession in public service because of their faith\".",
+    "Quebec's government welcomed the ruling. Premier Paul St-Pierre Plamondon said it was a victory for the province's approach to secularism, adding: \"We worried about social peace if such a fundamental choice were to be invalidated by the Supreme Court.\" Alberta Premier Danielle Smith, whose government intervened in the case to defend the use of the clause, celebrated the decision as \"a win for provincial rights\".",
+    "Prime Minister Mark Carney said Ottawa was \"carefully studying\" the ruling. He told reporters the government respected the independence of the Supreme Court, and said his government would not use the clause, adding that it would \"always do what we can to protect those rights and liberties\". The ruling is a political win for Quebec's sovereigntist government, and it could complicate Carney's efforts to unify the country as Canada faces a trade war and annexation threats from US President Donald Trump.",
+    "The ruling reaches well beyond Quebec. The province has already widened the restrictions since 2019, extending them to school support staff and volunteers under Bill 94 and to daycare staff under Bill 9, and its government wants to go further by barring elementary school students from wearing religious symbols. Alberta, Ontario and Saskatchewan have all used the same clause in recent years, and the Supreme Court will consider its reach again in March 2027, when it hears Saskatchewan's appeal. The court has now answered the central question: governments may invoke the override before any court has ruled.",
+    "Sources: Al Jazeera; South China Morning Post; The Canadian Press; BBC."
+   ],
+   "date": "November 28, 2026",
+   "section": "world",
+   "sections": [
+    "world"
+   ],
+   "source": "Al Jazeera",
+   "source_url": "https://www.aljazeera.com/amp/news/2026/11/27/canadas-top-court-largely-upholds-quebecs-religious-symbols-ban",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Supreme_Court_of_Canada%2C_Ottawa.jpg/1280px-Supreme_Court_of_Canada%2C_Ottawa.jpg",
+   "imageCaption": "The Supreme Court of Canada building in Ottawa, where the court handed down its ruling on Quebec's secularism law. Photo: D. Gordon E. Robertson / Wikimedia Commons (CC BY-SA 3.0)",
+   "related": [
+    "pentagon-moves-to-restrict-defense-ties-with-canada-in-classified-memo"
+   ],
+   "reviewed": true,
+   "auto": false
+  },
+  {
    "slug": "houthi-strike-saudi-aramco-jazan-refinery-kills-worker",
    "headline": "Houthi strike on Saudi Aramco's Jazan refinery kills worker as Saudi Arabia bombs Yemen in return",
    "dek": "A projectile hit the 400,000-barrel-a-day Jazan refinery on Thursday, killing a Nepalese worker and halting some operations. Saudi Arabia answered with airstrikes across Yemen, while its new defence allies met in Islamabad to condemn the attacks.",
@@ -4739,6 +4773,11 @@
  ],
  "justIn": [
   {
+   "time": "28 Nov, 13:08",
+   "text": "Canada's Supreme Court upholds Quebec's Bill 21 religious symbols ban in landmark ruling",
+   "link": "articles/canada-supreme-court-upholds-quebec-bill-21-religious-symbols-ban.html"
+  },
+  {
    "time": "28 Nov, 11:44",
    "text": "Houthi strike on Saudi Aramco's Jazan refinery kills worker as Saudi Arabia bombs Yemen in return",
    "link": "articles/houthi-strike-saudi-aramco-jazan-refinery-kills-worker.html"
@@ -4853,9 +4892,9 @@
   "russias-hybrid-war-on-europe-evolving-but-failing-iiss",
   "hackers-break-into-us-air-force-flagship-cloud-platform"
  ],
- "heroSlug": "houthi-strike-saudi-aramco-jazan-refinery-kills-worker",
+ "heroSlug": "canada-supreme-court-upholds-quebec-bill-21-religious-symbols-ban",
  "breaking": {
-  "text": "Houthi strike on Saudi Aramco's Jazan refinery kills worker as Saudi Arabia bombs Yemen in return",
-  "link": "articles/houthi-strike-saudi-aramco-jazan-refinery-kills-worker.html"
+  "text": "Canada's Supreme Court upholds Quebec's Bill 21 religious symbols ban in landmark ruling",
+  "link": "articles/canada-supreme-court-upholds-quebec-bill-21-religious-symbols-ban.html"
  }
 }
