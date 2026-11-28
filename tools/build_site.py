@@ -1661,7 +1661,7 @@ def build_article(s):
 <div class="avatar" aria-hidden="true">WWN</div>
 <div>
 <h3>Western World News Editorial Team</h3>
-<p>Stories on Western World News are written by our editorial team: each one is researched from several trusted news sources and written in our own words, with the sources credited and linked. A few older stories are still short summaries that we are expanding into full articles. <a href="../authors.html">More about how our stories are made</a></p>
+<p>Stories on Western World News are written by our editorial team: each one is researched from several trusted news sources and written in our own words, with the sources credited and linked. Every story on the site is a full researched article. <a href="../authors.html">More about how our stories are made</a></p>
 </div>
 </div>
 {ad_slot_html("after-article")}
@@ -3258,7 +3258,7 @@ def main():
         "Disclaimer for Western World News: what our news summaries are, and what they are not.",
         "Disclaimer",
         ["Western World News publishes original news articles based on reporting by trusted news organizations, including the BBC, Al Jazeera, The Guardian, Euronews, France 24, DW, and Reuters. Each story credits and links to its original sources.",
-         "Our articles are written in our own words from several sources, credited and linked to the originals. A few older stories are still short summaries that we are expanding into full articles. If a detail matters to you, please read the original article we link to.",
+         "Our articles are written in our own words from several sources, credited and linked to the originals. Every story on the site is a full researched article. If a detail matters to you, please read the original article we link to.",
          "News changes fast. Facts can change within hours of a story being published. Published articles are not routinely updated after publication. If you spot a mistake, please report it by email and we will correct it manually. But we cannot promise that every page is current at the moment you read it.",
          "Not advice. Nothing on this site is financial, legal, medical, or other professional advice, and nothing here should be treated as a recommendation to buy, sell, or do anything else.",
          "Images. Photos on this site come from freely licensed sources such as Pexels, credited to the photographer, or from the news feed that published the story, credited to that publisher. We are replacing publisher photos with licensed photos. We do not own the news photos we display; they remain the property of their publishers. Photos labelled as illustrations do not show the event described in the story.",
@@ -3288,7 +3288,7 @@ def main():
         "Our Editorial Team: the people behind Western World News, and how our stories are made.",
         "Our Editorial Team",
         ["Stories on Western World News are published under the Western World News Editorial Team byline. Each story is researched from several trusted sources and written in our own words by the editorial team, then checked before publication.",
-         "How we work. Our team follows the news through trusted outlets — the BBC, Al Jazeera, The Guardian, Euronews, France 24, DW, Reuters and others — and publishes full articles on the most important stories several times a day. A few older stories are still short summaries that we are expanding into full articles.",
+         "How we work. Our team follows the news through trusted outlets — the BBC, Al Jazeera, The Guardian, Euronews, France 24, DW, Reuters and others — and publishes full articles on the most important stories several times a day. Every story on the site is a full researched article.",
          "Each story credits its sources by name and links to the original reports so readers can check the facts themselves.",
          "New stories are added through the day as important news breaks. The live blog is updated only when new Ukraine-war stories are published. When we make a mistake, we correct it manually after it is reported to us by email. See our <a href='editorial-policy.html'>editorial policy</a> and our <a href='corrections.html'>corrections policy</a> for the details.",
          "Contact. Messages go to the site's single contact email address, lurenmira@gmail.com, for news tips, corrections, or questions about our coverage."])))
