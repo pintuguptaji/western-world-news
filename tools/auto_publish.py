@@ -58,6 +58,16 @@ MAX_PER_DAY = 20
 REVIEW_GATE = False
 PENDING_PATH = os.path.join(SITE_ROOT, "data", "pending-review.json")
 
+# Publishing PAUSED by the owner on 2026-11-28: the hourly RSS publisher
+# was posting short 1–2 sentence summaries, and the owner ordered it
+# stopped. Full researched articles are now written and published by
+# Muse instead (see the full-article publisher playbook in the goal
+# workspace). While this is True the hourly workflow runs, prints
+# PUBLISHED_COUNT=0, changes nothing and exits 0 — the workflow's
+# "commit if changed" step then correctly does nothing. To resume
+# short-form auto-publishing, set this to False and push.
+PUBLISHING_PAUSED = True
+
 # (source name, feed URL, default section)
 FEEDS = [
     ("BBC", "https://feeds.bbci.co.uk/news/rss.xml", "world"),
@@ -536,6 +546,13 @@ def main():
                     help="Print what would be published; write nothing.")
     args = ap.parse_args()
     dry_run = args.dry_run
+
+    if PUBLISHING_PAUSED:
+        log("Publishing PAUSED by the owner (2026-11-28): short RSS "
+            "summaries are stopped. Full researched articles are published "
+            "by Muse instead. Nothing fetched, nothing written.")
+        print("PUBLISHED_COUNT=0", flush=True)
+        return 0
 
     if os.path.exists(EXPORT_PATH):
         log("ERROR: content-export.json exists in the site root — it would "
