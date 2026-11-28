@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://westernworldnews.com/articles/iran-claims-it-struck-us-aircraft-carrier-as-hormuz-blockade-battle-escalates.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Western World News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28</news:publication_date>
+      <news:title>Iran claims it struck US aircraft carrier as Hormuz blockade battle escalates</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://westernworldnews.com/articles/hackers-break-into-us-air-force-flagship-cloud-platform.html</loc>
     <news:news>
       <news:publication>

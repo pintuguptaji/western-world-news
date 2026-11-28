@@ -1,6 +1,38 @@
 {
   "articles": [
     {
+      "slug": "iran-claims-it-struck-us-aircraft-carrier-as-hormuz-blockade-battle-escalates",
+      "headline": "Iran claims it struck US aircraft carrier as Hormuz blockade battle escalates",
+      "dek": "Tehran's navy chief says Iran is already breaking through the US blockade of its ports — and claims its forces hit the USS Abraham Lincoln. US Central Command calls the claims fabricated.",
+      "body": [
+        "Iran's navy chief has claimed that Iranian forces struck the American aircraft carrier USS Abraham Lincoln and are already breaking through the United States' naval blockade of Iran's ports — claims the US military swiftly dismissed as fabricated, in the latest war of words over the Strait of Hormuz.",
+        "Admiral Shahram Irani, commander of Iran's navy, made the claims in an interview with Iranian state broadcaster IRIB on Friday. He said Iranian forces had hit the Lincoln on the second day of the war with a missile that was being tested for the first time, and that the strike had forced the carrier to seek help from countries in the region to evacuate wounded personnel. Quoting the interview, Iran's Fars news agency reported him as saying: “On the second day of the war, we landed the first blow against the enemy, striking the USS Abraham Lincoln with a missile that was being tested for the first time.”",
+        "Irani dismissed the American blockade — under which US forces have been stopping ships bound for Iranian ports — as a sign of failure. “A naval blockade makes no sense. Naval blockades are imposed before a war. When a blockade is imposed during a war, it means the war has been lost,” he said, according to Iran's ISNA news agency. “Breaking through the enemy blockade is underway, and our ports are operating today,” he added, saying Iranian naval escorts were being provided to the country's vessels and that Washington had so far failed to cut off “the lifeblood of our economy”.",
+        "The admiral made a series of further claims. He accused the US Navy of seizing two Iranian oil tankers, saying Tehran had recaptured them during the conflict. “The U.S. Navy is a pirate that stole two of our oil tankers, but we recaptured them in the midst of the war,” he said. He also claimed Iranian forces had jointly targeted the US Fifth Fleet base in Bahrain, alleging its infrastructure and command-and-control systems were destroyed. “The scale of our strikes was such that the U.S. terrorist army's Fifth Fleet base in Bahrain was truly razed to the ground, and its command and control system was shattered,” he said.",
+        "Irani also said Iran's Supreme Leader, Mojtaba Khamenei, had told the armed forces that geographical limitations would no longer apply to Iran's response to US strikes. “The U.S. must grasp the implications of this directive. We have a free hand to carry out the assigned missions,” he said, according to Al Jazeera's account of the interview.",
+        "US Central Command (CENTCOM) responded with a point-by-point denial posted on X. It rejected the claim that US forces had seized two Iranian tankers and that Iran's Revolutionary Guard navy had retaken them while American personnel slept. “Iran no longer has a navy. The entire situation the Iranian military commander described is another fabricated lie,” CENTCOM wrote.",
+        "On the carrier claim, CENTCOM said the USS Abraham Lincoln strike group “was well defended and never struck by Iran” and had completed what it called a “historically successful combat deployment” before returning safely to the United States last month. It also denied charging ships $2.5 million to transit the Strait of Hormuz — another claim made by Irani — saying there was no toll and that “thousands of ships and billions of crude oil barrels have transited the strait freely and safely under US protection”.",
+        "The one incident both sides agree took place is the disabling of a commercial vessel in the Gulf of Oman. CENTCOM said a US aircraft had fired precision munitions at the stern of the Palau-flagged bulk carrier M/V Pacific Archer on Thursday, after it left the Iranian port of Bandar Abbas and allegedly tried to breach the blockade despite multiple warnings. “The ship's propulsion was ultimately disabled and the civilian crew was unharmed,” CENTCOM said. It said six ships had now been disabled for refusing to comply with the blockade and 158 others redirected.",
+        "Iran's Revolutionary Guard navy, meanwhile, claimed two oil tankers had struck naval mines and caught fire near the Omani port of Khasab in the Strait of Hormuz. According to Iranian state media, one tanker hit a mine north of Ghanam Island while another was forced to turn back, after both allegedly tried to use unauthorised routes with their tracking systems switched off. Those claims could not be independently verified.",
+        "The competing claims come nine months into a war that began on February 28, when the United States and Israel launched military operations against Iran, prompting Tehran to respond with missile and drone attacks and to effectively close the Strait of Hormuz, a key route for global energy supplies. A memorandum of understanding signed in June to pave the way for a final peace deal later collapsed amid disagreements, including over navigation in the strait, and the United States launched its blockade in mid-July.",
+        "The standoff has also drawn in the wider region. Gulf News reported that Saudi Arabia, Pakistan and Turkey have moved to strengthen defence ties amid the tensions, while Al Jazeera reported that Iran displayed upgraded missile systems at an underground military facility earlier this week. With both sides imposing competing restrictions on shipping, commercial traffic through the Gulf remains disrupted, and there is no sign of either side backing down.",
+        "Sources: Gulf News, The Tribune (India) and The Express Tribune."
+      ],
+      "date": "November 28, 2026",
+      "section": "war-conflict",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "source": "Gulf News",
+      "source_url": "https://gulfnews.com/world/mena/us-iran-tensions-centcom-rejects-iranian-military-commanders-claims-over-naval-operations-1.500763812",
+      "image": "https://images.pexels.com/photos/33333666/pexels-photo-33333666.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageCaption": "Illustrative photo: A large oil tanker sails on the open sea. Photo: Eyüpcan Timur / Pexels",
+      "related": [],
+      "reviewed": true,
+      "auto": false
+    },
+    {
       "slug": "hackers-break-into-us-air-force-flagship-cloud-platform",
       "headline": "Hackers break into US Air Force's flagship cloud platform in major security breach",
       "dek": "The intrusion into Cloud One, discovered during upgrade work, could put sensitive tactical, personnel and logistics data at risk — and has already disrupted Air Force operations.",
@@ -3341,6 +3373,11 @@
   ],
   "justIn": [
     {
+      "time": "28 Nov, 04:43",
+      "text": "Iran claims it struck US aircraft carrier as Hormuz blockade battle escalates",
+      "link": "articles/iran-claims-it-struck-us-aircraft-carrier-as-hormuz-blockade-battle-escalates.html"
+    },
+    {
       "time": "28 Nov, 04:22",
       "text": "Hackers break into US Air Force's flagship cloud platform in major security breach",
       "link": "articles/hackers-break-into-us-air-force-flagship-cloud-platform.html"
@@ -3374,11 +3411,6 @@
       "time": "28 Nov, 02:08",
       "text": "Hunted beyond borders: Allegations of Tanzanian repression in Kenya",
       "link": "https://www.aljazeera.com/news/2026/11/28/hunted-beyond-borders-allegations-of-tanzanian-repression-in-kenya"
-    },
-    {
-      "time": "28 Nov, 02:05",
-      "text": "Taiwan votes in local elections to choose mayors, other leaders",
-      "link": "https://www.aljazeera.com/news/2026/11/28/taiwan-votes-in-local-elections-to-choose-mayors-other-leaders"
     }
   ],
   "liveUpdates": [
@@ -3440,9 +3472,9 @@
     "russias-hybrid-war-on-europe-evolving-but-failing-iiss",
     "hackers-break-into-us-air-force-flagship-cloud-platform"
   ],
-  "heroSlug": "hackers-break-into-us-air-force-flagship-cloud-platform",
+  "heroSlug": "iran-claims-it-struck-us-aircraft-carrier-as-hormuz-blockade-battle-escalates",
   "breaking": {
-    "text": "Hackers break into US Air Force's flagship cloud platform in major security breach",
-    "link": "articles/hackers-break-into-us-air-force-flagship-cloud-platform.html"
+    "text": "Iran claims it struck US aircraft carrier as Hormuz blockade battle escalates",
+    "link": "articles/iran-claims-it-struck-us-aircraft-carrier-as-hormuz-blockade-battle-escalates.html"
   }
 }
