@@ -1,0 +1,33 @@
+# Weekly image-availability check for Western World News.
+#
+# Runs tools/check_images.py: HEAD-checks every distinct article-image
+# URL in data/articles.json (plus the build-script fallback images) and
+# fails the run if any image is dead, so broken photos get caught before
+# readers (or AdSense reviewers) hit them. Unverifiable hosts (proxy
+# blocks, timeouts) are reported but do NOT fail the run.
+name: Check images
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"  # Mondays 06:00 UTC
+  workflow_dispatch:
+  push:
+    paths:
+      - data/articles.json
+      - tools/check_images.py
+      - .github/workflows/check-images.yml
+
+jobs:
+  check-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Check every article image
+        run: python3 tools/check_images.py
