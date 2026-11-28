@@ -5,7 +5,7 @@
 // To change the passcode, edit the PASSCODE line below (in this template
 // in tools/build_site.py), then rebuild and push.
 (function () {
-  var PASSCODE = "admin123";
+  var PASSCODE = "Happy@1221#";
   var SECTION_OPTIONS = ["world", "europe", "us", "politics", "war-conflict",
     "business-finance", "sport", "culture"];
   var SECTION_LABELS = { world: "World", europe: "Europe", us: "US", politics: "Politics",
