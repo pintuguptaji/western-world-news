@@ -2540,7 +2540,7 @@ window.WWN_DEFAULT_CONTENT = {
         "world"
       ],
       "section": "world",
-      "headline": "Video of ICE detaining father and daughter while boarding flight sparks protests in Seattle",
+      "headline": "ICE detains Ricardo Larrondo Mendoza and daughter at Seattle airport as video sparks protests",
       "dek": "Footage of Saturday incident, filmed by fellow passengers, quickly went viral on social media as mayor calls tactics ‘un-American’.",
       "date": "November 23, 2026",
       "source": "The Guardian",
@@ -2557,7 +2557,9 @@ window.WWN_DEFAULT_CONTENT = {
         "The political reaction was swift. Washington Governor Bob Ferguson, a Democrat, called the tactics 'deeply un-American' and said ICE was 'completely and totally out of control'. 'The video is horrific and it is chilling,' Ferguson said at a news conference on Saturday, and he called for the agency's abolition. Seattle Mayor Katie Wilson said she was 'outraged' by the footage, calling the tactics 'unacceptable and un-American' and saying Seattle would continue to stand as a sanctuary city. Representative Adam Smith called ICE's actions 'absolutely unacceptable', and Representative Pramila Jayapal said 'violent arrests are the hallmark of fascist states, not a democracy.'",
         "As of Sunday, Mendoza and Mejia were being held at the Northwest ICE Processing Center in Tacoma, about 40 minutes south of Seattle, one of the largest immigration detention centres in the country, with roughly 1,600 beds, according to their lawyer. What happens next depends on their asylum claims and Mejia's application to adjust her status through her marriage to a US citizen, any criminal charge arising from the alleged coffee incident, and the inquiries by the Port of Seattle and Alaska Airlines. ICE has stepped up arrests at airports since the summer, as the Trump administration pushes to raise deportation numbers. For the passengers who filmed the struggle, the central question is not only whether the detentions were lawful, but whether an airport boarding queue is a place where such an arrest should ever happen."
       ],
-      "related": [],
+      "related": [
+        "washington-governor-condemns-ice-arrests-at-seattle-airport"
+      ],
       "image": "https://images.pexels.com/photos/6544058/pexels-photo-6544058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "imageCaption": "Illustrative photo: Blurred motion of travellers in an airport terminal with departure screens. Photo: Angelyn Sanjorjo / Pexels",
       "reviewed": true
@@ -3175,9 +3177,15 @@ window.WWN_DEFAULT_CONTENT = {
         "The governor of Washington state has denounced federal immigration authorities after officers arrested two people on a jet bridge at Seattle-Tacoma International Airport as they boarded a flight to Los Angeles.",
         "The incident happened at around 8 a.m. local time on Saturday. Immigration and Customs Enforcement officers were carrying out an operation to arrest Ricardo Larrondo Mendoza, who the agency said had overstayed his visa. Officers also arrested a second person, Sofia Hernandez Mejia, who the agency said threw hot coffee at them. It said she had also overstayed her visa and would be charged with assaulting a federal officer.",
         "'ICE is completely and totally out of control and today we are confronted with yet more evidence of this,' Governor Bob Ferguson, a Democrat, said at a news conference on Saturday. He described video of the incident circulating on social media as 'horrific' and 'chilling', and said he had told Alaska Airlines representatives that 'they need to call on ICE to get out of our airports.' He said he would make the same request of every other airline that flies out of the airport.",
-        "Alaska Airlines said it was 'concerned' by the federal action and had not been given advance notice of the enforcement operation. April Sims, president of the Washington State Labor Council, called the arrest a 'smash-and-grab' action that brought fear and chaos to one of the country's busiest airports during one of the busiest travel weeks of the year, days after widespread flight disruptions. Reuters said it could not identify lawyers for Mendoza or Mejia."
+        "Alaska Airlines said it was 'concerned' by the federal action and had not been given advance notice of the enforcement operation. April Sims, president of the Washington State Labor Council, called the arrest a 'smash-and-grab' action that brought fear and chaos to one of the country's busiest airports during one of the busiest travel weeks of the year, days after widespread flight disruptions. Reuters said it could not identify lawyers for Mendoza or Mejia.",
+        "The two people detained were Ricardo Larrondo Mendoza, a Mexican national, and his daughter Sofia Hernandez Mejia, who is in her mid-20s. Video filmed by fellow passengers showed officers in unmarked jackets struggling with someone on the ground as passengers screamed, and Mejia shouting that agents were taking her father and that she had a work permit. According to their lawyer, Olia Catala, the pair were traveling to California for a family baptism ceremony, have lived in the United States since 2015, are seeking asylum, and neither has a criminal record. Mejia had married a US citizen and filed paperwork to adjust her immigration status; her husband was traveling with them and was not detained.",
+        "Immigration and Customs Enforcement gave a different account of the confrontation. The agency said it carried out a 'targeted enforcement operation' to arrest Mendoza, whom it said had overstayed his visa, and that during the arrest a passenger hurled hot coffee at its officers. It identified that passenger as Mejia, said she had also overstayed her visa, and said she could be charged with assaulting a federal officer. Catala disputed that version, saying Mejia was carrying a cup of coffee when the confrontation began and dropped it in panic as officers charged at them without uniforms. The two accounts have not been resolved by any independent account of the first moments.",
+        "On Sunday, protesters marched through Seattle-Tacoma International Airport carrying placards reading 'ICE out of Washington' and 'Abolish ICE', a day after the video went viral. Seattle Mayor Katie Wilson said she was 'outraged' by the footage, calling the tactics 'unacceptable and un-American' and saying Seattle would continue to stand as a sanctuary city. Representative Pramila Jayapal said 'violent arrests are the hallmark of fascist states, not a democracy.'",
+        "As of Sunday, Mendoza and Mejia were being held at the Northwest ICE Processing Center in Tacoma, about 40 minutes south of Seattle, according to their lawyer. What happens next depends on their asylum claims and Mejia's application to adjust her status through her marriage to a US citizen, any criminal charge arising from the alleged coffee incident, and the inquiries by the Port of Seattle and Alaska Airlines into whether agreed protocols were breached.",
+        "Sources: Reuters; The Guardian."
       ],
       "related": [
+        "video-of-ice-detaining-father-and-daughter-while-boarding",
         "florida-mechanic-found-guilty-of-murdering-british-woman",
         "democrats-document-preservation",
         "white-house-removes-cyber-security-chief-after-series-of"
@@ -3797,7 +3805,7 @@ window.WWN_DEFAULT_CONTENT = {
         "world"
       ],
       "section": "world",
-      "headline": "They were fined $811m for conning detained migrants, but the scams didn't stop",
+      "headline": "Libre by Nexus fined $811m for scamming detained migrants, but the bail business carried on under a new name",
       "dek": "How convicted fraudsters made millions from detained immigrants, evaded efforts to shut down their bail business and left migrants behind bars.",
       "date": "November 21, 2026",
       "source": "BBC",
