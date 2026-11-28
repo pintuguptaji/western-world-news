@@ -1353,7 +1353,7 @@ def build_index():
         live_link = ' &middot; <a href="live.html">Follow live updates</a>'
 
     # --- B: top-story card (center of the hero) ---
-    hero_main_html = f"""<article class="top-hero-main" data-hero>
+    hero_main_html = f"""<article class="top-hero-main" data-hero data-hero-slug="{hero['slug']}">
 {_top_hero_media(hero)}
 <div class="top-hero-body">
 <h1><a href="articles/{hero['slug']}.html">{hero['headline']}</a></h1>
@@ -2131,7 +2131,14 @@ MAIN_JS = """// Western World News: front-end behavior (v4 redesign).
     // the stacked stories beside it are server-rendered and stay as-is.
     var heroEl = $("[data-hero]");
     var hero = bySlug[store.settings.heroSlug] || store.articles[0];
-    if (heroEl && hero) {
+    // Skip the re-render when the server already rendered this exact
+    // article with a photo: rebuilding the hero destroys the server
+    // <img> and the load time then counts against the rebuilt one.
+    // (No photo -> keep today's behaviour; the tile markup differs
+    // slightly between server and client.)
+    var heroAlreadyRendered = heroEl && hero && hero.image &&
+      heroEl.getAttribute("data-hero-slug") === hero.slug;
+    if (heroEl && hero && !heroAlreadyRendered) {
       var heroSrc = pxImg(hero.image, 1200), heroSmall = pxImg(hero.image, 640);
       var heroMedia = hero.image
         ? '<img src="' + esc(heroSrc) + '"' + (heroSmall !== heroSrc ? ' srcset="' + esc(heroSmall) + ' 640w, ' + esc(heroSrc) + ' 1200w" sizes="(max-width: 700px) 100vw, 1200px"' : '') + ' alt="' + esc(hero.headline) + '" width="1200" height="675" loading="eager" fetchpriority="high">'

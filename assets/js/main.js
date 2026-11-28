@@ -235,7 +235,14 @@
     // the stacked stories beside it are server-rendered and stay as-is.
     var heroEl = $("[data-hero]");
     var hero = bySlug[store.settings.heroSlug] || store.articles[0];
-    if (heroEl && hero) {
+    // Skip the re-render when the server already rendered this exact
+    // article with a photo: rebuilding the hero destroys the server
+    // <img> and the load time then counts against the rebuilt one.
+    // (No photo -> keep today's behaviour; the tile markup differs
+    // slightly between server and client.)
+    var heroAlreadyRendered = heroEl && hero && hero.image &&
+      heroEl.getAttribute("data-hero-slug") === hero.slug;
+    if (heroEl && hero && !heroAlreadyRendered) {
       var heroSrc = pxImg(hero.image, 1200), heroSmall = pxImg(hero.image, 640);
       var heroMedia = hero.image
         ? '<img src="' + esc(heroSrc) + '"' + (heroSmall !== heroSrc ? ' srcset="' + esc(heroSmall) + ' 640w, ' + esc(heroSrc) + ' 1200w" sizes="(max-width: 700px) 100vw, 1200px"' : '') + ' alt="' + esc(hero.headline) + '" width="1200" height="675" loading="eager" fetchpriority="high">'
