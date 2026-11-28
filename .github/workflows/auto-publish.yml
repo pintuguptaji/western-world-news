@@ -54,7 +54,7 @@ jobs:
           NEW=${NEW:-0}
           git config user.name "Western World News Bot"
           git config user.email "bot@westernworldnews.com"
-          git add data/ assets/js/content.js index.html world.html europe.html us.html politics.html war-conflict.html business-finance.html sport.html culture.html live.html articles sitemap.xml
+          git add data/ assets/js/content.js index.html world.html europe.html us.html politics.html war-conflict.html business-finance.html sport.html culture.html live.html articles sitemap.xml news-sitemap.xml post-sitemap.xml page-sitemap.xml robots.txt
           if git diff --cached --quiet; then
             echo "No changes to publish."
           else
