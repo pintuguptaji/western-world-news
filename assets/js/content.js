@@ -9,13 +9,48 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "india-delimitation-bill-lok-sabha-seats-freeze-2051"
+    "heroSlug": "houthi-strike-saudi-aramco-jazan-refinery-kills-worker"
   },
   "breaking": {
-    "text": "India's delimitation bill proposes 50% more seats and a freeze on state shares until 2051",
-    "link": "articles/india-delimitation-bill-lok-sabha-seats-freeze-2051.html"
+    "text": "Houthi strike on Saudi Aramco's Jazan refinery kills worker as Saudi Arabia bombs Yemen in return",
+    "link": "articles/houthi-strike-saudi-aramco-jazan-refinery-kills-worker.html"
   },
   "articles": [
+    {
+      "slug": "houthi-strike-saudi-aramco-jazan-refinery-kills-worker",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Houthi strike on Saudi Aramco's Jazan refinery kills worker as Saudi Arabia bombs Yemen in return",
+      "dek": "A projectile hit the 400,000-barrel-a-day Jazan refinery on Thursday, killing a Nepalese worker and halting some operations. Saudi Arabia answered with airstrikes across Yemen, while its new defense allies met in Islamabad to condemn the attacks.",
+      "date": "November 28, 2026",
+      "source": "Dawn",
+      "source_url": "https://www.dawn.com/news/2047356/attack-on-saudi-aramcos-refinery-kills-worker-halts-some-operations",
+      "body": [
+        "A Houthi strike on Saudi Aramco's Jazan refinery killed a Nepalese worker and halted some operations on Thursday, and Saudi Arabia hit back with a wave of airstrikes across Yemen, in the sharpest exchange between the two sides since Yemen's civil war reignited in the summer.",
+        "A hostile aerial projectile struck the refinery in Jazan, in southwestern Saudi Arabia near the Yemeni border, Saudi Arabia's Energy Ministry said in a statement carried by the Saudi state news agency. The projectile caused a fire that was later brought under control, and some operations at the plant were temporarily halted. One Nepalese worker was killed and several others were wounded. Emergency and technical teams responded to the incident and were assessing the damage and checking the safety of the facilities, the ministry said.",
+        "The ministry's statement did not identify who carried out the attack, but the Saudi-led military coalition fighting Yemen's Houthis said earlier on Thursday that the Iran-aligned group had attacked the refinery. The Jazan refinery is designed to process up to 400,000 barrels of crude oil per day, and it sits close to the border with Yemen, where the Houthis control the most populous areas, including the capital, Sanaa.",
+        "The strike was the latest blow against Saudi energy infrastructure in a week of escalating attacks. A day earlier, the Houthis claimed attacks on Ras Tanura, the kingdom's largest refinery and a major crude export hub, and on the Red Sea ports of Jeddah and Jazan. The Saudi-led coalition said it had intercepted four drones over Ras Tanura and that air defenses had destroyed a drone near Jeddah Islamic Port.",
+        "The coalition answered the Jazan strike the same day, saying it had destroyed a ballistic missile launch platform in the Yemeni port city of Hodeidah, which it said the Houthis had used in Thursday's attack. It warned that attacks on civilians and civilian infrastructure would be met with a firm military response, and said its forces had destroyed 50 Houthi military targets, including missile launch platforms.",
+        "The retaliation continued into Friday. Saudi warplanes carried out a raid on a residential building in the city of Al-Turba in Taiz governorate, killing 11 people, most of them children, according to the Houthis' Saba news agency. Houthi military spokesman Yahya Saree said Saudi Arabia had carried out 104 air raids and missile strikes in Yemen in the past 24 hours, hitting Sanaa, al-Jawf, Taiz, Hajjah, Sa'dah, Hodeidah, Lahij, Al Bayda and Dhale, Al Jazeera reported. Those casualty and strike figures come from Houthi sources and could not be independently verified.",
+        "The fighting also reached the Saudi capital. The coalition said it shot down a drone targeting Riyadh on Friday, and on Saturday Saudi Arabia said its air defenses had intercepted a Houthi cruise missile headed for the city. In response, Houthi forces have been targeting the oil-rich kingdom almost daily, hitting energy facilities, airports and the financial district of Riyadh.",
+        "The attacks drew a swift regional response. Saudi Arabia, Pakistan and Turkey met in Islamabad on Friday under their joint defense pact, known as the Makkah Alliance, and condemned what they called persistent Houthi attacks on Saudi civilians and infrastructure, reaffirming their commitment to Saudi Arabia's security and territorial integrity, Pakistan's Foreign Ministry said. The three countries describe the pact as defensive, and Turkey has said it is not planning to send troops to Yemen to fight the Houthis.",
+        "Qatar, Kuwait, Bahrain and Algeria also condemned the refinery attack, along with the Gulf Cooperation Council. Qatar's foreign ministry described the strike as a violation of Saudi Arabia's sovereignty and international law and warned that attacks on oil facilities threatened the security and stability of global energy supplies. The GCC's secretary general, Jasem Mohamed Albudaiwi, called the attack a dangerous escalation.",
+        "The exchange is part of a wider war that has been building for months. Since Yemen's civil war reignited in July, in a spillover from the war between the United States and Iran, the Houthis have launched missiles and drones at Saudi airports, oil facilities and office buildings. Earlier attacks temporarily disrupted some of Aramco's operations, caused the cancellation of most international flights to Riyadh, and forced Saudi Arabia to postpone or cancel major international events, including football's AFC Asian Cup and the flagship FII investment conference.",
+        "Fighting has intensified since the Houthis seized strategic territory along Yemen's Red Sea coast in September and advanced towards the Bab el-Mandeb Strait, a vital shipping route for Gulf oil producers seeking access to the Red Sea. The Saudi-Houthi front is now one of three running at once in the region, alongside the war between the United States and Iran and the American naval blockade of Iranian ports, which Iran said this week its forces had begun trying to break. Oil prices rose as traders priced in the risk to Gulf supplies, and OPEC+ is due to meet on Sunday, with the group expected to hold its production targets steady.",
+        "The question now is whether the exchange keeps escalating. The coalition has promised a firm response to any further attacks on civilian targets, the Houthis show no sign of stopping their strikes on Saudi Arabia, and the Makkah Alliance meeting in Islamabad suggests Riyadh is preparing for a longer period of regional insecurity rather than a quick end to the fighting.",
+        "Sources: Dawn; Channel News Asia; The Jerusalem Post (Reuters); Al Jazeera."
+      ],
+      "related": [
+        "iran-claims-it-struck-us-aircraft-carrier-as-hormuz-blockade-battle-escalates",
+        "kuwait-summons-iran-ambassador-after-drone-attack-kills-two-italians"
+      ],
+      "image": "https://images.pexels.com/photos/6767962/pexels-photo-6767962.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageCaption": "Illustrative photo: An aerial view of an oil refinery. Photo: Tom Fisk / Pexels",
+      "reviewed": true
+    },
     {
       "slug": "india-delimitation-bill-lok-sabha-seats-freeze-2051",
       "sections": [
@@ -4605,6 +4640,11 @@ window.WWN_DEFAULT_CONTENT = {
     }
   ],
   "justIn": [
+    {
+      "time": "Nov 28, 11:44",
+      "text": "Houthi strike on Saudi Aramco's Jazan refinery kills worker as Saudi Arabia bombs Yemen in return",
+      "link": "articles/houthi-strike-saudi-aramco-jazan-refinery-kills-worker.html"
+    },
     {
       "time": "Nov 28, 11:01",
       "text": "India's delimitation bill proposes 50% more seats and a freeze on state shares until 2051",
