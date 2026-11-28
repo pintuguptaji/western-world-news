@@ -287,6 +287,28 @@ from html import escape as hescape
 def uimg(photo_id, w=1200):
     return f"https://images.unsplash.com/photo-{photo_id}?auto=format&fit=crop&w={w}&q=80"
 
+
+def pximg(url, w):
+    """Resize a Pexels image URL to width w (never upscales past the width
+    the URL already carries; scales a h= crop proportionally). Any
+    non-Pexels URL is returned unchanged, so Wikimedia / PIB / Unsplash
+    images are never mangled."""
+    if "images.pexels.com" not in url:
+        return url
+    m = _re.search(r"([?&])w=(\d+)", url)
+    if not m:
+        return url
+    old_w = int(m.group(2))
+    new_w = min(w, old_w)
+    if new_w == old_w:
+        return url
+    url = _re.sub(r"([?&])w=\d+", r"\1w=" + str(new_w), url, count=1)
+    mh = _re.search(r"([?&])h=(\d+)", url)
+    if mh:
+        new_h = max(1, round(int(mh.group(2)) * new_w / old_w))
+        url = _re.sub(r"([?&])h=\d+", r"\1h=" + str(new_h), url, count=1)
+    return url
+
 IMAGES = {
     "nations-league-draw": ("1522778119026-d647f0596c20", "A football stadium under lights during a match. Illustrative photo. Photo: Unsplash"),
     "raye-grammy-nominations": ("1493225457124-a3eb161ffa5f", "A singer performs on stage. Illustrative photo. Photo: Unsplash"),
@@ -922,7 +944,12 @@ def img_html(slug, w=800, cls="", caption=True, loading="lazy"):
     if slug in BY_SLUG and BY_SLUG[slug].get("image"):
         cap = BY_SLUG[slug].get("imageCaption") or "Photo: Unsplash"
         alt = _alt_for(slug, cap)
-        img = f'<img src="{hescape(BY_SLUG[slug]["image"])}" alt="{hescape(alt)}" width="{w}" height="{h}" loading="{loading}">'
+        isrc = pximg(BY_SLUG[slug]["image"], w)
+        small_w = max(320, w // 2)
+        ismall = pximg(BY_SLUG[slug]["image"], small_w)
+        isrcset = (f' srcset="{hescape(ismall)} {small_w}w, {hescape(isrc)} {w}w" '
+                   f'sizes="(max-width: 700px) 100vw, {w}px"') if ismall != isrc else ""
+        img = f'<img src="{hescape(isrc)}"{isrcset} alt="{hescape(alt)}" width="{w}" height="{h}" loading="{loading}">'
         fig = (f'<figure class="{cls}">{img}<figcaption>{hescape(cap)}</figcaption></figure>') if caption else \
               f'<figure class="{cls}">{img}</figure>'
         return fig
@@ -937,7 +964,7 @@ def thumb_html(slug, w=400):
     alt = hescape(s["headline"]) if s else "Western World News"
     h = w * 9 // 16
     if s and s.get("image"):
-        return f'<img src="{hescape(s["image"])}" alt="{alt}" width="{w}" height="{h}" loading="lazy">'
+        return f'<img src="{hescape(pximg(s["image"], w))}" alt="{alt}" width="{w}" height="{h}" loading="lazy">'
     if slug in IMAGES:
         pid, _cap = IMAGES[slug]
         return f'<img src="{uimg(pid, w)}" alt="{alt}" width="{w}" height="{h}" loading="lazy">'
@@ -997,7 +1024,12 @@ def _top_hero_media(s):
     url = _img_url(s["slug"])
     alt = hescape(s["headline"])
     if url:
-        media = f'<img src="{hescape(url)}" alt="{alt}" width="1200" height="675" loading="eager">'
+        hsrc = pximg(url, 1200)
+        hsmall = pximg(url, 640)
+        hsrcset = (f' srcset="{hescape(hsmall)} 640w, {hescape(hsrc)} 1200w" '
+                   f'sizes="(max-width: 700px) 100vw, 1200px"') if hsmall != hsrc else ""
+        media = (f'<img src="{hescape(hsrc)}"{hsrcset} alt="{alt}" width="1200" height="675" '
+                 f'loading="eager" fetchpriority="high">')
     else:
         media = art_html(SECTIONS[s["section"]])
     return (f'<a class="top-hero-media" href="articles/{s["slug"]}.html" aria-label="{alt}">'
@@ -2079,14 +2111,30 @@ MAIN_JS = """// Western World News: front-end behavior (v4 redesign).
       track.innerHTML = items + items;
     }
 
+    // pxImg: client-side twin of the Python pximg() helper — resizes a
+    // Pexels image URL to width w, never upscaling, scaling a h= crop
+    // proportionally. Other URLs pass through unchanged.
+    function pxImg(u, w) {
+      if (u.indexOf("images.pexels.com") === -1) return u;
+      var m = u.match(/([?&])w=(\d+)/);
+      if (!m) return u;
+      var oldW = parseInt(m[2], 10), nw = Math.min(w, oldW);
+      if (nw === oldW) return u;
+      u = u.replace(/([?&])w=\d+/, "$1w=" + nw);
+      var mh = u.match(/([?&])h=(\d+)/);
+      if (mh) { var nh = Math.max(1, Math.round(parseInt(mh[2], 10) * nw / oldW)); u = u.replace(/([?&])h=\d+/, "$1h=" + nh); }
+      return u;
+    }
+
     // Top-story card (homepage hero): photo with TOP STORY badge, navy
     // body with headline, dek and date + read time. The intro column and
     // the stacked stories beside it are server-rendered and stay as-is.
     var heroEl = $("[data-hero]");
     var hero = bySlug[store.settings.heroSlug] || store.articles[0];
     if (heroEl && hero) {
+      var heroSrc = pxImg(hero.image, 1200), heroSmall = pxImg(hero.image, 640);
       var heroMedia = hero.image
-        ? '<img src="' + esc(hero.image) + '" alt="' + esc(hero.headline) + '" width="1200" height="675" loading="eager">'
+        ? '<img src="' + esc(heroSrc) + '"' + (heroSmall !== heroSrc ? ' srcset="' + esc(heroSmall) + ' 640w, ' + esc(heroSrc) + ' 1200w" sizes="(max-width: 700px) 100vw, 1200px"' : '') + ' alt="' + esc(hero.headline) + '" width="1200" height="675" loading="eager" fetchpriority="high">'
         : '<div class="art" role="img" aria-label="Graphic placeholder"><span class="monogram">WWN</span><span class="art-label">' + esc(sectionLabel(hero.section)) + "</span></div>";
       var liveLink = "";
       if (/ukraine|russia|kyiv|kremlin/i.test(hero.headline)) {
