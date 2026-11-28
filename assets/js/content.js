@@ -592,8 +592,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Incumbent prime minister Christopher Luxon loses majority and needs support of Opportunity party to remain in power, or country faces another election. The final results of New Zealand’s general election show the incumbent rightwing coalition will need the support of a centrist newcomer party to form a government, and to avoid sending the country back to the polls."
       ],
       "related": [],
-      "image": "https://i.guim.co.uk/img/media/15bb64d1f1fa3f1840538248518d963a2c8d39e8/0_0_5000_4000/master/5000.jpg?width=700&quality=85&auto=format&fit=max&s=2289119a91f82e1e66025988d92e41f9",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/10116189/pexels-photo-10116189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: The Beehive and Parliament buildings in Wellington, New Zealand. Photo: 飞 谢 / Pexels",
       "reviewed": true
     },
     {
@@ -611,8 +611,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Taiwanese officials raise alarm over interference by China in elections that will shape fortunes of ruling party. Taiwanese voters go to the polls on Saturday in closely watched local elections that will shape the fortunes of the ruling Democratic Progressive party (DPP) as it navigates an increasingly precarious set of relationships on the global stage."
       ],
       "related": [],
-      "image": "https://i.guim.co.uk/img/media/46917c80b05c42e1fe661080ca09495a31ff79a7/387_0_3750_3000/master/3750.jpg?width=700&quality=85&auto=format&fit=max&s=e39b2fbe826a4bbdf674e9714a48cde8",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/40002654/pexels-photo-40002654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Taiwan's Presidential Office Building in Taipei, adorned with flags. Photo: Winston Chen / Pexels",
       "reviewed": true
     },
     {
@@ -640,8 +640,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Sources: BBC, Channel 4 and the Observer."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/6404/live/dbd5d520-e9c1-11f1-a094-5fdc692f3e33.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/39246336/pexels-photo-39246336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A broadcast control room with monitor screens. Photo: Nevtuğ Yalçın / Pexels",
       "reviewed": true
     },
     {
@@ -669,8 +669,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Mackey, who announced this week that he would leave his post as chief executive in April, said the service would need to respond over the coming days as the spike builds. For now, the combination of an early, fast-rising wave and low vaccination uptake among the most vulnerable leaves the NHS facing what he described as a horrible spike, with the peak still to come."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/8436/live/1c6edae0-e9dc-11f1-9361-cd8ed0157587.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/31499386/pexels-photo-31499386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Two nurses discussing patient notes in a hospital corridor. Photo: Adarsh Mp / Pexels",
       "reviewed": true
     },
     {
@@ -697,8 +697,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Sources: the European Council, Al Jazeera, Le Monde, CNN and the Wall Street Journal."
       ],
       "related": [],
-      "image": "https://s.france24.com/media/display/a2393400-e9e0-11f1-93c6-174dac1c1bf0/w:1024/p:16x9/capture-10efea26.jpg",
-      "imageCaption": "Photo: France 24",
+      "image": "https://images.pexels.com/photos/33104673/pexels-photo-33104673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: The European Central Bank and the Main River in Frankfurt. Photo: Mohammad Ayaz Alam / Pexels",
       "reviewed": true
     },
     {
@@ -726,8 +726,8 @@ window.WWN_DEFAULT_CONTENT = {
         "For now, the call stands as both a moment of personal relief and a political question mark. A mother spoke to her son for the first time in five years, and a family finally knew she was alive. But she remains detained, at an undisclosed location, under the control of the military that overthrew her government. Until she is free, her son argues, no phone call should be mistaken for progress."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/01/00/60/696x392_cmsv2_c879fa96-1548-5f13-a8da-40c7db23d6e7-10010060.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/14825306/pexels-photo-14825306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Aerial view of Yangon, Myanmar, with golden pagodas. Photo: thiha soe / Pexels",
       "reviewed": true
     },
     {
@@ -745,8 +745,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Paris-based international press freedom group Reporters Without Borders (RSF) on Thursday called on France's media regulator Arcom to suspend right-wing channel CNews for one month over its failure to uphold pluralism. The news channel owned by conservative billionaire Vincent Bolloré condemned the call for its suspension."
       ],
       "related": [],
-      "image": "https://s.france24.com/media/display/3a179a3c-dbb8-11f1-8811-a575454bc579/w:1024/p:16x9/000-D6EK9T4.jpg",
-      "imageCaption": "Photo: France 24",
+      "image": "https://images.pexels.com/photos/39332193/pexels-photo-39332193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A broadcasting studio control panel with a microphone and screens. Photo: Nevtuğ Yalçın / Pexels",
       "reviewed": true
     },
     {
@@ -772,8 +772,8 @@ window.WWN_DEFAULT_CONTENT = {
         "The next month will decide it. If Altria makes a firm offer by Christmas Eve, it will be one of the largest tobacco deals ever attempted, and a test of whether regulators on both sides of the Atlantic will accept a carve-up of one of the world’s biggest cigarette makers. If it walks away, Imperial’s shares, which have already given back some of their gains in the days since the announcement, will fall back to earth. Either way, the tobacco industry’s long consolidation is entering a new phase."
       ],
       "related": [],
-      "image": "https://i.guim.co.uk/img/media/5bd7ec433dfc2df44e54e41b625bf03b06d8d5bc/588_0_3333_2667/master/3333.jpg?width=700&quality=85&auto=format&fit=max&s=e0ed7dc310bdc4b486e96215152baf12",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/34727102/pexels-photo-34727102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: An open cigarette case filled with cigarettes on a dark surface. Photo: Alexander Zvir / Pexels",
       "reviewed": true
     },
     {
@@ -859,8 +859,8 @@ window.WWN_DEFAULT_CONTENT = {
         "What happens next will depend on the government’s choices. The current rules remain in place, and the debate has shifted from whether numbers can be cut to what the lower numbers mean for employers, universities and public services that have come to rely on migrant workers. For now, Britain’s net migration stands at its lowest level in almost 30 years, a political landmark, and an economic question mark."
       ],
       "related": [],
-      "image": "https://i.guim.co.uk/img/media/5c23523ac46bb71db2d8067325e32d1261591fb5/661_0_6630_5304/master/6630.jpg?width=700&quality=85&auto=format&fit=max&s=8e5b24426a0000f1aeb9b012e60fa7ec",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/32306159/pexels-photo-32306159.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A British Airways plane landing at London's Heathrow Airport. Photo: Tristan / Pexels",
       "reviewed": true
     },
     {
@@ -888,8 +888,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Ebel's message, in the end, is that Europe's problems are fixable, but only if it acts. Cut the regulation that does not need to exist, bring in the people the economy needs, and build the grids that would let cheap, clean energy reach the customer. For a tourism company that lives or dies on the health of the European economy, those are not abstract policy debates. They are the conditions on which its business, and the holidays of millions of Europeans, depend."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/09/97/23/38/696x392_cmsv2_e2ee8cd8-585c-53f1-9faf-cade74f06239-9972338.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/30037318/pexels-photo-30037318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Wind turbines at sunset. Photo: Ali Akdemir / Pexels",
       "reviewed": true
     },
     {
@@ -917,8 +917,8 @@ window.WWN_DEFAULT_CONTENT = {
         "The questions the case leaves behind are now matters for Parliament and for the public. How many similar arrangements exist, and how many more are being negotiated? What duty does a government owe to a person it has recognised as a refugee, even one convicted of serious offences? And what responsibility does it owe to the community in which that person is placed, when the community is not told? Peramalya's family wants answers about his treatment. For now, the only account of what happened to him is the one the BBC obtained, and the draft agreement that neither government has published."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/74/29/696x392_cmsv2_f423ae7c-3d7e-552c-baf1-37c502c96fbf-10007429.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/37772239/pexels-photo-37772239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Crowds in the departure hall of an airport. Photo: Martijn Stoof / Pexels",
       "reviewed": true
     },
     {
@@ -945,8 +945,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Sources: Al Jazeera, NDTV and LiveScore."
       ],
       "related": [],
-      "image": "https://s.france24.com/media/display/204f7dde-e948-11f1-b29b-81bc2b1dcd65/w:1024/p:16x9/J24-PSG-6.jpg",
-      "imageCaption": "Photo: France 24",
+      "image": "https://images.pexels.com/photos/29920213/pexels-photo-29920213.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Soccer players competing on a green field. Photo: Bechir Lachiheb / Pexels",
       "reviewed": true
     },
     {
@@ -973,8 +973,8 @@ window.WWN_DEFAULT_CONTENT = {
         "The outlook for 2027 is, in Colliers' view, a selective one. Capital is available, but it is choosy, favouring markets with strong fundamentals and limited supply. Iberia, on that measure, qualifies. Madrid, Lisbon and Barcelona are among the ten cities international investors most want to be in next year. The question for the year ahead is whether the people who already live there will benefit from the attention, or be priced out by it."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/01/91/696x392_cmsv2_6973340f-c781-5fe2-a9f4-a073d1c6d7a5-10000191.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/27384063/pexels-photo-27384063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Contemporary buildings in Lisbon with a courtyard plaza under a clear blue sky. Photo: lucas hegaard / Pexels",
       "reviewed": true
     },
     {
@@ -1002,8 +1002,8 @@ window.WWN_DEFAULT_CONTENT = {
         "The windfarm will take time to build, and its 300,000 households will not be powered tomorrow. But in a war in which darkness has become a weapon, every megawatt of new generation is a small act of resistance, and a reminder that Ukraine’s energy system is being rebuilt even while it is being attacked."
       ],
       "related": [],
-      "image": "https://i.guim.co.uk/img/media/0eb49fd7cf3892e47cfeb7ea38b317f175a29005/0_1053_3000_2400/master/3000.jpg?width=700&quality=85&auto=format&fit=max&s=9bf10c87c1df79e3febc4e2bc2b6a9f5",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/18312457/pexels-photo-18312457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Wind turbines in an open field. Photo: A La Plage TX / Pexels",
       "reviewed": true
     },
     {
@@ -1059,8 +1059,8 @@ window.WWN_DEFAULT_CONTENT = {
         "What happens next depends on the weather and on emissions. Temperatures were forecast to remain at similarly high levels for at least several more days after the record, and scientists will be watching whether the streak lengthens. The longer question is the one Burgess and her colleagues keep returning to: how quickly fossil fuel emissions are cut. Until they are, they say, records like this one will keep coming."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/bdf9/live/612032a0-e933-11f1-9bc3-811961023815.png",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/4022334/pexels-photo-4022334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A glass thermometer displaying temperature in degrees. Photo: Jessica Lewis / Pexels",
       "reviewed": true
     },
     {
@@ -1088,8 +1088,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Sources: People, CNN, USA Today and BMG."
       ],
       "related": [],
-      "image": "https://s.france24.com/media/display/968794c0-e928-11f1-a2c5-c131ae9bfe9c/w:1024/p:16x9/063-53536468KV127-Fashion-Rocks.jpg",
-      "imageCaption": "Photo: France 24",
+      "image": "https://images.pexels.com/photos/26804072/pexels-photo-26804072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A guitarist playing electric guitar on stage during a live rock performance. Photo: Gezer Amorim / Pexels",
       "reviewed": true
     },
     {
@@ -1107,8 +1107,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Two senior figures in France have been caught up in an investigation into suspected leaks to the far-right party of Marine Le Pen, the National Rally. The prefect of the Loiret, Hugues Moutouh, a former top official at the Interior Ministry, has been removed from his post after being suspected of passing on confidential information about investigations."
       ],
       "related": [],
-      "image": "https://s.france24.com/media/display/b1d2a0a0-d094-11f1-92d3-bba4eee3dc72/w:1024/p:16x9/AP26298597827263.jpg",
-      "imageCaption": "Photo: France 24",
+      "image": "https://images.pexels.com/photos/32768744/pexels-photo-32768744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: The facade of the Assemblée Nationale in Paris. Photo: Regan Dsouza / Pexels",
       "reviewed": true
     },
     {
@@ -1135,8 +1135,8 @@ window.WWN_DEFAULT_CONTENT = {
         "What happens next is limited. The office in Pyongyang is closed, Astier is returning to Beijing, and contact between the two countries will run through the Swiss embassy in China and the North Korean embassy in Bern. The reopening that was meant to signal a new chapter in the relationship lasted less than a month."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/b4ee/live/fcd47260-e8fc-11f1-99b6-a35a62fa4264.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/21629276/pexels-photo-21629276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: The Juche Tower and worker statues in Pyongyang, North Korea. Photo: Lukas Kindl / Pexels",
       "reviewed": true
     },
     {
@@ -1164,8 +1164,8 @@ window.WWN_DEFAULT_CONTENT = {
         "So is a deal in sight? Not yet. The Council has not agreed a common position, the Parliament has rejected the compromise on the table, and the gap between a budget of just under 1 percent of gross national income and the Parliament's demand for 1.27 percent remains wide. The debate on The Ring captured the shape of the argument: everyone agrees on the priorities, from defense to farming to the cost of living, but no one agrees on how much they are willing to pay for them. The summit may narrow the gap, but the hard bargaining is still to come."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/77/66/696x392_cmsv2_f8d48733-2144-562d-b3fa-6fb2ab5a9210-10007766.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/31513702/pexels-photo-31513702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: The glass facade of the European Parliament building in Strasbourg. Photo: Sebastian P / Pexels",
       "reviewed": true
     },
     {
@@ -1223,8 +1223,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Sources: AFP via Arab News and RNZ, and Latin American News."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/997a/live/4f4b3940-e8c4-11f1-ac76-db9e97f93d67.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/7714736/pexels-photo-7714736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Two police officers in uniform standing outdoors. Photo: Kindel Media / Pexels",
       "reviewed": true
     },
     {
@@ -1250,8 +1250,8 @@ window.WWN_DEFAULT_CONTENT = {
         "But adoption is not application, and the question in the headline remains open. The Critical Medicines Act still needs formal adoption by the Council, and both texts must be published in the Official Journal before the transition clocks start. Most of the regulation applies 24 months after entry into force, and the shortage rules apply after six months. The cost effects of the exclusivity voucher are uncertain, and the European Medicines Agency only opened a consultation on voucher eligibility on November 25. Whether the new framework actually prevents the next shortage will depend on whether governments enforce the supply duties it creates, and whether the strategic projects it promises are built fast enough to matter."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/09/99/89/54/696x392_cmsv2_b22730b7-4bc1-5a40-b80f-93ac7babd470-9998954.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/3873149/pexels-photo-3873149.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Assorted blister packs of pills and capsules on a white surface. Photo: Polina Tankilevitch / Pexels",
       "reviewed": true
     },
     {
@@ -1278,8 +1278,8 @@ window.WWN_DEFAULT_CONTENT = {
         "US markets will be closed for Thanksgiving on Thursday and operate a shortened session on Friday, closing early at 1 p.m. ET. When trading resumes, investors will be watching the next Federal Reserve meeting, which could result in higher interest rates to combat persistent inflation, and looking for any evidence that the massive spending on AI can deliver the profit and revenue goals the market expects. Without that evidence, there is little incentive for a rebound."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/76b3/live/acdb5650-e8e0-11f1-a3b9-79c60ec9ab33.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/7054384/pexels-photo-7054384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A digital stock market graph showing falling trends in red and green. Photo: Kindel Media / Pexels",
       "reviewed": true
     },
     {
@@ -1305,8 +1305,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Schettino's sentence runs until July 2030, and the tourism job will be his life for much of that time. Whether the Italian public accepts it is another matter. The hire has reopened a debate that has followed him since 2012: how much punishment is enough, and when, if ever, a man convicted of abandoning a sinking ship should be allowed to make his living from the sea and the tourists who come to it."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/70/20/696x392_cmsv2_a1513586-277c-550e-9a1f-255b6f5da3dd-10007020.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/26115807/pexels-photo-26115807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A cruise ship moored in a harbour with a cityscape behind it. Photo: irembeyzay / Pexels",
       "reviewed": true
     },
     {
@@ -1334,8 +1334,8 @@ window.WWN_DEFAULT_CONTENT = {
         "The proposal comes just weeks after midterm elections in which Trump's Republican Party suffered unprecedented electoral losses, in which the cost of living and trade tariffs were major issues. Whether the new tariffs become reality will now depend on the comment period, the hearings and the negotiations that follow. For now, America's trading partners have a window of weeks to argue their case before the duties take effect."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/511d/live/da29c130-e860-11f1-a330-6153c8fb2fad.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/28438218/pexels-photo-28438218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Stacked shipping containers on a cargo ship at sea. Photo: Simon R. Minshall / Pexels",
       "reviewed": true
     },
     {
@@ -1361,8 +1361,8 @@ window.WWN_DEFAULT_CONTENT = {
         "For now, Prague is waiting. The Czech government has also approved the country's participation in the second phase of the European SAFE program, which makes it possible to draw EU loans for military equipment. Poland, meanwhile, is testing its allies' readiness: Defense Minister Władysław Kosiniak-Kamysz said Warsaw wants Britain and France to confirm their military commitments after the violations. Whether the Czech offer turns into troops or equipment on Polish soil will depend on what Warsaw asks for, and on whether Moscow's probes of NATO airspace continue."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/70/82/696x392_cmsv2_5c436ef6-94ce-50df-8901-ca2cf2086be0-10007082.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/27080761/pexels-photo-27080761.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: German Air Force Eurofighter Typhoons in flight. Photo: TonyNojmanSK / Pexels",
       "reviewed": true
     },
     {
@@ -1388,8 +1388,8 @@ window.WWN_DEFAULT_CONTENT = {
         "The video, which circulated widely on November 25, has become a warning about how suddenly conditions can deteriorate in the remote Patagonian wilderness. For the park authorities, the questions now are about the bridge itself and about how quickly crossings are closed when the wind rises. For hikers planning the O Circuit, the lesson is simpler: in Torres del Paine, a calm crossing can turn dangerous in minutes, and the weather forecast is only the beginning of the story."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/72/09/696x392_cmsv2_68644ef2-ea1a-5128-9065-4c40c78b873e-10007209.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/20470770/pexels-photo-20470770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A lone hiker in the Andes mountains, surrounded by snow-capped peaks. Photo: Alex Aparicio / Pexels",
       "reviewed": true
     },
     {
@@ -1416,8 +1416,8 @@ window.WWN_DEFAULT_CONTENT = {
         "A place on the list matters beyond prestige. For restaurants, a La Liste score can mean fuller dining rooms, stronger bookings and more visitors to their towns, and the tied top scores reflect the guide's method of aggregating many opinions rather than crowning a single juried winner. For diners, the 2027 ranking offers a map of where fine dining's center of gravity sits today, with Japan, the United States and France each placing two restaurants in the circle of thirteen."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/73/46/696x392_cmsv2_30cce9ab-4ee2-5ee2-8d7b-e4d68a0f8f26-10007346.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/29962487/pexels-photo-29962487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A warmly lit, elegant restaurant set for dinner. Photo: Valeria Boltneva / Pexels",
       "reviewed": true
     },
     {
@@ -1445,8 +1445,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Sunday's election will be, in part, a verdict on that paradox. Voters will decide whether the government's record of growth outweighs the daily reality of rents, house prices and food bills, and whether the next government can close the gap between an economy that is booming and wages that have not recovered in seventeen years."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/09/98/91/87/696x392_cmsv2_32ec34ab-5f58-5955-a732-bafcac9a3734-9989187.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/39529819/pexels-photo-39529819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Gran Vía in Madrid at dusk. Photo: Irbaf photo / Pexels",
       "reviewed": true
     },
     {
@@ -1473,8 +1473,8 @@ window.WWN_DEFAULT_CONTENT = {
         "The stakes reach beyond domestic politics. The most vulnerable issue, analysts say, is aid to Ukraine: Le Pen has promised to stop it, and a 2027 loan still needs approval. In Germany, meanwhile, state elections in 2027 will test the Alternative for Germany, which won 43.8% in Saxony-Anhalt in September 2026. Spain’s vote on Sunday is the first real test, and the first indication of whether the far right’s moment in Europe is a surge, or a settlement."
       ],
       "related": [],
-      "image": "https://i.guim.co.uk/img/media/3fb443520d5ae15fd4e46dca873678b8da5e63ea/683_0_6827_5464/master/6827.jpg?width=700&quality=85&auto=format&fit=max&s=fe7114fd09ea258af70aa0461f6b01b7",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/15993793/pexels-photo-15993793.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A hand placing a paper ballot into a transparent voting box. Photo: Fatima Yusuf / Pexels",
       "reviewed": true
     },
     {
@@ -1503,8 +1503,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Sources: Al Jazeera, USA Today, CNN and the Associated Press."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/3c4a/live/dcbcfdf0-e85a-11f1-9b85-e50d1e9de678.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/9129698/pexels-photo-9129698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A wide-body airplane taking off from a runway. Photo: Wayne Jackson / Pexels",
       "reviewed": true
     },
     {
@@ -1530,8 +1530,8 @@ window.WWN_DEFAULT_CONTENT = {
         "The Reserve Bank has already responded. Rising prices could prompt another interest rate hike at the RBI's December review, following the 0.25 percentage point increase in the repo rate, the rate at which commercial banks borrow from the RBI, in October. The RBI's current inflation target is 4 per cent, with a tolerance band of two percentage points on either side. Households, meanwhile, expect the pressure to continue: according to the RBI's September Inflation Expectations Survey, households expect inflation to reach 10 per cent over the next 12 months, up from 9.4 per cent in July. When monthly expenses rise faster than income, there is less money left to put away. Consider a household earning 60,000 rupees a month and spending 50,000: if monthly expenses rise by 6 per cent to 53,000, savings drop from 10,000 to 7,000, a 30 per cent dent. The question now is no longer simply how high inflation will go. It is how much more ordinary households can absorb."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/e93a/live/237a32d0-e7d4-11f1-939f-471cde339c0e.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/28672822/pexels-photo-28672822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A vibrant street market in Delhi showcasing fresh produce. Photo: Roman Saienko / Pexels",
       "reviewed": true
     },
     {
@@ -1549,8 +1549,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Army says trio injured in 2009 attack were not direct victims of Nidal Hasan’s and thus cannot attend event. Three survivors of the shooting at Fort Hood will not be allowed to witness the execution by military firing squad of Nidal Hasan who shot 13 people dead in the attack at the Texas army post in 2009, military officials said Tuesday."
       ],
       "related": [],
-      "image": "https://i.guim.co.uk/img/media/460deb91b5ac7fce62e4d1f4f42f38496eab4ca7/499_0_2501_2000/master/2501.jpg?width=700&quality=85&auto=format&fit=max&s=1ca13bfb0f34e8b0b38a2e0b01a53785",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/40188758/pexels-photo-40188758.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Military vehicles parked outdoors. Photo: Charles Criscuolo / Pexels",
       "reviewed": true
     },
     {
@@ -1577,8 +1577,8 @@ window.WWN_DEFAULT_CONTENT = {
         "The politics of the issue are also contested. Conservative leader Kemi Badenoch said there was some common sense about staggering the age of consent, but questioned whether a new law could be enforced. She also said it was very confusing to see Labor ministers talk about staggering the age of consent for sexual relations while at the same time lowering the voting age to 16. For now, the government has said it is actively looking at whether to change the law and will ask the public for its opinions in the new year, with no confirmed timeline for legislation. Minister for Victims Alex Davies-Jones said the measures form part of wider efforts to challenge myths about consent and halve violence against women and girls over the next decade."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/9ec8/live/48a72fa0-e850-11f1-aa88-031e8213533d.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/30029654/pexels-photo-30029654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Big Ben in fog on a London street. Photo: Jabez Cutamora / Pexels",
       "reviewed": true
     },
     {
@@ -1606,8 +1606,8 @@ window.WWN_DEFAULT_CONTENT = {
         "The verdict lands in the middle of the long-running technological rivalry between the United States and China. Huawei, one of China's premier international brands, has been at the center of that competition for decades, with American technology giants long accusing it of stealing their business secrets and US administrations from Obama onwards warning that its expansion posed risks to national security. The jury has now found that some of those accusations were crimes, and that the most sweeping of them, that Huawei was a criminal enterprise, was not proved. The appeal, and the sentencing next September, will decide how much of this verdict survives."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/68/79/696x392_cmsv2_4ad7e8fc-0d5d-5324-a280-ed8a89d84cae-10006879.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/6636463/pexels-photo-6636463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Close-up of a microprocessor on a motherboard. Photo: Sergei Starostin / Pexels",
       "reviewed": true
     },
     {
@@ -1625,8 +1625,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Speaking with FRANCE 24's Jennie Shin, sports presenter and journalist Thando Sibiya explains that the decision by the Court of Arbitration for Sport to reinstate Senegal as ⁠winner of ​the 2025 Africa Cup of Nations \"from a jurisprudence perspective or creating precedent, it is going to be good in the books of sports law, because if every single decision of a referee is taken to a court of law all the time, it really tampers with the quality."
       ],
       "related": [],
-      "image": "https://s.france24.com/media/display/2c587954-e840-11f1-a6fd-29d00e23de9a/w:1024/p:16x9/EN-20261124-203334-203830-CS.jpg",
-      "imageCaption": "Photo: France 24",
+      "image": "https://images.pexels.com/photos/35018099/pexels-photo-35018099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A victorious team celebrates with a gold football trophy on the field. Photo: Willians Huerta / Pexels",
       "reviewed": true
     },
     {
@@ -1644,8 +1644,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Christopher Joell-Deshields accessed internal records after organisation sacked him in ‘flagrant flouting’ of court order. The sacked boss of the Pride in London LGBTQ+ parade has been given a suspended prison sentence for his “flagrant” contempt of court when accessing the organisation’s records in breach of a judicial order."
       ],
       "related": [],
-      "image": "https://i.guim.co.uk/img/media/767a3d72a37f102fb9efc9642321b387291fdd19/911_0_2989_2393/master/2989.jpg?width=700&quality=85&auto=format&fit=max&s=7e74f55ff266756046f2b5d6b32e6392",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/37378750/pexels-photo-37378750.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: The Royal Courts of Justice in London. Photo: Truly Shae / Pexels",
       "reviewed": true
     },
     {
@@ -1703,8 +1703,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Moscow has promised painful consequences for the strikes, and the episode has left Ukraine's allies divided between admiration for an operation conducted 2,000 kilometres from the front and anxiety about where the war goes next. For Italy, the lesson is uncomfortable: a war it has backed Ukraine in fighting is now being fought in its own backyard, in the waters between Sicily and Libya, and Rome's ability to keep the Mediterranean out of the conflict is no longer in its own hands."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/65/29/696x392_cmsv2_cfbc319b-1caa-56c3-8ea3-12ae7027e9cc-10006529.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/8347886/pexels-photo-8347886.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A ship's wake trailing across the open sea. Photo: Timmy Siik / Pexels",
       "reviewed": true
     },
     {
@@ -1729,8 +1729,8 @@ window.WWN_DEFAULT_CONTENT = {
         "The story may not be over. CAS confirmed that an arbitrator challenge had been received during the proceedings, and legal analysis of the ruling notes that the likely remaining avenue for Morocco is an application to the Swiss Federal Supreme Court, which exercises supervisory jurisdiction over CAS awards. A full written ruling setting out the judges' reasons was promised by the end of November. For now, though, Senegal are Africa's champions, and the trophy returns to Dakar."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/64/27/696x392_cmsv2_ff54b4c0-20f1-5922-b746-bfe957710ee0-10006427.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/31543209/pexels-photo-31543209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Two soccer players joyfully celebrate a goal during a match on a sunny day. Photo: Franco Monsalvo / Pexels",
       "reviewed": true
     },
     {
@@ -1749,8 +1749,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Israeli air strikes on the devastated Gaza Strip killed Brigadier General Naeem Abu Nahel, director-general of the Palestinian territory's Internal Security Service on Tuesday, the ministry said. Another six people, including two police officers and a 17-year-old teenager, were killed in Israeli strikes across the enclave."
       ],
       "related": [],
-      "image": "https://s.france24.com/media/display/627512ce-e802-11f1-ad6d-1991d4929b54/w:1024/p:16x9/000-D7J44LE.jpg",
-      "imageCaption": "Photo: France 24",
+      "image": "https://images.pexels.com/photos/34454411/pexels-photo-34454411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Moody view of Gaza City under dark clouds. Photo: Mohamed Zarandah / Pexels",
       "reviewed": true
     },
     {
@@ -1776,8 +1776,8 @@ window.WWN_DEFAULT_CONTENT = {
         "The second whole-life order is exceptionally rare. It means that even if the first sentence were ever reviewed, Russell would still have no prospect of release. The Crown Prosecution Service said the attack was a deliberate and planned one in which Russell selected a weapon and concealed it, before waiting for his opportunity. Russell, who had already killed three times, will now spend the rest of his life in prison with no possibility of parole."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/be90/live/aad9c570-e729-11f1-914b-6d226d813a52.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/38253321/pexels-photo-38253321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Sunlight streaming through the barred window of a prison cell. Photo: Magda Ehlers / Pexels",
       "reviewed": true
     },
     {
@@ -1807,8 +1807,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Sources: BBC, The Christian Institute and library sector reporting."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/4d02/live/aabb4c70-e7e3-11f1-a094-5fdc692f3e33.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/38323235/pexels-photo-38323235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Well-lit library interior featuring rows of neatly organized bookshelves filled with books. Photo: Ssümçiğ / Pexels",
       "reviewed": true
     },
     {
@@ -1837,8 +1837,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Sources: Dawn, Xinhua, the Beijing Review and China Daily."
       ],
       "related": [],
-      "image": "https://s.france24.com/media/display/dd5a9c58-e7d9-11f1-a14d-1bac47ab2f5d/w:1024/p:16x9/AP26328149750361.jpg",
-      "imageCaption": "Photo: France 24",
+      "image": "https://images.pexels.com/photos/23795/rocket-launch-space-discovery.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A rocket launching into a clear blue sky amid clouds of smoke. Photo: SpaceX / Pexels",
       "reviewed": true
     },
     {
@@ -1865,8 +1865,8 @@ window.WWN_DEFAULT_CONTENT = {
         "The collapse also exposed structural weaknesses in the way climate talks work. Because the process requires consensus, even one nation can block an agreement, which rewards the countries most determined to hold the line. The presidency's strategy of dropping fossil fuels from the text to win over its opponents bought nothing, because it cost the support of the EU and the most vulnerable states. Despite the failure, governments, businesses and other organisations at the summit announced new initiatives to expand access to electricity, accelerate clean energy investment and move away from fossil fuels. The question now is whether the next round of talks can fix a process that, in Antalya, allowed the world's biggest problem to go unmentioned."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/49/56/696x392_cmsv2_4f42ce96-10bd-5d27-b59b-f2c8d9a2cff3-10004956.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/12111225/pexels-photo-12111225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: An empty conference room set up for a climate project event. Photo: skigh_tv / Pexels",
       "reviewed": true
     },
     {
@@ -1893,8 +1893,8 @@ window.WWN_DEFAULT_CONTENT = {
         "The practical message is nonetheless striking. Heart attacks and strokes may seem sudden, but the changes that increase their likelihood can begin decades before the first serious event. That gives doctors and patients a large window of opportunity: blood pressure, cholesterol, weight, diabetes and smoking are all modifiable, and the earlier they are addressed, the more time there is to change the trajectory. The body, it turns out, has been sending quiet signals for 30 years. The challenge now is to start listening to them sooner."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/51/52/696x392_cmsv2_0c680a49-e1fe-56f6-8154-b388accf6699-10005152.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/8352120/pexels-photo-8352120.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: An anatomical heart model against a blue background. Photo: Yasser Hernandez / Pexels",
       "reviewed": true
     },
     {
@@ -1921,8 +1921,8 @@ window.WWN_DEFAULT_CONTENT = {
         "For now, the case stands as a public warning rather than a fully verifiable account. Until Chinese authorities release more detail, or independent evidence emerges, what is known is the shape of the story as Beijing has chosen to tell it: an official recruited abroad, paid to betray secrets, caught, and sentenced to the harshest punishment Chinese law allows."
       ],
       "related": [],
-      "image": "https://i.guim.co.uk/img/media/5d7028c1f7418b6df67a8b82c97cfc5563385eba/154_0_2536_2029/master/2536.jpg?width=700&quality=85&auto=format&fit=max&s=a8334ba7ee5504ed586b8b567e4ab1e0",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/36541875/pexels-photo-36541875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: The Beijing skyline at dusk. Photo: Gatsby Yang / Pexels",
       "reviewed": true
     },
     {
@@ -1951,8 +1951,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Sources: BBC and related reporting on the EU-UK Summit."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/d52f/live/4268b250-e79f-11f1-b8f0-1fdd88d7e7ad.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/17193910/pexels-photo-17193910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Big Ben in London at sunset. Photo: Julia Barrantes / Pexels",
       "reviewed": true
     },
     {
@@ -1979,8 +1979,8 @@ window.WWN_DEFAULT_CONTENT = {
         "The scandal has exposed how porous the controls on advanced chips can be. President Donald Trump has explicitly said he does not want Blackwell chips, which OpenAI and Anthropic use to train their most cutting-edge models, going to China, at least for now, and has suggested they would not become available for another two or three years. Nvidia's chief executive once claimed the racks were too big to smuggle: a standard two-metre-tall GB300 NVL72 rack, containing 72 Blackwell Ultra chips and 36 Grace processors, weighs more than 1,500 kilograms and is about the size of a gigantic fridge. Yet the filings reviewed by Bloomberg show that restricted hardware has reached China, and that some Chinese financial institutions, including ones with government ties, were aware of it and willing to lend capital on those assets. Questions remain about why it took months to blacklist Megaspeed."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/4a66/live/7c413f70-e78a-11f1-a5c2-c57ab9df3111.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/40879/cpu-processor-macro-pen-40879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Close-up of a CPU microchip with gold pins. Photo: Pixabay / Pexels",
       "reviewed": true
     },
     {
@@ -2028,8 +2028,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Mahdi Tounsi appeared with visible bruising after being interrogated by police on his association with Israeli-Palestinian organisations. Israeli professors, students and rights activists are calling for the immediate release of Mahdi Tounsi, a sociology student at Jerusalem’s Hebrew University who has been held without charge for more than two weeks after he was seized from his dorm room."
       ],
       "related": [],
-      "image": "https://i.guim.co.uk/img/media/3b697e211fd94382a4c76bc1361873d607c3ea2d/0_41_1200_960/master/1200.jpg?width=700&quality=85&auto=format&fit=max&s=ee95f67836c53353ebe83916accdea4b",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/35651041/pexels-photo-35651041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Streets of Jerusalem with historic buildings and palm trees. Photo: George / Pexels",
       "reviewed": true
     },
     {
@@ -2078,8 +2078,8 @@ window.WWN_DEFAULT_CONTENT = {
         "French feminist icon Gisèle Pelicot, who became a worldwide symbol against sexual violence during the 2024 rape trials against her husband and dozens of other men, said Monday she will take legal action after nude images of her were sent out without her permission to publicise a psychoanalyst's book on coercive control."
       ],
       "related": [],
-      "image": "https://s.france24.com/media/display/dc823ac4-e758-11f1-96c6-13439ca2fe89/w:1024/p:16x9/000-D8DK8WE.jpg",
-      "imageCaption": "Photo: France 24",
+      "image": "https://images.pexels.com/photos/4377176/pexels-photo-4377176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: The historic Palais de Justice in Lyon, France. Photo: Luca Nardone / Pexels",
       "reviewed": true
     },
     {
@@ -2105,8 +2105,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Whether the package survives the member states intact is the open question. Von der Leyen has framed it as a test of European resolve, and the debate in the Council will show how much appetite remains for escalation nearly five years into the war. If adopted in full, it would be one of the broadest sanctions packages the EU has imposed, reaching from bank messaging systems to sports stadiums. If it is diluted, it will still add to the cumulative pressure that has become the EU's main economic weapon against Moscow."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/43/22/696x392_cmsv2_6062d2c8-9a48-5562-a080-5f2ad24d6507-10004322.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/40718246/pexels-photo-40718246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: The European Parliament hemicycle in Strasbourg. Photo: Zsolt Bodnár / Pexels",
       "reviewed": true
     },
     {
@@ -2134,8 +2134,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Whether Europe listens is an open question. Villig's robotaxi pilots will begin within a year, and his IPO decision will follow when the market is right. For now, his message to Europe's policymakers is simple: the technology works, the customers are ready, and the only thing standing between European streets and driverless cars is Europe itself."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/09/99/83/88/696x392_cmsv2_4ce3d2af-65b2-5222-a865-7d924d30bd59-9998388.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/35076289/pexels-photo-35076289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A white autonomous vehicle navigating a city street. Photo: Stephen Leonardi / Pexels",
       "reviewed": true
     },
     {
@@ -2162,8 +2162,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Sources: BBC reporting by Katya Adler, and Reuters."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/87ae/live/24717fd0-e73f-11f1-802a-678be58471bb.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/9739638/pexels-photo-9739638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A large crowd gathers for a protest rally on a dimly lit street in Bristol, England. Photo: Boys in Bristol Photography / Pexels",
       "reviewed": true
     },
     {
@@ -2219,8 +2219,8 @@ window.WWN_DEFAULT_CONTENT = {
         "GTA VI's debut is now the benchmark against which every future entertainment launch will be measured, and it proved that a game made entirely by human hands, over 13 years, can still dominate the culture. The meme cycle proved something else: that AI image generators have made it almost free for official accounts to join a cultural moment, and that the cost of doing it badly is now almost entirely reputational. The White House and JD Vance got the engagement they wanted, and the ridicule that came with it."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/41/43/696x392_cmsv2_5e01936a-d41f-5d39-b432-7b53075c430d-10004143.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/9409819/pexels-photo-9409819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A close-up of a gaming controller on a wooden table with a vibrant screen in the background. Photo: Erik Mclean / Pexels",
       "reviewed": true
     },
     {
@@ -2248,8 +2248,8 @@ window.WWN_DEFAULT_CONTENT = {
         "For all the summits and sanctions, the week's balance sheet was grim. European leaders were still discussing security guarantees, peacekeeping forces and negotiating formats. Moscow was still sending missiles. And Brussels was preparing to tighten the screws again. The war, in its fifth year, showed no sign of slowing, and the fighting was now reaching waters and airspace far beyond Ukraine itself."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/37/25/696x392_cmsv2_b61d1d5c-2bdb-586f-be92-5a37e32ca1c5-10003725.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/11756413/pexels-photo-11756413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A busy daytime scene at Independence Square in Kyiv. Photo: Nextvoyage / Pexels",
       "reviewed": true
     },
     {
@@ -2277,8 +2277,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Sources: Al Jazeera, CNN and AFP reporting from COP31."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/ffb0/live/d31e6e50-e6fc-11f1-9d32-695d6c00481f.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/39527241/pexels-photo-39527241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Five national flags waving against a mountainous landscape. Photo: Ale Ale / Pexels",
       "reviewed": true
     },
     {
@@ -2325,8 +2325,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Footage of Saturday incident, filmed by fellow passengers, quickly went viral on social media as mayor calls tactics ‘un-American’. Protesters marched through the Seattle-Tacoma international airport on Sunday after widely shared footage captured masked immigration agents detaining a father and daughter on an airport jet bridge as they boarded their Alaska Airlines flight."
       ],
       "related": [],
-      "image": "https://i.guim.co.uk/img/media/97c8d10c9aa99e4620ecf17b447bec64df7ce184/58_0_909_727/master/909.jpg?width=700&quality=85&auto=format&fit=max&s=9cc0c9ce357e71bb1e8ea2f5e34d969f",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/6544058/pexels-photo-6544058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Blurred motion of travellers in an airport terminal with departure screens. Photo: Angelyn Sanjorjo / Pexels",
       "reviewed": true
     },
     {
@@ -2412,8 +2412,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Sources: Associated Press, Al Jazeera and Reuters/Ipsos polling."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/2aab/live/8ca719f0-e6b0-11f1-b45e-bf1e220bd648.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/20417783/pexels-photo-20417783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: The US Capitol dome in Washington, DC. Photo: Ivan Dražić / Pexels",
       "reviewed": true
     },
     {
@@ -2432,8 +2432,8 @@ window.WWN_DEFAULT_CONTENT = {
         "A Russian navy corvette docked at the Benghazi naval base ​in eastern Libya was hit on Sunday by a suspected Ukrainian sea drone, according to local officials. The strike severely damaged the warship and ignited a fire at the facility in what appeared to be the latest attack in Libya linked to the Russia-Ukraine war."
       ],
       "related": [],
-      "image": "https://s.france24.com/media/display/659e3cc8-e6a9-11f1-ae55-1bac47ab2f5d/w:1024/p:16x9/AP26326649718247.jpg",
-      "imageCaption": "Photo: France 24",
+      "image": "https://images.pexels.com/photos/35173620/pexels-photo-35173620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A large warship sailing on a calm ocean. Photo: Enzo Renz / Pexels",
       "reviewed": true
     },
     {
@@ -2452,8 +2452,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Incoming House speaker says party focused on affordability and fixing ‘broken’ healthcare and immigration systems. The incoming US House speaker, Hakeem Jeffries , has said he and his fellow Democrats are focused on affordability, expanding healthcare and fixing the “broken” immigration system in the country, and willing to cross the political aisle to do so."
       ],
       "related": [],
-      "image": "https://i.guim.co.uk/img/media/4e6eb28d17340c345907199ceb683c4277945b37/471_0_3333_2667/master/3333.jpg?width=700&quality=85&auto=format&fit=max&s=c2b5e9dd5d30693241d365d10927c7cd",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/62318/washington-d-c-statue-sculpture-the-peace-monument-62318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: The US Capitol and the Peace Monument in Washington, DC. Photo: Pixabay / Pexels",
       "reviewed": true
     },
     {
@@ -2479,8 +2479,8 @@ window.WWN_DEFAULT_CONTENT = {
         "The attack is part of a widening pattern. Earlier in November, Finland's military said it had detected a strike on a Russian warship in the same area, which Ukraine took credit for, and Helsinki later said it had raised concerns with Kyiv about strikes there. Ukraine and Russia have attacked each other's shipping throughout the war, mostly in the Black Sea, but the Baltic is one of the most crowded shipping lanes in the world: the Helsinki to Tallinn ferry route alone had 7.5 million passenger crossings last year. There is also an environmental risk, since one of the major dangers of attacking any vessel is damage to the environment if it leaks or sinks, a scenario Baltic Sea nations treat with high importance, and the risk is further amplified by the poor state of some of the so-called shadow fleet tankers Russia operates. Estonian Navy Commander Ivo Vark said the risk of further attacks in the Gulf of Finland could not be ruled out. Accounts differ on the precise location of the strike: Finnish authorities place it in international waters west of Gogland Island, while Zelensky said the vessel was targeted in Russian territorial waters before drifting into Finnish waters."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/d6f9/live/a55b16b0-e66d-11f1-9e24-791c5321ff0f.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/16520011/pexels-photo-16520011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A cargo ship moored in a harbour under a dusky sky. Photo: Efe Yağız Soysal / Pexels",
       "reviewed": true
     },
     {
@@ -2498,8 +2498,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Conservatives may instinctively want to push back against closer EU ties, but they have to train their focus elsewhere . Anyone who accidentally switched to BBC One at about 9.45am on Sunday to be greeted by Theresa May awkwardly espousing the virtues of Brexit could have been forgiven for thinking they had woken up in around 2018, and not being especially pleased at the idea."
       ],
       "related": [],
-      "image": "https://i.guim.co.uk/img/media/323290cab4a059e743deb4e7ae0928f6d847b2af/681_32_4857_3885/master/4857.jpg?width=700&quality=85&auto=format&fit=max&s=4b11d44d7ade66f2f41b91bb001c5ba9",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/29253512/pexels-photo-29253512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Big Ben and Westminster Palace in London on a sunny day. Photo: Matheus Bertelli / Pexels",
       "reviewed": true
     },
     {
@@ -2518,8 +2518,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Dozens of militant Israeli settlers raided communities on Saturday night, setting fire to vehicles and several homes . Arson attacks by militant Israeli settlers on Palestinian villages in the occupied West Bank have caused a political row in Israel, drawing condemnation from Gadi Eisenkot, the opposition leader, who described them as “Jewish terrorism”."
       ],
       "related": [],
-      "image": "https://i.guim.co.uk/img/media/efe4dd70505bfcec6b5ab71dc65a3481bf1215d9/1004_0_6827_5464/master/6827.jpg?width=700&quality=85&auto=format&fit=max&s=02cd87d09d705f7a50460fa0fe12f59e",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/27358607/pexels-photo-27358607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Panoramic view of Jerusalem's historic skyline. Photo: Виктор Соломоник / Pexels",
       "reviewed": true
     },
     {
@@ -2545,8 +2545,8 @@ window.WWN_DEFAULT_CONTENT = {
         "What happens now is unclear. The collapse has renewed questions about reform of the consensus-based process at the heart of the talks, since a single holdout can block nearly 200 countries. COP31's president of negotiations, Chris Bowen, called the result very disappointing, though he said there were good things to come out of the talks. No new text was issued, and negotiators said they had done all they could. The next round of talks will inherit the same unresolved question that broke this one: whether the world is willing to name, in a binding agreement, the fuels that are warming it."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/34/69/696x392_cmsv2_46cbae24-c8ca-5789-947b-7639c5bcdb04-10003469.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/12111235/pexels-photo-12111235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Crowd at a climate protest in Berlin holding signs and a globe. Photo: skigh_tv / Pexels",
       "reviewed": true
     },
     {
@@ -2575,8 +2575,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Whether that message reaches the people who can act on it is another matter. The strait remains contested, the blockade remains in place, and every week, as Pugh put it, dozens of oil tankers, gas carriers and cargo ships are being targeted. For now, his swim has at least forced an environmental story that had gone largely untold, covered by Al Jazeera, the Associated Press, Sky News and the BBC, into the open, and put the damage to the sea on the same agenda as the damage to the people who live beside it."
       ],
       "related": [],
-      "image": "https://i.guim.co.uk/img/media/e6a395e17ba14aa21ecea678066783a153abb5d1/316_0_5000_4000/master/5000.jpg?width=700&quality=85&auto=format&fit=max&s=372b847909a417a76014f4c56e279b57",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/19421169/pexels-photo-19421169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: An adult male swimmer in open water wearing an orange swim cap and goggles, swimming in the sea. Photo: Thales Araujo / Pexels",
       "reviewed": true
     },
     {
@@ -2604,8 +2604,8 @@ window.WWN_DEFAULT_CONTENT = {
         "What happens next depends on whether Farage himself raises the matter with Trump, and on whether the US mediation effort produces anything that changes the picture in Ukraine. For now, the photograph has done something unusual in British politics: it has united the government, the official opposition and the party closest to Trump in condemning the same post, on the same day, in almost the same words."
       ],
       "related": [],
-      "image": "https://i.guim.co.uk/img/media/9d90a7d8b6f21d4c00d9de61f70de2d1a4a80ebf/82_0_4618_3696/master/4618.jpg?width=700&quality=85&auto=format&fit=max&s=dd6a0fbf75ca97d950fd01c74338726d",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/21939549/pexels-photo-21939549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Westminster Palace and the River Thames in London. Photo: Sami Abdullah / Pexels",
       "reviewed": true
     },
     {
@@ -2632,8 +2632,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Search and rescue operations in Dymer remained under way as authorities worked to establish the fate of the missing residents. For the families waiting at the site, the hours after the strike offered little certainty, only the knowledge that nine of their neighbours had been pulled out alive and that the search would continue as long as there was any chance of finding more survivors."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/32/58/696x392_cmsv2_bda95ddb-450a-51a2-ad8a-c9b1d73df349-10003258.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/9886241/pexels-photo-9886241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A dramatic sky over a river with a bridge and the Motherland Monument in Kyiv. Photo: Саша Круглая / Pexels",
       "reviewed": true
     },
     {
@@ -2734,8 +2734,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Sources: Le Temps, the Associated Press and Italian press reporting."
       ],
       "related": [],
-      "image": "https://s.france24.com/media/display/a9d7f9c0-e658-11f1-9bb1-ebb478925cf0/w:1024/p:16x9/EN-20261122-101007-101157-CS.jpg",
-      "imageCaption": "Photo: France 24",
+      "image": "https://images.pexels.com/photos/13315389/pexels-photo-13315389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A police car parked on a cobblestone street in a historic city. Photo: FranDany / Pexels",
       "reviewed": true
     },
     {
@@ -2763,8 +2763,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Sources: Al Jazeera, Dawn and Firstpost."
       ],
       "related": [],
-      "image": "https://s.france24.com/media/display/53de5938-e658-11f1-9f3b-6b451f569414/w:1024/p:16x9/EN-20261122-100542-100715-CS.jpg",
-      "imageCaption": "Photo: France 24",
+      "image": "https://images.pexels.com/photos/11421274/pexels-photo-11421274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A bustling city protest with diverse activists holding flags and placards on a cloudy day. Photo: Mathias Reding / Pexels",
       "reviewed": true
     },
     {
@@ -3016,8 +3016,8 @@ window.WWN_DEFAULT_CONTENT = {
         "The clock is now the main character in the story. If the marathon talks with Likud produce a breakthrough, Israel could get the broad unity government Herzog has floated, bringing Eisenkot and Netanyahu together. If they fail, Eisenkot's fallback is a minority government vote before December 6, and if that fails too, the mandate could pass to Netanyahu, who commands 46 MKs, or the country could face another election, an outcome Eisenkot has explicitly rejected. The talks that began on Sunday will show quickly whether Likud wants a deal, or simply wants the clock to run out."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/31/41/696x392_cmsv2_d548eeab-03c0-5d09-9e23-1d4460d8e068-10003141.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/5499191/pexels-photo-5499191.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: The Israeli national flag waving against a blue sky. Photo: Leonid Altman / Pexels",
       "reviewed": true
     },
     {
@@ -3074,8 +3074,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Sources: Al Jazeera, CNN and AFP reporting from COP31."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/9b71/live/e0c68530-e61e-11f1-94c8-1db910b5b42e.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/4883682/pexels-photo-4883682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: An oil refinery with pipes and towers under a clear blue sky. Photo: Ali Mucci / Pexels",
       "reviewed": true
     },
     {
@@ -3131,8 +3131,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Whoever forms government after Saturday’s vote will have to decide, quickly, how to replace Yallourn’s capacity. The choice is whether Victoria keeps building towards a mostly renewable grid supported by new transmission, or relies more on gas and coal for firming. The experts’ warning is that the decision cannot wait until after the election: every month of delay is a month in which the state burns more expensive gas, and a month closer to the day the lights could go out."
       ],
       "related": [],
-      "image": "https://i.guim.co.uk/img/media/2ba7cd3a290bb4876a32e7f44df6d629f62996df/0_0_6112_4892/master/6112.jpg?width=700&quality=85&auto=format&fit=max&s=d260f781e881407ce67b031f3a1e57b6",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/2802106/pexels-photo-2802106.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A tall high voltage transmission tower with power lines set against a cloudy sky. Photo: H&CO / Pexels",
       "reviewed": true
     },
     {
@@ -3159,8 +3159,8 @@ window.WWN_DEFAULT_CONTENT = {
         "So are young people losing faith in democracy? The register data alone does not prove that. The youth share has fallen because yesterday's young voters are today's middle-aged voters, and millions of newly eligible young Nigerians have still registered. But the questions raised by the figures are real: whether newly eligible young people are registering in the numbers they could, whether they will turn out in January, and whether a political system led by much older candidates can speak to them. The election itself will be the test."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/abb2/live/99a82d30-e4e7-11f1-99a1-253766e7ad8b.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/41086845/pexels-photo-41086845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Aerial view of the Lagos skyline. Photo: Taiwo Samson / Pexels",
       "reviewed": true
     },
     {
@@ -3188,8 +3188,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Sources: BBC, Richmond Auctions and the Christian Post."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/5138/live/c4d4d0c0-e5ec-11f1-ad4d-5dd9d517a6dd.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/31066018/pexels-photo-31066018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: An auction scene with a presenter and bidders raising phones. Photo: Đậu Photograph / Pexels",
       "reviewed": true
     },
     {
@@ -3217,8 +3217,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Sources: CNN, Al Jazeera and AFP reporting from COP31."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/5253/live/c9ca5500-e579-11f1-a5f6-b3028adf2d6d.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/2975498/pexels-photo-2975498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A climate march with people holding signs demanding climate action. Photo: Robin Erino / Pexels",
       "reviewed": true
     },
     {
@@ -3246,8 +3246,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Analysts said the convoy put Washington in a difficult position. The Washington-based Institute for the Study of War said Iranian attempts to run the blockade forced the United States either to let the blockade collapse or to return to a war that strained relations with Gulf allies. For now the convoy has not sailed, and both sides are waiting to see whether the tankers move."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/29/79/696x392_cmsv2_6cfb00d1-cc46-548f-8f54-bd7a83007f6c-10002979.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/33333666/pexels-photo-33333666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A large oil tanker navigating the open sea. Photo: Eyüpcan Timur / Pexels",
       "reviewed": true
     },
     {
@@ -3265,8 +3265,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Turnout ⁠was down ​at largely peaceful demonstrations across France on the sixth consecutive Saturday of protests ​over the cost of living, with the interior ministry putting the figure at 82,500 across the country. Organizers said 150,000 people participated in the nationwide protests, down from their 200,000 figure last week."
       ],
       "related": [],
-      "image": "https://s.france24.com/media/display/c7c4cc2e-e5e5-11f1-a66f-6b451f569414/w:1024/p:16x9/000-D88T7BJ.jpg",
-      "imageCaption": "Photo: France 24",
+      "image": "https://images.pexels.com/photos/11428872/pexels-photo-11428872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A massive nighttime protest with crowds holding banners and placards on a city street. Photo: Davide Davide / Pexels",
       "reviewed": true
     },
     {
@@ -3294,8 +3294,8 @@ window.WWN_DEFAULT_CONTENT = {
         "For governments, the message from the streets is consistent: wages that do not keep up with prices, homes that cost more than people can pay, and public services under strain. The demonstrations on November 21 were peaceful for the most part, and their demands were concrete, higher pay, cheaper housing, better services. Whether governments answer them will shape the politics of the winter, in Lisbon, in Paris and in Madrid alike."
       ],
       "related": [],
-      "image": "https://images.euronews.com/articles/stories/10/00/28/26/696x392_cmsv2_43a6dd87-426a-5c91-9b45-97d5c2b7da11-10002826.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/1586034/pexels-photo-1586034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A lively urban protest with people holding flags and signs on a sunny day. Photo: Romina Ordóñez / Pexels",
       "reviewed": true
     },
     {
@@ -3313,8 +3313,8 @@ window.WWN_DEFAULT_CONTENT = {
         "COP31 climate talks in Turkey have gone into overtime, with deep divisions over fossil fuels, climate finance and global warming targets delaying an agreement. A revised draft dropped all mention of fossil fuels, prompting strong criticism from the EU and a dozen countries demanding a clear commitment to phase them out."
       ],
       "related": [],
-      "image": "https://s.france24.com/media/display/2e281d9c-e5d0-11f1-9a79-6b451f569414/w:1024/p:16x9/EN-20261121-171141-171326-CS.jpg",
-      "imageCaption": "Photo: France 24",
+      "image": "https://images.pexels.com/photos/12111230/pexels-photo-12111230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A climate protest crowd in Berlin raising a large Earth ball. Photo: skigh_tv / Pexels",
       "reviewed": true
     },
     {
@@ -3525,8 +3525,8 @@ window.WWN_DEFAULT_CONTENT = {
         "The demand for bail services has only grown. Since President Donald Trump returned to office after promising an immigration crackdown, Immigration and Customs Enforcement has made more than 1.2 million arrests, and fast-tracked deportations. Bail can exceed 7,000 dollars, and many agents refuse migrants as flight risks. LIS continues to solicit immigrant clients online and on social media, its website promising to get your loved one released from a detention center today. That was not Janie Aviles's experience: she wired LIS 10,000 dollars to help get her friend out of detention in Texas, but LIS did not pay his bail, she said, until a month later, after she had reported them to the district attorney. No charges have been laid."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/b187/live/6d4c58d0-e42c-11f1-a630-a951c13e48b7.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/11679655/pexels-photo-11679655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A long metal border fence casting shadows across a desert path. Photo: Mark Stebnicki / Pexels",
       "reviewed": true
     },
     {
@@ -3559,8 +3559,8 @@ window.WWN_DEFAULT_CONTENT = {
         "mamdani-announces-plan-to-close-new-york-s-rikers-island",
         "iran-war-live-saudi-led-coalition-downs-houthi-missiles"
       ],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/aad1/live/7d1c0de0-e4ff-11f1-a8e4-b1e12a49db15.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/14660445/pexels-photo-14660445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: The Johannesburg skyline at sunset. Photo: Sherissa R / Pexels",
       "reviewed": true
     },
     {
@@ -3591,8 +3591,8 @@ window.WWN_DEFAULT_CONTENT = {
         "mamdani-announces-plan-to-close-new-york-s-rikers-island",
         "iran-war-live-saudi-led-coalition-downs-houthi-missiles"
       ],
-      "image": "https://i.guim.co.uk/img/media/96ab340872e588ad309196b07390be6b1c05c064/0_0_935_748/master/935.jpg?width=700&quality=85&auto=format&fit=max&s=50806757fc5fd112480c6a731407982f",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/36891171/pexels-photo-36891171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: The Melbourne skyline with skyscrapers and a bridge. Photo: Bhullar Graphic / Pexels",
       "reviewed": true
     },
     {
@@ -3624,8 +3624,8 @@ window.WWN_DEFAULT_CONTENT = {
         "victorian-greens-seek-urgent-injunction-over-how-to-vote",
         "iran-war-live-saudi-led-coalition-downs-houthi-missiles"
       ],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/4622/live/d8e189d0-e52b-11f1-964d-a1d5fe40573e.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/12327112/pexels-photo-12327112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: The New York City skyline along the waterfront. Photo: Malcolm Hill / Pexels",
       "reviewed": true
     },
     {
@@ -3648,8 +3648,8 @@ window.WWN_DEFAULT_CONTENT = {
         "denmark-expels-russian-diplomat-over-alleged-plot-to-kill",
         "they-were-fined-811m-for-conning-detained-migrants-but-the"
       ],
-      "image": "https://i.guim.co.uk/img/media/cac7b215020ab17f2e1926d910d082e9f9ca8ad3/444_0_4416_3535/master/4416.jpg?width=700&quality=85&auto=format&fit=max&s=4a04958e10540d591086e2d7824c311d",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/32437731/pexels-photo-32437731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: The US Capitol with a statue in the foreground, Washington, DC. Photo: Ramaz Bluashvili / Pexels",
       "reviewed": true
     },
     {
@@ -3681,8 +3681,8 @@ window.WWN_DEFAULT_CONTENT = {
         "indian-man-sentenced-to-19-years-in-prison-for-conspiring",
         "misty-eyed-burnham-gambles-on-closer-ties-with-eu-as-he"
       ],
-      "image": "https://i.guim.co.uk/img/media/68822b4af6e85f21c7ca85d279e5ad43ec97d7f0/0_739_4252_3402/master/4252.jpg?width=700&quality=85&auto=format&fit=max&s=716055784c9ffee0a14af22dffc5c8e8",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/36655196/pexels-photo-36655196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A historic courthouse in Hampton, Virginia (black and white). Photo: Phil Evenden / Pexels",
       "reviewed": true
     },
     {
@@ -3705,8 +3705,8 @@ window.WWN_DEFAULT_CONTENT = {
         "indian-man-sentenced-to-19-years-in-prison-for-conspiring",
         "misty-eyed-burnham-gambles-on-closer-ties-with-eu-as-he"
       ],
-      "image": "https://i.guim.co.uk/img/media/74547b1071ce9ebdb86931120adc604b11828149/468_0_4680_3744/master/4680.jpg?width=700&quality=85&auto=format&fit=max&s=d6d0d9a2a231f653614a28393a00aa5e",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/20870044/pexels-photo-20870044.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: The neoclassical facade of a historic courthouse in Montpellier, France. Photo: Tugce Turan / Pexels",
       "reviewed": true
     },
     {
@@ -3724,8 +3724,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Nikhil Gupta admitted to plotting with Indian government official to hire hitman to murder dual US-Canadian citizen. An Indian ⁠man was sentenced to more ⁠than 19 ​years in US prison on Friday after admitting to orchestrating a failed Indian government-backed plot to kill a Sikh separatist in New York ⁠City , in connection with what US and Canadian authorities have called a broader effort to target Indian dissidents."
       ],
       "related": [],
-      "image": "https://i.guim.co.uk/img/media/9685e16f610038a3820904f81eb1dba749b72664/117_0_2813_2250/master/2813.jpg?width=700&quality=85&auto=format&fit=max&s=ea38836f1db278dae5d70c1e78bdd81f",
-      "imageCaption": "Photo: The Guardian",
+      "image": "https://images.pexels.com/photos/12564034/pexels-photo-12564034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: The New York County Courthouse in Manhattan. Photo: Dustin D. / Pexels",
       "reviewed": true
     },
     {
@@ -3785,8 +3785,8 @@ window.WWN_DEFAULT_CONTENT = {
         "anthropic-shares-fall-after-ipo",
         "eu-rwanda-return-hub"
       ],
-      "image": "https://images.euronews.com/articles/stories/10/00/21/02/696x392_cmsv2_6d8a3374-39d3-5f0c-a86f-23b5059b8d65-10002102.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/10204174/pexels-photo-10204174.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A diverse group of protesters hold signs in a city street rally demanding change. Photo: Yelena from Pexels / Pexels",
       "reviewed": true
     },
     {
@@ -3809,8 +3809,8 @@ window.WWN_DEFAULT_CONTENT = {
         "Ed Moya, a strategist at market intelligence firm AlphaSense, said the debut had not changed the picture for AI stocks: demand remains very strong, but investors are asking how much spending is coming and whether it will deliver enough profit. Wall Street, he said, is starting to shift away from rewarding growth at any price. Analysts said volatility was to be expected in the first days of trading."
       ],
       "related": [],
-      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/03d5/live/7b6fe9b0-e4ed-11f1-8781-bf15c9202663.jpg",
-      "imageCaption": "Photo: BBC",
+      "image": "https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: A stock market screen showing numbers and data. Photo: Pixabay / Pexels",
       "reviewed": true
     },
     {
@@ -3836,8 +3836,8 @@ window.WWN_DEFAULT_CONTENT = {
         "youth-protests-sweep-europe",
         "anthropic-shares-fall-after-ipo"
       ],
-      "image": "https://images.euronews.com/articles/stories/09/98/96/17/696x392_cmsv2_a67117be-28d2-5fab-ab3a-b72d73f4b481-9989617.jpg",
-      "imageCaption": "Photo: Euronews",
+      "image": "https://images.pexels.com/photos/31466702/pexels-photo-31466702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Aerial view of Kigali's modern skyline. Photo: Faustin NKURUNZIZA / Pexels",
       "reviewed": true
     },
     {
