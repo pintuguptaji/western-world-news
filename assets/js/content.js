@@ -9,13 +9,47 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "iran-claims-it-struck-us-aircraft-carrier-as-hormuz-blockade-battle-escalates"
+    "heroSlug": "kuwait-summons-iran-ambassador-after-drone-attack-kills-two-italians"
   },
   "breaking": {
-    "text": "Iran claims it struck US aircraft carrier as Hormuz blockade battle escalates",
-    "link": "articles/iran-claims-it-struck-us-aircraft-carrier-as-hormuz-blockade-battle-escalates.html"
+    "text": "Kuwait summons Iran ambassador after drone attack kills two Italian technicians",
+    "link": "articles/kuwait-summons-iran-ambassador-after-drone-attack-kills-two-italians.html"
   },
   "articles": [
+    {
+      "slug": "kuwait-summons-iran-ambassador-after-drone-attack-kills-two-italians",
+      "sections": [
+        "war-conflict",
+        "world"
+      ],
+      "section": "war-conflict",
+      "headline": "Kuwait summons Iran ambassador after drone attack kills two Italian technicians",
+      "dek": "Kuwait says the strike on a military site was the latest in a series of Iranian attacks and reserves the right to self-defense. Tehran denies any role and offers a joint investigation.",
+      "date": "November 28, 2026",
+      "source": "AFP",
+      "source_url": "https://www.arabnews.jp/en/middle-east/kuwait-summons-iran-ambassador-over-continued-iranian-attacks-3001652",
+      "body": [
+        "Kuwait summoned Iran's ambassador on Friday after a drone attack a day earlier killed two Italian technicians at a Kuwaiti military site, in the first fatal strike on the Gulf state in months and the latest sign that the war between the United States and Iran is spreading beyond the Strait of Hormuz.",
+        "On Thursday, Kuwaiti forces detected and engaged several hostile drones in the country's airspace, which the military attributed to Iran, military spokesman Saud Abdulaziz Al-Atwan said. Falling debris from the targeted facility killed the two Italians and wounded a Kuwaiti and a Pakistani national. The strike hit a vital site where the men were working on an air-defense system.",
+        "The two men worked for Rheinmetall Italia, the Italian arm of the German defense contractor Rheinmetall, providing technical support for air-defense systems. The company confirmed their deaths, saying two highly valued employees had lost their lives while carrying out their professional duties, and that protecting the people of Kuwait was a matter of deep personal importance to them.",
+        "On Friday, Kuwait's foreign ministry summoned Iran's ambassador, Mohammad Totonji, and handed him a formal protest note over what it called continued Iranian attacks on the country. Deputy Foreign Minister Hamad Sulaiman Al-Mashaan called the attacks a flagrant violation of Kuwait's sovereignty and territorial integrity and a serious breach of international law, holding Iran fully responsible. He said Kuwait reserved its inherent right to self-defense and to take all necessary measures to safeguard its sovereignty.",
+        "Tehran denied any involvement. Foreign Minister Abbas Araghchi told his Kuwaiti and Italian counterparts in separate phone calls that Iran had no role or involvement whatsoever in the attack, and told Italy's foreign minister the drone was absolutely not launched by Iranian armed forces, nor did it originate from Iran. Araghchi called the incident a possible precooked recipe for war and offered a joint investigation with Kuwait and Italy to determine the origin of the drone. Iran's military also denied responsibility.",
+        "Italy's Foreign Minister Antonio Tajani said Kuwaiti investigators had concluded that an Iranian-made drone was involved in the attack. Araghchi expressed regret over the deaths and offered condolences to the Italian government and people in his call with Tajani.",
+        "United Nations Secretary-General Antonio Guterres condemned the attack and called on all parties to exercise restraint, saying he was deeply concerned by the continued escalation in the region. Renewed hostilities would have devastating consequences for the region and beyond, his spokesman said, adding that dialogue and diplomacy remained the only viable path towards lasting peace. Saudi Arabia condemned what it called Iranian aggression against Kuwait, while Oman, the Organisation of Islamic Cooperation and Britain also condemned the strike.",
+        "The attack came in a week of escalating confrontation across the Gulf. Iran has stepped up attacks on Kuwait and Bahrain, according to AFP, even as it contests the United States naval blockade of its ports at the Strait of Hormuz. In the same week, the US military disabled a commercial ship that tried to run the blockade, Iran's Revolutionary Guards said two oil tankers struck naval mines near Oman and in the eastern strait, and Saudi Arabia said it shot down a Houthi cruise missile aimed at Riyadh.",
+        "The escalation pushed oil prices higher, with Brent crude rising to 97.30 dollars a barrel on Friday, its highest since November 9, as traders worried about supply disruptions through the strait.",
+        "The immediate question is what Kuwait does next, whether its protest note is followed by further diplomatic steps, and whether Tehran's offer of a joint investigation is taken up. For now, the episode has drawn a US ally that had largely stayed out of the fighting directly into the confrontation, and the UN chief's warning hangs over the region: diplomacy, he said, remains the only viable path to lasting peace.",
+        "Sources: AFP; IANS."
+      ],
+      "related": [
+        "iran-claims-it-struck-us-aircraft-carrier-as-hormuz-blockade-battle-escalates",
+        "iran-attacks-us-bases-in-bahrain-as-its-tankers-get-ready",
+        "us-military-says-it-disabled-merchant-ship-trying-to-breach"
+      ],
+      "image": "https://images.pexels.com/photos/15885795/pexels-photo-15885795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imageCaption": "Illustrative photo: Kuwait City's skyline. Photo: Optical Chemist / Pexels",
+      "reviewed": true
+    },
     {
       "slug": "iran-claims-it-struck-us-aircraft-carrier-as-hormuz-blockade-battle-escalates",
       "sections": [
@@ -4305,6 +4339,11 @@ window.WWN_DEFAULT_CONTENT = {
     }
   ],
   "justIn": [
+    {
+      "time": "Nov 28, 08:33",
+      "text": "Kuwait summons Iran ambassador after drone attack kills two Italian technicians",
+      "link": "articles/kuwait-summons-iran-ambassador-after-drone-attack-kills-two-italians.html"
+    },
     {
       "time": "Nov 28, 04:43",
       "text": "Iran claims it struck US aircraft carrier as Hormuz blockade battle escalates",
