@@ -1578,14 +1578,21 @@ def _dedup_dek_body(dek, body):
 
 def build_article(s):
     body_paras = "".join(f"<p>{p}</p>" for p in _dedup_dek_body(s["dek"], s["body"]))
-    # Every story is a short summary of the source's own report (feed
+    # Short stories are summaries of the source's own report (feed
     # description), not original WWN reporting — say so, for auto and
-    # seed stories alike.
+    # seed stories alike. Full researched articles (600+ words, written
+    # from multiple sources) get the reporting wording instead; the
+    # 400-word line cleanly separates them (auto summaries cap at ~150).
     if s["source"].startswith("The "):
         src_phrase = f"a report by {s['source']}"
     else:
         src_phrase = f"a {s['source']} report"
-    if s.get("auto"):
+    word_count = sum(len(p.split()) for p in (s.get("body") or []))
+    if word_count >= 400:
+        source_note = (f"Reporting by Western World News, based on {src_phrase}. "
+                       f"Read the original report at {s['source']}: "
+                       f"<a href=\"{s['source_url']}\" target=\"_blank\" rel=\"noopener\">Original article: {s['source']}</a>.")
+    elif s.get("auto"):
         source_note = (f"This is a short summary of {src_phrase}. "
                        f"Read the full story at {s['source']}: "
                        f"<a href=\"{s['source_url']}\" target=\"_blank\" rel=\"noopener\">Original article: {s['source']}</a>.")
@@ -2188,10 +2195,18 @@ MAIN_JS = """// Western World News: front-end behavior (v4 redesign).
         var src = $(".source-box", art);
         if (src) {
           var srcPhrase = a.source.indexOf("The ") === 0 ? "a report by " + esc(a.source) : "a " + esc(a.source) + " report";
-          src.innerHTML = "<strong>Source</strong>This is a short summary of " +
-            srcPhrase + '. Read the full story at ' + esc(a.source) +
-            ': <a href="' + esc(a.source_url) +
-            '" target="_blank" rel="noopener">' + "Original article: " + esc(a.source) + "</a>.";
+          var words = (a.body || []).reduce(function (n, p) { return n + p.split(/\s+/).filter(Boolean).length; }, 0);
+          if (words >= 400) {
+            src.innerHTML = "<strong>Source</strong>Reporting by Western World News, based on " +
+              srcPhrase + '. Read the original report at ' + esc(a.source) +
+              ': <a href="' + esc(a.source_url) +
+              '" target="_blank" rel="noopener">' + "Original article: " + esc(a.source) + "</a>.";
+          } else {
+            src.innerHTML = "<strong>Source</strong>This is a short summary of " +
+              srcPhrase + '. Read the full story at ' + esc(a.source) +
+              ': <a href="' + esc(a.source_url) +
+              '" target="_blank" rel="noopener">' + "Original article: " + esc(a.source) + "</a>.";
+          }
         }
       }
     }

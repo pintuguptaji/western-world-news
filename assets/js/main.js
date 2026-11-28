@@ -331,10 +331,18 @@
         var src = $(".source-box", art);
         if (src) {
           var srcPhrase = a.source.indexOf("The ") === 0 ? "a report by " + esc(a.source) : "a " + esc(a.source) + " report";
-          src.innerHTML = "<strong>Source</strong>This is a short summary of " +
-            srcPhrase + '. Read the full story at ' + esc(a.source) +
-            ': <a href="' + esc(a.source_url) +
-            '" target="_blank" rel="noopener">' + "Original article: " + esc(a.source) + "</a>.";
+          var words = (a.body || []).reduce(function (n, p) { return n + p.split(/\s+/).filter(Boolean).length; }, 0);
+          if (words >= 400) {
+            src.innerHTML = "<strong>Source</strong>Reporting by Western World News, based on " +
+              srcPhrase + '. Read the original report at ' + esc(a.source) +
+              ': <a href="' + esc(a.source_url) +
+              '" target="_blank" rel="noopener">' + "Original article: " + esc(a.source) + "</a>.";
+          } else {
+            src.innerHTML = "<strong>Source</strong>This is a short summary of " +
+              srcPhrase + '. Read the full story at ' + esc(a.source) +
+              ': <a href="' + esc(a.source_url) +
+              '" target="_blank" rel="noopener">' + "Original article: " + esc(a.source) + "</a>.";
+          }
         }
       }
     }
