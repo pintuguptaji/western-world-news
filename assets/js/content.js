@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "poison-seller-kenneth-law-apologises-in-court-to-the"
+    "heroSlug": "polls-open-in-taiwan-s-closely-watched-local-elections"
   },
   "breaking": {
-    "text": "'Poison seller' Kenneth Law apologises in court to the families of his victims",
-    "link": "articles/poison-seller-kenneth-law-apologises-in-court-to-the.html"
+    "text": "Polls open in Taiwan's closely watched local elections",
+    "link": "articles/polls-open-in-taiwan-s-closely-watched-local-elections.html"
   },
   "articles": [
+    {
+      "slug": "polls-open-in-taiwan-s-closely-watched-local-elections",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "Polls open in Taiwan's closely watched local elections",
+      "dek": "Polls have opened for local elections in Taiwan. While campaigners have stayed away from the topic of China and focused on issues like transport and childcare, Beijing has repeatedly weighed in.",
+      "date": "November 28, 2026",
+      "source": "DW",
+      "source_url": "https://www.dw.com/en/polls-open-in-taiwan-s-closely-watched-local-elections/a-80083086",
+      "body": [
+        "Polls have opened for local elections in Taiwan. While campaigners have stayed away from the topic of China and focused on issues like transport and childcare, Beijing has repeatedly weighed in."
+      ],
+      "related": [],
+      "image": "",
+      "imageCaption": "",
+      "reviewed": false
+    },
     {
       "slug": "poison-seller-kenneth-law-apologises-in-court-to-the",
       "sections": [
@@ -3640,44 +3659,44 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 28, 02:37",
+      "text": "Polls open in Taiwan's closely watched local elections",
+      "link": "articles/polls-open-in-taiwan-s-closely-watched-local-elections.html"
+    },
+    {
+      "time": "Nov 28, 02:20",
+      "text": "Set time aside for children to read for pleasure, schools to be told",
+      "link": "https://www.bbc.co.uk/news/articles/c65y1vp4ndqjo"
+    },
+    {
+      "time": "Nov 28, 02:08",
+      "text": "Hunted beyond borders: Allegations of Tanzanian repression in Kenya",
+      "link": "https://www.aljazeera.com/news/2026/11/28/hunted-beyond-borders-allegations-of-tanzanian-repression-in-kenya"
+    },
+    {
+      "time": "Nov 28, 02:05",
+      "text": "Taiwan votes in local elections to choose mayors, other leaders",
+      "link": "https://www.aljazeera.com/news/2026/11/28/taiwan-votes-in-local-elections-to-choose-mayors-other-leaders"
+    },
+    {
+      "time": "Nov 28, 01:30",
+      "text": "How gamers are using AI and leaked files to clone Grand Theft Auto 6",
+      "link": "https://www.bbc.co.uk/news/articles/c64gn8pe5eeqo"
+    },
+    {
+      "time": "Nov 28, 01:20",
+      "text": "Nigeria's 'ultimate hard man' who become an online meme",
+      "link": "https://www.bbc.co.uk/news/articles/cm3vg3lkrk03o"
+    },
+    {
+      "time": "Nov 28, 01:12",
+      "text": "'I don't know what I'd do without it': Why shoppers and staff fear losing Poundland",
+      "link": "https://www.bbc.co.uk/news/articles/c65y1l9j7j9ko"
+    },
+    {
       "time": "Nov 28, 01:03",
       "text": "Should I get a flu vaccine now?",
       "link": "https://www.bbc.co.uk/news/articles/cq8e018jyjngo"
-    },
-    {
-      "time": "Nov 28, 01:00",
-      "text": "Tech Now",
-      "link": "https://www.bbc.co.uk/iplayer/episode/m00353dd"
-    },
-    {
-      "time": "Nov 28, 00:56",
-      "text": "'Poison seller' Kenneth Law apologises in court to the families of his victims",
-      "link": "articles/poison-seller-kenneth-law-apologises-in-court-to-the.html"
-    },
-    {
-      "time": "Nov 28, 00:51",
-      "text": "Spain's Sanchez makes final appeal to voters before election",
-      "link": "https://www.dw.com/en/spain-s-sanchez-makes-final-appeal-to-voters-before-election/a-80082783"
-    },
-    {
-      "time": "Nov 28, 00:50",
-      "text": "The Indian 'Tamasha queen' whose fans paid for a show that never happened",
-      "link": "https://www.bbc.co.uk/news/articles/cj20q9pw0116o"
-    },
-    {
-      "time": "Nov 28, 00:38",
-      "text": "The Papers: 'Catherine on cancer fight' and 'Benefits and pensions chaos'",
-      "link": "https://www.bbc.co.uk/news/articles/ck792l9q07xro"
-    },
-    {
-      "time": "Nov 28, 00:05",
-      "text": "A clinic is reassessing people with ADHD and autism diagnoses - but critics fear it could deepen stigma",
-      "link": "https://www.bbc.co.uk/news/articles/cr9309nyg2vno"
-    },
-    {
-      "time": "Nov 28, 00:00",
-      "text": "Iran war live: Italy says drone in deadly Kuwait attack was made in Iran",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/11/28/iran-war-live-italy-says-drone-in-deadly-kuwait-attack-was-made-in-iran"
     }
   ],
   "liveUpdates": [
