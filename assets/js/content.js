@@ -9,13 +9,42 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "carly-rae-jepsen-s-viral-hit-proves-what-fans-knew-all-along"
+    "heroSlug": "hackers-break-into-us-air-force-flagship-cloud-platform"
   },
   "breaking": {
-    "text": "Carly Rae Jepsen's viral hit proves what fans knew all along",
-    "link": "articles/carly-rae-jepsen-s-viral-hit-proves-what-fans-knew-all-along.html"
+    "text": "Hackers break into US Air Force's flagship cloud platform in major security breach",
+    "link": "articles/hackers-break-into-us-air-force-flagship-cloud-platform.html"
   },
   "articles": [
+    {
+      "slug": "hackers-break-into-us-air-force-flagship-cloud-platform",
+      "sections": [
+        "us"
+      ],
+      "section": "us",
+      "headline": "Hackers break into US Air Force's flagship cloud platform in major security breach",
+      "dek": "The intrusion into Cloud One, discovered during upgrade work, could put sensitive tactical, personnel and logistics data at risk, and has already disrupted Air Force operations.",
+      "date": "November 28, 2026",
+      "source": "Reuters",
+      "source_url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
+      "body": [
+        "Hackers have broken into the United States Air Force's flagship cloud computing platform in a breach that could expose sensitive tactical, personnel and logistics data, three people familiar with the matter have told Reuters. The intrusion into the system, known as Cloud One, was discovered within the past month or so while engineers were carrying out upgrade work, and its discovery has already disrupted operations across the platform.",
+        "It is not yet known who carried out the attack, how far the intruders got, or whether any data was taken. Reuters said it could not establish the identity of the hackers, the full scope of the intrusion, or whether information had been stolen. The Air Force declined to discuss the security of specific systems, saying in a statement that it “does not comment on the security posture, vulnerabilities or operational status of specific networks and systems” and that it “continuously take[s] prudent measures to protect Department [of the Air Force] information, systems and mission capabilities.”",
+        "Cloud One is one of the biggest cloud platforms in the US military. Launched in 2017, it was designed as a one-stop shop for the Air Force's computing needs, bringing together the cloud services of four technology giants, Microsoft, Amazon, Oracle and Alphabet, Google's parent company, to run scores of applications. Those applications handle everything from personnel records and pay to logistics and aircraft maintenance.",
+        "Some of what runs on the platform is far more sensitive. Among the systems hosted there is Cloud-Based Command and Control, which pulls together air defense radar and other data feeds from across North America, and the Theater Integrated Combat Munitions System, which tracks bombs and missiles at more than 200 US Air Force locations around the world. “A breach here is a big deal,” one of the sources told Reuters.",
+        "According to one of the sources, the intruders got in by exploiting a software vulnerability to reach the platform's control plane, the management layer that coordinates everything running in the cloud. The source likened the control plane to a universal remote: with that level of access, the hackers could in theory have checked the operational status of military aircraft or tracked the movement of spare parts. It is not clear whether they did so, and Reuters said it could not identify the specific vulnerability that was exploited.",
+        "The discovery has already caused disruption. Efforts to move more back-office applications onto Cloud One, a longstanding military priority, have been paused, two of the sources said, along with a fourth person familiar with the matter. Updates to applications already running on the platform have been blocked, leaving Air Force personnel unable to install fixes at a moment when a fresh batch of serious software vulnerabilities has been disclosed across the technology industry. A fifth source said some users had their administrator rights revoked. All five sources spoke on condition of anonymity.",
+        "Investigators have called in US Cyber Command, the military's cyber warfare force, to assess the damage, according to one of the sources. Cyber Command did not respond to requests for comment. The platform's prime contractor was SAIC until 2025, when Leidos took over the contract. SAIC did not respond to a request for comment, while Leidos referred questions to the Air Force.",
+        "The breach comes at a time of growing concern about AI-powered cyberattacks, which pose a particular threat to cloud-based networks because AI systems can rapidly scan huge areas for weaknesses. The US government has already been dealing with the fallout from at least six other recently disclosed cyber incidents, Reuters reported, including two at the FBI, a previous hack of Pentagon data, a leak of Department of Homeland Security personnel information, a breach affecting at least two spy agencies, and a hack at the Treasury Department.",
+        "Cloud One has long been a target. In a 2023 commentary published by the online publication FedScoop, the platform's leadership boasted of what they called a “100% success rate” in fighting off what they described as a “staggering” number of attempts to break in. “There is no room for error when it comes to security,” they wrote.",
+        "For now, the most important questions remain unanswered: who was behind the intrusion, how deeply they penetrated the system, and what, if anything, they took. Until Cyber Command completes its assessment, the Air Force faces the uncomfortable position of knowing its central computing platform was breached without knowing the full extent of the damage, and of running a major military cloud with software updates frozen while it finds out.",
+        "Sources: Reuters, the South China Morning Post and Haaretz."
+      ],
+      "related": [],
+      "image": "https://images.pexels.com/photos/34072474/pexels-photo-34072474.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "imageCaption": "Illustrative photo: A US Air Force F-35 fighter jet in flight. Photo: Rafael Minguet Delgado / Pexels",
+      "reviewed": true
+    },
     {
       "slug": "carly-rae-jepsen-s-viral-hit-proves-what-fans-knew-all-along",
       "sections": [
@@ -3678,6 +3707,11 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
+      "time": "Nov 28, 04:22",
+      "text": "Hackers break into US Air Force's flagship cloud platform in major security breach",
+      "link": "articles/hackers-break-into-us-air-force-flagship-cloud-platform.html"
+    },
+    {
       "time": "Nov 28, 03:03",
       "text": "Carly Rae Jepsen's viral hit proves what fans knew all along",
       "link": "articles/carly-rae-jepsen-s-viral-hit-proves-what-fans-knew-all-along.html"
@@ -3711,11 +3745,6 @@ window.WWN_DEFAULT_CONTENT = {
       "time": "Nov 28, 02:05",
       "text": "Taiwan votes in local elections to choose mayors, other leaders",
       "link": "https://www.aljazeera.com/news/2026/11/28/taiwan-votes-in-local-elections-to-choose-mayors-other-leaders"
-    },
-    {
-      "time": "Nov 28, 01:30",
-      "text": "How gamers are using AI and leaked files to clone Grand Theft Auto 6",
-      "link": "https://www.bbc.co.uk/news/articles/c64gn8pe5eeqo"
     }
   ],
   "liveUpdates": [
