@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://westernworldnews.com/articles/india-delimitation-bill-lok-sabha-seats-freeze-2051.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Western World News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28</news:publication_date>
+      <news:title>India&#x27;s delimitation bill proposes 50% more seats and a freeze on state shares until 2051</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://westernworldnews.com/articles/kuwait-summons-iran-ambassador-after-drone-attack-kills-two-italians.html</loc>
     <news:news>
       <news:publication>

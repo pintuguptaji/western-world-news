@@ -1,6 +1,39 @@
 {
  "articles": [
   {
+   "slug": "india-delimitation-bill-lok-sabha-seats-freeze-2051",
+   "headline": "India's delimitation bill proposes 50% more seats and a freeze on state shares until 2051",
+   "dek": "The Cabinet-approved package would expand the Lok Sabha toward 850 seats, lock each state's share of seats until 2051, and clear the way for 33% women's reservation — but the opposition calls it a bid to rig the electoral map.",
+   "body": [
+    "India's government has set in motion the biggest redrawing of the country's electoral map in decades, approving a constitutional amendment package that would expand the Lok Sabha by about half, freeze each state's share of seats until 2051, and finally clear the way for reserving a third of seats for women. The bills go before a special session of Parliament starting on Monday, November 30, and have already split the opposition — with some parties backing the plan and others calling it an attempt to rig the electoral system.",
+    "The Union Cabinet, chaired by Prime Minister Narendra Modi, approved the package on Friday, November 27. At its centre is the 132nd Constitutional Amendment Bill, which would raise the maximum strength of the Lok Sabha from 543 seats to 850 and increase state assembly seats by the same proportion. President Droupadi Murmu has recommended the related Delimitation (Second) Bill, 2026, for consideration in the Lok Sabha, a step required under Article 117(3) of the Constitution. The full text of the bills has not yet been circulated to lawmakers, and the details reported so far come from government sources and briefings.",
+    "The most politically sensitive part of the package is the freeze. Seats in the Lok Sabha are currently shared between states on the basis of the 1971 census, under a freeze first imposed in the 1970s and extended in 2001, which was due to expire in 2026. The new bill would extend that freeze for another 25 years, until 2051, while allowing the total number of seats to grow. Constituency boundaries inside each state would be redrawn using 2011 census figures, but no state would lose its share of the House. Government sources say the formula is designed to reassure southern states, which have long feared that delimitation based on current population would shift power northwards.",
+    "The package is also the vehicle for women's reservation. The Constitution (106th Amendment) Act of 2023 reserved a third of seats in the Lok Sabha and state assemblies for women, but it can only take effect after a delimitation exercise. The new bills would make that exercise happen, with the government aiming to implement reservation before the 2029 general election. Parliamentary Affairs Minister Kiren Rijiju said the legislation proposes 33% reservation for women in the Lok Sabha and state assemblies alongside an increase in the number of elected representatives, and urged the opposition to \"set aside politics\" and support it. Prime Minister Modi said his commitment to women's empowerment \"remains unshaken\". Congress's Priyank Kharge countered that the women's reservation law was already passed in September 2023 and that the government need only implement it, asking why it was being linked to delimitation at all.",
+    "Under the reported formula, the Lok Sabha would grow from 543 seats to a maximum of 850, with reports suggesting about 815 from the states and 35 from the union territories. In Uttar Pradesh, the largest state, Home Minister Amit Shah said the bill would raise the maximum number of assembly seats from 500 to about 650, through an amendment to Article 170(1) of the Constitution. Telangana, for example, would rise from 17 Lok Sabha seats to 26, according to Bharat Rashtra Samithi working president K. T. Rama Rao, who said his party's three Rajya Sabha members would vote in favour.",
+    "The opposition INDIA bloc has come out firmly against the package. After a meeting of bloc leaders at his home on Saturday, Congress president Mallikarjun Kharge said they had collectively decided the bill \"poses a grave threat to democracy\", accusing the government of trying to destroy democratic institutions and entrench itself in power. Congress general secretary K. C. Venugopal called the bill \"yet another attempt to rig the electoral system\" and said the opposition would protest it \"with all our might\". Shiv Sena (UBT) leader Aaditya Thackeray called it \"only to gerrymander the constituencies and try to make the BJP win\", and his colleague Sanjay Raut alleged the BJP was using delimitation to consolidate power before the 2029 election. Karnataka deputy chief minister D. K. Shivakumar said the plan was \"unfair to southern states\" and vowed to protect South India's interests.",
+    "But the opposition is not united. The DMK, which governs Tamil Nadu, formally backed the Centre's revised bill on Saturday, with party chief M. K. Stalin calling it a \"major victory\" for the state and saying the freeze protects Tamil Nadu's representation. The decision drew a sharp attack from the TVK, Tamil Nadu's ruling party, which accused the DMK of betraying the state. The BRS also backed the proposal, with KTR saying Telangana's interests and the southern states' existing 24% share of Parliament must be protected. The Nationalist Congress Party (Sharad Pawar) announced its support too, a decision Congress called \"unfortunate\".",
+    "The bills face a high bar. As constitutional amendments, they need a two-thirds majority in both Houses — and an earlier version, introduced in April 2026, failed to secure it. The government has called a special session, with the Lok Sabha meeting on November 30 and December 1 and the Rajya Sabha on December 2 and 3, and the Trinamool Congress has issued a three-line whip ordering all its MPs to attend. The Jharkhand Mukti Morcha has yet to decide its stand. The Trinamool has also questioned whether 20 of its MPs who defected to a smaller party should be allowed to vote while a defection case is pending.",
+    "Delimitation decides how much voice each part of India has in Parliament, and it has been politically frozen for half a century precisely because it is so contentious. States that reduced population growth — mostly in the south — fear losing seats to more populous northern states if boundaries are redrawn on current numbers. The government's answer is to grow the House instead of redistributing it. Whether that compromise holds, and whether the government can find the two-thirds majority it lacked in April, will be decided in the special session next week.",
+    "The Lok Sabha takes up the bills from Monday. If they pass, a Delimitation Commission would redraw constituency boundaries across the country, and the women's reservation law would move toward implementation before the 2029 election. If they fail, as the April attempt did, the government would have to return with another version — or wait.",
+    "Sources: The Hindu; Outlook India; WION."
+   ],
+   "date": "November 28, 2026",
+   "section": "politics",
+   "sections": [
+    "politics",
+    "world"
+   ],
+   "source": "The Hindu",
+   "source_url": "https://www.thehindu.com/news/the-hindu-morning-digest-november-28-2026/article71752254.ece",
+   "image": "https://static.pib.gov.in/WriteReadData/Gallery/PhotoGallery/2023/May/H20230527132674.JPG",
+   "imageCaption": "Illustrative photo: The new Parliament building in New Delhi. Photo: Ministry of Parliamentary Affairs / PIB (Government Open Data License – India)",
+   "related": [
+    "indias-opposition-stages-protests-against-meta-over-account"
+   ],
+   "reviewed": true,
+   "auto": false
+  },
+  {
    "slug": "kuwait-summons-iran-ambassador-after-drone-attack-kills-two-italians",
    "headline": "Kuwait summons Iran ambassador after drone attack kills two Italian technicians",
    "dek": "Kuwait says the strike on a military site was the latest in a series of Iranian attacks and reserves the right to self-defence. Tehran denies any role and offers a joint investigation.",
@@ -4662,6 +4695,11 @@
  ],
  "justIn": [
   {
+   "time": "28 Nov, 11:01",
+   "text": "India's delimitation bill proposes 50% more seats and a freeze on state shares until 2051",
+   "link": "articles/india-delimitation-bill-lok-sabha-seats-freeze-2051.html"
+  },
+  {
    "time": "28 Nov, 08:33",
    "text": "Kuwait summons Iran ambassador after drone attack kills two Italian technicians",
    "link": "articles/kuwait-summons-iran-ambassador-after-drone-attack-kills-two-italians.html"
@@ -4766,9 +4804,9 @@
   "russias-hybrid-war-on-europe-evolving-but-failing-iiss",
   "hackers-break-into-us-air-force-flagship-cloud-platform"
  ],
- "heroSlug": "kuwait-summons-iran-ambassador-after-drone-attack-kills-two-italians",
+ "heroSlug": "india-delimitation-bill-lok-sabha-seats-freeze-2051",
  "breaking": {
-  "text": "Kuwait summons Iran ambassador after drone attack kills two Italian technicians",
-  "link": "articles/kuwait-summons-iran-ambassador-after-drone-attack-kills-two-italians.html"
+  "text": "India's delimitation bill proposes 50% more seats and a freeze on state shares until 2051",
+  "link": "articles/india-delimitation-bill-lok-sabha-seats-freeze-2051.html"
  }
 }
