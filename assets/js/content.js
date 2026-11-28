@@ -9,13 +9,32 @@ window.WWN_DEFAULT_CONTENT = {
   "settings": {
     "siteName": "Western World News",
     "tagline": "Western and European news, live: politics, war, business and culture.",
-    "heroSlug": "openai-countersues-apple-for-allegedly-stealing-trade"
+    "heroSlug": "poison-seller-kenneth-law-apologises-in-court-to-the"
   },
   "breaking": {
-    "text": "OpenAI countersues Apple for allegedly stealing trade secrets",
-    "link": "articles/openai-countersues-apple-for-allegedly-stealing-trade.html"
+    "text": "'Poison seller' Kenneth Law apologises in court to the families of his victims",
+    "link": "articles/poison-seller-kenneth-law-apologises-in-court-to-the.html"
   },
   "articles": [
+    {
+      "slug": "poison-seller-kenneth-law-apologises-in-court-to-the",
+      "sections": [
+        "world"
+      ],
+      "section": "world",
+      "headline": "'Poison seller' Kenneth Law apologises in court to the families of his victims",
+      "dek": "The Canadian man, who pleaded guilty to 14 counts of aiding and abetting suicide earlier this year, said he was remorseful for his actions.",
+      "date": "November 28, 2026",
+      "source": "BBC",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmx2898wq2qjo",
+      "body": [
+        "The Canadian man, who pleaded guilty to 14 counts of aiding and abetting suicide earlier this year, said he was remorseful for his actions."
+      ],
+      "related": [],
+      "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/6398/live/0d6eb230-5b6c-11f1-a914-b7de1b16af02.jpg",
+      "imageCaption": "Photo: BBC",
+      "reviewed": false
+    },
     {
       "slug": "openai-countersues-apple-for-allegedly-stealing-trade",
       "sections": [
@@ -3621,44 +3640,44 @@ window.WWN_DEFAULT_CONTENT = {
   ],
   "justIn": [
     {
-      "time": "Nov 27, 23:28",
-      "text": "OpenAI countersues Apple for allegedly stealing trade secrets",
-      "link": "articles/openai-countersues-apple-for-allegedly-stealing-trade.html"
+      "time": "Nov 28, 01:03",
+      "text": "Should I get a flu vaccine now?",
+      "link": "https://www.bbc.co.uk/news/articles/cq8e018jyjngo"
     },
     {
-      "time": "Nov 27, 23:17",
-      "text": "US disables ship in Gulf of Oman under Iran blockade",
-      "link": "https://www.dw.com/en/us-disables-ship-in-gulf-of-oman-under-iran-blockade/a-80082950"
+      "time": "Nov 28, 01:00",
+      "text": "Tech Now",
+      "link": "https://www.bbc.co.uk/iplayer/episode/m00353dd"
     },
     {
-      "time": "Nov 27, 23:09",
-      "text": "Will Taiwan vote to revive nuclear power, and why does that matter for AI?",
-      "link": "https://www.aljazeera.com/news/2026/11/27/will-taiwan-vote-to-revive-nuclear-power-and-why-does-that-matter-for-ai"
+      "time": "Nov 28, 00:56",
+      "text": "'Poison seller' Kenneth Law apologises in court to the families of his victims",
+      "link": "articles/poison-seller-kenneth-law-apologises-in-court-to-the.html"
     },
     {
-      "time": "Nov 27, 23:02",
-      "text": "Behind China's spectacular rise, voices who defied it say they are being drowned out",
-      "link": "https://www.bbc.co.uk/news/articles/cme3d4y094x7o"
+      "time": "Nov 28, 00:51",
+      "text": "Spain's Sanchez makes final appeal to voters before election",
+      "link": "https://www.dw.com/en/spain-s-sanchez-makes-final-appeal-to-voters-before-election/a-80082783"
     },
     {
-      "time": "Nov 27, 22:33",
-      "text": "Kenyan cult leader guilty of manslaughter more than 123 starvation deaths",
-      "link": "https://www.aljazeera.com/news/2026/11/27/kenyan-cult-leader-guilty-of-manslaughter-more-than-123-starvation-deaths"
+      "time": "Nov 28, 00:50",
+      "text": "The Indian 'Tamasha queen' whose fans paid for a show that never happened",
+      "link": "https://www.bbc.co.uk/news/articles/cj20q9pw0116o"
     },
     {
-      "time": "Nov 27, 22:22",
-      "text": "US military says it disabled merchant ship trying to breach Iran blockade",
-      "link": "articles/us-military-says-it-disabled-merchant-ship-trying-to-breach.html"
+      "time": "Nov 28, 00:38",
+      "text": "The Papers: 'Catherine on cancer fight' and 'Benefits and pensions chaos'",
+      "link": "https://www.bbc.co.uk/news/articles/ck792l9q07xro"
     },
     {
-      "time": "Nov 27, 22:14",
-      "text": "Thousands still without power after storms that snarled Thanksgiving travel",
-      "link": "https://www.theguardian.com/us-news/2026/nov/27/heavy-rain-wind-flooding-us-thanksgiving"
+      "time": "Nov 28, 00:05",
+      "text": "A clinic is reassessing people with ADHD and autism diagnoses - but critics fear it could deepen stigma",
+      "link": "https://www.bbc.co.uk/news/articles/cr9309nyg2vno"
     },
     {
-      "time": "Nov 27, 22:03",
-      "text": "Prosecutors seek 25-year prison term for 'poison seller' Kenneth Law",
-      "link": "https://www.bbc.co.uk/news/articles/cmx2898wq2qjo"
+      "time": "Nov 28, 00:00",
+      "text": "Iran war live: Italy says drone in deadly Kuwait attack was made in Iran",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/11/28/iran-war-live-italy-says-drone-in-deadly-kuwait-attack-was-made-in-iran"
     }
   ],
   "liveUpdates": [
