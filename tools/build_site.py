@@ -3048,8 +3048,7 @@ since 2026-11-28 — see `tools/auto_publish.py`, PUBLISHING_PAUSED.)
 - Every story **credits its sources by name and links to the original
   articles** (BBC, Al Jazeera, The Guardian, Euronews, France 24, DW,
   Reuters and others).
-- A small number of older stories are still short summaries; they are
-  being expanded into full articles.
+- Every story is a full researched article.
 - Section classification is done by the publisher from the headline:
   war and conflict, business, technology, US, Europe, or world. Stories
   are re-checked at build time so the Europe section only carries
@@ -3217,7 +3216,7 @@ def main():
         "About Western World News: independent news from the West and the world.",
         "About us",
         ["Western World News is an independently run news website covering worldwide news with a main focus on Western and European politics, war and breaking news, plus a small Business &amp; Finance section. It is owned and operated by its publisher and is not part of a larger media group.",
-         "Our stories are researched and written by the Western World News editorial team. Each article is based on reporting from several trusted sources — the BBC, Al Jazeera, The Guardian, Euronews, France 24, DW, Reuters and others — rewritten in our own words, checked before publication, and credited with links to the original reporting. A small number of older stories are still short summaries; we are expanding them into full articles. If a detail matters, please read the original article.",
+         "Our stories are researched and written by the Western World News editorial team. Each article is based on reporting from several trusted sources — the BBC, Al Jazeera, The Guardian, Euronews, France 24, DW, Reuters and others — rewritten in our own words, checked before publication, and credited with links to the original reporting. Every story on the site is a full researched article. If a detail matters, please read the original article.",
          "The site is free to read. There is no paywall.",
          "Contact us via the contact page."])))
     files.append(write("contact.html", build_info(
@@ -3269,7 +3268,7 @@ def main():
         "Editorial Policy",
         ["Western World News is an independently run news site. We cover worldwide news with a main focus on Western and European politics, war and conflict, and breaking news, plus a small Business and Finance section.",
          "Trusted sources. Our stories are researched from the reporting of trusted news organizations — the BBC, Al Jazeera, The Guardian, Euronews, France 24, DW, Reuters and others. Each article is written in our own words from several sources and checked before publication. We do not base stories on rumors or anonymous social media posts as a matter of policy, but an unconfirmed claim in a source report can still appear here, so please check important facts against the original report.",
-         "How stories are made. Each article is researched from multiple sources, written in our own words, and checked before it is published, with the sources credited by name and linked so readers can check the facts themselves. A small number of older stories are still short summaries; we are expanding them into full articles. We do not copy full articles, and we do not present a source's words as our own reporting.",
+         "How stories are made. Each article is researched from multiple sources, written in our own words, and checked before it is published, with the sources credited by name and linked so readers can check the facts themselves. Every story on the site is a full researched article. We do not copy full articles, and we do not present a source's words as our own reporting.",
          "What we do not publish. We filter out clearly off-topic material (puzzles, celebrity gossip, reviews, horoscopes and similar). We do not publish graphic war detail as a matter of policy.",
          "Corrections. Errors reported by email are fixed manually when noticed. We do not promise a speed for corrections, and there is no standing correction-note format on stories. See our <a href='corrections.html'>corrections policy</a> for the details.",
          "Advertising and sponsorship. There is currently no advertising or sponsored content on this site. If advertising appears in the future, it will be separate from editorial content. We do not present sponsored content as news, and advertisers will not decide what we cover or how we cover it.",

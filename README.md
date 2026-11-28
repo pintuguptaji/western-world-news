@@ -132,8 +132,7 @@ since 2026-11-28 — see `tools/auto_publish.py`, PUBLISHING_PAUSED.)
 - Every story **credits its sources by name and links to the original
   articles** (BBC, Al Jazeera, The Guardian, Euronews, France 24, DW,
   Reuters and others).
-- A small number of older stories are still short summaries; they are
-  being expanded into full articles.
+- Every story is a full researched article.
 - Section classification is done by the publisher from the headline:
   war and conflict, business, technology, US, Europe, or world. Stories
   are re-checked at build time so the Europe section only carries
