@@ -123,17 +123,6 @@
     </news:news>
   </url>
   <url>
-    <loc>https://westernworldnews.com/articles/big-eu-defense-projects-under-threat-from-proposed-budget.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Western World News</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-27</news:publication_date>
-      <news:title>Big EU defense projects under threat from proposed budget cuts: Commissioner Andrius Kubilius</news:title>
-    </news:news>
-  </url>
-  <url>
     <loc>https://westernworldnews.com/articles/norse-atlantic-airways-files-for-bankruptcy-and-cancels-all.html</loc>
     <news:news>
       <news:publication>
@@ -406,17 +395,6 @@
       </news:publication>
       <news:publication_date>2026-11-26</news:publication_date>
       <news:title>UK to invest £9.5m in Ukraine windfarm to bolster war-hit energy system</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://westernworldnews.com/articles/spains-election-the-end-of-a-leftwing-icon-podcast.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Western World News</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26</news:publication_date>
-      <news:title>Spain’s election: the end of a leftwing icon? - podcast</news:title>
     </news:news>
   </url>
   <url>
